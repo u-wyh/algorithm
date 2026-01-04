@@ -11,6 +11,7 @@
 // 如下实现是C++的版本，C++版本和java版本逻辑完全一样
 // 提交如下代码，可以通过所有测试用例
 // dp[u][i]表示取得分数i的概率  主要是这个动态规划的转移方程
+// 这种类型的题目都是这样的  主要就是推公式
 #include <bits/stdc++.h>
 using namespace std;
 const int MAXN = 300001;
