@@ -13,6 +13,7 @@
 // 转移方程是：(v是u的子节点)
 // 选u的情况  dp[u][arr[u]]=1+max(dp[v][arr[u]~n])  因为如果选择了u  那么u的权值一定是子树上选择的最小的
 // 不选u的情况  dp[u][i]=dp[u][i]+max(dp[v][i~n])
+// 这道题的难点在于如何想到这个这个dp的含义  这道题本质上是树形dp 但是需要线段树合并来优化
 #include <bits/stdc++.h>
 using namespace std;
 const int MAXN = 200001;
