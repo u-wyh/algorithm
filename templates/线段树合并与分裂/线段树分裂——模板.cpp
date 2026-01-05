@@ -10,6 +10,7 @@
 // 测试链接 : https://www.luogu.com.cn/problem/P5494
 // 如下实现是C++的版本，C++版本和java版本逻辑完全一样
 // 提交如下代码，可以通过所有测试用例
+// 线段树分裂需要空间池来节约空间
 #include <bits/stdc++.h>
 using namespace std;
 const int MAXN = 200001;
@@ -112,6 +113,7 @@ int merge(int l, int r, int t1, int t2) {
 		rs[t1] = merge(mid + 1, r, rs[t1], rs[t2]);
 		up(t1);
 	}
+	// 这是和线段树合并唯一存在差别的地方，t2节点没用之后，放到回收池中
 	del(t2);
 	return t1;
 }
