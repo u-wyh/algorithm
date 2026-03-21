@@ -13,6 +13,7 @@ int n, m, s, t;
 int mincost, maxflow;
 
 // 势能数组（Johnson算法核心）
+// 在第一次spfa之后，pot数组的含义是从起点s到达各个点的最小单位费用
 int pot[MAXN];           // 用于调整边权，消除负权边影响
 
 int dis[MAXN];

@@ -1,4 +1,5 @@
 // https://www.luogu.com.cn/problem/P3167
+// 这道题的思路完全就是动态规划
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;
