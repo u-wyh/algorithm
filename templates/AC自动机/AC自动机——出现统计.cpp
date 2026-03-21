@@ -107,11 +107,13 @@ void add(int x,int v){
     }
 }
 
+// 这里只会在句子的结尾处的那个节点加上一
 void update(int id,int v){
     int cur=0;
     for(char ch:s[id]){
         cur=trie[cur][ch-'a'];
     }
+    // 那么只要是在这个cur的子树中出现了 说明就是出现了
     add(dfn[cur],v);
     add(dfn[cur]+sz[cur],-v);
 }
@@ -153,6 +155,7 @@ int main()
         int fa;
         scanf("%d %d",&op[i],&fa);
         addedge(fa,i);
+
         scanf("%s",t+1);
         int n=strlen(t+1);
         for(int j=1;j<=n;j++){

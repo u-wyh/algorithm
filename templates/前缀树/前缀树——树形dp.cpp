@@ -1,6 +1,8 @@
 // https://www.luogu.com.cn/problem/P6623
 // 这道题很巧妙的将 01trie 和 树形dp 结合在一起
 // 如何处理加一操作  如何合并信息  都是解题的关键
+// 这个我感觉有的类似于线段树合并的思想   时间复杂度的证明方法就是类似于线段树合并
+// 越靠近根节点  权值越小
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 525015;
