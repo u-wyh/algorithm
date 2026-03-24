@@ -42,6 +42,7 @@ int dist[MAXN];
 bool vis[MAXN];
 int centfa[MAXN];
 
+// 这里已经是每个节点 对应数组信息中的一个值  而不是一张表
 long long sum[MAXN];
 long long addCost[MAXN];
 long long minusCost[MAXN];
