@@ -168,6 +168,7 @@ void dp(int u) {
     for (int e = headv[u]; e; e = nextv[e]) {
         int v = tov[e];
         long long len = (long long)dep[v] - dep[u];
+        // 主要就是这个计算的式子很重要  其余的还挺好理解的
         costSum += (sum[u] + 1LL * siz[u] * len) * siz[v] + sum[v] * siz[u];
         siz[u] += siz[v];
         sum[u] += sum[v] + len * siz[v];
