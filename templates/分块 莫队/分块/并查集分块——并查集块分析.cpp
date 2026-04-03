@@ -76,6 +76,7 @@ void prepare(){
     }
 }
 
+// 这里的参数是一个块的左右边界
 void compute(int l,int r){
     // 所有党派的信息最初代表都是0  表示这个块中没有这个党派
     for(int i=1;i<=m;i++){

@@ -10,7 +10,7 @@
 // 这道题我们可以看出来设置不同的块长可以对时间产生影响
 // 这道题的思路就是块内维护一个有序数组  从而加速查询
 // 时间复杂度分析：
-// 区间加操作  根号n（块间操作）+ （根号n+n*logn）块内操作
+// 区间加操作  根号n（块间操作）+ （根号n+根号(n*logn)）块内操作
 // 区间查询操作  log(maxx-minn)*(根号n*log根号n+ 根号n)
 #include <bits/stdc++.h>
 using namespace std;
@@ -97,7 +97,6 @@ int getMax(int l, int r) {
     }
     return ans;
 }
-
 
 // 返回第i块内<= v的数字个数
 int blockCnt(int i, int v) {
