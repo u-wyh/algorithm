@@ -90,6 +90,7 @@ void compute(int l,int r){
     int len=r-l+1;
     sum=0;
     // 将以前的信息清空  col信息在设置这个节点的时候 就会被设置  所以不需要管
+    // 这个循环是个坑  不能放在函数的结尾  因为最后一个组len要小一些
     for(int i=len+1;i<=cnt;i++){
         f[i]=0;
         tag[i]=0;
