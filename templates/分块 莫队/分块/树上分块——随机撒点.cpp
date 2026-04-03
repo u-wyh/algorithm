@@ -11,6 +11,9 @@
 // 提交如下代码，可以通过所有测试用例
 // 随机撒点并不能被看成是严格的分块   只是设置了一些关键节点
 // 通过随机性来保持时间复杂度
+// 其实这道题主要是为了节省空间  在位图的时候设置的是MAXB
+// 所以同时必须要有marknode和vis数组  其实vis数组可以直接不要的
+// 只用kthnum和marknode就可以
 #include <bits/stdc++.h>
 using namespace std;
 const int MAXN = 100001;

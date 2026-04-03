@@ -92,6 +92,8 @@ inline int sum(int i) {
 // x和y可以相等，但是xl..xr需要在yl..yr的左侧
 // 返回逆序对数量
 //时间复杂度是根号n
+// 这里的思路可以说非常巧妙，它是按照左边的如果最为更大的值，右边有多少个在这个范围内的可以被选中
+// 这个函数其实是本题的关键
 inline int f(int x, int xl, int xr, int y, int yl, int yr) {
     int ans = 0;
     for (int p1 = bl[x], p2 = bl[y] - 1, cnt = 0; p1 <= br[x]; p1++) {
@@ -159,6 +161,7 @@ void prepare() {
     }
     //预处理各种信息
     for (int i = 1; i <= bnum; i++) {
+
         for (int j = bl[i]; j <= br[i]; j++) {
             cnt[i][arr[j]]++;
             if (j != bl[i]) {
@@ -166,6 +169,7 @@ void prepare() {
             }
             add(arr[j], 1);
         }
+
         //注意清空树状数组
         for (int j = bl[i]; j <= br[i]; j++) {
             add(arr[j], -1);
@@ -177,6 +181,7 @@ void prepare() {
             }
             add(arr[j], 1);
         }
+
         //注意清空树状数组
         for (int j = bl[i]; j <= br[i]; j++) {
             add(arr[j], -1);

@@ -54,7 +54,7 @@ void dfs(int u, int f) {
 
 int query(int k) {
     int cnt = 0;
-    // dfn序从后往前遍历
+    // dfn序从后往前遍历 这样相当于从树的子树到父树  从低向上
     for (int i = n, cur, father; i >= 1; i--) {
         cur = dfnOrder[i];
         father = fa[cur];

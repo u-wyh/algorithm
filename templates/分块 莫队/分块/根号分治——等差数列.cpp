@@ -17,6 +17,7 @@ const int MAXB = 401;
 
 int t, n, q, blen;
 int arr[MAXN];
+// f[d][i]表示从i开始一直到最后，间隔是d  和
 long long f[MAXB][MAXN];
 long long g[MAXB][MAXN];
 
