@@ -72,7 +72,7 @@ int force(int l, int r) {
     return ret;
 }
 
-// 这里设置的是first是很巧妙的 只在右扩的时候跟新  这样就不会因为不同的左边界产生影响
+// 这里设置的是first是很巧妙的 只在右扩的时候更新  这样就不会因为不同的左边界产生影响
 void addRight(int idx) {
     int num = arr[idx];
     mostRight[num] = idx;
