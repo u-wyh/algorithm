@@ -8,6 +8,7 @@
 // 累加和不会超过long类型范围
 // 测试链接 : https://www.luogu.com.cn/problem/P8779
 // 提交以下的code，提交时请把类名改成"Main"，可以通过所有测试用例
+// 这里之所以r要加一，主要是将点的大小改为距离  比如1号点大小是100 那么1和2之间距离是100
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+2;
