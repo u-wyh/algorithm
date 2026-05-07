@@ -9,6 +9,7 @@
 // 测试链接 : https://www.luogu.com.cn/problem/P6329
 // 如下实现是C++的版本，C++版本和java版本逻辑完全一样
 // 提交如下代码，可以通过所有测试用例
+// 这里使用重链剖分仅仅是为了求解两点之间的距离 使用倍增也行  没有特殊意义
 #include <bits/stdc++.h>
 using namespace std;
 const int MAXN = 100001;
