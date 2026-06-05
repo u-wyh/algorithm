@@ -44,56 +44,56 @@ void addEdge(int u, int v) {
 }
 
 void tarjan(int u, int preEdge) {
-   dfn[u] = low[u] = ++cntd;
-   sta[++top] = u;
-   for (int e = head[u]; e > 0; e = nxt[e]) {
-       if ((e ^ 1) == preEdge) {
-           continue;
-       }
-       int v = to[e];
-       if (dfn[v] == 0) {
-           tarjan(v, e);
-           low[u] = min(low[u], low[v]);
-       } else {
-           low[u] = min(low[u], dfn[v]);
-       }
-   }
-   if (dfn[u] == low[u]) {
-       ebccCnt++;
-       ebccSiz[ebccCnt] = 0;
-       ebccl[ebccCnt] = idx + 1;
-       int pop;
-       do {
-           pop = sta[top--];
-           ebccSiz[ebccCnt]++;
-           ebccArr[++idx] = pop;
-       } while (pop != u);
-       ebccr[ebccCnt] = idx;
-   }
+    dfn[u] = low[u] = ++cntd;
+    sta[++top] = u;
+    for (int e = head[u]; e > 0; e = nxt[e]) {
+        if ((e ^ 1) == preEdge) {
+            continue;
+        }
+        int v = to[e];
+        if (dfn[v] == 0) {
+            tarjan(v, e);
+            low[u] = min(low[u], low[v]);
+        } else {
+            low[u] = min(low[u], dfn[v]);
+        }
+    }
+    if (dfn[u] == low[u]) {
+        ebccCnt++;
+        ebccSiz[ebccCnt] = 0;
+        ebccl[ebccCnt] = idx + 1;
+        int pop;
+        do {
+            pop = sta[top--];
+            ebccSiz[ebccCnt]++;
+            ebccArr[++idx] = pop;
+        } while (pop != u);
+        ebccr[ebccCnt] = idx;
+    }
 }
 
 int main() {
-   ios::sync_with_stdio(false);
-   cin.tie(nullptr);
-   cntg = 1;
-   cin >> n >> m;
-   for (int i = 1, u, v; i <= m; i++) {
-       cin >> u >> v;
-       addEdge(u, v);
-       addEdge(v, u);
-   }
-   for (int i = 1; i <= n; i++) {
-       if (dfn[i] == 0) {
-           tarjan(i, 0);
-       }
-   }
-   cout << ebccCnt << "\n";
-   for (int i = 1; i <= ebccCnt; i++) {
-       cout << ebccSiz[i] << "\n";
-       for (int j = ebccl[i]; j <= ebccr[i]; j++) {
-           cout << ebccArr[j] << " ";
-       }
-       cout << "\n";
-   }
-   return 0;
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cntg = 1;
+    cin >> n >> m;
+    for (int i = 1, u, v; i <= m; i++) {
+        cin >> u >> v;
+        addEdge(u, v);
+        addEdge(v, u);
+    }
+    for (int i = 1; i <= n; i++) {
+        if (dfn[i] == 0) {
+            tarjan(i, 0);
+        }
+    }
+    cout << ebccCnt << "\n";
+    for (int i = 1; i <= ebccCnt; i++) {
+        cout << ebccSiz[i] << "\n";
+        for (int j = ebccl[i]; j <= ebccr[i]; j++) {
+            cout << ebccArr[j] << " ";
+        }
+        cout << "\n";
+    }
+    return 0;
 }
