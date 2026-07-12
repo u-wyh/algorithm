@@ -72,7 +72,7 @@ class CodeCounter:
         self.progress["value"] = 0
         
         # 定义要统计的文件扩展名
-        extensions = ['.cpp', '.c', '.py']
+        extensions = ['.cpp', '.c', '.py','.h']
         
         # 初始化统计结果
         results = {ext: {"count": 0, "lines": 0} for ext in extensions}
