@@ -1,9 +1,9 @@
-//����dfs
-// ����ֱ��ģ��(����dfs)
-// ����һ��������Ȩ����Ϊ������ֱ������
-// �������� : https://www.luogu.com.cn/problem/U81904
-// �ύ���µ�code���ύʱ��������ĳ�"Main"
-// �����޷�ͨ������������Ϊ�����и���
+//两次dfs
+// 树的直径模版(两遍dfs)
+// 给定一棵树，边权可能为负，求直径长度
+// 测试链接 : https://www.luogu.com.cn/problem/U81904
+// 提交以下的code，提交时请把类名改成"Main"
+// 会有无法通过的用例，因为树上有负边
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 500005;
@@ -14,15 +14,15 @@ int Next[MAXN<<1];
 int to[MAXN<<1];
 int weight[MAXN<<1];
 int cnt=1;
-// ֱ���Ŀ�ʼ��
+// 直径的开始点
 int start;
-// ֱ���Ľ�����
+// 直径的结束点
 int en;
-// ֱ������
+// 直径长度
 int diameter;
-// dist[i] : �ӹ涨��ͷ�ڵ�������ߵ�i�ľ���
+// dist[i] : 从规定的头节点出发，走到i的距离
 int dist[MAXN];
-// last[i] : �ӹ涨��ͷ�ڵ������i�ڵ����һ���ڵ�
+// last[i] : 从规定的头节点出发，i节点的上一个节点
 int last[MAXN];
 
 void dfs(int u,int f,int w){
@@ -37,15 +37,15 @@ void dfs(int u,int f,int w){
 
 void road() {
     dfs(1, 0, 0);
-    //�������������  һ�㶼��1
+    //这个起点是随机的  一般都是1
     start = 1;
     for (int i = 2; i <= n; i++) {
         if (dist[i] > dist[start]) {
             start = i;
         }
     }
-    //ѡ�������������ĵ�  ��Ϊͷ���
-    //��Ϊ��ȨΪ��  ���Զ�������ڵ����  ��Զ�ĵ�һ����ֱ���˵��е�һ��
+    //选择离他距离最大的点  作为头结点
+    //因为边权为正  所以对于任意节点而言  最远的点一定是直径端点中的一个
     dfs(start, 0, 0);
     en = 1;
     for (int i = 2; i <= n; i++) {
@@ -55,7 +55,7 @@ void road() {
     }
     diameter = dist[en];
 }
-//���ε���dfs
+//两次调用dfs
 
 int main()
 {
