@@ -55,23 +55,23 @@ void bfs(){
     memset(d,inf,sizeof(d));
     memset(vis,0,sizeof(vis));
     d[x1][y1] = 0;
-    deque<node> q; //ĞÂ½¨Ò»Ö»Ë«¶Ë¶ÓÁĞ
+    deque<node> q; //æ–°å»ºä¸€åªåŒç«¯é˜Ÿåˆ—
     q.push_back(node(x1,y1));
     while(!q.empty()){
         x = q.front().x;
         y = q.front().y;
         q.pop_front();
-        if(vis[x][y]) continue; //ÓÉÓÚÊÇbfs,ËùÒÔÒªÅĞ¶ÏÓĞÃ»ÓĞÀ´¹ı,À´¹ıÁË¾Í²»ÓÃÔÙÀ´ÁË
+        if(vis[x][y]) continue; //ç”±äºæ˜¯bfs,æ‰€ä»¥è¦åˆ¤æ–­æœ‰æ²¡æœ‰æ¥è¿‡,æ¥è¿‡äº†å°±ä¸ç”¨å†æ¥äº†
         vis[x][y] = true;
-        for(int i=0;i<4;++i){ //±éÀúÖÜÎ§¸ñ×Ó
+        for(int i=0;i<4;++i){ //éå†å‘¨å›´æ ¼å­
             nx = x+dx[i];
             ny = y+dy[i];
-            if(nx>n||nx<1||ny>m||ny<1) continue; //ÅĞ¶ÏÊÇ·ñÔ½½ç
-            w = a[nx][ny]!=a[x][y]; //È·¶¨±ßÈ¨,Ò»ÑùÎª1,²»Ò»ÑùÎª0
-            if(d[x][y]+w>=d[nx][ny]) continue; //ËÉ³Ú²Ù×÷
+            if(nx>n||nx<1||ny>m||ny<1) continue; //åˆ¤æ–­æ˜¯å¦è¶Šç•Œ
+            w = a[nx][ny]!=a[x][y]; //ç¡®å®šè¾¹æƒ,ä¸€æ ·ä¸º1,ä¸ä¸€æ ·ä¸º0
+            if(d[x][y]+w>=d[nx][ny]) continue; //æ¾å¼›æ“ä½œ
             d[nx][ny] = d[x][y]+w;
-            if(w==0) q.push_front(node(nx,ny)); //0È¨·ÅÇ°Ãæ
-            else q.push_back(node(nx,ny)); //1È¨·ÅºóÃæ
+            if(w==0) q.push_front(node(nx,ny)); //0æƒæ”¾å‰é¢
+            else q.push_back(node(nx,ny)); //1æƒæ”¾åé¢
         }
     }
 }

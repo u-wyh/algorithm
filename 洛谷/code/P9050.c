@@ -5,20 +5,20 @@
 
 typedef long long ll;
 
-// ÓãµÄ½á¹¹Ìå
+// é±¼çš„ç»“æž„ä½“
 typedef struct {
     ll big;
     ll id;
 } fish;
 
-// ±È½Ïº¯Êý£¬ÓÃÓÚqsort
+// æ¯”è¾ƒå‡½æ•°ï¼Œç”¨äºŽqsort
 int fishCmp(const void *a, const void *b) {
     fish *fa = (fish *)a;
     fish *fb = (fish *)b;
     return fa->big - fb->big;
 }
 
-// ÅÐ¶ÏÒ»ÌõÓãÊÇ·ñ¿ÉÒÔÁôÏÂÀ´
+// åˆ¤æ–­ä¸€æ¡é±¼æ˜¯å¦å¯ä»¥ç•™ä¸‹æ¥
 bool solve(fish *a, ll n, ll x) {
     ll temp = a[x].big;
     for (ll i = 0; i < n; i++) {
@@ -38,14 +38,14 @@ int main() {
     fish a[500005];
     for (ll i = 0; i < n; i++) {
         scanf("%lld", &a[i].big);
-        a[i].id = i + 1; // ÌâÄ¿ÒªÇóÊä³ö´Ó1¿ªÊ¼µÄid
+        a[i].id = i + 1; // é¢˜ç›®è¦æ±‚è¾“å‡ºä»Ž1å¼€å§‹çš„id
     }
 
-    // Ê¹ÓÃqsort½øÐÐÅÅÐò
+    // ä½¿ç”¨qsortè¿›è¡ŒæŽ’åº
     qsort(a, n, sizeof(fish), fishCmp);
 
     ll l = 0, r = n - 1;
-    ll res = n; // ³õÊ¼»¯Îªn£¬±íÊ¾Ã»ÓÐÕÒµ½·ûºÏÌõ¼þµÄÓã
+    ll res = n; // åˆå§‹åŒ–ä¸ºnï¼Œè¡¨ç¤ºæ²¡æœ‰æ‰¾åˆ°ç¬¦åˆæ¡ä»¶çš„é±¼
     while (l <= r) {
         ll mid = (l + r) / 2;
         if (solve(a, n, mid)) {
@@ -56,19 +56,19 @@ int main() {
         }
     }
 
-    // Èç¹ûresÈÔÈ»ÊÇn£¬Ôò±íÊ¾Ã»ÓÐÓã¿ÉÒÔÁôÏÂÀ´
+    // å¦‚æžœresä»ç„¶æ˜¯nï¼Œåˆ™è¡¨ç¤ºæ²¡æœ‰é±¼å¯ä»¥ç•™ä¸‹æ¥
     bool arr[500005] = {0};
     if (res != n) {
         for (ll i = res; i < n; i++) {
-            arr[a[i].id - 1] = true; // Êý×éË÷Òý´Ó0¿ªÊ¼£¬µ«id´Ó1¿ªÊ¼
+            arr[a[i].id - 1] = true; // æ•°ç»„ç´¢å¼•ä»Ž0å¼€å§‹ï¼Œä½†idä»Ž1å¼€å§‹
         }
     }
 
-    // Êä³ö½á¹û
+    // è¾“å‡ºç»“æžœ
     for (ll i = 0; i < n; i++) {
         putchar(arr[i] ? 'T' : 'N');
     }
-    putchar('\n'); // ¼ÓÉÏ»»ÐÐ·û£¬Ê¹Êä³ö¸ü¹æ·¶
+    putchar('\n'); // åŠ ä¸Šæ¢è¡Œç¬¦ï¼Œä½¿è¾“å‡ºæ›´è§„èŒƒ
 
     return 0;
 }

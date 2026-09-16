@@ -1,11 +1,11 @@
-// ¶þ²æËÑË÷×ÓÊ÷µÄ×î´ó¼üÖµºÍ
-// ¸øÄãÒ»¿ÃÒÔ root Îª¸ùµÄ¶þ²æÊ÷
-// ÇëÄã·µ»Ø ÈÎÒâ ¶þ²æËÑË÷×ÓÊ÷µÄ×î´ó¼üÖµºÍ
-// ¶þ²æËÑË÷Ê÷µÄ¶¨ÒåÈçÏÂ£º
-// ÈÎÒâ½ÚµãµÄ×ó×ÓÊ÷ÖÐµÄ¼üÖµ¶¼ Ð¡ÓÚ ´Ë½ÚµãµÄ¼üÖµ
-// ÈÎÒâ½ÚµãµÄÓÒ×ÓÊ÷ÖÐµÄ¼üÖµ¶¼ ´óÓÚ ´Ë½ÚµãµÄ¼üÖµ
-// ÈÎÒâ½ÚµãµÄ×ó×ÓÊ÷ºÍÓÒ×ÓÊ÷¶¼ÊÇ¶þ²æËÑË÷Ê÷
-// ²âÊÔÁ´½Ó : https://leetcode.cn/problems/maximum-sum-bst-in-binary-tree/
+// äºŒå‰æœç´¢å­æ ‘çš„æœ€å¤§é”®å€¼å’Œ
+// ç»™ä½ ä¸€æ£µä»¥ root ä¸ºæ ¹çš„äºŒå‰æ ‘
+// è¯·ä½ è¿”å›ž ä»»æ„ äºŒå‰æœç´¢å­æ ‘çš„æœ€å¤§é”®å€¼å’Œ
+// äºŒå‰æœç´¢æ ‘çš„å®šä¹‰å¦‚ä¸‹ï¼š
+// ä»»æ„èŠ‚ç‚¹çš„å·¦å­æ ‘ä¸­çš„é”®å€¼éƒ½ å°äºŽ æ­¤èŠ‚ç‚¹çš„é”®å€¼
+// ä»»æ„èŠ‚ç‚¹çš„å³å­æ ‘ä¸­çš„é”®å€¼éƒ½ å¤§äºŽ æ­¤èŠ‚ç‚¹çš„é”®å€¼
+// ä»»æ„èŠ‚ç‚¹çš„å·¦å­æ ‘å’Œå³å­æ ‘éƒ½æ˜¯äºŒå‰æœç´¢æ ‘
+// æµ‹è¯•é“¾æŽ¥ : https://leetcode.cn/problems/maximum-sum-bst-in-binary-tree/
 
 #include <iostream>
 #include <climits>
@@ -13,40 +13,40 @@
 
 using namespace std;
 
-// ¶¨ÒåÊ÷½Úµã½á¹¹
+// å®šä¹‰æ ‘èŠ‚ç‚¹ç»“æž„
 struct TreeNode {
     int val;
     TreeNode* left;
     TreeNode* right;
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
-//½¨Á¢Ê÷×´½á¹¹ °üº¬×ó½Úµã£¬ÓÒ½ÚµãÒÔ¼°Öµ´óÐ¡
+//å»ºç«‹æ ‘çŠ¶ç»“æž„ åŒ…å«å·¦èŠ‚ç‚¹ï¼Œå³èŠ‚ç‚¹ä»¥åŠå€¼å¤§å°
 
-// ¶¨ÒåÒ»¸ö½á¹¹ÌåÀ´´æ´¢Ã¿¸ö×ÓÊ÷µÄÐÅÏ¢
+// å®šä¹‰ä¸€ä¸ªç»“æž„ä½“æ¥å­˜å‚¨æ¯ä¸ªå­æ ‘çš„ä¿¡æ¯
 struct Info {
-    int maxans;//ËÑË÷Ê÷ÖÐ×î´óÖµ
-    int minans;//ËÑË÷ÊéÖÐ×îÐ¡Öµ
-    bool isBst;//ÒÔµ±Ç°ÎªÊ×µÄÊýÊÇ·ñÈ«²¿ÊÇÒ»¸ö·ûºÏÌõ¼þµÄÊ÷
-    int maxBstSum;//Õâ¿ÃÊ÷ÖÐ×î´óµÄËÑË÷Ê÷×î´óÀÛ¼ÓºÍÓÐ¶à´ó
-    int sum;//Õû¿ÃÊ÷µÄÀÛ¼ÓºÍ
+    int maxans;//æœç´¢æ ‘ä¸­æœ€å¤§å€¼
+    int minans;//æœç´¢ä¹¦ä¸­æœ€å°å€¼
+    bool isBst;//ä»¥å½“å‰ä¸ºé¦–çš„æ•°æ˜¯å¦å…¨éƒ¨æ˜¯ä¸€ä¸ªç¬¦åˆæ¡ä»¶çš„æ ‘
+    int maxBstSum;//è¿™æ£µæ ‘ä¸­æœ€å¤§çš„æœç´¢æ ‘æœ€å¤§ç´¯åŠ å’Œæœ‰å¤šå¤§
+    int sum;//æ•´æ£µæ ‘çš„ç´¯åŠ å’Œ
 
     Info(int a,int b, bool c, int d,int e) : maxans(a), minans(b), isBst(c), maxBstSum(d), sum(e) {}
 };
 
-// µÝ¹éº¯Êý£¬·µ»Ø×ÓÊ÷µÄÐÅÏ¢
+// é€’å½’å‡½æ•°ï¼Œè¿”å›žå­æ ‘çš„ä¿¡æ¯
 Info f(TreeNode* x) {
     if (x == nullptr) {
         return Info(INT_MIN, INT_MAX, true, 0, 0);
     }
 
-    Info infol = f(x->left);//×óÊ÷È«¼¯ÐÅÏ¢
-    Info infor = f(x->right);//ÓÒÊ÷È«¼¯ÐÅÏ¢
+    Info infol = f(x->left);//å·¦æ ‘å…¨é›†ä¿¡æ¯
+    Info infor = f(x->right);//å³æ ‘å…¨é›†ä¿¡æ¯
 
     int maxVal = max(x->val, max(infol.maxans, infor.maxans));
     int minVal = min(x->val, min(infol.minans, infor.minans));
     bool isBST = infol.isBst && infor.isBst && infol.maxans < x->val && x->val < infor.minans;
     int sumans=infol.sum+infor.sum+x->val;
-    //µ±Ç°½ÚµãµÄÈ«¼¯ÐÅÏ¢
+    //å½“å‰èŠ‚ç‚¹çš„å…¨é›†ä¿¡æ¯
     int maxBSTSum = max(infol.maxBstSum, infor.maxBstSum);
     if (isBST) {
         maxBSTSum = max(maxBSTSum, sumans);
@@ -55,14 +55,14 @@ Info f(TreeNode* x) {
     return Info(maxVal, minVal, isBST, maxBSTSum, sumans);
 }
 
-// Ö÷º¯Êý£¬ÓÃÓÚÕÒµ½×î´óBST×ÓÊ÷µÄ´óÐ¡
+// ä¸»å‡½æ•°ï¼Œç”¨äºŽæ‰¾åˆ°æœ€å¤§BSTå­æ ‘çš„å¤§å°
 int largestBSTSubtree(TreeNode* root) {
     return f(root).maxBstSum;
 }
 
 
 int main() {
-    // ´´½¨Ò»¸öÊ¾ÀýÊ÷
+    // åˆ›å»ºä¸€ä¸ªç¤ºä¾‹æ ‘
     //       10
     //      /  \
     //     5    15
@@ -75,7 +75,7 @@ int main() {
     root->left->right = new TreeNode(8);
     root->right->right = new TreeNode(7);
 
-    // ÕÒµ½×î´óBST×ÓÊ÷µÄ´óÐ¡
+    // æ‰¾åˆ°æœ€å¤§BSTå­æ ‘çš„å¤§å°
     cout << "Largest BST Subtree Size: " << largestBSTSubtree(root) << endl;
 
     return 0;

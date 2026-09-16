@@ -8,7 +8,7 @@ int n, q;
 int cnt = 0;
 int a[N];
 
-// 自定义比较函数，用于qsort
+// 鑷畾涔夋瘮杈冨嚱鏁帮紝鐢ㄤ簬qsort
 int compare(const void *a, const void *b) {
     return (*(int *)a - *(int *)b);
 }

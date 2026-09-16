@@ -12,7 +12,7 @@ struct modify {
 	int pos, color, last;
 } c[maxn];
 int cntq, cntc, n, m, size, bnum;
-//cntcÊÇÊ±¼ä´Á±àºÅ cntqÊÇ²éÑ¯²Ù×÷±àºÅ
+//cntcæ˜¯æ—¶é—´æˆ³ç¼–å· cntqæ˜¯æŸ¥è¯¢æ“ä½œç¼–å·
 
 int cmp(query a, query b) {
 	return (belong[a.l] ^ belong[b.l]) ? belong[a.l] < belong[b.l] :

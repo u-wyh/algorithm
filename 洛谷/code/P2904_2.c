@@ -1,6 +1,6 @@
 // https://www.luogu.com.cn/problem/P2904
 #include<stdio.h>
-#include<limits.h> // ÓÃÓÚINT_MAX
+#include<limits.h> // ç”¨äºINT_MAX
 
 #define MAX_N 10010
 
@@ -11,32 +11,32 @@ int m, n;
 
 int main() {
     scanf("%d %d", &n, &m);
-    int inf = INT_MAX; // Ê¹ÓÃINT_MAX×÷ÎªÎŞÏŞ´ó
+    int inf = INT_MAX; // ä½¿ç”¨INT_MAXä½œä¸ºæ— é™å¤§
     for (int i = 1; i <= n; i++) {
-        f[i] = inf; // ³õÊ¼»¯f[i]ÎªÎŞÏŞ´ó
+        f[i] = inf; // åˆå§‹åŒ–f[i]ä¸ºæ— é™å¤§
         scanf("%d", &w[i]);
         if (i > 1) {
-            sum[i] = sum[i - 1] + w[i]; // ¼ÆËãÇ°×ººÍ£¬×¢Òâi>1Ê±²Å¿ªÊ¼ÀÛ¼Ó
+            sum[i] = sum[i - 1] + w[i]; // è®¡ç®—å‰ç¼€å’Œï¼Œæ³¨æ„i>1æ—¶æ‰å¼€å§‹ç´¯åŠ 
         } else {
-            sum[i] = w[i]; // µÚÒ»¸öÔªËØµÄÇ°×ººÍ¾ÍÊÇËü±¾Éí
+            sum[i] = w[i]; // ç¬¬ä¸€ä¸ªå…ƒç´ çš„å‰ç¼€å’Œå°±æ˜¯å®ƒæœ¬èº«
         }
     }
     for (int i = 1; i <= n; i++) {
-        sum[i] += 2 * m; // Ã¿¸öÔªËØ¼ÓÉÏ2*m
+        sum[i] += 2 * m; // æ¯ä¸ªå…ƒç´ åŠ ä¸Š2*m
     }
 
     for (int i = 1; i <= n; i++) {
         for (int j = i; j <= n; j++) {
-            if (f[j - i] != inf) { // È·±£f[j-i]²»ÊÇÎŞÏŞ´ó²Å½øĞĞ¸üĞÂ
-                f[j] = (f[j] < f[j - i] + sum[i]) ? f[j] : f[j - i] + sum[i]; // ¸üĞÂf[j]
+            if (f[j - i] != inf) { // ç¡®ä¿f[j-i]ä¸æ˜¯æ— é™å¤§æ‰è¿›è¡Œæ›´æ–°
+                f[j] = (f[j] < f[j - i] + sum[i]) ? f[j] : f[j - i] + sum[i]; // æ›´æ–°f[j]
             }
         }
     }
 
     if (f[n] == inf) {
-        printf("No solution\n"); // Èç¹ûÃ»ÓĞÕÒµ½¿ÉĞĞ½â
+        printf("No solution\n"); // å¦‚æœæ²¡æœ‰æ‰¾åˆ°å¯è¡Œè§£
     } else {
-        printf("%d\n", f[n] - m); // Êä³ö½â£¬¼õÈ¥mÒòÎª²»ĞèÒª»®»ØÀ´
+        printf("%d\n", f[n] - m); // è¾“å‡ºè§£ï¼Œå‡å»må› ä¸ºä¸éœ€è¦åˆ’å›æ¥
     }
 
     return 0;

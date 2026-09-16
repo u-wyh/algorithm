@@ -9,9 +9,9 @@ int Next[MAXN<<1];
 int to[MAXN<<1];
 int cnt=1;
 int deep[MAXN],maxdeep[MAXN];
-// dist[i] : ´Ó¹æ¶¨µÄÍ·½Úµã³ö·¢£¬×ßµ½iµÄ¾àÀë
+// dist[i] : ä»è§„å®šçš„å¤´èŠ‚ç‚¹å‡ºå‘ï¼Œèµ°åˆ°içš„è·ç¦»
 int dist[MAXN];
-// last[i] : ´Ó¹æ¶¨µÄÍ·½Úµã³ö·¢£¬i½ÚµãµÄÉÏÒ»¸ö½Úµã
+// last[i] : ä»è§„å®šçš„å¤´èŠ‚ç‚¹å‡ºå‘ï¼ŒièŠ‚ç‚¹çš„ä¸Šä¸€ä¸ªèŠ‚ç‚¹
 int last[MAXN];
 int start,en,diameter;
 
@@ -27,14 +27,14 @@ void dfs(int u,int f){
 
 void road() {
     dfs(1, 0);
-    //Õâ¸öÆğµãÊÇËæ»úµÄ  Ò»°ã¶¼ÊÇ1
+    //è¿™ä¸ªèµ·ç‚¹æ˜¯éšæœºçš„  ä¸€èˆ¬éƒ½æ˜¯1
     start = 1;
     for (int i = 2; i <= n; i++) {
         if (dist[i] > dist[start]) {
             start = i;
         }
     }
-    //Ñ¡ÔñÀëËû¾àÀë×î´óµÄµã  ×÷ÎªÍ·½áµã
+    //é€‰æ‹©ç¦»ä»–è·ç¦»æœ€å¤§çš„ç‚¹  ä½œä¸ºå¤´ç»“ç‚¹
     dfs(start, 0);
     en = 1;
     for (int i = 2; i <= n; i++) {
@@ -44,7 +44,7 @@ void road() {
     }
     diameter = dist[en];
 }
-//Á½´Îµ÷ÓÃdfs
+//ä¸¤æ¬¡è°ƒç”¨dfs
 
 void dfs1(int u,int f){
     deep[u]=deep[f]+1;

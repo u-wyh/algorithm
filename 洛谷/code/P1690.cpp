@@ -3,17 +3,17 @@
 using namespace std;
 long long n,t[1001][1001],m,k[1001];
 bool flag[1001];
-long long ans=1e18;//´ğ°¸³õÊ¼»¯ÎªÎŞÇî´ó¡£
-void dfs(int now,int m1,long long sum){//ÉîËÑ¡£
+long long ans=1e18;//ç­”æ¡ˆåˆå§‹åŒ–ä¸ºæ— ç©·å¤§ã€‚
+void dfs(int now,int m1,long long sum){//æ·±æœã€‚
     if(!m1){
         ans=min(ans,sum+t[now][n]);
         return;
 	}
     for(int i=1;i<=m;i++){
         if(!flag[i]){
-            flag[i]=1;//¸üĞÂ±ê¼ÇÊı×é¡£
+            flag[i]=1;//æ›´æ–°æ ‡è®°æ•°ç»„ã€‚
             dfs(k[i],m1-1,sum+t[now][k[i]]);
-            flag[i]=0;//»ØËİ¡£
+            flag[i]=0;//å›æº¯ã€‚
         }
     }
 }
@@ -22,11 +22,11 @@ int main()
 	cin>>n;
 	for(int i=1;i<=n;i++)
 	for(int j=1;j<=n;j++)
-	cin>>t[i][j];//½¨µ¥Ïò±ß¡£
+	cin>>t[i][j];//å»ºå•å‘è¾¹ã€‚
 	cin>>m;
 	for(int i=1;i<=m;i++)
 	cin>>k[i];
-    //Floyd×î¶ÌÂ·¡£
+    //Floydæœ€çŸ­è·¯ã€‚
 	for(int k=1;k<=n;k++)
     for(int i=1;i<=n;i++)
     for(int j=1;j<=n;j++)

@@ -13,7 +13,7 @@ int val[MAXN],cost[MAXN];
 int main()
 {
     cin>>m>>v>>n;
-    memset(f,128,sizeof(f));//��ʼ��Ϊ�Ƚ�Сֵ
+    memset(f,128,sizeof(f));//初始化为比较小值
     for(int i=1;i<=n;i++){
         cin>>cost[i]>>val[i];
     }

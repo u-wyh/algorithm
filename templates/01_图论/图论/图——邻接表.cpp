@@ -5,13 +5,13 @@ const int MAXM = 21;
 
 int t;
 
-//ÁÚ½Ó¾ØÕóÒÔ¼°ÁÚ½Ó±í±äÁ¿
+//é‚»æ¥çŸ©é˜µä»¥åŠé‚»æ¥è¡¨å˜é‡
 int n,m;
 int nums[MAXN][MAXN];
 int edge[MAXM][3];
 vector<vector<pair<int ,int>>>graph;
 
-//Á´Ê½Ç°ÏòĞÇ±äÁ¿
+//é“¾å¼å‰å‘æ˜Ÿå˜é‡
 int head[MAXN];
 int Next[MAXM];
 int to[MAXM];
@@ -24,29 +24,29 @@ void build(){
             nums[i][j]=0;
         }
     }
-    //ÁÚ½Ó¾ØÕóµÄÇå¿Õ
+    //é‚»æ¥çŸ©é˜µçš„æ¸…ç©º
 
     graph.resize(n+1);
     graph.clear();
-    //ÁÚ½Ó±íµÄÇå¿Õ
+    //é‚»æ¥è¡¨çš„æ¸…ç©º
 
     cnt=1;
     memset(head,0,sizeof(head));
-    //Á´Ê½Ç°ÏòĞÇÖ»ĞèÒªÇå¿Õhead¾Í¿ÉÒÔ  ÆäËûµÄÊı¾İ»¹»á±»¸²¸Ç
+    //é“¾å¼å‰å‘æ˜Ÿåªéœ€è¦æ¸…ç©ºheadå°±å¯ä»¥  å…¶ä»–çš„æ•°æ®è¿˜ä¼šè¢«è¦†ç›–
 }
 
 void directgraph(){
-    //ÁÚ½Ó¾ØÕó½¨Í¼
+    //é‚»æ¥çŸ©é˜µå»ºå›¾
     for(int i=1;i<=m;i++){
         nums[edge[i][0]][edge[i][1]]=edge[i][2];
     }
 
-    //ÁÚ½Ó±í½¨Í¼
+    //é‚»æ¥è¡¨å»ºå›¾
     for(int i=1;i<=m;i++){
         graph[edge[i][0]].push_back({edge[i][1],edge[i][2]});
     }
 
-    //Á´Ê½Ç°ÏòĞÇ½¨Í¼
+    //é“¾å¼å‰å‘æ˜Ÿå»ºå›¾
     for(int i=1;i<=m;i++){
         Next[cnt]=head[edge[i][0]];
         to[cnt]=edge[i][1];
@@ -57,8 +57,8 @@ void directgraph(){
 
 void showgraph(){
     cout<<endl;
-    //ÁÚ½Ó¾ØÕó
-    cout<<"ÁÚ½Ó¾ØÕó±éÀú£º \n";
+    //é‚»æ¥çŸ©é˜µ
+    cout<<"é‚»æ¥çŸ©é˜µéå†ï¼š \n";
     for(int i=1;i<=n;i++){
         for(int j=1;j<=n;j++){
             printf("%3d",nums[i][j]);
@@ -67,10 +67,10 @@ void showgraph(){
     }
     cout<<endl;
 
-    //ÁÚ½Ó±í
-    cout<<"ÁÚ½Ó±í±éÀú£º\n";
+    //é‚»æ¥è¡¨
+    cout<<"é‚»æ¥è¡¨éå†ï¼š\n";
     for(int i=1;i<=n;i++){
-        cout<<i<<"(ÁÚ¾Ó£¬±ßÈ¨): ";
+        cout<<i<<"(é‚»å±…ï¼Œè¾¹æƒ): ";
         for(int j=0;j<graph[i].size();j++){
             cout<<"("<<graph[i][j].first<<" ,"<<graph[i][j].second<<" )";
         }
@@ -78,10 +78,10 @@ void showgraph(){
     }
     cout<<endl;
 
-    //Á´Ê½Ç°ÏòĞÇ
-    cout<<"Á´Ê½Ç°ÏòĞÇÊä³ö£º\n";
+    //é“¾å¼å‰å‘æ˜Ÿ
+    cout<<"é“¾å¼å‰å‘æ˜Ÿè¾“å‡ºï¼š\n";
     for(int i=1;i<=n;i++){
-        cout<<i<<"(ÁÚ¾Ó£¬±ßÈ¨): ";
+        cout<<i<<"(é‚»å±…ï¼Œè¾¹æƒ): ";
         for(int j=head[i];j>0;j=Next[j]){
             cout<<"("<<to[j]<<" ,"<<weight[j]<<" )";
         }
@@ -98,7 +98,7 @@ int main()
         for(int i=1;i<=m;i++){
             cin>>edge[i][0]>>edge[i][1]>>edge[i][2];
         }
-        //ÓĞÏò´øÈ¨Í¼
+        //æœ‰å‘å¸¦æƒå›¾
         build();
         directgraph();
         showgraph();

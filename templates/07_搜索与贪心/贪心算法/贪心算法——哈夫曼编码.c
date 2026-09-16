@@ -2,14 +2,14 @@
 #include<limits.h>
 #include <stdlib.h>
 
-// ½»»»Á½¸öÕûÊıµÄÖµ
+// äº¤æ¢ä¸¤ä¸ªæ•´æ•°çš„å€¼
 void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
 
-// ÏòÉÏµ÷Õû¶Ñ
+// å‘ä¸Šè°ƒæ•´å †
 void heapify(int arr[], int n, int i) {
     int smallest = i;
     int left = 2 * i + 1;
@@ -25,7 +25,7 @@ void heapify(int arr[], int n, int i) {
     }
 }
 
-// µ¯³ö¶Ñ¶¥ÔªËØ£¨¼´×îĞ¡ÔªËØ£©
+// å¼¹å‡ºå †é¡¶å…ƒç´ ï¼ˆå³æœ€å°å…ƒç´ ï¼‰
 int extractMin(int arr[], int *n) {
     if (*n <= 0) return INT_MAX;
     if (*n == 1) {
@@ -39,7 +39,7 @@ int extractMin(int arr[], int *n) {
     return root;
 }
 
-// ²åÈëÔªËØµ½¶ÑÖĞ
+// æ’å…¥å…ƒç´ åˆ°å †ä¸­
 void insertKey(int arr[], int *n, int k) {
     (*n)++;
     int i = *n - 1;
@@ -50,16 +50,16 @@ void insertKey(int arr[], int *n, int k) {
     arr[i] = k;
 }
 
-// Ö÷º¯Êı£ºÁ¬½Ó¹÷×Ó
+// ä¸»å‡½æ•°ï¼šè¿æ¥æ£å­
 int connectSticks(int arr[], int n) {
     int heapSize = n;
     int sum = 0;
 
-    // ¹¹½¨³õÊ¼¶Ñ
+    // æ„å»ºåˆå§‹å †
     for (int i = n / 2 - 1; i >= 0; i--)
         heapify(arr, heapSize, i);
 
-    // ²»¶Ï´Ó¶ÑÖĞÈ¡³öÁ½¸ö×îĞ¡ÔªËØ£¬Ïà¼ÓºóÔÙ·Å»Ø¶ÑÖĞ
+    // ä¸æ–­ä»å †ä¸­å–å‡ºä¸¤ä¸ªæœ€å°å…ƒç´ ï¼Œç›¸åŠ åå†æ”¾å›å †ä¸­
     while (heapSize > 1) {
         int first = extractMin(arr, &heapSize);
         int second = extractMin(arr, &heapSize);

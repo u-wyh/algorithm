@@ -9,8 +9,8 @@
 using namespace std;
 const int maxn=10005;
 
-//tree[0]Î¬»¤µÄÊÇÊ÷£¬tree[1]Î¬»¤µÄÊÇÊ÷ºÍÊ÷Ãç¡£
-//tree[0].Ans,tree[1].Ans·Ö±ğ±íÊ¾×Ü¹²±»¿³µôµÄÊ÷/Ê÷ÓëÊ÷ÃçµÄ×ÜÊı¡£
+//tree[0]ç»´æŠ¤çš„æ˜¯æ ‘ï¼Œtree[1]ç»´æŠ¤çš„æ˜¯æ ‘å’Œæ ‘è‹—ã€‚
+//tree[0].Ans,tree[1].Ansåˆ†åˆ«è¡¨ç¤ºæ€»å…±è¢«ç æ‰çš„æ ‘/æ ‘ä¸æ ‘è‹—çš„æ€»æ•°ã€‚
 struct Segtree{
 	int sum[maxn*4],ly[maxn*4],Ans;
 	Segtree(){

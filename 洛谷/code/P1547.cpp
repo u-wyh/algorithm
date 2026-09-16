@@ -7,7 +7,7 @@
 using namespace std;
 
 int fa[200004];
-int n,m,l,r,tot,ans,k;//totÊÇºÏ²¢´ÎÊı  ×î¶àn-1
+int n,m,l,r,tot,ans,k;//totæ˜¯åˆå¹¶æ¬¡æ•°  æœ€å¤šn-1
 
 inline int read(){
 	int x=0,f=1;
@@ -24,9 +24,9 @@ inline int read(){
 }
 
 struct node{
-	int fir;//µÚÒ»¸öµã
-	int sec;//µÚ¶ş¸öµã
-	int data;//±ßÈ¨
+	int fir;//ç¬¬ä¸€ä¸ªç‚¹
+	int sec;//ç¬¬äºŒä¸ªç‚¹
+	int data;//è¾¹æƒ
 }edge[400005];
 
 inline int find(int x){
@@ -42,8 +42,8 @@ inline void kruskal(){
 	for(register int i=1;i<=m;i++){
 		l=find(edge[i].fir);
 		r=find(edge[i].sec);
-		if(l==r)continue ;//Èç¹ûÁªÍ¨¾ÍÌø¹ı
-		fa[l]=r;//·ñÔò¾ÍºÏ²¢
+		if(l==r)continue ;//å¦‚æœè”é€šå°±è·³è¿‡
+		fa[l]=r;//å¦åˆ™å°±åˆå¹¶
 		k=edge[i].data;
 		tot++;
 		if(tot==n-1)break;
@@ -54,15 +54,15 @@ int main(){
 	n=read();
 	m=read();
 	for(register int i=1;i<=n;i++)
-        fa[i]=i;//³õÊ¼»¯²¢²é¼¯
+        fa[i]=i;//åˆå§‹åŒ–å¹¶æŸ¥é›†
 	for(register int i=1;i<=m;i++){
 		edge[i].fir=read();
 		edge[i].sec=read();
 		edge[i].data=read();
 	}
-	sort(edge+1,edge+m+1,cmp);//½«±ßÈ¨ÅÅĞò£¬Ã¿´Î¼ÓĞ¡µÄ
+	sort(edge+1,edge+m+1,cmp);//å°†è¾¹æƒæ’åºï¼Œæ¯æ¬¡åŠ å°çš„
 	kruskal();
-	cout<<k;//ÎÒÏ²»¶cout...
+	cout<<k;//æˆ‘å–œæ¬¢cout...
 
 	return 0;
 }

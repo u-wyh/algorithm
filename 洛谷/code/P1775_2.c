@@ -7,8 +7,8 @@
 int a[MAX_N], f[MAX_N][MAX_N], n;
 
 int dfs(int l, int r) {
-    if (l == r) return 0; // ×Ô¼ºÓë×Ô¼ººÏ²¢£¬´ú¼ÛÎª0
-    if (f[l][r] != INT_MAX) return f[l][r]; // ¼ÇÒä»¯£¬ÒÑ¾­Çó½âµÄÖ±½Ó·µ»Ø
+    if (l == r) return 0; // è‡ªå·±ä¸è‡ªå·±åˆå¹¶ï¼Œä»£ä»·ä¸º0
+    if (f[l][r] != INT_MAX) return f[l][r]; // è®°å¿†åŒ–ï¼Œå·²ç»æ±‚è§£çš„ç›´æ¥è¿”å›
     int min_cost = INT_MAX;
     for (int i = l; i < r; ++i) {
         int cost = dfs(l, i) + dfs(i + 1, r) + a[r] - a[l - 1];
@@ -27,7 +27,7 @@ int main() {
     }
     for (int i = 1; i <= n; i++) {
         scanf("%d", &a[i]);
-        a[i] += a[i - 1]; // Ç°×ººÍ
+        a[i] += a[i - 1]; // å‰ç¼€å’Œ
     }
     printf("%d\n", dfs(1, n));
     return 0;

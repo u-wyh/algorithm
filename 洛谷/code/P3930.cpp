@@ -17,16 +17,16 @@ struct node{
 int main()
 {
 	int n;
-	while(cin>>n){//·´¸´¶ÁÈëÊı¾İ
-		int sx,sy,tx,ty;//ÆğµãµÄx×ø±êy×ø±êºÍÖÕµãµÄx×ø±êy×ø±ê
+	while(cin>>n){//åå¤è¯»å…¥æ•°æ®
+		int sx,sy,tx,ty;//èµ·ç‚¹çš„xåæ ‡yåæ ‡å’Œç»ˆç‚¹çš„xåæ ‡yåæ ‡
 		for(register int i=1;i<=n;i++){
 			scanf("%s",mp[i]+1);
 			for(register int j=1;j<=n;j++){
-				if(mp[i][j]=='O'){//¼ÇÂ¼Æğµã
+				if(mp[i][j]=='O'){//è®°å½•èµ·ç‚¹
 					sx=i;
 					sy=j;
 				}
-				if(mp[i][j]=='X'){//¼ÇÂ¼ÖÕµã
+				if(mp[i][j]=='X'){//è®°å½•ç»ˆç‚¹
 					tx=i;
 					ty=j;
 				}
@@ -35,7 +35,7 @@ int main()
 		memset(vis,0,sizeof(vis));
 		for(register int x=1;x<=n;x++){
 			for(register int y=1;y<=n;y++){
-				if(mp[x][y]=='P'){//Ê¿±øÖ»ÄÜ¹¥»÷µ½Á½¸öµã
+				if(mp[x][y]=='P'){//å£«å…µåªèƒ½æ”»å‡»åˆ°ä¸¤ä¸ªç‚¹
 					if(x==8)
                         continue;
 					if(y>1)
@@ -49,7 +49,7 @@ int main()
                             continue;
 						vis[ax][ay]+=2;
 					}
-				}else if(mp[x][y]=='B'){//Ö÷½Ì¹¥»÷·¶Î§
+				}else if(mp[x][y]=='B'){//ä¸»æ•™æ”»å‡»èŒƒå›´
 					for(register int i=0;i<4;i++){
 						int ax=x+bx[i],ay=y+by[i];
 						while(!(ax<1 || ax>n || ay<1 || ay>n)){
@@ -58,7 +58,7 @@ int main()
 							ay+=by[i];
 						}
 					}
-				}else if(mp[x][y]=='C'){//³Ç±¤¹¥»÷·¶Î§
+				}else if(mp[x][y]=='C'){//åŸå ¡æ”»å‡»èŒƒå›´
 					for(register int i=0;i<4;i++){
 						int ax=x+rx[i],ay=y+ry[i];
 						while(!(ax<1 || ax>n || ay<1 || ay>n)){
@@ -67,7 +67,7 @@ int main()
 							ay+=ry[i];
 						}
 					}
-				}else if(mp[x][y]=='Q'){//»Êºó¹¥»÷·¶Î§ÄÚµÄ
+				}else if(mp[x][y]=='Q'){//çš‡åæ”»å‡»èŒƒå›´å†…çš„
 					for(register int i=0;i<4;i++){
 						int ax=x+rx[i],ay=y+ry[i];
 						while(!(ax<1 || ax>n || ay<1 || ay>n)){
@@ -85,7 +85,7 @@ int main()
 						}
 					}
 				}else if(mp[x][y]=='X'){
-					for(register int i=0;i<4;i++){//¹úÍõµÄ//»Êºó¹¥»÷·¶Î§ÄÚµÄ
+					for(register int i=0;i<4;i++){//å›½ç‹çš„//çš‡åæ”»å‡»èŒƒå›´å†…çš„
 						int ax=x+rx[i],ay=y+ry[i];
 						if(!(ax<1 || ax>n || ay<1 || ay>n))vis[ax][ay]+=32;
 					}
@@ -100,11 +100,11 @@ int main()
 			puts("-1");
 			continue;
 		}
-		memset(vit,0,sizeof(vit));//³õÊ¼»¯
+		memset(vit,0,sizeof(vit));//åˆå§‹åŒ–
 		queue<node> q;
 		q.push(node{sx,sy,0});
 		vit[sx][sy]=1;
-		while(!q.empty()){//¿ªÊ¼½øĞĞ¹ã¶ÈÓÅÏÈËÑË÷
+		while(!q.empty()){//å¼€å§‹è¿›è¡Œå¹¿åº¦ä¼˜å…ˆæœç´¢
 			node f=q.front();
 			q.pop();
 			int x=f.x,y=f.y,dis=f.dis;
@@ -122,20 +122,20 @@ int main()
 					break;
 				}
 				if(vis[ax][ay])continue;
-				if(mp[ax][ay]=='P'){//Èç¹ûÏÂÒ»²½ÊÇÊ¿±ø
+				if(mp[ax][ay]=='P'){//å¦‚æœä¸‹ä¸€æ­¥æ˜¯å£«å…µ
 					mp[ax][ay]='.';
 					if(ax<8){
 						if(ay>1)mp[ax][ay-1]--;
 						if(ay<8)mp[ax][ay+1]--;
 					}
-				}else if(mp[ax][ay]=='K'){//Èç¹ûÏÂÒ»²½ÊÇÆïÊ¿
+				}else if(mp[ax][ay]=='K'){//å¦‚æœä¸‹ä¸€æ­¥æ˜¯éª‘å£«
 					mp[ax][ay]='.';
 					for(register int i=0;i<8;i++){
 						int cxk=ax+nx[i],cy=ay+ny[i];
 						if(cxk<1 || cxk>n || cy<1 || cy>n)continue;
 						vis[cxk][cy]-=2;
 					}
-				}else if(mp[ax][ay]=='B'){//Èç¹ûÏÂÒ»²½ÊÇÖ÷½Ì
+				}else if(mp[ax][ay]=='B'){//å¦‚æœä¸‹ä¸€æ­¥æ˜¯ä¸»æ•™
 					mp[ax][ay]='.';
 					for(register int i=0;i<4;i++){
 						int cx=ax+bx[i],cy=ay+by[i];
@@ -145,7 +145,7 @@ int main()
 							cy+=by[i];
 						}
 					}
-				}else if(mp[ax][ay]=='C'){//Èç¹ûÏÂÒ»²½ÊÇ³Ç±¤
+				}else if(mp[ax][ay]=='C'){//å¦‚æœä¸‹ä¸€æ­¥æ˜¯åŸå ¡
 					mp[ax][ay]='.';
 					for(register int i=0;i<4;i++){
 						int cx=ax+rx[i],cy=ay+ry[i];
@@ -155,7 +155,7 @@ int main()
 							cy+=ry[i];
 						}
 					}
-				}else if(mp[ax][ay]=='Q'){//Èç¹ûÏÂÒ»²½ÊÇ»Êºó
+				}else if(mp[ax][ay]=='Q'){//å¦‚æœä¸‹ä¸€æ­¥æ˜¯çš‡å
 					mp[ax][ay]='.';
 					for(register int i=0;i<4;i++){
 						int cx=ax+bx[i],cy=ay+by[i];
@@ -178,5 +178,5 @@ int main()
 			}
 		}
 	}
-	return 0;//¿ÉÓĞ¿ÉÎŞ
+	return 0;//å¯æœ‰å¯æ— 
 }

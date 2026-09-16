@@ -1,25 +1,25 @@
-//±³°üÎÊÌâ  ×î³¤ÏÂ½µ×ÓĞòÁĞ
+//èƒŒåŒ…é—®é¢˜  æœ€é•¿ä¸‹é™å­åºåˆ—
 #include <stdio.h>
 #include <stdlib.h>
 
-// ½á¹¹Ìå¶¨ÒåĞÅ·â
+// ç»“æ„ä½“å®šä¹‰ä¿¡å°
 typedef struct {
     int width;
     int height;
 } Envelope;
 
-// ±È½Ïº¯Êı£¬ÓÃÓÚqsort
+// æ¯”è¾ƒå‡½æ•°ï¼Œç”¨äºqsort
 int compare(const void* a, const void* b) {
     Envelope* envA = (Envelope*)a;
     Envelope* envB = (Envelope*)b;
     if (envA->width != envB->width) {
         return envA->width - envB->width;
     } else {
-        return envB->height - envA->height; // ×¢ÒâÕâÀïÊÇ½µĞò
+        return envB->height - envA->height; // æ³¨æ„è¿™é‡Œæ˜¯é™åº
     }
 }
 
-// ¶ş·Ö²éÕÒ
+// äºŒåˆ†æŸ¥æ‰¾
 int binarySearch(int* ends, int len, int num) {
     int l = 0, r = len - 1, m, ans = -1;
     while (l <= r) {
@@ -34,11 +34,11 @@ int binarySearch(int* ends, int len, int num) {
     return ans;
 }
 
-// ¶íÂŞË¹Ì×ÍŞĞÅ·âÎÊÌâ
+// ä¿„ç½—æ–¯å¥—å¨ƒä¿¡å°é—®é¢˜
 int maxEnvelopes(Envelope* envelopes, int envelopesSize) {
     if (envelopesSize == 0) return 0;
 
-    // Ê¹ÓÃqsort½øĞĞÅÅĞò
+    // ä½¿ç”¨qsortè¿›è¡Œæ’åº
     qsort(envelopes, envelopesSize, sizeof(Envelope), compare);
 
     int* ends = (int*)malloc(envelopesSize * sizeof(int));
@@ -55,17 +55,17 @@ int maxEnvelopes(Envelope* envelopes, int envelopesSize) {
     }
 
     int result = len;
-    free(ends); // ÊÍ·ÅÄÚ´æ
+    free(ends); // é‡Šæ”¾å†…å­˜
     return result;
 }
 
 int main() {
-    // Ê¾ÀıÊäÈë
+    // ç¤ºä¾‹è¾“å…¥
     Envelope envelopes[] = {{5, 4}, {6, 4}, {6, 7}, {2, 3}};
     int envelopesSize = sizeof(envelopes) / sizeof(envelopes[0]);
 
-    // µ÷ÓÃº¯Êı²¢Êä³ö½á¹û
-    printf("×î¶àÄÜ×é³ÉÒ»×é'¶íÂŞË¹Ì×ÍŞ'ĞÅ·âµÄ¸öÊıÎª: %d\n", maxEnvelopes(envelopes, envelopesSize));
+    // è°ƒç”¨å‡½æ•°å¹¶è¾“å‡ºç»“æœ
+    printf("æœ€å¤šèƒ½ç»„æˆä¸€ç»„'ä¿„ç½—æ–¯å¥—å¨ƒ'ä¿¡å°çš„ä¸ªæ•°ä¸º: %d\n", maxEnvelopes(envelopes, envelopesSize));
 
     return 0;
 }

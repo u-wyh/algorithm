@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-// ¶¨ÒåmaxºÍminº¯Êı
+// å®šä¹‰maxå’Œminå‡½æ•°
 int max(int a, int b) {
     return a > b ? a : b;
 }
@@ -18,12 +18,12 @@ int f(char *a, int n, int x) {
     char b2 = a[x + 1];
     int i;
 
-    // ÍùÇ°¿´
+    // å¾€å‰çœ‹
     for (i = x; i >= 0 && (a[i] == a1 || a[i] == 'w'); i--) {
         s++;
     }
 
-    // Íùºó¿´
+    // å¾€åçœ‹
     for (i = x + 1; i < n && (a[i] == b2 || a[i] == 'w'); i++) {
         s++;
     }
@@ -33,17 +33,17 @@ int f(char *a, int n, int x) {
 
 int main() {
     int ans = -1, n;
-    char a[3000]; // ¼ÙÉèÊäÈë×Ö·û´®³¤¶È²»³¬¹ı1000£¬ÎªÁË´¦ÀíÑ­»·¸´ÖÆ£¬·ÖÅäÈı±¶¿Õ¼ä
+    char a[3000]; // å‡è®¾è¾“å…¥å­—ç¬¦ä¸²é•¿åº¦ä¸è¶…è¿‡1000ï¼Œä¸ºäº†å¤„ç†å¾ªç¯å¤åˆ¶ï¼Œåˆ†é…ä¸‰å€ç©ºé—´
 
     scanf("%d%s", &n, a);
     int len = strlen(a);
-    // ¸´ÖÆ×Ö·û´®ÒÔ´¦ÀíÑ­»·
+    // å¤åˆ¶å­—ç¬¦ä¸²ä»¥å¤„ç†å¾ªç¯
     char temp[3000 * 3 + 1]; // +1 for the null terminator
     strcpy(temp, a);
     strcat(temp, a);
     strcat(temp, a);
 
-    // ±éÀúÖĞ¼äµÄÄÇÒ»¶Î
+    // éå†ä¸­é—´çš„é‚£ä¸€æ®µ
     for (int i = len; i < 2 * len; i++) {
         if (temp[i] == temp[i + 1]) {
             continue;
@@ -60,9 +60,9 @@ int main() {
         ans = max(ans, f(temp, 3 * len, i));
     }
 
-    ans = min(ans, n); // ×î³¤Ò²²»ÄÜ±È×Ü³¤³¤
+    ans = min(ans, n); // æœ€é•¿ä¹Ÿä¸èƒ½æ¯”æ€»é•¿é•¿
     if (ans == -1) {
-        ans = n; // ³öÏÖÕâÖÖÇé¿ö±Ø¶¨ÊÇÒ»Â·continue¹ıÀ´µÄ
+        ans = n; // å‡ºç°è¿™ç§æƒ…å†µå¿…å®šæ˜¯ä¸€è·¯continueè¿‡æ¥çš„
     }
 
     printf("%d\n", ans);

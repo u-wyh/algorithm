@@ -15,7 +15,7 @@ bool cmp(node a,node b){
     return a.pos<b.pos;
 }
 
-// 当前的指标值是v，返回这是第几号指标
+// 褰撳墠鐨勬寚鏍囧�兼槸v锛岃繑鍥炶繖鏄鍑犲彿鎸囨爣
 int Rank(int v) {
 	int left = 1, right = m, mid;
 	int ans = 0;

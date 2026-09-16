@@ -93,7 +93,7 @@ int main()
 }
 
 /*
-±©Á¦Ëã·¨
+æš´åŠ›ç®—æ³•
 struct node{
     int l,r;
 }nums[MAXN];
@@ -117,7 +117,7 @@ int main()
         dp[i]=1e9;
     }
     for(int i = a*2; i <= len; i += 2) {
-		if(ok[i]) continue; //¸ÃÎ»ÖÃÈô²»ÄÜ×÷Îª×ÓÏß¶ÎµÄ¶Ëµã¾ÍÌø¹ý
+		if(ok[i]) continue; //è¯¥ä½ç½®è‹¥ä¸èƒ½ä½œä¸ºå­çº¿æ®µçš„ç«¯ç‚¹å°±è·³è¿‡
 		for(int j = a; j <= b; j ++) {
 			int k = i - j*2;
 			if(k < 0) continue;

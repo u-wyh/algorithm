@@ -5,9 +5,9 @@ const int MAXN = 1e5+5;
 const int MAXT = MAXN * 80;
 
 int n, m;
-// Ô­Ê¼Êı×é
+// åŸå§‹æ•°ç»„
 int arr[MAXN];
-//ÓÃÓÚÀëÉ¢»¯µÄÊı×é
+//ç”¨äºç¦»æ•£åŒ–çš„æ•°ç»„
 int help[MAXN<<1];
 int tot,t;
 
@@ -16,12 +16,12 @@ struct node {
     int l,r,v;
 }nums[MAXN];
 
-// ¿É³Ö¾Ã»¯Ïß¶ÎÊ÷
-int root[MAXN<<1];//±íÊ¾ ÀëÉ¢»¯ºó±àºÅÎªiµÄÊé µÄÏß¶ÎÊ÷
-//³õÊ¼Ê±×î¶àÓĞMAXN¸ö±àºÅ  ÔÙ¼ÓÉÏºóĞøĞŞ¸Ä²Ù×÷µÄ¸öÊı
+// å¯æŒä¹…åŒ–çº¿æ®µæ ‘
+int root[MAXN<<1];//è¡¨ç¤º ç¦»æ•£åŒ–åç¼–å·ä¸ºiçš„ä¹¦ çš„çº¿æ®µæ ‘
+//åˆå§‹æ—¶æœ€å¤šæœ‰MAXNä¸ªç¼–å·  å†åŠ ä¸Šåç»­ä¿®æ”¹æ“ä½œçš„ä¸ªæ•°
 int ls[MAXT];
 int rs[MAXT];
-// ¿É³Ö¾Ã»¯Ïß¶ÎÊ÷µÄ½Úµã¿Õ¼ä¼ÆÊı
+// å¯æŒä¹…åŒ–çº¿æ®µæ ‘çš„èŠ‚ç‚¹ç©ºé—´è®¡æ•°
 int cnt = 0;
 int tree[MAXT];
 
@@ -53,7 +53,7 @@ int getrank(int val){
     return ans;
 }
 
-// ½¨Ê÷£¬·µ»ØÍ·½Úµã±àºÅ
+// å»ºæ ‘ï¼Œè¿”å›å¤´èŠ‚ç‚¹ç¼–å·
 int build(int l, int r) {
     int rt = ++cnt;
     if (l == r) {
@@ -66,15 +66,15 @@ int build(int l, int r) {
     return rt;
 }
 
-//Ôö¼ÓÎ»ÖÃjobiµÄÊıÄ¿Îªjobv
+//å¢åŠ ä½ç½®jobiçš„æ•°ç›®ä¸ºjobv
 int update(int jobi, int jobv, int l, int r, int i) {
-    int rt = ++cnt;//ĞÂ½¨Ò»¸ö½Úµã£¨ÑØÍ¾½Úµã£©
+    int rt = ++cnt;//æ–°å»ºä¸€ä¸ªèŠ‚ç‚¹ï¼ˆæ²¿é€”èŠ‚ç‚¹ï¼‰
     ls[rt] = ls[i];
     rs[rt] = rs[i];
     tree[rt] = tree[i]+jobv;
-    //¿½±´Ô­ÓĞĞÅÏ¢
+    //æ‹·è´åŸæœ‰ä¿¡æ¯
     if (l == r) {
-        //µ½´ïÁËÒªĞŞ¸ÄµÄ½ÚµãÎ»ÖÃ
+        //åˆ°è¾¾äº†è¦ä¿®æ”¹çš„èŠ‚ç‚¹ä½ç½®
         //tree[rt] += jobv;
     } else {
         int mid = (l + r) >> 1;
@@ -87,8 +87,8 @@ int update(int jobi, int jobv, int l, int r, int i) {
     return rt;
 }
 
-// Ïß¶ÎÊ÷·¶Î§l~r£¬ĞÅÏ¢ÔÚiºÅ½ÚµãÀï
-// ·µ»Øl~r·¶Î§ÉÏjobiÎ»ÖÃµÄÖµ
+// çº¿æ®µæ ‘èŒƒå›´l~rï¼Œä¿¡æ¯åœ¨iå·èŠ‚ç‚¹é‡Œ
+// è¿”å›l~rèŒƒå›´ä¸Šjobiä½ç½®çš„å€¼
 int query(int jobl,int jobr, int l, int r, int i) {
 	if(jobl<=l&&r<=jobr){
         return tree[i];

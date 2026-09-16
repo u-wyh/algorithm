@@ -64,11 +64,11 @@ int main()
     {
         scanf("%d",&arr[i]);
     }
-    printf("冒泡排序结果为： ");
+    printf("鍐掓场鎺掑簭缁撴灉涓猴細 ");
     bubble(arr);
-    printf("选择排序结果为： ");
+    printf("閫夋嫨鎺掑簭缁撴灉涓猴細 ");
     select(arr);
-    printf("插入排序结果为： ");
+    printf("鎻掑叆鎺掑簭缁撴灉涓猴細 ");
     insert(arr);
     return 0;
 }

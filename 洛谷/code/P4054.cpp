@@ -1,7 +1,7 @@
 // https://www.luogu.com.cn/problem/P4054
 //P4054
-//ÕâµÀÌâÌØÊâµÄµØ·½¾ÍÔÚÓÚËû²»ÊÇÆÕÍ¨µÄÊ÷×´Êı×é
-//ËûÊÇÒ»¸ö¶şÎ¬Ê÷×´Êı×é  ÆäÊµÃ»Ê²Ã´ÄÑ¶È Ö»ÊÇ±È½ÏĞÂÆæ
+//è¿™é“é¢˜ç‰¹æ®Šçš„åœ°æ–¹å°±åœ¨äºä»–ä¸æ˜¯æ™®é€šçš„æ ‘çŠ¶æ•°ç»„
+//ä»–æ˜¯ä¸€ä¸ªäºŒç»´æ ‘çŠ¶æ•°ç»„  å…¶å®æ²¡ä»€ä¹ˆéš¾åº¦ åªæ˜¯æ¯”è¾ƒæ–°å¥‡
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 305;
@@ -15,7 +15,7 @@ int lowbit(int i){
     return i&-i;
 }
 
-//ÔÚ(x,y)ÉÏ¸øcolor¼ÓÉÏv
+//åœ¨(x,y)ä¸Šç»™coloråŠ ä¸Šv
 void add(int x,int y,int color,int v){
     for(int i=x;i<=n;i+=lowbit(i)){
         for(int j=y;j<=m;j+=lowbit(j)){
@@ -24,7 +24,7 @@ void add(int x,int y,int color,int v){
     }
 }
 
-//²éÑ¯´Ó(1,1)µ½(x,y)ÉÏ  ÑÕÉ«color³öÏÖÁË¶àÉÙ´Î
+//æŸ¥è¯¢ä»(1,1)åˆ°(x,y)ä¸Š  é¢œè‰²colorå‡ºç°äº†å¤šå°‘æ¬¡
 int sum(int x,int y,int color){
     int ans=0;
     for(int i=x;i;i-=lowbit(i)){

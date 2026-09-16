@@ -20,16 +20,16 @@ class BIT
 	void modify(int pos,const int x)
 	{
 		for(;pos<=n;pos+=lowbit(pos))
-		 tree[pos]^=x;//Î¬»¤Òì»òºÍ
+		 tree[pos]^=x;//ç»´æŠ¤å¼‚æˆ–å’Œ
 	}
 	int query(int pos)
 	{
 		int res=0;
 		for(;pos;pos-=lowbit(pos))
-		 res^=tree[pos];//Í¬Àí
+		 res^=tree[pos];//åŒç†
 		return res;
 	}
-}tree[2];//tree[0]ÊÇÎ¬»¤ÏÂ±êÎªÅ¼Êı£¬tree[1]ÔòÊÇÆæÊı
+}tree[2];//tree[0]æ˜¯ç»´æŠ¤ä¸‹æ ‡ä¸ºå¶æ•°ï¼Œtree[1]åˆ™æ˜¯å¥‡æ•°
 
 int main()
 {
@@ -38,19 +38,19 @@ int main()
 	for(int i=1;i<=n;i++)
 	 cin>>a[i];
 	for(int i=1;i<=n;i++)
-	 tree[i&1].modify(i,a[i]);//½¨Ê÷
+	 tree[i&1].modify(i,a[i]);//å»ºæ ‘
 	while(Q--)
 	{
 		int opt,x,y;cin>>opt>>x>>y;
 		if(opt==1)
 		{
-			tree[x&1].modify(x,a[x]^y);//½âÊÍ¹ıÁË
+			tree[x&1].modify(x,a[x]^y);//è§£é‡Šè¿‡äº†
 			a[x]=y;
 		}
 		if(opt==2)
 		{
 			int ans=0;
-			if(!((x&1)^(y&1)))//l,rÆæÅ¼ĞÔÏàÍ¬
+			if(!((x&1)^(y&1)))//l,rå¥‡å¶æ€§ç›¸åŒ
 			 ans=tree[x&1].query(y)^tree[x&1].query(x-1);
 			cout<<ans<<endl;
 		}

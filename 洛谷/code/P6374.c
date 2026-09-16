@@ -19,13 +19,13 @@ int main(void) {
     LL x = max(a, b), y = min(a, b);
     LL m = x - y;
 
-    if (m > c) { // Èç¹û x-y>c, ¼´ c+y>x£¬ÄÇ¾ÍÊÇ·ÖÀàÌÖÂÛÊ±µÄµÚÒ»ÖÖÇé¿ö¡£
-        LL ans = (LL)((LL)(floor(sqrt(8 * (y + c) + 1))) - 1) / 2; // Ì×¹«Ê½
+    if (m > c) { // å¦‚æœ x-y>c, å³ c+y>xï¼Œé‚£å°±æ˜¯åˆ†ç±»è®¨è®ºæ—¶çš„ç¬¬ä¸€ç§æƒ…å†µã€‚
+        LL ans = (LL)((LL)(floor(sqrt(8 * (y + c) + 1))) - 1) / 2; // å¥—å…¬å¼
         printf("%lld\n", ans);
         return 0;
-    } else { // ·ñÔòÄÇ¾ÍÊÇµÚ¶şÖÖÇé¿ö
+    } else { // å¦åˆ™é‚£å°±æ˜¯ç¬¬äºŒç§æƒ…å†µ
         c -= m;
-        LL ans = (LL)((LL)(floor(sqrt(8 * (x + (LL)(c / 2)) + 1))) - 1) / 2; // Ì×¹«Ê½
+        LL ans = (LL)((LL)(floor(sqrt(8 * (x + (LL)(c / 2)) + 1))) - 1) / 2; // å¥—å…¬å¼
         printf("%lld\n", ans);
     }
 

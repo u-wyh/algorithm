@@ -9,7 +9,7 @@ map<long long,int>ques;
 map<long long,int>sum;
 long long word[MAXM];
 
-// ¼ÆËãÒ»¸ö×Ö·û´®µÄ¹þÏ£Öµ
+// è®¡ç®—ä¸€ä¸ªå­—ç¬¦ä¸²çš„å“ˆå¸Œå€¼
 long long hashString(const string& str) {
     if (str.empty()) {
         return 0;

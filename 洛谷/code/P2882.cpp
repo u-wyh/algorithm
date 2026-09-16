@@ -20,8 +20,8 @@ int main()
 		bool b=0,flag=1;
 		int cnt=0;
 		for(int i=1;i<=n;++i){
-			b^=B[i];//数组B为记录差分的数组
-			if(!(A[i]^b)){//若当前位置为0
+			b^=B[i];//鏁扮粍B涓鸿褰曞樊鍒嗙殑鏁扮粍
+			if(!(A[i]^b)){//鑻ュ綋鍓嶄綅缃负0
 				if(i+len-1>n){
                     flag=0;
                     break;

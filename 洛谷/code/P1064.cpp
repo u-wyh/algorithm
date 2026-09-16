@@ -3,7 +3,7 @@
 using namespace std;
 
 int n,m;
-vector<int>vec[61];//±íÊ¾Ö÷¼şµÄ¸½ÊôÓĞÄÄĞ©
+vector<int>vec[61];//è¡¨ç¤ºä¸»ä»¶çš„é™„å±æœ‰å“ªäº›
 int pri[61],val[61],nature[61];
 int dp[61][32005];
 
@@ -30,20 +30,20 @@ int main()
                 if(j-pri[i]>=0){
                     dp[i][j]=max(dp[i][j],dp[pre][j-pri[i]]+val[i]);
                 }
-                // fan1 : Èç¹ûÓĞ¸½1ÉÌÆ·£¬±àºÅ¸øfan1£¬Èç¹ûÃ»ÓĞ£¬fan1 == -1
-                // fan2 : Èç¹ûÓĞ¸½2ÉÌÆ·£¬±àºÅ¸øfan2£¬Èç¹ûÃ»ÓĞ£¬fan2 == -1
+                // fan1 : å¦‚æœæœ‰é™„1å•†å“ï¼Œç¼–å·ç»™fan1ï¼Œå¦‚æœæ²¡æœ‰ï¼Œfan1 == -1
+                // fan2 : å¦‚æœæœ‰é™„2å•†å“ï¼Œç¼–å·ç»™fan2ï¼Œå¦‚æœæ²¡æœ‰ï¼Œfan2 == -1
                 int fan1 = size >= 1 ? vec[i][0] : -1;
                 int fan2 = size >= 2 ? vec[i][1] : -1;
                 if (fan1 != -1 && j - pri[i] - pri[fan1] >= 0) {
-                    // ¿ÉÄÜĞÔ3 : Ö÷ + ¸½1
+                    // å¯èƒ½æ€§3 : ä¸» + é™„1
                     dp[i][j] = max(dp[i][j], dp[pre][j - pri[i] - pri[fan1]] + val[i] + val[fan1]);
                 }
                 if (fan2 != -1 && j - pri[i] - pri[fan2] >= 0) {
-                    // ¿ÉÄÜĞÔ4 : Ö÷ + ¸½2
+                    // å¯èƒ½æ€§4 : ä¸» + é™„2
                     dp[i][j] = max(dp[i][j], dp[pre][j - pri[i] - pri[fan2]] + val[i] + val[fan2]);
                 }
                 if (fan1 != -1 && fan2 != -1 && j - pri[i] - pri[fan1] - pri[fan2] >= 0) {
-                    // ¿ÉÄÜĞÔ5 : Ö÷ + ¸½1 + ¸½2
+                    // å¯èƒ½æ€§5 : ä¸» + é™„1 + é™„2
                     dp[i][j] = max(dp[i][j], dp[pre][j - pri[i] - pri[fan1] - pri[fan2]]
                                     + val[i] + val[fan1] + val[fan2]);
                 }

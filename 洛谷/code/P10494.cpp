@@ -8,36 +8,36 @@ int mxdep;
 
 bool dfs(int x ,int y ,int dep)
 {
-	if (x < y) //·ÀÖ¹ºóÃæx-y³öÏÖ¸ºÊı 
+	if (x < y) //é˜²æ­¢åé¢x-yå‡ºç°è´Ÿæ•° 
 	{
 		swap(x ,y);
 	}
 	if (dep >= mxdep)
 	{
-		if (x == p || y == p) //xºÍyÓĞÒ»¸öµÈÓÚp¾ÍĞĞÁË 
+		if (x == p || y == p) //xå’Œyæœ‰ä¸€ä¸ªç­‰äºpå°±è¡Œäº† 
 		{
 			return true;
 		}
 		return false;
 	}
-	if (x << (mxdep - dep) < p) //¼ôÖ¦1 
+	if (x << (mxdep - dep) < p) //å‰ªæ1 
 	{
 		return false;
 	}
-	if (__gcd(x ,y) > 0 && p % __gcd(x ,y) != 0) //¼ôÖ¦2 
+	if (__gcd(x ,y) > 0 && p % __gcd(x ,y) != 0) //å‰ªæ2 
 	{
 		return false;
 	}
 	
-	//ÌÖÂÛ¶àÖÖÇé¿ö 
-	//³Ë 
+	//è®¨è®ºå¤šç§æƒ…å†µ 
+	//ä¹˜ 
 	if (dfs(x * 2 ,y ,dep + 1)) return true;
 	if (dfs(x * 2 ,x ,dep + 1)) return true;
 	if (dfs(x ,y * 2 ,dep + 1)) return true;
 	if (dfs(y ,y * 2 ,dep + 1)) return true;
 	if (dfs(x + y ,x ,dep + 1)) return true;
 	if (dfs(x + y ,y ,dep + 1)) return true;
-	//³ı 
+	//é™¤ 
 	if (dfs(x - y ,x ,dep + 1)) return true;
 	if (dfs(x - y ,y ,dep + 1)) return true;
 	return false;
@@ -47,7 +47,7 @@ int main()
 {
 	scanf("%d",&p);
 	
-	//ºÍÖ®Ç°Ò»Ñù 
+	//å’Œä¹‹å‰ä¸€æ · 
 	while (!dfs(1 ,0 ,0))
 	{
 		mxdep++;

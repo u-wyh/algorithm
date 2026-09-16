@@ -1,69 +1,69 @@
 //https://codeforces.com/problemset/problem/896/C
-//1 l r x £º½«[l,r]Çø¼äËùÓĞÊı¼ÓÉÏx
-//2 l r x £º½«[l,r]Çø¼äËùÓĞÊı¸Ä³Éx
-//3 l r x £ºÊä³ö½«[l,r] Çø¼ä´ÓĞ¡µ½´óÅÅĞòºóµÄµÚx¸öÊıÊÇµÄ¶àÉÙ
-//4 l r x y £ºÊä³ö[l,r] Çø¼äÃ¿¸öÊı×ÖµÄx´Î·½µÄºÍÄ£yµÄÖµ
+//1 l r x ï¼šå°†[l,r]åŒºé—´æ‰€æœ‰æ•°åŠ ä¸Šx
+//2 l r x ï¼šå°†[l,r]åŒºé—´æ‰€æœ‰æ•°æ”¹æˆx
+//3 l r x ï¼šè¾“å‡ºå°†[l,r] åŒºé—´ä»å°åˆ°å¤§æ’åºåçš„ç¬¬xä¸ªæ•°æ˜¯çš„å¤šå°‘
+//4 l r x y ï¼šè¾“å‡º[l,r] åŒºé—´æ¯ä¸ªæ•°å­—çš„xæ¬¡æ–¹çš„å’Œæ¨¡yçš„å€¼
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long
 #define IT set<Node>::iterator
 
-// ¶¨ÒåÇø¼ä½Úµã½á¹¹Ìå
+// å®šä¹‰åŒºé—´èŠ‚ç‚¹ç»“æ„ä½“
 struct Node {
-    int l, r;       // Çø¼äµÄ×óÓÒ¶Ëµã
-    mutable int v;  // Çø¼äµÄÖµ£¬mutable ÔÊĞíÔÚ const ¶ÔÏóÖĞĞŞ¸Ä
+    int l, r;       // åŒºé—´çš„å·¦å³ç«¯ç‚¹
+    mutable int v;  // åŒºé—´çš„å€¼ï¼Œmutable å…è®¸åœ¨ const å¯¹è±¡ä¸­ä¿®æ”¹
     Node(int L, int R = -1, int V = 0) : l(L), r(R), v(V) {}
-    // ÖØÔØ < ÔËËã·û£¬ÓÃÓÚ set ÅÅĞò
+    // é‡è½½ < è¿ç®—ç¬¦ï¼Œç”¨äº set æ’åº
     bool operator<(const Node &o) const {
         return l < o.l;
     }
 };
 
-set<Node> s; // Ê¹ÓÃ set ´æ´¢Çø¼ä½Úµã
+set<Node> s; // ä½¿ç”¨ set å­˜å‚¨åŒºé—´èŠ‚ç‚¹
 
-// ½«Çø¼äÔÚ pos ´¦·Ö¸î£¬·µ»Ø·Ö¸îºóµÄÓÒÇø¼äµü´úÆ÷
+// å°†åŒºé—´åœ¨ pos å¤„åˆ†å‰²ï¼Œè¿”å›åˆ†å‰²åçš„å³åŒºé—´è¿­ä»£å™¨
 IT split(int pos) {
-    IT it = s.lower_bound(Node(pos)); // ÕÒµ½µÚÒ»¸ö×ó¶Ëµã >= pos µÄÇø¼ä
+    IT it = s.lower_bound(Node(pos)); // æ‰¾åˆ°ç¬¬ä¸€ä¸ªå·¦ç«¯ç‚¹ >= pos çš„åŒºé—´
     if (it != s.end() && it->l == pos)
-        return it; // Èç¹û pos ÕıºÃÊÇÄ³¸öÇø¼äµÄÆğµã£¬Ö±½Ó·µ»Ø
-    --it; // ·ñÔòÕÒµ½°üº¬ pos µÄÇø¼ä
+        return it; // å¦‚æœ pos æ­£å¥½æ˜¯æŸä¸ªåŒºé—´çš„èµ·ç‚¹ï¼Œç›´æ¥è¿”å›
+    --it; // å¦åˆ™æ‰¾åˆ°åŒ…å« pos çš„åŒºé—´
     int L = it->l, R = it->r, V = it->v;
-    s.erase(it); // É¾³ıÔ­Çø¼ä
-    s.insert(Node(L, pos - 1, V)); // ²åÈë×ó°ë²¿·Ö
-    return s.insert(Node(pos, R, V)).first; // ²åÈëÓÒ°ë²¿·Ö²¢·µ»Øµü´úÆ÷
-    // ·µ»ØÒ»¸öpair£¬ÆäÖĞµÚÒ»¸öÔªËØÊÇÒ»¸öµü´úÆ÷£¬Ö¸Ïò²åÈëµÄÔªËØ£¨»òÒÑ¾­´æÔÚµÄÔªËØ£©£¬
-    // µÚ¶ş¸öÔªËØÊÇÒ»¸ö²¼¶ûÖµ£¬±íÊ¾²åÈëÊÇ·ñ³É¹¦¡£
+    s.erase(it); // åˆ é™¤åŸåŒºé—´
+    s.insert(Node(L, pos - 1, V)); // æ’å…¥å·¦åŠéƒ¨åˆ†
+    return s.insert(Node(pos, R, V)).first; // æ’å…¥å³åŠéƒ¨åˆ†å¹¶è¿”å›è¿­ä»£å™¨
+    // è¿”å›ä¸€ä¸ªpairï¼Œå…¶ä¸­ç¬¬ä¸€ä¸ªå…ƒç´ æ˜¯ä¸€ä¸ªè¿­ä»£å™¨ï¼ŒæŒ‡å‘æ’å…¥çš„å…ƒç´ ï¼ˆæˆ–å·²ç»å­˜åœ¨çš„å…ƒç´ ï¼‰ï¼Œ
+    // ç¬¬äºŒä¸ªå…ƒç´ æ˜¯ä¸€ä¸ªå¸ƒå°”å€¼ï¼Œè¡¨ç¤ºæ’å…¥æ˜¯å¦æˆåŠŸã€‚
 }
 
-// Çø¼ä¸³Öµ²Ù×÷
+// åŒºé—´èµ‹å€¼æ“ä½œ
 void assign(int l, int r, int val) {
-    IT itr = split(r + 1), itl = split(l); // ·Ö¸îÇø¼ä [l, r]
-    s.erase(itl, itr); // É¾³ı [l, r] ÄÚµÄËùÓĞÇø¼ä É¾³ı´Óitlµ½itrÖ®¼äµÄËùÓĞÔªËØ£¨²»°üÀ¨itr£©
-    s.insert(Node(l, r, val)); // ²åÈëĞÂµÄÇø¼ä
+    IT itr = split(r + 1), itl = split(l); // åˆ†å‰²åŒºé—´ [l, r]
+    s.erase(itl, itr); // åˆ é™¤ [l, r] å†…çš„æ‰€æœ‰åŒºé—´ åˆ é™¤ä»itlåˆ°iträ¹‹é—´çš„æ‰€æœ‰å…ƒç´ ï¼ˆä¸åŒ…æ‹¬itrï¼‰
+    s.insert(Node(l, r, val)); // æ’å…¥æ–°çš„åŒºé—´
 }
 
-// Çø¼ä¼Ó·¨²Ù×÷
+// åŒºé—´åŠ æ³•æ“ä½œ
 void add(int l, int r, int val) {
-    IT itr = split(r + 1), itl = split(l); // ·Ö¸îÇø¼ä [l, r]
+    IT itr = split(r + 1), itl = split(l); // åˆ†å‰²åŒºé—´ [l, r]
     for (; itl != itr; ++itl)
-        itl->v += val; // ¶ÔÃ¿¸öÇø¼äÄÚµÄÖµ¼ÓÉÏ val
+        itl->v += val; // å¯¹æ¯ä¸ªåŒºé—´å†…çš„å€¼åŠ ä¸Š val
 }
 
-// ²éÑ¯Çø¼äµÚ k Ğ¡µÄÊı
+// æŸ¥è¯¢åŒºé—´ç¬¬ k å°çš„æ•°
 int kth(int l, int r, int k) {
-    vector<pair<int, int>> v; // ´æ´¢Çø¼äÄÚµÄÖµºÍ³¤¶È
-    IT itr = split(r + 1), itl = split(l); // ·Ö¸îÇø¼ä [l, r]
+    vector<pair<int, int>> v; // å­˜å‚¨åŒºé—´å†…çš„å€¼å’Œé•¿åº¦
+    IT itr = split(r + 1), itl = split(l); // åˆ†å‰²åŒºé—´ [l, r]
     for (; itl != itr; ++itl)
-        v.push_back(make_pair(itl->v, itl->r - itl->l + 1)); // ÊÕ¼¯Çø¼äĞÅÏ¢
-    sort(v.begin(), v.end()); // °´ÖµÅÅĞò
+        v.push_back(make_pair(itl->v, itl->r - itl->l + 1)); // æ”¶é›†åŒºé—´ä¿¡æ¯
+    sort(v.begin(), v.end()); // æŒ‰å€¼æ’åº
     for (auto p : v) {
-        k -= p.second; // ¼õÈ¥µ±Ç°ÖµµÄ¸öÊı
-        if (k <= 0) return p.first; // Èç¹û k <= 0£¬·µ»Øµ±Ç°Öµ
+        k -= p.second; // å‡å»å½“å‰å€¼çš„ä¸ªæ•°
+        if (k <= 0) return p.first; // å¦‚æœ k <= 0ï¼Œè¿”å›å½“å‰å€¼
     }
-    return -1; // Î´ÕÒµ½
+    return -1; // æœªæ‰¾åˆ°
 }
 
-// ¿ìËÙÃİº¯Êı£¬¼ÆËã a^b % mod
+// å¿«é€Ÿå¹‚å‡½æ•°ï¼Œè®¡ç®— a^b % mod
 int powmod(int a, int b, int mod) {
     int res = 1;
     a %= mod;
@@ -74,12 +74,12 @@ int powmod(int a, int b, int mod) {
     return res;
 }
 
-// ¼ÆËãÇø¼ä [l, r] ÄÚÃ¿¸öÊıµÄ x ´Î·½µÄºÍ£¬Ä£ mod
+// è®¡ç®—åŒºé—´ [l, r] å†…æ¯ä¸ªæ•°çš„ x æ¬¡æ–¹çš„å’Œï¼Œæ¨¡ mod
 int sum(int l, int r, int x, int mod) {
     int res = 0;
-    IT itr = split(r + 1), itl = split(l); // ·Ö¸îÇø¼ä [l, r]
+    IT itr = split(r + 1), itl = split(l); // åˆ†å‰²åŒºé—´ [l, r]
     for (; itl != itr; ++itl)
-        res = (res + (itl->r - itl->l + 1) * powmod(itl->v, x, mod)) % mod; // ÀÛ¼ÓÃ¿¸öÇø¼äµÄ¹±Ï×
+        res = (res + (itl->r - itl->l + 1) * powmod(itl->v, x, mod)) % mod; // ç´¯åŠ æ¯ä¸ªåŒºé—´çš„è´¡çŒ®
     return res;
 }
 
@@ -87,47 +87,47 @@ signed main() {
     int n, m, seed, vmax;
     cin >> n >> m >> seed >> vmax;
 
-    // Ëæ»úÊıÉú³ÉÆ÷
+    // éšæœºæ•°ç”Ÿæˆå™¨
     auto rnd = [&]() {
         int ret = seed;
         seed = (seed * 7 + 13) % 1000000007;
         return ret;
     };
 
-    // ³õÊ¼»¯Êı×é
+    // åˆå§‹åŒ–æ•°ç»„
     for (int i = 1; i <= n; ++i) {
-        int a = rnd() % vmax + 1; // Éú³ÉËæ»úÊı
-        s.insert(Node(i, i, a)); // ²åÈëÇø¼ä½Úµã
+        int a = rnd() % vmax + 1; // ç”Ÿæˆéšæœºæ•°
+        s.insert(Node(i, i, a)); // æ’å…¥åŒºé—´èŠ‚ç‚¹
     }
 
-    // ´¦Àí m ¸ö²Ù×÷
+    // å¤„ç† m ä¸ªæ“ä½œ
     for (int i = 1; i <= m; ++i) {
-        int op = rnd() % 4 + 1; // Ëæ»úÉú³É²Ù×÷ÀàĞÍ
-        int l = rnd() % n + 1; // Ëæ»úÉú³ÉÇø¼ä×ó¶Ëµã
-        int r = rnd() % n + 1; // Ëæ»úÉú³ÉÇø¼äÓÒ¶Ëµã
+        int op = rnd() % 4 + 1; // éšæœºç”Ÿæˆæ“ä½œç±»å‹
+        int l = rnd() % n + 1; // éšæœºç”ŸæˆåŒºé—´å·¦ç«¯ç‚¹
+        int r = rnd() % n + 1; // éšæœºç”ŸæˆåŒºé—´å³ç«¯ç‚¹
         if (l > r)
-            swap(l, r); // È·±£ l <= r
+            swap(l, r); // ç¡®ä¿ l <= r
 
         int x, y;
         if (op == 3) {
-            x = rnd() % (r - l + 1) + 1; // Ëæ»úÉú³ÉµÚ k Ğ¡µÄ k
+            x = rnd() % (r - l + 1) + 1; // éšæœºç”Ÿæˆç¬¬ k å°çš„ k
         } else {
-            x = rnd() % vmax + 1; // Ëæ»úÉú³É x
+            x = rnd() % vmax + 1; // éšæœºç”Ÿæˆ x
         }
 
         if (op == 4) {
-            y = rnd() % vmax + 1; // Ëæ»úÉú³ÉÄ£Êı y
+            y = rnd() % vmax + 1; // éšæœºç”Ÿæˆæ¨¡æ•° y
         }
 
-        // ¸ù¾İ²Ù×÷ÀàĞÍµ÷ÓÃÏàÓ¦º¯Êı
+        // æ ¹æ®æ“ä½œç±»å‹è°ƒç”¨ç›¸åº”å‡½æ•°
         if (op == 1) {
-            add(l, r, x); // Çø¼ä¼Ó
+            add(l, r, x); // åŒºé—´åŠ 
         } else if (op == 2) {
-            assign(l, r, x); // Çø¼ä¸³Öµ
+            assign(l, r, x); // åŒºé—´èµ‹å€¼
         } else if (op == 3) {
-            cout << kth(l, r, x) << endl; // Çø¼äµÚ k Ğ¡
+            cout << kth(l, r, x) << endl; // åŒºé—´ç¬¬ k å°
         } else if (op == 4) {
-            cout << sum(l, r, x, y) << endl; // Çø¼ä x ´Î·½ºÍ
+            cout << sum(l, r, x, y) << endl; // åŒºé—´ x æ¬¡æ–¹å’Œ
         }
     }
 

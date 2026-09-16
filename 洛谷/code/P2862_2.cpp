@@ -10,7 +10,7 @@ struct point{
     int x,y;
 }nums[MAXN];
 int ans,tot;
-int tree[MAXM<<4],lazy[MAXM<<4];//ÒòÎªÕâÀïÊÇÕý¸ºÁ½¸öÇø¼ä
+int tree[MAXM<<4],lazy[MAXM<<4];//å› ä¸ºè¿™é‡Œæ˜¯æ­£è´Ÿä¸¤ä¸ªåŒºé—´
 struct node{
     int x,l,r,val;
 }p[MAXN<<1];

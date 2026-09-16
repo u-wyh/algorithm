@@ -22,7 +22,7 @@ int main() {
     }
     dp[0] = 1;
 
-    // 使用qsort对数组a进行排序
+    // 浣跨敤qsort瀵规暟缁刟杩涜鎺掑簭
     qsort(a + 1, n, sizeof(int), compare);
 
     for (int i = 1; i <= n; i++) {

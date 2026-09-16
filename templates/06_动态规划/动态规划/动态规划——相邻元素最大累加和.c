@@ -7,7 +7,7 @@ int main()
     int i=0;
     while(scanf("%d",&arr[i++])==1);
     int n=i-1;
-    //nÊÇÊý×éÓÐÐ§³¤¶È
+    //næ˜¯æ•°ç»„æœ‰æ•ˆé•¿åº¦
     printf("%5d\n",n);
     int max=0,sum=0;
     for(i=0;i<n;i++)

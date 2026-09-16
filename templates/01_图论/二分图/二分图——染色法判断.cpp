@@ -1,24 +1,24 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int n,m;//±íÊ¾ÓĞn¸öµã£¬mÌõ±ß
+int n,m;//è¡¨ç¤ºæœ‰nä¸ªç‚¹ï¼Œmæ¡è¾¹
 
 int head[10];
 int Next[50];
 int to[50];
-int cnt=1;//Á´Ê½Ç°ÏòĞÇ½¨Í¼
+int cnt=1;//é“¾å¼å‰å‘æ˜Ÿå»ºå›¾
 
-int color[10];//±íÊ¾¸÷¸öµãµÄÑÕÉ«£¬1Îª°×É«£¬2ÎªºÚÉ«
+int color[10];//è¡¨ç¤ºå„ä¸ªç‚¹çš„é¢œè‰²ï¼Œ1ä¸ºç™½è‰²ï¼Œ2ä¸ºé»‘è‰²
 
 bool dfs(int now,int col){
-    color[now]=col;//ÏÈÈ¾É«
+    color[now]=col;//å…ˆæŸ“è‰²
     for(int i=head[now];i>0;i=Next[i]){
         int v=to[i];
         if(color[v]==col){
-            //Èç¹ûÕâ¸öµãÈ¾¹ıÁË ²¢ÇÒ²»ºÏ·¨
+            //å¦‚æœè¿™ä¸ªç‚¹æŸ“è¿‡äº† å¹¶ä¸”ä¸åˆæ³•
             return false;
         }
-        else if(!dfs(v,3-col)){//µİ¹éµ½ÏÂÒ»¸öµã£¬ÑÕÉ«±ä»»
+        else if(!dfs(v,3-col)){//é€’å½’åˆ°ä¸‹ä¸€ä¸ªç‚¹ï¼Œé¢œè‰²å˜æ¢
             return false;
         }
     }
@@ -53,7 +53,7 @@ int main()
 }
 
 /*
-²âÊÔÊı¾İ£º
+æµ‹è¯•æ•°æ®ï¼š
 6 6
 1 2 1 3 2 6 2 5 2 4 6 3
 

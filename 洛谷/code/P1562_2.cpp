@@ -27,7 +27,7 @@ int main(){
     char c[20];
     for(int i=1;i<=n;++i){
         scanf("%s",c+1);
-        getchar();//消除行末回车
+        getchar();//娑堥櫎琛屾湯鍥炶溅
         for(int j=1;j<=n;++j){
             if(c[j]=='.')
                 sta[i]|=(1<<(n-j));

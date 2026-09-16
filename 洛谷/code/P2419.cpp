@@ -19,7 +19,7 @@ int main()
         nums[u][v]=1;
         nums[v][u]=-1;
     }
-    for (int bridge = 1; bridge <= n; bridge++) { // Ìø°å
+    for (int bridge = 1; bridge <= n; bridge++) { // è·³æ¿
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
                 if (nums[i][bridge] != 0&& nums[bridge][j] != 0&& nums[bridge][j] == nums[i][bridge] ) {

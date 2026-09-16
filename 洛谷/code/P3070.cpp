@@ -16,7 +16,7 @@
 	for(;c>='0'&&c<='9';c=getchar()) x=(x<<1)+(x<<3)+c-48;
 	return f?-x:x;
 }
- void land_f()//Ô¤´¦ÀíµÚÒ»²½
+ void land_f()//é¢„å¤„ç†ç¬¬ä¸€æ­¥
 {
 	int a,b,xx,yy,i;
 	while(l<=r)
@@ -32,7 +32,7 @@
 	}
 }
  void land_c(int now){
- //Ô¤´¦ÀíµÚ¶ş²½
+ //é¢„å¤„ç†ç¬¬äºŒæ­¥
 	int a,b,c,xx,yy,i;
 	while(l<=r){
 		a=x[l]; b=y[l]; c=dis[l++];
@@ -100,7 +100,7 @@
             if((i&c[j])&&f[i][j]<maxn){
                 for(k=1;k<=cnt;k++){
                     if(!(i&c[k])&&d[j][k]>0){
-                        //Èç¹ûd[j][k]=-1,ËµÃ÷µºÓìjºÍµºÓìk²»Á¬Í¨
+                        //å¦‚æœd[j][k]=-1,è¯´æ˜å²›å±¿jå’Œå²›å±¿kä¸è¿é€š
                         f[i|c[k]][k]=min(f[i|c[k]][k],f[i][j]+d[j][k]);
                     }
                 }

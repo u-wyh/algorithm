@@ -16,7 +16,7 @@ int dfncnt;
 
 int col[MAXN];
 int color;
-vector<int> ans[MAXN]; // ´æ´¢Ã¿¸öµãË«µÄ½Úµã
+vector<int> ans[MAXN]; // å­˜å‚¨æ¯ä¸ªç‚¹åŒçš„èŠ‚ç‚¹
 bool cut[MAXN];
 
 int dep[MAXN];
@@ -64,17 +64,17 @@ void tarjan(int u, int f){
 
     for(int i = head[u]; i; i=nxt[i]){
         int v = to[i];
-        if(!dfn[v]){          // Èç¹ûvÎ´±»·ÃÎÊ
+        if(!dfn[v]){          // å¦‚æœvæœªè¢«è®¿é—®
             child++;
-            tarjan(v, u);     // µİ¹é·ÃÎÊv
-            low[u] = min(low[u], low[v]); // ¸üĞÂlow[u]
+            tarjan(v, u);     // é€’å½’è®¿é—®v
+            low[u] = min(low[u], low[v]); // æ›´æ–°low[u]
             if(low[v] >= dfn[u]){
                 cut[u]=true;
-                color++;      // ĞÂµÄµãË«±àºÅ
+                color++;      // æ–°çš„ç‚¹åŒç¼–å·
                 while(sta[top+1] != v){ 
                     ans[color].push_back(sta[top--]);
                 }
-                ans[color].push_back(u); // ¸îµãuÊôÓÚµ±Ç°µãË«
+                ans[color].push_back(u); // å‰²ç‚¹uå±äºå½“å‰ç‚¹åŒ
             }
         }
         else if(v != f){     

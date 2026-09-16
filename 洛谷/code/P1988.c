@@ -14,7 +14,7 @@ int compare(const void *a, const void *b) {
 }
 
 void dfs(long long x) {
-    if (x > 9e17) return;  // ÌáÇ°·µ»ØÒÔ±ÜÃâ³¬³ö·¶Î§
+    if (x > 9e17) return;  // æå‰è¿”å›ä»¥é¿å…è¶…å‡ºèŒƒå›´
     a[++tot] = x;
     for (int i = 0; i <= 1; i++) {
         dfs(x * 10 + i);

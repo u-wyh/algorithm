@@ -9,7 +9,7 @@ int n,m;
 int dis[MAXN];
 int updatecnt[MAXN];
 
-bool ok[MAXN];//表示是否在到n的路径上
+bool ok[MAXN];//琛ㄧず鏄惁鍦ㄥ埌n鐨勮矾寰勪笂
 
 int x[MAXM],y[MAXM];
 bool vis[MAXN<<1];
@@ -71,7 +71,7 @@ bool spfa(){
             v = to1[ei];
             w = weight[ei];
             if (dis[u] + w < dis[v]) {
-                //如果值变小了  那么就要改变
+                //濡傛灉鍊煎彉灏忎簡  閭ｄ箞灏辫鏀瑰彉
                 dis[v] = dis[u] + w;
                 if (!vis[v]) {
                     if (++updatecnt[v] > n) {

@@ -58,7 +58,7 @@ void dfs(int u, int fa) {
         int v=to[i];
         int t=weight[i];
         if (v == fa) continue;
-        dfs(v, u); // ÏÈµİ¹é´¦Àí×Ó½Úµã
+        dfs(v, u); // å…ˆé€’å½’å¤„ç†å­èŠ‚ç‚¹
         for (int c = 1; c <= m; c++) {
             int min_sum = LLONG_MAX;
             if (t == 0) {
@@ -67,7 +67,7 @@ void dfs(int u, int fa) {
                     min_sum = min(min_sum, f[v][d]);
                 }
             } else if (t == 1) {
-                // ÎŞÏŞÖÆ
+                // æ— é™åˆ¶
                 for (int d = 1; d <= m; d++) {
                     min_sum = min(min_sum, f[v][d]);
                 }
@@ -78,7 +78,7 @@ void dfs(int u, int fa) {
             f[u][c] += min_sum;
         }
     }
-    // ¼ÓÉÏµ±Ç°½ÚµãµÄµãÈ¨
+    // åŠ ä¸Šå½“å‰èŠ‚ç‚¹çš„ç‚¹æƒ
     for (int c = 1; c <= m; c++) {
         f[u][c] += c;
     }

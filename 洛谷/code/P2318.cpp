@@ -6,12 +6,12 @@ const int MAXM = 1e6+5;
 
 int n,m;
 struct node{
-    int val;//¼ÇÂ¼Öµ
-    int sub;//¼ÇÂ¼Î»ÖÃ
-    int time;//¼ÇÂ¼×îÔç½øÈëÊ±¼ä
-    int visit;//¼ÇÂ¼·ÃÎÊ´ÎÊı
+    int val;//è®°å½•å€¼
+    int sub;//è®°å½•ä½ç½®
+    int time;//è®°å½•æœ€æ—©è¿›å…¥æ—¶é—´
+    int visit;//è®°å½•è®¿é—®æ¬¡æ•°
 }tree[MAXN<<4];
-map<int,int>pos;//¼ÇÂ¼¸ÃÒ³×îºó³öÏÖµÄÎ»ÖÃ
+map<int,int>pos;//è®°å½•è¯¥é¡µæœ€åå‡ºç°çš„ä½ç½®
 int cnt;
 
 void up(int i){
@@ -103,11 +103,11 @@ int main()
         int x;
         cin>>x;
         if(pos[x]!=0&&find(pos[x],x,1,n,1)){
-            //±íÊ¾µÚÒ»ÖÖÇé¿ö
+            //è¡¨ç¤ºç¬¬ä¸€ç§æƒ…å†µ
             ans++;
         }
         else if(pos[x]==0&&cnt>0){
-            //µÚ¶şÖÖÇé¿ö
+            //ç¬¬äºŒç§æƒ…å†µ
             update(n-cnt+1,i,x,1,n,1);
             pos[x]=n-cnt+1;
             cnt--;

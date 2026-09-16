@@ -15,7 +15,7 @@ int compare(const void *a, const void *b) {
 void Init() {
     scanf("%lld", &N);
     for (int i = 0; i < N; ++i) scanf("%lld", &a[i]);
-    qsort(a, N, sizeof(LL), compare); // Ê¹ÓÃqsort½øĞĞÅÅĞò
+    qsort(a, N, sizeof(LL), compare); // ä½¿ç”¨qsortè¿›è¡Œæ’åº
 
     for (int i = 0; i < N; ++i) {
         if (i == 0 || a[i] != a[i - 1]) {
@@ -29,20 +29,20 @@ void Init() {
 
     for (int i = 0; i < cnt; ++i) {
         f[i] = x[i] * t[i];
-        if (f[i] > Ans) Ans = f[i]; // ¸üĞÂ×î´óÖµ
+        if (f[i] > Ans) Ans = f[i]; // æ›´æ–°æœ€å¤§å€¼
     }
 }
 
 void Solve() {
     for (int i = 1; i < cnt; ++i) {
-        if (x[i] % 3 != 0) continue; // Èç¹û²»ÄÜÕû³ıÈıÔòÌø¹ı
+        if (x[i] % 3 != 0) continue; // å¦‚æœä¸èƒ½æ•´é™¤ä¸‰åˆ™è·³è¿‡
         LL val = x[i] / 3 * 2;
-        // Ê¹ÓÃ¶ş·Ö²éÕÒ£¨ÕâÀïÖ±½ÓÊ¹ÓÃ¼òµ¥Ñ­»·Ìæ´ú£¬ÒòÎªÊı×éÒÑÅÅĞò£©
+        // ä½¿ç”¨äºŒåˆ†æŸ¥æ‰¾ï¼ˆè¿™é‡Œç›´æ¥ä½¿ç”¨ç®€å•å¾ªç¯æ›¿ä»£ï¼Œå› ä¸ºæ•°ç»„å·²æ’åºï¼‰
         int pos = 0;
         while (pos < i && x[pos] < val) ++pos;
         if (pos < i && x[pos] == val) {
-            f[i] += f[pos]; // ¸üĞÂfÖµ
-            if (f[i] > Ans) Ans = f[i]; // È¡×î´óÖµ
+            f[i] += f[pos]; // æ›´æ–°få€¼
+            if (f[i] > Ans) Ans = f[i]; // å–æœ€å¤§å€¼
         }
     }
 }

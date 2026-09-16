@@ -11,7 +11,7 @@
 LL dp[N][M][M], ans[N][2], num;
 int n, m, q[N], len = 0;
 
-LL turn(LL a, LL b) { // ¿ìËÙÃİ
+LL turn(LL a, LL b) { // å¿«é€Ÿå¹‚
     LL s = 1;
     while (b) {
         if (b & 1) s *= a;
@@ -21,7 +21,7 @@ LL turn(LL a, LL b) { // ¿ìËÙÃİ
     return s;
 }
 
-void deal() { // Ô¤´¦Àí²¿·ÖÊı×é
+void deal() { // é¢„å¤„ç†éƒ¨åˆ†æ•°ç»„
     memset(dp, 0, sizeof(dp));
     for (int i = 1; i <= len; ++i) {
         LL sum = q[i] * turn(10, i - 1);
@@ -34,10 +34,10 @@ void deal() { // Ô¤´¦Àí²¿·ÖÊı×é
 
 void solve(LL x) {
     memset(q, 0, sizeof(q));
-    while (x) q[++len] = x % 10, x /= 10; // ´¦ÀíÊıÎ»
+    while (x) q[++len] = x % 10, x /= 10; // å¤„ç†æ•°ä½
     deal();
 
-    for (int i = 1; i <= len; ++i) { // ±³°ü·½Ê½´¦Àí
+    for (int i = 1; i <= len; ++i) { // èƒŒåŒ…æ–¹å¼å¤„ç†
         for (int j = q[i]; j <= 9; ++j) {
             int a = j - q[i], b = q[i] + 10 - j;
             LL sum = j * turn(10, i - 1);
@@ -53,6 +53,6 @@ void solve(LL x) {
 int main() {
     scanf("%lld%d%d", &num, &n, &m);
     solve(num);
-    printf("%lld\n", dp[len][n][m]); // Êä³ö½á¹û
+    printf("%lld\n", dp[len][n][m]); // è¾“å‡ºç»“æœ
     return 0;
 }

@@ -10,18 +10,18 @@ bool check(int x) {
     int p = 0;
     for (int i = 1; i <= n; i++) {
         if (s[i] == '1') {
-            p = i; // ÕÒµ½µÚÒ»¸ö'1'
+            p = i; // æ‰¾åˆ°ç¬¬ä¸€ä¸ª'1'
             break;
         }
     }
-    int cnt = 0; // ¼ÇÂ¼¶ÎÊý
+    int cnt = 0; // è®°å½•æ®µæ•°
     while (p <= n) {
         p += x;
         cnt++;
-        if (p > n) break; // ¿ØÖÆ±ß½ç
-        while (s[p] == '0') p++; // Èç¹ûÊÇ'0'ÔòÎÞÐè¸²¸Ç
+        if (p > n) break; // æŽ§åˆ¶è¾¹ç•Œ
+        while (s[p] == '0') p++; // å¦‚æžœæ˜¯'0'åˆ™æ— éœ€è¦†ç›–
     }
-    if (cnt <= k) return true; // ·ûºÏÌõ¼þ
+    if (cnt <= k) return true; // ç¬¦åˆæ¡ä»¶
     return false;
 }
 
@@ -30,11 +30,11 @@ int main() {
     scanf("%d", &T);
     while (T--) {
         scanf("%d %d", &n, &k);
-        scanf("%s", s + 1); // ´Ós[1]¿ªÊ¼¶ÁÈë×Ö·û´®£¬s[0]Î´Ê¹ÓÃ
-        int l = 1; // ×ó¶ËµãÉèÎª1
-        int r = n / k + 1; // ¼ÙÉèÃ¿¸ö¶Î¶¼¾¡¿ÉÄÜ¶Ì
+        scanf("%s", s + 1); // ä»Žs[1]å¼€å§‹è¯»å…¥å­—ç¬¦ä¸²ï¼Œs[0]æœªä½¿ç”¨
+        int l = 1; // å·¦ç«¯ç‚¹è®¾ä¸º1
+        int r = n / k + 1; // å‡è®¾æ¯ä¸ªæ®µéƒ½å°½å¯èƒ½çŸ­
 
-        while (l < r) { // ¶þ·Ö´ð°¸
+        while (l < r) { // äºŒåˆ†ç­”æ¡ˆ
             int mid = (l + r) / 2;
             if (check(mid)) r = mid;
             else l = mid + 1;

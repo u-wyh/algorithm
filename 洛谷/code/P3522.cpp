@@ -3,7 +3,7 @@
 using namespace std;
 
 struct node{
-	int l,r,id;//id±íÊ¾ÊÇµÚ¼¸Ìì
+	int l,r,id;//idè¡¨ç¤ºæ˜¯ç¬¬å‡ å¤©
 };
 
 int main()
@@ -22,7 +22,7 @@ int main()
 		}
 		int tmp=i;
 		while(!q.empty()&&q.back().l<l){
-			tmp=q.back().id;//Î¬»¤ÕâÒ»¶ÎµÄÆðÊ¼Ìì
+			tmp=q.back().id;//ç»´æŠ¤è¿™ä¸€æ®µçš„èµ·å§‹å¤©
 			q.pop_back();
 		}
 		q.push_back((node){l,r,tmp});

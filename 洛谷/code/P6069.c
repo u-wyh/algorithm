@@ -9,7 +9,7 @@ double m;
 ll a[200010];
 ll s[200010], ps[200010];
 
-// 自定义比较函数，用于qsort
+// 鑷畾涔夋瘮杈冨嚱鏁帮紝鐢ㄤ簬qsort
 int compare(const void *a, const void *b) {
     return (*(ll*)a - *(ll*)b);
 }

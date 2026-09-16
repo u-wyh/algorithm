@@ -1,4 +1,4 @@
-//Âå¹Èp1480
+//æ´›è°·p1480
 #include<stdio.h>
 #include<string.h>
 

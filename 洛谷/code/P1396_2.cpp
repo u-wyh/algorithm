@@ -55,14 +55,14 @@ int main() {
             ans = max(ans, edge[i].val);
             if (find(st) == find(en)) {
                 connected = true;
-                break; // Ò»µ©stºÍenÁ¬Í¨£¬¾Í¿ÉÒÔÍ£Ö¹Ìí¼Ó±ßÁË
+                break; // ä¸€æ—¦stå’Œenè¿é€šï¼Œå°±å¯ä»¥åœæ­¢æ·»åŠ è¾¹äº†
             }
         }
     }
     if (connected) {
-        cout << ans << endl; // Êä³ö¹¹³ÉMSTµÄ×î´ó±ßÈ¨Öµ
+        cout << ans << endl; // è¾“å‡ºæ„æˆMSTçš„æœ€å¤§è¾¹æƒå€¼
     } else {
-        cout << "st and en are not connected" << endl; // »òÕß´¦ÀístºÍen²»Á¬Í¨µÄÇé¿ö
+        cout << "st and en are not connected" << endl; // æˆ–è€…å¤„ç†stå’Œenä¸è¿é€šçš„æƒ…å†µ
     }
     return 0;
 }

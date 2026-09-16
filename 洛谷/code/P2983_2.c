@@ -3,12 +3,12 @@
 #include <stdlib.h>
 
 typedef struct {
-    long long int p, c; // p´ú±í¸ÃÇÉ¿ËÁ¦¼Û¸ñ£¬c±íÊ¾Ï²»¶¸ÃÇÉ¿ËÁ¦µÄÄÌÅ£Êı
+    long long int p, c; // pä»£è¡¨è¯¥å·§å…‹åŠ›ä»·æ ¼ï¼Œcè¡¨ç¤ºå–œæ¬¢è¯¥å·§å…‹åŠ›çš„å¥¶ç‰›æ•°
 } cow;
 
 cow c[100002];
 
-// ±È½Ïº¯Êı£¬ÓÃÓÚqsort
+// æ¯”è¾ƒå‡½æ•°ï¼Œç”¨äºqsort
 int com(const void *a, const void *b) {
     cow *ca = (cow *)a;
     cow *cb = (cow *)b;
@@ -19,25 +19,25 @@ int com(const void *a, const void *b) {
 
 int main() {
     int n;
-    unsigned long long int b, ans = 0; // Ô¤ËãºÍ´ğ°¸
-    scanf("%d %llu", &n, &b); // ¶ÁÈ¡nºÍb
+    unsigned long long int b, ans = 0; // é¢„ç®—å’Œç­”æ¡ˆ
+    scanf("%d %llu", &n, &b); // è¯»å–nå’Œb
 
     for (int i = 0; i < n; i++) {
-        scanf("%lld %lld", &c[i].p, &c[i].c); // ¶ÁÈ¡¼Û¸ñºÍÏ²»¶¸ÃÇÉ¿ËÁ¦µÄÄÌÅ£Êı
+        scanf("%lld %lld", &c[i].p, &c[i].c); // è¯»å–ä»·æ ¼å’Œå–œæ¬¢è¯¥å·§å…‹åŠ›çš„å¥¶ç‰›æ•°
     }
 
-    // Ê¹ÓÃqsort½øĞĞÅÅĞò
+    // ä½¿ç”¨qsortè¿›è¡Œæ’åº
     qsort(c, n, sizeof(cow), com);
 
     for (int i = 0; i < n; i++) {
         if (b > c[i].c * c[i].p) {
-            // Èç¹ûÔ¤Ëã×ã¹»¹ºÂòµ±Ç°ÇÉ¿ËÁ¦
+            // å¦‚æœé¢„ç®—è¶³å¤Ÿè´­ä¹°å½“å‰å·§å…‹åŠ›
             ans += c[i].c;
             b -= c[i].c * c[i].p;
         } else {
-            // Èç¹ûÔ¤Ëã²»×ã£¬¾¡Á¿¶àµØ¹ºÂò
+            // å¦‚æœé¢„ç®—ä¸è¶³ï¼Œå°½é‡å¤šåœ°è´­ä¹°
             ans += b / c[i].p;
-            break; // Ìø³öÑ­»·£¬ÒòÎªºóĞøÇÉ¿ËÁ¦¸ü¹ó
+            break; // è·³å‡ºå¾ªç¯ï¼Œå› ä¸ºåç»­å·§å…‹åŠ›æ›´è´µ
         }
     }
 

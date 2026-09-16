@@ -5,10 +5,10 @@
 #include<algorithm>
 using namespace std;
 
-int n,sum[100010],q[100010],h[100010];//n Æ£ÀÍÇ°×ººÍ Ç°i¸ö×î´óÖµ ºói¸ö×î´óÖµ
+int n,sum[100010],q[100010],h[100010];//n ç–²åŠ³å‰ç¼€å’Œ å‰iä¸ªæœ€å¤§å€¼ åiä¸ªæœ€å¤§å€¼
 struct node{
-    int s;//¾àÀë
-    int a;//Æ£ÀÍ
+    int s;//è·ç¦»
+    int a;//ç–²åŠ³
 }v[100010];
 
 bool cmp(node x,node y){return x.a>y.a;}
@@ -17,10 +17,10 @@ int main()
 {	scanf("%d",&n);
     for(int i=1;i<=n;i++)scanf("%d",&v[i].s);
     for(int i=1;i<=n;i++)scanf("%d",&v[i].a);
-    sort(v+1,v+1+n,cmp);//°´Æ£ÀÍÅÅĞò
+    sort(v+1,v+1+n,cmp);//æŒ‰ç–²åŠ³æ’åº
     for(int i=1;i<=n;i++)sum[i]=sum[i-1]+v[i].a;
-    for(int i=1;i<=n;i++)q[i]=max(q[i-1],2*v[i].s);//Ç°i¸ö×î´óÖµ
-    for(int i=n;i>=1;i--)h[i]=max(h[i+1],2*v[i].s+v[i].a);//ºói¸ö×î´óÖµ
+    for(int i=1;i<=n;i++)q[i]=max(q[i-1],2*v[i].s);//å‰iä¸ªæœ€å¤§å€¼
+    for(int i=n;i>=1;i--)h[i]=max(h[i+1],2*v[i].s+v[i].a);//åiä¸ªæœ€å¤§å€¼
     for(int i=1;i<=n;i++)printf("%d\n",max(sum[i]+q[i],sum[i-1]+h[i]));
     return 0;
 }

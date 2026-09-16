@@ -1,9 +1,9 @@
 //P1578
-//¡¶Ç³Ì¸ÓÃ¼«´ó»¯Ë¼Ïë½â¾ö×î´ó×Ó¾ØĞÎÎÊÌâ¡·
+//ã€Šæµ…è°ˆç”¨æå¤§åŒ–æ€æƒ³è§£å†³æœ€å¤§å­çŸ©å½¢é—®é¢˜ã€‹
 #include<bits/stdc++.h>
 using namespace std;
 
-int read()//¿ì¶Á
+int read()//å¿«è¯»
 {
 	int sum = 0 , f = 1;
 	char c = getchar();
@@ -20,17 +20,17 @@ int read()//¿ì¶Á
 	return sum * f;
 }
 
-struct S{//´æ·ÅÕÏ°­µãĞÅÏ¢
+struct S{//å­˜æ”¾éšœç¢ç‚¹ä¿¡æ¯
 	int x , y;
 }s[5010];
 
-bool cmp1(S a , S b)//°´ºá×ø±êÅÅĞò
+bool cmp1(S a , S b)//æŒ‰æ¨ªåæ ‡æ’åº
 {
 	if(a.x != b.x) return a.x < b.x;
 	else return a.y < b.y;
 }
 
-bool cmp2(S a , S b)//°´×İ×ø±êÅÅĞò
+bool cmp2(S a , S b)//æŒ‰çºµåæ ‡æ’åº
 {
 	if(a.y != b.y) return a.y < b.y;
 	else return a.x < b.x ;
@@ -42,12 +42,12 @@ int main()
 {
     l = read() , w = read() , n = read();
     for(int i = 1; i <= n; i ++) s[i].x = read() , s[i].y = read();
-    s[++ n].x = 0 , s[n].y = 0;//½«ËÄ¸ö¶¥µãÉèÎªÕÏ°­µã
+    s[++ n].x = 0 , s[n].y = 0;//å°†å››ä¸ªé¡¶ç‚¹è®¾ä¸ºéšœç¢ç‚¹
 	s[++ n].x = 0 , s[n].y = w;
 	s[++ n].x = l , s[n].y = 0;
 	s[++ n].x = l , s[n].y = w;
-    int x1 , x2 , y1 , y2;//x1Îª×ó±ß½ç£¬x2ÎªÓÒ±ß½ç,y1ÎªÏÂ±ß½ç£¬y2ÎªÉÏ±ß½ç
-    //´Ó×óÍùÓÒËÑ
+    int x1 , x2 , y1 , y2;//x1ä¸ºå·¦è¾¹ç•Œï¼Œx2ä¸ºå³è¾¹ç•Œ,y1ä¸ºä¸‹è¾¹ç•Œï¼Œy2ä¸ºä¸Šè¾¹ç•Œ
+    //ä»å·¦å¾€å³æœ
     sort(s + 1 , s + n + 1 , cmp1);
     for(int i = 1; i <= n; i ++)
     {
@@ -56,11 +56,11 @@ int main()
     	{
 				x2 = s[j].x;
 				ans = max(ans , (x2 - x1) * (y2 - y1));
-	    		if(s[j].y < s[i].y) y1 = max(y1 , s[j].y);//¸üĞÂÉÏÏÂ±ß½ç
+	    		if(s[j].y < s[i].y) y1 = max(y1 , s[j].y);//æ›´æ–°ä¸Šä¸‹è¾¹ç•Œ
 	    	    else y2 = min(y2 , s[j].y);
 		}
 	}
-    //´ÓÓÒÍù×óËÑ
+    //ä»å³å¾€å·¦æœ
     for(int i = n; i >= 1; i --)
     {
     	x1 = s[i].x , y1 = 0 , y2 = w;
@@ -73,7 +73,7 @@ int main()
 		}
 	}
 
-	//´¦ÀíÌØÊâÇé¿ö
+	//å¤„ç†ç‰¹æ®Šæƒ…å†µ
 	sort(s + 1 , s + n + 1 , cmp2);
 	for(int i = 1; i <= n - 1; i ++)
 	{

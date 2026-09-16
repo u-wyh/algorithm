@@ -8,17 +8,17 @@ long long ans;
 
 void swap(int& x,int& y){
     x^=y;y^=x;x^=y;
-}//½»»»Á½¸öÔªËØ
+}//äº¤æ¢ä¸¤ä¸ªå…ƒç´ 
 
-void reverse(int l,int r){//·­×ªÇø¼ä[l,r]ÄÚµÄÔªËØ
+void reverse(int l,int r){//ç¿»è½¬åŒºé—´[l,r]å†…çš„å…ƒç´ 
 	for(int i=l;i<=r&&(i<<1)<l+r;++i)
         swap(a[i],a[r+l-i]);
-	++ans;//Ë³±ãÍ³¼Æ´ğ°¸
+	++ans;//é¡ºä¾¿ç»Ÿè®¡ç­”æ¡ˆ
 }
 
 int lowbit(int x){
     return x&-x;
-}//ÏÂÃæÈıĞĞÊÇ¾­µäµÄÊ÷×´Êı×é
+}//ä¸‹é¢ä¸‰è¡Œæ˜¯ç»å…¸çš„æ ‘çŠ¶æ•°ç»„
 
 void update(int i,int v){
     for(;i<=n;i+=lowbit(i))
@@ -35,7 +35,7 @@ int getsum(int i){
 int main()
 {
 	scanf("%d",&n);
-	int las=1;scanf("%d",&a[1]);//ÏÈ½«ĞòÁĞ°´ÒªÇó·­×ªÒ»´Î
+	int las=1;scanf("%d",&a[1]);//å…ˆå°†åºåˆ—æŒ‰è¦æ±‚ç¿»è½¬ä¸€æ¬¡
 	for(int i=2;i<=n;++i){
 		scanf("%d",&a[i]);
 		if(a[i]>a[i-1]){
@@ -44,7 +44,7 @@ int main()
 		}
 	}
 	reverse(las,n);
-	for(int i=n;i>=1;--i){//È»ºóÖ±½ÓÊ÷×´Êı×éÇóÄæĞò¶ÔÕıÈ·ĞÔ¾Í¿ÉÒÔ±£Ö¤ÁË
+	for(int i=n;i>=1;--i){//ç„¶åç›´æ¥æ ‘çŠ¶æ•°ç»„æ±‚é€†åºå¯¹æ­£ç¡®æ€§å°±å¯ä»¥ä¿è¯äº†
 		ans+=getsum(a[i]);
 		update(a[i],1);
 	}

@@ -65,53 +65,53 @@ int main()
             char c;
             cin>>c;
             if(c=='E'){
-                if(j!=m)//ÓÒ
+                if(j!=m)//å³
                     addedge(i*m+j,i*m+j+1,0);
-                if(i!=0)//ÉÏ
+                if(i!=0)//ä¸Š
                     addedge(i*m+j,i*m+j-m,3);
-                if(j!=1)//×ó
+                if(j!=1)//å·¦
                     addedge(i*m+j,i*m+j-1,2);
-                if(i!=n-1)//ÏÂ
+                if(i!=n-1)//ä¸‹
                     addedge(i*m+j,i*m+j+m,1);
             }
             else if(c=='W'){
                 if(j!=m)//
                     addedge(i*m+j,i*m+j+1,2);
-                if(i!=0)//ÉÏ
+                if(i!=0)//ä¸Š
                     addedge(i*m+j,i*m+j-m,1);
                 if(j!=1)//
                     addedge(i*m+j,i*m+j-1,0);
-                if(i!=n-1)//ÏÂ
+                if(i!=n-1)//ä¸‹
                     addedge(i*m+j,i*m+j+m,3);
             }
             else if(c=='N'){
                 if(j!=m)//
                     addedge(i*m+j,i*m+j+1,1);
-                if(i!=0)//ÉÏ
+                if(i!=0)//ä¸Š
                     addedge(i*m+j,i*m+j-m,0);
                 if(j!=1)//
                     addedge(i*m+j,i*m+j-1,3);
-                if(i!=n-1)//ÏÂ
+                if(i!=n-1)//ä¸‹
                     addedge(i*m+j,i*m+j+m,2);
             }
             else if(c=='S'){
-                if(j!=m)//×ó
+                if(j!=m)//å·¦
                     addedge(i*m+j,i*m+j+1,3);
-                if(i!=0)//ÉÏ
+                if(i!=0)//ä¸Š
                     addedge(i*m+j,i*m+j-m,2);
-                if(j!=1)//ÓÒ
+                if(j!=1)//å³
                     addedge(i*m+j,i*m+j-1,1);
-                if(i!=n-1)//ÏÂ
+                if(i!=n-1)//ä¸‹
                     addedge(i*m+j,i*m+j+m,0);
             }
             else{
-                if(j!=m)//×ó
+                if(j!=m)//å·¦
                     addedge(i*m+j,i*m+j+1,INF);
-                if(i!=0)//ÉÏ
+                if(i!=0)//ä¸Š
                     addedge(i*m+j,i*m+j-m,INF);
-                if(j!=1)//ÓÒ
+                if(j!=1)//å³
                     addedge(i*m+j,i*m+j-1,INF);
-                if(i!=n-1)//ÏÂ
+                if(i!=n-1)//ä¸‹
                     addedge(i*m+j,i*m+j+m,INF);
             }
         }

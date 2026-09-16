@@ -33,7 +33,7 @@ void merge(int l, int r) {
 
 int main() {
     scanf("%d", &n);
-    for (int i = n; i; i--) // µ¹Ğò¶ÁÈëÊı¾İ
+    for (int i = n; i; i--) // å€’åºè¯»å…¥æ•°æ®
         scanf("%d", &a[i]);
     merge(1, n);
     printf("%lld", ans);

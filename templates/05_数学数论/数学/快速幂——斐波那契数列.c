@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// ¶¯Ì¬·ÖÅä¶şÎ¬Êı×é
+// åŠ¨æ€åˆ†é…äºŒç»´æ•°ç»„
 int** createMatrix(int rows, int cols) {
     int** matrix = (int**)malloc(rows * sizeof(int*));
     if (matrix == NULL) {
@@ -23,7 +23,7 @@ int** createMatrix(int rows, int cols) {
     return matrix;
 }
 
-// ¾ØÕóÏà³Ë
+// çŸ©é˜µç›¸ä¹˜
 int** multiply(int** a, int** b, int n, int m, int p) {
     int** result = createMatrix(n, p);
     for (int i = 0; i < n; i++) {
@@ -37,7 +37,7 @@ int** multiply(int** a, int** b, int n, int m, int p) {
     return result;
 }
 
-// ¾ØÕóÃİ
+// çŸ©é˜µå¹‚
 int** power(int** m, int p, int n) {
     int** ans = createMatrix(n, n);
     for (int i = 0; i < n; i++) {
@@ -57,7 +57,7 @@ int** power(int** m, int p, int n) {
     return ans;
 }
 
-// ´òÓ¡¶şÎ¬¾ØÕó
+// æ‰“å°äºŒç»´çŸ©é˜µ
 void print(int** m, int n) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
@@ -67,7 +67,7 @@ void print(int** m, int n) {
     }
 }
 
-// ÊÍ·Å¶şÎ¬Êı×é
+// é‡Šæ”¾äºŒç»´æ•°ç»„
 void freeMatrix(int** matrix, int rows) {
     for (int i = 0; i < rows; i++) {
         free(matrix[i]);
@@ -77,7 +77,7 @@ void freeMatrix(int** matrix, int rows) {
 
 int main() {
     int  p;
-    scanf("%d",&p); // ¶ÁÈ¡¾ØÕó´óĞ¡ºÍÃİ
+    scanf("%d",&p); // è¯»å–çŸ©é˜µå¤§å°å’Œå¹‚
     int** base = createMatrix(1, 2);
     base[0][0] = 1;
     base[0][1] = 0;
@@ -88,10 +88,10 @@ int main() {
 
     int** result1 = power(m, p-1, 2);
     int** result2 = multiply(base,result1,1,2,2);
-    // ´òÓ¡½á¹û¾ØÕó
+    // æ‰“å°ç»“æœçŸ©é˜µ
     //print(result, n);
     printf("%d\n",result2[0][0]);
-    // ÊÍ·ÅÄÚ´æ
+    // é‡Šæ”¾å†…å­˜
     //freeMatrix(m, n);
     //freeMatrix(result, n);
 

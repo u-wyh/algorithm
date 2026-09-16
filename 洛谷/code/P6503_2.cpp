@@ -2,7 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-typedef long long ll;  // Ê¹ÓÃ ll ×÷Îª long long µÄ±ğÃû
+typedef long long ll;  // ä½¿ç”¨ ll ä½œä¸º long long çš„åˆ«å
 const ll MN = 3e5 + 5;
 
 ll nums[MN];

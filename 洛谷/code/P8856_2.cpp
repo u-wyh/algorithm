@@ -18,11 +18,11 @@ void lazy(int i, long v) {
 
 void down(int i) {
     if (add[i] != 0) {
-        // 发左
+        // 鍙戝乏
         lazy(i << 1, add[i]);
-        // 发右
+        // 鍙戝彸
         lazy(i << 1 | 1, add[i]);
-        // 父范围懒信息清空
+        // 鐖惰寖鍥存噿淇℃伅娓呯┖
         add[i] = 0;
     }
 }

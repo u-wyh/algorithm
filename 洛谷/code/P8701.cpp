@@ -4,9 +4,9 @@ using namespace std;
 
 const int N = 1e5 + 10;
 int n, m;
-vector<int> tree[N << 2]; // Ïß¶ÎÊ÷µÄÃ¿¸ö½Úµã´æ´¢Ò»¸ö vector
+vector<int> tree[N << 2]; // çº¿æ®µæ ‘çš„æ¯ä¸ªèŠ‚ç‚¹å­˜å‚¨ä¸€ä¸ª vector
 
-// ºÏ²¢Á½¸ö vector£¬²¢±£ÁôÇ° 8 ¸ö×î´óÔªËØ
+// åˆå¹¶ä¸¤ä¸ª vectorï¼Œå¹¶ä¿ç•™å‰ 8 ä¸ªæœ€å¤§å…ƒç´ 
 vector<int> operator+(const vector<int>& a, const vector<int>& b) {
     vector<int> c = a;
     for (int val : b) c.push_back(val);
@@ -15,12 +15,12 @@ vector<int> operator+(const vector<int>& a, const vector<int>& b) {
     return c;
 }
 
-// ¸üĞÂÏß¶ÎÊ÷µÄ½Úµã
+// æ›´æ–°çº¿æ®µæ ‘çš„èŠ‚ç‚¹
 void pushup(int node) {
     tree[node] = tree[node << 1] + tree[node << 1 | 1];
 }
 
-// µ¥µã¸üĞÂ
+// å•ç‚¹æ›´æ–°
 void update(int node, int l, int r, int k, int val) {
     if (l == r) {
         tree[node].clear();
@@ -33,7 +33,7 @@ void update(int node, int l, int r, int k, int val) {
     pushup(node);
 }
 
-// Çø¼ä²éÑ¯
+// åŒºé—´æŸ¥è¯¢
 vector<int> query(int node, int l, int r, int L, int R) {
     if (L <= l && r <= R) return tree[node];
     int mid = (l + r) >> 1;
@@ -50,13 +50,13 @@ int main() {
         int x, y;
         cin >> opt >> x >> y;
         if (opt == 'C') {
-            update(1, 1, n, x, y); // µ¥µã¸üĞÂ
+            update(1, 1, n, x, y); // å•ç‚¹æ›´æ–°
         } else {
-            vector<int> result = query(1, 1, n, x, y); // Çø¼ä²éÑ¯
+            vector<int> result = query(1, 1, n, x, y); // åŒºé—´æŸ¥è¯¢
             if (result.size() == 8) {
-                cout << result.back() << "\n"; // Êä³öµÚ 8 ´óµÄÖµ
+                cout << result.back() << "\n"; // è¾“å‡ºç¬¬ 8 å¤§çš„å€¼
             } else {
-                cout << 0 << "\n"; // ²»×ã 8 ¸öÔªËØÊ±Êä³ö 0
+                cout << 0 << "\n"; // ä¸è¶³ 8 ä¸ªå…ƒç´ æ—¶è¾“å‡º 0
             }
         }
     }

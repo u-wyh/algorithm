@@ -24,7 +24,7 @@ int main()
     }
     sort(nums+1,nums+n+1,cmp);
     for(int j=1;j<=n;j++){
-        //Ã¶¾ÙÌøµã
+        //æžšä¸¾è·³ç‚¹
         f[j][j]=nums[j].val;
         int now=j;
         for(int i=j+1;i<=n;i++){

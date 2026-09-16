@@ -11,7 +11,7 @@
 long double a[N], s, ans, cnt, sum;
 ll n;
 
-// 自定义比较函数，用于qsort
+// 鑷畾涔夋瘮杈冨嚱鏁帮紝鐢ㄤ簬qsort
 int compare(const void *a, const void *b) {
     long double arg1 = *((long double*)a);
     long double arg2 = *((long double*)b);

@@ -7,22 +7,22 @@ typedef long long ll;
 typedef const int cint;
 cint N=100010;
 int t,c,n,m,fa[N],siz[N],mp[N];
-int find(int x) {//²éÕÒ
+int find(int x) {//æŸ¥æ‰¾
 	if(x==fa[x]) return x;
 	return fa[x]=find(fa[x]);
 }
-void Union(int x,int y) {//ºÏ²¢
+void Union(int x,int y) {//åˆå¹¶
 	int fx=find(x),fy=find(y);
 	if(fx!=fy) fa[fy]=fx,siz[fx]+=siz[fy];
 }
-bool dfs(int x,int root,int flag) {//ÕÒÕâ¿ÃÊ÷ÖĞÊÇ·ñÓĞ¸ù½ÚµãµÄ·´
+bool dfs(int x,int root,int flag) {//æ‰¾è¿™æ£µæ ‘ä¸­æ˜¯å¦æœ‰æ ¹èŠ‚ç‚¹çš„å
 	if(mp[x]/2==root) return flag^(mp[x]&1);
 	return dfs(mp[x]/2,root,flag^(mp[x]&1));
 }
 #define True -1
 #define False -2
 #define Unknown -3
-int opp(int x) {//ÊıÖµµÄ·´
+int opp(int x) {//æ•°å€¼çš„å
 	if(x==True) return False;
 	if(x==False) return True;
 	if(x==Unknown) return Unknown;
@@ -40,7 +40,7 @@ int main() {
 			scanf(" %c",&opt);
 			if(opt=='+') {
 				scanf("%d%d",&x,&y);
-				mp[x]=mp[y];//Â·¾¶Ñ¹Ëõ
+				mp[x]=mp[y];//è·¯å¾„å‹ç¼©
 			}
 			else if(opt=='-') {
 				scanf("%d%d",&x,&y);
@@ -50,9 +50,9 @@ int main() {
 			else if(opt=='F') scanf("%d",&x),mp[x]=False;
 			else scanf("%d",&x),mp[x]=Unknown;
 		}
-		afor(i,1,n) if(mp[i]>0) Union(mp[i]/2,i);//Á¬±ß£¬ÒÔ¸³ÖµµÄÔªËØÎª¸¸Ç×
+		afor(i,1,n) if(mp[i]>0) Union(mp[i]/2,i);//è¿è¾¹ï¼Œä»¥èµ‹å€¼çš„å…ƒç´ ä¸ºçˆ¶äº²
 		afor(i,1,n) if(i==find(i)&&(mp[i]==Unknown||(mp[i]>0&&dfs(i,i,0))))
-			ans+=siz[i];//Âú×ãÊÇ Unknown µÄÌõ¼ş¾ÍÀÛ¼Ó´ğ°¸
+			ans+=siz[i];//æ»¡è¶³æ˜¯ Unknown çš„æ¡ä»¶å°±ç´¯åŠ ç­”æ¡ˆ
 		printf("%d\n",ans);
 	}
 	return 0;

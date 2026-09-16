@@ -20,10 +20,10 @@
 using namespace std;
 
 int n,m,t,u,v;
-bool a[19][19]; //´æ±ß
-ll ans,f[600001][19]; //×´Ñ¹
+bool a[19][19]; //å­˜è¾¹
+ll ans,f[600001][19]; //çŠ¶åŽ‹
 
-inline int qr(){ //¿ì¶Á
+inline int qr(){ //å¿«è¯»
 	char ch;
 	while((ch=getchar())<'0'||ch>'9');
 	int res=ch^48;
@@ -37,22 +37,22 @@ int main()
 	n=qr(),m=qr();t=1<<n;
 	for(rg i=1;i<=m;++i){
 		u=qr()-1;v=qr()-1;
-		a[u][v]=a[v][u]=1;//¼Ó±ß
+		a[u][v]=a[v][u]=1;//åŠ è¾¹
 	}
 	for(rg i=0;i<n;++i)
-		f[1<<i][i]=1; //³õÊ¼»¯£¨´´½¨ÒÔiÎªÆðµãµÄÂ·¾¶£©
+		f[1<<i][i]=1; //åˆå§‹åŒ–ï¼ˆåˆ›å»ºä»¥iä¸ºèµ·ç‚¹çš„è·¯å¾„ï¼‰
 	for(rg i=1;i<=t;++i){
 		for(rg j=0;j<n;++j){
-			if(!f[i][j])continue; //¼ÓËÙ
+			if(!f[i][j])continue; //åŠ é€Ÿ
 			for(rg k=0;k<n;++k){
-				if(!a[j][k])continue; //¼ÓËÙ
-				if((i&-i)>1<<k)continue; //Æðµã²»ÄÜ¸Ä£¡£¡£¡£¨È¥ÖØ£©
-				if(1<<k&i){ //Õâ¸öµã×ß¹ý
-					if(1<<k==(i&-i)) //ÆðµãÓëÖÕµãÏàÍ¬
+				if(!a[j][k])continue; //åŠ é€Ÿ
+				if((i&-i)>1<<k)continue; //èµ·ç‚¹ä¸èƒ½æ”¹ï¼ï¼ï¼ï¼ˆåŽ»é‡ï¼‰
+				if(1<<k&i){ //è¿™ä¸ªç‚¹èµ°è¿‡
+					if(1<<k==(i&-i)) //èµ·ç‚¹ä¸Žç»ˆç‚¹ç›¸åŒ
 						ans+=f[i][j];
-				}else f[i|1<<k][k]+=f[i][j]; //Ã»×ß¹ý¾Í×ß£¡
+				}else f[i|1<<k][k]+=f[i][j]; //æ²¡èµ°è¿‡å°±èµ°ï¼
 			}
 		}
-	}printf("%lld",(ans-m)/2); //´¦ÀíÖ®ºóÔÙÊä³ö£¡
+	}printf("%lld",(ans-m)/2); //å¤„ç†ä¹‹åŽå†è¾“å‡ºï¼
 	return 0;
 }

@@ -6,15 +6,15 @@ const int LIMIT = 16;
 
 int n,m,power;
 
-int ans[MAXN];//��¼��
-vector<pair<int,int>>vec[MAXN];//��ʼʱ�ı�  ��  �ߵı��
+int ans[MAXN];//记录答案
+vector<pair<int,int>>vec[MAXN];//初始时的边  和  边的编号
 
 struct node{
     int u,v,w;
-}nums[MAXN];//�½��ı�
+}nums[MAXN];//新建的边
 
-int to[MAXN];//��������ڼ�¼������ﵱǰ�ڵ�  ʵ��������ת���Ǹ��ڵ�
-int son[MAXN];//������ڼ�¼ÿ��ԭʼ�ı��нϵ͵Ľڵ�  ����ͳ�ƴ�
+int to[MAXN];//这个是用于记录如果到达当前节点  实际上是跳转到那个节点
+int son[MAXN];//这个用于记录每条原始的边中较低的节点  用于统计答案
 
 int deep[MAXN];
 int st[MAXN][LIMIT];
@@ -42,14 +42,14 @@ void dfs(int u, int f) {
     for (int p = 1; p <= power; p++) {
         st[u][p] = st[st[u][p - 1]][p - 1];
     }
-    //���u��deep  stjump
+    //完成u的deep  stjump
     for(int i=0;i<vec[u].size();i++){
         int v=vec[u][i].first;
         int id=vec[u][i].second;
         if(v==f){
             continue;
         }
-        son[id]=v;//��ʾ������Ҫ�Ƕ���  ��ôҪ��¼����v����ڵ�Ĵ�
+        son[id]=v;//表示这条边要是断了  那么要记录的是v这个节点的答案
         dfs(v,u);
     }
 }
@@ -60,29 +60,29 @@ int lca(int a, int b) {
         a = b;
         b = tmp;
     }
-    //ȷ����С��ϵ
+    //确定大小关系
     for (int p = power; p >= 0; p--) {
         if (deep[st[a][p]] >= deep[b]) {
             a = st[a][p];
         }
     }
-    //���Ƚ����߱�Ϊͬһ�߶�
+    //首先将两者变为同一高度
     if (a == b) {
         return a;
     }
-    //�����ͬ˵���������ȹ�ϵ
+    //如果相同说明就是祖先关系
     for (int p = power; p >= 0; p--) {
         if (st[a][p] != st[b][p]) {
             a = st[a][p];
             b = st[b][p];
         }
-        //�ж�������Ƿ���Ϲ���
+        //判断跳完后是否符合规则
     }
     return st[a][0];
-    //���ǽ�ͷ������������Ϊ0  ʵ����û��0
+    //我们将头结点的祖先设置为0  实际上没有0
 }
 
-//�����ڲ��鼯�Ĺ���
+//类似于并查集的工作
 int find(int x){
     return x==to[x]?x:to[x]=find(to[x]);
 }
@@ -105,7 +105,7 @@ int main()
     }
     sort(nums+1,nums+m+1,cmp);
     for(int i=1;i<=n;i++){
-        to[i]=i;//��ʼʱ ÿ���ڵ��������Ķ����Լ�
+        to[i]=i;//初始时 每个节点所代表的都是自己
         ans[i]=-1;
     }
     for(int i=1;i<=n;i++){
@@ -124,11 +124,11 @@ int main()
         int w=nums[i].w;
         int fa=lca(u,v);
         //cout<<u<<' '<<v<<' '<<w<<' '<<fa<<' '<<st[u][0]<<' '<<st[v][0]<<endl;
-        //ʵ�������Ŀǰ��ֵӰ�쵽����  ��u��lca  ��  ��v��lca  ������lca
+        //实际上这个目前的值影响到的是  从u到lca  和  从v到lca  不包括lca
         for(int u=find(u);deep[u]>deep[fa];u=find(st[u][0])){
-            //��ʾ���� ������u�ڵ� ʵ������ת��������
-            //���θ���Ҫ������ڵ�Ĵ𰸸���  ԭ��һ����û�д𰸵�  ����д� һ�����ᵽ������ڵ�
-            //����ڵ���� ��ô�Ժ󵽴�����ڵ�  һ����ֱ��ȥ����
+            //表示的是 来到了u节点 实际上跳转到了哪里
+            //本次更新要将这个节点的答案更新  原来一定是没有答案的  如果有答案 一定不会到达这个节点
+            //这个节点完成 那么以后到达这个节点  一定会直接去上面
             ans[u]=w;
             to[u]=st[u][0];
             cout<<' '<<u<<endl;

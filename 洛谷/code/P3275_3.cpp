@@ -6,23 +6,23 @@ const int MAXN = 100000 + 10;
 
 int n,k;
 int scc[MAXN],sum,low[MAXN],dfn[MAXN],cnt,tot[MAXN];
-//ÒÔÉÏÊÇÇ¿Á¬Í¨Í¼µÄ±Ø±¸±äÁ¿£¬Î¨Ò»totÊÇ¼ÇÂ¼Ã¿¸öÇ¿Á¬Í¨·ÖÁ¿ÀïÃæÓĞ¶àÉÙ¸öµã
+//ä»¥ä¸Šæ˜¯å¼ºè¿é€šå›¾çš„å¿…å¤‡å˜é‡ï¼Œå”¯ä¸€totæ˜¯è®°å½•æ¯ä¸ªå¼ºè¿é€šåˆ†é‡é‡Œé¢æœ‰å¤šå°‘ä¸ªç‚¹
 int dp[MAXN];
-//Õâ¸öÓÃÓÚDP¼ÇÂ¼´ğ°¸
+//è¿™ä¸ªç”¨äºDPè®°å½•ç­”æ¡ˆ
 int in[MAXN];
-//Õâ¸ö¼ÇÂ¼Èë¶È£¬ÓÃÓÚTopo
+//è¿™ä¸ªè®°å½•å…¥åº¦ï¼Œç”¨äºTopo
 long long ans;
-//×îÖÕ´ğ°¸
+//æœ€ç»ˆç­”æ¡ˆ
 struct Node{
-	int next;//¼ÇÂ¼Ã¿¸öµãµÄÏÂÒ»¸öµã
-	int v;//¼ÇÂ¼±ßÈ¨
+	int next;//è®°å½•æ¯ä¸ªç‚¹çš„ä¸‹ä¸€ä¸ªç‚¹
+	int v;//è®°å½•è¾¹æƒ
 };
-vector<Node>nei[MAXN];//¾ÉÍ¼
-vector<Node>nnei[MAXN];//ĞÂÍ¼
-bool Stack[MAXN];//ÓÃÓÚTarjan
-stack<int> s;//ÓÃÓÚTarjan
+vector<Node>nei[MAXN];//æ—§å›¾
+vector<Node>nnei[MAXN];//æ–°å›¾
+bool Stack[MAXN];//ç”¨äºTarjan
+stack<int> s;//ç”¨äºTarjan
 
-inline int read(){//¿ìËÙ¶ÁÈë
+inline int read(){//å¿«é€Ÿè¯»å…¥
     int f = 1, x = 0;
     char c = getchar();
 
@@ -43,7 +43,7 @@ inline int read(){//¿ìËÙ¶ÁÈë
 }
 
 
-void Tarjan(int u){//TarjanÄ£°å
+void Tarjan(int u){//Tarjanæ¨¡æ¿
 	low[u] = dfn[u] = ++cnt;
 	Stack[u] = true;
 	s.push(u);
@@ -79,30 +79,30 @@ void Tarjan(int u){//TarjanÄ£°å
 
 int main()
 {
-	n = read(),k = read();//¶ÁÈë
+	n = read(),k = read();//è¯»å…¥
 
 	for(int i = 1;i <= k; i++){
 		int z = read(),x = read(),y = read();
-		switch(z){//Ê¹ÓÃ¿ª¹Øº¯Êı
-			case 1:{//Ò»ºÅÇé¿ö
+		switch(z){//ä½¿ç”¨å¼€å…³å‡½æ•°
+			case 1:{//ä¸€å·æƒ…å†µ
 				nei[x].push_back((Node){y,0});
 				nei[y].push_back((Node){x,0});
-				//ÕâÀïÒ»¶¨Òª½¨Á½Ìõ±ß£¡
+				//è¿™é‡Œä¸€å®šè¦å»ºä¸¤æ¡è¾¹ï¼
 				break;
 			}
-			case 2:{//¶şºÅÇé¿ö
+			case 2:{//äºŒå·æƒ…å†µ
 				nei[x].push_back((Node){y,1});
 				break;
 			}
-			case 3:{//ÈıºÅÇé¿ö
+			case 3:{//ä¸‰å·æƒ…å†µ
 				nei[y].push_back((Node){x,0});
 				break;
 			}
-			case 4:{//ËÄºÅÇé¿ö
+			case 4:{//å››å·æƒ…å†µ
 				nei[y].push_back((Node){x,1});
 				break;
 			}
-			case 5:{//ÎåºÅÇé¿ö
+			case 5:{//äº”å·æƒ…å†µ
 				nei[x].push_back((Node){y,0});
 				break;
 			}
@@ -113,7 +113,7 @@ int main()
     	if(dfn[i] == 0)Tarjan(i);//Tajan
     }
 
-    for(int i = 1;i <= n; i++){//½¨ĞÂÍ¼
+    for(int i = 1;i <= n; i++){//å»ºæ–°å›¾
     	int len = nei[i].size();
 
 		for(int j = 0;j < len; j++){
@@ -121,28 +121,28 @@ int main()
 			int xx = scc[i];
         	int yy = scc[next];
 
-        	if(xx == yy && nei[i][j].v == 1){//ÅĞ¶ÏÎŞ½â
+        	if(xx == yy && nei[i][j].v == 1){//åˆ¤æ–­æ— è§£
         		cout<<-1<<"\n";
         		return 0;
 			}
 
-        	if(xx != yy){//½¨ĞÂÍ¼
+        	if(xx != yy){//å»ºæ–°å›¾
         	    nnei[xx].push_back((Node){yy,nei[i][j].v});
         	    in[yy]++;
         	}
 		}
     }
 
-    queue<int>q;//TopoÄ£°å
+    queue<int>q;//Topoæ¨¡æ¿
 
-    for(int i = 1;i <= sum; i++){//½«Èë¶ÁÎª0µÄÑ¹Èë¶ÓÁĞ
+    for(int i = 1;i <= sum; i++){//å°†å…¥è¯»ä¸º0çš„å‹å…¥é˜Ÿåˆ—
     	if(!in[i]){
     		q.push(i);
-    		dp[i] = 1;//³õÊ¼»¯
+    		dp[i] = 1;//åˆå§‹åŒ–
 		}
 	}
 
-	while(!q.empty()){//ÍØÆËÄ£°å
+	while(!q.empty()){//æ‹“æ‰‘æ¨¡æ¿
 		int cur = q.front();
 		q.pop();
 		int len = nnei[cur].size();
@@ -150,15 +150,15 @@ int main()
 		for(int i = 0;i < len; i++){
 			int next = nnei[cur][i].next;
 			in[next]--;
-			dp[next] = max(dp[next],dp[cur] + nnei[cur][i].v);//Dp·½³Ì
+			dp[next] = max(dp[next],dp[cur] + nnei[cur][i].v);//Dpæ–¹ç¨‹
 
 			if(!in[next])q.push(next);
 		}
 	}
 
-	for(int i = 1;i <= sum; i++){//ÀÛ¼Ó´ğ°¸
+	for(int i = 1;i <= sum; i++){//ç´¯åŠ ç­”æ¡ˆ
 		ans += (long long) dp[i] * tot[i];
 	}
-	cout<<ans;//Êä³ö
+	cout<<ans;//è¾“å‡º
 	return 0;
 }

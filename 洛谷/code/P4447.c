@@ -7,7 +7,7 @@
 #define ll long long
 #define INF INT_MAX
 
-// ×Ô¶¨ÒåµÄreadº¯Êı£¬ÓÃÓÚ¶ÁÈ¡ÕûÊı
+// è‡ªå®šä¹‰çš„readå‡½æ•°ï¼Œç”¨äºè¯»å–æ•´æ•°
 int read() {
     int x = 0, f = 1;
     char ch = getchar();
@@ -24,12 +24,12 @@ int read() {
 
 int n, cnt, ans, a[100005], q[100005], sum[100005];
 
-// ×Ô¶¨ÒåµÄ±È½Ïº¯Êı£¬ÓÃÓÚqsort
+// è‡ªå®šä¹‰çš„æ¯”è¾ƒå‡½æ•°ï¼Œç”¨äºqsort
 int mysort(const void *a, const void *b) {
     return (*(int *)a - *(int *)b);
 }
 
-// ¶ş·Ö²éÕÒº¯Êı
+// äºŒåˆ†æŸ¥æ‰¾å‡½æ•°
 int search(int k) {
     int l = 1, r = cnt, mid;
     while (l <= r) {
@@ -59,7 +59,7 @@ int main() {
         q[k]++;
         sum[k]++;
 
-        // µ÷ÕûsumºÍqÊı×éÒÔ±£³ÖËüÃÇÖ®¼äµÄË³Ğò
+        // è°ƒæ•´sumå’Œqæ•°ç»„ä»¥ä¿æŒå®ƒä»¬ä¹‹é—´çš„é¡ºåº
         while (sum[k] < sum[k + 1] && k < cnt) {
             int tmp_q = q[k];
             q[k] = q[k + 1];

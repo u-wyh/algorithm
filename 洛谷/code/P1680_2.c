@@ -9,7 +9,7 @@
 
 typedef long long LL;
 
-int Read() { // ¿ì¶Á
+int Read() { // å¿«è¯»
     char c;
     int ans = 0;
     while (!isdigit(c = getchar()));
@@ -22,21 +22,21 @@ int Read() { // ¿ì¶Á
 int n, m, ans;
 int fc[MAXN + 10];
 
-LL Qpow(LL a, LL b) { // ¿ìËÙÃİ
+LL Qpow(LL a, LL b) { // å¿«é€Ÿå¹‚
     LL ans = 1;
     for (; b; b >>= 1, a = (a * a) % MOD)
         if (b & 1) ans = (ans * a) % MOD;
     return ans;
 }
 
-int C(int n, int k) { // Çó×éºÏÊı
+int C(int n, int k) { // æ±‚ç»„åˆæ•°
     LL fm = (1LL * fc[n - k] * fc[k]) % MOD;
     return (1LL * fc[n] * Qpow(fm, MOD - 2)) % MOD;
 }
 
 int main() {
     fc[0] = 1;
-    for (int i = 1; i <= MAXN; i++) // Ô¤´¦Àí½×³Ë
+    for (int i = 1; i <= MAXN; i++) // é¢„å¤„ç†é˜¶ä¹˜
         fc[i] = (1LL * fc[i - 1] * i) % MOD;
 
     n = Read();

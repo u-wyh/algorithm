@@ -33,7 +33,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < e[i].c; j++) {
             for (int k = e[i].a; k >= e[i].h; k--) {
-                dp[k] = dp[k] || dp[k - e[i].h]; // ¶¯Ì¬×ªÒÆ·½³Ì
+                dp[k] = dp[k] || dp[k - e[i].h]; // åŠ¨æ€è½¬ç§»æ–¹ç¨‹
             }
         }
     }

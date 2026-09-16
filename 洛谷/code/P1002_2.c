@@ -11,7 +11,7 @@ int n, m, cx, cy;
 
 int main() {
     scanf("%d %d %d %d", &n, &m, &cx, &cy);
-    d[cx][cy] = 1; // Ê¹ÓÃint´úÌæbool
+    d[cx][cy] = 1; // ä½¿ç”¨intä»£æ›¿bool
     for (int i = 0; i < 8; i++) {
         int tx = cx + dir[i][0], ty = cy + dir[i][1];
         if (tx >= 0 && tx < n && ty >= 0 && ty < m) {
@@ -21,7 +21,7 @@ int main() {
     dp[0][0] = 1;
     for (int i = 0; i <= n; i++) {
         for (int j = 0; j <= m; j++) {
-            if (!d[i][j]) { // ¼ì²éÊÇ·ñ²»ÊÇÕÏ°­
+            if (!d[i][j]) { // æ£€æŸ¥æ˜¯å¦ä¸æ˜¯éšœç¢
                 if (i > 0) dp[i][j] += dp[i-1][j];
                 if (j > 0) dp[i][j] += dp[i][j-1];
             }

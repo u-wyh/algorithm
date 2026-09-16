@@ -8,19 +8,19 @@ struct _edge{
     int next;
 }e[400010];
 int tot,head[200010],k;
-bool vis[200010];                        //ÅĞ¶ÏÅ©³¡ÊÇ·ñ¿ª×Å
-inline void add_edge(int from,int to){   //Á´Ê½Ç°ÏòĞÇ´æÍ¼
+bool vis[200010];                        //åˆ¤æ–­å†œåœºæ˜¯å¦å¼€ç€
+inline void add_edge(int from,int to){   //é“¾å¼å‰å‘æ˜Ÿå­˜å›¾
     e[++tot].from=from;
     e[tot].to=to;
     e[tot].next=head[from];
     head[from]=tot;
 }
 int n,m,u,v,t[200010],ans[200010],f[200010];
-inline int _find(int x){            //²éÑ¯+Â·¾¶Ñ¹Ëõ
+inline int _find(int x){            //æŸ¥è¯¢+è·¯å¾„å‹ç¼©
     while(x!=f[x]) x=f[x]=f[f[x]];
     return x;
 }
-inline void init(){                 //²¢²é¼¯³õÊ¼»¯
+inline void init(){                 //å¹¶æŸ¥é›†åˆå§‹åŒ–
     for(register int i=1;i<=n;i++)
         f[i]=i;
 }
@@ -30,35 +30,35 @@ int main()
     for(register int i=1;i<=m;i++)
     {
         scanf("%d%d",&u,&v);
-        add_edge(u,v);              //ÎŞÏòÍ¼Ë«Ïò´æ±ß
+        add_edge(u,v);              //æ— å‘å›¾åŒå‘å­˜è¾¹
         add_edge(v,u);
     }
     for(register int i=1;i<=n;i++)
-        scanf("%d",&t[i]);          //Å©³¡¹ØµÄÊ±¼ä£¬·´×Å¿´¾ÍÊÇ¿ªµÄÊ±¼ä
-    init();                         //¶¨ÒåÁËº¯Êı¡­¡­¼ÇµÃÓÃ
-    vis[t[n]]=1;                    //t_nÊ±¿ªÁËÅ©³¡ t[n]£¬±ê¼Ç
-    ans[n]=1;                       //Ö»¿ªÁËÒ»¸öÊ±Í¼±Ø¶¨ÊÇÁªÍ¨µÄ
-    for(register int i=n-1;i>=1;i--) //·´×ÅËÑ£¬µÚi Ê±¿Ì¿ªÁËÅ©³¡t[i]
+        scanf("%d",&t[i]);          //å†œåœºå…³çš„æ—¶é—´ï¼Œåç€çœ‹å°±æ˜¯å¼€çš„æ—¶é—´
+    init();                         //å®šä¹‰äº†å‡½æ•°â€¦â€¦è®°å¾—ç”¨
+    vis[t[n]]=1;                    //t_næ—¶å¼€äº†å†œåœº t[n]ï¼Œæ ‡è®°
+    ans[n]=1;                       //åªå¼€äº†ä¸€ä¸ªæ—¶å›¾å¿…å®šæ˜¯è”é€šçš„
+    for(register int i=n-1;i>=1;i--) //åç€æœï¼Œç¬¬i æ—¶åˆ»å¼€äº†å†œåœºt[i]
     {
-        vis[t[i]]=1;                //±ê¼Ç
+        vis[t[i]]=1;                //æ ‡è®°
         for(register int j=head[t[i]];j;j=e[j].next)
         {
-            if(vis[e[j].to]==1)      //Èç¹û¸Ã±ßÖÕµãÅ©³¡Ò²¿ªÁË£¬Ö´ĞĞÈçÏÂÓï¾ä
+            if(vis[e[j].to]==1)      //å¦‚æœè¯¥è¾¹ç»ˆç‚¹å†œåœºä¹Ÿå¼€äº†ï¼Œæ‰§è¡Œå¦‚ä¸‹è¯­å¥
             {
-                int fx=_find(t[i]),fy=_find(e[j].to);//²¢²é¼¯²éÑ¯
-                if(fx!=fy)     //²»ÔÚÍ¬Ò»¸ö¼¯ºÏµÄ»°
+                int fx=_find(t[i]),fy=_find(e[j].to);//å¹¶æŸ¥é›†æŸ¥è¯¢
+                if(fx!=fy)     //ä¸åœ¨åŒä¸€ä¸ªé›†åˆçš„è¯
                 {
-                    ++k;       //ºÏ²¢´ÎÊı +1
-                    f[fx]=fy;  //ºÏ²¢Á½¸ö¼¯ºÏ
+                    ++k;       //åˆå¹¶æ¬¡æ•° +1
+                    f[fx]=fy;  //åˆå¹¶ä¸¤ä¸ªé›†åˆ
                 }
             }
         }
-        if(k==n-i) ans[i]=1;   //µ±Ç°¿ªÁËn-£¨i-1£©¸öÅ©³¡£¬ÅĞ¶ÏÊÇ·ñÁ¬Í¨£¬´¢´æ´ğ°¸
+        if(k==n-i) ans[i]=1;   //å½“å‰å¼€äº†n-ï¼ˆi-1ï¼‰ä¸ªå†œåœºï¼Œåˆ¤æ–­æ˜¯å¦è¿é€šï¼Œå‚¨å­˜ç­”æ¡ˆ
         else ans[i]=0;
     }
     for(register int i=1;i<=n;i++)
     {
-        if(ans[i]==1) printf("YES\n");  //´òÓ¡´ğ°¸
+        if(ans[i]==1) printf("YES\n");  //æ‰“å°ç­”æ¡ˆ
         else printf("NO\n");
     }
     return 0;

@@ -64,7 +64,7 @@ signed main()
         }
         gauss(n);
         bool flag=false;
-        int main_count = 0; // Ö÷ÔªµÄÊıÁ¿
+        int main_count = 0; // ä¸»å…ƒçš„æ•°é‡
         for (int i = 1; i <= n; i++) {
             if (mat[i][i] == 1) {
                 main_count++;

@@ -4,7 +4,7 @@ using namespace std;
 const int maxn=3e5+1;
 const int maxm=1e5+1;
 
-priority_queue< pair<int,int> > q;//大根堆（后变小根堆）
+priority_queue< pair<int,int> > q;//澶ф牴鍫嗭紙鍚庡彉灏忔牴鍫嗭級
 int n,m,s,t,head[maxm],tot,dis[maxm],vis[maxm];
 struct Edge {
 	int next,now,w;
@@ -40,11 +40,11 @@ void dijkstra() {
 		vis[x]=1;
 		for(int i=head[x];i;i=edge[i].next) {
 			int k=max(dis[x],edge[i].w),r=edge[i].now;
-            //取max而不取和
+            //鍙杕ax鑰屼笉鍙栧拰
 				if(k<dis[r]) {
 					dis[r]=k;
 					q.push(make_pair(-dis[r],r));
-                    //取一个负就可以变为小根堆！！
+                    //鍙栦竴涓礋灏卞彲浠ュ彉涓哄皬鏍瑰爢锛侊紒
 				}
 		}
 	}
@@ -57,7 +57,7 @@ int main()
 		x=gi(); y=gi(); z=gi();
 		make(x,y,z);
 		make(y,x,z);
-        //构无向图
+        //鏋勬棤鍚戝浘
 	}
 	dijkstra();
 	printf("%d",dis[t]);

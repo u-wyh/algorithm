@@ -17,7 +17,7 @@ node e[205];
 int cmp(const void *a, const void *b) {
     node *na = (node *)a;
     node *nb = (node *)b;
-    return nb->k - na->k; // ½µĞòÅÅĞò
+    return nb->k - na->k; // é™åºæ’åº
 }
 
 void bubbleSort(node arr[], int n) {
@@ -25,7 +25,7 @@ void bubbleSort(node arr[], int n) {
     for (i = 0; i < n-1; i++) {
         for (j = 0; j < n-i-1; j++) {
             if (arr[j].k < arr[j+1].k) {
-                // ½»»» arr[j] ºÍ arr[j+1]
+                // äº¤æ¢ arr[j] å’Œ arr[j+1]
                 node temp = arr[j];
                 arr[j] = arr[j+1];
                 arr[j+1] = temp;
@@ -41,7 +41,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d %d", &e[i].k, &e[i].a);
     }
-    // Ê¹ÓÃqsort´úÌæÃ°ÅİÅÅĞò
+    // ä½¿ç”¨qsortä»£æ›¿å†’æ³¡æ’åº
     qsort(e, n, sizeof(node), cmp);
 
     memset(f, 0, sizeof(f));
@@ -52,8 +52,8 @@ int main() {
             if (j >= e[i].k && f[j - e[i].k] && f[j - e[i].k] <= e[i].a) {
                 f[j] = f[j - e[i].k] + 1;
             }
-            // ×¢Òâ£ºÔÚCÖĞ£¬ÎÒÃÇ²»ĞèÒª¡°Çå¿Õ¡±f[j]£¬ÒòÎªmemsetÒÑ¾­ÔÚ¿ªÊ¼Ê±ÇåÁãÁË
-            // ¶øÇÒCµÄÊı×é²»»á×Ô¶¯³õÊ¼»¯Îª0£¬ĞèÒªÊÖ¶¯memset»òÊ¹ÓÃÆäËû·½Ê½
+            // æ³¨æ„ï¼šåœ¨Cä¸­ï¼Œæˆ‘ä»¬ä¸éœ€è¦â€œæ¸…ç©ºâ€f[j]ï¼Œå› ä¸ºmemsetå·²ç»åœ¨å¼€å§‹æ—¶æ¸…é›¶äº†
+            // è€Œä¸”Cçš„æ•°ç»„ä¸ä¼šè‡ªåŠ¨åˆå§‹åŒ–ä¸º0ï¼Œéœ€è¦æ‰‹åŠ¨memsetæˆ–ä½¿ç”¨å…¶ä»–æ–¹å¼
         }
     }
 

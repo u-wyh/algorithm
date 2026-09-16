@@ -8,7 +8,7 @@ int n,all,f;
 struct node{
     int val,cost;
 }nums[MAXN];
-int m=1;//用于去重和离散化
+int m=1;//鐢ㄤ簬鍘婚噸鍜岀鏁ｅ寲
 int help[MAXN];
 
 int cnt=1;
@@ -84,7 +84,7 @@ int add(int pos,int jobv,int l,int r,int i){
 }
 
 long long query(int goal,int l,int r,int u,int v){
-    //v版本减去u版本
+    //v鐗堟湰鍑忓幓u鐗堟湰
     if(l==r){
         return (sum[v]-sum[u])/(sz[v]-sz[u])*goal;
     }

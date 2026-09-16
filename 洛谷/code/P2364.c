@@ -6,7 +6,7 @@ char awa[105];
 char waw[105];
 char aaw[105];
 int qwq[105][105][105];
-char wqw[105][105][105][1000]; // ¼ÙÉè×ã¹»³¤µÄ×Ö·û´®ÒÔ´æ´¢½á¹û
+char wqw[105][105][105][1000]; // å‡è®¾è¶³å¤Ÿé•¿çš„å­—ç¬¦ä¸²ä»¥å­˜å‚¨ç»“æžœ
 
 int max(int a, int b) {
     return a > b ? a : b;
@@ -21,15 +21,15 @@ int main() {
     for (int i = 1; i <= n; ++i) {
         for (int j = 1; j <= m; ++j) {
             for (int l = 1; l <= k; ++l) {
-                if (awa[i - 1] == waw[j - 1] && awa[i - 1] == aaw[l - 1]) { // ×ªÒÆ·½³Ì
+                if (awa[i - 1] == waw[j - 1] && awa[i - 1] == aaw[l - 1]) { // è½¬ç§»æ–¹ç¨‹
                     if (qwq[i][j][l] < qwq[i - 1][j - 1][l - 1] + 1) {
                         qwq[i][j][l] = qwq[i - 1][j - 1][l - 1] + 1;
-                        snprintf(wqw[i][j][l], sizeof(wqw[i][j][l]), "%s%c", wqw[i - 1][j - 1][l - 1], awa[i - 1]); // ¸üÐÂ´ð°¸
+                        snprintf(wqw[i][j][l], sizeof(wqw[i][j][l]), "%s%c", wqw[i - 1][j - 1][l - 1], awa[i - 1]); // æ›´æ–°ç­”æ¡ˆ
                     }
-                } else { // ¿¼ÂÇ¼Ì³Ð
+                } else { // è€ƒè™‘ç»§æ‰¿
                     if (qwq[i][j][l] < qwq[i - 1][j][l]) {
                         qwq[i][j][l] = qwq[i - 1][j][l];
-                        strcpy(wqw[i][j][l], wqw[i - 1][j][l]); // ¸üÐÂ´ð°¸
+                        strcpy(wqw[i][j][l], wqw[i - 1][j][l]); // æ›´æ–°ç­”æ¡ˆ
                     }
                     if (qwq[i][j][l] < qwq[i][j - 1][l]) {
                         qwq[i][j][l] = qwq[i][j - 1][l];

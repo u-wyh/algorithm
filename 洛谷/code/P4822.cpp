@@ -1,6 +1,6 @@
 // https://www.luogu.com.cn/problem/P4822
 //P4822
-//·Ö²ã×î¶ÌÂ·
+//åˆ†å±‚æœ€çŸ­è·¯
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 55;
@@ -63,12 +63,12 @@ int main()
         int u,v,w;
         cin>>u>>v>>w;
         for(int j=0;j<=k;j++){
-            //½¨Á¢k+1²ãÍ¼
+            //å»ºç«‹k+1å±‚å›¾
             addedge(u+j*n,v+j*n,w);
             addedge(v+j*n,u+j*n,w);
         }
         for(int j=0;j<k;j++){
-            //½¨Á¢²ã¼ÊÖ®¼äµÄÂ·¾¶
+            //å»ºç«‹å±‚é™…ä¹‹é—´çš„è·¯å¾„
             addedge(u+j*n,v+n+j*n,w/2);
             addedge(v+j*n,u+n+j*n,w/2);
         }
@@ -76,7 +76,7 @@ int main()
     dijkstra(1);
     int ans=INT_MAX;
     for(int i=0;i<=k;i++){
-        //Ö»Òªµ½´ïnºÅ½Úµã ²»¹ÜÊÇÄÇÒ»²ã  ¶¼¿ÉÒÔ
+        //åªè¦åˆ°è¾¾nå·èŠ‚ç‚¹ ä¸ç®¡æ˜¯é‚£ä¸€å±‚  éƒ½å¯ä»¥
         ans=min(ans,dis[n+i*n]);
     }
     cout<<ans<<endl;

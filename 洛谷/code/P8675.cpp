@@ -8,7 +8,7 @@ int sum[105][105];
 int dp[105][105][105];
 
 long long dfs(int x,int y,int len){
-    //±íÊ¾ÔÚµÚxĞĞµÚyÁĞ³¤¶ÈÎªlenµÄ¿ÉÄÜÖÖÀà
+    //è¡¨ç¤ºåœ¨ç¬¬xè¡Œç¬¬yåˆ—é•¿åº¦ä¸ºlençš„å¯èƒ½ç§ç±»
     if(x==0){
         return 1;
     }
@@ -16,10 +16,10 @@ long long dfs(int x,int y,int len){
     if(dp[x][y][len]){
         return dp[x][y][len];
     }
-    long long ans=1;//±íÊ¾Ö±½Ó½áÊø
+    long long ans=1;//è¡¨ç¤ºç›´æ¥ç»“æŸ
     for(int i=st;i<=y;i++){
         if(sum[x][i]){
-            //Ê×ÏÈ²»ÄÜÊÇ0
+            //é¦–å…ˆä¸èƒ½æ˜¯0
             for(int j=1;j<=min(sum[x][i],len-y+i);j++){
                 ans+=dfs(x-1,i,j);
             }

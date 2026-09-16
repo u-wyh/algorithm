@@ -7,7 +7,7 @@
 int tian[Max], king[Max];
 int n, i, j, ii, jj, ans;
 
-// 比较函数，用于qsort
+// 姣旇緝鍑芥暟锛岀敤浜巕sort
 int cmp(const void *a, const void *b) {
     return (*(int*)b - *(int*)a);
 }
@@ -21,7 +21,7 @@ int main() {
         scanf("%d", &king[i]);
     }
 
-    // 使用qsort进行排序
+    // 浣跨敤qsort杩涜鎺掑簭
     qsort(tian + 1, n, sizeof(int), cmp);
     qsort(king + 1, n, sizeof(int), cmp);
 

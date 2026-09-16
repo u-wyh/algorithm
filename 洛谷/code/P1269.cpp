@@ -31,8 +31,8 @@ void dfs(int u,int f,int w){
         }
     }
     if(dis[u]+w>=val){
-        //���׼�ʹ��װ��  ������������   ��������ĵ��޷�����
-        //���������ҲҪ��װ
+        //父亲即使安装了  这个点可以满足   但是下面的点无法满足
+        //所以这个点也要安装
         ans++;
         dis[u]=0;
     }
@@ -56,7 +56,7 @@ int main()
         cout<<"No solution."<<endl;
         return 0;
     }
-    dfs(1,0,0);//ֻҪ��ʼdfs  ˵��һ�����д�
+    dfs(1,0,0);//只要开始dfs  说明一定会有答案
     cout<<ans<<endl;
     return 0;
 }

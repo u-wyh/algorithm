@@ -1,22 +1,22 @@
-// ������ɾ���ߵ���С����
-// ����һ��������ͨ���������б�Ŵ�0��n-1��n���ڵ㣬�Լ�n-1����
-// ����һ���±��0��ʼ����������nums����Ϊn������nums[i]��ʾ��i���ڵ��ֵ
-// ������һ����ά��������edges����Ϊn-1
-// ���� edges[i] = [ai, bi] ��ʾ���д���һ��λ�ڽڵ� ai �� bi ֮��ı�
-// ɾ������������ͬ�ı����γ�������ͨ���������һ��ɾ���߷������������²����Լ����������
-// �ֱ��ȡ�������ÿ����������нڵ�ֵ�����ֵ
-// ��� ���ֵ�� ��С ���ֵ�� ��ֵ ��������ɾ���߷����ķ���
-// ���ؿ��ܵ���С����
-// �������� : https://leetcode.cn/problems/minimum-score-after-removals-on-a-tree/
+// 从树中删除边的最小分数
+// 存在一棵无向连通树，树中有编号从0到n-1的n个节点，以及n-1条边
+// 给你一个下标从0开始的整数数组nums长度为n，其中nums[i]表示第i个节点的值
+// 另给你一个二维整数数组edges长度为n-1
+// 其中 edges[i] = [ai, bi] 表示树中存在一条位于节点 ai 和 bi 之间的边
+// 删除树中两条不同的边以形成三个连通组件，对于一种删除边方案，定义如下步骤以计算其分数：
+// 分别获取三个组件每个组件中所有节点值的异或值
+// 最大 异或值和 最小 异或值的 差值 就是这种删除边方案的分数
+// 返回可能的最小分数
+// 测试链接 : https://leetcode.cn/problems/minimum-score-after-removals-on-a-tree/
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1001;
 
-// �±�Ϊԭʼ�ڵ���
+// 下标为原始节点编号
 int dfn[MAXN];
-// �±�Ϊdfn���
+// 下标为dfn序号
 int eor[MAXN];
-// �±�Ϊdfn���
+// 下标为dfn序号
 int sz[MAXN];
 int dfnCnt=0;
 int edges[MAXN][2];
@@ -32,14 +32,14 @@ void f(int u) {
     for (int j=0;j<graph[u].size();j++) {
         int v=graph[u][j];
         if (dfn[v] == 0) {
-            //��ʾ���������ǰû�з��ʹ���  ����Ҫ׼��һ�����ڵ�
+            //表示这个点是以前没有访问过的  不需要准备一个父节点
             f(v);
             eor[i] ^= eor[dfn[v]];
             sz[i] += sz[dfn[v]];
         }
     }
 }
-//����dfn  sz  deep ����
+//生成dfn  sz  deep 数组
 
 int main()
 {
@@ -54,16 +54,16 @@ int main()
         graph[edges[i][0]].push_back(edges[i][1]);
         graph[edges[i][1]].push_back(edges[i][0]);
     }
-    //����˫��ͼ
-    //ע����������ʹ�õĶ��Ǵ��±�1��ʼ  û���±�0
+    //建立双向图
+    //注意我们这里使用的都是从下标1开始  没有下标0
 
-    f(1);//���ǵ�һ����ֱ��ǿ�ƶ���Ϊ1
+    f(1);//我们第一个点直接强制定义为1
     int ans = INT_MAX;
     for (int i = 1, a, b, pre, pos, sum1, sum2, sum3; i < n-1; i++) {
-        a = max(dfn[edges[i][0]], dfn[edges[i][1]]);//��һ���ߵĶ˵�dfn���ֵ
+        a = max(dfn[edges[i][0]], dfn[edges[i][1]]);//第一条边的端点dfn最大值
         for (int j = i + 1; j < n; j++) {
-            //ö��ÿ������
-            b = max(dfn[edges[j][0]], dfn[edges[j][1]]);//�ڶ����ߵĶ˵�dfn���ֵ
+            //枚举每两条边
+            b = max(dfn[edges[j][0]], dfn[edges[j][1]]);//第二条边的端点dfn最大值
             if (a < b) {
                 pre = a;
                 pos = b;
@@ -71,13 +71,13 @@ int main()
                 pre = b;
                 pos = a;
             }
-            //����С���Ǹ�����Ϊpre
+            //将较小的那个设置为pre
             sum1 = eor[pos];
-            // xor[1] : ������������
-            // ��Ϊͷ�ڵ���0��һ��ӵ����С��dfn���1
-            // f�������õ�ʱ��Ҳ�Ǵ�0�ڵ㿪ʼ��
+            // xor[1] : 整棵树的异或和
+            // 因为头节点是0，一定拥有最小的dfn序号1
+            // f函数调用的时候，也是从0节点开始的
             if (pos < pre + sz[pre]) {
-                //������������ǰ�����ϵ
+                //如果这两个点是包含关系
                 sum2 = eor[pre] ^ eor[pos];
                 sum3 = eor[1] ^ eor[pre];
             } else {

@@ -17,10 +17,10 @@ long long ll_max(long long a,long long b)
 ll n;
 ll a[1005];
 ll sumb[1005];
-//sumb�ǿ۷����ǰ׺��  ��ʾ����i�λ�۶��ٷ�
+//sumb是扣分项的前缀和  表示换了i次会扣多少分
 ll d[1005];
 ll f[1005][3][1005];
-//��̬�滮  f[i][j][k]��ʾ��i�ֳ�j  ���Ѿ����Ĺ�k�����÷�
+//动态规划  f[i][j][k]表示第i轮出j  且已经更改过k次最大得分
 
 int main()
 {

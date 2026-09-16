@@ -4,8 +4,8 @@
 using namespace std;
 const int MOD = 1e9+7;
 
-// ¾ØÕóÏà³Ë
-// aµÄÁĞÊıÒ»¶¨ÒªµÈÓÚbµÄĞĞÊı
+// çŸ©é˜µç›¸ä¹˜
+// açš„åˆ—æ•°ä¸€å®šè¦ç­‰äºbçš„è¡Œæ•°
 vector<vector<long long>> multiply(vector<vector<long long>>& a,const vector<vector<long long>>& b) {
     int n = a.size();
     int m = b[0].size();
@@ -22,18 +22,18 @@ vector<vector<long long>> multiply(vector<vector<long long>>& a,const vector<vec
     return ans;
 }
 
-// ¾ØÕó¿ìËÙÃİ
+// çŸ©é˜µå¿«é€Ÿå¹‚
 vector<vector<long long>> power(vector<vector<long long>>& m, long long p) {
     int n = m.size();
     vector<vector<long long>> ans(n, vector<long long>(n, 0));
     for (int i = 0; i < n; i++) {
-        ans[i][i] = 1;//µ¥Î»¾ØÕó Ïàµ±ÓÚ³Ë·¨¿ìËÙÃİÖĞµÄ1
+        ans[i][i] = 1;//å•ä½çŸ©é˜µ ç›¸å½“äºä¹˜æ³•å¿«é€Ÿå¹‚ä¸­çš„1
     }
     for (; p != 0; p >>= 1) {
         if ((p & 1) != 0) {
             ans = multiply(ans, m);
         }
-        m = multiply(m, m);//Ã¿´Î¶¼ÊÇ±¶Ôö
+        m = multiply(m, m);//æ¯æ¬¡éƒ½æ˜¯å€å¢
     }
     return ans;
 }

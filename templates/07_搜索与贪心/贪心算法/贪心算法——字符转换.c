@@ -7,7 +7,7 @@ bool canConvert(const char *str1, const char *str2) {
         return true;
     }
 
-    int map[26] = {0}; // ³õÊ¼»¯mapÊı×éÎª0
+    int map[26] = {0}; // åˆå§‹åŒ–mapæ•°ç»„ä¸º0
     int kinds = 0;
     for (int i = 0; str2[i] != '\0'; i++) {
         int index = str2[i] - 'a';
@@ -20,10 +20,10 @@ bool canConvert(const char *str1, const char *str2) {
         return false;
     }
 
-    // ÖØĞÂ³õÊ¼»¯mapÊı×éÎª-1£¬ÕâÀïÊ¹ÓÃmemset¸ü·½±ã
+    // é‡æ–°åˆå§‹åŒ–mapæ•°ç»„ä¸º-1ï¼Œè¿™é‡Œä½¿ç”¨memsetæ›´æ–¹ä¾¿
     memset(map, -1, sizeof(map));
 
-    // map[x] = y ±íÊ¾str1ÖĞµÄ×Ö·ûxÉÏ´Î³öÏÖÔÚstr1ÖĞµÄyÎ»ÖÃ
+    // map[x] = y è¡¨ç¤ºstr1ä¸­çš„å­—ç¬¦xä¸Šæ¬¡å‡ºç°åœ¨str1ä¸­çš„yä½ç½®
     for (int i = 0, cur; str1[i] != '\0'; i++) {
         cur = str1[i] - 'a';
         if (map[cur] != -1 && str2[map[cur]] != str2[i]) {
@@ -36,15 +36,15 @@ bool canConvert(const char *str1, const char *str2) {
 }
 
 int main() {
-    // Ê¾ÀıÓÃ·¨
+    // ç¤ºä¾‹ç”¨æ³•
     const char *str1 ;
     const char *str2 ;
     scanf("%s",str1);
     scanf("%s",str2);
     if (canConvert(str1, str2)) {
-        printf("¿ÉÒÔ×ª»»\n");
+        printf("å¯ä»¥è½¬æ¢\n");
     } else {
-        printf("²»¿ÉÒÔ×ª»»\n");
+        printf("ä¸å¯ä»¥è½¬æ¢\n");
     }
 
     return 0;

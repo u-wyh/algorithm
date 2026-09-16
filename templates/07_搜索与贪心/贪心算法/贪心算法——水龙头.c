@@ -2,55 +2,55 @@
 #include <stdlib.h>
 
 int minTaps(int n, int* ranges) {
-    // ·ÖÅäÒ»¸ö×ã¹»´óµÄÊı×éÀ´´æ´¢Ã¿¸öÎ»ÖÃÄÜ¸²¸Çµ½µÄ×îÓÒ±ß½ç
+    // åˆ†é…ä¸€ä¸ªè¶³å¤Ÿå¤§çš„æ•°ç»„æ¥å­˜å‚¨æ¯ä¸ªä½ç½®èƒ½è¦†ç›–åˆ°çš„æœ€å³è¾¹ç•Œ
     int* right = (int*)malloc((n + 1) * sizeof(int));
     if (right == NULL) {
-        // ÄÚ´æ·ÖÅäÊ§°Ü
+        // å†…å­˜åˆ†é…å¤±è´¥
         return -1;
     }
     for (int i = 0; i <= n; ++i) {
-        right[i] = 0; // ³õÊ¼»¯
+        right[i] = 0; // åˆå§‹åŒ–
     }
 
-    // Ìî³ärightÊı×é
+    // å¡«å……rightæ•°ç»„
     for (int i = 0; i <= n; ++i) {
         int start = i - ranges[i];
-        start = start < 0 ? 0 : start; // ±£Ö¤start²»»áĞ¡ÓÚ0
+        start = start < 0 ? 0 : start; // ä¿è¯startä¸ä¼šå°äº0
         right[start] = i + ranges[i] > right[start] ? i + ranges[i] : right[start];
     }
 
-    // µ±Ç°ansÊıÁ¿µÄË®ÁúÍ·´ò¿ª£¬Ó°Ïìµ½µÄ×îÓÒÓÒ±ß½ç
+    // å½“å‰ansæ•°é‡çš„æ°´é¾™å¤´æ‰“å¼€ï¼Œå½±å“åˆ°çš„æœ€å³å³è¾¹ç•Œ
     int cur = 0;
 
-    // Èç¹ûÔÙ¶à´ò¿ªÒ»¸öË®ÁúÍ·£¬Ó°Ïìµ½µÄ×îÓÒ±ß½ç
+    // å¦‚æœå†å¤šæ‰“å¼€ä¸€ä¸ªæ°´é¾™å¤´ï¼Œå½±å“åˆ°çš„æœ€å³è¾¹ç•Œ
     int next = 0;
 
-    // ´ò¿ªË®ÁúÍ·µÄÊıÁ¿
+    // æ‰“å¼€æ°´é¾™å¤´çš„æ•°é‡
     int ans = 0;
 
     for (int i = 0; i < n; i++) {
-        // ÏÈ¸üĞÂÏÂÒ»²½µÄnext
+        // å…ˆæ›´æ–°ä¸‹ä¸€æ­¥çš„next
         next = next > right[i] ? next : right[i];
 
-        // À´µ½iÎ»ÖÃ
+        // æ¥åˆ°iä½ç½®
         if (i == cur) {
             if (next > i) {
                 cur = next;
                 ans++;
             } else {
-                // Èç¹ûÎŞ·¨¼ÌĞø¸²¸Ç£¬Ôò·µ»Ø-1
-                free(right); // ÊÍ·ÅÄÚ´æ
+                // å¦‚æœæ— æ³•ç»§ç»­è¦†ç›–ï¼Œåˆ™è¿”å›-1
+                free(right); // é‡Šæ”¾å†…å­˜
                 return -1;
             }
         }
     }
 
-    free(right); // ÊÍ·ÅÄÚ´æ
+    free(right); // é‡Šæ”¾å†…å­˜
     return ans;
 }
 
 int main() {
-    // Ê¾ÀıÓÃ·¨
+    // ç¤ºä¾‹ç”¨æ³•
     int n ;
     scanf("%d",&n);
     int ranges[n];

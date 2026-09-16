@@ -32,7 +32,7 @@ inline void write(ll x) {
 
 #define lson o<<1
 #define rson o<<1|1
-int d = 0;//Í³¼Æ×î´óÉî¶È
+int d = 0;//ç»Ÿè®¡æœ€å¤§æ·±åº¦
 
 void build(int l, int r, int o, int t) {
     if (l == r) {

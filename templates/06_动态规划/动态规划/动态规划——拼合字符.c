@@ -29,7 +29,7 @@ bool isInterleave1(char *s1,char *s2,char *s3,int m,int n,int k) {
         }
         dp[0][j] = true;
     }
-    //Íê³ÉÊı×éµÄ³õÊ¼»¯
+    //å®Œæˆæ•°ç»„çš„åˆå§‹åŒ–
     for (int i = 1; i <= m; i++) {
         for (int j = 1; j <= n; j++) {
             dp[i][j] = (s1[i - 1] == s3[i + j - 1] && dp[i - 1][j]) || (s2[j - 1] == s3[i + j - 1] && dp[i][j - 1]);
@@ -48,7 +48,7 @@ int main()
     m=strlen(s1)-1;
     n=strlen(s2)-1;
     k=strlen(s3)-1;
-    //´ËÊ±m n k ÊÇÈı¸ö×Ö·û´®µÄÓĞĞ§³¤¶È
+    //æ­¤æ—¶m n k æ˜¯ä¸‰ä¸ªå­—ç¬¦ä¸²çš„æœ‰æ•ˆé•¿åº¦
     if(isInterleave1(s1,s2,s3,m,n,k)==true)
         printf("YES\n");
     else

@@ -1,10 +1,10 @@
 // https://www.luogu.com.cn/problem/P1341
 //P1341
-//ÎŞÏòÍ¼+ÅĞ¶¨
+//æ— å‘å›¾+åˆ¤å®š
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100;
-const int MAXM = 2600;//×î´óµÄn²»»á³¬¹ıÕâ¸öÊı
+const int MAXM = 2600;//æœ€å¤§çš„nä¸ä¼šè¶…è¿‡è¿™ä¸ªæ•°
 
 int n;
 vector<pair<int,int>>vec[MAXN];
@@ -13,7 +13,7 @@ int degree[MAXN];
 int cnt=0;
 bool exist[MAXM];
 
-//ÓÃÓÚÅĞ¶¨ÊÇ·ñÁªÍ¨
+//ç”¨äºåˆ¤å®šæ˜¯å¦è”é€š
 int vis[MAXN];
 int fa[MAXN];
 
@@ -32,10 +32,10 @@ void un(int x,int y){
 void dfs(int u){
     for(int i=0;i<vec[u].size();i++){
         if(!exist[vec[u][i].second]){
-            //ÕâÑù×öÊÇÎªÁË²»³õÊ¼»¯Êı×é
+            //è¿™æ ·åšæ˜¯ä¸ºäº†ä¸åˆå§‹åŒ–æ•°ç»„
             exist[vec[u][i].second]=true;
             exist[vec[u][i].second^1]=true;
-            //½«ÕâÁ½Ìõ±ßÈ«²¿·ñÈÏ
+            //å°†è¿™ä¸¤æ¡è¾¹å…¨éƒ¨å¦è®¤
             dfs(vec[u][i].first);
         }
     }
@@ -61,8 +61,8 @@ int main()
         un(u,v);
         tmp=min(tmp,min(u,v));
     }
-    int father=150;//¼ÇÂ¼¹«¹²¸¸Ç×
-    bool flag=true;//ÅĞ¶ÏÊÇ·ñÁªÍ¨
+    int father=150;//è®°å½•å…¬å…±çˆ¶äº²
+    bool flag=true;//åˆ¤æ–­æ˜¯å¦è”é€š
     for(int i=0;i<=60;i++){
         if(vis[i]){
             if(father==150){
@@ -82,8 +82,8 @@ int main()
     for(int i=0;i<60;i++){
         sort(vec[i].begin(),vec[i].end());
     }
-    //ÅĞ¶ÏÆğÊ¼µãºÍÊÇ·ñ·ûºÏÒªÇó
-    int cnt=0;//¼ÇÂ¼¶ÈÊıÎªÆæÊıµÄ¸öÊı
+    //åˆ¤æ–­èµ·å§‹ç‚¹å’Œæ˜¯å¦ç¬¦åˆè¦æ±‚
+    int cnt=0;//è®°å½•åº¦æ•°ä¸ºå¥‡æ•°çš„ä¸ªæ•°
     int s=-1;
     for(int i=0;i<60;i++){
         if(vis[i]){

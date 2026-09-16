@@ -4,9 +4,9 @@
 
 #define maxn 1005
 
-long long int a[maxn], b[maxn], c, d; // ÄÌÅ£Î»ÖÃºÍ×ùÎ»Î»ÖÃ
-int flag[maxn]; // ±ê¼ÇÄÌÅ£ÊÇ·ñÓĞ×ùÎ»
-int pos; // ¼ÇÂ¼ÓĞ×ùÎ»µÄÄÌÅ£±àºÅ
+long long int a[maxn], b[maxn], c, d; // å¥¶ç‰›ä½ç½®å’Œåº§ä½ä½ç½®
+int flag[maxn]; // æ ‡è®°å¥¶ç‰›æ˜¯å¦æœ‰åº§ä½
+int pos; // è®°å½•æœ‰åº§ä½çš„å¥¶ç‰›ç¼–å·
 
 int main() {
     int n, m;
@@ -16,23 +16,23 @@ int main() {
     }
     for (int j = 1; j <= m; j++) {
         scanf("%lld %lld", &c, &d);
-        long long int dis = 0; // ¼ÆËãµ±Ç°ÄÌÅ£µ½×ùÎ»µÄ¾àÀë
-        long long int mindis = 1e15; // ¼ÇÂ¼µ±Ç°×îĞ¡ÄÌÅ£¾à×À×Ó¾àÀë
+        long long int dis = 0; // è®¡ç®—å½“å‰å¥¶ç‰›åˆ°åº§ä½çš„è·ç¦»
+        long long int mindis = 1e15; // è®°å½•å½“å‰æœ€å°å¥¶ç‰›è·æ¡Œå­è·ç¦»
         for (int i = 1; i <= n; i++) {
-            if (flag[i] == 1) continue; // ÒÑÓĞ×ùÎ»£¬Ö±½ÓÌø¹ı
-            dis = (a[i] - c) * (a[i] - c) + (b[i] - d) * (b[i] - d); // ¼ÆËã¾àÀë
-            if (dis < mindis) { // Èç¹ûË¢ĞÂÁË×îĞ¡¼ÍÂ¼
+            if (flag[i] == 1) continue; // å·²æœ‰åº§ä½ï¼Œç›´æ¥è·³è¿‡
+            dis = (a[i] - c) * (a[i] - c) + (b[i] - d) * (b[i] - d); // è®¡ç®—è·ç¦»
+            if (dis < mindis) { // å¦‚æœåˆ·æ–°äº†æœ€å°çºªå½•
                 mindis = dis;
                 pos = i;
             }
         }
-        flag[pos] = 1; // ±ê¼Ç£¬ÒÑÓĞ×ùÎ»
+        flag[pos] = 1; // æ ‡è®°ï¼Œå·²æœ‰åº§ä½
     }
-    if (n == m) { // ÌØÅĞÃ»ÓĞÄÌÅ£ÎŞ×ùÎ»
+    if (n == m) { // ç‰¹åˆ¤æ²¡æœ‰å¥¶ç‰›æ— åº§ä½
         printf("0\n");
         return 0;
     }
-    for (int i = 1; i <= n; i++) { // ÆäËûÇé¿öÊä³ö
+    for (int i = 1; i <= n; i++) { // å…¶ä»–æƒ…å†µè¾“å‡º
         if (flag[i]) continue;
         printf("%d\n", i);
     }

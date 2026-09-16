@@ -1,12 +1,12 @@
 //P4513
-//�����ĿҲ�Ǻܾ����  ��Ҫ�������ϲ����һ��������  
-//���������ϲ�ѯ����
+//这道题目也是很经典的  需要多个区间合并组成一个新区间  
+//在新区间上查询内容
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;
 
 struct node{
-    int maxv, maxl, maxr, sumv;//�ֱ��ʾ���������������ۼӺ� �������������ۼӺ�  �����ܺ�
+    int maxv, maxl, maxr, sumv;//分别表示的是区间上最大的累加和 从左或右起最大累加和  区间总和
 }tree[MAXN<<2];
 int n, m;
 int arr[MAXN];
@@ -15,7 +15,7 @@ inline void pushup(node &rt, const node &ls, const node &rs) {
     if (ls.maxr > 0 && rs.maxl > 0)
         rt.maxv = ls.maxr + rs.maxl;
     else {
-        //����ط�һ��Ҫд  ��Ϊһ��ʼ��ʼʱΪ0  ����ʲô��û��ѡ
+        //这个地方一定要写  因为一开始初始时为0  这是什么都没有选
         rt.maxv = max(ls.maxr , rs.maxl);
     }
     rt.maxv = max(rt.maxv, ls.maxv);

@@ -1,4 +1,4 @@
-//Âå¹Èp2142
+//æ´›è°·p2142
 #include<stdio.h>
 #include<string.h>
 #include<stdbool.h>

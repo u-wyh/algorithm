@@ -9,7 +9,7 @@ int Next[MAXN];
 int cnt[MAXN];
 long long ans=1;
 
-// 计算next数组
+// 璁＄畻next鏁扮粍
 void nextArray(const char *s, int m) {
     if (m == 1) {
         ans=1;
@@ -20,8 +20,8 @@ void nextArray(const char *s, int m) {
     cnt[1] = 1;
 
     int i = 2, cn = 0;
-    // i表示当前要求next值的位置
-    // cn表示当前要和前一个字符比对的下标
+    // i琛ㄧず褰撳墠瑕佹眰next鍊肩殑浣嶇疆
+    // cn琛ㄧず褰撳墠瑕佸拰鍓嶄竴涓瓧绗︽瘮瀵圭殑涓嬫爣
     while (i < m) {
         if (s[i - 1] == s[cn]) {
             Next[i] = ++cn;

@@ -21,11 +21,11 @@ int cnt=1;
 
 int fa[MAXN];
 int dep[MAXN];
-int siz[MAXN];//×ÓÊ÷´óĞ¡
-int son[MAXN];//ÖØ¶ù×Ó½Úµã±àºÅ
-int top[MAXN];//ËùÔÚÖØÁ´Í·½Úµã
-int dfn[MAXN];//dfnĞòºÅ
-int seg[MAXN];//dfnĞòºÅ¶ÔÓ¦µÄÔ­Ê¼½Úµã±àºÅ
+int siz[MAXN];//å­æ ‘å¤§å°
+int son[MAXN];//é‡å„¿å­èŠ‚ç‚¹ç¼–å·
+int top[MAXN];//æ‰€åœ¨é‡é“¾å¤´èŠ‚ç‚¹
+int dfn[MAXN];//dfnåºå·
+int seg[MAXN];//dfnåºå·å¯¹åº”çš„åŸå§‹èŠ‚ç‚¹ç¼–å·
 int cntd = 0;
 
 long long sum[MAXN<<2];
@@ -134,11 +134,11 @@ void dfs3(int u, int t) {
     if (son[u] == 0) {
         return;
     }
-    dfs3(son[u], t);//È¥ ÖØ¶ù×Ó¼ÌĞøÏòÏÂ
+    dfs3(son[u], t);//å» é‡å„¿å­ç»§ç»­å‘ä¸‹
     for (int e = head[u], v; e > 0; e = nxt[e]) {
         v = to[e];
         if (v != fa[u] && v != son[u]) {
-            //Çá¶ù×Ó×Ô¼º¿ªÒ»ÌõÖØÁ´ ×Ô¼º×öÍ·½áµã
+            //è½»å„¿å­è‡ªå·±å¼€ä¸€æ¡é‡é“¾ è‡ªå·±åšå¤´ç»“ç‚¹
             dfs3(v, v);
         }
     }

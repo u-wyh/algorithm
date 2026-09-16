@@ -3,14 +3,14 @@
 using namespace std;
 
 int n,m,p,k,s;
-int dp[11][11][1<<11];//ÓÃÓÚÈ·¶¨ÓµÓĞÔ¿³××´Ì¬
-//int nums[11][11];//ÓÃÓÚ´¢´æÔ¿³×
+int dp[11][11][1<<11];//ç”¨äºç¡®å®šæ‹¥æœ‰é’¥åŒ™çŠ¶æ€
+//int nums[11][11];//ç”¨äºå‚¨å­˜é’¥åŒ™
 struct node{
     int x,y,status;
 };
 queue<node>q;
 int edge[22][11];
-int walk[4][2]={{1,0},{-1,0},{0,1},{0,-1}};//ÏÂÉÏÓÒ×ó
+int walk[4][2]={{1,0},{-1,0},{0,1},{0,-1}};//ä¸‹ä¸Šå³å·¦
 vector<int>nums[11][11];
 
 int main()
@@ -49,9 +49,9 @@ int main()
 //        cout<<endl;
 //    }
 //    cout<<"----------------------------------------------------------------"<<endl;
-    //Â·¾¶ÒÔ¼°Ô¿³×Î»ÖÃÅĞ¶Ï¼ì²â
+    //è·¯å¾„ä»¥åŠé’¥åŒ™ä½ç½®åˆ¤æ–­æ£€æµ‹
     q.push({1,1,1});
-    dp[1][1][0]=1;//×îºóµÄ½á¹ûÒª¼õ1
+    dp[1][1][0]=1;//æœ€åçš„ç»“æœè¦å‡1
     dp[1][1][1]=1;
     while(!q.empty()){
         //cout<<666<<endl;
@@ -60,7 +60,7 @@ int main()
         if(u.x==n&&u.y==m){
             cout<<dp[u.x][u.y][u.status]-1;
             return 0;
-            //Êä³ö½á¹û
+            //è¾“å‡ºç»“æœ
         }
         for(int i=0;i<4;i++){
             //cout<<555<<endl;
@@ -68,39 +68,39 @@ int main()
             int y=u.y+walk[i][1];
             int now=u.status;
             if(x<=0||x>n||y<=0||y>m)
-                continue;//Ô½½ç
+                continue;//è¶Šç•Œ
             if(i==0){
                 if(edge[2*u.x][u.y]==-1)
-                    continue;//Ç½
+                    continue;//å¢™
                 //cout<<111<<' '<<i<<endl;
                 if((u.status&(1<<edge[2*u.x][u.y]))==0)
-                    continue;//Ã»ÓĞÔ¿³×µÄÃÅ
+                    continue;//æ²¡æœ‰é’¥åŒ™çš„é—¨
                 //cout<<222<<' '<<i<<endl;
             }
             else if(i==1){
                 if(edge[2*x][u.y]==-1)
-                    continue;//Ç½
+                    continue;//å¢™
                 //cout<<111<<' '<<i<<endl;
                 if((u.status&(1<<edge[2*x][u.y]))==0)
-                    continue;//Ã»ÓĞÔ¿³×µÄÃÅ
+                    continue;//æ²¡æœ‰é’¥åŒ™çš„é—¨
                 //cout<<222<<' '<<i<<endl;
             }
             else if(i==2){
                 if(edge[2*u.x-1][u.y]==-1)
-                    continue;//Ç½
+                    continue;//å¢™
                 //cout<<111<<' '<<i<<endl;
                 if((u.status&(1<<edge[2*u.x-1][u.y]))==0)
-                    continue;//Ã»ÓĞÔ¿³×µÄÃÅ
+                    continue;//æ²¡æœ‰é’¥åŒ™çš„é—¨
                 //cout<<222<<' '<<i<<endl;
             }
             else if(i==3){
                 if(edge[2*u.x-1][y]==-1)
-                    continue;//Ç½
+                    continue;//å¢™
                 //cout<<111<<' '<<i<<endl;
                 if((u.status&(1<<edge[2*u.x-1][y]))==0)
-                    continue;//Ã»ÓĞÔ¿³×µÄÃÅ
+                    continue;//æ²¡æœ‰é’¥åŒ™çš„é—¨
                 //cout<<222<<' '<<i<<endl;
-            }//±íÊ¾×ß²»Í¨
+            }//è¡¨ç¤ºèµ°ä¸é€š
             //cout<<888<<endl;
             for(int z=0;z<nums[x][y].size();z++){
                 //cout<<u.x<<' '<<u.y<<' '<<x<<' '<<y<<' '<<z<<endl;

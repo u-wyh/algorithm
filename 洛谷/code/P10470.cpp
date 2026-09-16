@@ -10,33 +10,33 @@ struct Tree
      int end;
 }tree[1500000];
 int cnt=1;
-void build(string s)//½«×Ö·û´®s¼ÓÈë×ÖµäÊ÷
+void build(string s)//å°†å­—ç¬¦ä¸²såŠ å…¥å­—å…¸æ ‘
 {
-	int l=s.size();//»ñÈ¡sµÄ³¤¶È
-	int now=1;//nowÖ¸ÕëÉèÎª1
+	int l=s.size();//è·å–sçš„é•¿åº¦
+	int now=1;//nowæŒ‡é’ˆè®¾ä¸º1
 	for(int i=0;i<l;++i)
 	{
-		if(tree[now].vis[s[i]-'a']==0)//Ã»ÓĞ½¨±ß
+		if(tree[now].vis[s[i]-'a']==0)//æ²¡æœ‰å»ºè¾¹
 			tree[now].vis[s[i]-'a']=++cnt;
-		now=tree[now].vis[s[i]-'a'];//Ìø×ª
+		now=tree[now].vis[s[i]-'a'];//è·³è½¬
 	}
-	tree[now].end+=1;//½áÎ²´¦¼ÓÉÏ1
+	tree[now].end+=1;//ç»“å°¾å¤„åŠ ä¸Š1
 }
-int getans(string s)//»ñÈ¡½á¹û
+int getans(string s)//è·å–ç»“æœ
 {
 	int l=s.size();
-	int now=1,ans=0;//Í¬build
+	int now=1,ans=0;//åŒbuild
 	for(int i=0;i<l;++i)
 	{
-		now=tree[now].vis[s[i]-'a'];//Ìø×ª
-		for(int t=now;t&&tree[t].end!=-1;t=tree[t].fail)//Ã¿´Î¶¼ÌøfailÖ¸Õë
+		now=tree[now].vis[s[i]-'a'];//è·³è½¬
+		for(int t=now;t&&tree[t].end!=-1;t=tree[t].fail)//æ¯æ¬¡éƒ½è·³failæŒ‡é’ˆ
 		{
-			ans+=tree[t].end;//¼ÓÉÏ½áÎ²µÄ£¬¼´Í³¼Æ´ğ°¸
+			ans+=tree[t].end;//åŠ ä¸Šç»“å°¾çš„ï¼Œå³ç»Ÿè®¡ç­”æ¡ˆ
 		}
 	}
 	return ans;
 }
-int main()//Ö÷º¯ÊıÃ»Ê²Ã´ÄÜ½²µÄÁËOVO
+int main()//ä¸»å‡½æ•°æ²¡ä»€ä¹ˆèƒ½è®²çš„äº†OVO
 {
 	cin>>n>>m;
 	for(int i=1;i<=n;i++)
@@ -49,5 +49,5 @@ int main()//Ö÷º¯ÊıÃ»Ê²Ã´ÄÜ½²µÄÁËOVO
 		cin>>s;
 		cout<<getans(s)<<'\n';
 	}
-	return 0;//»ªÀöÀöµÄ½áÊø
+	return 0;//åä¸½ä¸½çš„ç»“æŸ
 }

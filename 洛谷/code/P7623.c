@@ -43,11 +43,11 @@ int main() {
         for (int j = 1; j <= n - i + 1; j++) {
             sum = (sum + read()) % mod;
         }
-        sum = (sum * qu_pow(n - i + 1, mod - 2)) % mod; // Çó½âÃ¿Ò»ÐÐµÄÆ½¾ùÖµ
+        sum = (sum * qu_pow(n - i + 1, mod - 2)) % mod; // æ±‚è§£æ¯ä¸€è¡Œçš„å¹³å‡å€¼
         Ans = (Ans + sum) % mod;
     }
 
-    Ans = (Ans * fact) % mod; // ×îºó³ËÅÅÁÐÊý
+    Ans = (Ans * fact) % mod; // æœ€åŽä¹˜æŽ’åˆ—æ•°
     printf("%lld\n", Ans);
     return 0;
 }

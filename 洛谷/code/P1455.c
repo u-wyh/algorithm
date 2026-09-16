@@ -1,9 +1,9 @@
 // https://www.luogu.com.cn/problem/P1455
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h> // ÓÃÓÚisalnum
+#include <ctype.h> // ç”¨äºisalnum
 
-int read() // ¿ì¶Á
+int read() // å¿«è¯»
 {
     int num = 0, f = 1;
     char ch = getchar();
@@ -21,9 +21,9 @@ int read() // ¿ì¶Á
     return num * f;
 }
 
-int father[10001]; // ²¢²é¼¯Êı×é
+int father[10001]; // å¹¶æŸ¥é›†æ•°ç»„
 
-int find(int x) // ²¢²é¼¯º¯Êı
+int find(int x) // å¹¶æŸ¥é›†å‡½æ•°
 {
     if (father[x] == x) {
         return x;
@@ -31,12 +31,12 @@ int find(int x) // ²¢²é¼¯º¯Êı
     return father[x] = find(father[x]);
 }
 
-int c[10001], d[10001], f[100001]; // DPÊı×é£¬×¢ÒâfÊı×éµÄ´óĞ¡¿ÉÄÜĞèÒªµ÷ÕûÒÔÖ§³Ö¸ü´óµÄw
+int c[10001], d[10001], f[100001]; // DPæ•°ç»„ï¼Œæ³¨æ„fæ•°ç»„çš„å¤§å°å¯èƒ½éœ€è¦è°ƒæ•´ä»¥æ”¯æŒæ›´å¤§çš„w
 
 int main()
 {
     int n = read(), m = read(), w = read();
-    for (int i = 1; i <= n; i++) { // ³õÊ¼»¯²¢²é¼¯
+    for (int i = 1; i <= n; i++) { // åˆå§‹åŒ–å¹¶æŸ¥é›†
         father[i] = i;
     }
     for (int i = 1; i <= n; i++) {
@@ -45,13 +45,13 @@ int main()
     }
 
     int x, y;
-    for (int i = 1; i <= m; i++) { // ²¢²é¼¯
+    for (int i = 1; i <= m; i++) { // å¹¶æŸ¥é›†
         x = read();
         y = read();
         father[find(x)] = find(y);
     }
 
-    for (int i = 1; i <= n; i++) { // ½«Í¬¼¯ºÏµÄÔÆ¶äµÄ¼ÛÇ®Óë¼ÛÖµ¶¼»®µ½Ò»¸öÔÆ¶äÀï
+    for (int i = 1; i <= n; i++) { // å°†åŒé›†åˆçš„äº‘æœµçš„ä»·é’±ä¸ä»·å€¼éƒ½åˆ’åˆ°ä¸€ä¸ªäº‘æœµé‡Œ
         if (father[i] != i) {
             d[find(i)] += d[i];
             d[i] = 0;

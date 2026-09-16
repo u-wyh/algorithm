@@ -5,12 +5,12 @@ using namespace std;
 const int N=2e5+86;
 
 int n,dp[N],l,r,ans=-0x3f3f3f3f,v[N],dq[N],h=1,t=0;
-//ÓĞ¸ºÊıËùÒÔ ans ³õÊ¼»¯Îª¸ºÎŞÇî
+//æœ‰è´Ÿæ•°æ‰€ä»¥ ans åˆå§‹åŒ–ä¸ºè´Ÿæ— ç©·
 int main()
 {
     memset(dp,-1e9,sizeof(dp));
 	scanf("%d%d%d",&n,&l,&r);
-	if(l>r) swap(l,r); //Â³°ôĞÔ
+	if(l>r) swap(l,r); //é²æ£’æ€§
 	for(int i=0;i<=n;i++)
 		scanf("%d",&v[i]);
 	for(int i=l;i<=n;i++)

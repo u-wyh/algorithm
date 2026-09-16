@@ -1,11 +1,11 @@
 // https://www.luogu.com.cn/problem/P5815
 #include <stdio.h>
 #include <ctype.h>
-#include <limits.h> // 用于INT_MAX
+#include <limits.h> // 鐢ㄤ簬INT_MAX
 
-#define mid ((l + r + 1) / 2) // 注意这里改为整数除法
+#define mid ((l + r + 1) / 2) // 娉ㄦ剰杩欓噷鏀逛负鏁存暟闄ゆ硶
 
-// 快读函数
+// 蹇鍑芥暟
 long long read() {
     long long s = 0, f = 1;
     char ch;
@@ -16,11 +16,11 @@ long long read() {
     return s * f;
 }
 
-const int N = 55, inf = INT_MAX; // 使用INT_MAX作为上界
+const int N = 55, inf = INT_MAX; // 浣跨敤INT_MAX浣滀负涓婄晫
 int n, m, l, r;
 int c[55];
 
-// 判断函数
+// 鍒ゆ柇鍑芥暟
 int judge(int std) {
     int tmp = 0, rest = std;
     for (int i = 1; i <= n; i++) {
@@ -40,7 +40,7 @@ int main() {
     for (int i = 1; i <= n; i++)
         c[i] = read();
     l = 1, r = inf;
-    while (l < r) { // 二分套牌数目
+    while (l < r) { // 浜屽垎濂楃墝鏁扮洰
         if (judge(mid))
             l = mid;
         else

@@ -8,9 +8,9 @@ int main()
     cin>>n;
     for(int i=1,x;i<=n;i++){
         cin>>x;
-        a.insert(upper_bound(a.begin(),a.end(),x),x);//¶ş·Ö²åÈë±£Ö¤µ¥µ÷ĞÔ
+        a.insert(upper_bound(a.begin(),a.end(),x),x);//äºŒåˆ†æ’å…¥ä¿è¯å•è°ƒæ€§
         if(i%2==1){
-        	printf("%d\n",a[(i-1)/2]);//ÊÇÆæÊı¸ö¾ÍÊä³ö
+        	printf("%d\n",a[(i-1)/2]);//æ˜¯å¥‡æ•°ä¸ªå°±è¾“å‡º
         }
     }
     return 0;

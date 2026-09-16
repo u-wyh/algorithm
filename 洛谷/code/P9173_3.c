@@ -11,7 +11,7 @@ int n, m, a[MAX_N], b[MAX_N];
 int main() {
     int i, j;
 
-    // ÊäÈë
+    // è¾“å…¥
     scanf("%d", &n);
     for (i = 1; i <= n; ++i) {
         scanf("%d", &a[i]);
@@ -21,11 +21,11 @@ int main() {
         scanf("%d", &b[i]);
     }
 
-    // ³õÊ¼»¯dpÊý×é
+    // åˆå§‹åŒ–dpæ•°ç»„
     for (i = 0; i <= n; ++i) {
         for (j = 0; j <= m; ++j) {
             dp[i][j][0] = dp[i][j][1] = INF;
-            if (i == 0 && j == 0) continue; // ÕâÖÖÇé¿ö²»´æÔÚ
+            if (i == 0 && j == 0) continue; // è¿™ç§æƒ…å†µä¸å­˜åœ¨
 
             if (i > 0) {
                 dp[i][j][0] = (i > 1) ? dp[i-1][j][0] + 1 + (a[i] == a[i-1]) : 1 + (a[i] == a[i-1]);
@@ -39,7 +39,7 @@ int main() {
         }
     }
 
-    // Êä³ö×îÓÅ·½°¸
+    // è¾“å‡ºæœ€ä¼˜æ–¹æ¡ˆ
     printf("%d\n", (dp[n][m][0] < dp[n][m][1]) ? dp[n][m][0] : dp[n][m][1]);
 
     return 0;

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #define max 100
-// È«¾Ö±äÁ¿
+// å…¨å±€å˜é‡
 static int zeros, ones;
 
 int main()
@@ -10,7 +10,7 @@ int main()
     for(int )
     return 0;
 }
-/*// Í³¼ÆÒ»¸ö×Ö·û´®ÖĞ0ºÍ1µÄÊıÁ¿
+/*// ç»Ÿè®¡ä¸€ä¸ªå­—ç¬¦ä¸²ä¸­0å’Œ1çš„æ•°é‡
 void zerosAndOnes(const char* str) {
     zeros = 0;
     ones = 0;
@@ -25,17 +25,17 @@ void zerosAndOnes(const char* str) {
     }
 }
 
-// strs[i...]×ÔÓÉÑ¡Ôñ£¬Ï£ÍûÁãµÄÊıÁ¿²»³¬¹ız¡¢Ò»µÄÊıÁ¿²»³¬¹ıo
-// ×î¶àÄÜÑ¡¶àÉÙ¸ö×Ö·û´®
+// strs[i...]è‡ªç”±é€‰æ‹©ï¼Œå¸Œæœ›é›¶çš„æ•°é‡ä¸è¶…è¿‡zã€ä¸€çš„æ•°é‡ä¸è¶…è¿‡o
+// æœ€å¤šèƒ½é€‰å¤šå°‘ä¸ªå­—ç¬¦ä¸²
 int f1(const char* strs[], int i, int z, int o) {
     if (i == 0 && strs == NULL) {
-        // Ã»ÓĞ×Ö·û´®ÁË
+        // æ²¡æœ‰å­—ç¬¦ä¸²äº†
         return 0;
     }
-    // ²»Ê¹ÓÃµ±Ç°µÄstrs[i]×Ö·û´®
+    // ä¸ä½¿ç”¨å½“å‰çš„strs[i]å­—ç¬¦ä¸²
     int p1 = f1(strs, i + 1, z, o);
 
-    // Ê¹ÓÃµ±Ç°µÄstrs[i]×Ö·û´®
+    // ä½¿ç”¨å½“å‰çš„strs[i]å­—ç¬¦ä¸²
     int p2 = 0;
     zerosAndOnes(strs[i]);
     if (zeros <= z && ones <= o) {
@@ -44,15 +44,15 @@ int f1(const char* strs[], int i, int z, int o) {
     return (p1 > p2) ? p1 : p2;
 }
 
-// ¶ÔÍâÌá¹©µÄ½Ó¿Ú£¬Í³¼Æ×î¶àÄÜÑ¡¶àÉÙ¸ö×Ö·û´®
+// å¯¹å¤–æä¾›çš„æ¥å£ï¼Œç»Ÿè®¡æœ€å¤šèƒ½é€‰å¤šå°‘ä¸ªå­—ç¬¦ä¸²
 int findMaxForm(const char* strs[], int m, int n) {
     return f1(strs, 0, m, n);
 }
 
 int main() {
-    // Ê¾Àı
+    // ç¤ºä¾‹
     const char* strs[] = {"10", "0001", "111001", "1", "0"};
     int m = 5, n = 3;
-    printf("×î¶àÄÜÑ¡ %d ¸ö×Ö·û´®\n", findMaxForm(strs, m, n));
+    printf("æœ€å¤šèƒ½é€‰ %d ä¸ªå­—ç¬¦ä¸²\n", findMaxForm(strs, m, n));
     return 0;
 }*/

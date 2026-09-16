@@ -1,33 +1,33 @@
 // https://www.luogu.com.cn/problem/P3864
 #include<bits/stdc++.h>
 using namespace std;
-vector<string> Dict; //ÓÃDict´æ·ÅËùÓĞ×ÖµäÖĞµÄÃû×Ö
-string str; //¸ø¶¨µÄ±àºÅ
-const char * str_trans = "2223334445556667 77888999"; //Ê¹ÓÃ¸ÃC-·ç¸ñ×Ö·û´®À´´æ·ÅA-Z(³ıÈ¥QºÍZÕâ24¸ö×ÖÄ¸Ëù¶ÔÓ¦µÄÊı×Ö)
+vector<string> Dict; //ç”¨Dictå­˜æ”¾æ‰€æœ‰å­—å…¸ä¸­çš„åå­—
+string str; //ç»™å®šçš„ç¼–å·
+const char * str_trans = "2223334445556667 77888999"; //ä½¿ç”¨è¯¥C-é£æ ¼å­—ç¬¦ä¸²æ¥å­˜æ”¾A-Z(é™¤å»Qå’ŒZè¿™24ä¸ªå­—æ¯æ‰€å¯¹åº”çš„æ•°å­—)
 int main(){
-    ios::sync_with_stdio(false); //Ö»ÓÃcin/cout¼Ó¿ìIOËÙ¶È
+    ios::sync_with_stdio(false); //åªç”¨cin/coutåŠ å¿«IOé€Ÿåº¦
     cin >> str;
     string tmp;
-    while (cin >> tmp){ //½«ºóÃæËùÓĞµÄ×Ö·û´®Ñ­»·¶ÁÈëµ½tmpÖĞ£¬ÔÙ·Åµ½VectorÎ²£¬(cin>>tmp)¼´¿ÉÒÔÆğµ½¶ÁÈë×Ö·û´®µÄ×÷ÓÃ£¬Ò²¿ÉÒÔÆğµ½ÅĞ¶ÏÎÄ¼şÊÇ·ñµ½´ïÄ©Î²¡£ÏêÇéÇëÔÄ¶ÁC++ Primer Plus¡£
+    while (cin >> tmp){ //å°†åé¢æ‰€æœ‰çš„å­—ç¬¦ä¸²å¾ªç¯è¯»å…¥åˆ°tmpä¸­ï¼Œå†æ”¾åˆ°Vectorå°¾ï¼Œ(cin>>tmp)å³å¯ä»¥èµ·åˆ°è¯»å…¥å­—ç¬¦ä¸²çš„ä½œç”¨ï¼Œä¹Ÿå¯ä»¥èµ·åˆ°åˆ¤æ–­æ–‡ä»¶æ˜¯å¦åˆ°è¾¾æœ«å°¾ã€‚è¯¦æƒ…è¯·é˜…è¯»C++ Primer Plusã€‚
         Dict.push_back(tmp);
     }
     int len = str.length();
     bool global_flag = false;
-    for (int i = 0; i < Dict.size(); i++){ //±éÀúËùÓĞ×ÖµäÔªËØ£¬ÒòÎª×ÖµäÔªËØÉÙ
-        if (len != Dict[i].length())continue; //¼ôÖ¦£¬Èç¹û×Ö·û´®Î»Êı²»Ò»Ñù¾ÍÃ»ÓĞ±ØÒª±È½Ï¡£
+    for (int i = 0; i < Dict.size(); i++){ //éå†æ‰€æœ‰å­—å…¸å…ƒç´ ï¼Œå› ä¸ºå­—å…¸å…ƒç´ å°‘
+        if (len != Dict[i].length())continue; //å‰ªæï¼Œå¦‚æœå­—ç¬¦ä¸²ä½æ•°ä¸ä¸€æ ·å°±æ²¡æœ‰å¿…è¦æ¯”è¾ƒã€‚
         bool flag = true;
         for (int j = 0; j < len; j++){
-            if (str_trans[Dict[i][j] - 'A'] != str[j]){ //±È¶Ô×ÖµäÖĞÃ¿¸ö×Ö·û¶ÔÓ¦µÄÊı×ÖÊÇ·ñÓëÊäÈëµÄÃ¿¸öÊı×ÖÏàÍ¬
-                flag = false; //²»ÏàÍ¬Ö±½ÓÌø³öÑ­»·
+            if (str_trans[Dict[i][j] - 'A'] != str[j]){ //æ¯”å¯¹å­—å…¸ä¸­æ¯ä¸ªå­—ç¬¦å¯¹åº”çš„æ•°å­—æ˜¯å¦ä¸è¾“å…¥çš„æ¯ä¸ªæ•°å­—ç›¸åŒ
+                flag = false; //ä¸ç›¸åŒç›´æ¥è·³å‡ºå¾ªç¯
                 break;
             }
         }
-        if (flag){ //ÏàÍ¬ÔòÊä³ö¸Ãµ¥´Ê
+        if (flag){ //ç›¸åŒåˆ™è¾“å‡ºè¯¥å•è¯
             cout << Dict[i] << endl;
             global_flag = true;
         }
     }
-    if (!global_flag){ //Èç¹ûÃ»ÓĞÒ»¸öµ¥´Ê·ûºÏÒªÇó£¬¾ÍÊä³öNONE¡£
+    if (!global_flag){ //å¦‚æœæ²¡æœ‰ä¸€ä¸ªå•è¯ç¬¦åˆè¦æ±‚ï¼Œå°±è¾“å‡ºNONEã€‚
         cout << "NONE" << endl;
     }
 }

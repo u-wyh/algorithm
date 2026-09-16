@@ -21,7 +21,7 @@ bool vis[MAXN];
 
 struct compare{
     bool operator()(const pair<int, int>& a, const pair<int, int>& b) {
-         return a.second > b.second; // –°∏˘∂—
+         return a.second > b.second; // Â∞èÊ†πÂ†Ü
     }
 };
 priority_queue<pair<int,int>,vector<pair<int,int>>,compare>heap;

@@ -4,7 +4,7 @@
 #define X 200+10
 using namespace std;
 int fa[X];
-bool vis[X][X];              //ÓÃÀ´±ê¼Ç°×µã
+bool vis[X][X];              //ç”¨æ¥æ ‡è®°ç™½ç‚¹
 int main()
 {
 	int n,t,ans=0;
@@ -17,19 +17,19 @@ int main()
 		}
 	}
 	for(int i=1;i<=n;++i)
-        fa[i]=i;                 //²¢²é¼¯£¬ÈÃ×Ô¼ºÊÇ×Ô¼º°Ö°Ö
+        fa[i]=i;                 //å¹¶æŸ¥é›†ï¼Œè®©è‡ªå·±æ˜¯è‡ªå·±çˆ¸çˆ¸
 	for(int k=1;k<=n;++k)
         for(int i=1;i<=n;++i)
             for(int j=1;j<=n;++j)
                 if(vis[i][j]||(vis[i][k]&&vis[k][j]))
-                    vis[i][j]=1;              //±ê¼Ç°×µã
+                    vis[i][j]=1;              //æ ‡è®°ç™½ç‚¹
 	for(int i=1;i<=n;++i)
         for(int j=1;j<=n;++j)
             if(vis[i][j]==1)
                 fa[j]=fa[i];
 	for(int i=1;i<=n;++i)
         if(fa[i]==i)
-            ans++;                     //ÀÛ¼Ó¹âÅÌÊı
+            ans++;                     //ç´¯åŠ å…‰ç›˜æ•°
 	printf("%d",ans);
-	return 0;                  //´ó¹¦¸æ³É£¬³ÌĞò°İ°İ£¡
+	return 0;                  //å¤§åŠŸå‘Šæˆï¼Œç¨‹åºæ‹œæ‹œï¼
 }

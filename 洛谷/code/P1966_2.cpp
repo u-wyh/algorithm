@@ -27,7 +27,7 @@ void msort(int s,int t)
             p[k]=x[j];
             ++k;++j;
             ans=(ans+mid-i+1)%mod;
-			//此处找到逆序对，mid-i~mid中数全都与j构成逆序，还会少算一个，+1;
+			//姝ゅ鎵惧埌閫嗗簭瀵癸紝mid-i~mid涓暟鍏ㄩ兘涓巎鏋勬垚閫嗗簭锛岃繕浼氬皯绠椾竴涓紝+1;
         }
     }
     while(i<=mid){
@@ -52,11 +52,11 @@ int main()
         scanf("%d",&l2[i].hi),l2[i].bh=i;
     sort(l1+1,l1+n+1,cmp1);
     sort(l2+1,l2+n+1,cmp1);
-    //排序;
+    //鎺掑簭;
     for(int i=1;i<=n;i++)
         x[l2[i].bh]=l1[i].bh;
     msort(1,n);
-    //调用归并;
+    //璋冪敤褰掑苟;
     printf("%lld",ans);
     return 0;
 }

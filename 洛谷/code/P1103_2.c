@@ -27,29 +27,29 @@ int cmp(const void *x, const void *y) {
 
 int main() {
     scanf("%d %d", &n, &k);
-    m = n - k; // Ñ¡È¡m±¾Êé
+    m = n - k; // é€‰å–mæœ¬ä¹¦
     for (int i = 1; i <= n; i++) {
         scanf("%d %d", &a[i].h, &a[i].w);
     }
 
-    qsort(a + 1, n, sizeof(info), cmp); // ¸ß¶È¾ö¶¨Ë³Ğò
+    qsort(a + 1, n, sizeof(info), cmp); // é«˜åº¦å†³å®šé¡ºåº
 
-    memset(f, 0x7f, sizeof(f)); // ³õÊ¼»¯Îª¼«´óÖµ
+    memset(f, 0x7f, sizeof(f)); // åˆå§‹åŒ–ä¸ºæå¤§å€¼
 
     for (int i = 1; i <= n; i++) {
-        f[i][1] = 0; // µ¥¶ÀÑ¡ÔñÈÎºÎÊé¶¼²»»áÓĞ»¨·Ñ
+        f[i][1] = 0; // å•ç‹¬é€‰æ‹©ä»»ä½•ä¹¦éƒ½ä¸ä¼šæœ‰èŠ±è´¹
     }
 
-    for (int i = 2; i <= n; i++) { // ÊÔ×Å·ÅµÚi±¾µÄÊ±ºò
-        for (int j = 1; j < i; j++) { // ³¢ÊÔÓëÇ°ÃæµÚj±¾ÏàÁÚ
-            for (int l = 2; l <= min(i, m); l++) { // ·ÅÏÂµÚi±¾Ê±£¬³¤¶È²»³¬¹ıiºÍm
-                f[i][l] = min(f[i][l], f[j][l - 1] + abs(a[i].w - a[j].w)); // ×Ü»¨·ÑÔ½Ğ¡Ô½ºÃ
+    for (int i = 2; i <= n; i++) { // è¯•ç€æ”¾ç¬¬iæœ¬çš„æ—¶å€™
+        for (int j = 1; j < i; j++) { // å°è¯•ä¸å‰é¢ç¬¬jæœ¬ç›¸é‚»
+            for (int l = 2; l <= min(i, m); l++) { // æ”¾ä¸‹ç¬¬iæœ¬æ—¶ï¼Œé•¿åº¦ä¸è¶…è¿‡iå’Œm
+                f[i][l] = min(f[i][l], f[j][l - 1] + abs(a[i].w - a[j].w)); // æ€»èŠ±è´¹è¶Šå°è¶Šå¥½
             }
         }
     }
 
     for (int i = m; i <= n; i++) {
-        Min = min(Min, f[i][m]); // ÕÒµ½ÒÔm½áÎ²µÄ×îĞ¡»¨·Ñ
+        Min = min(Min, f[i][m]); // æ‰¾åˆ°ä»¥mç»“å°¾çš„æœ€å°èŠ±è´¹
     }
 
     printf("%d\n", Min);

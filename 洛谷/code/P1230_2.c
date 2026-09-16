@@ -9,11 +9,11 @@ typedef struct {
 ben a[505];
 int vis[505];
 
-// 比较函数，用于qsort
+// 姣旇緝鍑芥暟锛岀敤浜巕sort
 int cmp(const void *a, const void *b) {
     ben *x = (ben *)a;
     ben *y = (ben *)b;
-    return y->val - x->val; // 降序排序
+    return y->val - x->val; // 闄嶅簭鎺掑簭
 }
 
 int main() {
@@ -28,7 +28,7 @@ int main() {
         scanf("%d", &a[i].val);
     }
 
-    // 使用qsort进行排序
+    // 浣跨敤qsort杩涜鎺掑簭
     qsort(a, n, sizeof(ben), cmp);
 
     int ans = 0, t = 0;

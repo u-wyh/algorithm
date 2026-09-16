@@ -16,13 +16,13 @@ int main()
 {
     cin>>T;
     while(T--){
-        memset(death,0,sizeof(death)); // ³õÊ¼»¯Îª0£¬±íÊ¾ÉĞÎ´·ÅÖÃÂ·ÕÏ
-        memset(t,-1,sizeof(t)); // ³õÊ¼»¯Îª-1£¬±íÊ¾ÉĞÎ´·ÃÎÊ
+        memset(death,0,sizeof(death)); // åˆå§‹åŒ–ä¸º0ï¼Œè¡¨ç¤ºå°šæœªæ”¾ç½®è·¯éšœ
+        memset(t,-1,sizeof(t)); // åˆå§‹åŒ–ä¸º-1ï¼Œè¡¨ç¤ºå°šæœªè®¿é—®
         cin>>n;
         int x,y;
         for(int i=1;i<=2*n-2;i++){
             cin>>x>>y;
-            death[x][y]=i; // ¼ÇÂ¼Â·ÕÏµÄ·ÅÖÃÊ±¼ä
+            death[x][y]=i; // è®°å½•è·¯éšœçš„æ”¾ç½®æ—¶é—´
         }
         t[1][1]=0;
         Q.push({1,1});
@@ -30,14 +30,14 @@ int main()
             coord u=Q.front();
             Q.pop();
             int ux=u.x,uy=u.y,utime=t[ux][uy];
-            if(ux == n && uy == n) { // µ½´ïÖÕµã
+            if(ux == n && uy == n) { // åˆ°è¾¾ç»ˆç‚¹
                 printf("Yes\n");
-                goto next_test; // Ìøµ½ÏÂÒ»×é²âÊÔÊı¾İ
+                goto next_test; // è·³åˆ°ä¸‹ä¸€ç»„æµ‹è¯•æ•°æ®
             }
             for(int k=0;k<4;k++){
                 int x=ux+walk[k][0],y=uy+walk[k][1];
                 if(x>0 && x<=n && y>0 && y<=n && t[x][y] == -1 && (utime+1 < death[x][y] || death[x][y] == 0)) {
-                    // ¼ì²éÊÇ·ñÔ½½ç£¬ÊÇ·ñÎ´·ÃÎÊ¹ı£¬ÒÔ¼°ÔÚ¸ÃÎ»ÖÃ·ÅÖÃÂ·ÕÏÖ®Ç°ÄÜ·ñµ½´ï
+                    // æ£€æŸ¥æ˜¯å¦è¶Šç•Œï¼Œæ˜¯å¦æœªè®¿é—®è¿‡ï¼Œä»¥åŠåœ¨è¯¥ä½ç½®æ”¾ç½®è·¯éšœä¹‹å‰èƒ½å¦åˆ°è¾¾
                     t[x][y]=utime+1;
                     Q.push({x,y});
                 }
@@ -45,7 +45,7 @@ int main()
         }
         printf("No\n");
     next_test:
-        continue; // Êµ¼ÊÉÏÕâÀïµÄcontinueÊÇ¶àÓàµÄ£¬ÒòÎªwhileÑ­»·»á×Ô¶¯¼ÌĞø
+        continue; // å®é™…ä¸Šè¿™é‡Œçš„continueæ˜¯å¤šä½™çš„ï¼Œå› ä¸ºwhileå¾ªç¯ä¼šè‡ªåŠ¨ç»§ç»­
     }
     return 0;
 }

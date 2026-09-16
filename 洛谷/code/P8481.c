@@ -29,7 +29,7 @@ struct FastMod {
 FastMod F(2);
 
 ull log2(ull x) {
-    return 63 - __builtin_clzll(x);  // ×¢Òâ£º__builtin_clzll ÊÇ GCC µÄÄÚ½¨º¯Êı£¬¿ÉÄÜĞèÒªÔÚÆäËû±àÒëÆ÷ÖĞÌæ»»
+    return 63 - __builtin_clzll(x);  // æ³¨æ„ï¼š__builtin_clzll æ˜¯ GCC çš„å†…å»ºå‡½æ•°ï¼Œå¯èƒ½éœ€è¦åœ¨å…¶ä»–ç¼–è¯‘å™¨ä¸­æ›¿æ¢
 }
 
 ull getzero(ull x) {

@@ -6,7 +6,7 @@ const int MAXM = 4e5+8;
 #define int long
 
 auto compare = [](const pair<int, int>& left, const pair<int, int>& right) {
-    return left.second > right.second; // ×¢ÒâÕâÀïÊÇ´óÓÚ£¬ÒòÎªÎÒÃÇÏëÒªĞ¡¸ù¶Ñ
+    return left.second > right.second; // æ³¨æ„è¿™é‡Œæ˜¯å¤§äºï¼Œå› ä¸ºæˆ‘ä»¬æƒ³è¦å°æ ¹å †
 };
 priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(compare)> heap(compare);
 int n,m,k,s;
@@ -64,8 +64,8 @@ signed main()
         int wu = (grade[u] == 3) ? INT_MAX/2 : (grade[u] == 0 ? 0 : (grade[u] == 1 ? p : q));
         int wv = (grade[v] == 3) ? INT_MAX/2 : (grade[v] == 0 ? 0 : (grade[v] == 1 ? p : q));
 
-        add_edge(u, v, wv); // ¼ÙÉè add_edge ÊÇÒ»¸öÄú¶¨ÒåµÄº¯Êı£¬ÓÃÓÚÌí¼Ó±ßºÍÈ¨ÖØ
-        add_edge(v, u, wu); // Ìí¼Ó·´Ïò±ßºÍÈ¨ÖØ
+        add_edge(u, v, wv); // å‡è®¾ add_edge æ˜¯ä¸€ä¸ªæ‚¨å®šä¹‰çš„å‡½æ•°ï¼Œç”¨äºæ·»åŠ è¾¹å’Œæƒé‡
+        add_edge(v, u, wu); // æ·»åŠ åå‘è¾¹å’Œæƒé‡
     }
     dis[1]=0;
     heap.push({1,0});

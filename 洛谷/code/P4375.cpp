@@ -22,7 +22,7 @@ bool cmp1(node a,node b){
     return a.id<b.id;
 }
 
-// 树状数组模板代码，无需修改
+// 鏍戠姸鏁扮粍妯℃澘浠ｇ爜锛屾棤闇�淇敼
 void add(int i) {
     while (i <= n) {
         tree[i] ++;
@@ -30,7 +30,7 @@ void add(int i) {
     }
 }
 
-// 树状数组模板代码，无需修改
+// 鏍戠姸鏁扮粍妯℃澘浠ｇ爜锛屾棤闇�淇敼
 int sum(int i) {
     int ans = 0;
     while (i > 0) {

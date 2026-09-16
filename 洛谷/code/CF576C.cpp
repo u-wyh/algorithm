@@ -26,7 +26,7 @@ bool cmp(const node &fir,const node &sec)
 
 int main()
 {
-	n=read();block=1000;//此处设块长为 1000，无需担心被上述反例卡掉（各位读者可以自行计算是否会被卡掉）
+	n=read();block=1000;//姝ゅ璁惧潡闀夸负 1000锛屾棤闇�鎷呭績琚笂杩板弽渚嬪崱鎺夛紙鍚勪綅璇昏�呭彲浠ヨ嚜琛岃绠楁槸鍚︿細琚崱鎺夛級
 	for(int i=1;i<=n;i++) {que[i].l=read();que[i].r=read();que[i].id=i;que[i].b=(que[i].l-1)/block+1;}
 	sort(que+1,que+n+1,cmp);
 	for(int i=1;i<=n;i++) cout<<que[i].id<<" ";

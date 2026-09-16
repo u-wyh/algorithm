@@ -13,7 +13,7 @@ int smallSum(int l, int r) {
 }
 
 int merge(int l, int m, int r) {
-    // 统计部分
+    // 缁熻閮ㄥ垎
     int ans = 0;
     for (int j = m + 1, i = l, sum = 0; j <= r; j++) {
         while (i <= m && arr[i] <= arr[j]) {
@@ -21,7 +21,7 @@ int merge(int l, int m, int r) {
         }
         ans += sum;
     }
-    // 正常merge
+    // 姝ｅ父merge
     int i = l;
     int a = l;
     int b = m + 1;

@@ -1,10 +1,10 @@
 //P2982
-//dfn���ǽ����νṹ�еĽڵ���������֯
-//ʹ��һ�����������нڵ��Ŷ������ڵ�
-//���ǻ�Ҫͳ��sz���� ��������С����  ����Ϊ��ȷ�������ڵ��dfn��ŷ�Χ
-//����u�ڵ�Ϊ�׵�����dfn��ŷ�Χ�� dfn[u]+sz[u]-1
-//dfn��ź�sz����һ����һ��dfsȷ��
-//��ȻҲ�е���ʹ��low����  ��¼�������dfn�������Ƕ��� �ڱ��������ӽڵ��  low[u]=cnt����
+//dfn序是将树形结构中的节点编号重新组织
+//使得一个子树的所有节点编号都是相邻的
+//我们还要统计sz数组 即子树大小数组  这是为了确定子树节点的dfn序号范围
+//即以u节点为首的子树dfn序号范围是 dfn[u]+sz[u]-1
+//dfn序号和sz数组一般用一个dfs确定
+//当然也有的人使用low数组  记录这个子树dfn序号最大是多少 在遍历所有子节点后  low[u]=cnt即可
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;
@@ -21,7 +21,7 @@ int arr[MAXN];
 int add[MAXN << 2];
 int ans[MAXN<<2];
 
-// ����
+// 建树
 void build(int l, int r, int i) {
     if (l == r) {
         ans[i] = 0;
@@ -38,20 +38,20 @@ void addlazy(int i,int v){
     ans[i] +=v;
 }
 
-// ����Ϣ���·�
+// 懒信息的下发
 void down(int i) {
     if (add[i] != 0) {
-        // ����
+        // 发左
         addlazy(i << 1, add[i]);
-        // ����
+        // 发右
         addlazy(i << 1 | 1, add[i]);
-        // ����Χ����Ϣ���
+        // 父范围懒信息清空
         add[i] = 0;
     }
 }
 
-// ��Χ�޸�
-// jobl ~ jobr��Χ��ÿ����������jobv
+// 范围修改
+// jobl ~ jobr范围上每个数字增加jobv
 void Add(int jobl, int jobr, int jobv, int l, int r, int i) {
     if (jobl <= l && r <= jobr) {
         addlazy(i, jobv);
@@ -104,8 +104,8 @@ void addedge(int u,int v){
 }
 
 void dfs(int u){
-    dfn[u]=++dfncnt;//dfn[]Ϊ��ת��Ϊdfs���е��±�
-    size[u]=1;//uΪ����������С
+    dfn[u]=++dfncnt;//dfn[]为树转换为dfs序中的下标
+    size[u]=1;//u为根的子树大小
     int v;
     for(int i=head[u];i;i=Next[i]){
         v=to[i];
@@ -124,13 +124,13 @@ int main()
         addedge(u,v);
         addedge(v,u);
     }
-    dfs(1);//ʹ��dfn��
+    dfs(1);//使用dfn序
     build(1,n,1);
     for(int i=1,k;i<=n;i++){
         k=read();
-        int ans=query(dfn[k],dfn[k],1,n,1);//�����ѯ
-        Add(dfn[k],dfn[k]+size[k]-1,1,1,n,1);//ÿ����һ�����  ����Ϊ���������ڵ�ȫ��Ҫ��һ
-        //����Ҳ����ÿ����һ�ξ�Ҫ����һ��
+        int ans=query(dfn[k],dfn[k],1,n,1);//单点查询
+        Add(dfn[k],dfn[k]+size[k]-1,1,1,n,1);//每加入一个点后  以他为根的子树节点全部要加一
+        //这样也就是每经过一次就要减慢一次
         cout<<ans<<endl;
     }
     return 0;

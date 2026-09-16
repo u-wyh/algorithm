@@ -1,9 +1,9 @@
-// Â·¾¶×ÜºÍ III
-// ¸ø¶¨Ò»¸ö¶ş²æÊ÷µÄ¸ù½Úµã root £¬ºÍÒ»¸öÕûÊı targetSum
-// Çó¸Ã¶ş²æÊ÷Àï½ÚµãÖµÖ®ºÍµÈÓÚ targetSum µÄ Â·¾¶ µÄÊıÄ¿
-// Â·¾¶ ²»ĞèÒª´Ó¸ù½Úµã¿ªÊ¼£¬Ò²²»ĞèÒªÔÚÒ¶×Ó½Úµã½áÊø
-// µ«ÊÇÂ·¾¶·½Ïò±ØĞëÊÇÏòÏÂµÄ£¨Ö»ÄÜ´Ó¸¸½Úµãµ½×Ó½Úµã£©
-// ²âÊÔÁ´½Ó : https://leetcode.cn/problems/path-sum-iii/
+// è·¯å¾„æ€»å’Œ III
+// ç»™å®šä¸€ä¸ªäºŒå‰æ ‘çš„æ ¹èŠ‚ç‚¹ root ï¼Œå’Œä¸€ä¸ªæ•´æ•° targetSum
+// æ±‚è¯¥äºŒå‰æ ‘é‡ŒèŠ‚ç‚¹å€¼ä¹‹å’Œç­‰äº targetSum çš„ è·¯å¾„ çš„æ•°ç›®
+// è·¯å¾„ ä¸éœ€è¦ä»æ ¹èŠ‚ç‚¹å¼€å§‹ï¼Œä¹Ÿä¸éœ€è¦åœ¨å¶å­èŠ‚ç‚¹ç»“æŸ
+// ä½†æ˜¯è·¯å¾„æ–¹å‘å¿…é¡»æ˜¯å‘ä¸‹çš„ï¼ˆåªèƒ½ä»çˆ¶èŠ‚ç‚¹åˆ°å­èŠ‚ç‚¹ï¼‰
+// æµ‹è¯•é“¾æ¥ : https://leetcode.cn/problems/path-sum-iii/
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -14,12 +14,12 @@ struct TreeNode {
     TreeNode* right;
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
-unordered_map<long, int> presum;//½¨Á¢Ç°×ººÍµÄ¹şÏ£±í
+unordered_map<long, int> presum;//å»ºç«‹å‰ç¼€å’Œçš„å“ˆå¸Œè¡¨
 int target,ans;
 
 void f(TreeNode* x, long sum) {
     if (x != nullptr) {
-        sum += x->val; // ´ÓÍ·½Úµã³ö·¢Ò»Â·×ßµ½xµÄÕûÌåÀÛ¼ÓºÍ
+        sum += x->val; // ä»å¤´èŠ‚ç‚¹å‡ºå‘ä¸€è·¯èµ°åˆ°xçš„æ•´ä½“ç´¯åŠ å’Œ
         ans += presum.find(sum-target)!=presum.end()?presum[sum-target]:0;
         presum[sum]= (presum.find(sum)!=presum.end()?presum[sum]:0) + 1;
         f(x->left, sum);
@@ -27,8 +27,8 @@ void f(TreeNode* x, long sum) {
         presum[sum]-=1;
     }
 }
-//Õâ¸öÊÇÍ¨¹ıÒÔÄ³¸öµã½áÎ²ÇóºÍ
-//ansµÚÒ»´Î¿ªÊ¼++Êµ¼ÊÉÏÊÇÔÚºóÃæ½Úµã  È»ºóÏû³ı×Ô¼ºµÄÓ°Ïì¼´presum[sum]-=1;
+//è¿™ä¸ªæ˜¯é€šè¿‡ä»¥æŸä¸ªç‚¹ç»“å°¾æ±‚å’Œ
+//ansç¬¬ä¸€æ¬¡å¼€å§‹++å®é™…ä¸Šæ˜¯åœ¨åé¢èŠ‚ç‚¹  ç„¶åæ¶ˆé™¤è‡ªå·±çš„å½±å“å³presum[sum]-=1;
 
 int pathSum(TreeNode* root) {
     presum[0]=1;

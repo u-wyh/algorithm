@@ -1,16 +1,16 @@
 // https://www.luogu.com.cn/problem/P6649
 #include <stdio.h>
-#include <limits.h> // ÓÃÓÚ¶¨ÒåINT_MAX
+#include <limits.h> // ç”¨äºŽå®šä¹‰INT_MAX
 
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 
 long long dp[2000][2000];
 long long a[2000][2000];
 
-// ¿ìËÙ¶ÁÈëº¯Êý
+// å¿«é€Ÿè¯»å…¥å‡½æ•°
 int read() {
     int x = 0;
-    int f = 0; // Ê¹ÓÃintÀ´±íÊ¾Õý¸º±êÖ¾
+    int f = 0; // ä½¿ç”¨intæ¥è¡¨ç¤ºæ­£è´Ÿæ ‡å¿—
     char ch = getchar();
     while (ch < '0' || ch > '9') {
         f |= (ch == '-');
@@ -29,14 +29,14 @@ int main() {
     n = read();
     m = read();
 
-    // ³õÊ¼»¯dpÊý×éÎªÒ»¸ö´óÊý£¨×¢Òâ£ºÕâÀïÊ¹ÓÃLONG_LONG_MAX£¬µ«¸ù¾ÝÌâÄ¿¿ÉÄÜÐèÒª¸ü´óµÄÊý£©
+    // åˆå§‹åŒ–dpæ•°ç»„ä¸ºä¸€ä¸ªå¤§æ•°ï¼ˆæ³¨æ„ï¼šè¿™é‡Œä½¿ç”¨LONG_LONG_MAXï¼Œä½†æ ¹æ®é¢˜ç›®å¯èƒ½éœ€è¦æ›´å¤§çš„æ•°ï¼‰
     for (int i = 0; i <= n; i++) {
         for (int j = 0; j <= m + 1; j++) {
             dp[i][j] = LLONG_MAX;
         }
     }
 
-    // ¶ÁÈ¡¾ØÕóa
+    // è¯»å–çŸ©é˜µa
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= m; j++) {
             a[i][j] = read();
@@ -44,10 +44,10 @@ int main() {
                 a[i][j] += a[i][j - 1];
             }
         }
-        dp[i][m + 1] = LLONG_MAX; // ±ß½çÌõ¼þ
+        dp[i][m + 1] = LLONG_MAX; // è¾¹ç•Œæ¡ä»¶
     }
 
-    // ¶¯Ì¬¹æ»®Çó½â
+    // åŠ¨æ€è§„åˆ’æ±‚è§£
     for (int i = n; i >= 1; i--) {
         for (int j = m; j >= 1; j--) {
             if (a[i][j] <= 0) {
@@ -58,7 +58,7 @@ int main() {
         }
     }
 
-    // ÕÒ³öµÚÒ»ÐÐµÄ×îÐ¡Öµ×÷Îª´ð°¸
+    // æ‰¾å‡ºç¬¬ä¸€è¡Œçš„æœ€å°å€¼ä½œä¸ºç­”æ¡ˆ
     long long ans = LLONG_MAX;
     for (int j = 1; j <= m; j++) {
         ans = MIN(ans, dp[1][j]);

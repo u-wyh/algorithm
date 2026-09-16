@@ -20,18 +20,18 @@ vector<vector<long long>> multiply(vector<vector<long long>>& a,const vector<vec
     return ans;
 }
 
-// ¾ØÕó¿ìËÙÃİ
+// çŸ©é˜µå¿«é€Ÿå¹‚
 vector<vector<long long>> power(vector<vector<long long>>& m, int p) {
     int n = m.size();
     vector<vector<long long>> ans(n, vector<long long>(n, 0));
     for (int i = 0; i < n; i++) {
-        ans[i][i] = 1;//µ¥Î»¾ØÕó Ïàµ±ÓÚ³Ë·¨¿ìËÙÃİÖĞµÄ1
+        ans[i][i] = 1;//å•ä½çŸ©é˜µ ç›¸å½“äºä¹˜æ³•å¿«é€Ÿå¹‚ä¸­çš„1
     }
     for (; p != 0; p >>= 1) {
         if ((p & 1) != 0) {
             ans = multiply(ans, m);
         }
-        m = multiply(m, m);//Ã¿´Î¶¼ÊÇ±¶Ôö
+        m = multiply(m, m);//æ¯æ¬¡éƒ½æ˜¯å€å¢
     }
     return ans;
 }
@@ -50,7 +50,7 @@ signed main()
         return 0;
     }
     vector<vector<long long>> base_pow = power(base, n-2);
-    m = multiply(m,base_pow); // Óë m Ïà³Ë
+    m = multiply(m,base_pow); // ä¸ m ç›¸ä¹˜
     cout<<m[0][0]<<endl;
     return 0;
 }

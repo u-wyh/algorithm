@@ -8,14 +8,14 @@
 
 int a[MAXN], b[MAXN], c[MAXN];
 int dp[MAXM][MAXM];
-char path[MAXM][MAXM][MAXN * 2];  // ¼ÙÉèÂ·¾¶³¤¶È²»»á³¬¹ıMAXN * 2¸ö×Ö·û
+char path[MAXM][MAXM][MAXN * 2];  // å‡è®¾è·¯å¾„é•¿åº¦ä¸ä¼šè¶…è¿‡MAXN * 2ä¸ªå­—ç¬¦
 int m, v, n;
 
 void build() {
     for (int i = 0; i <= m; i++) {
         for (int j = 0; j <= v; j++) {
             dp[i][j] = 0;
-            path[i][j][0] = '\0';  // ³õÊ¼»¯×Ö·û´®Îª¿Õ
+            path[i][j][0] = '\0';  // åˆå§‹åŒ–å­—ç¬¦ä¸²ä¸ºç©º
         }
     }
 }
@@ -34,7 +34,7 @@ void compute() {
                     dp[j][k] = dp[j - a[i]][k - b[i]] + c[i];
                     strcpy(path[j][k], p2);
                 } else if (dp[j][k] == dp[j - a[i]][k - b[i]] + c[i]) {
-                    // Èç¹ûÁ½¸öÂ·¾¶ÖµÏàÍ¬£¬Ñ¡Ôñ×ÖµäĞò½ÏĞ¡µÄ
+                    // å¦‚æœä¸¤ä¸ªè·¯å¾„å€¼ç›¸åŒï¼Œé€‰æ‹©å­—å…¸åºè¾ƒå°çš„
                     if (strcmp(p2, path[j][k]) < 0) {
                         strcpy(path[j][k], p2);
                     }

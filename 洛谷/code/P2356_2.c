@@ -43,7 +43,7 @@ int main() {
                     rowSum += a[i][k];
                     colSum += a[k][j];
                 }
-                sum[aa++] = rowSum + colSum - a[i][j]; // 减去自身分数，因为不能在自己位置
+                sum[aa++] = rowSum + colSum - a[i][j]; // 鍑忓幓鑷韩鍒嗘暟锛屽洜涓轰笉鑳藉湪鑷繁浣嶇疆
             }
         }
     }
@@ -56,7 +56,7 @@ int main() {
         printf("Bad Game!\n");
     }
 
-    // 释放内存
+    // 閲婃斁鍐呭瓨
     for (int i = 0; i < n; i++) {
         free(a[i]);
     }

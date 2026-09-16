@@ -20,15 +20,15 @@ int main() {
         return 0;
     }
 
-    // 初始化dp数组和sum数组
+    // 鍒濆鍖杁p鏁扮粍鍜宻um鏁扮粍
     for (i = 1; i <= m; i++) {
         dp[1][i] = 1;
     }
     sum[1] = m;
 
-    // 动态规划填充dp和sum数组
+    // 鍔ㄦ�佽鍒掑～鍏卍p鍜宻um鏁扮粍
     for (i = 2; i <= n; i++) {
-        sum[i] = 0; // 每次循环前重置sum[i]
+        sum[i] = 0; // 姣忔寰幆鍓嶉噸缃畇um[i]
         for (j = 1; j <= m; j++) {
             dp[i][j] = sum[i - 1];
             if (i > a[j]) {

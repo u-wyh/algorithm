@@ -7,10 +7,10 @@ struct hzy{
 }a[200001];
 int f[200001],n,m,b[200001],l;
 
-int find(int k){//²¢²é¼¯º¯Êı£¬×¢ÒâÂ·¾¶Ñ¹Ëõ
+int find(int k){//å¹¶æŸ¥é›†å‡½æ•°ï¼Œæ³¨æ„è·¯å¾„å‹ç¼©
 	return f[k]==k?k:f[k]=find(f[k]);
 }
-void un(int x,int y){//ºÏ²¢º¯Êı
+void un(int x,int y){//åˆå¹¶å‡½æ•°
 	int x1=find(x);
 	int x2=find(y);
 	if(x1!=x2){
@@ -22,8 +22,8 @@ int main() {
 	string ch;
 	for(int i=1; i<=m; i++) {
 		cin>>a[i].x>>a[i].y>>ch;
-		a[i].x--;//·½±ãºóÃæÔËËã£¬ÕâÀïÖ±½Ó¼õ1
-		if(ch[0]=='o') {//ÏàÍ¬ºÍ²»Í¬Òª¸ãÇå³ş
+		a[i].x--;//æ–¹ä¾¿åé¢è¿ç®—ï¼Œè¿™é‡Œç›´æ¥å‡1
+		if(ch[0]=='o') {//ç›¸åŒå’Œä¸åŒè¦ææ¸…æ¥š
 			a[i].z=1;
 		} else {
 			a[i].z=0;
@@ -37,20 +37,20 @@ int main() {
 		f[i]=i;
 	}
 	for(int i=1; i<=m; i++) {
-		a[i].x=lower_bound(b+1,b+l+1,a[i].x)-b;//ÀëÉ¢»¯
+		a[i].x=lower_bound(b+1,b+l+1,a[i].x)-b;//ç¦»æ•£åŒ–
 		a[i].y=lower_bound(b+1,b+l+1,a[i].y)-b;
-		if(a[i].z==0){//ÖÖÀà²¢²é¼¯£¬·ÖÏàÍ¬ºÍ²»Í¬²Ù×÷
-			if(find(a[i].x)==find(a[i].y+l)){//Èç¹ûÁ½¸öÊıÆæÅ¼ĞÔ²»Í¬£¬Ã¬¶Ü£¬Êä³ö
+		if(a[i].z==0){//ç§ç±»å¹¶æŸ¥é›†ï¼Œåˆ†ç›¸åŒå’Œä¸åŒæ“ä½œ
+			if(find(a[i].x)==find(a[i].y+l)){//å¦‚æœä¸¤ä¸ªæ•°å¥‡å¶æ€§ä¸åŒï¼ŒçŸ›ç›¾ï¼Œè¾“å‡º
 				cout<<i-1;
 				return 0;
 			}
-			else{//²»È»¾ÍºÏ²¢¼¯ºÏ
+			else{//ä¸ç„¶å°±åˆå¹¶é›†åˆ
 				un(a[i].x,a[i].y);
 				un(a[i].x+l,a[i].y+l);
 			}
 		}
 		else{
-			if(find(a[i].x)==find(a[i].y)){//Í¬Àí
+			if(find(a[i].x)==find(a[i].y)){//åŒç†
 				cout<<i-1;
 				return 0;
 			}

@@ -51,7 +51,7 @@ int merge(int l, int r,int op) {
     }
 }
 
-//Ã»ÓĞ´ÊÆµÑ¹Ëõ  Ö±½Ó¾ÍÊÇĞÂÔö½Úµã
+//æ²¡æœ‰è¯é¢‘å‹ç¼©  ç›´æ¥å°±æ˜¯æ–°å¢èŠ‚ç‚¹
 void add(int num,int op) {
     split(0, 0, head[op], num,op);
     key[++cnt[op]][op] = num;
@@ -60,8 +60,8 @@ void add(int num,int op) {
     head[op] = merge(merge(rs[0][op], cnt[op],op), ls[0][op],op);
 }
 
-//É¾³ı½ÚµãµÄÊ±ºò ÊÇ½«Ê÷°´ÕÕnum·ÖÁÑ  È»ºó½«<=num µÄ°´ÕÕ num-1 ·ÖÁÑ
-//½«ÄÇÃ´ >num-1 µÄÊ÷Í·½áµãÒ»¶¨ÊÇnum  Ö»Òª½«Õâ¸ö½ÚµãºöÂÔ¾ÍÊÇÉ¾³ı½Úµã
+//åˆ é™¤èŠ‚ç‚¹çš„æ—¶å€™ æ˜¯å°†æ ‘æŒ‰ç…§numåˆ†è£‚  ç„¶åå°†<=num çš„æŒ‰ç…§ num-1 åˆ†è£‚
+//å°†é‚£ä¹ˆ >num-1 çš„æ ‘å¤´ç»“ç‚¹ä¸€å®šæ˜¯num  åªè¦å°†è¿™ä¸ªèŠ‚ç‚¹å¿½ç•¥å°±æ˜¯åˆ é™¤èŠ‚ç‚¹
 void remove(int num,int op) {
     split(0, 0, head[op], num,op);
     int lm = rs[0][op];

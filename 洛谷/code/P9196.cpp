@@ -28,7 +28,7 @@ long long getHash(int l, int r,vector<int> hash_val) {
     return ans;
 }
 
-// ¼ÆËãÒ»¸ö×Ö·û´®µÄ¹þÏ£Öµ
+// è®¡ç®—ä¸€ä¸ªå­—ç¬¦ä¸²çš„å“ˆå¸Œå€¼
 long long hashString(const string& str) {
     if (str.empty()) {
         return 0;

@@ -7,40 +7,40 @@ int dis[60][60][1010];
 int main()
 {
     int i,j,k,l;
-    scanf("%d %d",&n,&m);//¶ÁÈë
+    scanf("%d %d",&n,&m);//è¯»å…¥
     for(l=1;l<=m;l++)
         for(i=1;i<=n;i++)
             for(j=1;j<=n;j++)
-                dis[i][j][l]=INF;//³õÊ¼»¯
+                dis[i][j][l]=INF;//åˆå§‹åŒ–
     for(i=1;i<=m;i++)
     {
         long long a,b,w;
         scanf("%lld %lld %lld",&a,&b,&w);
         if(dis[a][b][1]>w)
-            dis[a][b][1]=w;//×¢ÒâÓĞÖØ±ßµÄÇé¿ö
+            dis[a][b][1]=w;//æ³¨æ„æœ‰é‡è¾¹çš„æƒ…å†µ
     }
     for(l=2;l<=m;l++)
         for(k=1;k<=n;k++)
             for(i=1;i<=n;i++)
                 for(j=1;j<=n;j++)
                     if(dis[i][j][l]>dis[i][k][l-1]+dis[k][j][1])
-                        dis[i][j][l]=dis[i][k][l-1]+dis[k][j][1];//ÀàËÆFloydËã·¨µÄDP
+                        dis[i][j][l]=dis[i][k][l-1]+dis[k][j][1];//ç±»ä¼¼Floydç®—æ³•çš„DP
     scanf("%d",&q);
     while(q--)
     {
         int x,y;
         double ans=INF,min=INF;
-        scanf("%d %d",&x,&y);//¶ÁÈëÑ¯ÎÊ
+        scanf("%d %d",&x,&y);//è¯»å…¥è¯¢é—®
         for(l=1;l<=n;l++)
         {
             if(dis[x][y][l]<INF)
                 ans=double(dis[x][y][l])/double(l);
             if(ans<min)
                 min=ans;
-        }//¶Ô±ßÊı½øĞĞÃ¶¾Ù,ËãÈ¨ÖµºÍ/±ßÊı
+        }//å¯¹è¾¹æ•°è¿›è¡Œæšä¸¾,ç®—æƒå€¼å’Œ/è¾¹æ•°
         if(min==INF)
             printf("OMG!\n");
         else
-            printf("%.3lf\n",min);//Êä³ö
+            printf("%.3lf\n",min);//è¾“å‡º
     }
 }

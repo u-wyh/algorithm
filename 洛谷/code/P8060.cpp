@@ -1,6 +1,6 @@
 // https://www.luogu.com.cn/problem/P8060
 #include<bits/stdc++.h>
-#define int long long //¼ÇµÃ¿ªlong long
+#define int long long //è®°å¾—å¼€long long
 using namespace std;
 const int N=5e6+10;
 
@@ -44,7 +44,7 @@ signed main(){
 	while(k--){
 		int c;
 		scanf("%lld",&c);
-		printf("%s\n",dis[c%minn]<=c ?"TAK":"NIE");//²»Òª°ÑÊä³ö´ò´í£¬²»È»»áÏñÎÒÒ»Ñùµ÷ÊÔ°ëÌì£¨orz£©
+		printf("%s\n",dis[c%minn]<=c ?"TAK":"NIE");//ä¸è¦æŠŠè¾“å‡ºæ‰“é”™ï¼Œä¸ç„¶ä¼šåƒæˆ‘ä¸€æ ·è°ƒè¯•åŠå¤©ï¼ˆorzï¼‰
 	}
 	return 0;
 }

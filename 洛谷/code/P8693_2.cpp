@@ -5,9 +5,9 @@ using namespace std;
 int walk[4][2]={{1,0},{-1,0},{0,1},{0,-1}};
 int n,k;
 struct node {
-	int x, y;//×ø±ê
-	int Time;//Ê±¼ä
-	int size;//Ğ¡Ã÷´óĞ¡
+	int x, y;//åæ ‡
+	int Time;//æ—¶é—´
+	int size;//å°æ˜å¤§å°
 };
 bool vis[305][305];
 int a[305][305];
@@ -39,17 +39,17 @@ void bfs(){
         node t=q.front();
         q.pop();
         if(t.x == n - 2 && t.y == n - 2){
-            //µ½´ïÖÕµã£¬Í£Ö¹ËÑË÷
+            //åˆ°è¾¾ç»ˆç‚¹ï¼Œåœæ­¢æœç´¢
 			cout << t.Time;
 			return ;
 		}
 		if(t.size != 0)
-            q.push({t.x, t.y, t.Time+1, work(t.Time+1)});//Õ¾×Å²»¶¯
+            q.push({t.x, t.y, t.Time+1, work(t.Time+1)});//ç«™ç€ä¸åŠ¨
 		for(int i=0;i<4;i++)
 		{
 			int X = t.x + walk[i][0];
 			int Y = t.y + walk[i][1];
-			if(check(X, Y, t.size))//ÅĞ¶Ï
+			if(check(X, Y, t.size))//åˆ¤æ–­
 			{
 				vis[X][Y] = 1;
 				q.push((node){X, Y, t.Time+1, work(t.Time+1)});

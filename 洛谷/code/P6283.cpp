@@ -8,7 +8,7 @@ struct node{
 	int x,y;
 	bool operator<(node u)const{
 		return y==u.y?x<u.x:y<u.y;
-	}//ÓëÇ°Ãæ²î²»¶àµÄÅÅĞò£¬µ«ÊÇy×ø±êÏàÍ¬Ê±x×ø±êĞè¸Ä³É´ÓĞ¡µ½´ó
+	}//ä¸å‰é¢å·®ä¸å¤šçš„æ’åºï¼Œä½†æ˜¯yåæ ‡ç›¸åŒæ—¶xåæ ‡éœ€æ”¹æˆä»å°åˆ°å¤§
 }moo[maxn];
 int main(){
 	cin>>n;
@@ -19,12 +19,12 @@ int main(){
 	l[1]=moo[1].x;
 	for(int i=2;i<=n;i++){
 		l[i]=min(l[i-1],moo[i].x);
-	}//´¦Àíl
+	}//å¤„ç†l
 	r[n]=moo[n].x;
 	for(int i=n-1;i>=1;i--){
 		r[i]=max(r[i+1],moo[i].x);
-	}//´¦Àír
-	int ans=1;//ÕâÀïansµÄ³õÊ¼ÖµĞèÒª¸³Îª1
+	}//å¤„ç†r
+	int ans=1;//è¿™é‡Œansçš„åˆå§‹å€¼éœ€è¦èµ‹ä¸º1
 	for(int i=1;i<n;i++){
 		if(l[i]>r[i+1]){
 			ans++;

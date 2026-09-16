@@ -15,7 +15,7 @@ struct compare{
         return a.second<b.second;
     }
 };
-priority_queue<pair<int,int>,vector<pair<int,int>>,compare>heap;//´ó¸ù¶Ñ °´ÕÕÓÒ¶ËµãÅÅĞò
+priority_queue<pair<int,int>,vector<pair<int,int>>,compare>heap;//å¤§æ ¹å † æŒ‰ç…§å³ç«¯ç‚¹æ’åº
 
 inline int read(){
     int x=0,f=1;
@@ -62,10 +62,10 @@ bool check(int limit){
         tree[i]=0;
     }
     for(int i=1;i<=n;i++){
-        //Î¬³Ö²î·ÖÊı×é
+        //ç»´æŒå·®åˆ†æ•°ç»„
         add(i,arr[i]-arr[i-1]);
     }
-    int cnt=0,tot=1;//tot±íÊ¾µ±Ç°À´µ½ÁËµÚ¼¸¸öÇø¼ä  cnt±íÊ¾ÒÑ¾­Ê¹ÓÃÁË¶àÉÙ¸öÇø¼ä
+    int cnt=0,tot=1;//totè¡¨ç¤ºå½“å‰æ¥åˆ°äº†ç¬¬å‡ ä¸ªåŒºé—´  cntè¡¨ç¤ºå·²ç»ä½¿ç”¨äº†å¤šå°‘ä¸ªåŒºé—´
     for(int i=1;i<=n;i++){
         while(tot<=m&&nums[tot].l<=i){
             if(nums[tot].r>=i){
@@ -75,11 +75,11 @@ bool check(int limit){
         }
         while(sum(i)<limit){
             if(heap.empty()){
-                //±íÊ¾ÒÑ¾­Ã»ÓĞÈÎºÎÇø¼ä¿ÉÒÔ°ïÖúÕâ¸öµã´ï±ê
+                //è¡¨ç¤ºå·²ç»æ²¡æœ‰ä»»ä½•åŒºé—´å¯ä»¥å¸®åŠ©è¿™ä¸ªç‚¹è¾¾æ ‡
                 return false;
             }
             if(cnt==k){
-                //±íÊ¾Ç°ÃæµÄµãÒÑ¾­ºÄ·ÑÁËËùÓĞµÄÖ¸±ê
+                //è¡¨ç¤ºå‰é¢çš„ç‚¹å·²ç»è€—è´¹äº†æ‰€æœ‰çš„æŒ‡æ ‡
                 return false;
             }
             if(heap.top().first<=i&&heap.top().second>=i){
@@ -108,7 +108,7 @@ int main()
         for(int i=1;i<=m;i++){
             nums[i].l=read(),nums[i].r=read();
         }
-        sort(nums+1,nums+m+1,cmp);//°´ÕÕ×ó¶ËµãÅÅĞò ×ó¶ËµãÏàÍ¬ °´ÕÕÓÒ¶ËµãÅÅĞò
+        sort(nums+1,nums+m+1,cmp);//æŒ‰ç…§å·¦ç«¯ç‚¹æ’åº å·¦ç«¯ç‚¹ç›¸åŒ æŒ‰ç…§å³ç«¯ç‚¹æ’åº
         int ans=l;
         while(l<=r){
             int mid=(l+r)/2;

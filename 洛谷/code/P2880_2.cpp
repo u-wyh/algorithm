@@ -1,5 +1,5 @@
 // https://www.luogu.com.cn/problem/P2880
-//¶ÔÊı×é½øĞĞ¸üĞÂ²Ù×÷£¬²¢Çó×î´óÖµ
+//å¯¹æ•°ç»„è¿›è¡Œæ›´æ–°æ“ä½œï¼Œå¹¶æ±‚æœ€å¤§å€¼
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 50005;
@@ -9,7 +9,7 @@ int Max[MAXN<<2];
 int Min[MAXN<<2];
 int n,m;
 
-//±È½Ï×óÓÒÁ½±ß×î´óÖµ
+//æ¯”è¾ƒå·¦å³ä¸¤è¾¹æœ€å¤§å€¼
 void maxup(int i) {
     Max[i] = max(Max[i << 1] ,Max[i << 1 | 1]);
 }

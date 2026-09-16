@@ -20,15 +20,15 @@ inline void Add(int *b,int *c){
         d[I+1]+=(d[I]/10);
         d[I]%=10;
     }
-    while (d[d[0]]==0) d[0]--;//È¥µô0
+    while (d[d[0]]==0) d[0]--;//å»æ‰0
     for (int I=0;I<=d[0];I++) b[I]=d[I];
     return;
 }
 
 inline void CF(int *b,int *c){
-    memset(d,0,sizeof(d));//Çå¿Õ
+    memset(d,0,sizeof(d));//æ¸…ç©º
     d[0]=b[0]+c[0];
-    for (int k=1;k<=b[0];k++)//³Ë
+    for (int k=1;k<=b[0];k++)//ä¹˜
         for (int l=1;l<=c[0];l++){
             d[k+l-1]+=b[k]*c[l];
         }
@@ -36,7 +36,7 @@ inline void CF(int *b,int *c){
         d[k+1]+=d[k]/10;
         d[k]%=10;
     }
-    while (d[d[0]]==0) d[0]--;//È¥µôÇ°ÃæµÄ0
+    while (d[d[0]]==0) d[0]--;//å»æ‰å‰é¢çš„0
     for (int k=0;k<=d[0];k++) b[k]=d[k];
 }
 
@@ -58,7 +58,7 @@ int main()
     scanf("%d%d",&n,&m);
     for (int i=1;i<=n;i++)
         for (int j=1;j<=m;j++){
-            scanf("%s",ch+1);//¶ÁÈë
+            scanf("%s",ch+1);//è¯»å…¥
             lc=strlen(ch+1);
             a[i][j][0]=0;
             for (int k=lc;k>=1;k--){
@@ -72,7 +72,7 @@ int main()
         }
         Add(er[i],er[i-1]);
     }
-    for (int k=1;k<=n;k++)//ĞĞ
+    for (int k=1;k<=n;k++)//è¡Œ
     {
         memset(f,0,sizeof(f));
         for (int i=1;i<=m;i++)
@@ -83,7 +83,7 @@ int main()
         for (int l=1;l<m;l++)
         {
             for (int i=1,j=i+l;j<=m;i++,j=i+l)
-            {//Õâ¾ÍÊÇdp×ªÒÆµÄ¹ı³Ì
+            {//è¿™å°±æ˜¯dpè½¬ç§»çš„è¿‡ç¨‹
                 memset(A,0,sizeof(A));
                 Add(A,a[k][i]);
                 CF(A,er[m+i-j]);
@@ -106,9 +106,9 @@ int main()
         }
         Add(ans,f[1][m]);
     }
-    while (ans[ans[0]]==0&&ans[0]>0) ans[0]--;//È¥µô0
-    if (ans[0]==0) ans[0]++;//ÌØÅĞ0
-    for (int i=ans[0];i>=1;i--)//µ¹×ÅÊä³ö
+    while (ans[ans[0]]==0&&ans[0]>0) ans[0]--;//å»æ‰0
+    if (ans[0]==0) ans[0]++;//ç‰¹åˆ¤0
+    for (int i=ans[0];i>=1;i--)//å€’ç€è¾“å‡º
         printf("%d",ans[i]);
     return 0;
 }

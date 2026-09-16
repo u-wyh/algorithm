@@ -6,20 +6,20 @@
 using namespace std;
 int n, m, sx, sy, K, ans, dp[MAXN][MAXN];
 int dx[5] = {0, -1, 1, 0, 0}, dy[5] = {0, 0, 0, -1, 1};
-struct node{int dp, pos;}q[MAXN]; //qÎªµ¥µ÷µİ¼õ¶ÓÁĞ£¬Òª´æÎ»ÖÃĞÅÏ¢ÓÃÀ´¼ÆËã¹²×ßÁË¼¸²½
+struct node{int dp, pos;}q[MAXN]; //qä¸ºå•è°ƒé€’å‡é˜Ÿåˆ—ï¼Œè¦å­˜ä½ç½®ä¿¡æ¯ç”¨æ¥è®¡ç®—å…±èµ°äº†å‡ æ­¥
 char map[MAXN][MAXN];
-void work(int x, int y, int len, int d) //µÚk¸öÇø¼äµÄÊ±³¤Îªlen£¬·½ÏòÎªd£¬Æğµã×ø±êx,y
+void work(int x, int y, int len, int d) //ç¬¬kä¸ªåŒºé—´çš„æ—¶é•¿ä¸ºlenï¼Œæ–¹å‘ä¸ºdï¼Œèµ·ç‚¹åæ ‡x,y
 {
 	int head = 1, tail = 0;
 	for(int i = 1; x >= 1 && x <= n && y >= 1 && y <= m; i++, x += dx[d], y += dy[d])
-		if(map[x][y] == 'x') head = 1, tail = 0; //Óöµ½ÕÏ°­£¬Çå¿Õ¶ÓÁĞ
+		if(map[x][y] == 'x') head = 1, tail = 0; //é‡åˆ°éšœç¢ï¼Œæ¸…ç©ºé˜Ÿåˆ—
 		else
 		{
 			while(head <= tail && q[tail].dp + i - q[tail].pos < dp[x][y]) tail--;
-			q[++tail] = node{dp[x][y], i}; //µ±Ç°ÖµÈë¶ÓÁĞ
-			if(q[tail].pos - q[head].pos > len) head++; //¶ÓÁĞ³¤¶È³¬¹ılenÊ±¶ÓÊ×µ¯³ö
-			dp[x][y] = q[head].dp + i - q[head].pos; //×îÓÅ½âÊÇ¶ÓÊ×ÔªËØ+ÒÆ¶¯¾àÀë
-			ans = max(ans, dp[x][y]); //¼ÇÂ¼½á¹û
+			q[++tail] = node{dp[x][y], i}; //å½“å‰å€¼å…¥é˜Ÿåˆ—
+			if(q[tail].pos - q[head].pos > len) head++; //é˜Ÿåˆ—é•¿åº¦è¶…è¿‡lenæ—¶é˜Ÿé¦–å¼¹å‡º
+			dp[x][y] = q[head].dp + i - q[head].pos; //æœ€ä¼˜è§£æ˜¯é˜Ÿé¦–å…ƒç´ +ç§»åŠ¨è·ç¦»
+			ans = max(ans, dp[x][y]); //è®°å½•ç»“æœ
 		}
 }
 int main()
@@ -27,7 +27,7 @@ int main()
 	scanf("%d%d%d%d%d", &n, &m, &sx, &sy, &K);
 	for(int i = 1; i <= n; i++) scanf("%s", map[i] + 1);
 	memset(dp, 0xf3, sizeof(dp));
-	dp[sx][sy] = 0; //³õÊ¼»¯£¬Ö»ÓĞ³õÊ¼Î»ÖÃÊÇ0£¬ÆäËû¶¼ÊÇ¸ºÎŞÇî
+	dp[sx][sy] = 0; //åˆå§‹åŒ–ï¼Œåªæœ‰åˆå§‹ä½ç½®æ˜¯0ï¼Œå…¶ä»–éƒ½æ˜¯è´Ÿæ— ç©·
 	for(int k = 1, s, t, d, len; k <= K; k++)
 	{
 		scanf("%d%d%d", &s, &t, &d);

@@ -38,27 +38,27 @@ int main(){
             book[++tot]=a[i].x;
             book[++tot]=a[i].y;
         }
-        sort(book,book+tot);//≈≈–Ú
-        int reu=unique(book,book+tot)-book;  //»•÷ÿ
+        sort(book,book+tot);//ÊéíÂ∫è
+        int reu=unique(book,book+tot)-book;  //ÂéªÈáç
         for(int i=1;i<=n;++i){
            a[i].x=lower_bound(book,book+reu,a[i].x)-book;
            a[i].y=lower_bound(book,book+reu,a[i].y)-book;
         }
-        first(reu);   //≥ı ºªØ
-        sort(a+1,a+n+1,cmp);  //∞¥e≈≈–Ú
+        first(reu);   //ÂàùÂßãÂåñ
+        sort(a+1,a+n+1,cmp);  //ÊåâeÊéíÂ∫è
         for(int i=1;i<=n;i++){
             int r1=get(a[i].x);
             int r2=get(a[i].y);
             if(a[i].e){
-                f[r1]=r2;  //æÕ «Œ“√«µƒmerge≤Ÿ◊˜
+                f[r1]=r2;  //Â∞±ÊòØÊàë‰ª¨ÁöÑmergeÊìç‰Ωú
             }else if(r1==r2){
                 printf("NO\n");
-                flag=0;  //»Áπ˚≤ª¬˙◊„Ãıº˛£¨±Íº«Œ™∑Ò
+                flag=0;  //Â¶ÇÊûú‰∏çÊª°Ë∂≥Êù°‰ª∂ÔºåÊ†áËÆ∞‰∏∫Âê¶
                 break;
             }
         }
         if(flag)
-            printf("YES\n");   //∂º¬˙◊„Ãıº˛¡À
+            printf("YES\n");   //ÈÉΩÊª°Ë∂≥Êù°‰ª∂‰∫Ü
     }
     return 0;
 }

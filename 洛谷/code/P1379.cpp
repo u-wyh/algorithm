@@ -35,19 +35,19 @@ int main()
             int nx=x+walk[i][0];
             int ny=y+walk[i][1];
             if(nx<0||ny<0||nx>2||ny>2)
-                continue; //Ô½½ç¾Í²»Ö´ĞĞ
+                continue; //è¶Šç•Œå°±ä¸æ‰§è¡Œ
             swap(c[nx][ny],c[x][y]);
             int ns=0;
             for(int i=0;i<3;i++){
                 for(int j=0;j<3;j++){
-                    ns=ns*10+c[i][j];//¾ØÕó×ªÊıÁĞ
+                    ns=ns*10+c[i][j];//çŸ©é˜µè½¬æ•°åˆ—
                 }
             }
             if(graph[ns]==0){
                 graph[ns]=graph[tmp]+1;
                 q.push(ns);
             }
-            swap(c[nx][ny],c[x][y]);//×´Ì¬¸´Ô­
+            swap(c[nx][ny],c[x][y]);//çŠ¶æ€å¤åŸ
         }
     }
     cout<<graph[123804765]-1<<endl;

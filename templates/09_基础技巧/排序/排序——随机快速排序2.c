@@ -23,14 +23,14 @@ int main()
         arr[i]=rand()%100+1;
         printf("%4d",arr[i]);
     }
-    printf("\n");//¶¨Òå²¢Êä³öËùÓĞµÄÊı×é
+    printf("\n");//å®šä¹‰å¹¶è¾“å‡ºæ‰€æœ‰çš„æ•°ç»„
 
-    quicksort(0,t-1);//¿ªÊ¼½øĞĞ¿ìËÙÅÅĞò
+    quicksort(0,t-1);//å¼€å§‹è¿›è¡Œå¿«é€Ÿæ’åº
 
     for(int i=0;i<t;i++)
     {
         printf("%4d",arr[i]);
-    }//Êä³öÅÅÁĞºÃµÄÊı×é
+    }//è¾“å‡ºæ’åˆ—å¥½çš„æ•°ç»„
 
     return 0;
 }
@@ -40,7 +40,7 @@ void swap(int i, int j)
     int temp = arr[i];
     arr[i] = arr[j];
     arr[j] = temp;
-}//½»»»Ö¸¶¨ÏÂ±êµÄÁ½¸öÊı×Ö
+}//äº¤æ¢æŒ‡å®šä¸‹æ ‡çš„ä¸¤ä¸ªæ•°å­—
 
 void partition(int l, int r,int  x)
 {
@@ -56,7 +56,7 @@ void partition(int l, int r,int  x)
             swap(i, last--);
         }
     }
-}//ÊµÏÖ¿ìÅÅµÄÖ÷Òª³ÌĞò
+}//å®ç°å¿«æ’çš„ä¸»è¦ç¨‹åº
 
 void quicksort(int l,int r)
 {
@@ -68,4 +68,4 @@ void quicksort(int l,int r)
     int right=last;
     quicksort(l, left - 1);
     quicksort(right + 1, r);
-}//Ê¹ÓÃµİ¹é½øĞĞ¿ìÅÅ
+}//ä½¿ç”¨é€’å½’è¿›è¡Œå¿«æ’

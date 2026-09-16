@@ -9,7 +9,7 @@ int n, m, tot, ans, le, maxlen = -1e9;
 int a[MAXN], len[MAXN], f[MAXN];
 char s[MAXN];
 
-// ¸¨Öúº¯Êı£¬ÓÃÓÚ¼ÆËãÁ½¸öÕûÊıÖĞµÄ½Ï´óÖµ
+// è¾…åŠ©å‡½æ•°ï¼Œç”¨äºè®¡ç®—ä¸¤ä¸ªæ•´æ•°ä¸­çš„è¾ƒå¤§å€¼
 int max(int x, int y) {
     return (x > y) ? x : y;
 }
@@ -21,7 +21,7 @@ int main() {
     }
     scanf("%d %s", &m, s);
 
-    // Ô¤´¦Àí×Ö·û´®
+    // é¢„å¤„ç†å­—ç¬¦ä¸²
     for (int i = 0; i < m - 2; i++) {
         if (s[i] == 'a' && s[i + 1] == 'b' && s[i + 2] == 'c') {
             le++;
@@ -37,17 +37,17 @@ int main() {
         maxlen = (maxlen > len[tot]) ? maxlen : len[tot];
     }
 
-    // ³õÊ¼»¯dpÊı×é
+    // åˆå§‹åŒ–dpæ•°ç»„
     memset(f, 0, sizeof(f));
 
-    // ¶¯Ì¬¹æ»®Çó½â
+    // åŠ¨æ€è§„åˆ’æ±‚è§£
     for (int i = 1; i <= maxlen; i++) {
         for (int k = max(i - n, 0); k < i; k++) {
             f[i] = (f[i] > f[k] + a[i - k]) ? f[i] : f[k] + a[i - k];
         }
     }
 
-    // ¼ÆËã×ÜµÃ·Ö
+    // è®¡ç®—æ€»å¾—åˆ†
     for (int i = 1; i <= tot; i++) {
         ans += f[len[i]];
     }

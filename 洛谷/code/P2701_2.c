@@ -52,7 +52,7 @@ int main()
     int ans=0;
 	for(int i=1; i<=n; i++)
 		for(int j=1; j<=n; j++)
-			ans=max(ans,dp[i][j]);	//ans¼ÇÂ¼×î´óÖµ
+			ans=max(ans,dp[i][j]);	//ansè®°å½•æœ€å¤§å€¼
 	printf("%d\n",ans);
     return 0;
 }

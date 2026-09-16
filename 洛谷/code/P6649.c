@@ -24,7 +24,7 @@ int main() {
     for (LL i = 1; i <= n; i++) {
         memset(hzn, 0x7f, sizeof(hzn));
         memset(qzn, 0x7f, sizeof(qzn));
-        qzn[0] = 0LL; // ³õÊ¼»¯qzn[0]Îª0£¬ÓÃÓÚ¼ÆËãÇ°×º×îĞ¡Öµ
+        qzn[0] = 0LL; // åˆå§‹åŒ–qzn[0]ä¸º0ï¼Œç”¨äºè®¡ç®—å‰ç¼€æœ€å°å€¼
         for (LL j = 1; j <= m; j++) {
             qzn[j] = (j > 0 ? min(qzn[j - 1], 0LL) : 0LL) + val[i][j];
         }
@@ -32,7 +32,7 @@ int main() {
             if (i > 1) {
                 hzn[j] = min(hzn[j + 1], f[i - 1][j]) + val[i][j];
             } else {
-                hzn[j] = val[i][j]; // µÚÒ»ĞĞÃ»ÓĞÉÏÒ»ĞĞµÄÊı¾İ£¬Ö±½ÓÈ¡µ±Ç°Öµ
+                hzn[j] = val[i][j]; // ç¬¬ä¸€è¡Œæ²¡æœ‰ä¸Šä¸€è¡Œçš„æ•°æ®ï¼Œç›´æ¥å–å½“å‰å€¼
             }
         }
         for (LL j = 1; j <= m; j++) {

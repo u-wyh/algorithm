@@ -5,12 +5,12 @@
 
 using namespace std;
 
-vector<int> web[100005]; //ÁÚ½Ó±í
+vector<int> web[100005]; //é‚»æ¥è¡¨
 int a[100005]; //A
-int ind[100005]; //Èë¶È
+int ind[100005]; //å…¥åº¦
 int f[100005][15];
 /*
-f[i][j] ´ú±í´Óxxx½Úµãµ½i½Úµã£¬Ä©Î²ÎªjµÄ×î³¤²»ÏÂ½µ×ÓĞòÁĞ³¤¶È
+f[i][j] ä»£è¡¨ä»xxxèŠ‚ç‚¹åˆ°ièŠ‚ç‚¹ï¼Œæœ«å°¾ä¸ºjçš„æœ€é•¿ä¸ä¸‹é™å­åºåˆ—é•¿åº¦
 */
 
 int main()
@@ -25,17 +25,17 @@ int main()
 	{
 		int u, v;
 		scanf("%d%d", &u, &v);
-		web[u].push_back(v); //½¨Í¼
-		ind[v]++; //Èë¶È++
+		web[u].push_back(v); //å»ºå›¾
+		ind[v]++; //å…¥åº¦++
 	}
-	queue<int> q; //ÍØÆËÅÅĞò
+	queue<int> q; //æ‹“æ‰‘æ’åº
 	for(int i=1;i<=n;i++)
 	{
-		if(ind[i] == 0) //Èë¶ÈÎª0£¬½ø¶Ó
+		if(ind[i] == 0) //å…¥åº¦ä¸º0ï¼Œè¿›é˜Ÿ
 		{
 			q.push(i);
 		}
-		f[i][a[i]] = 1; //f³õÊ¼
+		f[i][a[i]] = 1; //fåˆå§‹
 	}
 	while(!q.empty())
 	{
@@ -43,14 +43,14 @@ int main()
 		q.pop();
 		for(int v : web[u])
 		{
-			if(!--ind[v]) q.push(v); //Èë¶È±äÎª0
+			if(!--ind[v]) q.push(v); //å…¥åº¦å˜ä¸º0
 			for(int i=1;i<=a[v];i++)
 			{
-				if(f[u][i] + 1 > f[v][a[v]]) f[v][a[v]] = f[u][i] + 1; //µÚÒ»ÖÖ×ªÒÆ
+				if(f[u][i] + 1 > f[v][a[v]]) f[v][a[v]] = f[u][i] + 1; //ç¬¬ä¸€ç§è½¬ç§»
 			}
 			for(int i=1;i<=10;i++)
 			{
-				if(f[u][i] > f[v][i]) f[v][i] = f[u][i]; //µÚ¶şÖÖ×ªÒÆ
+				if(f[u][i] > f[v][i]) f[v][i] = f[u][i]; //ç¬¬äºŒç§è½¬ç§»
 			}
 		}
 	}
@@ -59,7 +59,7 @@ int main()
 	{
 		for(int j=1;j<=10;j++)
 		{
-			if(f[i][j] > maxn) maxn = f[i][j]; //È¡×î´ó
+			if(f[i][j] > maxn) maxn = f[i][j]; //å–æœ€å¤§
 		}
 	}
 	printf("%d\n", maxn);

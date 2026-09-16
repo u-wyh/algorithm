@@ -37,7 +37,7 @@ signed main() {
         }
     }
     
-    ans *= (ans + 1); // 无限制和 i=k && j=l 
+    ans *= (ans + 1); // 鏃犻檺鍒跺拰 i=k && j=l 
     
     for(int i=1; i<=P; i++) {
         if(t[i]) {

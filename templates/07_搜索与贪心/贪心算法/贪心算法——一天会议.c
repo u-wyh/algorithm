@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// ¶¨Òå»áÒé½á¹¹Ìå
+// å®šä¹‰ä¼šè®®ç»“æ„ä½“
 typedef struct {
     int start;
     int end;
 } Event;
 
-// ±È½Ïº¯Êı£¬ÓÃÓÚqsort
+// æ¯”è¾ƒå‡½æ•°ï¼Œç”¨äºqsort
 int compare(const void *a, const void *b) {
     Event *eventA = (Event *)a;
     Event *eventB = (Event *)b;
     return eventA->start - eventB->start;
 }
 
-// ×îĞ¡¶ÑµÄÊµÏÖ£¨¼ò»¯°æ£©
+// æœ€å°å †çš„å®ç°ï¼ˆç®€åŒ–ç‰ˆï¼‰
 #define MAX_EVENTS 1000
 int heap[MAX_EVENTS];
 int heapSize = 0;
@@ -88,7 +88,7 @@ int maxEvents(Event events[], int n) {
 }
 
 int main() {
-    // Ê¾ÀıÓÃ·¨
+    // ç¤ºä¾‹ç”¨æ³•
     int n;
     scanf("%d",&n);
     Event events[n] ;

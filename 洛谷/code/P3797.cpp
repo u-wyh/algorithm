@@ -5,8 +5,8 @@ const int MAXN = 2e5+5;
 
 int n,m;
 struct node{
-    int ok=0,lr=0,rl=0;//lr rl¶¼Ö»ÄÜÊÇ0»òÕß1  ±íÊ¾ÓĞ»òÕßÃ»ÓĞ
-    bool all=false;//false±íÊ¾È«¶¼ÊÇX
+    int ok=0,lr=0,rl=0;//lr rléƒ½åªèƒ½æ˜¯0æˆ–è€…1  è¡¨ç¤ºæœ‰æˆ–è€…æ²¡æœ‰
+    bool all=false;//falseè¡¨ç¤ºå…¨éƒ½æ˜¯X
 }tree[MAXN<<2];
 
 node add(node a,node b){
@@ -17,7 +17,7 @@ node add(node a,node b){
     c.all=true;
     c.ok=a.ok+b.ok+a.rl*b.lr;
     if(!a.all){
-        //±íÊ¾aÈ«¶¼ÊÇx
+        //è¡¨ç¤ºaå…¨éƒ½æ˜¯x
         c.lr=b.lr,c.rl=b.rl;
         return c;
     }

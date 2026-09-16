@@ -64,7 +64,7 @@ int main()
     }
     int ans1=compute(arr);
     int ans2=compute(tmp);
-    if((ans2+sum)!=0){//这里相当于特判全是负数的情况
+    if((ans2+sum)!=0){//杩欓噷鐩稿綋浜庣壒鍒ゅ叏鏄礋鏁扮殑鎯呭喌
         cout<<max(ans1,sum+ans2);
     }
     else{

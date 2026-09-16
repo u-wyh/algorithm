@@ -16,7 +16,7 @@ int main() {
         scanf("%d",&a[i]);
     }
 
-    // 注意，C语言标准库中没有直接的sort函数，这里使用qsort代替
+    // 娉ㄦ剰锛孋璇█鏍囧噯搴撲腑娌℃湁鐩存帴鐨剆ort鍑芥暟锛岃繖閲屼娇鐢╭sort浠ｆ浛
     qsort(a + 1, n, sizeof(int), compare);
 
     if (a[1] != 1) {

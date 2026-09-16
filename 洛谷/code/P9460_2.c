@@ -6,8 +6,8 @@
 #define MAX_NUM 1000005
 
 int a[MAX_NUM], vis[MAX_NUM];
-int n, k, maxa = 0; // maxa ÎªÔ­Êı×éÖĞÖÚÊı³öÏÖµÄ´ÎÊı
-int mp[MAX_NUM];    // ÓÃÀ´´æÃ¿¸öÊı³öÏÖµÄ´ÎÊı
+int n, k, maxa = 0; // maxa ä¸ºåŸæ•°ç»„ä¸­ä¼—æ•°å‡ºç°çš„æ¬¡æ•°
+int mp[MAX_NUM];    // ç”¨æ¥å­˜æ¯ä¸ªæ•°å‡ºç°çš„æ¬¡æ•°
 
 int check(int x) {
     memset(vis, 0, sizeof(vis));
@@ -31,12 +31,12 @@ int main() {
         mp[a[i]]++;
         maxa = (mp[a[i]] > maxa) ? mp[a[i]] : maxa;
     }
-    if (k >= maxa) { // ²¢ÎŞÒâÒå£¬Ö»ÊÇÎªÁË·½±ã
+    if (k >= maxa) { // å¹¶æ— æ„ä¹‰ï¼Œåªæ˜¯ä¸ºäº†æ–¹ä¾¿
         printf("pigstd\n");
         return 0;
     }
     int l = 0, r = 1000000, mid;
-    while (l < r) { // ¶ş·Ö
+    while (l < r) { // äºŒåˆ†
         mid = (l + r) >> 1;
         if (check(mid)) {
             r = mid;

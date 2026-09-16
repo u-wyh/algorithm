@@ -2,7 +2,7 @@
 #include<cstdio>
 #include<algorithm>
 using namespace std;
-int n,k,a[50005],c[50005],r=2,ma,ans;//c[i]ÓÃÀ´´æ´Ói-1Ïò×ó×î¶à¿ÉÒÔÈ¡¶àÉÙ¿Å×êÊ¯¡£
+int n,k,a[50005],c[50005],r=2,ma,ans;//c[i]ç”¨æ¥å­˜ä»i-1å‘å·¦æœ€å¤šå¯ä»¥å–å¤šå°‘é¢—é’»çŸ³ã€‚
 int main(){
     scanf("%d %d",&n,&k);
 	a[n+1]=2100000000;

@@ -9,7 +9,7 @@ long long compute(int a,int b){
     int x=a/b;
     int y=a%b;
     return 1ll*(b-y)*p*x*x+1ll*p*y*(x+1)*(x+1);
-    //一定会有y次是x+1天连续的
+    //涓�瀹氫細鏈墆娆℃槸x+1澶╄繛缁殑
 }
 
 int main()

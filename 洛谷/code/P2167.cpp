@@ -6,10 +6,10 @@ const int MOD = 1000003;
 int n, k, m;
 string str[15];
 int cnt[1 << 15];
-int match[50][26]; // ĞŞÕı£ºmatch Êı×éµÄ´óĞ¡¸ÄÎª 50 * 26
+int match[50][26]; // ä¿®æ­£ï¼šmatch æ•°ç»„çš„å¤§å°æ”¹ä¸º 50 * 26
 
 int main() {
-    // ³õÊ¼»¯ cnt Êı×é
+    // åˆå§‹åŒ– cnt æ•°ç»„
     cnt[0] = 0;
     for (int i = 1; i < (1 << 15); i++) {
         cnt[i] = cnt[i - (i & -i)] + 1;
@@ -31,7 +31,7 @@ int main() {
         m = str[0].size();
         memset(match, 0, sizeof(match));
 
-        // ³õÊ¼»¯ match Êı×é
+        // åˆå§‹åŒ– match æ•°ç»„
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < 26; j++) {
                 for (int p = 0; p < n; p++) {
@@ -42,7 +42,7 @@ int main() {
             }
         }
 
-        // Ê¹ÓÃÈİ³âÔ­Àí¼ÆËãÇ¡ºÃÆ¥Åä k ¸ö×Ö·û´®µÄ·½°¸Êı
+        // ä½¿ç”¨å®¹æ–¥åŸç†è®¡ç®—æ°å¥½åŒ¹é… k ä¸ªå­—ç¬¦ä¸²çš„æ–¹æ¡ˆæ•°
         int ans = 0;
         for (int i = k; i <= n; i++) {
             int tmp = 0;
@@ -52,7 +52,7 @@ int main() {
                     for (int j = 0; j < m; j++) {
                         int cnt_match = 0;
                         for (int p = 0; p < 26; p++) {
-                            if ((match[j][p] & s) == s) { // ¼ì²é match[j][p] ÊÇ·ñ°üº¬ s µÄËùÓĞ×Ö·û´®
+                            if ((match[j][p] & s) == s) { // æ£€æŸ¥ match[j][p] æ˜¯å¦åŒ…å« s çš„æ‰€æœ‰å­—ç¬¦ä¸²
                                 cnt_match++;
                             }
                         }
@@ -61,7 +61,7 @@ int main() {
                     tmp = (tmp + res) % MOD;
                 }
             }
-            // Èİ³âÏµÊı£º(-1)^(i-k) * C(i, k)
+            // å®¹æ–¥ç³»æ•°ï¼š(-1)^(i-k) * C(i, k)
             int sign = (i - k) % 2 == 0 ? 1 : -1;
             int comb = 1; // C(i, k)
             for (int j = 1; j <= k; j++) {

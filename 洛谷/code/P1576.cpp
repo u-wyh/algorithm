@@ -5,7 +5,7 @@ const int MAXN = 2005;
 const int MAXM = 200005;
 
 auto compare = [](const pair<int, double>& left, const pair<int, double>& right) {
-    return left.second < right.second; // ×¢ÒâÕâÀïÊÇÐ¡ÓÚ£¬ÒòÎªÎÒÃÇÏëÒª´ó¸ù¶Ñ
+    return left.second < right.second; // æ³¨æ„è¿™é‡Œæ˜¯å°äºŽï¼Œå› ä¸ºæˆ‘ä»¬æƒ³è¦å¤§æ ¹å †
 };
 priority_queue<pair<int, double>, vector<pair<int, double>>, decltype(compare)> heap(compare);
 int head[MAXN];

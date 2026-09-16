@@ -23,14 +23,14 @@ inline bool cmp(node a,node b){
 	return a.x<b.x;
 }
 inline int find(int x){
-	//����root
+	//查找root
 	if(fa[x]==x){
 		return x;
 	}
 	return fa[x]=find(fa[x]);
 }
 inline void hb(int fx,int fy){
-	//����ʽ�ϲ�
+	//启发式合并
 	if(siz[fx]<siz[fy]){
 		swap(fx,fy);
 	}
@@ -38,7 +38,7 @@ inline void hb(int fx,int fy){
 	fa[fy]=fx;
 }
 inline void build(int x,int l,int r){
-	//����
+	//建树
 	maxn=max(maxn,x);
 	if(l==r){
 		seq[l]=x;
@@ -49,7 +49,7 @@ inline void build(int x,int l,int r){
 	build(x<<1|1,mid+1,r);
 }
 inline void ycl(){
-	//Ԥ����
+	//预处理
 	build(1,1,n);
 	for(int i=1;i<=maxn;i++){
 		fa[i]=i;
@@ -57,10 +57,10 @@ inline void ycl(){
 	}
 }
 inline void unify(int x,int l,int r,int ql,int qr,int k){
-	//��ͨ�߶����޸�ʽ����
+	//普通线段树修改式遍历
 	if(ql<=l&&r<=qr){
 		int fy=find(x),fx=find(seq[k]);
-		//��ͬ�źϲ�����ʡʱ��
+		//不同才合并，节省时间
 		if(fx!=fy){
 			hb(fx,fy);
 		}
@@ -91,15 +91,15 @@ int main(){
 	scanf("%d%d",&n,&m);
 	ycl();
 	int x,y;
-	//����
+	//输入
 	for(int i=1;i<=m;i++){
 		scanf("%d%d",&p[i].x,&p[i].y);
 		if(p[i].x>p[i].y){
 			swap(p[i].x,p[i].y);
-			//��֤��һ�ؼ��ֱȵڶ��ؼ���С
+			//保证第一关键字比第二关键字小
 		}
 	}
-	//����
+	//排序
 	sort(p+1,p+m+1,cmp);
 	for(int i=1;i<=m;i++){
 		ple[p[i].x].push_back(p[i].y);
@@ -120,29 +120,29 @@ int main(){
 			}
 			r=ple[i][j]-1;
 			if(r<=i||l>r){
-				//���ܺͱ��Լ�С������ϲ�����Ϊ��һ�ؼ��ֱȵڶ��ؼ���С���޷�ȷ����ϵ
+				//不能和比自己小的区间合并，因为第一关键字比第二关键字小，无法确定关系
 				continue;
 			}
 			if(l<=i){
-				//ͬ��
+				//同上
 				l=i+1;
 			}
 			unify(1,1,n,l,r,i);
 		}
 		if(ple[i][len-1]+1<=n){
-			//Сѧ������ֲ�������ԭ��
+			//小学奥数的植树问题的原理
 			unify(1,1,n,ple[i][len-1]+1,n,i);
 		}
 	}
-	//ȫ���ϲ�
+	//全树合并
 	prepare(1,1,n);
 	for(int i=1;i<=n;i++){
-		//һ��һ����root
+		//一个一个找root
 		x=find(seq[i]);
 		q.insert(x);
 		cnt[x]++;
 	}
-	//�����
+	//输出答案
 	y=q.size();
 	printf("%d\n",y);
 	set<int>::iterator it;

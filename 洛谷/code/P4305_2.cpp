@@ -11,18 +11,18 @@ inline int read()
 	return x*f;
 }
 int T,n,x;
-unordered_map<int,bool>s;//¶¨Òå
+unordered_map<int,bool>s;//å®šä¹‰
 void work()
 {
-	s.clear();//Çå¿Õ
+	s.clear();//æ¸…ç©º
 	n=read();
 	For(i,1,n){
 		x=read();
-		if(!s[x]){//Ã»ÓĞµÄ»°£¬Ö±½ÓÊä³ö+±ê¼Çµô¡£
+		if(!s[x]){//æ²¡æœ‰çš„è¯ï¼Œç›´æ¥è¾“å‡º+æ ‡è®°æ‰ã€‚
 			printf("%d ",x);
 			s[x]=1;
 		}
-	}puts("");//»»ĞĞ
+	}puts("");//æ¢è¡Œ
 }
 int main()
 {

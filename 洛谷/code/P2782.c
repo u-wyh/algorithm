@@ -19,8 +19,8 @@ int bs1(int* ends, int len, int num) {
 }
 int lengthOfLIS2(int* nums,int n) {
     int ends [n];
-    // len±íÊ¾endsÊı×éÄ¿Ç°µÄÓĞĞ§Çø³¤¶È
-    // ends[0...len-1]ÊÇÓĞĞ§Çø£¬ÓĞĞ§ÇøÄÚµÄÊı×ÖÒ»¶¨ÑÏ¸ñÉıĞò
+    // lenè¡¨ç¤ºendsæ•°ç»„ç›®å‰çš„æœ‰æ•ˆåŒºé•¿åº¦
+    // ends[0...len-1]æ˜¯æœ‰æ•ˆåŒºï¼Œæœ‰æ•ˆåŒºå†…çš„æ•°å­—ä¸€å®šä¸¥æ ¼å‡åº
     int len = 0;
     for (int i = 0, find; i < n; i++) {
         find = bs1(ends, len, nums[i]);

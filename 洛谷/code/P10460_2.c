@@ -12,16 +12,16 @@ defender arr[200005];
 int main() {
     int t, n, s, e, d;
     scanf("%d", &t);
-    for (int i = 0; i < t; i++) { // ×¢ÒâCÓïÑÔÖĞÊı×éË÷Òı´Ó0¿ªÊ¼
+    for (int i = 0; i < t; i++) { // æ³¨æ„Cè¯­è¨€ä¸­æ•°ç»„ç´¢å¼•ä»0å¼€å§‹
         scanf("%d", &n);
         int m = 0;
-        for (int j = 0; j < n; j++) { // Í¬Ñù×¢ÒâË÷Òı
+        for (int j = 0; j < n; j++) { // åŒæ ·æ³¨æ„ç´¢å¼•
             scanf("%d%d%d", &s, &e, &d);
             arr[j].st = s;
             arr[j].en = e;
             arr[j].dis = d;
             for (int k = s; k <= e; k += d) {
-                m ^= k; // Ê¹ÓÃÒì»òÔËËãÀ´¡°±ê¼Ç¡±´æÔÚµÄÊı×Ö
+                m ^= k; // ä½¿ç”¨å¼‚æˆ–è¿ç®—æ¥â€œæ ‡è®°â€å­˜åœ¨çš„æ•°å­—
             }
         }
         if (m == 0) {
@@ -29,7 +29,7 @@ int main() {
             continue;
         }
         int num = 0;
-        for (int j = 0; j < n; j++) { // ¼ì²émÊÇ·ñÔÚÄ³¸öÇø¼äµÄdµÄ±¶ÊıÉÏ
+        for (int j = 0; j < n; j++) { // æ£€æŸ¥mæ˜¯å¦åœ¨æŸä¸ªåŒºé—´çš„dçš„å€æ•°ä¸Š
             if (m <= arr[j].en && m >= arr[j].st && (m - arr[j].st) % arr[j].dis == 0) {
                 num++;
             }

@@ -23,7 +23,7 @@ void add(int *tree,int i,int v){
     while(i<=MAXN){
         tree[i]+=v;
         i+=lowbit(i);
-        //Ã¿Ò»´Î¶¼¼ÓÉÏ×Ô¼º×îÓÒ²àµÄ1
+        //æ¯ä¸€æ¬¡éƒ½åŠ ä¸Šè‡ªå·±æœ€å³ä¾§çš„1
     }
 }
 
@@ -32,7 +32,7 @@ int sum(int i,int *tree){
     while(i>0){
         ans+=tree[i];
         i-=lowbit(i);
-        //Ã¿Ò»´Î¶¼¼õÈ¥×Ô¼º×îÓÒ²àµÄ1
+        //æ¯ä¸€æ¬¡éƒ½å‡å»è‡ªå·±æœ€å³ä¾§çš„1
     }
     return ans;
 }

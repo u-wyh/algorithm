@@ -19,18 +19,18 @@ vector<vector<int>> multiply(vector<vector<int>>& a,const vector<vector<int>>& b
     return ans;
 }
 
-// 矩阵快速幂
+// 鐭╅樀蹇�熷箓
 vector<vector<int>> power(vector<vector<int>>& m, int p) {
     int n = m.size();
     vector<vector<int>> ans(n, vector<int>(n, 0));
     for (int i = 0; i < n; i++) {
-        ans[i][i] = 1;//单位矩阵 相当于乘法快速幂中的1
+        ans[i][i] = 1;//鍗曚綅鐭╅樀 鐩稿綋浜庝箻娉曞揩閫熷箓涓殑1
     }
     for (; p != 0; p >>= 1) {
         if ((p & 1) != 0) {
             ans = multiply(ans, m);
         }
-        m = multiply(m, m);//每次都是倍增
+        m = multiply(m, m);//姣忔閮芥槸鍊嶅
     }
     return ans;
 }

@@ -4,7 +4,7 @@ using namespace std;
 
 const int N = 1e6, L = __lg(N) + 1;
 int n, n2, m, op[N + 5], f[L][N + 5];
-pair<int, int> s[N + 5];  // ÏŞÖÆa,b
+pair<int, int> s[N + 5];  // é™åˆ¶a,b
 
 pair<int, int> dfs(int p, int l, int r, int d) {
     if (l == r) return {0, 0};
@@ -29,7 +29,7 @@ pair<int, int> dfs(int p, int l, int r, int d) {
         --f[d][n2 - s[i].second + 1];
     }
     
-    return ans;  // ·µ»ØÇø¼äµÄ×îÓÅÏŞÖÆ
+    return ans;  // è¿”å›åŒºé—´çš„æœ€ä¼˜é™åˆ¶
 }
 
 int main() {
@@ -42,7 +42,7 @@ int main() {
     
     dfs(1, 1, n2, n);
     
-    f[0][0] = 1;  // ¼ÇµÃ´¦ÀíµÚÒ»³¡±ÈÈü°¡
+    f[0][0] = 1;  // è®°å¾—å¤„ç†ç¬¬ä¸€åœºæ¯”èµ›å•Š
     for (int i = 0; i <= n; ++i) {
         for (int j = 1; j <= n2; ++j) {
             f[i][j] += f[i][j - 1];

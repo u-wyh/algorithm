@@ -11,14 +11,14 @@ city c[200005];
 int lis[200005];
 int ans = 0;
 
-// ×Ô¶¨ÒåµÄ±È½Ïº¯Êı£¬ÓÃÓÚqsort
+// è‡ªå®šä¹‰çš„æ¯”è¾ƒå‡½æ•°ï¼Œç”¨äºqsort
 int compare(const void *a, const void *b) {
     city *cityA = (city *)a;
     city *cityB = (city *)b;
     return cityA->north - cityB->north;
 }
 
-// ¶ş·Ö²éÕÒÌæ»»º¯Êı
+// äºŒåˆ†æŸ¥æ‰¾æ›¿æ¢å‡½æ•°
 void binary_search_replace(int *arr, int size, int value) {
     int left = 0, right = size - 1;
     while (left <= right) {
@@ -41,7 +41,7 @@ int main() {
         scanf("%d %d", &c[i].north, &c[i].south);
     }
 
-    // Ê¹ÓÃqsort¶ÔÊı×é½øĞĞÅÅĞò
+    // ä½¿ç”¨qsortå¯¹æ•°ç»„è¿›è¡Œæ’åº
     qsort(c, n, sizeof(city), compare);
 
     for (int i = 0; i < n; i++) {

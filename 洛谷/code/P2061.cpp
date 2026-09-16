@@ -1,8 +1,8 @@
-// ���������
-// �������� : https://www.luogu.com.cn/problem/P2061
-// ��ͬѧ����زο����´����й������롢����Ĵ���
-// ���������������Ч�ʺܸߵ�д��
-// �ύ���µ�code���ύʱ��������ĳ�"Main"������ֱ��ͨ��
+// 矩形面积并
+// 测试链接 : https://www.luogu.com.cn/problem/P2061
+// 请同学们务必参考如下代码中关于输入、输出的处理
+// 这是输入输出处理效率很高的写法
+// 提交以下的code，提交时请把类名改成"Main"，可以直接通过
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
@@ -12,13 +12,13 @@ int rec[MAXN][4];
 struct Line{
     int a1,a2,a3,a4;
 }line[MAXN];
-//y��������Ҫ��ɢ��
+//y的数据需要离散化
 int ysort[MAXN];
-// �߶���ĳ��Χ�ܳ���
+// 线段树某范围总长度
 int length[MAXN << 2];
-// �߶���ĳ��Χ���ǳ���
+// 线段树某范围覆盖长度
 int cover[MAXN << 2];
-// �߶���ĳ��Χ���Ǵ���
+// 线段树某范围覆盖次数
 int times[MAXN << 2];
 
 int prepare(int n) {
@@ -29,10 +29,10 @@ int prepare(int n) {
             ysort[++m] = ysort[i];
         }
     }
-    ysort[m + 1] = ysort[m];//��һ�����ݷ�ֹԽ��
+    ysort[m + 1] = ysort[m];//加一个数据防止越界
     return m;
 }
-//ʵ��Ԫ�ص�ȥ��
+//实现元素的去重
 
 int Rank(int n, int num) {
     int ans = 0;
@@ -48,7 +48,7 @@ int Rank(int n, int num) {
     }
     return ans;
 }
-//���ַ������Ӧ�±�
+//二分法求出对应下标
 
 void build(int l, int r, int i) {
     if (l < r) {
@@ -69,13 +69,13 @@ void up(int i) {
     }
 }
 
-// ����������������
-// 1) ��ѯ������Զ�����������Χ��������С��Χ�Ĳ�ѯ��ÿ�ζ�����cover[1]
-// 2) ���Ӳ���֮�󣬺���һ�����еȹ�ģ�ļ��ٲ���
-// ���������������������Ҫ�����»���
-// ���ȵ�һ���޸���ɴ������Ϸ���ʱ��up�����ܱ�֤���Ϸ���cover[1]���޸���ȷ��
-// ͬʱ�κ�һ�����Ӳ������漰���߶�����Χ������һ���ܱ��ȹ�ģ�ļ��ٲ���ȡ����
-// �����ص�ͼ�����������
+// 这个题的特殊性在于
+// 1) 查询操作永远查的是整个范围，不会有小范围的查询，每次都返回cover[1]
+// 2) 增加操作之后，后续一定会有等规模的减少操作
+// 根据以上两点分析出不需要懒更新机制
+// 首先当一次修改完成从下往上返回时，up方法能保证最上方的cover[1]是修改正确的
+// 同时任何一次增加操作所涉及的线段树范围，后续一定能被等规模的减少操作取消掉
+// 课上重点图解这个特殊性
 void add(int jobl, int jobr, int jobv, int l, int r, int i) {
     if (jobl <= l && r <= jobr) {
         times[i] += jobv;
@@ -99,9 +99,9 @@ long long compute(int n) {
     for (int i = 1, j = 1 + n, x1, y1, x2, y2; i <= n; i++, j++) {
         x1 = rec[i][0]; y1 = rec[i][1]; x2 = rec[i][2]; y2 = rec[i][3];
         ysort[i] = y1; ysort[j] = y2;
-        line[i].a1 = x1; line[i].a2 = y1; line[i].a3 = y2; line[i].a4 = 1;//��ʼλ�� ��ֹλ�� Ч��
+        line[i].a1 = x1; line[i].a2 = y1; line[i].a3 = y2; line[i].a4 = 1;//开始位置 起止位置 效果
         line[j].a1 = x2; line[j].a2 = y1; line[j].a3 = y2; line[j].a4 = -1;
-        //һ������������
+        //一个矩形两条线
     }
     n <<= 1;
     int m = prepare(n);
@@ -110,13 +110,13 @@ long long compute(int n) {
     long long ans = 0;
     for (int i = 1, pre = 0; i <= n; i++) {
         ans += (long long) cover[1] * (line[i].a1 - pre);
-        //ÿһ�����仯��ʱ�򶼼���һ����һ�����򣨿����Ƕ�����Σ������������  �����˿�
-        //���������  ��ʾ�����Χ�ж��ٱ�����
-        //pre����һ�ε����
-        //���cover[1]�Ǵ�ʱ�ܵĸ��ǳ���
+        //每一发生变化的时候都计算一下上一个区域（可能是多个矩形）所产生的面积  即长乘宽
+        //即结算操作  表示这个范围有多少被覆盖
+        //pre是上一次的左边
+        //这个cover[1]是此时总的覆盖长度
         pre = line[i].a1;
         add(Rank(m, line[i].a2), Rank(m, line[i].a3) - 1, line[i].a4, 1, m, 1);
-        // ����ļӲ���
+        // 区间的加操作
     }
     return ans;
 }
@@ -126,10 +126,10 @@ signed main()
     int n;
     cin>>n;
     for (int i = 1; i <= n; i++) {
-        // ���½��±�
+        // 左下角下标
         cin>>rec[i][0];
         rec[i][1]=0;
-        // ���Ͻ��±�
+        // 右上角下标
         cin>>rec[i][2];
         cin>>rec[i][3];
     }

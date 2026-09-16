@@ -10,10 +10,10 @@ char c[105];
 int max(int x,int y){return (x>y)?(x):(y);}
 int min(int x,int y){return (x<y)?(x):(y);}
 int main(){
-    scanf("%d\n",&n);//¶ÁÈëºÜ¹îÒì
+    scanf("%d\n",&n);//è¯»å…¥å¾ˆè¯¡å¼‚
     for(int i=1;i<=n;i++){
         scanf("%c %d",&c[i],&a[i]);getchar();
-        a[n+i]=a[i];c[n+i]=c[i];//¶Ï»·ÎªÁ´
+        a[n+i]=a[i];c[n+i]=c[i];//æ–­ç¯ä¸ºé“¾
     }
     for(int i=1;i<=(n<<1);i++){
         for(int j=1;j<=(n<<1);j++){

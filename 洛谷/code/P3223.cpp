@@ -15,7 +15,7 @@ void removeleadingzeros(vector<int>&a){
     }
 }
 
-// ´óÕûÊý¼õ·¨ (¼ÙÉèa >= b)
+// å¤§æ•´æ•°å‡æ³• (å‡è®¾a >= b)
 vector<int> sub(const vector<int>& a, const vector<int>& b) {
     vector<int>res;
 	int diff=0;

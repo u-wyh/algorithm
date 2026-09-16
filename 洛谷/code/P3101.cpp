@@ -50,9 +50,9 @@ signed main()
                 if (tx<n+1&&ty<m+1) a[++cnt]=(node){num[i][j],num[tx][ty],abs(f[i][j]-f[tx][ty])};
             }
         }
-    }//½¨Í¼
-    sort(a+1,a+1+cnt,cmp);//ÅÅÐò
-    for(int i=1;i<=cnt;i++)//²»¶Ï¼Ó±ß
+    }//å»ºå›¾
+    sort(a+1,a+1+cnt,cmp);//æŽ’åº
+    for(int i=1;i<=cnt;i++)//ä¸æ–­åŠ è¾¹
     {
         int x=a[i].x,y=a[i].y;
         int fx=find(x), fy=find(y);
@@ -66,6 +66,6 @@ signed main()
         father[fx]=fy;
         size[fy]+=size[fx],v[fy]+=v[fx];
     }
-    printf("%lld",ans);//Êä³ö´ð°¸
+    printf("%lld",ans);//è¾“å‡ºç­”æ¡ˆ
     return 0;
 }

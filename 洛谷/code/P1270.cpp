@@ -46,7 +46,7 @@ void dfs(int u){
         val[u]+=val[v];
     }
     if(u==1){
-        int v=2;//1µÄÏÂÒ»¸ö½ÚµãÒ»¶¨ÊÇ2
+        int v=2;//1çš„ä¸‹ä¸€ä¸ªèŠ‚ç‚¹ä¸€å®šæ˜¯2
         int w=weight[head[u]];
         for(int i=val[v];i>=0;i--){
             if(f[2][i]+w<=n){
@@ -56,7 +56,7 @@ void dfs(int u){
         }
     }
     else if(vis[u]){
-        //Ò¶½Úµã
+        //å¶èŠ‚ç‚¹
         for(int i=0;i<=val[u];i++){
             f[u][i]=5*i;
         }

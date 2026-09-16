@@ -12,10 +12,10 @@ int bj[10];
 int fzsx[10];
 
 void add() {
-    int sum = 1;  // µÚÒ»Í·Å£ĞèÒªÒ»¸öÅ£Åï
+    int sum = 1;  // ç¬¬ä¸€å¤´ç‰›éœ€è¦ä¸€ä¸ªç‰›æ£š
     for (int i = 2; i <= n; i++) {
         sum += (cows[fzsx[i]].b > cows[fzsx[i - 1]].a) ? cows[fzsx[i]].b : cows[fzsx[i - 1]].a;
-        sum += 1;  // ¼ÓÉÏµ±Ç°Å£µÄÅ£Åï
+        sum += 1;  // åŠ ä¸Šå½“å‰ç‰›çš„ç‰›æ£š
     }
     if (sum < minn) {
         minn = sum;

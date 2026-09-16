@@ -25,15 +25,15 @@ int build(int l,int r){
 }
 
 int add(int jobi,char c,int l,int r,int i){
-    int rt = ++cnt;//ĞÂ½¨Ò»¸ö½Úµã£¨ÑØÍ¾½Úµã£©
+    int rt = ++cnt;//æ–°å»ºä¸€ä¸ªèŠ‚ç‚¹ï¼ˆæ²¿é€”èŠ‚ç‚¹ï¼‰
     ls[rt] = ls[i];
     rs[rt] = rs[i];
     sum[rt] = sum[i]+1;
     s[rt]=s[i];
-    //¿½±´Ô­ÓĞĞÅÏ¢
+    //æ‹·è´åŸæœ‰ä¿¡æ¯
     if (l == r) {
         //cout<<l<<' '<<r<<' '<<c<<endl;
-        //µ½´ïÁËÒªĞŞ¸ÄµÄ½ÚµãÎ»ÖÃ
+        //åˆ°è¾¾äº†è¦ä¿®æ”¹çš„èŠ‚ç‚¹ä½ç½®
         s[rt] = c;
     } else {
         int mid = (l + r) >> 1;

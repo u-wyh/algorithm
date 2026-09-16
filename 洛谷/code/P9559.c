@@ -31,7 +31,7 @@ bool check(int limit,people *nums,int n){
     qsort(b,k,sizeof(int),cmp);
     int i=0,j=0;
     while (i < k && j < m) {
-        if (a[j] < b[i]) return false;  // 如果背负者的速度小于被背负者的体重，则无法背负
+        if (a[j] < b[i]) return false;  // 濡傛灉鑳岃礋鑰呯殑閫熷害灏忎簬琚儗璐熻�呯殑浣撻噸锛屽垯鏃犳硶鑳岃礋
         i++;
         j++;
     }

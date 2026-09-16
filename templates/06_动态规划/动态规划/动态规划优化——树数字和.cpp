@@ -1,13 +1,13 @@
-// ´ï±ê×ÓÊı×éµÄ¸öÊı
-// ¸ø¶¨Ò»¸ö³¤¶ÈÎªnµÄÊı×énums£¬¸ø¶¨Á½¸öÕûÊılowerºÍupper
-// ×ÓÊı×é´ï±êµÄÌõ¼şÊÇÀÛ¼ÓºÍÔÚ[lower, upper]·¶Î§ÉÏ
-// ·µ»ØnumsÖĞÓĞ¶àÉÙ¸ö´ï±ê×ÓÊı×é
+// è¾¾æ ‡å­æ•°ç»„çš„ä¸ªæ•°
+// ç»™å®šä¸€ä¸ªé•¿åº¦ä¸ºnçš„æ•°ç»„numsï¼Œç»™å®šä¸¤ä¸ªæ•´æ•°lowerå’Œupper
+// å­æ•°ç»„è¾¾æ ‡çš„æ¡ä»¶æ˜¯ç´¯åŠ å’Œåœ¨[lower, upper]èŒƒå›´ä¸Š
+// è¿”å›numsä¸­æœ‰å¤šå°‘ä¸ªè¾¾æ ‡å­æ•°ç»„
 // 1 <= n <= 10^5
-// nums[i]¿ÉÄÜÊÇÈÎÒâÕûÊı
+// nums[i]å¯èƒ½æ˜¯ä»»æ„æ•´æ•°
 // -10^5 <= lower <= upper <= +10^5
-// ²âÊÔÁ´½Ó : https://leetcode.cn/problems/count-of-range-sum/
+// æµ‹è¯•é“¾æ¥ : https://leetcode.cn/problems/count-of-range-sum/
 
-// Ê÷×´Êı×é + ÀëÉ¢»¯µÄ½â·¨£¬Àí½âÄÑ¶È½ÏµÍ
+// æ ‘çŠ¶æ•°ç»„ + ç¦»æ•£åŒ–çš„è§£æ³•ï¼Œç†è§£éš¾åº¦è¾ƒä½
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -20,7 +20,7 @@ const int MAXN = 100002;
 int n, m;
 long long sort_arr[MAXN], tree[MAXN];
 
-// Ê÷×´Êı×éÄ£°å´úÂë£¬ÎŞĞèĞŞ¸Ä
+// æ ‘çŠ¶æ•°ç»„æ¨¡æ¿ä»£ç ï¼Œæ— éœ€ä¿®æ”¹
 void add(int i, int c) {
     while (i <= m) {
         tree[i] += c;
@@ -28,7 +28,7 @@ void add(int i, int c) {
     }
 }
 
-// Ê÷×´Êı×éÄ£°å´úÂë£¬ÎŞĞèĞŞ¸Ä
+// æ ‘çŠ¶æ•°ç»„æ¨¡æ¿ä»£ç ï¼Œæ— éœ€ä¿®æ”¹
 int sum(int i) {
     int ans = 0;
     while (i > 0) {
@@ -38,7 +38,7 @@ int sum(int i) {
     return ans;
 }
 
-// ·µ»Ø <= v µÄ×î´óÇ°×ººÍµÄË÷Òı
+// è¿”å› <= v çš„æœ€å¤§å‰ç¼€å’Œçš„ç´¢å¼•
 int ran(long long v) {
     int left = 1, right = m, mid, ans = 0;
     while (left <= right) {
@@ -53,7 +53,7 @@ int ran(long long v) {
     return ans;
 }
 
-// ¹¹½¨Ç°×ººÍÊı×é¡¢ÅÅĞò²¢È¥ÖØ£¬³õÊ¼»¯Ê÷×´Êı×é
+// æ„å»ºå‰ç¼€å’Œæ•°ç»„ã€æ’åºå¹¶å»é‡ï¼Œåˆå§‹åŒ–æ ‘çŠ¶æ•°ç»„
 void build(const vector<int>& nums) {
     n = nums.size();
     for (int i = 1, j = 0; i <= n; ++i, ++j) {
@@ -69,7 +69,7 @@ void build(const vector<int>& nums) {
     fill(tree + 1, tree + m + 1, 0);
 }
 
-// ¼ÆËã¸ø¶¨·¶Î§ÄÚµÄºÍµÄ¸öÊı
+// è®¡ç®—ç»™å®šèŒƒå›´å†…çš„å’Œçš„ä¸ªæ•°
 int countRangeSum(const vector<int>& nums, long long lower, long long upper) {
     build(nums);
     long long Sum = 0;
@@ -97,19 +97,19 @@ int main() {
     return 0;
 }
 
-//¹é²¢°æ
+//å½’å¹¶ç‰ˆ
 //#include <iostream>
 //#include <vector>
 //#include <algorithm>
 //
 //using namespace std;
 //
-//// ¶¨ÒåÈ«¾Ö±äÁ¿
+//// å®šä¹‰å…¨å±€å˜é‡
 //const int MAXN = 100001;
 //long long sum[MAXN], help[MAXN];
 //long long low, up;
 //
-//// ¹é²¢·ÖÖÎµÄÍ³¼Æº¯Êı
+//// å½’å¹¶åˆ†æ²»çš„ç»Ÿè®¡å‡½æ•°
 //int merge(int l, int m, int r) {
 //    int ans = 0;
 //    int wl = l, wr = l;
@@ -117,7 +117,7 @@ int main() {
 //    for (int i = m + 1; i <= r; ++i) {
 //        max_val = sum[i] - low;
 //        min_val = sum[i] - up;
-//        // ÓĞĞ§´°¿ÚÊÇ[wl,wr)£¬×ó±ÕÓÒ¿ª
+//        // æœ‰æ•ˆçª—å£æ˜¯[wl,wr)ï¼Œå·¦é—­å³å¼€
 //        while (wr <= m && sum[wr] <= max_val) {
 //            ++wr;
 //        }
@@ -126,7 +126,7 @@ int main() {
 //        }
 //        ans += wr - wl;
 //    }
-//    // Õı³£ÅÅĞòµÄºÏ²¢¹ı³Ì
+//    // æ­£å¸¸æ’åºçš„åˆå¹¶è¿‡ç¨‹
 //    int p1 = l, p2 = m + 1;
 //    int i = l;
 //    while (p1 <= m && p2 <= r) {
@@ -144,7 +144,7 @@ int main() {
 //    return ans;
 //}
 //
-//// µİ¹éÇó½â·¶Î§ºÍµÄ¸öÊı
+//// é€’å½’æ±‚è§£èŒƒå›´å’Œçš„ä¸ªæ•°
 //int f(int l, int r) {
 //    if (l == r) {
 //        return low <= sum[l] && sum[l] <= up ? 1 : 0;
@@ -153,7 +153,7 @@ int main() {
 //    return f(l, m) + f(m + 1, r) + merge(l, m, r);
 //}
 //
-//// Ö÷º¯Êı£¬¼ÆËã¸ø¶¨·¶Î§ÄÚµÄºÍµÄ¸öÊı
+//// ä¸»å‡½æ•°ï¼Œè®¡ç®—ç»™å®šèŒƒå›´å†…çš„å’Œçš„ä¸ªæ•°
 //int countRangeSum(const vector<int>& nums, long long lower, long long upper) {
 //    int n = nums.size();
 //    sum[0] = nums[0];

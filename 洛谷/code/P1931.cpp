@@ -27,7 +27,7 @@ bool floyd(){
 			return true;
 	}
 	return false;
-}//ÒÔÉÏ²¿·ÖÒÑ¾­½âÊÍ¹ıÁË
+}//ä»¥ä¸Šéƒ¨åˆ†å·²ç»è§£é‡Šè¿‡äº†
 int main(){
 	int m,i,j,count,t=0;
 	double x;
@@ -46,16 +46,16 @@ int main(){
 		for(i=0;i<n;i++){
 			scanf("%s",str);
 			string s=str;
-			mp[s]=++count;//ÓÃÀ´¼ÇÂ¼»õ±ÒµÄÖÖÀàÊıÁ¿
+			mp[s]=++count;//ç”¨æ¥è®°å½•è´§å¸çš„ç§ç±»æ•°é‡
 			//cout<<"mp[s]="<<mp[s]<<endl;
 		}
 		scanf("%d",&m);
 		getchar();
 		for(i=0;i<m;i++){
 			scanf("%s%lf%s",str1,&x,str2);
-			addEdge(str1,x,str2);//½¨Í¼
+			addEdge(str1,x,str2);//å»ºå›¾
 		}
-		if(floyd())//ÅÜÒ»±éFloyed£¬Êä³ö¼´¿É
+		if(floyd())//è·‘ä¸€éFloyedï¼Œè¾“å‡ºå³å¯
 			printf("Case %d: Yes\n",++t);
 		else
 			printf("Case %d: No\n",++t);

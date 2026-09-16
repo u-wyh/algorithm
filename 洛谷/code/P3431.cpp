@@ -41,7 +41,7 @@ void add(int i, int v) {
     }
 }
 
-// 1~i·¶Î§µÄÀÛ¼ÓºÍ
+// 1~ièŒƒå›´çš„ç´¯åŠ å’Œ
 int sum(int i) {
     int ans = 0;
     while (i > 0) {

@@ -5,8 +5,8 @@ using namespace std;
 const int MARX = 2e5 + 10;
 const int INF = 2e9;
 
-int N, L, R, A[MARX], ans, f[MARX];//Éè f[i]: µ½´ïÎ»ÖÃ i Ê±×î´óµÄ¼ÛÖµºÍ
-int que[MARX], head = 1, tail = 1;//µ¥µ÷¶ÓÁĞ, ÄÚ²¿ÔªËØÎªÎ»ÖÃ
+int N, L, R, A[MARX], ans, f[MARX];//è®¾ f[i]: åˆ°è¾¾ä½ç½® i æ—¶æœ€å¤§çš„ä»·å€¼å’Œ
+int que[MARX], head = 1, tail = 1;//å•è°ƒé˜Ÿåˆ—, å†…éƒ¨å…ƒç´ ä¸ºä½ç½®
 
 inline int read(){
     int s = 1, w = 0; char ch = getchar();
@@ -17,28 +17,28 @@ inline int read(){
 
 void Insert(int i){
 	while(f[i] >= f[que[tail]] && tail >= head)
-        tail --;//µ¯³öÈ¨ÖµºÍ½ÏĞ¡µÄ ¶ÓÎ²ÔªËØ
-	que[++ tail] = i;//Èë¶Ó
+        tail --;//å¼¹å‡ºæƒå€¼å’Œè¾ƒå°çš„ é˜Ÿå°¾å…ƒç´ 
+	que[++ tail] = i;//å…¥é˜Ÿ
 }
 
 int query(int x){
-	for(; que[head] + R < x; ) head ++;//µ¯³ö¶ÓÊ× ²»¿Éµ½´ïxÎ»ÖÃµÄ ²»ºÏ·¨ÔªËØ
-	return que[head];//»Ø´ğÑ¯ÎÊ
+	for(; que[head] + R < x; ) head ++;//å¼¹å‡ºé˜Ÿé¦– ä¸å¯åˆ°è¾¾xä½ç½®çš„ ä¸åˆæ³•å…ƒç´ 
+	return que[head];//å›ç­”è¯¢é—®
 }
 
 int main()
 {
-	memset(f, 128, sizeof(f));//³õÊ¼»¯¼«Ğ¡Öµ (Ã¿¸ö×Ö½Ú¸³128»áµ¼ÖÂ×ÔÈ»Òç³ö
-	f[0] = 0, ans = - INF; //³õÊ¼»¯, ½«0Î»ÖÃÈ¨ÖµºÍ ¸³Îª0
+	memset(f, 128, sizeof(f));//åˆå§‹åŒ–æå°å€¼ (æ¯ä¸ªå­—èŠ‚èµ‹128ä¼šå¯¼è‡´è‡ªç„¶æº¢å‡º
+	f[0] = 0, ans = - INF; //åˆå§‹åŒ–, å°†0ä½ç½®æƒå€¼å’Œ èµ‹ä¸º0
 	N = read(), L = read(), R = read();
 	for(int i = 0; i <= N; i ++) A[i] = read();
 
 	for(int i = L; i <= N; i ++){
-	  Insert(i - L); //½«×îºóÒ»¸ö ÄÜ¹»×ªÒÆµ½iµÄÎ»ÖÃ ¼ÓÈëµ¥µ÷¶ÓÁĞ
-	  int from = query(i);//ÕÒµ½¶ÓÊ× È¨ÖµºÍ×î´óµÄÎ»ÖÃ
-	  f[i] = f[from] + A[i];//½øĞĞ×ªÒÆ
+	  Insert(i - L); //å°†æœ€åä¸€ä¸ª èƒ½å¤Ÿè½¬ç§»åˆ°içš„ä½ç½® åŠ å…¥å•è°ƒé˜Ÿåˆ—
+	  int from = query(i);//æ‰¾åˆ°é˜Ÿé¦– æƒå€¼å’Œæœ€å¤§çš„ä½ç½®
+	  f[i] = f[from] + A[i];//è¿›è¡Œè½¬ç§»
 	  if(i + R > N)
-            ans = max(ans, f[i]);//ÅĞ¶ÏiÄÜ¹»Ìøµ½¶Ô°¶, ¼ÆËã´ğ°¸
+            ans = max(ans, f[i]);//åˆ¤æ–­ièƒ½å¤Ÿè·³åˆ°å¯¹å²¸, è®¡ç®—ç­”æ¡ˆ
 	}
 	printf("%d", ans);
 	return 0;

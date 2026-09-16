@@ -1,5 +1,5 @@
 // https://www.luogu.com.cn/problem/P4408
-//Á½´Îdfs
+//ä¸¤æ¬¡dfs
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 200005;
@@ -11,13 +11,13 @@ int Next[MAXN<<1];
 int to[MAXN<<1];
 int weight[MAXN<<1];
 int cnt=1;
-// Ö±¾¶µÄ¿ªÊ¼µã
+// ç›´å¾„çš„å¼€å§‹ç‚¹
 int start;
-// Ö±¾¶µÄ½áÊøµã
+// ç›´å¾„çš„ç»“æŸç‚¹
 int en;
-// Ö±¾¶³¤¶È
+// ç›´å¾„é•¿åº¦
 int diameter;
-// dist[i] : ´Ó¹æ¶¨µÄÍ·½Úµã³ö·¢£¬×ßµ½iµÄ¾àÀë
+// dist[i] : ä»è§„å®šçš„å¤´èŠ‚ç‚¹å‡ºå‘ï¼Œèµ°åˆ°içš„è·ç¦»
 int dist[MAXN];
 int beg[MAXN];
 int ove[MAXN];
@@ -34,14 +34,14 @@ void dfs(int u,int f,int w){
 
 void road() {
     dfs(1, 0, 0);
-    //Õâ¸öÆğµãÊÇËæ»úµÄ  Ò»°ã¶¼ÊÇ1
+    //è¿™ä¸ªèµ·ç‚¹æ˜¯éšæœºçš„  ä¸€èˆ¬éƒ½æ˜¯1
     start = 1;
     for (int i = 2; i <= n; i++) {
         if (dist[i] > dist[start]) {
             start = i;
         }
     }
-    //Ñ¡ÔñÀëËû¾àÀë×î´óµÄµã  ×÷ÎªÍ·½áµã
+    //é€‰æ‹©ç¦»ä»–è·ç¦»æœ€å¤§çš„ç‚¹  ä½œä¸ºå¤´ç»“ç‚¹
     dfs(start, 0, 0);
     en = 1;
     for (int i = 2; i <= n; i++) {
@@ -51,7 +51,7 @@ void road() {
     }
     diameter = dist[en];
 }
-//Á½´Îµ÷ÓÃdfs
+//ä¸¤æ¬¡è°ƒç”¨dfs
 
 void dfs1(int u,int f,int w){
     beg[u]=beg[f]+w;

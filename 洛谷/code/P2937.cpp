@@ -4,13 +4,13 @@
 #define inf 0x3f3f3f3f
 using namespace std;
 int n,m;
-int a[110][110];//±£´æµØÍ¼
+int a[110][110];//ä¿å­˜åœ°å›¾
 struct node{
     int x,y;
     int num;
 }s,t;
 queue<node> q;
-void dfs(int fx,node u){ //fx¼ÇÂ¼·½Ïò£¨1ÉÏ2ÏÂ3×ó4ÓÒ£© uÎªµ±Ç°ËùÔÚµã
+void dfs(int fx,node u){ //fxè®°å½•æ–¹å‘ï¼ˆ1ä¸Š2ä¸‹3å·¦4å³ï¼‰ uä¸ºå½“å‰æ‰€åœ¨ç‚¹
     int x=u.x,y=u.y,p=u.num;
     if(a[x][y]<p || a[x][y]==inf) return;
     if(x<1 || y<1 || x>n || y>m) return;
@@ -42,13 +42,13 @@ void bfs(){
         node u=q.front(),v=q.front();
         q.pop();
         u.num++;
-        v=u; v.x=u.x-1;//ÉÏ
+        v=u; v.x=u.x-1;//ä¸Š
         dfs(1,v);
-        v=u; v.x=u.x+1;//ÏÂ
+        v=u; v.x=u.x+1;//ä¸‹
         dfs(2,v);
-        v=u; v.y=u.y-1;//×ó
+        v=u; v.y=u.y-1;//å·¦
         dfs(3,v);
-        v=u; v.y=u.y+1;//ÓÒ
+        v=u; v.y=u.y+1;//å³
         dfs(4,v);
     }
 }
@@ -57,12 +57,12 @@ int main(){
     char zwh;
     memset(a,inf,sizeof(a));
     for(int i=1;i<=n;i++)for(int j=1;j<=m;j++) a[i][j]=inf-1;
-    //Èç¹ûµØÍ¼·¶Î§È«²¿ÊÇ±È´ğ°¸Ğ¡µÄÊı×Ö£¨±ÈÈç0£©£¬ÄÇÃ´ÔÚdfsÈ¾É«µÄÊ±ºò¾Í»áÖ±½Ó·µ»Ø£¬µ¼ÖÂ´íÎó¡£
+    //å¦‚æœåœ°å›¾èŒƒå›´å…¨éƒ¨æ˜¯æ¯”ç­”æ¡ˆå°çš„æ•°å­—ï¼ˆæ¯”å¦‚0ï¼‰ï¼Œé‚£ä¹ˆåœ¨dfsæŸ“è‰²çš„æ—¶å€™å°±ä¼šç›´æ¥è¿”å›ï¼Œå¯¼è‡´é”™è¯¯ã€‚
     for(int i=1;i<=n;i++){
         for(int j=1;j<=m;j++){
             scanf(" %c",&zwh);
             if(zwh=='C'){
-                if(s.x) t.x=i,t.y=j,t.num=0;//ÕÒµ½ÆğµãºÍÖÕµã
+                if(s.x) t.x=i,t.y=j,t.num=0;//æ‰¾åˆ°èµ·ç‚¹å’Œç»ˆç‚¹
                 else s.x=i,s.y=j,s.num=0;
             }
             if(zwh=='*'){
@@ -73,6 +73,6 @@ int main(){
     }
     q.push(s);
     bfs();
-    cout<<a[t.x][t.y]-1;//×¢Òâ¼õÒ»
+    cout<<a[t.x][t.y]-1;//æ³¨æ„å‡ä¸€
     return 0;
 }

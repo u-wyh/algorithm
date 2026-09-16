@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <limits.h>
 
-// ¼ì²éÊÇ·ñÄÜÔÚÖ¸¶¨»ØºÏÄÚÉ±ËÀ¹ÖÊŞ
+// æ£€æŸ¥æ˜¯å¦èƒ½åœ¨æŒ‡å®šå›åˆå†…æ€æ­»æ€ªå…½
 int f(int* cuts, int* poisons, int cuts_len, long hp, int limit) {
     int n = (limit < cuts_len) ? limit : cuts_len;
     for (int i = 0, j = 1; i < n; i++, j++) {
@@ -12,7 +12,7 @@ int f(int* cuts, int* poisons, int cuts_len, long hp, int limit) {
     return 0;
 }
 
-// ¶ş·Ö´ğ°¸·¨
+// äºŒåˆ†ç­”æ¡ˆæ³•
 int fast2(int* cuts, int* poisons, int cuts_len, int hp) {
     int left = 1, right = hp + 1, mid, ans = INT_MAX;
     while (left <= right) {
@@ -27,7 +27,7 @@ int fast2(int* cuts, int* poisons, int cuts_len, int hp) {
     return ans;
 }
 
-// Ö÷º¯Êı£¬ÓÃÓÚ²âÊÔ
+// ä¸»å‡½æ•°ï¼Œç”¨äºæµ‹è¯•
 int main() {
     int n,hp;
     scanf("%d %d",&n,&hp);

@@ -43,9 +43,9 @@ int main()
         dp[1][i][0]+=cnt[i];
     }
     for(int i=2;i<=n;i++){
-        for(int j=0;j<(1<<m);j++){//µ±Ç°ĞĞ
-            for(int k=0;k<(1<<m);k++){//ÉÏÒ»ĞĞ
-                for(int u=0;u<(1<<m);u++){//ÉÏÉÏÒ»ĞĞ
+        for(int j=0;j<(1<<m);j++){//å½“å‰è¡Œ
+            for(int k=0;k<(1<<m);k++){//ä¸Šä¸€è¡Œ
+                for(int u=0;u<(1<<m);u++){//ä¸Šä¸Šä¸€è¡Œ
                     if(((j|k|u|k>>1|k<<1)&(1<<m)-1)==(1<<m)-1){
                         int t = f[i - 1][k][u] + sum[i][j], p = dp[i - 1][k][u] + cnt[j];
 						if (f[i][j][k] > t || f[i][j][k] == t && dp[i][j][k] > p)

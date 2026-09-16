@@ -9,14 +9,14 @@ using namespace std;
 typedef long long ll;
 
 const int MAX_PRIME = 31;
-const ll N_LIMIT = 1e18; // ¼ÙÉè n µÄÉÏÏŞ£¬ÓÃÓÚÈ·±£´¦Àí·¶Î§ÄÚµÄÊı
+const ll N_LIMIT = 1e18; // å‡è®¾ n çš„ä¸Šé™ï¼Œç”¨äºç¡®ä¿å¤„ç†èŒƒå›´å†…çš„æ•°
 vector<ll> primes = {0,2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127};
 
 struct Node {
     ll value;
     ll prime;
     ll power;
-    int limit; // ÏÂÒ»¸öÖÊÊıµÄË÷ÒıÏŞÖÆ
+    int limit; // ä¸‹ä¸€ä¸ªè´¨æ•°çš„ç´¢å¼•é™åˆ¶
 
     bool operator<(const Node& other) const {
         return value < other.value;
@@ -57,7 +57,7 @@ int main() {
     n = read();
     k = read();
 
-    // ³õÊ¼»¯ÓÅÏÈ¶ÓÁĞ
+    // åˆå§‹åŒ–ä¼˜å…ˆé˜Ÿåˆ—
     for (int i = 1; i <= MAX_PRIME; ++i) {
         ll now = primes[i];
         for (int j = 1; now <= n; ++j, now *= primes[i]) {
@@ -65,7 +65,7 @@ int main() {
         }
     }
 
-    // È¡³öÇ° k ´óµÄÊı
+    // å–å‡ºå‰ k å¤§çš„æ•°
     while (k--) {
         Node top = pq.top();
         pq.pop();

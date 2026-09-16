@@ -23,7 +23,7 @@ ll sum[500007], ans[500007];
 int cmp(const void *i, const void *j) {
     node *ni = (node *)i;
     node *nj = (node *)j;
-    return nj->x - ni->x; // 注意这里为了逆序，用了ni->x - nj->x的相反数
+    return nj->x - ni->x; // 娉ㄦ剰杩欓噷涓轰簡閫嗗簭锛岀敤浜唍i->x - nj->x鐨勭浉鍙嶆暟
 }
 
 int main() {

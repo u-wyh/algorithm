@@ -9,7 +9,7 @@ int arr[MAXN];
 int sum[MAXN];
 
 struct node1{
-    int val,mul;//±íÊ¾Çø¼äºÍ  ³Ë·¨´ÎÊý
+    int val,mul;//è¡¨ç¤ºåŒºé—´å’Œ  ä¹˜æ³•æ¬¡æ•°
 }seg[MAXN<<2];
 
 struct node{
@@ -29,7 +29,7 @@ inline int read(){
     return x*f;
 }
 
-//Çø¼äºÍÏß¶ÎÊ÷
+//åŒºé—´å’Œçº¿æ®µæ ‘
 void segup(int i){
     seg[i].val=seg[i<<1].val+seg[i<<1|1].val;
 }
@@ -95,7 +95,7 @@ int segquery(int jobl,int jobr,int l,int r,int i){
     }
 }
 
-//Ç°×ººÍÏß¶ÎÊ÷
+//å‰ç¼€å’Œçº¿æ®µæ ‘
 void up(int l,int r,int i){
     if(tree[r].val<=tree[l].val){
         tree[i].val=tree[r].val;

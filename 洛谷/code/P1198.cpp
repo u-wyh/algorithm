@@ -8,7 +8,7 @@ using namespace std;
 ll a[200001],f[200001][21],t,D;
 int n,m;
 bool flag;
-void change(int u){  //ÓÃchangeº¯ÊıÀ´½øĞĞĞŞ¸Ä
+void change(int u){  //ç”¨changeå‡½æ•°æ¥è¿›è¡Œä¿®æ”¹
     f[u][0]=a[u];
     for(int i=1;u-(1<<i)>=0;i++)
         f[u][i]=max(f[u][i-1],f[u-(1<<(i-1))][i-1]);
@@ -25,7 +25,7 @@ int main(){
         char c;
         cin>>c;
         ll x;
-        if (c=='A'){  //¸ù¾İÌâÃæµÄ²Ù×÷£¬×¢ÒâÏ¸½Ú¡£
+        if (c=='A'){  //æ ¹æ®é¢˜é¢çš„æ“ä½œï¼Œæ³¨æ„ç»†èŠ‚ã€‚
             scanf("%lld",&x);
             a[++n]=(x+t)%D;
             change(n);

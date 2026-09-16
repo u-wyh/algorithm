@@ -4,7 +4,7 @@
 #define MAX_N 1000005
 
 int n, h[MAX_N], ans = 1;
-int con = 0; // Ê¹ÓÃÕûĞÍ´úÌæ²¼¶ûĞÍ
+int con = 0; // ä½¿ç”¨æ•´å‹ä»£æ›¿å¸ƒå°”å‹
 
 int main() {
     scanf("%d", &n);

@@ -16,13 +16,13 @@ void add(int x, int y) {
 }
 
 int dfs(int x) {
-    if (f[x]) return f[x];  // ¼ÇÒä»¯
+    if (f[x]) return f[x];  // è®°å¿†åŒ–
     int ans = 0;
     if (out[x] == 0) return 1;
     for (int i = st[x]; i; i = e[i].next) {
         ans += dfs(e[i].w);
     }
-    f[x] = ans;  // ¼ÇÒä»¯
+    f[x] = ans;  // è®°å¿†åŒ–
     return ans;
 }
 
@@ -35,7 +35,7 @@ int main() {
         ind[b]++;
     }
     for (int i = 1; i <= n; i++) {
-        if (ind[i] == 0 && out[i] != 0) {  // ×¢Òâµ¥¶ÀµãµÄÇé¿ö
+        if (ind[i] == 0 && out[i] != 0) {  // æ³¨æ„å•ç‹¬ç‚¹çš„æƒ…å†µ
             ans += dfs(i);
         }
     }

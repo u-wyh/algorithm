@@ -19,7 +19,7 @@ int maxx,maxy;
 int minx = 1e6, miny = 1e6;
 long long Answer;
 
-bool DisNice(int x, int y) {//ÅĞ¶Ï¸ÃµãÊÇ·ñ¡°Ìù×Å¡±Á¬Í¨¿é
+bool DisNice(int x, int y) {//åˆ¤æ–­è¯¥ç‚¹æ˜¯å¦â€œè´´ç€â€è¿é€šå—
 	for(int i = 0 ; i < 8 ; i++) {
 		int gx = x+pdx[i];
 		int gy = y+pdy[i];
@@ -29,7 +29,7 @@ bool DisNice(int x, int y) {//ÅĞ¶Ï¸ÃµãÊÇ·ñ¡°Ìù×Å¡±Á¬Í¨¿é
 	return true;
 }
 
-void BFS()//¹ãËÑ¡ª¡ªºËĞÄ´úÂë
+void BFS()//å¹¿æœâ€”â€”æ ¸å¿ƒä»£ç 
 {
 	queue<pair<int,int> > Q;
 	while(!Q.empty()) Q.pop();

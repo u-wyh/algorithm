@@ -16,7 +16,7 @@ void build() {
 }
 
 void floyd() {
-    for (int bridge = 1; bridge <= n; bridge++) { // Ìø°å
+    for (int bridge = 1; bridge <= n; bridge++) { // è·³æ¿
 //        if(dis[1][bridge]>dis[1][n]||dis[bridge][n]>dis[1][n]){
 //            continue;
 //        }

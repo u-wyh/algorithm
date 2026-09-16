@@ -6,11 +6,11 @@ double b[200001], a[200001];
 long long n;
 double l, v, q, t;
 
-// ×Ô¶¨Òå±È½Ïº¯Êý£¬ÓÃÓÚqsort
+// è‡ªå®šä¹‰æ¯”è¾ƒå‡½æ•°ï¼Œç”¨äºŽqsort
 int cmp(const void *x, const void *y) {
     double dx = *(double *)x;
     double dy = *(double *)y;
-    return (dx > dy) - (dx < dy); // ¼ò»¯±È½Ï
+    return (dx > dy) - (dx < dy); // ç®€åŒ–æ¯”è¾ƒ
 }
 
 int main() {
@@ -22,12 +22,12 @@ int main() {
         scanf("%lf", &a[i]);
     }
 
-    // Ê¹ÓÃqsort´Ó´óµ½Ð¡ÅÅÐò
+    // ä½¿ç”¨qsortä»Žå¤§åˆ°å°æŽ’åº
     qsort(a, n, sizeof(double), cmp);
 
-    b[0] = l / v; // ²»Ê¹ÓÃÄ§·¨µÄÊ±¼ä
+    b[0] = l / v; // ä¸ä½¿ç”¨é­”æ³•çš„æ—¶é—´
     for (int i = 1; i < n; i++) {
-        b[i] = a[i] / v + b[i - 1]; // Ê¹ÓÃÇ°iÏîÄ§·¨µÄÊ±¼ä
+        b[i] = a[i] / v + b[i - 1]; // ä½¿ç”¨å‰ié¡¹é­”æ³•çš„æ—¶é—´
     }
 
     scanf("%lf", &q);

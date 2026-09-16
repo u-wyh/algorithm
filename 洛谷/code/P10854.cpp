@@ -6,7 +6,7 @@ const int N = 2e3+5;
 int n,a[N],r,ans,op[2000005],limit;
 
 inline void change(int x,int o){
-    //o的作用是向左递归还是向右递归
+    //o鐨勪綔鐢ㄦ槸鍚戝乏閫掑綊杩樻槸鍚戝彸閫掑綊
 	if(x==1||x==n||a[x-1]!=a[x+1]) 
         return a[x]^=1,op[++ans]=x,void(0);
 	if(o) 

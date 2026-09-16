@@ -13,11 +13,11 @@ int main(){
             cin>>a[i][j];
             if(a[i][j]==2){
                 tx=i;ty=j;
-                //¼ÇÂ¼¿ªÊ¼µã
+                //è®°å½•å¼€å§‹ç‚¹
             }
             if(a[i][j]==3){
                 lx=i;ly=j;
-                //¼ÇÂ¼½áÊøµã
+                //è®°å½•ç»“æŸç‚¹
             }
         }
     dfs(tx,ty,mou);
@@ -34,7 +34,7 @@ void dfs(int x,int y,int mou){
             tx=x+dir[i][0];
             ty=y+dir[i][1];
             if(tx<=0||tx>n||ty<=0||ty>m||a[tx][ty]==0) continue;
-            //±ß½çÅĞ¶ÏºÍÊÇ·ñ×²Ç½
+            //è¾¹ç•Œåˆ¤æ–­å’Œæ˜¯å¦æ’å¢™
             ++times;
             dfs(tx,ty,mou-1);
 			--times;

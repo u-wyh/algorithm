@@ -27,27 +27,27 @@ void build(){
     for(int i=1;i<=n;i++){
         maxans=max(maxans,nums[i]);
     }
-    high=31-__builtin_clz(maxans);//Ñ¡Ôñ³öÓĞĞ§µÄÎ»Êı  ¼´²»ÒªÇ°×º0
+    high=31-__builtin_clz(maxans);//é€‰æ‹©å‡ºæœ‰æ•ˆçš„ä½æ•°  å³ä¸è¦å‰ç¼€0
     for(int num:nums){
-        insert(num);//½«Êı×Ö²åÈëÇ°×ºÊ÷ÖĞ
+        insert(num);//å°†æ•°å­—æ’å…¥å‰ç¼€æ ‘ä¸­
     }
 }
 
 int maxXor(int num) {
-    // ×îÖÕÒì»òµÄ½á¹û(¾¡Á¿´ó)
+    // æœ€ç»ˆå¼‚æˆ–çš„ç»“æœ(å°½é‡å¤§)
     int ans = 0;
-    // Ç°×ºÊ÷Ä¿Ç°À´µ½µÄ½Úµã±àºÅ
+    // å‰ç¼€æ ‘ç›®å‰æ¥åˆ°çš„èŠ‚ç‚¹ç¼–å·
     int cur = 1;
     for (int i = high, status, want; i >= 0; i--) {
-        // status : numµÚiÎ»µÄ×´Ì¬
+        // status : numç¬¬iä½çš„çŠ¶æ€
         status = (num >> i) & 1;
-        // want : numµÚiÎ»Ï£ÍûÓöµ½µÄ×´Ì¬
+        // want : numç¬¬iä½å¸Œæœ›é‡åˆ°çš„çŠ¶æ€
         want = status ^ 1;
-        if (tree[cur][want] == 0) { // Ñ¯ÎÊÇ°×ºÊ÷£¬ÄÜ²»ÄÜ´ï³É
-            // ²»ÄÜ´ï³É
+        if (tree[cur][want] == 0) { // è¯¢é—®å‰ç¼€æ ‘ï¼Œèƒ½ä¸èƒ½è¾¾æˆ
+            // ä¸èƒ½è¾¾æˆ
             want ^= 1;
         }
-        // want±ä³ÉÕæµÄÍùÏÂ×ßµÄÂ·
+        // wantå˜æˆçœŸçš„å¾€ä¸‹èµ°çš„è·¯
         ans |= (status ^ want) << i;
         cur = tree[cur][want];
     }
@@ -60,9 +60,9 @@ int main()
     for(int i=1;i<=n;i++){
         cin>>nums[i];
     }
-    build();//½«ËùÓĞµÄÖµ¼ÓÈëÊ÷ÖĞ
+    build();//å°†æ‰€æœ‰çš„å€¼åŠ å…¥æ ‘ä¸­
     for (int num : nums) {
-        //½«Ã¿Ò»¸öÊıÑ¡ÔñÒ»¸öÊı×ÖÊ¹´ğ°¸×î´ó
+        //å°†æ¯ä¸€ä¸ªæ•°é€‰æ‹©ä¸€ä¸ªæ•°å­—ä½¿ç­”æ¡ˆæœ€å¤§
         ans = max(ans,(long long) maxXor(num));
     }
     cout<<ans;

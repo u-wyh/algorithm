@@ -1,25 +1,25 @@
-// PrimËã·¨Ä£°æ£¨Âå¹È£©
-// ¶¯Ì¬¿Õ¼äÊµÏÖ
-// ²âÊÔÁ´½Ó : https://www.luogu.com.cn/problem/P3366
-// ÇëÍ¬Ñ§ÃÇÎñ±Ø²Î¿¼ÈçÏÂ´úÂëÖĞ¹ØÓÚÊäÈë¡¢Êä³öµÄ´¦Àí
-// ÕâÊÇÊäÈëÊä³ö´¦ÀíĞ§ÂÊºÜ¸ßµÄĞ´·¨
-// Ìá½»ÒÔÏÂËùÓĞ´úÂë£¬°ÑÖ÷ÀàÃû¸Ä³ÉMain£¬¿ÉÒÔÖ±½ÓÍ¨¹ı
+// Primç®—æ³•æ¨¡ç‰ˆï¼ˆæ´›è°·ï¼‰
+// åŠ¨æ€ç©ºé—´å®ç°
+// æµ‹è¯•é“¾æ¥ : https://www.luogu.com.cn/problem/P3366
+// è¯·åŒå­¦ä»¬åŠ¡å¿…å‚è€ƒå¦‚ä¸‹ä»£ç ä¸­å…³äºè¾“å…¥ã€è¾“å‡ºçš„å¤„ç†
+// è¿™æ˜¯è¾“å…¥è¾“å‡ºå¤„ç†æ•ˆç‡å¾ˆé«˜çš„å†™æ³•
+// æäº¤ä»¥ä¸‹æ‰€æœ‰ä»£ç ï¼ŒæŠŠä¸»ç±»åæ”¹æˆMainï¼Œå¯ä»¥ç›´æ¥é€šè¿‡
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5001;
 const int MAXM = 200005;
 
 auto compare = [](const pair<int, int>& left, const pair<int, int>& right) {
-    return left.second > right.second; // ×¢ÒâÕâÀïÊÇ´óÓÚ£¬ÒòÎªÎÒÃÇÏëÒªĞ¡¸ù¶Ñ
+    return left.second > right.second; // æ³¨æ„è¿™é‡Œæ˜¯å¤§äºï¼Œå› ä¸ºæˆ‘ä»¬æƒ³è¦å°æ ¹å †
 };
 
 priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(compare)> heap(compare);
-//³õÊ¼»¯½¨Á¢Ğ¡¸ù¶Ñ
+//åˆå§‹åŒ–å»ºç«‹å°æ ¹å †
 vector<vector<pair<int ,int >>>graph;
-//ÎŞÏò´øÈ¨Í¼  ËùÒÔÓÃµ½ÁËpair
+//æ— å‘å¸¦æƒå›¾  æ‰€ä»¥ç”¨åˆ°äº†pair
 int n,m;
 bool Set[MAXN];
-//¼ÇÂ¼µ±Ç°½ÚµãÊÇ·ñ±»·ÃÎÊ
+//è®°å½•å½“å‰èŠ‚ç‚¹æ˜¯å¦è¢«è®¿é—®
 
 int main()
 {
@@ -30,29 +30,29 @@ int main()
         graph[u].push_back({v,w});
         graph[v].push_back({u,w});
     }
-    //³õÊ¼»¯½¨Í¼
+    //åˆå§‹åŒ–å»ºå›¾
     for(int i=0;i<graph[1].size();i++){
         heap.push(graph[1][i]);
     }
     Set[1]=true;
-    //ÈÎÒâÑ¡ÔñÒ»¸öÆğµã  ÎÒÃÇÑ¡ÔñµÄÊÇ1
+    //ä»»æ„é€‰æ‹©ä¸€ä¸ªèµ·ç‚¹  æˆ‘ä»¬é€‰æ‹©çš„æ˜¯1
     int nodecnt=1;
     int ans=0;
-    //nodecnt¼ÇÂ¼ÓĞ¶àÉÙµã±»¼ÇÂ¼  ansÓÃÓÚ¼ÇÂ¼×îÖÕ´ğ°¸
+    //nodecntè®°å½•æœ‰å¤šå°‘ç‚¹è¢«è®°å½•  ansç”¨äºè®°å½•æœ€ç»ˆç­”æ¡ˆ
     while(!heap.empty()){
         int Next=heap.top().first;
         int cost=heap.top().second;
-        //nextÊÇÏÂÒ»¸ö½Úµã  costÊÇÕâÌõ±ßµÄÈ¨Öµ
+        //nextæ˜¯ä¸‹ä¸€ä¸ªèŠ‚ç‚¹  costæ˜¯è¿™æ¡è¾¹çš„æƒå€¼
         heap.pop();
         if (!Set[Next]) {
-            //Èç¹ûÕâ¸ö½ÚµãÃ»ÓĞ±»·ÃÎÊ  ¼ÌĞø
+            //å¦‚æœè¿™ä¸ªèŠ‚ç‚¹æ²¡æœ‰è¢«è®¿é—®  ç»§ç»­
             nodecnt++;
             Set[Next] = true;
             ans += cost;
             for (int i=0;i<graph[Next].size();i++) {
                 heap.push(graph[Next][i]);
             }
-            //½«ËûµÄËùÓĞ±ß¼ÓÈëĞ¡¸ù¶Ñ
+            //å°†ä»–çš„æ‰€æœ‰è¾¹åŠ å…¥å°æ ¹å †
         }
     }
 

@@ -10,7 +10,7 @@ typedef struct {
 int cmp(const void *a, const void *b) {
     ren *renA = (ren *)a;
     ren *renB = (ren *)b;
-    return renB->ks - renA->ks; // ×¢ÒâÕâÀïÓÃ¼õ·¨ÊµÏÖ½µĞòÅÅĞò
+    return renB->ks - renA->ks; // æ³¨æ„è¿™é‡Œç”¨å‡æ³•å®ç°é™åºæ’åº
 }
 
 int main() {
@@ -25,7 +25,7 @@ int main() {
         sum[z[i].ks]++;
     }
 
-    qsort(z + 1, k, sizeof(ren), cmp); // Ê¹ÓÃqsort½øĞĞÅÅĞò
+    qsort(z + 1, k, sizeof(ren), cmp); // ä½¿ç”¨qsortè¿›è¡Œæ’åº
 
     for (i = n; i >= 1; i--) {
         if (sum[i] == 0) {
@@ -35,7 +35,7 @@ int main() {
                 if (f[i + z[num].js] > f[i]) {
                     f[i] = f[i + z[num].js];
                 }
-                num++; // µ±Ç°ÒÑÉ¨¹ıµÄÈÎÎñÊı
+                num++; // å½“å‰å·²æ‰«è¿‡çš„ä»»åŠ¡æ•°
             }
         }
     }

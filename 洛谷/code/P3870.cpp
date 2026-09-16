@@ -7,9 +7,9 @@ int sum[MAXN << 2];
 bool update[MAXN << 2];
 int n,m;
 
-// ÀÛ¼ÓºÍĞÅÏ¢µÄ»ã×Ü
+// ç´¯åŠ å’Œä¿¡æ¯çš„æ±‡æ€»
 void up(int i) {
-    // ¸¸·¶Î§µÄÀÛ¼ÓºÍ = ×ó·¶Î§ÀÛ¼ÓºÍ + ÓÒ·¶Î§ÀÛ¼ÓºÍ
+    // çˆ¶èŒƒå›´çš„ç´¯åŠ å’Œ = å·¦èŒƒå›´ç´¯åŠ å’Œ + å³èŒƒå›´ç´¯åŠ å’Œ
     sum[i] = sum[i << 1] + sum[i << 1 | 1];
 }
 
@@ -18,7 +18,7 @@ void lazy(int i,  int n) {
     update[i] = !update[i];
 }
 
-// ÀÁĞÅÏ¢µÄÏÂ·¢
+// æ‡’ä¿¡æ¯çš„ä¸‹å‘
 void down(int i, int ln, int rn) {
     if (update[i]) {
         lazy(i << 1, ln);

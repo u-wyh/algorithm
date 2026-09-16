@@ -8,15 +8,15 @@ long long K, l, r = 2e9, mid, A[100005], B[100005];
 int cmp(const void *a,const void *b){
     return (*(long long  *)a - *(long long *)b);
 }
-// ÅĞ¶ÏĞ¡ÓÚµÈÓÚµ±Ç° mid µÄ C[i] = A[i] + B[j] µÄ¸öÊıÊÇ·ñĞ¡ÓÚ K
+// åˆ¤æ–­å°äºç­‰äºå½“å‰ mid çš„ C[i] = A[i] + B[j] çš„ä¸ªæ•°æ˜¯å¦å°äº K
 int check() {
     long long cnt = 0;
     for (int i = 1; i <= n; ++i) {
         int j;
         for (j = 1; j <= m; ++j) {
-            if (B[j] > mid - A[i]) break; // ÕÒµ½µÚÒ»¸ö´óÓÚ mid - A[i] µÄ B[j]
+            if (B[j] > mid - A[i]) break; // æ‰¾åˆ°ç¬¬ä¸€ä¸ªå¤§äº mid - A[i] çš„ B[j]
         }
-        cnt += j - 1; // ÀÛ¼ÓĞ¡ÓÚµÈÓÚ mid - A[i] µÄ B[j] ¸öÊı
+        cnt += j - 1; // ç´¯åŠ å°äºç­‰äº mid - A[i] çš„ B[j] ä¸ªæ•°
     }
     return cnt < K;
 }
@@ -31,7 +31,7 @@ int main() {
     }
     qsort(B + 1, m, sizeof(long long), cmp);
     while (l < r) {
-        mid = l + (r - l) / 2; // ·ÀÖ¹Òç³ö
+        mid = l + (r - l) / 2; // é˜²æ­¢æº¢å‡º
         if (check()) {
             l = mid + 1;
         } else {

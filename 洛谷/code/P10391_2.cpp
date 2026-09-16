@@ -40,7 +40,7 @@ int lca(int a, int b) {
         b = tmp;
     }
     int ans1=nums[a],ans2=nums[b];
-    //È·¶¨´óĞ¡¹ØÏµ
+    //ç¡®å®šå¤§å°å…³ç³»
 
     for (int p = power; p >= 0; p--) {
         if (deep[stjump[a][p]] >= deep[b]) {
@@ -48,11 +48,11 @@ int lca(int a, int b) {
             a = stjump[a][p];
         }
     }
-    //Ê×ÏÈ½«Á½Õß±äÎªÍ¬Ò»¸ß¶È
+    //é¦–å…ˆå°†ä¸¤è€…å˜ä¸ºåŒä¸€é«˜åº¦
     if (a == b) {
         return sum[ans1|ans2];
     }
-    //Èç¹ûÏàÍ¬ËµÃ÷¾ÍÊÇ×æÏÈ¹ØÏµ
+    //å¦‚æœç›¸åŒè¯´æ˜å°±æ˜¯ç¥–å…ˆå…³ç³»
     for (int p = power; p >= 0; p--) {
         if (stjump[a][p] != stjump[b][p]) {
             ans1|=val[a][p];
@@ -60,10 +60,10 @@ int lca(int a, int b) {
             ans2|=val[a][p];
             b = stjump[b][p];
         }
-        //ÅĞ¶ÏÌøÍêºóÊÇ·ñ·ûºÏ¹æÔò
+        //åˆ¤æ–­è·³å®Œåæ˜¯å¦ç¬¦åˆè§„åˆ™
     }
     return sum[ans1|ans2];
-    //ÎÒÃÇ½«Í·½áµãµÄ×æÏÈÉèÖÃÎª0  Êµ¼ÊÉÏÃ»ÓĞ0
+    //æˆ‘ä»¬å°†å¤´ç»“ç‚¹çš„ç¥–å…ˆè®¾ç½®ä¸º0  å®é™…ä¸Šæ²¡æœ‰0
 }
 
 int main()
@@ -73,13 +73,13 @@ int main()
     for(int i=1;i<=n;i++){
         int k;
         cin>>k;
-        nums[i]|=(1<<(k-1));//¸³ÓèÈ¨Öµ
+        nums[i]|=(1<<(k-1));//èµ‹äºˆæƒå€¼
     }
 
     sum[0]=0;
     for(int i=1;i<(1<<n);i++){
         int k=i&-i;
-        sum[i]=sum[k^i]+1;//Í³¼Æ1µÄ¸öÊı
+        sum[i]=sum[k^i]+1;//ç»Ÿè®¡1çš„ä¸ªæ•°
     }
 
     for(int i=1;i<n;i++){
@@ -92,9 +92,9 @@ int main()
         Next[cnt]=head[v];
         to[cnt]=u;
         head[v]=cnt++;
-        //Á´Ê½Ç°ÏòĞÇ½¨Ë«ÏòÍ¼
+        //é“¾å¼å‰å‘æ˜Ÿå»ºåŒå‘å›¾
     }
-    dfs(1,0);//½¨Á¢st±í
+    dfs(1,0);//å»ºç«‹stè¡¨
     for(int i=1,u,v;i<=m;i++){
         cin>>u>>v;
         cout<<lca(u,v)<<endl;

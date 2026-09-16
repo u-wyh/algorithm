@@ -1,25 +1,25 @@
 // https://www.luogu.com.cn/problem/P3496
 #include<cstdio>
 using namespace std;
-const int MAXN=200010,MAXM=1000010;//×¢Òâ±ßÊıÒª³Ë2
+const int MAXN=200010,MAXM=1000010;//æ³¨æ„è¾¹æ•°è¦ä¹˜2
 
-int h[MAXN],color[MAXN],tot=0;//hÎªÁÚ½Ó±íÖĞµÄhead£¬totÎª×Ü±ßÊı
-bool vis[MAXN];//¼ÇÂ¼ÊÇ·ñÓĞÁ¬½Ó
-struct Edge{//±ßµÄ½á¹¹Ìå
+int h[MAXN],color[MAXN],tot=0;//hä¸ºé‚»æ¥è¡¨ä¸­çš„headï¼Œtotä¸ºæ€»è¾¹æ•°
+bool vis[MAXN];//è®°å½•æ˜¯å¦æœ‰è¿æ¥
+struct Edge{//è¾¹çš„ç»“æ„ä½“
 	int v;
-	int next;//next¼ÇÂ¼ÕâÌõ±ßÔÚÁÚ½Ó±íÖĞÖ¸ÏòÍ¬¶ËµãµÄÁíÒ»Ìõ±ß
+	int next;//nextè®°å½•è¿™æ¡è¾¹åœ¨é‚»æ¥è¡¨ä¸­æŒ‡å‘åŒç«¯ç‚¹çš„å¦ä¸€æ¡è¾¹
 }e[MAXM];
 
-void addEdge(int u,int v){//½¨±ß
+void addEdge(int u,int v){//å»ºè¾¹
 	tot++;
 	e[tot].v=v;
 	e[tot].next=h[u],h[u]=tot;
 }
 
-void dfs(int u){//ÉîËÑ£¬uÎªÔ­½Úµã£¬±£Ö¤ÒÑÈ¾É«
-	for(int k=h[u];k;k=e[k].next){//ÁÚ½Ó±í²éÕÒ
+void dfs(int u){//æ·±æœï¼Œuä¸ºåŸèŠ‚ç‚¹ï¼Œä¿è¯å·²æŸ“è‰²
+	for(int k=h[u];k;k=e[k].next){//é‚»æ¥è¡¨æŸ¥æ‰¾
 		int v=e[k].v;
-		color[v]=color[u]%2+1;//¹«Ê½
+		color[v]=color[u]%2+1;//å…¬å¼
 	}
 }
 
@@ -29,23 +29,23 @@ int main(){
 	while(m--){
 		int uu,vv;
 		scanf("%d%d",&uu,&vv);
-		vis[uu]=1,vis[vv]=1;//¼ÇÂ¼
-		addEdge(uu,vv);addEdge(vv,uu);//½¨±ß
+		vis[uu]=1,vis[vv]=1;//è®°å½•
+		addEdge(uu,vv);addEdge(vv,uu);//å»ºè¾¹
 	}
-	for(int i=1;i<=n;i++)//ÅĞ¶ÏÊÇ·ñ²»ĞĞ
+	for(int i=1;i<=n;i++)//åˆ¤æ–­æ˜¯å¦ä¸è¡Œ
 	    if(!vis[i]){
-	    	printf("NIE\n");//Êä³ö
-	    	return 0;//·µ»Ø
+	    	printf("NIE\n");//è¾“å‡º
+	    	return 0;//è¿”å›
 		}
-	printf("TAK\n");//Ö±½ÓÊä³ö
-	for(int i=1;i<=n;i++)//Ã¿¸öµã¶¼ËÑÒ»±é
-		if(!color[i]){//Ã»ËÑ¹ı
-			color[i]=1;//ÏÈÉèÎª°×µã
-			dfs(i);//¿ªËÑ
+	printf("TAK\n");//ç›´æ¥è¾“å‡º
+	for(int i=1;i<=n;i++)//æ¯ä¸ªç‚¹éƒ½æœä¸€é
+		if(!color[i]){//æ²¡æœè¿‡
+			color[i]=1;//å…ˆè®¾ä¸ºç™½ç‚¹
+			dfs(i);//å¼€æœ
 		}
-	for(int i=1;i<=n;i++){//Êä³ö
+	for(int i=1;i<=n;i++){//è¾“å‡º
 		if(color[i]==1) printf("K\n");
 		else printf("S\n");
 	}
-	return 0;//»ªÀö½áÊø
+	return 0;//åä¸½ç»“æŸ
 }

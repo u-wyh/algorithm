@@ -12,9 +12,9 @@ double weight[MAXM];
 int cnt=1;
 int n,m;
 int arr[MAXN];
-// dfsÅĞ¶Ï¸º»·£¬Ã¿¸öµãµÄÀÛ»ı±ßÈ¨
+// dfsåˆ¤æ–­è´Ÿç¯ï¼Œæ¯ä¸ªç‚¹çš„ç´¯ç§¯è¾¹æƒ
 double d[MAXN];
-// dfsÅĞ¶Ï¸º»·£¬Ã¿¸öµãÊÇ·ñÊÇµİ¹éÂ·¾¶ÉÏµÄµã
+// dfsåˆ¤æ–­è´Ÿç¯ï¼Œæ¯ä¸ªç‚¹æ˜¯å¦æ˜¯é€’å½’è·¯å¾„ä¸Šçš„ç‚¹
 bool vis[MAXN];
 int num[MAXN];
 
@@ -28,7 +28,7 @@ void addedge(int u,int v,double w){
 int check(double x)
 {
     queue<int> q;
-    for(int i=1;i<=n;++i)//ÒòÎªÍ¼²»Ò»¶¨Á¬Í¨£¬ËùÒÔ³õÊ¼ËùÓĞ½áµãÈë¶Ó
+    for(int i=1;i<=n;++i)//å› ä¸ºå›¾ä¸ä¸€å®šè¿é€šï¼Œæ‰€ä»¥åˆå§‹æ‰€æœ‰ç»“ç‚¹å…¥é˜Ÿ
     {
     	q.push(i);
     	d[i]=0;
@@ -43,7 +43,7 @@ int check(double x)
         {
             int v=to[i];
             double dis=weight[i];
-            if(d[v]>d[u]+x*dis-arr[u])//±ßÈ¨Îªmid*Tim[e_i]-Fun[u_i]
+            if(d[v]>d[u]+x*dis-arr[u])//è¾¹æƒä¸ºmid*Tim[e_i]-Fun[u_i]
             {
                 d[v]=d[u]+x*dis-arr[u];
                 if(!vis[v])

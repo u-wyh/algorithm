@@ -1,8 +1,8 @@
 #include<stdio.h>
 int fun(int num,int *cnt,int n,int len,int m,int offset,int *nums)
-/*²ÎÊı½âÊÍ£º
-    num ÊÇÎÒÃÇ²»ÄÜ³¬¹ıµÄÊı×Ö   cnt ÊÇÎÒÃÇÒÑ¾­×¼±¸ºÃµÄ±í  n numsÊı×éµÄ³¤¶È
-    len ÊÇÎÒÃÇÒÑ¾­ÌîºÃµÄÎ»Êı   m ÊÇcntµÄ³¤¶È  offset ¸¨Öú±äÁ¿ numsÊı×é
+/*å‚æ•°è§£é‡Šï¼š
+    num æ˜¯æˆ‘ä»¬ä¸èƒ½è¶…è¿‡çš„æ•°å­—   cnt æ˜¯æˆ‘ä»¬å·²ç»å‡†å¤‡å¥½çš„è¡¨  n numsæ•°ç»„çš„é•¿åº¦
+    len æ˜¯æˆ‘ä»¬å·²ç»å¡«å¥½çš„ä½æ•°   m æ˜¯cntçš„é•¿åº¦  offset è¾…åŠ©å˜é‡ numsæ•°ç»„
 */
 {
     if(len==m)
@@ -39,7 +39,7 @@ int main()
         tmp /= 10;
         len++;
         offset *= 10;
-    }//lenÊÇnumµÄ³¤¶È   offsetÊÇÒ»¸ö¸¨Öú±äÁ¿
+    }//lenæ˜¯numçš„é•¿åº¦   offsetæ˜¯ä¸€ä¸ªè¾…åŠ©å˜é‡
     int cnt[len+1];
     cnt[0]=1;
     int ans=0;

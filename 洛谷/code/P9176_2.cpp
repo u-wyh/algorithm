@@ -1,11 +1,11 @@
 // https://www.luogu.com.cn/problem/P9176
 #include <bits/stdc++.h>
 #define N 200001
-#define int long long//Ê®Äê OI Ò»³¡¿Õ
+#define int long long//åå¹´ OI ä¸€åœºç©º
 using namespace std;
 int n,sum;
 int v[N],a[N],b[N],c[N];
-//Ê÷×´Êı×é
+//æ ‘çŠ¶æ•°ç»„
 void add(int x,int k){
     for (int i=x;i<=n;i+=i&(-i)){
         c[i]+=k;
@@ -38,10 +38,10 @@ signed main(){
     }
     sort(b+1,b+n+1);
     for (int i=1;i<=n;i++){
-        v[i]=lower_bound(b+1,b+n+1,v[i])-b;//ÀëÉ¢»¯
-        sum+=a[i];//¸üĞÂµ±Ç°ÈËÊı
-        add(v[i],a[i]);//Î¬»¤Ç°×ººÍ
-        cout<<b[bin()]<<endl;//×¢Òâ¶ş·ÖµÄ´ğ°¸ÊÇÀëÉ¢»¯ºóµÄ£¬ĞèÒª»¹Ô­
+        v[i]=lower_bound(b+1,b+n+1,v[i])-b;//ç¦»æ•£åŒ–
+        sum+=a[i];//æ›´æ–°å½“å‰äººæ•°
+        add(v[i],a[i]);//ç»´æŠ¤å‰ç¼€å’Œ
+        cout<<b[bin()]<<endl;//æ³¨æ„äºŒåˆ†çš„ç­”æ¡ˆæ˜¯ç¦»æ•£åŒ–åçš„ï¼Œéœ€è¦è¿˜åŸ
     }
     return 0;
 }

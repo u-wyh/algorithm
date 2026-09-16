@@ -25,7 +25,7 @@ int n, a, b;
 
 void dfs(int k, int c, int d, char *str) {
     if (k == n) {
-        if (strcmp(str, ans) > 0) { // ×Ö·û´®±È½Ï£¬È¡×ÖµäĞò½Ï´óµÄ
+        if (strcmp(str, ans) > 0) { // å­—ç¬¦ä¸²æ¯”è¾ƒï¼Œå–å­—å…¸åºè¾ƒå¤§çš„
             strcpy(ans, str);
         }
         return;
@@ -34,20 +34,20 @@ void dfs(int k, int c, int d, char *str) {
     if (c + x <= a && d + y <= b) {
         str[k] = '9';
         dfs(k + 1, c + x, d, str);
-        str[k] = str[k] - 1 + '0'; // »ØËİ
+        str[k] = str[k] - 1 + '0'; // å›æº¯
         dfs(k + 1, c, d + y, str);
     } else if (c + x <= a) {
         str[k] = '9';
         dfs(k + 1, c + x, d, str);
-        str[k] = str[k] - 1 + '0'; // »ØËİ
+        str[k] = str[k] - 1 + '0'; // å›æº¯
     } else if (d + y <= b) {
         str[k] = '9';
         dfs(k + 1, c, d + y, str);
-        str[k] = str[k] - 1 + '0'; // »ØËİ
+        str[k] = str[k] - 1 + '0'; // å›æº¯
     } else {
         str[k] += a - c;
         dfs(k + 1, a, d, str);
-        // ×¢Òâ£ºÕâÀï²»ĞèÒª¶Ôstr[k]½øĞĞ»ØËİ£¬ÒòÎªËüÒÑ¾­±»ÉèÖÃÎª×î´ó¿ÉÄÜÖµ
+        // æ³¨æ„ï¼šè¿™é‡Œä¸éœ€è¦å¯¹str[k]è¿›è¡Œå›æº¯ï¼Œå› ä¸ºå®ƒå·²ç»è¢«è®¾ç½®ä¸ºæœ€å¤§å¯èƒ½å€¼
     }
 }
 

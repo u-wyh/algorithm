@@ -6,9 +6,9 @@
 #define LL unsigned long long
 
 int n, i, j;
-int a[101]; // ´æÊý
-int f[101][101]; // f[i][j]±íÊ¾È¡i~jÕâ¸öÇø¼ä¶Îplayer1×î¸ßµÃ·Ö
-int s[101]; // s[i]±íÊ¾a[1]~a[i]µÄºÍ
+int a[101]; // å­˜æ•°
+int f[101][101]; // f[i][j]è¡¨ç¤ºå–i~jè¿™ä¸ªåŒºé—´æ®µplayer1æœ€é«˜å¾—åˆ†
+int s[101]; // s[i]è¡¨ç¤ºa[1]~a[i]çš„å’Œ
 
 int max(int x, int y) {
     return x > y ? x : y;
@@ -17,12 +17,12 @@ int max(int x, int y) {
 int main() {
     scanf("%d", &n);
     for (i = 1; i <= n; i++) {
-        scanf("%d", &a[i]); // ¶ÁÈë
-        s[i] = s[i - 1] + a[i]; // ÇóºÍ
-        f[i][i] = a[i]; // ³õÊ¼»¯
+        scanf("%d", &a[i]); // è¯»å…¥
+        s[i] = s[i - 1] + a[i]; // æ±‚å’Œ
+        f[i][i] = a[i]; // åˆå§‹åŒ–
     }
 
-    // ±íÊ¾a[i]~a[j]µÄºÍµÄ·½·¨£ºs[j]-s[i-1]
+    // è¡¨ç¤ºa[i]~a[j]çš„å’Œçš„æ–¹æ³•ï¼šs[j]-s[i-1]
     for (i = n - 1; i >= 1; i--) {
         for (j = i + 1; j <= n; j++) {
             f[i][j] = max((s[j] - s[i - 1]) - f[i + 1][j],

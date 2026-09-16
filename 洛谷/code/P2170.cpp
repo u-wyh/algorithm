@@ -47,11 +47,11 @@ int main()
         }
     }
     cnt--;
-    for(int i=1;i<=cnt;i++) //±³°üÎÊÌâ
+    for(int i=1;i<=cnt;i++) //èƒŒåŒ…é—®é¢˜
 		for(int j=2*m;j>=ans[i];j--)
 			dp[j]=max(dp[j],dp[j-ans[i]]+ans[i]);
     int ans=999999999,minn=999999999;
-	for(int i=1;i<=2*m;i++)	//ÕÒµ½×î½Ó½ümµÄ
+	for(int i=1;i<=2*m;i++)	//æ‰¾åˆ°æœ€æ¥è¿‘mçš„
 	{
 		if(minn>abs(dp[i]-m)) minn=abs(dp[i]-m),ans=dp[i];
 	}

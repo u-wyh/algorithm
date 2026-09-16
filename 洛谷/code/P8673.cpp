@@ -4,7 +4,7 @@ using namespace std;
 const int N = 1e3 + 5;
 int n, k;
 char g[N][N];
-int vis[N][N]; // �洢ÿ�������Ƿ񱻷��ʹ��Լ��޵�״̬ʣ�ಽ��
+int vis[N][N]; // 存储每个格子是否被访问过以及无敌状态剩余步数
 struct node{
 	int x, y, step, magic;
 };
@@ -19,26 +19,26 @@ int main(){
 			cin >> g[i][j];
 	memset(vis, -1, sizeof vis);
 	queue<node> q;
-	vis[1][1] = 0; // �����ķ���״̬����Ϊ0
-	q.push({1, 1, 0, 0}); // �������ӣ��������䵽��õ�Ĳ���Ϊ0����ǰ�������޵�״̬
+	vis[1][1] = 0; // 将起点的访问状态设置为0
+	q.push({1, 1, 0, 0}); // 将起点入队，并设置其到达该点的步数为0、当前不处于无敌状态
 	while (q.size()){
-		node t = q.front(); // ȡ����ͷ�ڵ�
+		node t = q.front(); // 取出队头节点
 		q.pop();
-		if (t.x == n && t.y == n){ // �����ǰ�ڵ�Ϊ�յ㣬��������·���Ȳ���������
+		if (t.x == n && t.y == n){ // 如果当前节点为终点，则输出最短路长度并结束程序
 			cout << t.step;
 			return 0;
 		}
 		for (int i = 0; i < 4; i ++ ){
 			int tx = t.x + dx[i];
 			int ty = t.y + dy[i];
-			if (g[tx][ty] == 'X' && t.magic == 0) // �����һ��λ���������ҵ�ǰ�������޵�״̬���������ýڵ�
+			if (g[tx][ty] == 'X' && t.magic == 0) // 如果下一步位置是陷阱且当前不处于无敌状态，则跳过该节点
 				continue;
-			int magic = max(0, t.magic - 1); // ���㵱ǰ�޵�״̬ʣ�ಽ��
-			if (g[tx][ty] == '%') // �����һ��λ���е��ߣ������޵�״̬ʣ�ಽ��
+			int magic = max(0, t.magic - 1); // 计算当前无敌状态剩余步数
+			if (g[tx][ty] == '%') // 如果下一步位置有道具，更新无敌状态剩余步数
 				magic = k;
-			if (tx >= 1 && tx <= n && ty >= 1 && ty <= n && vis[tx][ty] < magic && g[tx][ty] != '#'){ // �����һ��λ���ǺϷ��Ŀɵ���λ��
-				vis[tx][ty] = magic; // ���·���״̬���޵�״̬ʣ�ಽ��
-				q.push({tx, ty, t.step + 1, magic}); // ����һ��λ����ӣ������µ���õ�Ĳ������޵�״̬ʣ�ಽ��
+			if (tx >= 1 && tx <= n && ty >= 1 && ty <= n && vis[tx][ty] < magic && g[tx][ty] != '#'){ // 如果下一步位置是合法的可到达位置
+				vis[tx][ty] = magic; // 更新访问状态和无敌状态剩余步数
+				q.push({tx, ty, t.step + 1, magic}); // 将下一步位置入队，并更新到达该点的步数和无敌状态剩余步数
 			}
 		}
 	}

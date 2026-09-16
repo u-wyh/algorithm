@@ -16,9 +16,9 @@ int n, m, d1[MAXN], d2[MAXN], d[MAXN];
 bool exist[MAXN];
 queue<int> q;
 
-void spfa1(int s) { //µÚÒ»¸öGPSÏµÍ³
+void spfa1(int s) { //ç¬¬ä¸€ä¸ªGPSç³»ç»Ÿ
 	fill(d1+1, d1+1+n, INF);
-	memset(exist, false, sizeof(exist));//³õÊ¼»¯ÄªÍüµô£¡
+	memset(exist, false, sizeof(exist));//åˆå§‹åŒ–è«å¿˜æ‰ï¼
 	d1[s] = 0;
 	q.push(s);
 	exist[s] = true;
@@ -39,9 +39,9 @@ void spfa1(int s) { //µÚÒ»¸öGPSÏµÍ³
 	}
 }
 
-void spfa2(int s) { //µÚ¶ş¸öGPSÏµÍ³
+void spfa2(int s) { //ç¬¬äºŒä¸ªGPSç³»ç»Ÿ
 	fill(d2+1, d2+1+n, INF);
-	memset(exist, false, sizeof(exist));//³õÊ¼»¯ÄªÍüµô£¡
+	memset(exist, false, sizeof(exist));//åˆå§‹åŒ–è«å¿˜æ‰ï¼
 	d2[s] = 0;
 	q.push(s);
 	exist[s] = true;
@@ -62,9 +62,9 @@ void spfa2(int s) { //µÚ¶ş¸öGPSÏµÍ³
 	}
 }
 
-void spfa(int s) { //¼ÆËã±§Ô¹Öµ
+void spfa(int s) { //è®¡ç®—æŠ±æ€¨å€¼
 	fill(d+1, d+1+n, INF);
-	memset(exist, false, sizeof(exist));//³õÊ¼»¯ÄªÍüµô£¡
+	memset(exist, false, sizeof(exist));//åˆå§‹åŒ–è«å¿˜æ‰ï¼
 	d[s] = 0;
 	q.push(s);
 	exist[s] = true;
@@ -91,8 +91,8 @@ int main() {
 		int u, v, c1, c2;
 		cin >> u >> v >> c1 >> c2;
 		G1[v].push_back((edge){u, c1});
-		G2[v].push_back((edge){u, c2});//×¢Òâ£¡ÒòÎªÊÇÓĞÏòÍ¼£¬ËùÒÔÔÚ½¨·´ÏòÍ¼Ê±£¬Òª×¢Òâ·½Ïò¡£
-	}//½¨·´ÏòÍ¼
+		G2[v].push_back((edge){u, c2});//æ³¨æ„ï¼å› ä¸ºæ˜¯æœ‰å‘å›¾ï¼Œæ‰€ä»¥åœ¨å»ºåå‘å›¾æ—¶ï¼Œè¦æ³¨æ„æ–¹å‘ã€‚
+	}//å»ºåå‘å›¾
 	spfa1(n);
 	spfa2(n);
 	for (int i=1; i<=n; i++)
@@ -100,10 +100,10 @@ int main() {
 			edge e1 = G1[i][j], e2 = G2[i][j];
 			int cnt = 0;
 			if (d1[e1.to] - d1[i] != e1.cost) cnt++;
-			if (d2[e2.to] - d2[i] != e2.cost) cnt++; //×¢Òâ£¡ÕâÀï²»ÄÜĞ´³Éd2[i] - d2[e.to]£¬ÒòÎªÄãÖ®Ç°½¨µÄÊÇ·´ÏòÍ¼£¬ËùÒÔÓ¦¸ÃÊÇe2.toµÄÈ¨Öµ´ó¡£ÉÏÒ»ĞĞÍ¬Àí¡£
-			G[e1.to].push_back((edge){i, cnt}); //×¢Òâ£¡ÒòÎª×îºóÒ»´ÎÅÜSPFAÊ±£¬ÊÇ´Ó1ºÅ½Úµã³ö·¢µÄ£¬ËùÒÔ½¨Í¼Ê±ÒªÊÇÕıÏòÍ¼¡£
+			if (d2[e2.to] - d2[i] != e2.cost) cnt++; //æ³¨æ„ï¼è¿™é‡Œä¸èƒ½å†™æˆd2[i] - d2[e.to]ï¼Œå› ä¸ºä½ ä¹‹å‰å»ºçš„æ˜¯åå‘å›¾ï¼Œæ‰€ä»¥åº”è¯¥æ˜¯e2.toçš„æƒå€¼å¤§ã€‚ä¸Šä¸€è¡ŒåŒç†ã€‚
+			G[e1.to].push_back((edge){i, cnt}); //æ³¨æ„ï¼å› ä¸ºæœ€åä¸€æ¬¡è·‘SPFAæ—¶ï¼Œæ˜¯ä»1å·èŠ‚ç‚¹å‡ºå‘çš„ï¼Œæ‰€ä»¥å»ºå›¾æ—¶è¦æ˜¯æ­£å‘å›¾ã€‚
 		}
 	spfa(1);
 	cout << d[n]  << endl;
-	return 0;//Íê½áÈö»¨£¡
+	return 0;//å®Œç»“æ’’èŠ±ï¼
 }

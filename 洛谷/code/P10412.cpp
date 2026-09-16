@@ -24,7 +24,7 @@ signed main()
     int ans=0,cnt=1,used=0;
     while(sum<0){
         if(sum-arr[cnt]<0&&used<n-1){
-            //说明还是不行
+            //璇存槑杩樻槸涓嶈
             if(q<(-arr[cnt])*p){
                 used++;
             }

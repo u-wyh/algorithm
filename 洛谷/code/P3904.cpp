@@ -5,14 +5,14 @@ using namespace std;
 int n,m;
 vector<int>dp[55][55];
 
-// ÒÆ³ıÇ°µ¼Áã
+// ç§»é™¤å‰å¯¼é›¶
 void removeLeadingZeros(vector<int>& num) {
     while(num.size()>1&&num.back()==0){
 		num.pop_back();
 	}
 }
 
-// ´óÕûÊı¼Ó·¨
+// å¤§æ•´æ•°åŠ æ³•
 vector<int> add(const vector<int>& a, const vector<int>& b) {
     vector<int>res;
 	int diff=0;
@@ -25,7 +25,7 @@ vector<int> add(const vector<int>& a, const vector<int>& b) {
 	return res;
 }
 
-// ´óÕûÊı³ËÒÔĞ¡ÕûÊı
+// å¤§æ•´æ•°ä¹˜ä»¥å°æ•´æ•°
 vector<int> mul(const vector<int>& a, int b) {
     vector<int>res;
 	int diff=0;
@@ -48,7 +48,7 @@ vector<int> strToNum(const string& s) {
 	return num;
 }
 
-// ´óÕûÊı×ª×Ö·û´®
+// å¤§æ•´æ•°è½¬å­—ç¬¦ä¸²
 string numToStr(const vector<int>& num) {
     string s;
 	for(int i=(int)num.size()-1;i>=0;i--){

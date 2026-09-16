@@ -1,18 +1,18 @@
 // https://www.luogu.com.cn/problem/P3115
 #include <bits/stdc++.h>
 using namespace std;
-const int MAXN = 1005, MAXM = 4950005; //×î¶àµãÊı£¬×î¶à±ßÊı
-const long long INF = 4557430888798830399; //³õÊ¼»¯Ò»¸ö¼«´óÖµ£¬ÕâÀïÒªÓÃlong long
+const int MAXN = 1005, MAXM = 4950005; //æœ€å¤šç‚¹æ•°ï¼Œæœ€å¤šè¾¹æ•°
+const long long INF = 4557430888798830399; //åˆå§‹åŒ–ä¸€ä¸ªæå¤§å€¼ï¼Œè¿™é‡Œè¦ç”¨long long
 
-int st, fi, n, idx; //Æğµã£¬ÖÕµã£¬µãµÄÊıÁ¿£¬±ßµÄÊıÁ¿ 
-long long dis[MAXN][2], head[MAXN]; //dis[i][0]ÎªÆğµãµ½µãi×îÉÙ·ÑÓÃ£¬dis[i][1]Îª×îÉÙ·ÑÓÃÏÂµÄ×î¶ÌÂ·¾¶ 
-struct Edge{int nxt, to, w, c;}edge[MAXM]; //ÏÂÒ»Ìõ±ß£¬µ½´ïµÄµã£¬·ÑÓÃ£¬Â·¾¶³¤¶È 
-struct Node{long long x, w;}; //±àºÅ£¬×îÉÙ»¨·Ñ 
-bool operator < (const Node &a, const Node &b) {return a.w > b.w;} //´ÓĞ¡µ½´óÅÅĞò 
+int st, fi, n, idx; //èµ·ç‚¹ï¼Œç»ˆç‚¹ï¼Œç‚¹çš„æ•°é‡ï¼Œè¾¹çš„æ•°é‡ 
+long long dis[MAXN][2], head[MAXN]; //dis[i][0]ä¸ºèµ·ç‚¹åˆ°ç‚¹iæœ€å°‘è´¹ç”¨ï¼Œdis[i][1]ä¸ºæœ€å°‘è´¹ç”¨ä¸‹çš„æœ€çŸ­è·¯å¾„ 
+struct Edge{int nxt, to, w, c;}edge[MAXM]; //ä¸‹ä¸€æ¡è¾¹ï¼Œåˆ°è¾¾çš„ç‚¹ï¼Œè´¹ç”¨ï¼Œè·¯å¾„é•¿åº¦ 
+struct Node{long long x, w;}; //ç¼–å·ï¼Œæœ€å°‘èŠ±è´¹ 
+bool operator < (const Node &a, const Node &b) {return a.w > b.w;} //ä»å°åˆ°å¤§æ’åº 
 bool vis[MAXN];
 priority_queue <Node> q;
 
-void add (int from, int to, int w, int c) //½¨±ß 
+void add (int from, int to, int w, int c) //å»ºè¾¹ 
 {
     edge[++idx].nxt = head[from];edge[idx].to = to;edge[idx].w = w;edge[idx].c = c;
     head[from] = idx;
@@ -29,13 +29,13 @@ void init ()
         long long v[105];
         scanf ("%d%d", &w, &k);
         for (int j = 1; j <= k; j++)    scanf ("%lld", &v[j]);
-        //´ÓÇ°ÖÁºó½¨±ß 
+        //ä»å‰è‡³åå»ºè¾¹ 
         for (int x = 1; x <= k; x++)
-        for (int y = x + 1; y <= k; y++)    add (v[x], v[y], w, y - x); //½¨Ò»ÌõÁ¬½Óv[x]¡¢v[y]·ÑÓÃÎªwÂ·¾¶³¤Îªy - xµÄ±ß 
+        for (int y = x + 1; y <= k; y++)    add (v[x], v[y], w, y - x); //å»ºä¸€æ¡è¿æ¥v[x]ã€v[y]è´¹ç”¨ä¸ºwè·¯å¾„é•¿ä¸ºy - xçš„è¾¹ 
     }
 }
 
-//¶ÑÓÅ»¯dijkstra
+//å †ä¼˜åŒ–dijkstra
 void dijkstar (int s)
 {
     dis[s][0] = dis[s][1] = 0;
@@ -49,16 +49,16 @@ void dijkstar (int s)
         for (int i = head[cur.x]; i != -1; i = edge[i].nxt)
         {
             int to = edge[i].to;
-            if (dis[to][0] > dis[cur.x][0] + edge[i].w) //ÈôÓĞ¸üĞ¡µÄ»¨·Ñ£¬Ôò¸üĞÂ 
+            if (dis[to][0] > dis[cur.x][0] + edge[i].w) //è‹¥æœ‰æ›´å°çš„èŠ±è´¹ï¼Œåˆ™æ›´æ–° 
             {
                 dis[to][0] = dis[cur.x][0] + edge[i].w;
                 dis[to][1] = dis[cur.x][1] + edge[i].c;
                 if (vis[to])    continue;
-                q.push (Node {to, dis[to][0]}); //Èë¶ÓÊÇÈë±àºÅºÍ»¨·Ñ 
+                q.push (Node {to, dis[to][0]}); //å…¥é˜Ÿæ˜¯å…¥ç¼–å·å’ŒèŠ±è´¹ 
             }
-            if (dis[to][0] == dis[cur.x][0] + edge[i].w) //¼ÇµÃÌØÅĞ·ÑÓÃµÈÓÚµÄÇé¿ö 
+            if (dis[to][0] == dis[cur.x][0] + edge[i].w) //è®°å¾—ç‰¹åˆ¤è´¹ç”¨ç­‰äºçš„æƒ…å†µ 
             {
-                dis[to][1] = min (dis[to][1], dis[cur.x][1] + edge[i].c);//·ÑÓÃµÈÓÚÈ¡Â·¾¶³¤¶ÈĞ¡µÄ 
+                dis[to][1] = min (dis[to][1], dis[cur.x][1] + edge[i].c);//è´¹ç”¨ç­‰äºå–è·¯å¾„é•¿åº¦å°çš„ 
                 if (vis[to])    continue;
                 q.push (Node {to, dis[to][0]});
             }
@@ -68,14 +68,14 @@ void dijkstar (int s)
 
 void output ()
 {
-    if (dis[fi][0] == INF)  printf ("-1 -1"); //²»ÄÜµ½´ï 
+    if (dis[fi][0] == INF)  printf ("-1 -1"); //ä¸èƒ½åˆ°è¾¾ 
     else                    printf ("%lld %lld", dis[fi][0], dis[fi][1]);
 }
 
 int main ()
 {
-    init ();        //ÊäÈë 
-    dijkstar (st);  //×î¶ÌÂ· 
-    output ();      //Êä³ö 
+    init ();        //è¾“å…¥ 
+    dijkstar (st);  //æœ€çŸ­è·¯ 
+    output ();      //è¾“å‡º 
     return 0;
 }

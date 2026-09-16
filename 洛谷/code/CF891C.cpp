@@ -44,7 +44,7 @@ bool querycmp(Query a,Query b){
 
 int find(int i) {
     while (i != fa[i]) {
-        i = fa[i];//Ã»ÓĞ±âÆ½»¯
+        i = fa[i];//æ²¡æœ‰æ‰å¹³åŒ–
     }
     return i;
 }
@@ -59,7 +59,7 @@ void un(int x, int y) {
     }
     fa[fy] = fx;
     sz[fx] += sz[fy];
-    //½«²Ù×÷ÈëÕ»
+    //å°†æ“ä½œå…¥æ ˆ
     sta[++top][0] = fx;
     sta[top][1] = fy;
 }

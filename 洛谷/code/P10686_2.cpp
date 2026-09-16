@@ -1,5 +1,5 @@
 // https://www.luogu.com.cn/problem/P10686
-#include<bits/stdc++.h>//ÍòÄÜÍ·
+#include<bits/stdc++.h>//ä¸‡èƒ½å¤´
 using namespace std;
 const int N=5e6+10;
 
@@ -7,17 +7,17 @@ struct T{
 	int a,b,c;
 }t[N];
 
-int n,m,fa[N],ans1,ans2,ansnum;//ans1ÊÇ²ÃÅĞ£¬ans2ÊÇÂÖÊı£¬ansnumÊÇÍ³¼Æ²ÃÅĞµÄ¸öÊı
+int n,m,fa[N],ans1,ans2,ansnum;//ans1æ˜¯è£åˆ¤ï¼Œans2æ˜¯è½®æ•°ï¼Œansnumæ˜¯ç»Ÿè®¡è£åˆ¤çš„ä¸ªæ•°
 
-inline void init(){//³õÊ¼»¯²¢²é¼¯
+inline void init(){//åˆå§‹åŒ–å¹¶æŸ¥é›†
 	for(int i=1;i<=3*n;i++)	fa[i]=i;
 }
 
-inline int find(int x){//²éÑ¯
+inline int find(int x){//æŸ¥è¯¢
 	return x==fa[x]?x:fa[x]=find(fa[x]);
 }
 
-inline void noin(int x,int y){//ºÏ²¢
+inline void noin(int x,int y){//åˆå¹¶
 	fa[find(x)]=find(y);
 }
 
@@ -26,49 +26,49 @@ int main(){
 		cin>>m;
 		ans1=0,ans2=0,ansnum=0;
 		init();
-		if(m==0){	printf("Player 0 can be determined to be the judge after 0 lines\n");continue;}//ÌØÅĞÒ»ÏÂ
+		if(m==0){	printf("Player 0 can be determined to be the judge after 0 lines\n");continue;}//ç‰¹åˆ¤ä¸€ä¸‹
 		for(int i=1;i<=m;i++){
 			char s;
 			cin>>t[i].a>>s>>t[i].b;
-			t[i].a++,t[i].b++;//È¥µôĞ¡ÅóÓÑÎª0µÄÇé¿ö
+			t[i].a++,t[i].b++;//å»æ‰å°æœ‹å‹ä¸º0çš„æƒ…å†µ
 			if(s=='>') t[i].c=1;
 			if(s=='=') t[i].c=2;
-			if(s=='<'){//Í³Ò» ³É'>'
+			if(s=='<'){//ç»Ÿä¸€ æˆ'>'
 				t[i].c=1;
 				swap(t[i].a,t[i].b);
 			}
 		}
-		for(int i=1;i<=n;i++){//Ã¶¾Ù²ÃÅĞ
-			int flag=1;//¼ÇÂ¼ÊÇ·ñ´æÔÚ²ÃÅĞ
-			init();//³õÊ¼»¯
+		for(int i=1;i<=n;i++){//æšä¸¾è£åˆ¤
+			int flag=1;//è®°å½•æ˜¯å¦å­˜åœ¨è£åˆ¤
+			init();//åˆå§‹åŒ–
 			for(int j=1;j<=m;j++){
 				if(t[j].a==i||t[j].b==i)	continue;
-				if(t[j].c==2){//Æ½¾Ö
-//					if(t[j].a==t[j].b)	continue;//Òª²»Òª¶¼Ò»ÑùµÄ(*/¦Ø£Ü*)
+				if(t[j].c==2){//å¹³å±€
+//					if(t[j].a==t[j].b)	continue;//è¦ä¸è¦éƒ½ä¸€æ ·çš„(*/Ï‰ï¼¼*)
 					if((find(t[j].a)==find(t[j].b+n))||(find(t[j].a+n)==find(t[j].b))){
-						flag=0;//Ã»ÓĞ²ÃÅĞ
-						ans2=max(ans2,j);break;//¼ÇÂ¼ÂÖÊı
+						flag=0;//æ²¡æœ‰è£åˆ¤
+						ans2=max(ans2,j);break;//è®°å½•è½®æ•°
 					}
 					noin(t[j].a,t[j].b);
 					noin(t[j].a+n,t[j].b+n);
 					noin(t[j].a+2*n,t[j].b+2*n);
 				}
-				if(t[j].c==1){//'>'µÄÇé¿ö(ÒÑ´¦Àí¹ı'<'µÄÇé¿öÁË)
+				if(t[j].c==1){//'>'çš„æƒ…å†µ(å·²å¤„ç†è¿‡'<'çš„æƒ…å†µäº†)
 					if((find(t[j].a)==find(t[j].b))||(find(t[j].a)==find(t[j].b+n))){
-						flag=0;//Ã»ÓĞ²ÃÅĞ
-						ans2=max(ans2,j);break;//¼ÇÂ¼ÂÖÊı
+						flag=0;//æ²¡æœ‰è£åˆ¤
+						ans2=max(ans2,j);break;//è®°å½•è½®æ•°
 					}
 					noin(t[j].a,t[j].b+2*n);
 					noin(t[j].a+n,t[j].b);
 					noin(t[j].a+2*n,t[j].b+n);
 				}
 			}
-			if(flag==1) ansnum++,ans1=i;//´æÔÚ²ÃÅĞ£¬¾Í¼ÇÂ¼´ğ°¸
+			if(flag==1) ansnum++,ans1=i;//å­˜åœ¨è£åˆ¤ï¼Œå°±è®°å½•ç­”æ¡ˆ
 		//	cout<<ansnum<<'\n';
 		}
-		if(ansnum==1)	printf("Player %d can be determined to be the judge after %d lines\n",ans1-1,ans2);//ÒòÎªÎÒÃÇ×î¿ªÊ¼°ÑĞ¡ÅóÓÑ¶à¼ÓÁË 1£¬ËùÒÔ´ËÊ±»¹Ô­¼õ 1
-		else if(ansnum>1)	printf("Can not determine\n");//´æÔÚ¶à¸ö²ÃÅĞ
-		else	printf("Impossible\n");//ÕÒ²»µ½²ÃÅĞ
+		if(ansnum==1)	printf("Player %d can be determined to be the judge after %d lines\n",ans1-1,ans2);//å› ä¸ºæˆ‘ä»¬æœ€å¼€å§‹æŠŠå°æœ‹å‹å¤šåŠ äº† 1ï¼Œæ‰€ä»¥æ­¤æ—¶è¿˜åŸå‡ 1
+		else if(ansnum>1)	printf("Can not determine\n");//å­˜åœ¨å¤šä¸ªè£åˆ¤
+		else	printf("Impossible\n");//æ‰¾ä¸åˆ°è£åˆ¤
 	}
 	return 0;
 }

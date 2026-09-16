@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// ¾ØÕóÏà³Ë
+// çŸ©é˜µç›¸ä¹˜
 void multiply(int** a, int** b, int** result, int n, int m, int p) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < p; j++) {
@@ -12,8 +12,8 @@ void multiply(int** a, int** b, int** result, int n, int m, int p) {
         }
     }
 }
-//Õâ¶Î´úÂëÃ»ÓĞ·µ»ØÖµ£¬ÎÒÃÇ¸üÍÆ¼öÊ¹ÓÃÏÂÃæµÄ´úÂë
-//¾ØÕóaÊÇn*mĞÍ   bÊÇm*pĞÍ
+//è¿™æ®µä»£ç æ²¡æœ‰è¿”å›å€¼ï¼Œæˆ‘ä»¬æ›´æ¨èä½¿ç”¨ä¸‹é¢çš„ä»£ç 
+//çŸ©é˜µaæ˜¯n*må‹   bæ˜¯m*på‹
 
 /*
 int ** multiply(int** a, int** b, int n, int m, int p) {
@@ -30,7 +30,7 @@ int ** multiply(int** a, int** b, int n, int m, int p) {
 }
 */
 
-// ´òÓ¡¶şÎ¬¾ØÕó
+// æ‰“å°äºŒç»´çŸ©é˜µ
 void print(int** m, int n, int p) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < p; j++) {
@@ -40,7 +40,7 @@ void print(int** m, int n, int p) {
     }
 }
 
-// ¶¯Ì¬·ÖÅä¶şÎ¬Êı×é
+// åŠ¨æ€åˆ†é…äºŒç»´æ•°ç»„
 int** createMatrix(int rows, int cols) {
     int** matrix = (int**)malloc(rows * sizeof(int*));
     for (int i = 0; i < rows; i++) {
@@ -49,7 +49,7 @@ int** createMatrix(int rows, int cols) {
     return matrix;
 }
 
-// ÊÍ·Å¶şÎ¬Êı×é
+// é‡Šæ”¾äºŒç»´æ•°ç»„
 void freeMatrix(int** matrix, int rows) {
     for (int i = 0; i < rows; i++) {
         free(matrix[i]);
@@ -59,33 +59,33 @@ void freeMatrix(int** matrix, int rows) {
 
 int main() {
     int n, m, p;
-    scanf("%d %d %d", &n, &m, &p); // ¶ÁÈ¡¾ØÕóAµÄnĞĞmÁĞºÍ¾ØÕóBµÄmĞĞpÁĞ
+    scanf("%d %d %d", &n, &m, &p); // è¯»å–çŸ©é˜µAçš„nè¡Œmåˆ—å’ŒçŸ©é˜µBçš„mè¡Œpåˆ—
 
     int** a = createMatrix(n, m);
     int** b = createMatrix(m, p);
     int** result = createMatrix(n, p);
 
-    // ÊäÈë¾ØÕóA
+    // è¾“å…¥çŸ©é˜µA
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
             scanf("%d", &a[i][j]);
         }
     }
 
-    // ÊäÈë¾ØÕóB
+    // è¾“å…¥çŸ©é˜µB
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < p; j++) {
             scanf("%d", &b[i][j]);
         }
     }
 
-    // ¾ØÕóÏà³Ë
+    // çŸ©é˜µç›¸ä¹˜
     multiply(a, b, result, n, m, p);
 
-    // ´òÓ¡½á¹û
+    // æ‰“å°ç»“æœ
     print(result, n, p);
 
-    // ÊÍ·ÅÄÚ´æ
+    // é‡Šæ”¾å†…å­˜
     freeMatrix(a, n);
     freeMatrix(b, m);
     freeMatrix(result, n);

@@ -1,5 +1,5 @@
 // https://www.luogu.com.cn/problem/P1032
-//P1032 ×Ö´®±ä»»
+//P1032 å­—ä¸²å˜æ¢
 #include <bits/stdc++.h>
 using namespace std;
 #define il inline
@@ -8,23 +8,23 @@ typedef long long ll;
 
 string a,b;
 
-struct Node {//ÓÃÓÚqueueÖĞ´æ·Å£¬Ò»¸öÊÇ×Ö´®£¬Ò»¸öÊÇËÑË÷µÄ¡°Éî¶È¡±
+struct Node {//ç”¨äºqueueä¸­å­˜æ”¾ï¼Œä¸€ä¸ªæ˜¯å­—ä¸²ï¼Œä¸€ä¸ªæ˜¯æœç´¢çš„â€œæ·±åº¦â€
 	string data;
 	int step;
 	Node(string _data,int _step):data(_data),step(_step) {}
 	Node() {}
 };
 queue<Node>q;
-string change[10];//¸Ä³ÉÄÄ¸ö
-string diff[10];//¸ÄÄÄ¸ö
-/*¼´
-ËÑË÷diff[i]
-¸Ä³Échange[i]
+string change[10];//æ”¹æˆå“ªä¸ª
+string diff[10];//æ”¹å“ªä¸ª
+/*å³
+æœç´¢diff[i]
+æ”¹æˆchange[i]
 */
 
-int nxt[10][10000];//kmpµÄnextÊı×é
-map<string,bool>mp;//ÓÃÓÚÅĞÖØ£¬±ÜÃâÖØ¸´ËÑË÷
-il void get_next(int x)//ÕÒnext£¬¾ßÌåµÄ¿ÉÒÔ·­·­ÍøÉÏµÄBlog¡£
+int nxt[10][10000];//kmpçš„nextæ•°ç»„
+map<string,bool>mp;//ç”¨äºåˆ¤é‡ï¼Œé¿å…é‡å¤æœç´¢
+il void get_next(int x)//æ‰¾nextï¼Œå…·ä½“çš„å¯ä»¥ç¿»ç¿»ç½‘ä¸Šçš„Blogã€‚
 {
 	re int i,j=0;
 	for (i=2; i<diff[x].length(); i++) {
@@ -34,21 +34,21 @@ il void get_next(int x)//ÕÒnext£¬¾ßÌåµÄ¿ÉÒÔ·­·­ÍøÉÏµÄBlog¡£
 	}
 }
 
-il void KMP(string a,int x,int step)//Ñ°ÕÒÆ¥ÅäµÄ´®£¬Ë³±ãĞŞ¸Ä²¢Ìí¼Óµ½queueÖĞ
+il void KMP(string a,int x,int step)//å¯»æ‰¾åŒ¹é…çš„ä¸²ï¼Œé¡ºä¾¿ä¿®æ”¹å¹¶æ·»åŠ åˆ°queueä¸­
 {
 	string z=a;
-	a=" "+a;//ÉñÆæµÄ²Ù×÷£¬¡£¡£¡£
+	a=" "+a;//ç¥å¥‡çš„æ“ä½œï¼Œã€‚ã€‚ã€‚
 	re int i,j=0;
 	for (i=1; i<a.length(); i++) {
 		while (j>0&&diff[x][j+1]!=a[i])	j=nxt[x][j];
 		if (diff[x][j+1]==a[i]) j++;
-		if (j==diff[x].length()-1) {//ÕÒµ½ÁË~
-			re int t= i-diff[x].length()+1;//¼ÇÂ¼Î»ÖÃ
-			string tmp=z.substr(0,t)+change[x]+z.substr(t+diff[x].length()-1);//ĞŞ¸Ä£¨¾Í²»ÓÃreplace£¬£¨ÕæÏã£©£©
+		if (j==diff[x].length()-1) {//æ‰¾åˆ°äº†~
+			re int t= i-diff[x].length()+1;//è®°å½•ä½ç½®
+			string tmp=z.substr(0,t)+change[x]+z.substr(t+diff[x].length()-1);//ä¿®æ”¹ï¼ˆå°±ä¸ç”¨replaceï¼Œï¼ˆçœŸé¦™ï¼‰ï¼‰
 			q.push(Node(tmp,step+1));
-			j=nxt[x][j];//¼ÌĞøÕÒ
+			j=nxt[x][j];//ç»§ç»­æ‰¾
 /*
-µÚÒ»´Î½»ÓÉÓÚÄÔ×Ó²»ºÃ£¬ÕÒÁËÒ»±é¾ÍreturnÁË¡£
+ç¬¬ä¸€æ¬¡äº¤ç”±äºè„‘å­ä¸å¥½ï¼Œæ‰¾äº†ä¸€éå°±returnäº†ã€‚
 */
 		}
 	}
@@ -63,7 +63,7 @@ int main()
 	string t1,t2;
 	while (cin >>t1>>t2) {
 		change[++cn]=t2;
-		diff[cn]=" "+t1;//¼ÌĞøÉñÆæµÄ²Ù×÷
+		diff[cn]=" "+t1;//ç»§ç»­ç¥å¥‡çš„æ“ä½œ
 		get_next(cn);
 	}
 	q.push(Node(a,0));
@@ -71,20 +71,20 @@ int main()
 		Node now=q.front();
 		q.pop();
 		string x=now.data;
-		if (mp[x]) continue;//mapÅĞÖØ
-		mp[x]=1;//±ê¼Ç
-		if (now.step>10) {//ÕÒ²»µ½£¨ÒòÎªbfsÊÇ°´ÕÕstep:1,2,3...À´ÕÒµÄ£¬ËùÒÔÒ»µ©µ½ÁËSTEP11Ê±Ò»¶¨ÎŞ½âÁË£©
+		if (mp[x]) continue;//mapåˆ¤é‡
+		mp[x]=1;//æ ‡è®°
+		if (now.step>10) {//æ‰¾ä¸åˆ°ï¼ˆå› ä¸ºbfsæ˜¯æŒ‰ç…§step:1,2,3...æ¥æ‰¾çš„ï¼Œæ‰€ä»¥ä¸€æ—¦åˆ°äº†STEP11æ—¶ä¸€å®šæ— è§£äº†ï¼‰
 			puts("NO ANSWER!");
 			exit(0);
 		}
-		if (x==b) {//ÕÒµ½£¬ÓÉÓÚËÑË÷ÓĞĞò£¬stepÒ»¶¨ÊÇ×îĞ¡µÄ
+		if (x==b) {//æ‰¾åˆ°ï¼Œç”±äºæœç´¢æœ‰åºï¼Œstepä¸€å®šæ˜¯æœ€å°çš„
 			cout << now.step<<endl;
 			exit(0);
 		}
-		for (re int i=1; i<=cn; i++) {//Ã¶¾ÙËùÓĞÄ£Ê½´®£¬Æ¥ÅäÎÄ±¾´®
+		for (re int i=1; i<=cn; i++) {//æšä¸¾æ‰€æœ‰æ¨¡å¼ä¸²ï¼ŒåŒ¹é…æ–‡æœ¬ä¸²
 			KMP(x,i,now.step);
 		}
 	}
-	puts("NO ANSWER!");//×îºóÓÉÓÚmapµÄÅĞÖØ£¬¿ÉÄÜµ¼ÖÂqueueÎª¿Õ£¬ÓÚÊÇµ½´ïÕâÀïµÄÊı¾İ¿Ï¶¨ÊÇÎŞ½âµÄ
+	puts("NO ANSWER!");//æœ€åç”±äºmapçš„åˆ¤é‡ï¼Œå¯èƒ½å¯¼è‡´queueä¸ºç©ºï¼Œäºæ˜¯åˆ°è¾¾è¿™é‡Œçš„æ•°æ®è‚¯å®šæ˜¯æ— è§£çš„
 	exit(0);
 }

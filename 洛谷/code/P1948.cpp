@@ -47,7 +47,7 @@ bool check(int limit)
             int v=to[i];
             int w=weight[i]>limit?1:0;
             if (dis[u] + w < dis[v]) {
-                //如果值变小了  那么就要改变
+                //濡傛灉鍊煎彉灏忎簡  閭ｄ箞灏辫鏀瑰彉
                 dis[v] = dis[u] + w;
                 if (!vis[v]) {
                     q.push(v);

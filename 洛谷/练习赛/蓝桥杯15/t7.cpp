@@ -5,8 +5,8 @@ const int MAXN = 1e5+5;
 
 int n,k;
 struct node{
-    int min,minpos;//±íÊ¾´Î´óÖµ  ÒÔ¼°×îĞ¡µÄÎ»ÖÃ
-    int mmax,maxpos;//±íÊ¾×î´óÖµ  ÒÔ¼°×îĞ¡µÄÎ»ÖÃ
+    int min,minpos;//è¡¨ç¤ºæ¬¡å¤§å€¼  ä»¥åŠæœ€å°çš„ä½ç½®
+    int mmax,maxpos;//è¡¨ç¤ºæœ€å¤§å€¼  ä»¥åŠæœ€å°çš„ä½ç½®
     int l,r;
 }tree[MAXN<<2];
 int arr[MAXN];

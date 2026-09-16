@@ -7,7 +7,7 @@ const int MAXN = 5e5+5;
 int n;
 int val[MAXN];
 int f[MAXN];
-bool leaf[MAXN];//是否是叶节点
+bool leaf[MAXN];//鏄惁鏄彾鑺傜偣
 int son[MAXN];
 int flag;
 

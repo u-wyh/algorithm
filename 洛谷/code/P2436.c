@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// 定义结构体和比较函数用于qsort
+// 瀹氫箟缁撴瀯浣撳拰姣旇緝鍑芥暟鐢ㄤ簬qsort
 typedef struct {
     int x, y;
 } sb;

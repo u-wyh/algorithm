@@ -94,12 +94,12 @@ signed main()
     int ans=0;
     for(int i=1;i<=n;i++){
         if(last[arr[i]]==0){
-            //ËµÃ÷µÚÒ»´Î³öÏÖ  ²»ÓÃ±ä»¯
+            //è¯´æ˜ç¬¬ä¸€æ¬¡å‡ºç°  ä¸ç”¨å˜åŒ–
             update(i,val[arr[i]],1,n,1);
             last[arr[i]]=i;
         }
         else if(pre[arr[i]]==0){
-            //µÚ¶ş´Î³öÏÖ
+            //ç¬¬äºŒæ¬¡å‡ºç°
             update(last[arr[i]],-val[arr[i]],1,n,1);
             update(i,val[arr[i]],1,n,1);
             pre[arr[i]]=last[arr[i]];

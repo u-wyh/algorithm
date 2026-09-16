@@ -8,8 +8,8 @@ using namespace std;
 int n,m;
 struct edge{
 	int to,nxt;
-}e[50005];//Ê¹ÓÃÁ´Ê½Ç°ÏòĞÇ´æÍ¼
-int hed[50005],cnt;//×¢ÒâÃ¿×éÊı¾İ¿ªÊ¼Ç°Òª°ÑhedºÍcntÊı×éÇåÁã
+}e[50005];//ä½¿ç”¨é“¾å¼å‰å‘æ˜Ÿå­˜å›¾
+int hed[50005],cnt;//æ³¨æ„æ¯ç»„æ•°æ®å¼€å§‹å‰è¦æŠŠhedå’Œcntæ•°ç»„æ¸…é›¶
 
 inline void add(int u,int v){
 	e[++cnt].to = v;
@@ -17,22 +17,22 @@ inline void add(int u,int v){
 	hed[u] = cnt;
 }
 
-bool vis[1005];//¼ÇµÃÇåÁã
+bool vis[1005];//è®°å¾—æ¸…é›¶
 
 struct node{
-	int tp,dis;//tp:µ±Ç°µãµÄ±àºÅ;dis:´ÓÆğµãµ½Õâ¸öµãµÄ¾àÀë
+	int tp,dis;//tp:å½“å‰ç‚¹çš„ç¼–å·;dis:ä»èµ·ç‚¹åˆ°è¿™ä¸ªç‚¹çš„è·ç¦»
 };
 
-int ans = -1;//×îÖÕµÄ´ğ°¸
+int ans = -1;//æœ€ç»ˆçš„ç­”æ¡ˆ
 inline void bfs(int s){
 	queue<node> q;
-	q.push((node){s,0});//³õÊ¼×´Ì¬
+	q.push((node){s,0});//åˆå§‹çŠ¶æ€
 	vis[s] = true;
 	while(!q.empty()){
 		node fr = q.front();
 		q.pop();
 		int u = fr.tp,dis = fr.dis;
-		ans = max(ans,dis);//ÔÚ±éÀúÃ¿¸öµãµÄÊ±ºò¸üĞÂ´ğ°¸
+		ans = max(ans,dis);//åœ¨éå†æ¯ä¸ªç‚¹çš„æ—¶å€™æ›´æ–°ç­”æ¡ˆ
 		for(int i = hed[u];i;i = e[i].nxt){
 			int v = e[i].to;
 			if(vis[v]) continue;
@@ -45,16 +45,16 @@ int main(){
 	while(true){
 		scanf("%d%d",&n,&m);
 		if(n==0 && m==0) break;
-		ans = -1;//ÇåÁã
+		ans = -1;//æ¸…é›¶
 		memset(hed,0,sizeof(hed));
 		cnt = 0;
 		int u,v;
 		for(register int i = 1;i<=m;++i){
 			scanf("%d%d",&u,&v);
-			add(u,v),add(v,u);//¼ÓË«Ïò±ß
+			add(u,v),add(v,u);//åŠ åŒå‘è¾¹
 		}
-		for(register int i = 1;i<=n;++i){//ÒÔiÎªÆğµã½øĞĞbfs
-			memset(vis,false,sizeof(vis));//Ã¿´Îbfs¿ªÊ¼Ç°½øĞĞÇåÁã
+		for(register int i = 1;i<=n;++i){//ä»¥iä¸ºèµ·ç‚¹è¿›è¡Œbfs
+			memset(vis,false,sizeof(vis));//æ¯æ¬¡bfså¼€å§‹å‰è¿›è¡Œæ¸…é›¶
 			bfs(i);
 		}
 		printf("%d\n",ans*100);

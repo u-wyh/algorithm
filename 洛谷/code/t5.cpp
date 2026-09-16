@@ -1,4 +1,4 @@
-// ÅĞ¶Ï¸ø³öµÄÍ¼ÊÇ²»ÊÇÒ»¿ÃÊ÷
+// åˆ¤æ–­ç»™å‡ºçš„å›¾æ˜¯ä¸æ˜¯ä¸€æ£µæ ‘
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 10;
@@ -6,7 +6,7 @@ const int MAXN = 10;
 int n,m;
 vector<pair<int,int>>edge[MAXN];
 bool vis[MAXN];
-bool flag=true;//±íÊ¾ÅĞ¶ÏÊÇ²»ÊÇÒ»¿ÃÊ÷
+bool flag=true;//è¡¨ç¤ºåˆ¤æ–­æ˜¯ä¸æ˜¯ä¸€æ£µæ ‘
 
 void dfs(int u,int fa){
     if(vis[u]){
@@ -15,7 +15,7 @@ void dfs(int u,int fa){
     }
     vis[u]=true;
     if(!flag){
-        //¼ôÖ¦  ±íÊ¾ÒÑ¾­Óöµ½»·ÁË Ã»ÓĞ±ØÒª¼ÌĞødfs
+        //å‰ªæ  è¡¨ç¤ºå·²ç»é‡åˆ°ç¯äº† æ²¡æœ‰å¿…è¦ç»§ç»­dfs
         return ;
     }
     for(int i=0;i<(int)edge[u].size();i++){
@@ -37,24 +37,24 @@ int main()
         edge[v].push_back({u,w});
     }
     if(m!=n-1){
-        //±ßµÄÒªÇó²»·ûºÏ
-        cout<<"²»ÊÇÒ»¿ÃÊ÷"<<endl;
+        //è¾¹çš„è¦æ±‚ä¸ç¬¦åˆ
+        cout<<"ä¸æ˜¯ä¸€æ£µæ ‘"<<endl;
         return 0;
     }
     dfs(1,0);
     if(!flag){
-        //Õâ¸öÁªÍ¨ÇøÓòÖĞ´æÔÚ»·
-        cout<<"²»ÊÇÒ»¿ÃÊ÷"<<endl;
+        //è¿™ä¸ªè”é€šåŒºåŸŸä¸­å­˜åœ¨ç¯
+        cout<<"ä¸æ˜¯ä¸€æ£µæ ‘"<<endl;
         return 0;
     }
     for(int i=1;i<=n;i++){
         if(!vis[i]){
-            //²»Ö¹Ò»¸öÁªÍ¨ÇøÓò
-            cout<<"²»ÊÇÒ»¿ÃÊ÷"<<endl;
+            //ä¸æ­¢ä¸€ä¸ªè”é€šåŒºåŸŸ
+            cout<<"ä¸æ˜¯ä¸€æ£µæ ‘"<<endl;
             return 0;
         }
     }
-    cout<<"ÊÇÒ»¿ÃÊ÷"<<endl;
+    cout<<"æ˜¯ä¸€æ£µæ ‘"<<endl;
     return 0;
 }
 /*

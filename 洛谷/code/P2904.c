@@ -28,8 +28,8 @@ int main()
         f[i]=INT_MAX;
     for (int i = 1; i <= n; i++) {
         for (int j = i; j <= n; j++) {
-            if (f[j - i] != INT_MAX) { // 确保f[j-i]不是无限大才进行更新
-                f[j] = min(f[j] , f[j - i] + sum[i]); // 更新f[j]
+            if (f[j - i] != INT_MAX) { // 纭繚f[j-i]涓嶆槸鏃犻檺澶ф墠杩涜鏇存柊
+                f[j] = min(f[j] , f[j - i] + sum[i]); // 鏇存柊f[j]
             }
         }
     }

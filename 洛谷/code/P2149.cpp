@@ -18,7 +18,7 @@ struct edge{
 }el[maxn*maxn],el2[maxn*maxn];
 int E,n,m,head[maxn],nxt[maxn*maxn],x1,y1,x2,y2,d[5][maxn];
 int E2,head2[maxn],nxt2[maxn*maxn],len[maxn],deg[maxn],que[maxn],he,ta;
-//±äÁ¿Ãû´ø2µÄ¶¼ÊÇĞÂ½¨µÄÍ¼µÄĞÅÏ¢¡£
+//å˜é‡åå¸¦2çš„éƒ½æ˜¯æ–°å»ºçš„å›¾çš„ä¿¡æ¯ã€‚
 bool vis[maxn];
 inline int getint(){
     char c;

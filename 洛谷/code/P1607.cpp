@@ -53,7 +53,7 @@ void add(int jobl, int jobr, int jobv, int l, int r, int i) {
         if (jobr > mid) {
             add(jobl, jobr, jobv, mid + 1, r, i << 1 | 1);
         }
-        up(i);//»ã×ÜÐÞ¸ÄÊý¾Ý
+        up(i);//æ±‡æ€»ä¿®æ”¹æ•°æ®
     }
 }
 

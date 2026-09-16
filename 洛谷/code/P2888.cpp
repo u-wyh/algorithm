@@ -16,14 +16,14 @@ void build() {
 }
 
 void floyd() {
-    // O(N^3)µÄ¹ı³Ì
-    // Ã¶¾ÙÃ¿¸öÌø°å
-    // ×¢Òâ£¬Ìø°åÒª×îÏÈÃ¶¾Ù£¡Ìø°åÒª×îÏÈÃ¶¾Ù£¡Ìø°åÒª×îÏÈÃ¶¾Ù£¡
-    for (int bridge = 1; bridge <= n; bridge++) { // Ìø°å
+    // O(N^3)çš„è¿‡ç¨‹
+    // æšä¸¾æ¯ä¸ªè·³æ¿
+    // æ³¨æ„ï¼Œè·³æ¿è¦æœ€å…ˆæšä¸¾ï¼è·³æ¿è¦æœ€å…ˆæšä¸¾ï¼è·³æ¿è¦æœ€å…ˆæšä¸¾ï¼
+    for (int bridge = 1; bridge <= n; bridge++) { // è·³æ¿
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
                 // i -> .....bridge .... -> j
-                // distance[i][j]ÄÜ²»ÄÜËõ¶Ì
+                // distance[i][j]èƒ½ä¸èƒ½ç¼©çŸ­
                 // distance[i][j] = min ( distance[i][j] , distance[i][bridge] + distance[bridge][j])
                 if (dis[i][bridge] != INT_MAX
                     && dis[bridge][j] != INT_MAX) {

@@ -6,7 +6,7 @@ const int mod = 14233333;
 
 int main() {
     ll a = 2, b = 1, now, n;
-    scanf("%lld", &n); // Ê¹ÓÃ %lld Æ¥Åä long long ÀàĞÍµÄÊäÈë
+    scanf("%lld", &n); // ä½¿ç”¨ %lld åŒ¹é… long long ç±»å‹çš„è¾“å…¥
 
     if (n == 1) {
         printf("1\n");
@@ -25,6 +25,6 @@ int main() {
         a = now;
     }
 
-    printf("%lld\n", a); // Êä³ö½á¹û²¢»»ĞĞ
+    printf("%lld\n", a); // è¾“å‡ºç»“æœå¹¶æ¢è¡Œ
     return 0;
 }

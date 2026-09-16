@@ -6,7 +6,7 @@ const int MAXM = 2e5+5;
 const int MAXK = 55;
 
 int n,m,k,mod;
-bool flag=0;//ÅÐ¶ÏÓÐÎÞ0»·
+bool flag=0;//åˆ¤æ–­æœ‰æ— 0çŽ¯
 
 int dis[MAXN];
 int dp[MAXN][MAXK];

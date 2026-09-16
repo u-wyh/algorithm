@@ -18,12 +18,12 @@ void dfs(int u, int f) {
     for (int p = 1; p <= power; p++) {
         stjump[u][p] = stjump[stjump[u][p - 1]][p - 1];
     }
-    //Íê³ÉuµÄdeep  stjump
+    //å®Œæˆuçš„deep  stjump
     for (int e = head[u]; e != 0; e = Next[e]) {
         if (to[e] != f) {
             dfs(to[e], u);
         }
-        //ÏòÏÂµİ¹é
+        //å‘ä¸‹é€’å½’
     }
 }
 
@@ -33,26 +33,26 @@ int lca(int a, int b) {
         a = b;
         b = tmp;
     }
-    //È·¶¨´óĞ¡¹ØÏµ
+    //ç¡®å®šå¤§å°å…³ç³»
     for (int p = power; p >= 0; p--) {
         if (deep[stjump[a][p]] >= deep[b]) {
             a = stjump[a][p];
         }
     }
-    //Ê×ÏÈ½«Á½Õß±äÎªÍ¬Ò»¸ß¶È
+    //é¦–å…ˆå°†ä¸¤è€…å˜ä¸ºåŒä¸€é«˜åº¦
     if (a == b) {
         return a;
     }
-    //Èç¹ûÏàÍ¬ËµÃ÷¾ÍÊÇ×æÏÈ¹ØÏµ
+    //å¦‚æœç›¸åŒè¯´æ˜å°±æ˜¯ç¥–å…ˆå…³ç³»
     for (int p = power; p >= 0; p--) {
         if (stjump[a][p] != stjump[b][p]) {
             a = stjump[a][p];
             b = stjump[b][p];
         }
-        //ÅĞ¶ÏÌøÍêºóÊÇ·ñ·ûºÏ¹æÔò
+        //åˆ¤æ–­è·³å®Œåæ˜¯å¦ç¬¦åˆè§„åˆ™
     }
     return stjump[a][0]==0?root:stjump[a][0];
-    //ÎÒÃÇ½«Í·½áµãµÄ×æÏÈÉèÖÃÎª0  Êµ¼ÊÉÏÃ»ÓĞ0
+    //æˆ‘ä»¬å°†å¤´ç»“ç‚¹çš„ç¥–å…ˆè®¾ç½®ä¸º0  å®é™…ä¸Šæ²¡æœ‰0
 }
 
 int main()

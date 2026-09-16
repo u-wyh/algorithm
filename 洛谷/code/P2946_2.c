@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define p 100000000 // ¶¨Òå³£Êý
+#define p 100000000 // å®šä¹‰å¸¸æ•°
 #define N 2010
 #define F 1010
 
@@ -15,19 +15,19 @@ int main() {
     scanf("%d %d", &n, &f);
     for (i = 1; i <= n; i++) {
         scanf("%d", &r[i]);
-        r[i] %= f; // ÌáÇ°È¡Ä£
+        r[i] %= f; // æå‰å–æ¨¡
     }
 
-    // ³õÊ¼»¯
+    // åˆå§‹åŒ–
     for (i = 1; i <= n; i++) {
         h[i][r[i]] = 1;
     }
 
-    // ¶¯Ì¬¹æ»®¼ÆËã
+    // åŠ¨æ€è§„åˆ’è®¡ç®—
     for (i = 1; i <= n; i++) {
         for (j = 0; j < f; j++) {
             h[i][j] = (h[i][j] + h[i-1][j]) % p;
-            h[i][j] = (h[i][j] + h[i-1][(j - r[i] + f) % f]) % p; // Ã¿¼ÓÒ»´Î¾Í%p
+            h[i][j] = (h[i][j] + h[i-1][(j - r[i] + f) % f]) % p; // æ¯åŠ ä¸€æ¬¡å°±%p
         }
     }
     printf("%lld\n", h[n][0]);

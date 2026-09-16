@@ -5,8 +5,8 @@ const int MAXN = 1e5+5;
 
 int n,k;
 int nums[MAXN];
-int arr[MAXN],m=1;//Ç°×ººÍÊı×é  ÒªÈ¥ÖØ  mÊÇÊµ¼ÊÓĞĞ§Êı×é³¤¶È
-int tree[MAXN];//Ê÷×´Êı×éÍ³¼ÆĞÅÏ¢
+int arr[MAXN],m=1;//å‰ç¼€å’Œæ•°ç»„  è¦å»é‡  mæ˜¯å®é™…æœ‰æ•ˆæ•°ç»„é•¿åº¦
+int tree[MAXN];//æ ‘çŠ¶æ•°ç»„ç»Ÿè®¡ä¿¡æ¯
 
 bool cmp(int a,int b){
     return a>b;
@@ -48,7 +48,7 @@ int main()
     for(int i=1;i<=n;i++){
         cin>>nums[i];
         nums[i]-=k;
-        arr[i]=arr[i-1]+nums[i];//Íê³ÉÇ°×ººÍÊı×éÍ³¼Æ
+        arr[i]=arr[i-1]+nums[i];//å®Œæˆå‰ç¼€å’Œæ•°ç»„ç»Ÿè®¡
     }
     sort(arr+1,arr+n+1,cmp);
     for(int i=2;i<=n;i++){

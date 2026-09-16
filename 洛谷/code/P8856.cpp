@@ -14,16 +14,16 @@ void up(int i) {
 
 void lazy(int i, int v) {
     Min[i] += v;
-    add[i] += v;//Õâ¸öÊı×é±íÊ¾ÊÇ·ñÓĞĞÅÏ¢¿ÉÒÔÏòÏÂ´«µİ
+    add[i] += v;//è¿™ä¸ªæ•°ç»„è¡¨ç¤ºæ˜¯å¦æœ‰ä¿¡æ¯å¯ä»¥å‘ä¸‹ä¼ é€’
 }
 
 void down(int i) {
     if (add[i] != 0) {
-        // ·¢×ó
+        // å‘å·¦
         lazy(i << 1, add[i]);
-        // ·¢ÓÒ
+        // å‘å³
         lazy(i << 1 | 1, add[i]);
-        // ¸¸·¶Î§ÀÁĞÅÏ¢Çå¿Õ
+        // çˆ¶èŒƒå›´æ‡’ä¿¡æ¯æ¸…ç©º
         add[i] = 0;
     }
 }
@@ -52,7 +52,7 @@ void Add(int jobl, int jobr, int jobv, int l, int r, int i) {
         if (jobr > mid) {
             Add(jobl, jobr, jobv, mid + 1, r, i << 1 | 1);
         }
-        up(i);//»ã×ÜĞŞ¸ÄÊı¾İ
+        up(i);//æ±‡æ€»ä¿®æ”¹æ•°æ®
     }
 }
 

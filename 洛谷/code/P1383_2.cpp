@@ -4,10 +4,10 @@
 #define int long long
 #define lc tree[p].l
 #define rc tree[p].r
-//ÀÁÈË×©ÓÃ±íÊ¾·¨
+//æ‡’äººç –ç”¨è¡¨ç¤ºæ³•
 using namespace std;
 int m,cnt=1,node;
-//cnt±íÊ¾½Úµã¸öÊı£¬node±íÊ¾¸ù½Úµã¸öÊı
+//cntè¡¨ç¤ºèŠ‚ç‚¹ä¸ªæ•°ï¼Œnodeè¡¨ç¤ºæ ¹èŠ‚ç‚¹ä¸ªæ•°
 int root[10000001];
 struct node{
 	int l;
@@ -15,14 +15,14 @@ struct node{
 	char data;
 	int size;
 }tree[10000001*4];
-//ÈçÉÏ
+//å¦‚ä¸Š
 void change(int &p,int pre,int l,int r,char x){
 	p=++cnt;
 	lc=tree[pre].l;
 	rc=tree[pre].r;
 	tree[p].size=tree[pre].size;
 	tree[p].data=tree[pre].data;
-  //ÏÈ¿ªµã£¬¼Ì³ĞÉÏÒ»¸ö¸ù½Úµã
+  //å…ˆå¼€ç‚¹ï¼Œç»§æ‰¿ä¸Šä¸€ä¸ªæ ¹èŠ‚ç‚¹
 	if(l>r) return;
 	if(l==r){
 		tree[p].data=x;
@@ -31,14 +31,14 @@ void change(int &p,int pre,int l,int r,char x){
 	}
 	if(tree[lc].size==((l+r)>>1)-l+1) change(rc,tree[pre].r,(l+r)>>1+1,r,x);
 	else change(lc,tree[pre].l,l,(l+r)>>1,x);
-  //Í¬ÉÏ
-	tree[p].size=tree[lc].size+tree[rc].size;//µ±Ç°×ÓÊ÷µÄ½Úµã×ÜÊıÎª×ó×ÓÊ÷¼ÓÉÏÓÒ×ÓÊ÷
+  //åŒä¸Š
+	tree[p].size=tree[lc].size+tree[rc].size;//å½“å‰å­æ ‘çš„èŠ‚ç‚¹æ€»æ•°ä¸ºå·¦å­æ ‘åŠ ä¸Šå³å­æ ‘
 }
 char ask(int p,int l,int r,int x){
 	if(l>=r){
 		return tree[p].data;
 	}
-	if(x<=tree[lc].size){//Èç¹ûÒª·ÃÎÊµÄÒ¶×Ó½Úµã±àºÅĞ¡ÓÚ×ó×ÓÊ÷µÄ½Úµã×ÜÊı£¬ÄÇÃ´ta¿Ï¶¨ÔÚ×ó×ÓÊ÷£¬·´Ö®ÔÚÓÒ×ÓÊ÷
+	if(x<=tree[lc].size){//å¦‚æœè¦è®¿é—®çš„å¶å­èŠ‚ç‚¹ç¼–å·å°äºå·¦å­æ ‘çš„èŠ‚ç‚¹æ€»æ•°ï¼Œé‚£ä¹ˆtaè‚¯å®šåœ¨å·¦å­æ ‘ï¼Œåä¹‹åœ¨å³å­æ ‘
 		return ask(lc,l,(l+r)>>1,x);
 	}else{
 		return ask(rc,(l+r)>>1+1,r,x-tree[lc].size);
@@ -59,7 +59,7 @@ signed main(){
 			cin>>x;
 			++node;
 			root[node]=root[node-x-1];
-            //³·ÏúÖ±½ÓĞÂ½¨¸ù½Úµã¾ÍĞĞÁË
+            //æ’¤é”€ç›´æ¥æ–°å»ºæ ¹èŠ‚ç‚¹å°±è¡Œäº†
 		}
 		if(o=='Q'){
 			cin>>x;

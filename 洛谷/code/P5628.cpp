@@ -6,9 +6,9 @@ const int MAXM = 205;
 
 int n,m;
 int sz[MAXN];
-int dp[MAXN][MAXM];//dp[i][j]±íÊ¾µ½i¾àÀë²»µ½jµÄÆÆ»µ
+int dp[MAXN][MAXM];//dp[i][j]è¡¨ç¤ºåˆ°iè·ç¦»ä¸åˆ°jçš„ç ´å
 
-int cnt=2;//ÕâÀïÊÇÎªÁË·½±ã¸ø±ßÌí¼Ó±ßÈ¨
+int cnt=2;//è¿™é‡Œæ˜¯ä¸ºäº†æ–¹ä¾¿ç»™è¾¹æ·»åŠ è¾¹æƒ
 int head[MAXN];
 int Next[MAXN<<1];
 int to[MAXN<<1];
@@ -22,7 +22,7 @@ void addedge(int u,int v){
     head[u]=cnt++;
 }
 
-//½¨Á¢±ßÈ¨
+//å»ºç«‹è¾¹æƒ
 void dfs(int u,int fa){
     sz[u]=1;
     for(int i=head[u];i;i=Next[i]){
@@ -71,7 +71,7 @@ int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0),cout.tie(0);
-    cin>>n>>m;//×îÖÕÊä³öµÄ´ğ°¸ÊÇdp[n][m+1]  mÊµ¼ÊÉÏ¼Ó1
+    cin>>n>>m;//æœ€ç»ˆè¾“å‡ºçš„ç­”æ¡ˆæ˜¯dp[n][m+1]  må®é™…ä¸ŠåŠ 1
     for(int i=1;i<n;i++){
         int u,v;
         cin>>u>>v;

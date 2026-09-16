@@ -19,9 +19,9 @@ int main() {
 
     for (int i = 1; i < (1 << n); i++) {
         for (int j = 0; j < n; j++) {
-            if (i & (1 << j)) { // ÅÐ¶ÏµÚjÎ»ÊÇ²»ÊÇ1
+            if (i & (1 << j)) { // åˆ¤æ–­ç¬¬jä½æ˜¯ä¸æ˜¯1
                 for (int k = 0; k < n; k++) {
-                    if (!(i & (1 << k))) { // ÅÐ¶ÏµÚkÎ»ÊÇ²»ÊÇ0
+                    if (!(i & (1 << k))) { // åˆ¤æ–­ç¬¬kä½æ˜¯ä¸æ˜¯0
                         dp[i] = (dp[i] < dp[i ^ (1 << j)] + a[j][k]) ? dp[i] : dp[i ^ (1 << j)] + a[j][k];
                     }
                 }
@@ -29,11 +29,11 @@ int main() {
         }
     }
 
-    int ans = INT_MAX; // ¼´INT_MAX£¬±íÊ¾×î´óÕûÊý
+    int ans = INT_MAX; // å³INT_MAXï¼Œè¡¨ç¤ºæœ€å¤§æ•´æ•°
     for (int i = 0; i < (1 << n); i++) {
         int cnt = 0;
         for (int j = 0; j < n; j++) {
-            if (!(i & (1 << j))) cnt++; // Í³¼ÆÓÐ¼¸Î»ÊÇ0
+            if (!(i & (1 << j))) cnt++; // ç»Ÿè®¡æœ‰å‡ ä½æ˜¯0
         }
         if (cnt <= m) ans = (ans < dp[i]) ? ans : dp[i];
     }

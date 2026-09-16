@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// ÓÃÓÚqsortµÄ±È½Ïº¯Êı
+// ç”¨äºqsortçš„æ¯”è¾ƒå‡½æ•°
 int compare(const void *a, const void *b) {
     return (*(int*)a - *(int*)b);
 }
 
 int minimumDeviation(int* nums, int numsSize) {
-    // ´´½¨Ò»¸ö×ã¹»´óµÄÊı×éÀ´´æ´¢ËùÓĞ¿ÉÄÜµÄÊı£¨°üÀ¨·­±¶ºóµÄÆæÊı£©
+    // åˆ›å»ºä¸€ä¸ªè¶³å¤Ÿå¤§çš„æ•°ç»„æ¥å­˜å‚¨æ‰€æœ‰å¯èƒ½çš„æ•°ï¼ˆåŒ…æ‹¬ç¿»å€åçš„å¥‡æ•°ï¼‰
     int* temp = (int*)malloc(numsSize * 2 * sizeof(int));
-    if (!temp) return -1; // ÄÚ´æ·ÖÅäÊ§°Ü
+    if (!temp) return -1; // å†…å­˜åˆ†é…å¤±è´¥
 
     int tempSize = 0;
     for (int i = 0; i < numsSize; i++) {
@@ -20,24 +20,24 @@ int minimumDeviation(int* nums, int numsSize) {
         }
     }
 
-    // ¶ÔtempÊı×é½øĞĞÅÅĞò
+    // å¯¹tempæ•°ç»„è¿›è¡Œæ’åº
     qsort(temp, tempSize, sizeof(int), compare);
 
     int ans = temp[tempSize - 1] - temp[0];
 
-    // ÀàËÆÓÚJavaÖĞµÄwhileÑ­»·£¬µ«ÎÒÃÇĞèÒªÊÖ¶¯¸üĞÂ×î´óÖµºÍ×îĞ¡Öµ
+    // ç±»ä¼¼äºJavaä¸­çš„whileå¾ªç¯ï¼Œä½†æˆ‘ä»¬éœ€è¦æ‰‹åŠ¨æ›´æ–°æœ€å¤§å€¼å’Œæœ€å°å€¼
     while (ans > 0 && temp[tempSize - 1] % 2 == 0) {
         int max = temp[tempSize - 1];
-        // ÒÆ³ı×î´óÖµ
+        // ç§»é™¤æœ€å¤§å€¼
         tempSize--;
-        // Ìí¼Ó×î´óÖµµÄÒ»°ë
+        // æ·»åŠ æœ€å¤§å€¼çš„ä¸€åŠ
         temp[tempSize++] = max / 2;
-        // ÖØĞÂÅÅĞòÒÔÕÒµ½ĞÂµÄ×î´óÖµºÍ×îĞ¡Öµ
+        // é‡æ–°æ’åºä»¥æ‰¾åˆ°æ–°çš„æœ€å¤§å€¼å’Œæœ€å°å€¼
         qsort(temp, tempSize, sizeof(int), compare);
         ans = temp[tempSize - 1] - temp[0];
     }
 
-    free(temp); // ÊÍ·Å·ÖÅäµÄÄÚ´æ
+    free(temp); // é‡Šæ”¾åˆ†é…çš„å†…å­˜
     return ans;
 }
 

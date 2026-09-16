@@ -4,11 +4,11 @@ using namespace std;
 int fn[100001],fg[100001],n,k;
 int main(){
 	cin>>n>>k;
-	fn[1]=1;//ÏÈ¸³³õÖµ
+	fn[1]=1;//å…ˆèµ‹åˆå€¼
 	fg[1]=1;
 	for(int i=2;i<=n;i++){
 		fn[i]=(fn[i-1]+fg[i-1])%5000011;
-		if(i>k+1){//ÉÏÃæµÄµİÍÆÊ½
+		if(i>k+1){//ä¸Šé¢çš„é€’æ¨å¼
 			fg[i]=(fg[i-k-1]+fn[i-k-1])%5000011;
 		}
 		else{

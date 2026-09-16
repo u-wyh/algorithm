@@ -12,7 +12,7 @@ int d[MAX_SIZE];
 const int mod = 1e9 + 7;
 
 int main() {
-    int n; // 实际上n在后续代码中未使用，可能是题目描述中的一部分
+    int n; // 瀹為檯涓妌鍦ㄥ悗缁唬鐮佷腑鏈娇鐢紝鍙兘鏄鐩弿杩颁腑鐨勪竴閮ㄥ垎
     scanf("%lld", &n);
     int ma;
     scanf("%lld", &ma);
@@ -45,6 +45,6 @@ int main() {
         kb = (kb + b[i] * d[i]) % mod;
     }
 
-    printf("%lld\n", (ka - kb + mod) % mod); // 特别注意：模意义下的减法
+    printf("%lld\n", (ka - kb + mod) % mod); // 鐗瑰埆娉ㄦ剰锛氭ā鎰忎箟涓嬬殑鍑忔硶
     return 0;
 }

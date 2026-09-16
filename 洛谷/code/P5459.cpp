@@ -11,7 +11,7 @@ const int MAXN = 100002;
 int n, m;
 long long sort_arr[MAXN], tree[MAXN];
 
-// ��״����ģ����룬�����޸�
+// 树状数组模板代码，无需修改
 void add(int i, int c) {
     while (i <= m) {
         tree[i] += c;
@@ -19,7 +19,7 @@ void add(int i, int c) {
     }
 }
 
-// ��״����ģ����룬�����޸�
+// 树状数组模板代码，无需修改
 int sum(int i) {
     int ans = 0;
     while (i > 0) {
@@ -29,7 +29,7 @@ int sum(int i) {
     return ans;
 }
 
-// ���� <= v �����ǰ׺�͵�����
+// 返回 <= v 的最大前缀和的索引
 int ran(long long v) {
     int left = 1, right = m, mid, ans = 0;
     while (left <= right) {
@@ -44,7 +44,7 @@ int ran(long long v) {
     return ans;
 }
 
-// ����ǰ׺�����顢����ȥ�أ���ʼ����״����
+// 构建前缀和数组、排序并去重，初始化树状数组
 void build(const vector<int>& nums) {
     n = nums.size();
     for (int i = 1, j = 0; i <= n; ++i, ++j) {
@@ -60,7 +60,7 @@ void build(const vector<int>& nums) {
     fill(tree + 1, tree + m + 1, 0);
 }
 
-// ���������Χ�ڵĺ͵ĸ���
+// 计算给定范围内的和的个数
 long long  countRangeSum(const vector<int>& nums, long long lower, long long upper) {
     build(nums);
     long long Sum = 0;

@@ -56,7 +56,7 @@ int main()
             }
             while(h1<t1&&arr[maxq[t1-1]]<arr[i]){
                 t1--;
-            }//h<t  保证了如果队列已经是空的  那么不在t--
+            }//h<t  淇濊瘉浜嗗鏋滈槦鍒楀凡缁忔槸绌虹殑  閭ｄ箞涓嶅湪t--
             maxq[t1]=i;
             t1++;
             while(h2<t2&&minq[h2]+low<=i){
@@ -64,7 +64,7 @@ int main()
             }
             while(h2<t2&&arr[minq[t2-1]]>arr[i]){
                 t2--;
-            }//h<t  保证了如果队列已经是空的  那么不在t--
+            }//h<t  淇濊瘉浜嗗鏋滈槦鍒楀凡缁忔槸绌虹殑  閭ｄ箞涓嶅湪t--
             minq[t2]=i;
             t2++;
             ans=max(ans,(arr[maxq[h1]]-arr[minq[h2]])*1.0/(low-1+k));

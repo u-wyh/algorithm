@@ -12,9 +12,9 @@ int dx[] = {1, -1, 0, 0};
 int dy[] = {0, 0, 1, -1};
 bool vis[305][305];
 struct node {
-	int x, y;//×ø±ê
-	int Time;//Ê±¼ä
-	int size;//Ğ¡Ã÷´óĞ¡
+	int x, y;//åæ ‡
+	int Time;//æ—¶é—´
+	int size;//å°æ˜å¤§å°
 };
 bool check(int x, int y, int size)
 {
@@ -40,17 +40,17 @@ void bfs()
 	{
 		node t = q.front();
 		q.pop();
-		if(t.x == n - 2 && t.y == n - 2)//µ½´ïÖÕµã£¬Í£Ö¹ËÑË÷
+		if(t.x == n - 2 && t.y == n - 2)//åˆ°è¾¾ç»ˆç‚¹ï¼Œåœæ­¢æœç´¢
 		{
 			cout << t.Time;
 			return ;
 		}
-		if(t.size != 0)	q.push((node){t.x, t.y, t.Time+1, work(t.Time+1)});//Õ¾×Å²»¶¯
+		if(t.size != 0)	q.push((node){t.x, t.y, t.Time+1, work(t.Time+1)});//ç«™ç€ä¸åŠ¨
 		for(int i=0;i<4;i++)
 		{
 			int X = t.x + dx[i];
 			int Y = t.y + dy[i];
-			if(check(X, Y, t.size))//ÅĞ¶Ï
+			if(check(X, Y, t.size))//åˆ¤æ–­
 			{
 				vis[X][Y] = 1;
 				q.push((node){X, Y, t.Time+1, work(t.Time+1)});

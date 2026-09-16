@@ -13,9 +13,9 @@ struct Edge
     int nexty;
 }edge[200000];
 int head[20000];
-int cnt=0;//Á´Ê½Ç°ÏòĞÇ
+int cnt=0;//é“¾å¼å‰å‘æ˜Ÿ
 
-void add(int a,int b)//´æ±ß
+void add(int a,int b)//å­˜è¾¹
 {
     cnt++;
     edge[cnt].t=b;
@@ -23,25 +23,25 @@ void add(int a,int b)//´æ±ß
     head[a]=cnt;
 }
 
-bool used[20000]={0};//ÊÇ·ñ±éÀú¹ı
-int col[20000]={0};//Ã¿Ò»¸öµãµÄÈ¾É«
-int sum[2];//ºÚ°×Á½ÖÖÈ¾É«¸÷×ÔµÄµãÊı
+bool used[20000]={0};//æ˜¯å¦éå†è¿‡
+int col[20000]={0};//æ¯ä¸€ä¸ªç‚¹çš„æŸ“è‰²
+int sum[2];//é»‘ç™½ä¸¤ç§æŸ“è‰²å„è‡ªçš„ç‚¹æ•°
 
-bool dfs(int node,int color)//È¾É«£¨·µ»Øfalse¼´impossible£©
+bool dfs(int node,int color)//æŸ“è‰²ï¼ˆè¿”å›falseå³impossibleï¼‰
 {
-    if(used[node])//Èç¹ûÒÑ±»È¾¹ıÉ«
+    if(used[node])//å¦‚æœå·²è¢«æŸ“è¿‡è‰²
     {
-        if(col[node]==color)return true;//Èç¹ûÈÔÊÇÔ­À´µÄÑÕÉ«£¬¼´¿ÉĞĞ
-        return false;//·ÇÔ­À´µÄÑÕÉ«£¬¼´²úÉúÁË³åÍ»£¬²»¿ÉĞĞ
+        if(col[node]==color)return true;//å¦‚æœä»æ˜¯åŸæ¥çš„é¢œè‰²ï¼Œå³å¯è¡Œ
+        return false;//éåŸæ¥çš„é¢œè‰²ï¼Œå³äº§ç”Ÿäº†å†²çªï¼Œä¸å¯è¡Œ
     }
-    used[node]=true;//¼ÇÂ¼
-    sum[col[node]=color]++;//ÕâÒ»ÖÖÑÕÉ«µÄ¸öÊı¼Ó1£¬ÇÒ´ËµãµÄÑÕÉ«Ò²¼ÇÂ¼ÏÂÀ´
-    bool tf=true;//ÊÇ·ñ¿ÉĞĞ
-    for(int i=head[node];i!=0&&tf;i=edge[i].nexty)//±éÀú±ß
+    used[node]=true;//è®°å½•
+    sum[col[node]=color]++;//è¿™ä¸€ç§é¢œè‰²çš„ä¸ªæ•°åŠ 1ï¼Œä¸”æ­¤ç‚¹çš„é¢œè‰²ä¹Ÿè®°å½•ä¸‹æ¥
+    bool tf=true;//æ˜¯å¦å¯è¡Œ
+    for(int i=head[node];i!=0&&tf;i=edge[i].nexty)//éå†è¾¹
     {
-        tf=tf&&dfs(edge[i].t,1-color);//ÊÇ·ñ¿ÉÒÔ¼ÌĞøÈ¾É«
+        tf=tf&&dfs(edge[i].t,1-color);//æ˜¯å¦å¯ä»¥ç»§ç»­æŸ“è‰²
     }
-    return tf;//·µ»ØÊÇ·ñÍê³ÉÈ¾É«
+    return tf;//è¿”å›æ˜¯å¦å®ŒæˆæŸ“è‰²
 }
 int main()
 {
@@ -52,20 +52,20 @@ int main()
     {
         scanf("%d%d",&a,&b);
         add(a,b);
-        add(b,a);//´æµÄÊÇÓĞÏò±ß£¬ËùÒÔ´æÁ½´Î
+        add(b,a);//å­˜çš„æ˜¯æœ‰å‘è¾¹ï¼Œæ‰€ä»¥å­˜ä¸¤æ¬¡
     }
     int ans=0;
     for(int i=1;i<=n;i++)
     {
-        if(used[i])continue;//Èç¹û´ËµãÒÑ±»°üº¬ÎªÒ»¸öÒÑ¾­±»±éÀú¹ıµÄ×ÓÍ¼£¬Ôò²»ĞèÖØ¸´±éÀú
-        sum[0]=sum[1]=0;//³õÊ¼»¯
-        if(!dfs(i,0))//Èç¹û²»ÄÜÈ¾É«
+        if(used[i])continue;//å¦‚æœæ­¤ç‚¹å·²è¢«åŒ…å«ä¸ºä¸€ä¸ªå·²ç»è¢«éå†è¿‡çš„å­å›¾ï¼Œåˆ™ä¸éœ€é‡å¤éå†
+        sum[0]=sum[1]=0;//åˆå§‹åŒ–
+        if(!dfs(i,0))//å¦‚æœä¸èƒ½æŸ“è‰²
         {
             printf("Impossible");
-            return 0;//Ö±½ÓÌø³ö
+            return 0;//ç›´æ¥è·³å‡º
         }
-        ans+=min(sum[0],sum[1]);//¼ÓÉÏĞ¡µÄÒ»¸ö
+        ans+=min(sum[0],sum[1]);//åŠ ä¸Šå°çš„ä¸€ä¸ª
     }
-    printf("%d",ans);//Êä³ö´ğ°¸
+    printf("%d",ans);//è¾“å‡ºç­”æ¡ˆ
     return 0;
 }

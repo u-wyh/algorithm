@@ -33,7 +33,7 @@ int main()
     for (int i = 2; i*i<= b; i++) {
         if (!vis[i]) {
             for (int j = i*i; j <= b; j += i) {
-                vis[j] = 1; // ±ê¼ÇÎªºÏÊý
+                vis[j] = 1; // æ ‡è®°ä¸ºåˆæ•°
             }
         }
     }

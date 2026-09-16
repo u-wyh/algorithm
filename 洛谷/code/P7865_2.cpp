@@ -3,22 +3,22 @@
 #include<cstring>
 using namespace std;
 #define max_n 3000
-int n;//ĞĞÊı
-int m;//ÁĞÊı
-int s;//ÎŞÈË»úÊı
-int l;//ÈÎÎñÊı
-int a[max_n+2][max_n+2];//¾ØÕó
-bool ans;//´ğ°¸
+int n;//è¡Œæ•°
+int m;//åˆ—æ•°
+int s;//æ— äººæœºæ•°
+int l;//ä»»åŠ¡æ•°
+int a[max_n+2][max_n+2];//çŸ©é˜µ
+bool ans;//ç­”æ¡ˆ
 int main(){
 	scanf("%d%d",&n,&m);
 	memset(a,0,sizeof(a));
 	scanf("%d",&s);
 	for(register int i=1,x1,y1,x2,y2;i<=s;++i){
 		scanf("%d%d%d%d",&x1,&y1,&x2,&y2);
-		++a[x1][y1];//×óÉÏ
-		++a[x2+1][y2+1];//ÓÒÏÂ
-		--a[x2+1][y1];//×óÏÂ
-		--a[x1][y2+1];//ÓÒÉÏ
+		++a[x1][y1];//å·¦ä¸Š
+		++a[x2+1][y2+1];//å³ä¸‹
+		--a[x2+1][y1];//å·¦ä¸‹
+		--a[x1][y2+1];//å³ä¸Š
 	}
 	for(register int x=1;x<=n;++x){
 		for(register int y=1;y<=m;++y){

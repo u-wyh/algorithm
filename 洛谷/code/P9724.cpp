@@ -9,9 +9,9 @@ const int INF = 1e18;
 int n,m,k,d;
 
 bool vis[MAXN];
-int dis1[MAXN];//n���ýڵ����̾���
-int dis2[MAXN];//k���ýڵ����̾���
-int dis3[MAXN];//�����1������ڵ�����л�����Сֵ
+int dis1[MAXN];//n到该节点的最短距离
+int dis2[MAXN];//k到该节点的最短距离
+int dis3[MAXN];//从起点1到这个节点的所有花费最小值
 int ans=INF;
 
 int head[MAXN];
@@ -112,8 +112,8 @@ void dijkstra(int st,int *dis,bool op) {
             }
             else{
                 if(dis2[v]>=d){
-                    //��ʾ�������ڵ㳬�������ķ�Χ ��ô�������˾ͻ�����ͬһ�����
-                    //��ô����ڵ�ֱ�������·����
+                    //表示如果这个节点超出了他的范围 那么这两个人就会来到同一个起点
+                    //那么这个节点直接跑最短路即可
                     ans=min(ans,dis[u]+getsum(dis1[v]+1));
                 }
                 else if((dis[u]+d-dis2[v])<dis[v]){

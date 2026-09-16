@@ -7,20 +7,20 @@ bool ans[41];
 int a[41][41],pre[41][41],num[41],dis[41],n;
 
 void bfs(int s,int t){
-	memset(num,0,sizeof num),memset(dis,63,sizeof dis);  //  ÍüÁËÇåÊı×é»á±¬0
+	memset(num,0,sizeof num),memset(dis,63,sizeof dis);  //  å¿˜äº†æ¸…æ•°ç»„ä¼šçˆ†0
 	dis[s]=0,q.push(s);
 	while(!q.empty()){
 		s=q.front(),q.pop();
 		for(int i=1;i<=n;i++) if(a[s][i])
 			if(dis[i]>dis[s]+1)
 				dis[i]=dis[s]+1,pre[i][++num[i]]=s,q.push(i);
-			else if(dis[i]==dis[s]+1) pre[i][++num[i]]=s;  //  ·ÖÇé¿ö¼ÇÂ¼Ç°Çı
+			else if(dis[i]==dis[s]+1) pre[i][++num[i]]=s;  //  åˆ†æƒ…å†µè®°å½•å‰é©±
 	}
 	memset(ans,0,sizeof ans),q.push(t),ans[t]=1;
 	while(!q.empty()){
 		s=q.front(),q.pop();
 		for(int i=num[s];i;i--) if(!ans[pre[s][i]])
-			ans[pre[s][i]]=1,q.push(pre[s][i]);  //  µ¹×ÅËÑ»ØÈ¥
+			ans[pre[s][i]]=1,q.push(pre[s][i]);  //  å€’ç€æœå›å»
 	}
 	for(int i=1;i<=n;i++) if(ans[i]) printf("%d ",i);
 }

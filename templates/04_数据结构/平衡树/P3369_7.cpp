@@ -1,37 +1,37 @@
-// ������ʵ��(C++��)
-// ʵ��һ�ֽṹ��֧�����²�����Ҫ�󵥴ε��õ�ʱ�临�Ӷ�O(log n)
-// 1������x���ظ�����������Ƶ
-// 2��ɾ��x������ж����ֻɾ��һ��
-// 3����ѯx��������x������Ϊ����xС�����ĸ���+1
-// 4����ѯ����������Ϊx����
-// 5����ѯx��ǰ����x��ǰ��Ϊ��С��x�������������������ڷ���������Сֵ
-// 6����ѯx�ĺ�̣�x�ĺ��Ϊ������x��������С�����������ڷ����������ֵ
-// ���в����Ĵ��� <= 10^5
+// 跳表的实现(C++版)
+// 实现一种结构，支持如下操作，要求单次调用的时间复杂度O(log n)
+// 1，增加x，重复加入算多个词频
+// 2，删除x，如果有多个，只删掉一个
+// 3，查询x的排名，x的排名为，比x小的数的个数+1
+// 4，查询数据中排名为x的数
+// 5，查询x的前驱，x的前驱为，小于x的数中最大的数，不存在返回整数最小值
+// 6，查询x的后继，x的后继为，大于x的数中最小的数，不存在返回整数最大值
+// 所有操作的次数 <= 10^5
 // -10^7 <= x <= +10^7
-// �������� : https://www.luogu.com.cn/problem/P3369
-// ����ʵ����C++�İ汾��C++�汾��java�汾�߼���ȫһ��
-// �ύ���´��룬����ͨ�����в�������
+// 测试链接 : https://www.luogu.com.cn/problem/P3369
+// 如下实现是C++的版本，C++版本和java版本逻辑完全一样
+// 提交如下代码，可以通过所有测试用例
 #include <bits/stdc++.h>
 
 using namespace std;
 
 const int MAXL = 20;
-//���ֵ��ѡȡ�� 2��MAXL�η� ��  ��ӽ�����MAXN����Сֵ
+//这个值的选取是 2的MAXL次方 是  最接近大于MAXN的最小值
 const int MAXN = 100001;
 
-int cnt;//���ڼ�¼�ڵ��� ��AVLһ��
-int key[MAXN];//���ڼ�¼��ǰ�ڵ��Ӧ�ļ�ֵ�Ƕ���
-int key_count[MAXN];//���ڼ�¼��ǰֵ�����˶��ٴ�
-int level[MAXN];//���ڼ�¼�ýڵ�����ж��ٲ�   ��ʼʱ�������
-int next_node[MAXN][MAXL + 1];//���ڼ�¼�ýڵ�ĵ�i��ָ�����һ���ڵ���ʲô
-int len[MAXN][MAXL + 1];//��¼�ýڵ�ĵ�i�㵽��һ������֮���ж��ٸ�����  ��Ӧ��һ������ָ���  ���ұ�
+int cnt;//用于记录节点编号 和AVL一样
+int key[MAXN];//用于记录当前节点对应的键值是多少
+int key_count[MAXN];//用于记录当前值出现了多少次
+int level[MAXN];//用于记录该节点最多有多少层   初始时随机生成
+int next_node[MAXN][MAXL + 1];//用于记录该节点的第i层指向的下一个节点是什么
+int len[MAXN][MAXL + 1];//记录该节点的第i层到下一个数字之间有多少个数字  对应第一层的数字个数  左开右闭
 
 void build() {
     cnt = 1;
-    key[cnt] = INT_MIN;//��һ���ڵ�ı����Զ��1
-    level[cnt] = MAXL;//���Ĳ���ֱ������Ϊ����
+    key[cnt] = INT_MIN;//第一个节点的编号永远记1
+    level[cnt] = MAXL;//它的层数直接设置为最多层
 }
-//��ʼ����ͷ  ���ű� Խ���� ֵԽ��
+//初始化表头  整张表 越往右 值越大
 
 void clear() {
     memset(key + 1, 0, cnt * sizeof(int));
@@ -45,7 +45,7 @@ void clear() {
 }
 
 int randomLevel() {
-    //��������½ڵ�Ĳ���ֵ ������Զ�������
+    //随机生成新节点的层数值 并且永远不会更改
     int ans = 1;
     while ((std::rand() / double(RAND_MAX)) < 0.5) {
         ans++;
@@ -53,35 +53,35 @@ int randomLevel() {
     return min(ans, MAXL);
 }
 
-// ��ǰ��i�Žڵ��h�㣬����keyΪnum�Ľڵ㣬�ռ����Ƕ���
+// 当前在i号节点的h层，返回key为num的节点，空间编号是多少
 int find(int i, int h, int num) {
     while (next_node[i][h] != 0 && key[next_node[i][h]] < num) {
-        //�Լ�����һ���ڵ㲻��0  ˵������ָ��Ķ���
-        //����ָ�����һ��ֵС��num ˵������������һ���ϼ�������Ѱ��
-        //��������Щ����
+        //自己的下一个节点不是0  说明还有指向的东西
+        //并且指向的下一个值小于num 说明还可以再这一层上继续往右寻找
+        //和链表有些类似
         i = next_node[i][h];
     }
-    //���while������ ��һ���ڵ�Ҫô��0 ����
-    //Ҫô�Ǵ��ڵ���num������
-    //�����һ�����ִ���num  ��ô˵����Ҫȥ��һ��Ѱ��
-    //��ʹ��һ�����־���num  �����ڲ�����ײ� �����ǵ�һ��
-    //��ô���ǻ�������  ��Ϊ�����϶�������  ����ֻ��Ҫ�ڵ�һ���ҵ��ڵ�
-    //���Ҽ�ʹ��һ���ڵ���ǿ�  ����Ҳ���ڵ�һ���ʱ�������
+    //这个while结束后 下一个节点要么是0 即空
+    //要么是大于等于num的数字
+    //如果下一个数字大于num  那么说明需要去下一层寻找
+    //即使下一个数字就是num  但现在不是最底层 即不是第一层
+    //那么我们还是向下  因为这样肯定错不了  我们只想要在第一层找到节点
+    //并且即使下一个节点就是空  我们也是在第一层的时候结束它
     if (h == 1) {
         if (next_node[i][h] != 0 && key[next_node[i][h]] == num) {
-            //next_node[i][h]��ʾ�ڵ�i�ĵ�h�����һ���ڵ�
+            //next_node[i][h]表示节点i的第h层的下一个节点
             return next_node[i][h];
         } else {
-            //������Ӧ���ҵ�����λ��ȴ����û���ҵ�  ��ô���ǲ�����  ����0
+            //到了最应该找到他的位置却还是没有找到  那么就是不存在  返回0
             return 0;
         }
     }
     return find(i, h - 1, num);
-    //��ǰ�ڵ�һ����С��num��  ��һ��һ���Ǵ��ڵ���num��
-    //�ڵ�ǰ�ڵ�����һ�������
+    //当前节点一定是小于num的  下一个一定是大于等于num的
+    //在当前节点向下一层继续找
 }
 
-// ��ǰ��i�Žڵ��h�㣬num����һ����Ƶ
+// 当前在i号节点的h层，num增加一个词频
 void addCount(int i, int h, int num) {
     while (next_node[i][h] != 0 && key[next_node[i][h]] < num) {
         i = next_node[i][h];
@@ -89,22 +89,22 @@ void addCount(int i, int h, int num) {
     if (h == 1) {
         key_count[next_node[i][h]]++;
     } else {
-        //ֻҪ���ǵ�һ�� ��ô��Ҫ�ݹ�
-        //���Ӵ�Ƶ������ϵ��м�������������Ӱ��
+        //只要不是第一层 那么就要递归
+        //增加词频会对线上的中间数字数量产生影响
         addCount(i, h - 1, num);
     }
     len[i][h]++;
-    //��һ��ʼi�Ѿ�����һ���ڵ���Ǵ��ڵ���num����
-    //��num�ڵ�һ������  ��������Ǵ������� ��ô˵�����ǲ���̫����
-    //���ܲ�����ô�� i��h��������һ���ᾭ��num  ��Ϊ���ұ�
+    //在一开始i已经是下一个节点就是大于等于num的了
+    //该num节点一定存在  所以如果是大于它的 那么说明就是层数太高了
+    //不管层数怎么样 i的h层这条线一定会经过num  因为左开右闭
 }
 
-// ��ǰ��i�Žڵ��h�㣬����ռ���Ϊj�Ľڵ�
-// ����ֵ����i�Žڵ������ֱ���ѿռ���Ϊj�Ľڵ���룬�ײ��ܹ��ж������ֱ�key[j]С
-// ����ֵ����Ҫ����Ϊ������Ҫ�����Ϣ���Ķ�ָ��ĳ�����Ϣ
+// 当前在i号节点的h层，插入空间编号为j的节点
+// 返回值：从i号节点出发，直到把空间编号为j的节点插入，底层总共有多少数字比key[j]小
+// 返回值很重要，因为上游需要这个信息来改动指针的长度信息
 int addNode(int i, int h, int j) {
     int rightCnt = 0;
-    //����ͳ��i�ڵ㵽  ��һ���ڵ���ڵ���key[j] �Ľڵ��м����
+    //用于统计i节点到  下一个节点大于等于key[j] 的节点中间距离
     while (next_node[i][h] != 0 && key[next_node[i][h]] < key[j]) {
         rightCnt += len[i][h];
         i = next_node[i][h];
@@ -112,8 +112,8 @@ int addNode(int i, int h, int j) {
     if (h == 1) {
         next_node[j][h] = next_node[i][h];
         next_node[i][h] = j;
-        len[j][h] = key_count[next_node[j][h]];//ֱ�Ӿ��Ǵ�Ƶ  ��Ϊ������ײ�
-        len[i][h] = key_count[next_node[i][h]];//����ط�Ҳ������1   �Ͼ������½��ڵ�  һ����1
+        len[j][h] = key_count[next_node[j][h]];//直接就是词频  因为这是最底层
+        len[i][h] = key_count[next_node[i][h]];//这个地方也可以是1   毕竟这是新建节点  一定是1
         return rightCnt;
     } else {
         int downCnt = addNode(i, h - 1, j);
@@ -129,7 +129,7 @@ int addNode(int i, int h, int j) {
     }
 }
 
-// ����num���ظ�����������Ƶ
+// 增加num，重复加入算多个词频
 void add(int num) {
     if (find(1, MAXL, num) != 0) {
         addCount(1, MAXL, num);
@@ -141,7 +141,7 @@ void add(int num) {
     }
 }
 
-// ��ǰ��i�Žڵ��h�㣬num����һ����Ƶ
+// 当前在i号节点的h层，num减少一个词频
 void removeCount(int i, int h, int num) {
     while (next_node[i][h] != 0 && key[next_node[i][h]] < num) {
         i = next_node[i][h];
@@ -154,7 +154,7 @@ void removeCount(int i, int h, int num) {
     len[i][h]--;
 }
 
-// ��ǰ��i�Žڵ��h�㣬ɾ���ռ���Ϊj�Ľڵ�
+// 当前在i号节点的h层，删除空间编号为j的节点
 void removeNode(int i, int h, int j) {
     if (h < 1) {
         return;
@@ -171,11 +171,11 @@ void removeNode(int i, int h, int j) {
     removeNode(i, h - 1, j);
 }
 
-// ɾ��x������ж����ֻɾ��һ��
+// 删除x，如果有多个，只删掉一个
 void remove(int num) {
     int j = find(1, MAXL, num);
     if (j != 0) {
-        //�ڵ����
+        //节点存在
         if (key_count[j] > 1) {
             removeCount(1, MAXL, num);
         } else {
@@ -184,7 +184,7 @@ void remove(int num) {
     }
 }
 
-// ��ǰ��i�Žڵ��h�㣬��ѯ�ж��ٸ����ֱ�numС
+// 当前在i号节点的h层，查询有多少个数字比num小
 int small(int i, int h, int num) {
     int rightCnt = 0;
     while (next_node[i][h] != 0 && key[next_node[i][h]] < num) {
@@ -198,12 +198,12 @@ int small(int i, int h, int num) {
     }
 }
 
-// ��ѯnum������
+// 查询num的排名
 int getRank(int num) {
     return small(1, MAXL, num) + 1;
 }
 
-// ��ǰ��i�Žڵ��h�㣬��ѯ������x��key��ʲô
+// 当前在i号节点的h层，查询排名第x的key是什么
 int index(int i, int h, int x) {
     int c = 0;
     while (next_node[i][h] != 0 && c + len[i][h] < x) {
@@ -217,7 +217,7 @@ int index(int i, int h, int x) {
     }
 }
 
-// ��ѯ������x��key��ʲô
+// 查询排名第x的key是什么
 int index(int x) {
     return index(1, MAXL, x);
 }
@@ -233,7 +233,7 @@ int pre(int i, int h, int num) {
     }
 }
 
-// ��ѯnum��ǰ��
+// 查询num的前驱
 int pre(int num) {
     return pre(1, MAXL, num);
 }
@@ -260,7 +260,7 @@ int post(int i, int h, int num) {
     }
 }
 
-// ��ѯnum�ĺ��
+// 查询num的后继
 int post(int num) {
     return post(1, MAXL, num);
 }

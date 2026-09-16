@@ -8,7 +8,7 @@ struct node{
     long long low,high;
 }nums[20005];
 bool un[20005];
-int cnt=1;//记录每次开始的编号
+int cnt=1;//璁板綍姣忔寮�濮嬬殑缂栧彿
 
 int fa[20005];
 

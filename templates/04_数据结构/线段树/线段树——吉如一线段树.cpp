@@ -2,18 +2,18 @@
 using namespace std;
 
 const int MAXN = 100001;
-// �����ʼ�����е�ֵ������ֱ�LOWEST��С��ֵ
-// ������²���ʱjobv����ֵҲ������ֱ�LOWEST��С��ֵ
+// 假设初始数组中的值不会出现比LOWEST还小的值
+// 假设更新操作时jobv的数值也不会出现比LOWEST还小的值
 int LOWEST = -100001;
-// ԭʼ����
+// 原始数组
 int arr[MAXN];
-// �ۼӺ�
+// 累加和
 long sum[MAXN << 2];
-// ���ֵ(���ǲ�ѯ��ϢҲ����������Ϣ�������Ѿ�������)
+// 最大值(既是查询信息也是懒更新信息，课上已经讲解了)
 int Max[MAXN << 2];
-// ���ֵ����
+// 最大值个数
 int cnt[MAXN << 2];
-// �ϸ�δ�ֵ(second max)
+// 严格次大值(second max)
 int sem[MAXN << 2];
 
 void up(int i) {
@@ -33,9 +33,9 @@ void up(int i) {
     }
 }
 
-// һ����û�е߸����δ�ֵ����������Ϣ�·���Ҳ����˵��
-// ���ֵ��ѹ��v������v > �ϸ�δ�ֵ�������
-// sum��max��ô����
+// 一定是没有颠覆掉次大值的懒更新信息下发，也就是说：
+// 最大值被压成v，并且v > 严格次大值的情况下
+// sum和max怎么调整
 void lazy(int i, int v) {
     if (v < Max[i]) {
         sum[i] -= ((long) Max[i] - v) * cnt[i];
@@ -68,7 +68,7 @@ void setMin(int jobl, int jobr, int jobv, int l, int r, int i) {
     if (jobl <= l && r <= jobr && sem[i] < jobv) {
         lazy(i, jobv);
     } else {
-        // 1) ����û��ȫ��
+        // 1) 任务没有全包
         // 2) jobv <= sem[i]
         down(i);
         int mid = (l + r) >> 1;

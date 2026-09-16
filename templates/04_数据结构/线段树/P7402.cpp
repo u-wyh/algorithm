@@ -26,9 +26,9 @@ void up(int u,int mid){
     for(int i=0;i<=1;i++)
 		for(int j=0;j<=1;j++)
 			if(diff[mid]*diff[mid+1]>=0)
-                tree[u][i][j]=tree[u<<1][i][1]+tree[u<<1|1][1][j];//¿ÉÒÔºÏ²¢³ÉÒ»¸öÇø¼ä
+                tree[u][i][j]=tree[u<<1][i][1]+tree[u<<1|1][1][j];//å¯ä»¥åˆå¹¶æˆä¸€ä¸ªåŒºé—´
 			else
-                tree[u][i][j]=max(tree[u<<1][i][0]+tree[u<<1|1][1][j],tree[u<<1][i][1]+tree[u<<1|1][0][j]); //²»ÄÜºÏ²¢³ÉÒ»¸öÇø¼ä
+                tree[u][i][j]=max(tree[u<<1][i][0]+tree[u<<1|1][1][j],tree[u<<1][i][1]+tree[u<<1|1][0][j]); //ä¸èƒ½åˆå¹¶æˆä¸€ä¸ªåŒºé—´
 }
 
 void build(int l,int r,int i){

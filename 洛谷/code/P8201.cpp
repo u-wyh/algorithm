@@ -10,7 +10,7 @@ int st[MAXN][LIMIT];
 int dep[MAXN];
 int nums[MAXN];
 int help[MAXN];
-int val[MAXN];//±íÊ¾´ÓÍ·¶¥µãµ½Õâ¸ö½ÚµãµÄÒì»òÖµ
+int val[MAXN];//è¡¨ç¤ºä»å¤´é¡¶ç‚¹åˆ°è¿™ä¸ªèŠ‚ç‚¹çš„å¼‚æˆ–å€¼
 
 int cnt=0;
 int root[MAXN];
@@ -18,7 +18,7 @@ int ls[MAXT];
 int rs[MAXT];
 int tree[MAXT];
 
-//Á´Ê½Ç°ÏòĞÇ½¨Í¼
+//é“¾å¼å‰å‘æ˜Ÿå»ºå›¾
 int head[MAXN];
 int nxt[MAXN<<1];
 int to[MAXN<<1];

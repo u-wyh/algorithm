@@ -1,18 +1,18 @@
 // https://www.luogu.com.cn/problem/P5146
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h> // ÒıÈëINT_MAXºÍINT_MIN£¬µ«ÔÚÕâ¸öÀı×ÓÖĞÎÒÃÇ²»ĞèÒªËüÃÇ£¬ÒòÎªÎÒÃÇÖ±½ÓÊ¹ÓÃlong longµÄ³£Á¿
+#include <limits.h> // å¼•å…¥INT_MAXå’ŒINT_MINï¼Œä½†åœ¨è¿™ä¸ªä¾‹å­ä¸­æˆ‘ä»¬ä¸éœ€è¦å®ƒä»¬ï¼Œå› ä¸ºæˆ‘ä»¬ç›´æ¥ä½¿ç”¨long longçš„å¸¸é‡
 
 int main() {
     int n;
     long long x = -1e10, y = 1e10;
-    scanf("%d", &n); // Ê¹ÓÃscanf´úÌæcin
+    scanf("%d", &n); // ä½¿ç”¨scanfä»£æ›¿cin
 
     for (int i = 1; i <= n; i++) {
         long long d;
-        scanf("%lld", &d); // Ê¹ÓÃ%lld¶ÁÈ¡long longÀàĞÍµÄÊı
+        scanf("%lld", &d); // ä½¿ç”¨%lldè¯»å–long longç±»å‹çš„æ•°
 
-        // ¸üĞÂxºÍyµÄÖµ
+        // æ›´æ–°xå’Œyçš„å€¼
         if (d - y > x) {
             x = d - y;
         }
@@ -21,6 +21,6 @@ int main() {
         }
     }
 
-    printf("%lld\n", x); // Ê¹ÓÃprintf´úÌæcout£¬²¢Ìí¼Ó»»ĞĞ·û
+    printf("%lld\n", x); // ä½¿ç”¨printfä»£æ›¿coutï¼Œå¹¶æ·»åŠ æ¢è¡Œç¬¦
     return 0;
 }

@@ -20,15 +20,15 @@ int weight[MAXM];
 int cnt=1;
 
 auto compare = [](const pair<int, int>& left, const pair<int, int>& right) {
-    return left.second > right.second; // ×¢ÒâÕâÀïÊÇ´óÓÚ£¬ÒòÎªÎÒÃÇÏëÒªĞ¡¸ù¶Ñ
+    return left.second > right.second; // æ³¨æ„è¿™é‡Œæ˜¯å¤§äºï¼Œå› ä¸ºæˆ‘ä»¬æƒ³è¦å°æ ¹å †
 };
 priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(compare)> heap(compare);
-//³õÊ¼»¯½¨Á¢Ğ¡¸ù¶Ñ
+//åˆå§‹åŒ–å»ºç«‹å°æ ¹å †
 vector<pair<int ,int >>graph[MAXN];
 int dis[MAXN];
-//¼ÇÂ¼µ½Ô´µãµÄ×îĞ¡¾àÀë
+//è®°å½•åˆ°æºç‚¹çš„æœ€å°è·ç¦»
 bool vis[MAXN];
-//¼ÇÂ¼Õâ¸öµãÊÇ·ñ±»·ÃÎÊ¹ı
+//è®°å½•è¿™ä¸ªç‚¹æ˜¯å¦è¢«è®¿é—®è¿‡
 
 void addedge(int u,int v,int w){
     Next[cnt]=head[u];

@@ -5,14 +5,14 @@
 struct travel
 {
     char str[20];
-    int nums;  // ×¢ÒâÕâÀïÌí¼ÓÁË·ÖºÅ
+    int nums;  // æ³¨æ„è¿™é‡Œæ·»åŠ äº†åˆ†å·
 };
 
 int main()
 {
     int n;
     scanf("%d", &n);
-    getchar();  // ¶ÁÈ¡²¢¶ªÆúÖ®Ç°µÄ»»ĞĞ·û
+    getchar();  // è¯»å–å¹¶ä¸¢å¼ƒä¹‹å‰çš„æ¢è¡Œç¬¦
     struct travel t[n+1];
 
     for(int i = 1; i <= n; i++)
@@ -22,7 +22,7 @@ int main()
         scanf("%d", &t[i].nums);
     }
 
-    // Ê¾Àı£º´òÓ¡¶ÁÈ¡µÄÊı¾İ
+    // ç¤ºä¾‹ï¼šæ‰“å°è¯»å–çš„æ•°æ®
     for(int i = 1; i <= n; i++)
     {
         printf("%s %d\n", t[i].str, t[i].nums);

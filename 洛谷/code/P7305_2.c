@@ -13,7 +13,7 @@ int cmp(const void *a,const void *b){
 }
 
 
-// ¼ì²éº¯Êý
+// æ£€æŸ¥å‡½æ•°
 bool check(int x) {
     int t = 1, w = 1, s = 0;
     while (t <= n && w <= m) {
@@ -32,9 +32,9 @@ bool check(int x) {
 
 int main() {
     scanf("%d%d", &n, &m);
-    cnt = (n < m) ? n : m; // Çó³öÒªÇó´ïµ½Ð¬×ÓÊý
+    cnt = (n < m) ? n : m; // æ±‚å‡ºè¦æ±‚è¾¾åˆ°éž‹å­æ•°
     if (cnt == n) {
-        flag = true; // ½øÐÐ±ê¼Ç
+        flag = true; // è¿›è¡Œæ ‡è®°
     } else {
         flag = false;
     }
@@ -47,7 +47,7 @@ int main() {
     qsort(a + 1, n, sizeof(int), cmp);
     qsort(b + 1, m, sizeof(int), cmp);
 
-    // ¶¨Òå±È½Ïº¯Êý
+    // å®šä¹‰æ¯”è¾ƒå‡½æ•°
     int cmp(const void *pa, const void *pb) {
         int a = *(int *)pa;
         int b = *(int *)pb;
@@ -57,14 +57,14 @@ int main() {
     l = 0;
     r = 1e9;
     while (l < r) {
-        mid = l + (r - l) / 2; // ×¢ÒâÕâÀïÓÃÀ¨ºÅ·ÀÖ¹ÕûÊýÒç³ö
+        mid = l + (r - l) / 2; // æ³¨æ„è¿™é‡Œç”¨æ‹¬å·é˜²æ­¢æ•´æ•°æº¢å‡º
         if (check(mid)) {
             r = mid;
         } else {
             l = mid + 1;
         }
     }
-    printf("%d", l); // ×¢ÒâÕâÀïÓ¦¸ÃÊÇl£¬ÒòÎªÎÒÃÇÊÇÔÚËõÐ¡Çø¼äµÄ×ó±ß½ç
+    printf("%d", l); // æ³¨æ„è¿™é‡Œåº”è¯¥æ˜¯lï¼Œå› ä¸ºæˆ‘ä»¬æ˜¯åœ¨ç¼©å°åŒºé—´çš„å·¦è¾¹ç•Œ
 
     return 0;
 }

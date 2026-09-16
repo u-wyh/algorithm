@@ -15,11 +15,11 @@ set<Plan> s;
 int main(){
 	cin>>T;
 	while(T--){
-		char c; scanf(" %c",&c); //¿Õ¸ñ¿ÉÒÔ·ÀÖ¹¶ÁÈëÎŞĞ§×Ö·û
+		char c; scanf(" %c",&c); //ç©ºæ ¼å¯ä»¥é˜²æ­¢è¯»å…¥æ— æ•ˆå­—ç¬¦
 		if(c=='A'){
 			int l,r,cnt=0; scanf("%d %d",&l,&r);
 			Plan tmp=(Plan){l,r};
-            //É¾µôÓë¸ÃÔ¤Ô¼³åÍ»µÄÔ¤Ô¼£¬²¢Í³¼Æ¸öÊı
+            //åˆ æ‰ä¸è¯¥é¢„çº¦å†²çªçš„é¢„çº¦ï¼Œå¹¶ç»Ÿè®¡ä¸ªæ•°
 			set<Plan>::iterator it=s.find(tmp);
 			while(it!=s.end()){
 				++cnt; s.erase(it);

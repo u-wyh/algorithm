@@ -5,20 +5,20 @@ using namespace std;
 
 int testCases;
 string inputString;
-long long dp[110][5000]; // dp[i][j] ±íÊ¾Ç° i ¸ö×Ö·û£¬ºÍÎª j µÄÖÖÀàÊı
+long long dp[110][5000]; // dp[i][j] è¡¨ç¤ºå‰ i ä¸ªå­—ç¬¦ï¼Œå’Œä¸º j çš„ç§ç±»æ•°
 
 int main() {
     cin >> testCases;
-    // ³õÊ¼»¯£ºµ¥¸ö×Ö·ûÊ±£¬Æä ASCII Öµ¼õÈ¥ 'a' µÄ½á¹û¼´Îª¶ÔÓ¦µÄºÍ
+    // åˆå§‹åŒ–ï¼šå•ä¸ªå­—ç¬¦æ—¶ï¼Œå…¶ ASCII å€¼å‡å» 'a' çš„ç»“æœå³ä¸ºå¯¹åº”çš„å’Œ
     for (int i = 0; i < 26; i++) {
         dp[1][i] = 1;
     }
 
-    // ¶¯Ì¬¹æ»®Ìî³ä dp Êı×é
+    // åŠ¨æ€è§„åˆ’å¡«å…… dp æ•°ç»„
     for (int length = 2; length <= 100; length++) {
-        dp[length][0] = 1; // ÈÎºÎ³¤¶ÈµÄ×Ö·û´®£¬ºÍÎª 0 µÄÇé¿öÖ»ÓĞÒ»ÖÖ£¨¼´²»°üº¬ÈÎºÎ×Ö·û£©
+        dp[length][0] = 1; // ä»»ä½•é•¿åº¦çš„å­—ç¬¦ä¸²ï¼Œå’Œä¸º 0 çš„æƒ…å†µåªæœ‰ä¸€ç§ï¼ˆå³ä¸åŒ…å«ä»»ä½•å­—ç¬¦ï¼‰
         for (int sum = 1; sum <= 2700; sum++) {
-            for (int charValue = 0; charValue < 26; charValue++) { // 'a' µ½ 'z' µÄ ASCII ²îÖµ
+            for (int charValue = 0; charValue < 26; charValue++) { // 'a' åˆ° 'z' çš„ ASCII å·®å€¼
                 if (sum - charValue >= 0) {
                     dp[length][sum] = (dp[length][sum] % MOD + dp[length - 1][sum - charValue] % MOD) % MOD;
                 }
@@ -26,15 +26,15 @@ int main() {
         }
     }
 
-    // ´¦ÀíÃ¿¸ö²âÊÔÓÃÀı
+    // å¤„ç†æ¯ä¸ªæµ‹è¯•ç”¨ä¾‹
     while (testCases--) {
         cin >> inputString;
         int stringSum = 0;
         for (char c : inputString) {
-            stringSum += c - 'a'; // ¼ÆËã×Ö·û´®ÖĞËùÓĞ×Ö·û¶ÔÓ¦µÄºÍ
+            stringSum += c - 'a'; // è®¡ç®—å­—ç¬¦ä¸²ä¸­æ‰€æœ‰å­—ç¬¦å¯¹åº”çš„å’Œ
         }
-        // Êä³ö½á¹û£¬¼õÈ¥ 1 ÊÇÒòÎªÎÒÃÇÒªÅÅ³ı¿Õ×Ö·û´®µÄÇé¿ö£¨ºÍÎª 0 µÄÇé¿öÒÑ¾­ÔÚ dp ÖĞ¿¼ÂÇ£©
-        cout << (dp[inputString.size()][stringSum] % MOD - 1 + MOD) % MOD << endl; // Ê¹ÓÃ (x + MOD) % MOD ·ÀÖ¹¸ºÊı
+        // è¾“å‡ºç»“æœï¼Œå‡å» 1 æ˜¯å› ä¸ºæˆ‘ä»¬è¦æ’é™¤ç©ºå­—ç¬¦ä¸²çš„æƒ…å†µï¼ˆå’Œä¸º 0 çš„æƒ…å†µå·²ç»åœ¨ dp ä¸­è€ƒè™‘ï¼‰
+        cout << (dp[inputString.size()][stringSum] % MOD - 1 + MOD) % MOD << endl; // ä½¿ç”¨ (x + MOD) % MOD é˜²æ­¢è´Ÿæ•°
     }
 
     return 0;

@@ -149,7 +149,7 @@ vec query(int jobl,int jobr,int l,int r,int i){
 
 int main()
 {
-    pre();//½«6¸ö¾ØÕóÉèÖÃÒ»ÏÂ
+    pre();//å°†6ä¸ªçŸ©é˜µè®¾ç½®ä¸€ä¸‹
     n=read();
     for(int i=1;i<=n;i++){
         a[i]=read(),b[i]=read(),c[i]=read();

@@ -1,5 +1,5 @@
 // https://www.luogu.com.cn/problem/P3243
-//这个不对 求的是字典序最小的情况
+//杩欎釜涓嶅 姹傜殑鏄瓧鍏稿簭鏈�灏忕殑鎯呭喌
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

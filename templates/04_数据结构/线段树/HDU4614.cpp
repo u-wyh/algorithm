@@ -1,15 +1,15 @@
-// ƿ����Ļ���
-// ����n��ƿ�ӣ���Ŵ�0~n-1��һ��ʼ����ƿ�Ӷ��ǿյ�
-// ÿ��ƿ��������һ�仨��ʵ�������������͵Ĳ���
-// ���� 1 from flower : һ����flower�仨����fromλ�ÿ�ʼ���β��뻨�䣬�Ѿ��л���ƿ������
-//                     ���һֱ������ƿ�ӣ���Ҳû�����꣬�Ͷ���ʣ�µĻ���
-//                     ������β���������׸���ƿ��λ�� �� ����ƿ��λ��
-//                     �����from��ʼ����ƿ�Ӷ��л�����ӡ"Can not put any one."
-// ���� 2 left right  : ��leftλ�ÿ�ʼ��rightλ�õ�ƿ�ӣ���ؿ�ƿ�������������������
-// �������� : https://acm.hdu.edu.cn/showproblem.php?pid=4614
-// ��ͬѧ����زο����´����й������롢����Ĵ���
-// ���������������Ч�ʺܸߵ�д��
-// �ύ���µ�code���ύʱ��������ĳ�"Main"������ֱ��ͨ��
+// 瓶子里的花朵
+// 给定n个瓶子，编号从0~n-1，一开始所有瓶子都是空的
+// 每个瓶子最多插入一朵花，实现以下两种类型的操作
+// 操作 1 from flower : 一共有flower朵花，从from位置开始依次插入花朵，已经有花的瓶子跳过
+//                     如果一直到最后的瓶子，花也没有用完，就丢弃剩下的花朵
+//                     返回这次操作插入的首个空瓶的位置 和 最后空瓶的位置
+//                     如果从from开始所有瓶子都有花，打印"Can not put any one."
+// 操作 2 left right  : 从left位置开始到right位置的瓶子，变回空瓶，返回清理花朵的数量
+// 测试链接 : https://acm.hdu.edu.cn/showproblem.php?pid=4614
+// 请同学们务必参考如下代码中关于输入、输出的处理
+// 这是输入输出处理效率很高的写法
+// 提交以下的code，提交时请把类名改成"Main"，可以直接通过
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 10005;
@@ -21,25 +21,25 @@ bool update[MAXN << 2];
 int n,m;
 int ans[2];
 
-// �ۼӺ���Ϣ�Ļ���
+// 累加和信息的汇总
 void up(int i) {
-    // ����Χ���ۼӺ� = ��Χ�ۼӺ� + �ҷ�Χ�ۼӺ�
+    // 父范围的累加和 = 左范围累加和 + 右范围累加和
     sum[i] = sum[i << 1] + sum[i << 1 | 1];
 }
 
-// ��ǰ�������Ӧ����Ϣ�±���i
-// �����յ�һ������������ : ������䷶Χ��ÿ�����ֱ�Ϊv
-// ��������������п���������Χ�ѵ�ǰ�߶�����Χȫ���ǵ��µ�
-// Ҳ�п����Ǹ���Χ������Ϣ�·�������
-// ��֮���߶�����ǰ��Χ��sum�����change   update���������
-// �Ͳ��ټ��������·��ˣ���ס��
+// 当前的区间对应的信息下标是i
+// 现在收到一个懒更新任务 : 这个区间范围上每个数字变为v
+// 这个懒更新任务有可能是任务范围把当前线段树范围全覆盖导致的
+// 也有可能是父范围的懒信息下发下来的
+// 总之把线段树当前范围的sum数组和change   update数组调整好
+// 就不再继续往下下发了，懒住了
 void lazy(int i, long v, int n) {
     sum[i] = v * n;
     change[i] = v;
     update[i] = true;
 }
 
-// ����Ϣ���·�
+// 懒信息的下发
 void down(int i, int ln, int rn) {
     if (update[i]) {
         lazy(i << 1, change[i], ln);
@@ -58,8 +58,8 @@ void build(int l, int r, int i) {
     update[i] = false;
 }
 
-// ��Χ�޸�
-// jobl ~ jobr��Χ��ÿ�����ֱ�Ϊjobv
+// 范围修改
+// jobl ~ jobr范围上每个数字变为jobv
 void Update(int jobl, int jobr, int jobv, int l, int r, int i) {
     if (jobl <= l && r <= jobr) {
         lazy(i, jobv, r - l + 1);
@@ -116,8 +116,8 @@ int Clear(int left, int right) {
 }
 
 void Insert(int from, int flowers) {
-    // ��Ŀ����λ�ô�0��ʼ
-    // �߶����±��1��ʼ
+    // 题目给的位置从0开始
+    // 线段树下标从1开始
     from++;
     int zeros = n - from + 1 - query(from, n, 1, n, 1);
     if (zeros == 0) {
@@ -128,7 +128,7 @@ void Insert(int from, int flowers) {
         ans[1] = findZero(from, min(zeros, flowers));
         Update(ans[0], ans[1], 1, 1, n, 1);
     }
-    // ��Ŀ��Ҫ��0��ʼ���±�
+    // 题目需要从0开始的下标
     ans[0]--;
     ans[1]--;
 }

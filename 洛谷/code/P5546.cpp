@@ -19,7 +19,7 @@ void build() {
     }
 }
 
-// ·¶Î§ÊÇs[l,r)£¬×ó±ÕÓÒ¿ª
+// èŒƒå›´æ˜¯s[l,r)ï¼Œå·¦é—­å³å¼€
 long long getHash(int l, int r,int *hash_val) {
     long long ans = hash_val[r ];
     if (l > 0) {

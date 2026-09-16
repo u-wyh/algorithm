@@ -5,7 +5,7 @@ using namespace std;
 const int MAXN=55;
 int n,ans;
 int a[MAXN];
-vector<int> up,down;//Êı×éÀïÃæ´æµÄÊÇÒ»¸öÏµÍ³µÄ×îĞÂÖµ
+vector<int> up,down;//æ•°ç»„é‡Œé¢å­˜çš„æ˜¯ä¸€ä¸ªç³»ç»Ÿçš„æœ€æ–°å€¼
 
 void dfs(int now){
 	int upsize=up.size();

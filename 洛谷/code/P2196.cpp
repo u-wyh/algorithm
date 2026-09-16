@@ -6,7 +6,7 @@ int n,now,ans;
 int landmine[25],vis[25],choose[25],last[25];
 int connect[25][25];
 
-void dfs(int x,int k,int now){//±íÊ¾ÏÖÔÚµ½ÁËµÚxºÅ  ÒÑ¾­Ñ¡ÔñÁËk¸ö  Ä¿Ç°µÄÖµÊÇnow
+void dfs(int x,int k,int now){//è¡¨ç¤ºç°åœ¨åˆ°äº†ç¬¬xå·  å·²ç»é€‰æ‹©äº†kä¸ª  ç›®å‰çš„å€¼æ˜¯now
     int i,flag=1;
     for(i=1;i<=n;i++){
         if(connect[x][i]==1&&vis[i]==0){

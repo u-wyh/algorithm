@@ -3,7 +3,7 @@
 using namespace std;
 const int N=1e5+5;
 
-int n,l,r;//l£ºA×é,r:B×é
+int n,l,r;//lï¼šAç»„,r:Bç»„
 double a[N],b[N],ans,suma,sumb;
 
 inline bool cmp(double i,double j){
@@ -17,10 +17,10 @@ int main()
         scanf("%lf%lf",&a[i],&b[i]);
 	sort(a+1,a+1+n,cmp);
 	sort(b+1,b+1+n,cmp);
-	for(r=1;r<=n;r++){//Ë«Ö¸Õë
+	for(r=1;r<=n;r++){//åŒæŒ‡é’ˆ
 		sumb+=b[r];
 		ans=max(ans,min(suma-(l+r),sumb-(l+r)));
-		while(suma<sumb&&l<n){//³¢ÊÔÑ¡Ôñµ±Ç°×Ü¼ÛÖµµÍµÄÄÇ×é
+		while(suma<sumb&&l<n){//å°è¯•é€‰æ‹©å½“å‰æ€»ä»·å€¼ä½Žçš„é‚£ç»„
 			suma+=a[++l];
 			ans=max(ans,min(suma-(l+r),sumb-(l+r)));
 		}

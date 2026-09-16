@@ -10,7 +10,7 @@ int main() {
     long long ans = 0;
     scanf("%d %d %d %d", &n, &a, &b, &c);
 
-    if (n == c) { // льеп
+    if (n == c) { // Г┴╧Е┬╓
         printf("1\n");
         return 0;
     }

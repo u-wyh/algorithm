@@ -3,11 +3,11 @@
 
 int m, n, q;
 
-// µ±Ç°²Ù×÷ÕßÎªp, pÎª0Ê±´ú±íStan²Ù×÷, pÎª1Ê±´ú±íOllie²Ù×÷¡£
+// å½“å‰æ“ä½œè€…ä¸ºp, pä¸º0æ—¶ä»£è¡¨Stanæ“ä½œ, pä¸º1æ—¶ä»£è¡¨Ollieæ“ä½œã€‚
 int find(int x, int y, int p) {
-    if (x == y) return p; // ·µ»ØÊ¤Õß
-    if (y / x >= 2) return p; // ·µ»ØÊ¤Õß
-    else return find(y - x, x, p ^ 1); // ÏòÏÂÒ»¸ö×´Ì¬²éÕÒ
+    if (x == y) return p; // è¿”å›èƒœè€…
+    if (y / x >= 2) return p; // è¿”å›èƒœè€…
+    else return find(y - x, x, p ^ 1); // å‘ä¸‹ä¸€ä¸ªçŠ¶æ€æŸ¥æ‰¾
 }
 
 int main() {
@@ -20,9 +20,9 @@ int main() {
             n = temp;
         }
         if (find(m, n, 0) == 0) {
-            printf("Stan wins\n"); // Èç¹û·µ»Ø0, Ê¤ÕßÎªStan
+            printf("Stan wins\n"); // å¦‚æœè¿”å›0, èƒœè€…ä¸ºStan
         } else {
-            printf("Ollie wins\n"); // ·´Ö®ÔòÎªOllie
+            printf("Ollie wins\n"); // åä¹‹åˆ™ä¸ºOllie
         }
     }
     return 0;

@@ -34,7 +34,7 @@ int main()
     for(int i=1;i<=cnt;i++){
         for(int j=1;j<=min(i,k);j++){
             dp[i][j][0]=dp[i-1][j][0];
-            dp[i][j][1]=dp[i-1][j][1];//表示不要
+            dp[i][j][1]=dp[i-1][j][1];//琛ㄧず涓嶈
 
             if(dp[i-1][j-1][0]+nums[i]>119){
                 if(dp[i-1][j-1][1]+1<dp[i][j][1])

@@ -28,7 +28,7 @@ void bfs(big sx,big sy)
             {
                 st.push(ways[ex][ey]);
                 big back = (ways[ex][ey]+2)%4;
-                ex += to[back][0], ey += to[back][1]; // 回溯
+                ex += to[back][0], ey += to[back][1]; // 鍥炴函
             }
             while(!st.empty())
             {
@@ -79,7 +79,7 @@ int main()
 				mapp[i][j] = ch-'0';
             }
 	    }
-        if((mapp[n-1][m] == mapp[n][m]) && (mapp[n][m-1] == mapp[n][m])) // 小小优化
+        if((mapp[n-1][m] == mapp[n][m]) && (mapp[n][m-1] == mapp[n][m])) // 灏忓皬浼樺寲
         {
             printf("-1\n");
             continue;

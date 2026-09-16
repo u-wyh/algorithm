@@ -82,7 +82,7 @@ int main()
     for(int i=1;i<=k;i++){
         int v,w;
         v=read(),w=read();
-        addedge(n+1,v,dis[v]-w+1e9);//ÎªÁË·ÀÖ¹³öÏÖ¸º±ßÈ¨
+        addedge(n+1,v,dis[v]-w+1e9);//ä¸ºäº†é˜²æ­¢å‡ºçŽ°è´Ÿè¾¹æƒ
     }
     dijkstra(n+1,ans);
     for(int i=1;i<n;i++){

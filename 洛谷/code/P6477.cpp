@@ -8,7 +8,7 @@ const int MOD = 1e9+7;
 int n;
 int arr[MAXN];
 int temp[MAXN];
-int last[MAXN];//±íÊ¾ÉÏÒ»¸öarr[i]µÄÎ»ÖÃ Ã»ÓĞ¾ÍÊÇ0
+int last[MAXN];//è¡¨ç¤ºä¸Šä¸€ä¸ªarr[i]çš„ä½ç½® æ²¡æœ‰å°±æ˜¯0
 int d[MAXN];
 int tree1[MAXN];
 int tree2[MAXN];
@@ -50,11 +50,11 @@ signed main()
     int now=0,ans=0;
     for(int i=1;i<=n;i++){
         now+=i-last[i]+2*(sum(i)-sum(last[i]));
-        //Ã¿´Î¼ÓÉÏµÄ¶¼ÊÇg(i)-g(i-1)
-        //sum(r)ÇóµÄÊÇ  l  ´Ólast[r]µ½r  µÄf(l,r)µÄÖµ
+        //æ¯æ¬¡åŠ ä¸Šçš„éƒ½æ˜¯g(i)-g(i-1)
+        //sum(r)æ±‚çš„æ˜¯  l  ä»last[r]åˆ°r  çš„f(l,r)çš„å€¼
         now%=MOD;
         //cout<<now<<' '<<last[i]<<endl;
-        //ÏÖÔÚµÄnowÊÇg(i)µÄÖµ
+        //ç°åœ¨çš„nowæ˜¯g(i)çš„å€¼
         ans+=now;
         ans%=MOD;
         add(i+1,-1);

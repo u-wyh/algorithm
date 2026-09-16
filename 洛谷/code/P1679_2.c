@@ -6,7 +6,7 @@
 
 int m, dp[MAXN];
 
-// ×Ô¶¨ÒåµÄminº¯Êý
+// è‡ªå®šä¹‰çš„minå‡½æ•°
 int min(int a, int b) {
     return a < b ? a : b;
 }
@@ -14,7 +14,7 @@ int min(int a, int b) {
 int main() {
     scanf("%d", &m);
     for (int i = 1; i <= m; i++) {
-        dp[i] = INT_MAX; // Ê¹ÓÃINT_MAX´úÌæ1e9+7£¬ÒòÎªC±ê×¼¿âÖÐÃ»ÓÐÖ±½ÓµÄ1e9+7³£Á¿
+        dp[i] = INT_MAX; // ä½¿ç”¨INT_MAXä»£æ›¿1e9+7ï¼Œå› ä¸ºCæ ‡å‡†åº“ä¸­æ²¡æœ‰ç›´æŽ¥çš„1e9+7å¸¸é‡
     }
     dp[1] = 1;
 

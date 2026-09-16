@@ -1,11 +1,11 @@
-// Ôö¼ÓÏÞÖÆµÄ×î³¤¹«¹²×ÓÐòÁÐÎÊÌâ
-// ¸ø¶¨Á½¸ö×Ö·û´®s1ºÍs2£¬s1³¤¶ÈÎªn£¬s2³¤¶ÈÎªm
-// ·µ»Øs1ºÍs2µÄ×î³¤¹«¹²×ÓÐòÁÐ³¤¶È
-// ×¢Òâ£º
-// Á½¸ö×Ö·û´®¶¼Ö»ÓÉÐ¡Ð´×ÖÄ¸×é³É
+// å¢žåŠ é™åˆ¶çš„æœ€é•¿å…¬å…±å­åºåˆ—é—®é¢˜
+// ç»™å®šä¸¤ä¸ªå­—ç¬¦ä¸²s1å’Œs2ï¼Œs1é•¿åº¦ä¸ºnï¼Œs2é•¿åº¦ä¸ºm
+// è¿”å›žs1å’Œs2çš„æœ€é•¿å…¬å…±å­åºåˆ—é•¿åº¦
+// æ³¨æ„ï¼š
+// ä¸¤ä¸ªå­—ç¬¦ä¸²éƒ½åªç”±å°å†™å­—æ¯ç»„æˆ
 // 1 <= n <= 10^6
 // 1 <= m <= 10^3
-// ×´Ì¬Éè¼ÆÓÅ»¯µÄ¾­µäÌâ£¬¶ÔÊýÆ÷ÑéÖ¤
+// çŠ¶æ€è®¾è®¡ä¼˜åŒ–çš„ç»å…¸é¢˜ï¼Œå¯¹æ•°å™¨éªŒè¯
 #include <iostream>
 #include <vector>
 #include <string>
@@ -17,16 +17,16 @@
 
 using namespace std;
 
-// ÎªÁË²âÊÔ
+// ä¸ºäº†æµ‹è¯•
 void randomString(char* ans, int n) {
     srand(time(0));
     for (int i = 0; i < n; i++) {
         ans[i] = 'a' + rand() % 26;
     }
-    ans[n] = '\0'; // È·±£×Ö·û´®ÒÔnull½áÎ²
+    ans[n] = '\0'; // ç¡®ä¿å­—ç¬¦ä¸²ä»¥nullç»“å°¾
 }
 
-// ¾­µä¶¯Ì¬¹æ»®µÄ°æ±¾
+// ç»å…¸åŠ¨æ€è§„åˆ’çš„ç‰ˆæœ¬
 int lcs1(const string& str1, const string& str2) {
     int n = str1.size();
     int m = str2.size();
@@ -43,7 +43,7 @@ int lcs1(const string& str1, const string& str2) {
     return dp[n][m];
 }
 
-// ÀûÓÃÏÞÖÆÌõ¼þ×öÓÅ»¯µÄ°æ±¾
+// åˆ©ç”¨é™åˆ¶æ¡ä»¶åšä¼˜åŒ–çš„ç‰ˆæœ¬
 const int MAXN = 1000005;
 const int MAXM = 1005;
 const int NA = INT_MAX;
@@ -57,9 +57,9 @@ int dp[MAXM][MAXM];
 
 void build() {
     fill_n(Right, 26, NA);
-    for (int i = n ; i >= 0; i--) { // ×¢ÒâÕâÀï´Ón-1¿ªÊ¼£¬ÇÒ°üÀ¨-1£¨ÓÃÓÚ³õÊ¼»¯£©
+    for (int i = n ; i >= 0; i--) { // æ³¨æ„è¿™é‡Œä»Žn-1å¼€å§‹ï¼Œä¸”åŒ…æ‹¬-1ï¼ˆç”¨äºŽåˆå§‹åŒ–ï¼‰
         for (int j = 0; j < 26; j++) {
-            Next[i][j] =  Right[j]; // -1±íÊ¾ÎÞÐ§Î»ÖÃ
+            Next[i][j] =  Right[j]; // -1è¡¨ç¤ºæ— æ•ˆä½ç½®
         }
         if (i > 0) {
             Right[s1[i-1] - 'a'] = i;
@@ -72,19 +72,19 @@ void build() {
     }
 }
 
-// ³¤¶ÈÎªiµÄs2Ç°×º´®£¬ÏëºÍs1×Ö·û´®ÐÎ³É³¤¶ÈÎªjµÄ¹«¹²×ÓÐòÁÐ
-// ·µ»Øs1ÖÐ×îºóÒ»¸ö×Ö·ûµÄÎ»ÖÃ£¨´Ó0¿ªÊ¼£©£¬Èç¹û×ö²»µ½£¬·µ»ØNA
+// é•¿åº¦ä¸ºiçš„s2å‰ç¼€ä¸²ï¼Œæƒ³å’Œs1å­—ç¬¦ä¸²å½¢æˆé•¿åº¦ä¸ºjçš„å…¬å…±å­åºåˆ—
+// è¿”å›žs1ä¸­æœ€åŽä¸€ä¸ªå­—ç¬¦çš„ä½ç½®ï¼ˆä»Ž0å¼€å§‹ï¼‰ï¼Œå¦‚æžœåšä¸åˆ°ï¼Œè¿”å›žNA
 int f(int i, int j) {
     if (i < j) return NA;
-    if (j == 0) return 0; // ·µ»Ø-1±íÊ¾¿ÕÐòÁÐ
+    if (j == 0) return 0; // è¿”å›ž-1è¡¨ç¤ºç©ºåºåˆ—
     if (dp[i][j] != -1) return dp[i][j];
     int cha = s2[i - 1] - 'a';
-    int ans = f(i - 1, j); // ²»Ñ¡µ±Ç°×Ö·û
-    int pre = f(i - 1, j - 1) ; // Ñ¡µ±Ç°×Ö·û£¬µ«×¢Òâi-1²»ÄÜÔ½½ç
-    if (pre != NA) { // ¼ì²éÊÇ·ñÓÐÐ§
+    int ans = f(i - 1, j); // ä¸é€‰å½“å‰å­—ç¬¦
+    int pre = f(i - 1, j - 1) ; // é€‰å½“å‰å­—ç¬¦ï¼Œä½†æ³¨æ„i-1ä¸èƒ½è¶Šç•Œ
+    if (pre != NA) { // æ£€æŸ¥æ˜¯å¦æœ‰æ•ˆ
         ans =min(Next[pre][cha] , ans);
     }
-    dp[i][j] = ans; // ¼ÇÂ¼½á¹û£¬-1±íÊ¾ÎÞ·¨ÐÎ³É³¤¶ÈÎªjµÄ×ÓÐòÁÐ
+    dp[i][j] = ans; // è®°å½•ç»“æžœï¼Œ-1è¡¨ç¤ºæ— æ³•å½¢æˆé•¿åº¦ä¸ºjçš„å­åºåˆ—
     return ans;
 }
 
@@ -105,13 +105,13 @@ int lcs2(const string& str1, const string& str2) {
     return ans;
 }
 
-// ÎªÁË²âÊÔ
+// ä¸ºäº†æµ‹è¯•
 int main() {
     srand(time(0));
     int n = 100;
     int m = 100;
-    int testTime = 1000; // ¼õÉÙ²âÊÔ´ÎÊýÒÔ¼Ó¿ì²âÊÔËÙ¶È
-    cout << "¹¦ÄÜ²âÊÔ¿ªÊ¼" << endl;
+    int testTime = 1000; // å‡å°‘æµ‹è¯•æ¬¡æ•°ä»¥åŠ å¿«æµ‹è¯•é€Ÿåº¦
+    cout << "åŠŸèƒ½æµ‹è¯•å¼€å§‹" << endl;
     for (int i = 0; i < testTime; i++) {
         int size1 = rand() % n + 1;
         int size2 = rand() % m + 1;
@@ -122,18 +122,18 @@ int main() {
         int ans1 = lcs1(string(str1), string(str2));
         int ans2 = lcs2(string(str1), string(str2));
         if (ans1 != ans2) {
-            cout << "³ö´íÁË!" << endl;
-            //break; // ·¢ÏÖÎÊÌâºóÍ£Ö¹²âÊÔ
+            cout << "å‡ºé”™äº†!" << endl;
+            //break; // å‘çŽ°é—®é¢˜åŽåœæ­¢æµ‹è¯•
         }
         else{
-            cout<<"µÚ"<<setw(6)<<i+1<<"×é²âÊÔÕýÈ·"<<endl;
+            cout<<"ç¬¬"<<setw(6)<<i+1<<"ç»„æµ‹è¯•æ­£ç¡®"<<endl;
         }
         delete[] str1;
         delete[] str2;
     }
-    cout << "¹¦ÄÜ²âÊÔ½áÊø" << endl << endl;
+    cout << "åŠŸèƒ½æµ‹è¯•ç»“æŸ" << endl << endl;
 
-    cout << "ÐÔÄÜ²âÊÔ¿ªÊ¼" << endl;
+    cout << "æ€§èƒ½æµ‹è¯•å¼€å§‹" << endl;
     n = 1000000;
     m = 100;
     cout << "n = " << n << endl;
@@ -151,14 +151,14 @@ int main() {
     //cout<<444<<endl;
     clock_t end1 = clock();
     double elapsed1 = double(end1 - start1) / CLOCKS_PER_SEC;
-    cout << "lcs1·½·¨ÔËÐÐÊ±¼ä : " << elapsed1<< " Ãë" << endl;
+    cout << "lcs1æ–¹æ³•è¿è¡Œæ—¶é—´ : " << elapsed1<< " ç§’" << endl;
 
     clock_t start2 = clock();
     int result = lcs2(string(str1), string(str2));
     clock_t end2 = clock();
     double elapsed2 = double(end2 - start2) / CLOCKS_PER_SEC;
-    cout << "lcs2·½·¨ÔËÐÐÊ±¼ä : " << elapsed2<< " Ãë" << endl;
-    cout << "ÐÔÄÜ²âÊÔ½áÊø" << endl;
+    cout << "lcs2æ–¹æ³•è¿è¡Œæ—¶é—´ : " << elapsed2<< " ç§’" << endl;
+    cout << "æ€§èƒ½æµ‹è¯•ç»“æŸ" << endl;
 
     delete[] str1;
     delete[] str2;

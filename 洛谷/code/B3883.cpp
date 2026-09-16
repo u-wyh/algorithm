@@ -35,7 +35,7 @@ void dfs(int pos){
     }
     if(pos!=1){
         ans=((ans+arr[pos-1]*p[(n+1)/2-pos])%MOD+MOD)%MOD;
-        //ÕâÒ»Î»ÖÃÉÏÑ¡½ÏĞ¡µÄ
+        //è¿™ä¸€ä½ç½®ä¸Šé€‰è¾ƒå°çš„
         dfs(pos+1);
     }
     else if(pos==1&&arr[0]==1){
@@ -43,7 +43,7 @@ void dfs(int pos){
     }
     else{
         ans=((ans+(arr[pos-1]-1)*p[(n+1)/2-pos])%MOD+MOD)%MOD;
-        //ÕâÒ»Î»ÖÃÉÏÑ¡½ÏĞ¡µÄ
+        //è¿™ä¸€ä½ç½®ä¸Šé€‰è¾ƒå°çš„
         dfs(pos+1);
     }
 }
@@ -62,7 +62,7 @@ int main()
     }
     for(int i=1;i<n;i++){
         ans=(ans+cnt[i])%MOD;
-        //¼ÆËã³öËùÓĞÎ»Êı²»×ãµÄ¿ÉÄÜĞÔ
+        //è®¡ç®—å‡ºæ‰€æœ‰ä½æ•°ä¸è¶³çš„å¯èƒ½æ€§
     }
     p[0]=1;
     for(int i=1;i<n;i++){

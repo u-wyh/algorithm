@@ -1,15 +1,15 @@
-// Æ½ºâÒò×ÓÓ°ÏìÌæ×ïÑòÊ÷µÄÊµÑé
-// Ò»µ©£¬max(×óÊ÷½ÚµãÊı£¬ÓÒÊ÷½ÚµãÊı) > Æ½ºâÒò×Ó * ÕûÊ÷½ÚµãÊı£¬¾Í»á·¢ÉúÖØ¹¹
-// Æ½ºâÒò×Ó·¶Î§ÊÇ(0.5, 1.0)£¬·ñÔòÎŞÒâÒå
-// Æ½ºâÒò×ÓµÈÓÚ0.5Ê±£¬Ê÷¸ßºÜĞ¡£¬²éÑ¯Ğ§ÂÊ¸ß£¬µ«ÊÇÖØ¹¹·¢ÉúºÜÆµ·±
-// Æ½ºâÒò×ÓµÈÓÚ1.0Ê±£¬ÖØ¹¹ÍêÈ«²»·¢Éú£¬µ«ÊÇÊ÷¸ßºÜ´ó£¬²éÑ¯Ğ§ÂÊµÍ
-// ±£Ö¤²éÑ¯Ğ§ÂÊ¡¢Í¬Ê±±£Ö¤ÖØ¹¹µÄ½Úµã×ÜÊı²»¶à£¬0.7Îª×î³£ÓÃµÄÆ½ºâÒò×Ó
-// Õâ±£Ö¤ÁË²éÑ¯Ğ§ÂÊ£¬ÒòÎªÊ÷¸ß¼¸ºõÊÇO(log n)
-// Í¬Ê±ÖØ¹¹´¥·¢µÄÊ±»úºÏÊÊ£¬µ¥´Îµ÷ÕûµÄ¾ùÌ¯´ú¼ÛÎªO(log n)
+// å¹³è¡¡å› å­å½±å“æ›¿ç½ªç¾Šæ ‘çš„å®éªŒ
+// ä¸€æ—¦ï¼Œmax(å·¦æ ‘èŠ‚ç‚¹æ•°ï¼Œå³æ ‘èŠ‚ç‚¹æ•°) > å¹³è¡¡å› å­ * æ•´æ ‘èŠ‚ç‚¹æ•°ï¼Œå°±ä¼šå‘ç”Ÿé‡æ„
+// å¹³è¡¡å› å­èŒƒå›´æ˜¯(0.5, 1.0)ï¼Œå¦åˆ™æ— æ„ä¹‰
+// å¹³è¡¡å› å­ç­‰äº0.5æ—¶ï¼Œæ ‘é«˜å¾ˆå°ï¼ŒæŸ¥è¯¢æ•ˆç‡é«˜ï¼Œä½†æ˜¯é‡æ„å‘ç”Ÿå¾ˆé¢‘ç¹
+// å¹³è¡¡å› å­ç­‰äº1.0æ—¶ï¼Œé‡æ„å®Œå…¨ä¸å‘ç”Ÿï¼Œä½†æ˜¯æ ‘é«˜å¾ˆå¤§ï¼ŒæŸ¥è¯¢æ•ˆç‡ä½
+// ä¿è¯æŸ¥è¯¢æ•ˆç‡ã€åŒæ—¶ä¿è¯é‡æ„çš„èŠ‚ç‚¹æ€»æ•°ä¸å¤šï¼Œ0.7ä¸ºæœ€å¸¸ç”¨çš„å¹³è¡¡å› å­
+// è¿™ä¿è¯äº†æŸ¥è¯¢æ•ˆç‡ï¼Œå› ä¸ºæ ‘é«˜å‡ ä¹æ˜¯O(log n)
+// åŒæ—¶é‡æ„è§¦å‘çš„æ—¶æœºåˆé€‚ï¼Œå•æ¬¡è°ƒæ•´çš„å‡æ‘Šä»£ä»·ä¸ºO(log n)
 #include <bits/stdc++.h>
 using namespace std;
 
-// È«¾Ö±äÁ¿
+// å…¨å±€å˜é‡
 double ALPHA = 0.7;
 int maxx = 10000;
 int cost = 0;
@@ -17,7 +17,7 @@ int head = 0;
 int cnt = 0;
 const int MAXN = 100001;
 int key[MAXN];
-int occurrence[MAXN]; // ĞŞ¸ÄÎª occurrence
+int occurrence[MAXN]; // ä¿®æ”¹ä¸º occurrence
 int ls[MAXN];
 int rs[MAXN];
 int size[MAXN];
@@ -28,7 +28,7 @@ int top = 0;
 int father = 0;
 int side = 0;
 
-// Í³¼ÆÊ÷¸ß
+// ç»Ÿè®¡æ ‘é«˜
 int deep(int i) {
     if (i == 0) {
         return 0;
@@ -36,32 +36,32 @@ int deep(int i) {
     return max(deep(ls[i]), deep(rs[i])) + 1;
 }
 
-// ³õÊ¼»¯½Úµã
+// åˆå§‹åŒ–èŠ‚ç‚¹
 int init(int num) {
     key[++cnt] = num;
     ls[cnt] = rs[cnt] = 0;
-    occurrence[cnt] = size[cnt] = diff[cnt] = 1; // ĞŞ¸ÄÎª occurrence
+    occurrence[cnt] = size[cnt] = diff[cnt] = 1; // ä¿®æ”¹ä¸º occurrence
     return cnt;
 }
 
-// ¸üĞÂ½ÚµãĞÅÏ¢
+// æ›´æ–°èŠ‚ç‚¹ä¿¡æ¯
 void up(int i) {
-    size[i] = size[ls[i]] + size[rs[i]] + occurrence[i]; // ĞŞ¸ÄÎª occurrence
-    diff[i] = diff[ls[i]] + diff[rs[i]] + (occurrence[i] > 0 ? 1 : 0); // ĞŞ¸ÄÎª occurrence
+    size[i] = size[ls[i]] + size[rs[i]] + occurrence[i]; // ä¿®æ”¹ä¸º occurrence
+    diff[i] = diff[ls[i]] + diff[rs[i]] + (occurrence[i] > 0 ? 1 : 0); // ä¿®æ”¹ä¸º occurrence
 }
 
-// ÖĞĞò±éÀú
+// ä¸­åºéå†
 void inorder(int i) {
     if (i != 0) {
         inorder(ls[i]);
-        if (occurrence[i] > 0) { // ĞŞ¸ÄÎª occurrence
+        if (occurrence[i] > 0) { // ä¿®æ”¹ä¸º occurrence
             collect[++ci] = i;
         }
         inorder(rs[i]);
     }
 }
 
-// ¹¹½¨Ê÷
+// æ„å»ºæ ‘
 int build(int l, int r) {
     if (l > r) {
         return 0;
@@ -74,13 +74,13 @@ int build(int l, int r) {
     return h;
 }
 
-// ÖØ½¨Ê÷
+// é‡å»ºæ ‘
 void rebuild() {
     if (top != 0) {
         ci = 0;
         inorder(top);
         if (ci > 0) {
-            cost += ci; // Í³¼ÆÖØ¹¹½ÚµãÊı
+            cost += ci; // ç»Ÿè®¡é‡æ„èŠ‚ç‚¹æ•°
             if (father == 0) {
                 head = build(1, ci);
             } else if (side == 1) {
@@ -92,12 +92,12 @@ void rebuild() {
     }
 }
 
-// ÅĞ¶ÏÊÇ·ñÆ½ºâ
+// åˆ¤æ–­æ˜¯å¦å¹³è¡¡
 bool balance(int i) {
     return ALPHA * diff[i] >= max(diff[ls[i]], diff[rs[i]]);
 }
 
-// ²åÈë½Úµã
+// æ’å…¥èŠ‚ç‚¹
 void add(int i, int f, int s, int num) {
     if (i == 0) {
         if (f == 0) {
@@ -109,7 +109,7 @@ void add(int i, int f, int s, int num) {
         }
     } else {
         if (key[i] == num) {
-            occurrence[i]++; // ĞŞ¸ÄÎª occurrence
+            occurrence[i]++; // ä¿®æ”¹ä¸º occurrence
         } else if (key[i] > num) {
             add(ls[i], i, 1, num);
         } else {
@@ -124,14 +124,14 @@ void add(int i, int f, int s, int num) {
     }
 }
 
-// ²åÈëÊı×Ö
+// æ’å…¥æ•°å­—
 void add(int num) {
     top = father = side = 0;
     add(head, 0, 0, num);
     rebuild();
 }
 
-// ²éÕÒĞ¡ÓÚµÈÓÚ¸ø¶¨ÖµµÄ½ÚµãÊıÁ¿
+// æŸ¥æ‰¾å°äºç­‰äºç»™å®šå€¼çš„èŠ‚ç‚¹æ•°é‡
 int small(int i, int num) {
     if (i == 0) {
         return 0;
@@ -139,33 +139,33 @@ int small(int i, int num) {
     if (key[i] >= num) {
         return small(ls[i], num);
     } else {
-        return size[ls[i]] + occurrence[i] + small(rs[i], num); // ĞŞ¸ÄÎª occurrence
+        return size[ls[i]] + occurrence[i] + small(rs[i], num); // ä¿®æ”¹ä¸º occurrence
     }
 }
 
-// »ñÈ¡ÅÅÃû
-int getRank(int num) { // ĞŞ¸ÄÎª getRank
+// è·å–æ’å
+int getRank(int num) { // ä¿®æ”¹ä¸º getRank
     return small(head, num) + 1;
 }
 
-// »ñÈ¡µÚxĞ¡µÄÖµ
+// è·å–ç¬¬xå°çš„å€¼
 int index(int i, int x) {
     if (size[ls[i]] >= x) {
         return index(ls[i], x);
-    } else if (size[ls[i]] + occurrence[i] < x) { // ĞŞ¸ÄÎª occurrence
-        return index(rs[i], x - size[ls[i]] - occurrence[i]); // ĞŞ¸ÄÎª occurrence
+    } else if (size[ls[i]] + occurrence[i] < x) { // ä¿®æ”¹ä¸º occurrence
+        return index(rs[i], x - size[ls[i]] - occurrence[i]); // ä¿®æ”¹ä¸º occurrence
     }
     return key[i];
 }
 
-// »ñÈ¡µÚxĞ¡µÄÖµ£¨Íâ²¿µ÷ÓÃ£©
+// è·å–ç¬¬xå°çš„å€¼ï¼ˆå¤–éƒ¨è°ƒç”¨ï¼‰
 int index(int x) {
     return index(head, x);
 }
 
-// »ñÈ¡Ç°Çı
+// è·å–å‰é©±
 int pre(int num) {
-    int kth = getRank(num); // ĞŞ¸ÄÎª getRank
+    int kth = getRank(num); // ä¿®æ”¹ä¸º getRank
     if (kth == 1) {
         return INT_MIN;
     } else {
@@ -173,9 +173,9 @@ int pre(int num) {
     }
 }
 
-// »ñÈ¡ºó¼Ì
+// è·å–åç»§
 int post(int num) {
-    int kth = getRank(num + 1); // ĞŞ¸ÄÎª getRank
+    int kth = getRank(num + 1); // ä¿®æ”¹ä¸º getRank
     if (kth == size[head] + 1) {
         return INT_MAX;
     } else {
@@ -183,10 +183,10 @@ int post(int num) {
     }
 }
 
-// É¾³ı½Úµã
+// åˆ é™¤èŠ‚ç‚¹
 void remove(int i, int f, int s, int num) {
     if (key[i] == num) {
-        occurrence[i]--; // ĞŞ¸ÄÎª occurrence
+        occurrence[i]--; // ä¿®æ”¹ä¸º occurrence
     } else if (key[i] > num) {
         remove(ls[i], i, 1, num);
     } else {
@@ -200,19 +200,19 @@ void remove(int i, int f, int s, int num) {
     }
 }
 
-// É¾³ıÊı×Ö
+// åˆ é™¤æ•°å­—
 void remove(int num) {
-    if (getRank(num) != getRank(num + 1)) { // ĞŞ¸ÄÎª getRank
+    if (getRank(num) != getRank(num + 1)) { // ä¿®æ”¹ä¸º getRank
         top = father = side = 0;
         remove(head, 0, 0, num);
         rebuild();
     }
 }
 
-// Çå¿ÕÊ÷
+// æ¸…ç©ºæ ‘
 void clear() {
     fill(key + 1, key + cnt + 1, 0);
-    fill(occurrence + 1, occurrence + cnt + 1, 0); // ĞŞ¸ÄÎª occurrence
+    fill(occurrence + 1, occurrence + cnt + 1, 0); // ä¿®æ”¹ä¸º occurrence
     fill(ls + 1, ls + cnt + 1, 0);
     fill(rs + 1, rs + cnt + 1, 0);
     fill(size + 1, size + cnt + 1, 0);
@@ -222,18 +222,18 @@ void clear() {
 }
 
 int main() {
-    ALPHA = 0.72; // ÉèÖÃÆ½ºâÒò×Ó
-    int max_value = 10000; // ĞŞ¸Ä±äÁ¿ÃûÎª max_value ÒÔ±ÜÃâÓë max º¯Êı³åÍ»
-    cout << "²âÊÔ¿ªÊ¼" << endl;
-    cost = 0; // Çå¿ÕÖØ¹¹½Úµã¼ÆÊı
+    ALPHA = 0.72; // è®¾ç½®å¹³è¡¡å› å­
+    int max_value = 10000; // ä¿®æ”¹å˜é‡åä¸º max_value ä»¥é¿å…ä¸ max å‡½æ•°å†²çª
+    cout << "æµ‹è¯•å¼€å§‹" << endl;
+    cost = 0; // æ¸…ç©ºé‡æ„èŠ‚ç‚¹è®¡æ•°
     for (int num = 1; num <= max_value; num++) {
         add(num);
     }
-    cout << "²åÈëÊı×Ö : " << "1~" << max_value << endl;
-    cout << "Æ½ºâÒò×Ó : " << ALPHA << endl;
-    cout << "Ê÷µÄ¸ß¶È : " << deep(head) << endl;
-    cout << "ÖØ¹¹½Úµã : " << cost << endl;
-    cout << "²âÊÔ½áÊø" << endl;
+    cout << "æ’å…¥æ•°å­— : " << "1~" << max_value << endl;
+    cout << "å¹³è¡¡å› å­ : " << ALPHA << endl;
+    cout << "æ ‘çš„é«˜åº¦ : " << deep(head) << endl;
+    cout << "é‡æ„èŠ‚ç‚¹ : " << cost << endl;
+    cout << "æµ‹è¯•ç»“æŸ" << endl;
     clear();
     return 0;
 }

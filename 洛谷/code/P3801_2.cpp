@@ -3,13 +3,13 @@
 using namespace std;
 #define MAXN 100005
 int n,m,q;
-int dx[MAXN],dy[MAXN];//Á½¸öÊ÷×´Êı×é
-int ax[MAXN],ay[MAXN];//µ¥µãµÄ´æ·Å£¨·½±ãĞŞ¸Ä£©
+int dx[MAXN],dy[MAXN];//ä¸¤ä¸ªæ ‘çŠ¶æ•°ç»„
+int ax[MAXN],ay[MAXN];//å•ç‚¹çš„å­˜æ”¾ï¼ˆæ–¹ä¾¿ä¿®æ”¹ï¼‰
 int lowbit(int x)
 {
     return x&(x^(x-1));
 }
-void gai(int *c,int x,int y)//µ¥µãĞŞ¸Ä
+void gai(int *c,int x,int y)//å•ç‚¹ä¿®æ”¹
 {
     while(x <= *c)
     {
@@ -17,7 +17,7 @@ void gai(int *c,int x,int y)//µ¥µãĞŞ¸Ä
         x += lowbit(x);
     }
 }
-int qiu(int *c,int x)//Çø¼äÇóÖµ
+int qiu(int *c,int x)//åŒºé—´æ±‚å€¼
 {
     int ans = 0;
     while(x >= 1)
@@ -50,7 +50,7 @@ void huan(int x,int y)
         gai(dy,y,1);
     }
 }
-long long suan(int x1,int y1,int x2,int y2)//¼ÆËãÓĞºìÎíµÄµØ·½
+long long suan(int x1,int y1,int x2,int y2)//è®¡ç®—æœ‰çº¢é›¾çš„åœ°æ–¹
 {
     int s1 = qiu(dx,x2) - qiu(dx,x1 - 1);
     int s2 = qiu(dy,y2) - qiu(dy,y1 - 1);

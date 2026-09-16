@@ -7,7 +7,7 @@ int fa[MAXN];
 int n,m;
 
 int found(int x){
-    return x==fa[x]?x:fa[x]=found(fa[x]);//¸¸½ÚµãÒ»¶¨ÔÚ×Ô¼ºÓÒ±ß
+    return x==fa[x]?x:fa[x]=found(fa[x]);//çˆ¶èŠ‚ç‚¹ä¸€å®šåœ¨è‡ªå·±å³è¾¹
 }
 
 void un(int x,int y){
@@ -26,7 +26,7 @@ int main()
         cin>>l>>r;
         int t=found(l);
         while(t<=r){
-            un(t+1,t);//Èç¹ûÓÒ±ß±äÎª°×É«  ÐèÒªºÏ²¢  ÄÇÃ´´ð°¸--
+            un(t+1,t);//å¦‚æžœå³è¾¹å˜ä¸ºç™½è‰²  éœ€è¦åˆå¹¶  é‚£ä¹ˆç­”æ¡ˆ--
             black--;
             t=found(t);
         }

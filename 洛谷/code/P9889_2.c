@@ -20,7 +20,7 @@ int check(ll cnt) {
     }
     for (ll i = 1; i <= n - 1; i++) {
         if (b[i] <= 0) {
-            res++; // 直接走到下一个点
+            res++; // 鐩存帴璧板埌涓嬩竴涓偣
             continue;
         }
         res += 2 * b[i] - 1;

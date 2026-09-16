@@ -4,7 +4,7 @@
 using namespace std;
 const int N = 1e4+5;
 int n, tot, a[N<<2];
-ll ans;//Ê®ÄêoiÒ»³¡¿Õ£¬²»¿ªlong long¼û×æ×Ú
+ll ans;//åå¹´oiä¸€åœºç©ºï¼Œä¸å¼€long longè§ç¥–å®—
 struct edge {
 	int y, x1, x2, k;
 } e[N<<1];
@@ -19,7 +19,7 @@ void build(int p, int l, int r) {
 	build(p<<1, l, mid);
 	build(p<<1|1, mid+1, r);
 }
-void update(int p) {//ÏòÉÏ´«µÝ
+void update(int p) {//å‘ä¸Šä¼ é€’
 	if (t[p].cnt) t[p].len = a[t[p].r+1]-a[t[p].l];
 	else t[p].len = t[p<<1].len+t[p<<1|1].len;
 }
@@ -35,7 +35,7 @@ void change(int p, int l, int r, int x) {
 	update(p);
 }
 bool cmp(edge x, edge y) {return x.y < y.y;}
-int query(int x) {return lower_bound(a+1, a+tot+1, x)-a;}//²éÑ¯
+int query(int x) {return lower_bound(a+1, a+tot+1, x)-a;}//æŸ¥è¯¢
 int main() {
 	cin >> n;
 	for (int i = 1; i <= n; ++i) {
@@ -48,7 +48,7 @@ int main() {
 	n <<= 1;
 	sort(e+1, e+n+1, cmp);
 	sort(a+1, a+n+1);
-	tot = unique(a+1, a+n+1)-a-1;//ÀëÉ¢»¯
+	tot = unique(a+1, a+n+1)-a-1;//ç¦»æ•£åŒ–
 	build(1, 1, tot);
 	for (int i = 1; i <= n; ++i) {
 		change(1, query(e[i].x1), query(e[i].x2)-1, e[i].k);

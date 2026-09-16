@@ -45,21 +45,21 @@ void tarjan(int x){
     for(int i=head[x];i;i=Next[i]){
         int v=to[i];
         if(!dfn[v]){
-            //��ʾ����ڵ�û�б����ʹ�
+            //表示这个节点没有被访问过
             tarjan(v);
             low[x]=min(low[x],low[v]);
         }
         else if(instack[v]){
-            //��ʾ��������ǻ����� һ����ͬһ�����ϵ�
+            //表示这个属于是回溯了 一定是同一个环上的
             low[x]=min(low[x],dfn[v]);
         }
     }
     if(dfn[x]==low[x]){
         col[x]=++color;
         val[color]++;
-        //�����нڵ㰴����ɫ����  �������
+        //将所有节点按照颜色分类  完成缩点
         while(st[top]!=x){
-            //����ͬһ��ǿ��ͨ����
+            //属于同一个强联通分量
             col[st[top]]=color;
             val[color]++;
             instack[st[top]]=false;
@@ -130,5 +130,5 @@ int main()
 0010
 0001
 0000
-׼��һ����������  �������Ե�����Щǿ��ͨ����  Ȼ�����val
+准备一个记忆数组  看看可以到达那些强联通分量  然后加上val
 */

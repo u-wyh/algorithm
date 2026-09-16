@@ -1,24 +1,24 @@
 //https://www.luogu.com.cn/problem/P1127
-//��ͼ��ʽ�Ƚ���  �Ƚ϶���
-//����⽨�ߵķ�ʽ�ǵ��ʿ�ͷ�ͽ�β����
-//������ĸ��β��ĸ��һ����  ��Ϊ��������տ����ҵ�ŷ����·�Ļ�  ��ôβ��ĸһ������һ�����ʵ�����ĸ
-//�����Ŀ���ѵ�������뵽������ӱ�
-//������ջ�Ķ��� �Լ� λ�ö��Ǻܶ��ص�
+//建图方式比较难  比较独特
+//这道题建边的方式是单词开头和结尾相连
+//从首字母向尾字母连一条边  因为：如果最终可以找到欧拉回路的话  那么尾字母一定是下一个单词的首字母
+//这道题目的难点就在于想到如何连接边
+//并且入栈的东西 以及 位置都是很独特的
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;
 const int MAXM = 30;
 
 int n;
-vector<pair<string,int>>vec[MAXM];//��Ȼ���������  ����string���Ͳ��ױ�� ���Լ���һ��cnt���
+vector<pair<string,int>>vec[MAXM];//虽然这是有向边  但是string类型不易标记 所以加上一个cnt标记
 stack<string>st;
 
-//�����
+//有向边
 int in[MAXM];
 int out[MAXM];
 bool exist[MAXN];
 
-//�ж��Ƿ���ͨ
+//判断是否联通
 int fa[MAXM];
 bool vis[MAXM];
 
@@ -41,7 +41,7 @@ void dfs(int u){
             int len=vec[u][i].first.length();
             int v=vec[u][i].first[len-1]-'a';
             dfs(v);
-            st.push(vec[u][i].first);//����ط�Ҳ������  ��Ϊ�������ʵ��·��  �����ǵ����Ľڵ�
+            st.push(vec[u][i].first);//这个地方也很特殊  因为输出的其实是路径  并不是单独的节点
         }
     }
 }
@@ -71,7 +71,7 @@ int main()
         }
     }
 
-    //�ж�����ͼ�Ƿ���ͨ
+    //判断整个图是否联通
     int father=30;
     for(int i=0;i<=25;i++){
         if(vis[i]){
@@ -87,7 +87,7 @@ int main()
         }
     }
 
-    //ִ�е������� ˵�������붼����ͨ��  �������ж��Ƿ����ŷ��·��
+    //执行到了这里 说明最起码都是联通的  接下来判断是否存在欧拉路径
     int cnt1=0,cnt2=0,s=26;
     bool flag=true;
     for(int i=0;i<26;i++){

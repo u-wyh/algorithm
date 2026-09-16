@@ -48,7 +48,7 @@ int main()
     int ans=0;
     int last=0;
     int r=rsize;
-    lsum[0]=lsum[1]+1;//±íÊ¾ËûÃÇ²»Ò»Ñù  ·ÀÖ¹Å¼È»ÏàÍ¬
+    lsum[0]=lsum[1]+1;//è¡¨ç¤ºä»–ä»¬ä¸ä¸€æ ·  é˜²æ­¢å¶ç„¶ç›¸åŒ
     for(int i=1;i<=lsize;i++){
         if(lsum[i]==lsum[i-1]){
             ans+=last;

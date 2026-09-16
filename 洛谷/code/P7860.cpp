@@ -23,7 +23,7 @@ int check(node u,node v){
 	}
 	K=1.0*(u.y2-u.y1)/(u.x2-u.x1);
 	B=(double)u.y1-K*u.x1;
-	tmp=K*v.x1+B;   //Çóº¯Êı
+	tmp=K*v.x1+B;   //æ±‚å‡½æ•°
 	if(tmp>v.y1) return op;
 	return -op;
 }

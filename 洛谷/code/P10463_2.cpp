@@ -7,24 +7,24 @@ using namespace std;
 const int N=5e5+10;
 struct Tree{ll sum,gcd;}tr[N<<2];
 int n,q,l,r;ll v,a[N];char op;
-void push_up(int p){tr[p]={tr[pl].sum+tr[pr].sum,__gcd(tr[pl].gcd,tr[pr].gcd)};}//ÉÏ·Å±ê¼Ç
-void build(int l,int r,int p){//½¨Ê÷
-	if(l==r)return tr[p]={a[l]-a[l-1],a[l]-a[l-1]},void();//½«²î·Ö´æ½øÈ¥
+void push_up(int p){tr[p]={tr[pl].sum+tr[pr].sum,__gcd(tr[pl].gcd,tr[pr].gcd)};}//ä¸Šæ”¾æ ‡è®°
+void build(int l,int r,int p){//å»ºæ ‘
+	if(l==r)return tr[p]={a[l]-a[l-1],a[l]-a[l-1]},void();//å°†å·®åˆ†å­˜è¿›åŽ»
 	int mid=l+r>>1;
 	build(l,mid,pl),build(mid+1,r,pr),push_up(p);
-}void update(int l,int r,int k,ll v,int p){//µ¥µã¼Ó
+}void update(int l,int r,int k,ll v,int p){//å•ç‚¹åŠ 
 	if(l==r)return tr[p].sum+=v,tr[p].gcd+=v,void();
 	int mid=l+r>>1;
 	if(k<=mid)update(l,mid,k,v,pl);
 	else update(mid+1,r,k,v,pr);
 	push_up(p);
-}ll query_sum(int l,int r,int le,int ri,int p){//Çø¼äºÍ
+}ll query_sum(int l,int r,int le,int ri,int p){//åŒºé—´å’Œ
 	if(l>=le&r<=ri)return tr[p].sum;
 	int mid=l+r>>1;ll ret=0;
 	if(le<=mid)ret+=query_sum(l,mid,le,ri,pl);
 	if(ri>mid)ret+=query_sum(mid+1,r,le,ri,pr);
 	return ret;
-}ll query_gcd(int l,int r,int le,int ri,int p){//Çø¼ä×î´ó¹«Ô¼Êý
+}ll query_gcd(int l,int r,int le,int ri,int p){//åŒºé—´æœ€å¤§å…¬çº¦æ•°
 	if(l>=le&r<=ri)return tr[p].gcd;
 	int mid=l+r>>1;ll ret=0;
 	if(le<=mid)ret=__gcd(ret,query_gcd(l,mid,le,ri,pl));
@@ -37,6 +37,6 @@ void build(int l,int r,int p){//½¨Ê÷
 	while(q--){
 		cin>>op>>l>>r;
 		if(op=='C')cin>>v,update(1,n,l,v,1),r!=n&&(update(1,n,r+1,-v,1),1);
-		else cout<<abs(__gcd(query_gcd(1,n,l+1,r,1),query_sum(1,n,1,l,1)))<<'\n';//¼ÇµÃÈ¡¾ø¶ÔÖµ
+		else cout<<abs(__gcd(query_gcd(1,n,l+1,r,1),query_sum(1,n,1,l,1)))<<'\n';//è®°å¾—å–ç»å¯¹å€¼
 	}return 0;
 }

@@ -29,15 +29,15 @@ int main()
 	for(int i=1;i<=n;i++){
 		x[zx[i].num]=i;
 		y[zy[i].num]=i;
-	}//ÀëÉ¢»¯
+	}//ç¦»æ•£åŒ–
 	for(int i=1;i<=n;i++)
 		sum[x[i]][y[i]]++;
 	for(int i=1;i<=n;i++)
 		for(int j=1;j<=n;j++)
-			sum[i][j]+=sum[i-1][j]+sum[i][j-1]-sum[i-1][j-1];//Ô¤´¦Àí²¿·Ö
+			sum[i][j]+=sum[i-1][j]+sum[i][j-1]-sum[i-1][j-1];//é¢„å¤„ç†éƒ¨åˆ†
 	for(int i=1;i<=n;i++)
 		for(int j=1;j<=n;j++)
-			ans=min(ans,max(max(sum[i][j],sum[i][n]-sum[i][j]),max(sum[n][j]-sum[i][j],sum[n][n]-sum[n][j]-sum[i][n]+sum[i][j])));//ËÄ¸öÏóÏÞ
+			ans=min(ans,max(max(sum[i][j],sum[i][n]-sum[i][j]),max(sum[n][j]-sum[i][j],sum[n][n]-sum[n][j]-sum[i][n]+sum[i][j])));//å››ä¸ªè±¡é™
 	printf("%lld",ans);
 	return 0;
 }

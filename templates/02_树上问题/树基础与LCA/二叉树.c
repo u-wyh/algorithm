@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// ¶¨Òå¶ş²æÊ÷½Úµã½á¹¹Ìå
+// å®šä¹‰äºŒå‰æ ‘èŠ‚ç‚¹ç»“æ„ä½“
 typedef struct TreeNode {
     int val;
     struct TreeNode *left;
     struct TreeNode *right;
 } TreeNode;
 
-// ´´½¨ĞÂµÄ½Úµã
+// åˆ›å»ºæ–°çš„èŠ‚ç‚¹
 TreeNode* createNode(int v) {
     TreeNode* newNode = (TreeNode*)malloc(sizeof(TreeNode));
     if (!newNode) {
@@ -20,7 +20,7 @@ TreeNode* createNode(int v) {
     return newNode;
 }
 
-// ÏÈĞò±éÀú£¨µİ¹é£©
+// å…ˆåºéå†ï¼ˆé€’å½’ï¼‰
 void preOrder(TreeNode* head) {
     if (head == NULL) {
         return;
@@ -30,7 +30,7 @@ void preOrder(TreeNode* head) {
     preOrder(head->right);
 }
 
-// ÖĞĞò±éÀú£¨µİ¹é£©
+// ä¸­åºéå†ï¼ˆé€’å½’ï¼‰
 void inOrder(TreeNode* head) {
     if (head == NULL) {
         return;
@@ -40,7 +40,7 @@ void inOrder(TreeNode* head) {
     inOrder(head->right);
 }
 
-// ºóĞò±éÀú£¨µİ¹é£©×¢Òâ£ºÄãµÄ´úÂëÖĞ `posOrder` ¿ÉÄÜÊÇ¸ö±ÊÎó£¬Í¨³£ÎÒÃÇ³ÆÎª `postOrder`
+// ååºéå†ï¼ˆé€’å½’ï¼‰æ³¨æ„ï¼šä½ çš„ä»£ç ä¸­ `posOrder` å¯èƒ½æ˜¯ä¸ªç¬”è¯¯ï¼Œé€šå¸¸æˆ‘ä»¬ç§°ä¸º `postOrder`
 void postOrder(TreeNode* head) {
     if (head == NULL) {
         return;
@@ -50,7 +50,7 @@ void postOrder(TreeNode* head) {
     printf("%d ", head->val);
 }
 
-// Ö÷º¯Êı£¬´´½¨²¢±éÀú¶ş²æÊ÷
+// ä¸»å‡½æ•°ï¼Œåˆ›å»ºå¹¶éå†äºŒå‰æ ‘
 int main() {
     TreeNode* head = createNode(1);
     head->left = createNode(2);
@@ -60,19 +60,19 @@ int main() {
     head->right->left = createNode(6);
     head->right->right = createNode(7);
 
-    printf("ÏÈĞò±éÀúµİ¹é°æ: ");
+    printf("å…ˆåºéå†é€’å½’ç‰ˆ: ");
     preOrder(head);
     printf("\n");
 
-    printf("ÖĞĞò±éÀúµİ¹é°æ: ");
+    printf("ä¸­åºéå†é€’å½’ç‰ˆ: ");
     inOrder(head);
     printf("\n");
 
-    printf("ºóĞò±éÀúµİ¹é°æ: ");
+    printf("ååºéå†é€’å½’ç‰ˆ: ");
     postOrder(head);
     printf("\n");
 
-    // ÇåÀí·ÖÅäµÄÄÚ´æ£¨Êµ¼Ê´úÂëÖĞ¿ÉÄÜĞèÒª±éÀúÕû¸öÊ÷²¢ÊÍ·ÅÃ¿¸ö½ÚµãµÄÄÚ´æ£©
+    // æ¸…ç†åˆ†é…çš„å†…å­˜ï¼ˆå®é™…ä»£ç ä¸­å¯èƒ½éœ€è¦éå†æ•´ä¸ªæ ‘å¹¶é‡Šæ”¾æ¯ä¸ªèŠ‚ç‚¹çš„å†…å­˜ï¼‰
     // ...
 
     return 0;

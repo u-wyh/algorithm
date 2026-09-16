@@ -9,7 +9,7 @@ double x[MAXN],y[MAXN];
 double ans=2e18;
 
 void dfs(int to,double oil,double sum){
-    //µ½´ïÄÄ¸ö³ÇÊÐ »¹ÓÐ¶àÉÙÓÍ  µ½ÏÖÔÚ»¨ÁË¶àÉÙÇ®
+    //åˆ°è¾¾å“ªä¸ªåŸŽå¸‚ è¿˜æœ‰å¤šå°‘æ²¹  åˆ°çŽ°åœ¨èŠ±äº†å¤šå°‘é’±
     if(sum>ans){
         return ;
     }
@@ -18,7 +18,7 @@ void dfs(int to,double oil,double sum){
         return ;
     }
     if(s*oil>(x[to+1]-x[to])){
-        //±íÊ¾ÓÍ×ã¹»
+        //è¡¨ç¤ºæ²¹è¶³å¤Ÿ
         if(oil>l/2){
             dfs(to+1,oil-(x[to+1]-x[to])/s,sum);
         }

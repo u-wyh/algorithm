@@ -48,7 +48,7 @@ int main()
 {
     int n;
     cin>>n;
-    help[++tot]=0;//Õâ¸öÒ²¿ÉÄÜÊÇ´ð°¸
+    help[++tot]=0;//è¿™ä¸ªä¹Ÿå¯èƒ½æ˜¯ç­”æ¡ˆ
     for(int i=1;i<=n;i++){
         nums[i].op=read();
         if(nums[i].op==1){
@@ -65,7 +65,7 @@ int main()
             help[++tot]=nums[i].l+1;
         }
     }
-    //´ð°¸Ö»¿ÉÄÜÀ´×ÔÓÚhelpÊý×é  ÆäÓàÊý×Ö²»¿ÉÄÜ
+    //ç­”æ¡ˆåªå¯èƒ½æ¥è‡ªäºŽhelpæ•°ç»„  å…¶ä½™æ•°å­—ä¸å¯èƒ½
     sort(help+1,help+tot+1);
     for(int i=2;i<=tot;i++){
         if(help[i]!=help[i-1]){

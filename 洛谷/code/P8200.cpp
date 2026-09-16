@@ -9,7 +9,7 @@ int Next[MAXN<<1];
 int to[MAXN<<1];
 ull weight[MAXN<<1];
 int cnt=1;
-ull dis[MAXN];//´Ó¶¥µã³ö·¢µ½´ï¸ÃµãµÄÒì»òÖµ
+ull dis[MAXN];//ä»Žé¡¶ç‚¹å‡ºå‘åˆ°è¾¾è¯¥ç‚¹çš„å¼‚æˆ–å€¼
 int n,q;
 
  inline int read()

@@ -5,10 +5,10 @@
 #define MAX_ORANGES 10000
 int dp[MAX_ORANGES + 1];
 
-// ³õÊ¼»¯dpÊı×é
+// åˆå§‹åŒ–dpæ•°ç»„
 void initDp() {
     for (int i = 0; i <= MAX_ORANGES; i++) {
-        dp[i] = INT_MAX; // ³õÊ¼»¯ÎªÒ»¸öºÜ´óµÄÊı£¬±íÊ¾Î´¼ÆËã
+        dp[i] = INT_MAX; // åˆå§‹åŒ–ä¸ºä¸€ä¸ªå¾ˆå¤§çš„æ•°ï¼Œè¡¨ç¤ºæœªè®¡ç®—
     }
 }
 

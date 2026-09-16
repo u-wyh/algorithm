@@ -16,7 +16,7 @@ int cnt=1;
 long long blood[MAXN];
 bool vis[MAXN];
 auto compare = [](const pair<int, long long>& left, const pair<int, long long>& right) {
-    return left.second > right.second; // ×¢ÒâÕâÀïÊÇ´óÓÚ£¬ÒòÎªÎÒÃÇÏëÒªĞ¡¸ù¶Ñ
+    return left.second > right.second; // æ³¨æ„è¿™é‡Œæ˜¯å¤§äºï¼Œå› ä¸ºæˆ‘ä»¬æƒ³è¦å°æ ¹å †
 };
 
 priority_queue<pair<int, long long>, vector<pair<int, long long>>, decltype(compare)> heap(compare);

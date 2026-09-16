@@ -7,7 +7,7 @@
 int T[N], D[N], n;
 
 
-// ¸¨Öú±È½Ïº¯Êı£¬ÓÃÓÚqsort
+// è¾…åŠ©æ¯”è¾ƒå‡½æ•°ï¼Œç”¨äºqsort
 int compare_ints(const void *a, const void *b) {
     return (*(int*)a - *(int*)b);
 }
@@ -19,7 +19,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         char s;
         int a;
-        scanf(" %c %d", &s, &a); // ×¢ÒâÔÚ%cÇ°¼Ó¿Õ¸ñÒÔÌø¹ıÈÎºÎÖ®Ç°µÄ»»ĞĞ·û
+        scanf(" %c %d", &s, &a); // æ³¨æ„åœ¨%cå‰åŠ ç©ºæ ¼ä»¥è·³è¿‡ä»»ä½•ä¹‹å‰çš„æ¢è¡Œç¬¦
         if (s == 'T') {
             T[++T_count] = a;
         } else {

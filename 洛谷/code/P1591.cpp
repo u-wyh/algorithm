@@ -3,17 +3,17 @@
 #include <vector>
 #include <string>
 #include <algorithm>
-#include <utility> // ÓÃÓÚpair
+#include <utility> // ç”¨äºpair
 using namespace std;
 
-// ÒÆ³ıÇ°µ¼Áã
+// ç§»é™¤å‰å¯¼é›¶
 void removeLeadingZeros(vector<int>& num) {
     while(num.size()>1&&num.back()==0){
 		num.pop_back();
 	}
 }
 
-// ±È½ÏÁ½¸ö´óÕûÊıµÄ´óĞ¡£¬·µ»Ø1±íÊ¾a>b£¬0±íÊ¾a==b£¬-1±íÊ¾a<b
+// æ¯”è¾ƒä¸¤ä¸ªå¤§æ•´æ•°çš„å¤§å°ï¼Œè¿”å›1è¡¨ç¤ºa>bï¼Œ0è¡¨ç¤ºa==bï¼Œ-1è¡¨ç¤ºa<b
 int compare(const vector<int>& a, const vector<int>& b) {
     if(a.size()!=b.size()){
 		return (a.size()>b.size())?1:-1;
@@ -26,8 +26,8 @@ int compare(const vector<int>& a, const vector<int>& b) {
 	return 0;
 }
 
-// ×Ö·û´®×ª´óÕûÊı
-//ÕâÀïÓĞµãÎÊÌâ  ¾ÍÊÇÃ»ÓĞ¿¼ÂÇ¸ºÊı
+// å­—ç¬¦ä¸²è½¬å¤§æ•´æ•°
+//è¿™é‡Œæœ‰ç‚¹é—®é¢˜  å°±æ˜¯æ²¡æœ‰è€ƒè™‘è´Ÿæ•°
 vector<int> strToNum(const string& s) {
     vector<int>num;
 	for(int i=(int)s.size()-1;i>=0;i--){
@@ -38,7 +38,7 @@ vector<int> strToNum(const string& s) {
     return num;
 }
 
-// ´óÕûÊı×ª×Ö·û´®
+// å¤§æ•´æ•°è½¬å­—ç¬¦ä¸²
 string numToStr(const vector<int>& num) {
     string s;
 	for(int i=(int)num.size()-1;i>=0;i--){
@@ -48,7 +48,7 @@ string numToStr(const vector<int>& num) {
 }
 
 
-// ´óÕûÊı¼Ó·¨
+// å¤§æ•´æ•°åŠ æ³•
 vector<int> add(const vector<int>& a, const vector<int>& b) {
     vector<int> res;
     int carry=0;
@@ -61,7 +61,7 @@ vector<int> add(const vector<int>& a, const vector<int>& b) {
     return res;
 }
 
-// ´óÕûÊı¼õ·¨ (¼ÙÉèa >= b)
+// å¤§æ•´æ•°å‡æ³• (å‡è®¾a >= b)
 vector<int> sub(const vector<int>& a, const vector<int>& b) {
     vector<int> res;
     int carry = 0;
@@ -74,7 +74,7 @@ vector<int> sub(const vector<int>& a, const vector<int>& b) {
     return res;
 }
 
-// ´óÕûÊı³ËÒÔĞ¡ÕûÊı
+// å¤§æ•´æ•°ä¹˜ä»¥å°æ•´æ•°
 vector<int> mul(const vector<int>& a, int b) {
     vector<int> res;
     int carry=0;
@@ -87,7 +87,7 @@ vector<int> mul(const vector<int>& a, int b) {
     return res;
 }
 
-// ´óÕûÊı³ËÒÔ´óÕûÊı
+// å¤§æ•´æ•°ä¹˜ä»¥å¤§æ•´æ•°
 vector<int> mul(const vector<int>& a, const vector<int>& b) {
     vector<int>res(a.size()+b.size(),0);
 	for(int i=0;i<(int)a.size();i++){
@@ -101,7 +101,7 @@ vector<int> mul(const vector<int>& a, const vector<int>& b) {
     return res;
 }
 
-// ´óÕûÊı³ıÒÔĞ¡ÕûÊı£¬·µ»ØÉÌºÍÓàÊı
+// å¤§æ•´æ•°é™¤ä»¥å°æ•´æ•°ï¼Œè¿”å›å•†å’Œä½™æ•°
 pair<vector<int>, int> div(const vector<int>& a, int b) {
     vector<int> res;
     int remainder = 0;
@@ -115,7 +115,7 @@ pair<vector<int>, int> div(const vector<int>& a, int b) {
     return make_pair(res, remainder);
 }
 
-// ´óÕûÊı³ıÒÔ´óÕûÊı (¼òµ¥ÊµÏÖ£¬Ğ§ÂÊ²»¸ß)
+// å¤§æ•´æ•°é™¤ä»¥å¤§æ•´æ•° (ç®€å•å®ç°ï¼Œæ•ˆç‡ä¸é«˜)
 vector<int> div(const vector<int>& a, const vector<int>& b) {
     vector<int> res;
     vector<int> current;
@@ -137,7 +137,7 @@ vector<int> div(const vector<int>& a, const vector<int>& b) {
     return res;
 }
 
-// Ê¾ÀıÊ¹ÓÃ
+// ç¤ºä¾‹ä½¿ç”¨
 int main() {
     int T;
     cin>>T;

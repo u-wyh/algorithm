@@ -1,19 +1,19 @@
 // https://www.luogu.com.cn/problem/P9161
 #include<bits/stdc++.h>
-#define mod 1000000007//Ä£Êı
+#define mod 1000000007//æ¨¡æ•°
 using namespace std;
 const int N=1e6+10;
 int n,m;
-long long dp[N][2];//¼ÇµÃ¿ªlong long
+long long dp[N][2];//è®°å¾—å¼€long long
 vector<int> vec[N];
-void dfs(int cur,int fa){//ÒòÎªÊÇÎŞÏò±ß£¬ĞèÒª¼ÇÂ¼ËüµÄ¸¸Ç×ÒÔ±ÜÃâÖØ¸´
+void dfs(int cur,int fa){//å› ä¸ºæ˜¯æ— å‘è¾¹ï¼Œéœ€è¦è®°å½•å®ƒçš„çˆ¶äº²ä»¥é¿å…é‡å¤
 	for(int i=0;i<vec[cur].size();i++){
 		int to=vec[cur][i];
-		if(to==fa)//ÅĞ¶Ï¸¸Ç×
+		if(to==fa)//åˆ¤æ–­çˆ¶äº²
 			continue;
-		dfs(to,cur);//ÏÈËÑË÷£¬ÔÙ×ªÒÆ£¬²»È»dp[to][0/1]»¹Ã»ÓĞËã³öÀ´£¬×ªÒÆÎŞĞ§
+		dfs(to,cur);//å…ˆæœç´¢ï¼Œå†è½¬ç§»ï¼Œä¸ç„¶dp[to][0/1]è¿˜æ²¡æœ‰ç®—å‡ºæ¥ï¼Œè½¬ç§»æ— æ•ˆ
 		dp[cur][0]=(dp[cur][0]*(dp[to][0]+m*dp[to][1]%mod))%mod;
-		dp[cur][1]=(dp[cur][1]*(dp[to][0]+(m-1)*dp[to][1]%mod))%mod;//×´Ì¬×ªÒÆ
+		dp[cur][1]=(dp[cur][1]*(dp[to][0]+(m-1)*dp[to][1]%mod))%mod;//çŠ¶æ€è½¬ç§»
 	}
 }
 signed main()
@@ -26,11 +26,11 @@ signed main()
 		int u,v;
 		cin>>u>>v;
 		vec[u].push_back(v);
-		vec[v].push_back(u);//¼ÇµÃ´æË«Ïò±ß
+		vec[v].push_back(u);//è®°å¾—å­˜åŒå‘è¾¹
 	}
     for(int i=1;i<=n;i++)
-        dp[i][0]=dp[i][1]=1;//³õÊ¼×´Ì¬
-	dfs(1,0);//´Ó¸ù½áµãÉîËÑ
-	cout<<(dp[1][0]+m*dp[1][1]%mod)%mod;//´ğ°¸
+        dp[i][0]=dp[i][1]=1;//åˆå§‹çŠ¶æ€
+	dfs(1,0);//ä»æ ¹ç»“ç‚¹æ·±æœ
+	cout<<(dp[1][0]+m*dp[1][1]%mod)%mod;//ç­”æ¡ˆ
 	return 0;
 }

@@ -1,10 +1,10 @@
 // https://www.luogu.com.cn/problem/P2658
 #include<cstdio>
 #include<cstring>
-#define id(i,j) ~-i*m+j//¼´Ã¿¸öµãµÄ±àºÅ£¬Ïàµ±ÓÚ(i-1)*m+j
+#define id(i,j) ~-i*m+j//å³æ¯ä¸ªç‚¹çš„ç¼–å·ï¼Œç›¸å½“äº(i-1)*m+j
 using namespace std;
 
-int h[501][501],f[250001],a[250001],len;//hÊÇÃ¿¸öµãµÄ¸ß¶È£¬fÊÇ²¢²é¼¯Êı×é£¬aÊÇĞèÒª±£Ö¤ÁªÍ¨µÄµã£¬lenÊÇaÊı×é³¤¶È
+int h[501][501],f[250001],a[250001],len;//hæ˜¯æ¯ä¸ªç‚¹çš„é«˜åº¦ï¼Œfæ˜¯å¹¶æŸ¥é›†æ•°ç»„ï¼Œaæ˜¯éœ€è¦ä¿è¯è”é€šçš„ç‚¹ï¼Œlenæ˜¯aæ•°ç»„é•¿åº¦
 int ans,l,r,n,m,mid;
 const short dx[4]={-1,0,1,0};
 const short dy[4]={0,1,0,-1};
@@ -25,21 +25,21 @@ int abs(int x){
 bool check(int high){
 	for(int i=1;i<=n;i++)
         for(int j=1;j<=m;j++)
-            f[id(i,j)]=id(i,j);//³õÊ¼»¯
+            f[id(i,j)]=id(i,j);//åˆå§‹åŒ–
 	for(int i=1;i<=n;i++)
         for(int j=1;j<=m;j++)
-            for(int k=0;k<4;k++)//ÏòÖÜÎ§ËÄ¸öµãÁ¬±ß
+            for(int k=0;k<4;k++)//å‘å‘¨å›´å››ä¸ªç‚¹è¿è¾¹
             {
                 int nx=i+dx[k],ny=j+dy[k];
                 if(nx<1||ny<1||nx>n||ny>m)
-                    continue;//±¬³ö·¶Î§Ìø¹ı
+                    continue;//çˆ†å‡ºèŒƒå›´è·³è¿‡
                 if(abs(h[i][j]-h[nx][ny])>high)
-                    continue;//³¬¹ı¸ß¶ÈÌø¹ı
-                add(id(i,j),id(nx,ny));//Á¬±ß
+                    continue;//è¶…è¿‡é«˜åº¦è·³è¿‡
+                add(id(i,j),id(nx,ny));//è¿è¾¹
             }
 	for(int i=1;i<len;i++)
         if(find(a[i])!=find(a[i+1]))
-            return false;//ÅĞ¶ÏÊÇ·ñÄÜÁªÍ¨
+            return false;//åˆ¤æ–­æ˜¯å¦èƒ½è”é€š
 	return true;
 }
 
@@ -51,22 +51,22 @@ int main()
             scanf("%d",&h[i][j]);
             if(h[i][j]>r)
                 r=h[i][j];
-            }//±£´æ×î´óµÄr
+            }//ä¿å­˜æœ€å¤§çš„r
 	for(int i=1;i<=n;i++)
         for(int j=1,t;j<=m;j++){
             scanf("%d",&t);
             if(t)
                 a[++len]=id(i,j);
-        }//±£´æ
+        }//ä¿å­˜
 	while(l<=r){
 		mid=(l+r)>>1;
-		if(check(mid))//ÅĞ¶Ï
+		if(check(mid))//åˆ¤æ–­
 		{
 			ans=mid;
-			r=mid-1;//µ÷ÕûÓÒ±ß½ç
+			r=mid-1;//è°ƒæ•´å³è¾¹ç•Œ
 		}
 		else
-            l=mid+1;//µ÷Õû×ó±ß½ç
+            l=mid+1;//è°ƒæ•´å·¦è¾¹ç•Œ
 	}
-	printf("%d",ans);//Êä³ö
+	printf("%d",ans);//è¾“å‡º
 }

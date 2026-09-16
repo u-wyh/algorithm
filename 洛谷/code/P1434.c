@@ -13,11 +13,11 @@ int s[MAX_SIZE][MAX_SIZE];
 int ans = 0;
 
 int dfs(int x, int y) {
-    if (s[x][y] != 0) return s[x][y]; // ¼ÇÒä»¯ËÑË÷
-    s[x][y] = 1; // ÌâÄ¿ÖĞ´ğ°¸ÊÇÓĞ°üº¬Õâ¸öµãµÄ
+    if (s[x][y] != 0) return s[x][y]; // è®°å¿†åŒ–æœç´¢
+    s[x][y] = 1; // é¢˜ç›®ä¸­ç­”æ¡ˆæ˜¯æœ‰åŒ…å«è¿™ä¸ªç‚¹çš„
     for (int i = 0; i < 4; i++) {
         int xx = dx[i] + x;
-        int yy = dy[i] + y; // ËÄ¸ö·½Ïò
+        int yy = dy[i] + y; // å››ä¸ªæ–¹å‘
         if (xx > 0 && yy > 0 && xx <= n && yy <= m && a[x][y] > a[xx][yy]) {
             dfs(xx, yy);
             s[x][y] = (s[x][y] > s[xx][yy] + 1) ? s[x][y] : s[xx][yy] + 1;
@@ -27,15 +27,15 @@ int dfs(int x, int y) {
 }
 
 int main() {
-    scanf("%d%d", &n, &m); // Í¬ÌâÄ¿µÄR,C
+    scanf("%d%d", &n, &m); // åŒé¢˜ç›®çš„R,C
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= m; j++) {
             scanf("%d", &a[i][j]);
         }
     }
-    for (int i = 1; i <= n; i++) { // ÕÒ´ÓÃ¿¸ö³ö·¢µÄ×î³¤¾àÀë
+    for (int i = 1; i <= n; i++) { // æ‰¾ä»æ¯ä¸ªå‡ºå‘çš„æœ€é•¿è·ç¦»
         for (int j = 1; j <= m; j++) {
-            ans = (ans > dfs(i, j)) ? ans : dfs(i, j); // È¡×î´óÖµ
+            ans = (ans > dfs(i, j)) ? ans : dfs(i, j); // å–æœ€å¤§å€¼
         }
     }
     printf("%d\n", ans);

@@ -36,7 +36,7 @@ Number number_add(Number x, Number y) {
     return x;
 }
 
-// ×¢Òâ£ºCÓïÑÔÖÐÃ»ÓÐmaxº¯Êý£¬ÐèÒªÊÖ¶¯ÊµÏÖ
+// æ³¨æ„ï¼šCè¯­è¨€ä¸­æ²¡æœ‰maxå‡½æ•°ï¼Œéœ€è¦æ‰‹åŠ¨å®žçŽ°
 int max(int a, int b) {
     return a > b ? a : b;
 }

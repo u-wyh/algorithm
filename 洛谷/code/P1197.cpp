@@ -22,7 +22,7 @@ inline int Get_father(int x)
 {
     if(father[x]==x)    return x;
     return father[x]=Get_father(father[x]);
-    //��ְֵİְ־�����İְ֡������������ء������鼯
+    //你爸爸的爸爸就是你的爸爸——反查理马特——并查集
 }
 inline void hb(int u,int v)
 {
@@ -34,39 +34,39 @@ int main()
     ios::sync_with_stdio(false);
     cin>>n>>m;
     f(i,0,n)
-        father[i]=i,head[i]=-1;//���鼯��ʼ��
+        father[i]=i,head[i]=-1;//并查集初始化
     f(i,1,m)
     {
         int x,y;
         cin>>x>>y;
-        Add_Node(x,y);//����ͼ
-        Add_Node(y,x);//��������ͼ������
+        Add_Node(x,y);//储存图
+        Add_Node(y,x);//由于无向图存两遍
     }
     cin>>k;
     f(i,1,k)
     {
         cin>>broken[i];
-        Broken[broken[i]]=1;//����һ���
+        Broken[broken[i]]=1;//标记砸坏了
     }
-    int total=n-k;//��ʼ��Ϊ���е㶼�ǵ������ڵ�
-    f(i,1,2*m)//��2*m����
+    int total=n-k;//初始化为所有点都是单独存在的
+    f(i,1,2*m)//有2*m个边
         if(!Broken[h[i].from] && !Broken[h[i].node] && Get_father(h[i].from)!=Get_father(h[i].node))
-		{//Ҫ�������յ㶼û�һ� �������ǲ�û����ͨ
-            total--;//��һ���� ��һ����ͨ��
+		{//要是起点和终点都没砸坏 而且他们并没有联通
+            total--;//连一条边 减一个联通体
             hb(h[i].from,h[i].node);
         }
-    ans[k+1]=total;//��ǰ�������һ���ƻ���ĸ���
+    ans[k+1]=total;//当前就是最后一次破坏后的个数
     fd(i,k,1)
     {
-        //total=0 //���ﲻ��Ҫ��ʼ�� ��Ҫ����һ�εķ������޽�
-        total++;//�޸�һ���� ��ͨ��+1
-        Broken[broken[i]]=0;//�޸�
-        for(int j=head[broken[i]];j!=-1;j=h[j].next)//ö��ÿһ���ӵ�
+        //total=0 //这里不需要初始化 需要从上一次的废墟上修建
+        total++;//修复一个点 联通体+1
+        Broken[broken[i]]=0;//修复
+        for(int j=head[broken[i]];j!=-1;j=h[j].next)//枚举每一个子点
         {
             if(!Broken[h[j].node] && Get_father(broken[i])!=Get_father(h[j].node))
             {
-                total--;//��һ�߼�һ����ͨ��
-                hb(broken[i],h[j].node);//�ϲ���������
+                total--;//连一边减一个联通块
+                hb(broken[i],h[j].node);//合并这两个点
             }
         }
         ans[i]=total;

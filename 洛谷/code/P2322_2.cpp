@@ -2,22 +2,22 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-const int MAXN = 12;//×Ö·ûÊıÁ¿
-const int MAXS = 605;//ËùÓĞ×Ö·ûµÄ×ÜÊı
+const int MAXN = 12;//å­—ç¬¦æ•°é‡
+const int MAXS = 605;//æ‰€æœ‰å­—ç¬¦çš„æ€»æ•°
 
-int state[MAXS];//±íÊ¾µ½´ïÕâ¸ö½Úµãºó£¬¾Í»áÓĞÊ²Ã´ÑùµÄ×´Ì¬
+int state[MAXS];//è¡¨ç¤ºåˆ°è¾¾è¿™ä¸ªèŠ‚ç‚¹åï¼Œå°±ä¼šæœ‰ä»€ä¹ˆæ ·çš„çŠ¶æ€
 
-// AC×Ô¶¯»ú
+// ACè‡ªåŠ¨æœº
 int tree[MAXS][26];
 int fail[MAXS];
 int cnt = 0;
 
-// ¿ÉÒÔÓÃ×÷¶ÓÁĞ»òÕßÕ»£¬Ò»¸öÈİÆ÷¶øÒÑ ÉèÁ¢failÖ¸Õë
+// å¯ä»¥ç”¨ä½œé˜Ÿåˆ—æˆ–è€…æ ˆï¼Œä¸€ä¸ªå®¹å™¨è€Œå·² è®¾ç«‹failæŒ‡é’ˆ
 int box[MAXS];
 string s;
 int path;
 
-int n;//×Ö·û´®ÊıÁ¿
+int n;//å­—ç¬¦ä¸²æ•°é‡
 
 struct node{
     int now,status;
@@ -28,13 +28,13 @@ bool vis[600][1<<12];
 int ans[600*(1<<12)],fa[600*(1<<12)],c[605];
 
 void insert(int i,string word){
-    //iÊÇÄ¿±ê´®µÄ±àºÅ
-    int cur=0;//Í·½áµãÉèÖÃÎª0
+    //iæ˜¯ç›®æ ‡ä¸²çš„ç¼–å·
+    int cur=0;//å¤´ç»“ç‚¹è®¾ç½®ä¸º0
     for (char ch : word){
         path=ch-'A';
         if(tree[cur][path]==0){
             tree[cur][path]=++cnt;
-            //Ã»ÓĞÂ·¾ÍÒªĞÂ½¨Ò»ÌõÂ·  ²¢¸³Óè±àºÅ
+            //æ²¡æœ‰è·¯å°±è¦æ–°å»ºä¸€æ¡è·¯  å¹¶èµ‹äºˆç¼–å·
         }
         cur=tree[cur][path];
     }
@@ -43,14 +43,14 @@ void insert(int i,string word){
 }
 
 void setFail() {
-    // boxµ±×ö¶ÓÁĞÀ´Ê¹ÓÃ
+    // boxå½“åšé˜Ÿåˆ—æ¥ä½¿ç”¨
     int l = 0;
     int r = 0;
     for (int i = 0; i <= 25; i++) {
         if (tree[0][i] > 0) {
             box[r++] = tree[0][i];
-            //0½ÚµãÖĞÖ»ÓĞÓĞº¢×ÓµÄ½Úµã¼ÓÈë¶ÓÁĞÖĞ
-            //Õâ¸ö¶ÓÁĞÀïÃæ´æ´¢¹ıµÄËùÓĞ½Úµã¶¼ÒªÓĞfail
+            //0èŠ‚ç‚¹ä¸­åªæœ‰æœ‰å­©å­çš„èŠ‚ç‚¹åŠ å…¥é˜Ÿåˆ—ä¸­
+            //è¿™ä¸ªé˜Ÿåˆ—é‡Œé¢å­˜å‚¨è¿‡çš„æ‰€æœ‰èŠ‚ç‚¹éƒ½è¦æœ‰fail
         }
     }
     while (l < r) {
@@ -59,9 +59,9 @@ void setFail() {
             if (tree[u][i] == 0) {
                 tree[u][i] = tree[fail[u]][i];
             } else {
-                fail[tree[u][i]] = tree[fail[u]][i];//ÉèÖÃÕâ¸öº¢×Ó½ÚµãµÄfailÖ¸Õë   Ö±Í¨±í¸¨Öú²»ÓÃÈÆ»·
-                state[tree[u][i]]|=state[tree[fail[u]][i]];//ËüµÄfailÖ¸Õë°üº¬µÄ×Ö·û´®ËüÒ²°üº¬
-                box[r++] = tree[u][i];//±íÊ¾ÓĞÕâÌõÖ§Â·  ¼ÓÈëµ½¶ÓÁĞÖĞ
+                fail[tree[u][i]] = tree[fail[u]][i];//è®¾ç½®è¿™ä¸ªå­©å­èŠ‚ç‚¹çš„failæŒ‡é’ˆ   ç›´é€šè¡¨è¾…åŠ©ä¸ç”¨ç»•ç¯
+                state[tree[u][i]]|=state[tree[fail[u]][i]];//å®ƒçš„failæŒ‡é’ˆåŒ…å«çš„å­—ç¬¦ä¸²å®ƒä¹ŸåŒ…å«
+                box[r++] = tree[u][i];//è¡¨ç¤ºæœ‰è¿™æ¡æ”¯è·¯  åŠ å…¥åˆ°é˜Ÿåˆ—ä¸­
                 //cout<<state[tree[u][i]]<<endl;
             }
         }
@@ -89,7 +89,7 @@ int main()
             while(t){
                 c[++nod]=ans[t];
                 t=fa[t];
-            }//µİ¹é»ØÈ¥Çó´ğ°¸
+            }//é€’å½’å›å»æ±‚ç­”æ¡ˆ
             for(int i=nod;i>0;i--)
                 putchar(c[i]+'A');
             return 0;
@@ -98,13 +98,13 @@ int main()
             if(!vis[tree[now][i]][status|state[tree[now][i]]]){
                 vis[tree[now][i]][status|state[tree[now][i]]]=true;
                 q.push({tree[now][i],status|state[tree[now][i]]});
-                //ÕÒ³öÏÖĞÂµÄ×´Ì¬
+                //æ‰¾å‡ºç°æ–°çš„çŠ¶æ€
                 fa[++tot]=t;
                 ans[tot]=i;
-                //¼ÇÂ¼µ±Ç°ËÑµ½µÄ×Ö·û,Í¬Ê±½¨1¿Ã¹ØÓÚ´ğ°¸µÄÊ÷,±ãÓÚ×îºó²éÑ¯
+                //è®°å½•å½“å‰æœåˆ°çš„å­—ç¬¦,åŒæ—¶å»º1æ£µå…³äºç­”æ¡ˆçš„æ ‘,ä¾¿äºæœ€åæŸ¥è¯¢
             }
         }
-        t++;//Ti±íÊ¾µ±Ç°µÄËÑË÷µ½µÄ±àºÅ
+        t++;//Tiè¡¨ç¤ºå½“å‰çš„æœç´¢åˆ°çš„ç¼–å·
     }
     return 0;
 }

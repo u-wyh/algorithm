@@ -49,7 +49,7 @@ int main()
         maxans=max(maxans,nums[i]);
     }
     maxans*=2;
-    high=32-__builtin_clz(maxans);//选择出有效的位数  即不要前缀0
+    high=32-__builtin_clz(maxans);//閫夋嫨鍑烘湁鏁堢殑浣嶆暟  鍗充笉瑕佸墠缂�0
     cout<<maxans<<' '<<high<<' '<<(1<<high)<<endl;
     for(int i=1;i<=n;i++){
         insert(nums[i]);

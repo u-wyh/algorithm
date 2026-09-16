@@ -64,7 +64,7 @@ int main() {
         scanf("%d", &b[i]);
         v[b[i]] = true;
     }
-    qsort(b + 1, m, sizeof(int), compare); // 注意：这里使用qsort，且需要合适的比较函数
+    qsort(b + 1, m, sizeof(int), compare); // 娉ㄦ剰锛氳繖閲屼娇鐢╭sort锛屼笖闇�瑕佸悎閫傜殑姣旇緝鍑芥暟
 
     ll l = 0, r = 1e9 + n;
     while (l < r) {
@@ -82,4 +82,4 @@ int main() {
 // int compare(const void *a, const void *b) {
 //     return (*(int*)a - *(int*)b);
 // }
-// 然后在qsort中调用它：qsort(b + 1, m, sizeof(int), compare);
+// 鐒跺悗鍦╭sort涓皟鐢ㄥ畠锛歲sort(b + 1, m, sizeof(int), compare);

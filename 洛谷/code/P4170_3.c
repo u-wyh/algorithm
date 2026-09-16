@@ -11,20 +11,20 @@ int min(int a, int b) {
 }
 
 int compute(char *s, int n) {
-    // ³õÊ¼»¯³¤¶ÈÎª1ºÍ2µÄ×Ó´®µÄdpÖµ
+    // åˆå§‹åŒ–é•¿åº¦ä¸º1å’Œ2çš„å­ä¸²çš„dpå€¼
     for (int i = 0; i < n - 1; i++) {
         dp[i][i] = 1;
         dp[i][i + 1] = (s[i] == s[i + 1]) ? 1 : 2;
     }
 
-    // Ìî³ädpÊı×é
-    for (int len = 3; len <= n; len++) { // ´Ó³¤¶ÈÎª3µÄ×Ó´®¿ªÊ¼´¦Àí
+    // å¡«å……dpæ•°ç»„
+    for (int len = 3; len <= n; len++) { // ä»é•¿åº¦ä¸º3çš„å­ä¸²å¼€å§‹å¤„ç†
         for (int i = 0; i <= n - len; i++) {
             int j = i + len - 1;
             if (s[i] == s[j]) {
-                dp[i][j] = dp[i][j - 1]; // Èç¹ûÁ½¶ËÏàÍ¬£¬Ôò¼Ì³Ğ×ó°ë²¿·ÖµÄ½á¹û
+                dp[i][j] = dp[i][j - 1]; // å¦‚æœä¸¤ç«¯ç›¸åŒï¼Œåˆ™ç»§æ‰¿å·¦åŠéƒ¨åˆ†çš„ç»“æœ
             } else {
-                dp[i][j] = INT_MAX; // ³õÊ¼»¯Îª×î´óÖµ£¬ÓÃÓÚÕÒ×îĞ¡Öµ
+                dp[i][j] = INT_MAX; // åˆå§‹åŒ–ä¸ºæœ€å¤§å€¼ï¼Œç”¨äºæ‰¾æœ€å°å€¼
                 for (int k = i; k < j; k++) {
                     dp[i][j] = min(dp[i][j], dp[i][k] + dp[k + 1][j]);
                 }
@@ -37,7 +37,7 @@ int compute(char *s, int n) {
 int main() {
     char s[Max];
     fgets(s, Max, stdin);
-    // È¥³ıfgets¶ÁÈ¡µÄ»»ĞĞ·û
+    // å»é™¤fgetsè¯»å–çš„æ¢è¡Œç¬¦
     s[strcspn(s, "\n")] = 0;
     int n = strlen(s);
     printf("%d\n", compute(s, n));

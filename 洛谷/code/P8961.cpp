@@ -54,8 +54,8 @@ void exgcd(long long a, long long b) {
     }
 }
 
-// ��չ�й�ʣ�ඨ��ģ��
-// �������ڽ��ģ�����ǻ��ʵ����  ���÷�Χ����
+// 扩展中国剩余定理模版
+// 可以用于解决模数不是互质的情况  适用范围更广
 long long excrt(int n) {
     long long tail = 0, lcm = 1, tmp, b, c, x0;
     // ans = lcm * x + tail

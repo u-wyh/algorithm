@@ -5,7 +5,7 @@ const int MAXN = 55;
 const int MAXM = 20005;
 
 auto compare = [](const pair<int, int>& left, const pair<int, int>& right) {
-    return left.second > right.second; // ×¢ÒâÕâÀïÊÇ´óÓÚ£¬ÒòÎªÎÒÃÇÏëÒªĞ¡¸ù¶Ñ
+    return left.second > right.second; // æ³¨æ„è¿™é‡Œæ˜¯å¤§äºï¼Œå› ä¸ºæˆ‘ä»¬æƒ³è¦å°æ ¹å †
 };
 
 priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(compare)> heap(compare);
@@ -37,7 +37,7 @@ int main()
         to[cnt]=u;
         weight[cnt]=w;
         head[v]=cnt++;
-    }//ÕâµÀÌâ½¨ÒéÊ¹ÓÃÁÚ½Ó±í  ÓĞÖØ±ß
+    }//è¿™é“é¢˜å»ºè®®ä½¿ç”¨é‚»æ¥è¡¨  æœ‰é‡è¾¹
     for(int i=1;i<=54;i++){
         dis[i]=1e9;
     }

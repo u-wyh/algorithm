@@ -6,11 +6,11 @@ typedef struct {
     int tot;
 } num;
 
-// ±È½Ïº¯Êı£¬ÓÃÓÚqsort
+// æ¯”è¾ƒå‡½æ•°ï¼Œç”¨äºqsort
 int compare(const void *a, const void *b) {
     num *numA = (num *)a;
     num *numB = (num *)b;
-    // ×¢Òâ£¬ÕâÀïÓëC++ÖĞµÄÔËËã·ûÖØÔØÏà·´£¬ÒòÎªqsortĞèÒª·µ»Ø¸ºÊı¡¢Áã»òÕıÊı
+    // æ³¨æ„ï¼Œè¿™é‡Œä¸C++ä¸­çš„è¿ç®—ç¬¦é‡è½½ç›¸åï¼Œå› ä¸ºqsortéœ€è¦è¿”å›è´Ÿæ•°ã€é›¶æˆ–æ­£æ•°
     if (numA->tot > numB->tot) return -1;
     if (numA->tot < numB->tot) return 1;
     return 0;
@@ -19,7 +19,7 @@ int compare(const void *a, const void *b) {
 int main() {
     int n, tot = 0, ans = 0;
     scanf("%d", &n);
-    num cnt[500001] = {0}; // ³õÊ¼»¯Êı×é
+    num cnt[500001] = {0}; // åˆå§‹åŒ–æ•°ç»„
 
     for (int i = 1; i <= n; ++i) {
         int x;
@@ -28,10 +28,10 @@ int main() {
         cnt[x].tot++;
     }
 
-    // Ê¹ÓÃqsort½øĞĞÅÅĞò
+    // ä½¿ç”¨qsortè¿›è¡Œæ’åº
     qsort(cnt + 1, n, sizeof(num), compare);
 
-    // ÖØĞÂ¼ÆËãtot£¬ÒòÎªqsort»á´òÂÒÔ­Êı×é£¬µ«ÔÚÕâÀïÎÒÃÇ²»ĞèÒª£¬Ö»ÊÇÓÃn´úÌætot½øĞĞºóĞø¼ÆËã
+    // é‡æ–°è®¡ç®—totï¼Œå› ä¸ºqsortä¼šæ‰“ä¹±åŸæ•°ç»„ï¼Œä½†åœ¨è¿™é‡Œæˆ‘ä»¬ä¸éœ€è¦ï¼Œåªæ˜¯ç”¨nä»£æ›¿totè¿›è¡Œåç»­è®¡ç®—
     tot = n;
 
     for (int i = 1; i <= n; ++i) {

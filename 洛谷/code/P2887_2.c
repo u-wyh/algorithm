@@ -9,17 +9,17 @@ typedef struct {
 node cow[2501], fss[2501];
 int c, l, ans;
 
-// ×Ô¶¨Òå±È½Ïº¯Êı£¬ÓÃÓÚqsort
+// è‡ªå®šä¹‰æ¯”è¾ƒå‡½æ•°ï¼Œç”¨äºqsort
 int cmp(const void *a, const void *b) {
     node *x = (node *)a;
     node *y = (node *)b;
-    return x->b - y->b; // ÄÌÅ£°´ÓÒ¶ËµãÅÅĞò
+    return x->b - y->b; // å¥¶ç‰›æŒ‰å³ç«¯ç‚¹æ’åº
 }
 
 int cmp1(const void *a, const void *b) {
     node *x = (node *)a;
     node *y = (node *)b;
-    return x->a - y->a; // ·ÀÉ¹Ëª°´×ó¶ËµãÅÅĞò
+    return x->a - y->a; // é˜²æ™’éœœæŒ‰å·¦ç«¯ç‚¹æ’åº
 }
 
 int main() {
@@ -31,7 +31,7 @@ int main() {
         scanf("%d%d", &fss[i].a, &fss[i].b);
     }
 
-    // Ê¹ÓÃqsort½øĞĞÅÅĞò
+    // ä½¿ç”¨qsortè¿›è¡Œæ’åº
     qsort(cow, c, sizeof(node), cmp);
     qsort(fss, l, sizeof(node), cmp1);
 

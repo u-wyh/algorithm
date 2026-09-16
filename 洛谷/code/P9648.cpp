@@ -6,14 +6,14 @@ int n,head[200005],nex[400005],to[400005],cnt = 0;
 char w[400005];
 bool can[200005];
 int num;
-//Çå¿Õ
+//æ¸…ç©º
 void qk() {
 	cnt = 0,num = n;
 	for(int i = 0;i <= 200000;i++) head[i] = 0,can[i] = true;
 	for(int i = 0;i <= 400000;i++) nex[i] = 0,to[i] = 0,w[i] = ' ';
 	return;
 }
-//¼Ó±ß
+//åŠ è¾¹
 void add(int x,int y,char z) {
 	nex[++cnt] = head[x];
 	head[x] = cnt;
@@ -21,7 +21,7 @@ void add(int x,int y,char z) {
 	w[cnt] = z;
 }
 bool dfs(int now,int fa,bool ok) {
-	//ok ´ú±íµ±Ç°µãÊÇ·ñºÏ·¨
+	//ok ä»£è¡¨å½“å‰ç‚¹æ˜¯å¦åˆæ³•
 	int xt = 0;
 	if(!ok) xt++;
 	bool get = ok;
@@ -29,14 +29,14 @@ bool dfs(int now,int fa,bool ok) {
 	bool return_ok = true,return_ok2 = true;
 	int have[27][3];
 	for(int i = 0;i <= 26;i++) have[i][1] = -1,have[i][2] = -1;
-	// ÕÒµ½Óë¸¸Ç×Á¬½ÓµÄ±ß¶ÔÓ¦µÄ×Ö·û
+	// æ‰¾åˆ°ä¸Žçˆ¶äº²è¿žæŽ¥çš„è¾¹å¯¹åº”çš„å­—ç¬¦
 	for(int i = head[now];i;i = nex[i]) {
 		if(to[i] == fa) {
 			have[int(w[i] - 'a')][1] = fa;
 			break;
 		}
 	}
-	//ÕÒµ½Ê£ÏÂµÄ±ß
+	//æ‰¾åˆ°å‰©ä¸‹çš„è¾¹
 	for(int i = head[now];i;i = nex[i]) {
 		if(to[i] == fa) continue;
 		if(have[int(w[i] - 'a')][1] == -1) have[int(w[i] - 'a')][1] = to[i];

@@ -5,7 +5,7 @@ using namespace std;
 const int N=5e5+10;
 int n,q;
 string cyj;
-struct hextree{  //Ïß¶ÎÊ÷
+struct hextree{  //çº¿æ®µæ ‘
 	int col[N<<2],mark[N<<2];
 	hextree(){memset(mark,-1,sizeof mark);}
 	void pushup(rnt k){
@@ -20,7 +20,7 @@ struct hextree{  //Ïß¶ÎÊ÷
 		}
 	} void build(rnt l,rnt r,rnt k){
 		if(l==r){
-			col[k]=cyj[l-1]-'A'+1; //È¡1¡¢2¡¢3
+			col[k]=cyj[l-1]-'A'+1; //å–1ã€2ã€3
 			return;
 		} rnt mid=(l+r)>>1;
 		build(l,mid,k<<1);
@@ -29,7 +29,7 @@ struct hextree{  //Ïß¶ÎÊ÷
 	} void fix(rnt x,rnt y,rnt z,rnt l,rnt r,rnt k){
 		if(x>r||y<l) return;
 		if(x<=l&&r<=y){
-			col[k]=mark[k]=z; //±ðÍü¼Ópushdown
+			col[k]=mark[k]=z; //åˆ«å¿˜åŠ pushdown
 			return;
 		} pushdown(k);
 		rnt mid=(l+r)>>1;
@@ -38,11 +38,11 @@ struct hextree{  //Ïß¶ÎÊ÷
 		pushup(k);
 	} int draw(rnt x,rnt y,rnt l,rnt r,rnt k){
 		/*
-		0±íÊ¾´ËÇø¼ä²¢²»Ñ¯ÎÊ¡£
-		Èç¹ûÒ»¸ö×ÓÇø¼ä²»Ñ¯ÎÊ£¬·µ»ØÁíÒ»¸ö×ÓÇø¼äµÄ·µ»ØÖµ
-		Èç¹ûÓÐÒ»¸öÇø¼ä»ìÉ«£¬·µ»Ø»ìÉ«
-		Èç¹ûÁ½¸ö×ÓÇø¼äÍ¬É«£¬·µ»Ø´ËÉ«
-		·ñÔò£¬·µ»Ø»ìÉ«
+		0è¡¨ç¤ºæ­¤åŒºé—´å¹¶ä¸è¯¢é—®ã€‚
+		å¦‚æžœä¸€ä¸ªå­åŒºé—´ä¸è¯¢é—®ï¼Œè¿”å›žå¦ä¸€ä¸ªå­åŒºé—´çš„è¿”å›žå€¼
+		å¦‚æžœæœ‰ä¸€ä¸ªåŒºé—´æ··è‰²ï¼Œè¿”å›žæ··è‰²
+		å¦‚æžœä¸¤ä¸ªå­åŒºé—´åŒè‰²ï¼Œè¿”å›žæ­¤è‰²
+		å¦åˆ™ï¼Œè¿”å›žæ··è‰²
 		*/
 		if(x>r||y<l) return 0;
 		if(x<=l&&r<=y) return col[k];
@@ -75,11 +75,11 @@ int main(){
 			int L=tree.draw(x-1,x-1,1,n,1),
 			R=tree.draw(y+1,y+1,1,n,1);
 //			printf("L=%d R=%d\n",L,R);
-			//Èç¹ûÇø¼ä×ó±ßÃ»¿ó£¬ÓÒ±ßÃ»¿ó»ò×óÓÒ±ß²»Í¬¿ó
-			//²¢ÇÒÖÐ¼äÊÇÍ¬Ò»ÖÖ¿ó£¬¾Í·ûºÏÒªÇó
+			//å¦‚æžœåŒºé—´å·¦è¾¹æ²¡çŸ¿ï¼Œå³è¾¹æ²¡çŸ¿æˆ–å·¦å³è¾¹ä¸åŒçŸ¿
+			//å¹¶ä¸”ä¸­é—´æ˜¯åŒä¸€ç§çŸ¿ï¼Œå°±ç¬¦åˆè¦æ±‚
 			if(tree.draw(x,y,1,n,1)!=-1
 			&&(L!=R||!L||!R)) puts("Yes");
-			else puts("No"); //¿´Çå´óÐ¡Ð´
+			else puts("No"); //çœ‹æ¸…å¤§å°å†™
 		}
 	}
 	return 0;

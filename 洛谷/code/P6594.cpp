@@ -7,21 +7,21 @@ const int INF = 1e9;
 
 int n,m,k,p;
 
-int val[MAXN];//Ã¿¸ö½ÚµãµÄµãÈ¨
+int val[MAXN];//æ¯ä¸ªèŠ‚ç‚¹çš„ç‚¹æƒ
 
-int diff[MAXN];//ÓÃÓÚÊ÷ÉÏ±ß²î·Ö
+int diff[MAXN];//ç”¨äºæ ‘ä¸Šè¾¹å·®åˆ†
 
-//ÓÃÓÚÇólca
+//ç”¨äºæ±‚lca
 int dep[MAXN];
 int st[MAXN][LIMIT];
 
-int dp[MAXN][MAXN];//dp[i][j]±íÊ¾iÎªÊ×µÄ×ÓÊ÷ Ëû×Ô¼º±»°üº¬ÔÚval[j]~val[j]+kµÄ¼¯ºÏÖĞ  ×îĞ¡´ú¼Û
+int dp[MAXN][MAXN];//dp[i][j]è¡¨ç¤ºiä¸ºé¦–çš„å­æ ‘ ä»–è‡ªå·±è¢«åŒ…å«åœ¨val[j]~val[j]+kçš„é›†åˆä¸­  æœ€å°ä»£ä»·
 
-//Á´Ê½Ç°ÏòĞÇ  Ë«Ïò±ß
+//é“¾å¼å‰å‘æ˜Ÿ  åŒå‘è¾¹
 int cnt=1;
 int head[MAXN];
 int to[MAXN<<1];
-int weight[MAXN<<1];//²»ÓÃ³õÊ¼»¯ ·´Õı¶¼ÊÇ0
+int weight[MAXN<<1];//ä¸ç”¨åˆå§‹åŒ– åæ­£éƒ½æ˜¯0
 int nxt[MAXN<<1];
 
 inline int read(){
@@ -64,7 +64,7 @@ inline int lca(int a,int b){
     return st[a][0];
 }
 
-//½¨Á¢depºÍst±íĞÅÏ¢
+//å»ºç«‹depå’Œstè¡¨ä¿¡æ¯
 void dfs(int u,int f){
     dep[u]=dep[f]+1;
     st[u][0]=f;
@@ -80,7 +80,7 @@ void dfs(int u,int f){
     }
 }
 
-//Íê³ÉÊ÷ÉÏ²î·Ö  È·Á¢±ßÈ¨
+//å®Œæˆæ ‘ä¸Šå·®åˆ†  ç¡®ç«‹è¾¹æƒ
 void dfs1(int u,int fa){
     for(int i=head[u];i;i=nxt[i]){
         int v=to[i];

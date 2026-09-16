@@ -8,7 +8,7 @@ int key[MAXN];
 int ls[MAXN];
 int rs[MAXN];
 
-//ÖĞĞò±éÀúÊı×é
+//ä¸­åºéå†æ•°ç»„
 int m;
 int arr[MAXN];
 int f[MAXN];
@@ -38,7 +38,7 @@ void inorder(int i){
     return ;
 }
 
-//ÕÒµ½helpÊı×éÖĞµÚÒ»¸ö±ÈÕâ¸öÔªËØ´ó»òÏàµÈµÄÎ»ÖÃ
+//æ‰¾åˆ°helpæ•°ç»„ä¸­ç¬¬ä¸€ä¸ªæ¯”è¿™ä¸ªå…ƒç´ å¤§æˆ–ç›¸ç­‰çš„ä½ç½®
 int find(int x){
     int l=1,r=m,ans=-1;
     while(l<=r){

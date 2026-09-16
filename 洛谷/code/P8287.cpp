@@ -81,7 +81,7 @@ signed main()
                 fa[find(v)] = find(u);
             }
             else if (!(dis[v] + 1 == dis[u] || (vis[v] && dis[v] == dis[u]))) {
-                if (find(v) == find(u)) // ÒÑ¾­Í¬ÊôÒ»¸ö¼¯ºÏ Í³¼Æ´ğ°¸
+                if (find(v) == find(u)) // å·²ç»åŒå±ä¸€ä¸ªé›†åˆ ç»Ÿè®¡ç­”æ¡ˆ
                     ans = min(max(dis[v], dis[u]) - 1, ans);
                 else
                     fa[find(v)] = find(u);

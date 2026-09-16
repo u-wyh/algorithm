@@ -4,7 +4,7 @@ using namespace std;
 #define MN 605
 
 int add[MN][26],fail[MN],state[MN],nod,ans[MN*(1<<12|1)],fa[MN*(1<<12|1)],n,cnt,tot;
-//add:TrieÊ÷ÖĞµÄµØÖ·(address)
+//add:Trieæ ‘ä¸­çš„åœ°å€(address)
 bool vis[MN][1<<12|1];
 char C[MN],ch[51];
 queue<int>Q,Q1,Q2;
@@ -19,7 +19,7 @@ void getfail(){
         for(int i=0;i<26;++i)
             if(add[x][i]){
                 fail[add[x][i]]=add[fail[x]][i];
-                state[add[x][i]]|=state[add[fail[x]][i]];//ËüµÄfailÖ¸Õë°üº¬µÄ×Ö·û´®ËüÒ²°üº¬
+                state[add[x][i]]|=state[add[fail[x]][i]];//å®ƒçš„failæŒ‡é’ˆåŒ…å«çš„å­—ç¬¦ä¸²å®ƒä¹ŸåŒ…å«
                 Q.push(add[x][i]);
                 cout<<state[add[x][i]]<<endl;
             }
@@ -27,7 +27,7 @@ void getfail(){
                 add[x][i]=add[fail[x]][i];
     }
 }
-//AC×Ô¶¯»ú½¨failÊ÷
+//ACè‡ªåŠ¨æœºå»ºfailæ ‘
 
 int main()
 {
@@ -42,18 +42,18 @@ int main()
                 add[now][ch[j]-'A']=++cnt;
             now=add[now][ch[j]-'A'];
         }
-        state[now]|=1<<(i-1);//i-1Ò²²»»á³åÍ»,Ê¡Ò»µã¿Õ¼ä
+        state[now]|=1<<(i-1);//i-1ä¹Ÿä¸ä¼šå†²çª,çœä¸€ç‚¹ç©ºé—´
         cout<<i<<' '<<state[now]<<endl;
-        //ÓĞÖØ¸´µÄ,ÒªÓÃ|
-    }//½¨trieÊ÷
+        //æœ‰é‡å¤çš„,è¦ç”¨|
+    }//å»ºtrieæ ‘
 //    for(int i=0;i<now;i++){
 //        cout<<state[i]<<' ';
 //    }
     getfail();
     Q1.push(0);
     Q2.push(0);
-    //Q1:ÔÚTrieÖĞµÄÎ»ÖÃ
-    //Q2:×´Ì¬Ñ¹Ëõ,±íÊ¾µ±Ç°°üº¬ÁËÄÄĞ©ÒªÇóµÄ×Ö·û´®
+    //Q1:åœ¨Trieä¸­çš„ä½ç½®
+    //Q2:çŠ¶æ€å‹ç¼©,è¡¨ç¤ºå½“å‰åŒ…å«äº†å“ªäº›è¦æ±‚çš„å­—ç¬¦ä¸²
     vis[0][0]=1;
     int Ti=0;
     while(!Q1.empty()){
@@ -64,7 +64,7 @@ int main()
             while(Ti){
                 C[++nod]=ans[Ti];
                 Ti=fa[Ti];
-            }//µİ¹é»ØÈ¥Çó´ğ°¸
+            }//é€’å½’å›å»æ±‚ç­”æ¡ˆ
             for(int i=nod;i>0;--i)
                 putchar(C[i]+'A');
             return 0;
@@ -74,13 +74,13 @@ int main()
                 vis[add[now][i]][St|state[add[now][i]]]=1;
                 Q1.push(add[now][i]);
                 Q2.push(St|state[add[now][i]]);
-                //ÕÒ³öÏÖĞÂµÄ×´Ì¬
+                //æ‰¾å‡ºç°æ–°çš„çŠ¶æ€
                 fa[++tot]=Ti;
                 ans[tot]=i;
-                //¼ÇÂ¼µ±Ç°ËÑµ½µÄ×Ö·û,Í¬Ê±½¨1¿Ã¹ØÓÚ´ğ°¸µÄÊ÷,±ãÓÚ×îºó²éÑ¯
+                //è®°å½•å½“å‰æœåˆ°çš„å­—ç¬¦,åŒæ—¶å»º1æ£µå…³äºç­”æ¡ˆçš„æ ‘,ä¾¿äºæœ€åæŸ¥è¯¢
             }
         }
-        ++Ti;//Ti±íÊ¾µ±Ç°µÄËÑË÷µ½µÄ±àºÅ
+        ++Ti;//Tiè¡¨ç¤ºå½“å‰çš„æœç´¢åˆ°çš„ç¼–å·
     }
     return 0;
 }

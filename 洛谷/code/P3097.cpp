@@ -7,7 +7,7 @@ const int INF = 1e9;
 int n,m;
 int arr[MAXN];
 struct node{
-    int a,b,c,d;//�ֱ��ʾ���ұ߽綼��ѡ ѡ��߽� ѡ�ұ߽� ��ѡ
+    int a,b,c,d;//分别表示左右边界都不选 选左边界 选右边界 都选
     // 00 10 01 11
 }tree[MAXN<<2];
 

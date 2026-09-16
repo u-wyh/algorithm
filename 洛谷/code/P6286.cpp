@@ -6,7 +6,7 @@ const int MAXN = 105;
 int n;
 string str[MAXN];
 int arr[MAXN];
-vector<int>vec[30];//¿Õ¸ñ¿´×ö27
+vector<int>vec[30];//ç©ºæ ¼çœ‹åš27
 
 int in[30];
 int head[30];

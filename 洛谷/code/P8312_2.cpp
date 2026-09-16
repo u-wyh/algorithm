@@ -6,7 +6,7 @@ long long n,m,k,q,s,t,f[100][100],a[100][100],b[100][100];
 
 int main(){
     scanf("%lld%lld",&n,&m);
-    //³õÊ¼»¯
+    //åˆå§‹åŒ–
 	for(int i=1;i<=n;i++){
 		for(int j=1;j<=n;j++){
 			f[i][j]=INT_MAX;
@@ -15,17 +15,17 @@ int main(){
 	for(int i=1;i<=m;i++){
 		long long x,y,z;
 		scanf("%lld%lld%lld",&x,&y,&z);
-		f[x][y]=min(f[x][y],z);//¶àÌõÖØ±ßÈ¡×î¶ÌµÄÒ»Ìõ
+		f[x][y]=min(f[x][y],z);//å¤šæ¡é‡è¾¹å–æœ€çŸ­çš„ä¸€æ¡
 	}
 	scanf("%lld%lld",&k,&q);
-    //³õÊ¼»¯a
+    //åˆå§‹åŒ–a
 	for (int i=1;i<=n;i++){
 		for (int j=1;j<= n;j++){
 			a[i][j]=f[i][j];
 		}
 	}
 	k=min(k,n);
-	for(int kk=2;kk<=k;kk++){//ÅÜk´Î
+	for(int kk=2;kk<=k;kk++){//è·‘kæ¬¡
 		for(int i=1;i<=n;i++){
 			for(int j=1;j<=n;j++){
 				b[i][j]=a[i][j];
@@ -34,20 +34,20 @@ int main(){
 		for(int lg=1;lg<=n;lg++){
 			for (int i=1;i<=n;i++){
 				for (int j=1;j<=n;j++){
-					b[i][j]=min(b[i][j],a[i][lg]+f[lg][j]);//Ö»×ªÒÆÒ»Ìõ±ß
+					b[i][j]=min(b[i][j],a[i][lg]+f[lg][j]);//åªè½¬ç§»ä¸€æ¡è¾¹
 				}
 			}
 		}
 		for(int i=1;i<=n;i++){
 			for(int j=1;j<=n;j++){
-			    a[i][j]=b[i][j];//¸üĞÂ
+			    a[i][j]=b[i][j];//æ›´æ–°
 			}
 		}
 	}
 	for(int i=1;i<=q;i++){
 		scanf("%lld%lld",&s,&t);
-		if(s==t)printf("0\n");//ÌØÅĞs=tµÄÇé¿ö
-		else if(a[s][t]==INT_MAX)printf("-1\n");//ÎŞ·¨µ½´ï
+		if(s==t)printf("0\n");//ç‰¹åˆ¤s=tçš„æƒ…å†µ
+		else if(a[s][t]==INT_MAX)printf("-1\n");//æ— æ³•åˆ°è¾¾
 		else printf("%d\n",a[s][t]);
 	}
 	return 0;

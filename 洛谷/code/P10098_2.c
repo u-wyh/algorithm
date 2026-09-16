@@ -12,27 +12,27 @@ node mp[N];
 int n;
 long long p;
 
-int judge(long long x) { // ¶ş·Ö²éÕÒµÄ¸¨Öúº¯Êı
+int judge(long long x) { // äºŒåˆ†æŸ¥æ‰¾çš„è¾…åŠ©å‡½æ•°
     long long sum = 0;
-    for (int i = 0; i < n; i++) { // ×¢ÒâÊı×éË÷Òı´Ó0¿ªÊ¼
+    for (int i = 0; i < n; i++) { // æ³¨æ„æ•°ç»„ç´¢å¼•ä»0å¼€å§‹
         if (x <= mp[i].z) {
             sum += mp[i].a * x;
         } else {
             sum += (mp[i].a * mp[i].z + mp[i].b * (x - mp[i].z));
         }
     }
-    return sum >= p; // ±È½Ï
+    return sum >= p; // æ¯”è¾ƒ
 }
 
 int main() {
-    scanf("%d %lld", &n, &p); // Ê¹ÓÃscanf½øĞĞÊäÈë
-    for (int i = 0; i < n; i++) { // ×¢ÒâÊı×éË÷Òı´Ó0¿ªÊ¼
+    scanf("%d %lld", &n, &p); // ä½¿ç”¨scanfè¿›è¡Œè¾“å…¥
+    for (int i = 0; i < n; i++) { // æ³¨æ„æ•°ç»„ç´¢å¼•ä»0å¼€å§‹
         scanf("%lld %lld %lld", &mp[i].z, &mp[i].a, &mp[i].b);
     }
 
-    long long l = 1, r = p, mid, ans = 0; // ¿ª long long
+    long long l = 1, r = p, mid, ans = 0; // å¼€ long long
     while (l <= r) {
-        mid = (l + r) / 2; // ×¢ÒâÕâÀïÊ¹ÓÃÕûÊı³ı·¨
+        mid = (l + r) / 2; // æ³¨æ„è¿™é‡Œä½¿ç”¨æ•´æ•°é™¤æ³•
         if (judge(mid)) {
             r = mid - 1;
             ans = mid;
@@ -41,6 +41,6 @@ int main() {
         }
     }
 
-    printf("%lld\n", ans); // Ê¹ÓÃprintf½øĞĞÊä³ö
+    printf("%lld\n", ans); // ä½¿ç”¨printfè¿›è¡Œè¾“å‡º
     return 0;
 }

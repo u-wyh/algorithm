@@ -12,9 +12,9 @@ int weight[MAXN<<1];
 int cnt=1;
 int arr[MAXN];
 int sum[MAXN][3];
-// sum[u][i] : 以u为头的子树内，距离为i的节点权值和
+// sum[u][i] : 浠涓哄ご鐨勫瓙鏍戝唴锛岃窛绂讳负i鐨勮妭鐐规潈鍊煎拰
 int dp[MAXN][3];
-// dp[u][i] : 以u做根，整棵树上，距离为i的节点权值和
+// dp[u][i] : 浠鍋氭牴锛屾暣妫垫爲涓婏紝璺濈涓篿鐨勮妭鐐规潈鍊煎拰
 int maxans=0;
 
 void dfs1(int u,int f){

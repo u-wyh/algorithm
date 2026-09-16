@@ -36,8 +36,8 @@ void add(int jobt, int jobi, int l, int r, int i) {
     }
 }
 
-// jobt==0��ʾ�ڲ�ѯ[jobl ~ jobr]��Χ���ж��ٵ��׷�Χ�Ŀ�ͷ
-// jobt==1��ʾ�ڲ�ѯ[jobl ~ jobr]��Χ���ж��ٵ��׷�Χ�Ľ�β
+// jobt==0表示在查询[jobl ~ jobr]范围上有多少地雷范围的开头
+// jobt==1表示在查询[jobl ~ jobr]范围上有多少地雷范围的结尾
 int query(int jobt, int jobl, int jobr, int l, int r, int i) {
     if (jobl <= l && r <= jobr) {
         return jobt == 0 ? bombStarts[i] : bombEnds[i];

@@ -4,7 +4,7 @@ using namespace std;
 const int MOD = 1e9+7;
 
 int n,m,K;
-long dp[100][1<<6][1<<6][22];//dp[i][s][ss][k]µ½ÁËµÚiÐÐ£¬ÉÏÒ»ÐÐ×´Ì¬ÊÇsÉÏÉÏÒ»ÐÐÊÇssÒÑ¾­ÌîÁËk¸ö
+long dp[100][1<<6][1<<6][22];//dp[i][s][ss][k]åˆ°äº†ç¬¬iè¡Œï¼Œä¸Šä¸€è¡ŒçŠ¶æ€æ˜¯sä¸Šä¸Šä¸€è¡Œæ˜¯sså·²ç»å¡«äº†kä¸ª
 int cnt[1<<6];
 
 long f(int i,int s,int ss,int k){

@@ -18,8 +18,8 @@ int main() {
     int i, j, k, sum = 0, ans = INT_MAX;
 
     scanf("%d", &n);
-    memset(f, 0, sizeof(f)); // ³õÊ¼»¯fÊı×éÎª0
-    f[0][0] = 1; // ³õÊ¼Ìõ¼ş
+    memset(f, 0, sizeof(f)); // åˆå§‹åŒ–fæ•°ç»„ä¸º0
+    f[0][0] = 1; // åˆå§‹æ¡ä»¶
 
     for (i = 1; i <= n; i++) {
         scanf("%d", &a[i]);

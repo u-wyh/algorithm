@@ -16,7 +16,7 @@ int color,Time;
 int col[MAXN];
 bool instack[MAXN];
 
-int val[MAXN];//µãÈ¨
+int val[MAXN];//ç‚¹æƒ
 
 int cnt=1;
 int head[MAXN];
@@ -39,20 +39,20 @@ void tarjan(int x){
     for(int i=0;i<vec[x].size();i++){
         int v=vec[x][i];
         if(!dfn[v]){
-            //±íÊ¾Õâ¸ö½ÚµãÃ»ÓĞ±»·ÃÎÊ¹ı
+            //è¡¨ç¤ºè¿™ä¸ªèŠ‚ç‚¹æ²¡æœ‰è¢«è®¿é—®è¿‡
             tarjan(v);
             low[x]=min(low[x],low[v]);
         }
         else if(instack[v]){
-            //±íÊ¾Õâ¸öÊôÓÚÊÇ»ØËİÁË Ò»¶¨ÊÇÍ¬Ò»¸ö»·ÉÏµÄ
+            //è¡¨ç¤ºè¿™ä¸ªå±äºæ˜¯å›æº¯äº† ä¸€å®šæ˜¯åŒä¸€ä¸ªç¯ä¸Šçš„
             low[x]=min(low[x],dfn[v]);
         }
     }
     if(dfn[x]==low[x]){
         col[x]=++color;
-        //½«ËùÓĞ½Úµã°´ÕÕÑÕÉ«·ÖÀà  Íê³ÉËõµã
+        //å°†æ‰€æœ‰èŠ‚ç‚¹æŒ‰ç…§é¢œè‰²åˆ†ç±»  å®Œæˆç¼©ç‚¹
         while(st[top]!=x){
-            //ÊôÓÚÍ¬Ò»¸öÇ¿ÁªÍ¨·ÖÁ¿
+            //å±äºåŒä¸€ä¸ªå¼ºè”é€šåˆ†é‡
             col[st[top]]=color;
             instack[st[top]]=false;
             top--;

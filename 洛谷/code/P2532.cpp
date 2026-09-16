@@ -5,9 +5,9 @@ const int MAXN = 1005;
 const int MOD = 1e9+7;
 
 long long fac[MAXN];
-// ½×³ËÄæÔª±í
+// é˜¶ä¹˜é€†å…ƒè¡¨
 long long inv1[MAXN];
-// Á¬ĞøÊıÄæÔª±í
+// è¿ç»­æ•°é€†å…ƒè¡¨
 long long inv2[MAXN];
 
 long long power(long long x, long long p) {
@@ -22,7 +22,7 @@ long long power(long long x, long long p) {
 	return ans;
 }
 
-// À´×Ô½²½â099£¬ÌâÄ¿3£¬Éú³É½×³ËÓàÊı±í¡¢½×³ËÄæÔª±í
+// æ¥è‡ªè®²è§£099ï¼Œé¢˜ç›®3ï¼Œç”Ÿæˆé˜¶ä¹˜ä½™æ•°è¡¨ã€é˜¶ä¹˜é€†å…ƒè¡¨
 void build1(int n) {
 	fac[0] = inv1[0] = 1;
 	fac[1] = 1;
@@ -40,7 +40,7 @@ long long c(int n, int k) {
 	return (((fac[n] * inv1[k])) * inv1[n - k]);
 }
 
-// ¹«Ê½1
+// å…¬å¼1
 long long compute1(int n) {
     build1(2 * n);
     return c(2 * n, n) - c(2 * n, n - 1) ;

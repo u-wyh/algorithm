@@ -21,7 +21,7 @@ void build(const string& str) {
     }
 }
 
-// ·¶Î§ÊÇs[l,r]£¬×ó±ÕÓÒ±Õ
+// èŒƒå›´æ˜¯s[l,r]ï¼Œå·¦é—­å³é—­
 long long getHash(int l, int r) {
     long long ans = h[r];
     if (l > 0) {
@@ -30,7 +30,7 @@ long long getHash(int l, int r) {
     return ans;
 }
 
-long long rehash(int l,int r,int pos){ //ÔÚ[l, r]ÖĞÉ¾È¥posÖØĞÂhash
+long long rehash(int l,int r,int pos){ //åœ¨[l, r]ä¸­åˆ å»posé‡æ–°hash
 	return getHash(l,pos-1)*p[r-pos]+getHash(pos+1,r);
 }
 

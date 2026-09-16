@@ -8,10 +8,10 @@ char s[35][35];
 int nums[35][35];
 int dis[35][35][4];
 bool vis[35][35][4];
-int walk[4][2]={{0,1},{1,0},{0,-1},{-1,0}};//¶« ÄÏ Î÷ ±±
-// ¶¨Òå½Úµã½á¹¹Ìå
+int walk[4][2]={{0,1},{1,0},{0,-1},{-1,0}};//ä¸œ å— è¥¿ åŒ—
+// å®šä¹‰èŠ‚ç‚¹ç»“æ„ä½“
 struct Node {
-    int first,second,third,fourth; // ÎÒÃÇ½«»ùÓÚÕâ¸öÔªËØ½øĞĞÅÅĞò
+    int first,second,third,fourth; // æˆ‘ä»¬å°†åŸºäºè¿™ä¸ªå…ƒç´ è¿›è¡Œæ’åº
 };
 struct Compare {
     bool operator()(const Node& lhs, const Node& rhs) const {
@@ -19,7 +19,7 @@ struct Compare {
     }
 };
 priority_queue<Node, std::vector<Node>, Compare> heap;
-int enx,eny,stx,sty,stdir;//¶«0 ÄÏ1 Î÷2 ±±3
+int enx,eny,stx,sty,stdir;//ä¸œ0 å—1 è¥¿2 åŒ—3
 
 int main()
 {
@@ -27,7 +27,7 @@ int main()
     for(int i=1;i<=n;i++){
         for(int j=1;j<=m;j++){
             for(int k=0;k<4;k++){
-                dis[i][j][k]=1e9;//³õÊ¼»¯¾àÀë
+                dis[i][j][k]=1e9;//åˆå§‹åŒ–è·ç¦»
             }
         }
     }
@@ -67,13 +67,13 @@ int main()
             return 0;
         }
         if(vis[ux][uy][udir]){
-            continue;//±íÊ¾Ö®Ç°ÓĞ¸üĞ¡µÄÖµµ¯³ö¹ı
+            continue;//è¡¨ç¤ºä¹‹å‰æœ‰æ›´å°çš„å€¼å¼¹å‡ºè¿‡
         }
-        vis[ux][uy][udir]=true;//±íÊ¾Õâ¾ø¶ÔÊÇÕâ¸ö×´Ì¬×îĞ¡ÖµÁË  ²»»áÔÚ±äĞ¡ÁË
+        vis[ux][uy][udir]=true;//è¡¨ç¤ºè¿™ç»å¯¹æ˜¯è¿™ä¸ªçŠ¶æ€æœ€å°å€¼äº†  ä¸ä¼šåœ¨å˜å°äº†
 
-        int flag=1;//ÓÃÓÚÅĞ¶ÏÊÇ·ñºóÍË
+        int flag=1;//ç”¨äºåˆ¤æ–­æ˜¯å¦åé€€
 
-        //×ó×ª
+        //å·¦è½¬
         int nx=ux+walk[(udir+3)%4][0];
         int ny=uy+walk[(udir+3)%4][1];
         int ndir=(udir+3)%4;
@@ -85,7 +85,7 @@ int main()
             }
         }
 
-        //ÓÒ×ª
+        //å³è½¬
         nx=ux+walk[(udir+1)%4][0];
         ny=uy+walk[(udir+1)%4][1];
         ndir=(udir+1)%4;
@@ -97,7 +97,7 @@ int main()
             }
         }
 
-        //Ö±ĞĞ
+        //ç›´è¡Œ
         nx=ux+walk[udir][0];
         ny=uy+walk[udir][1];
         ndir=udir;
@@ -110,7 +110,7 @@ int main()
         }
 
         if(flag){
-            //±íÊ¾¿ÉÒÔºóÍË
+            //è¡¨ç¤ºå¯ä»¥åé€€
             int nx=ux+walk[(udir+2)%4][0];
             int ny=uy+walk[(udir+2)%4][1];
             int ndir=(udir+2)%4;

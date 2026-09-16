@@ -3,8 +3,8 @@
 using namespace std;
 
 vector<int>vec[21];
-int sta[21];//±íÊ¾¶¯ÁËÕâ¸ö¿ª¹Øºó»áÓĞÊ²Ã´ÑùµÄÊı¾İ±ä»¯1±íÊ¾±ä»¯
-//ÕâÀïÒª×¢Òâ  Ò»¿ªÊ¼È«¶¼ÊÇ0  ×îºÃ±äÎª1
+int sta[21];//è¡¨ç¤ºåŠ¨äº†è¿™ä¸ªå¼€å…³åä¼šæœ‰ä»€ä¹ˆæ ·çš„æ•°æ®å˜åŒ–1è¡¨ç¤ºå˜åŒ–
+//è¿™é‡Œè¦æ³¨æ„  ä¸€å¼€å§‹å…¨éƒ½æ˜¯0  æœ€å¥½å˜ä¸º1
 int n;
 int dp[1<<21];
 queue<int>q;
@@ -22,11 +22,11 @@ int main()
         }
     }
     for(int i=1;i<=n;i++){
-        //sta[i]=1;//³õÊ¼»¯
-        sta[i]^=(1<<i);//ÏÈ¸Ä±äµ±Ç°µÄ×´Ì¬
+        //sta[i]=1;//åˆå§‹åŒ–
+        sta[i]^=(1<<i);//å…ˆæ”¹å˜å½“å‰çš„çŠ¶æ€
         //cout<<vec[i].size()<<endl;
         for(int j=0;j<vec[i].size();j++){
-            sta[i]^=(1<<vec[i][j]);//¸Ä±äÖ±½ÓÏàÁ¬µÄ×´Ì¬
+            sta[i]^=(1<<vec[i][j]);//æ”¹å˜ç›´æ¥ç›¸è¿çš„çŠ¶æ€
         }
         for(int j=0;j<vec[i].size();j++){
             for(int k=0;k<vec[vec[i][j]].size();k++){
@@ -39,7 +39,7 @@ int main()
 //        cout<<' '<<binary<<endl;
         //cout<<' '<<sta[i]<<endl;
     }
-    dp[(1<<(n+1))-2]=1;//×îÖÕ´ğ°¸Òª¼õÈ¥1
+    dp[(1<<(n+1))-2]=1;//æœ€ç»ˆç­”æ¡ˆè¦å‡å»1
     //cout<<' '<<(1<<(n+1))-1<<endl;
     q.push((1<<(n+1))-2);
     while(!q.empty()){
@@ -57,6 +57,6 @@ int main()
             }
         }
     }
-    cout<<"Change an alarm clock£¬please!";
+    cout<<"Change an alarm clockï¼Œplease!";
     return 0;
 }

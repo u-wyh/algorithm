@@ -3,8 +3,8 @@
 using namespace std;
 const int MAXN = 405;
 
-int dp[MAXN][MAXN];//±íÊ¾´Óiµ½j×îÉÙµÄÊ£Óà¿Õ¼ä
-int f[MAXN][MAXN];//±íÊ¾´Óiµ½jÖ»ÓÃÒ»¸ö¿òµÄÊ£Óà¿Õ¼ä
+int dp[MAXN][MAXN];//è¡¨ç¤ºä»iåˆ°jæœ€å°‘çš„å‰©ä½™ç©ºé—´
+int f[MAXN][MAXN];//è¡¨ç¤ºä»iåˆ°jåªç”¨ä¸€ä¸ªæ¡†çš„å‰©ä½™ç©ºé—´
 int sum[MAXN];
 int arr[MAXN];
 int n,m;

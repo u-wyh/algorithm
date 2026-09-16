@@ -24,7 +24,7 @@ int f1(int *nums,int l,int r)
         return max(nums[l],nums[r]);
     int p1=nums[l]+min(f1(nums,l+1,r-1),f1(nums,l+2,r));
     int p2=nums[r]+min(f1(nums,l+1,r-1),f1(nums,l,r-2));
-    //ÕâÀïÖ®ËùÒÔ»á³öÏÖminÊÇÒòÎªÏÂÒ»²½²»¸ÃÏÈÊÖ×ßÁË£¬ºóÊÖ»áÑ¡È¡×î´óÖµ£¬ËùÒÔÏÈÊÖÖ»ÓĞmin
+    //è¿™é‡Œä¹‹æ‰€ä»¥ä¼šå‡ºç°minæ˜¯å› ä¸ºä¸‹ä¸€æ­¥ä¸è¯¥å…ˆæ‰‹èµ°äº†ï¼Œåæ‰‹ä¼šé€‰å–æœ€å¤§å€¼ï¼Œæ‰€ä»¥å…ˆæ‰‹åªæœ‰min
     return max(p1,p2);
 }
 
@@ -34,7 +34,7 @@ bool predict(int *nums,int sum,int n)
     return (2*a)>=sum;
 }
 
-//¼ÇÒä»¯ËÑË÷
+//è®°å¿†åŒ–æœç´¢
 
 int f2(int *nums,int l,int r)
 {
@@ -75,7 +75,7 @@ int main()
     //while(scanf("%d",&nums[i])==1)
         //sum+=nums[i++];
     //int n=i;
-    //nÊÇÊı×éÊµ¼ÊÓĞĞ§³¤¶È
+    //næ˜¯æ•°ç»„å®é™…æœ‰æ•ˆé•¿åº¦
     srand(time(NULL));
     for(int i=0;i<t;i++)
     {

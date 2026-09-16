@@ -4,7 +4,7 @@
 typedef struct {
     double pass;
     double total;
-    double gain;//Ö¸Èç¹û¼ÓÈëÒ»¸öÈËµÄ»°£¬Í¨¹ıÂÊ¿ÉÒÔÌá¸ß¶àÉÙ
+    double gain;//æŒ‡å¦‚æœåŠ å…¥ä¸€ä¸ªäººçš„è¯ï¼Œé€šè¿‡ç‡å¯ä»¥æé«˜å¤šå°‘
 } Class;
 
 int compare(const void *a, const void *b) {
@@ -23,7 +23,7 @@ double maxAverageRatio(int classes[][2], int n, int m) {
         c_array[i].gain = (c_array[i].pass + 1) / (c_array[i].total + 1) - c_array[i].pass / c_array[i].total;
     }
 
-    // Ê¹ÓÃÃ°ÅİÅÅĞòÄ£ÄâÓÅÏÈ¶ÓÁĞ£¨°´gain½µĞò£©
+    // ä½¿ç”¨å†’æ³¡æ’åºæ¨¡æ‹Ÿä¼˜å…ˆé˜Ÿåˆ—ï¼ˆæŒ‰gainé™åºï¼‰
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
             if (compare(&c_array[j], &c_array[j + 1]) > 0) {
@@ -34,14 +34,14 @@ double maxAverageRatio(int classes[][2], int n, int m) {
         }
     }
 
-    // Ä£Äâ·ÖÅäÌì²Å
+    // æ¨¡æ‹Ÿåˆ†é…å¤©æ‰
     for (int i = 0; i < m; i++) {
         Class *top = &c_array[0];
         top->pass++;
         top->total++;
         top->gain = (top->pass + 1) / (top->total + 1) - top->pass / top->total;
 
-        // ÖØĞÂÅÅĞò
+        // é‡æ–°æ’åº
         for (int j = 0; j < n - 1; j++) {
             for (int k = 0; k < n - j - 1; k++) {
                 if (compare(&c_array[k], &c_array[k + 1]) > 0) {
@@ -64,7 +64,7 @@ double maxAverageRatio(int classes[][2], int n, int m) {
 
 int main() {
     int n,m;
-    scanf("%d %d",&n,&m);//n±íÊ¾ÓĞn¸ö°à¼¶ m±íÊ¾ÓĞm¸öÌì²Å
+    scanf("%d %d",&n,&m);//nè¡¨ç¤ºæœ‰nä¸ªç­çº§ mè¡¨ç¤ºæœ‰mä¸ªå¤©æ‰
     int classes[n][2];
     for(int i=0;i<n;i++)
     {

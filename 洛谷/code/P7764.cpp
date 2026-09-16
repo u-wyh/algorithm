@@ -21,7 +21,7 @@ inline int read(){
     return x*f;
 }
 
-//ÆæÅ¼ĞÔÅÅĞòÓÅ»¯
+//å¥‡å¶æ€§æ’åºä¼˜åŒ–
 inline bool cmp(node a,node b) {
 	return (pos[a.l] ^ pos[b.l]) ? pos[a.l] < pos[b.l] : ((pos[a.l] & 1) ? a.r < b.r : a.r > b.r);
 }
@@ -72,7 +72,7 @@ int main()
         while(nums[i].r>r) cnt[arr[++r]]++;
         while(nums[i].l>l) cnt[arr[l++]]--;
         while(nums[i].r<r) cnt[arr[r--]]--;
-        //Æ¥ÅäÇø¼ä  µÃµ½´ğ°¸
+        //åŒ¹é…åŒºé—´  å¾—åˆ°ç­”æ¡ˆ
         int res=0;
         for(int i=1;i<=t;i++){
             if(cnt[i]==2){

@@ -8,11 +8,11 @@ const int MOD = 1e9+7;
 
 int n;
 int arr[MAXN];
-// Ïß¶ÎÊ÷
+// çº¿æ®µæ ‘
 int sum[MAXN << 2];
 int ans=1;
 
-// ³õÊ¼»¯Ïß¶ÎÊ÷£¬µ¥µã·¶Î§µÄ³õÊ¼ÀÛ¼ÓºÍÎª1£¬ÈÏÎªËùÓÐÊý×Ö¶¼¿ÉÓÃ
+// åˆå§‹åŒ–çº¿æ®µæ ‘ï¼Œå•ç‚¹èŒƒå›´çš„åˆå§‹ç´¯åŠ å’Œä¸º1ï¼Œè®¤ä¸ºæ‰€æœ‰æ•°å­—éƒ½å¯ç”¨
 void build(int l, int r, int i) {
     if (l == r) {
         sum[i] = 1;
@@ -24,7 +24,7 @@ void build(int l, int r, int i) {
     }
 }
 
-// µ¥µãjobiÉÏ£¬Ôö¼Ójobv£¬ÒòÎªÊÇµ¥µã¸üÐÂ£¬ËùÒÔ²»ÐèÒª½¨Á¢ÀÁ¸üÐÂ»úÖÆ
+// å•ç‚¹jobiä¸Šï¼Œå¢žåŠ jobvï¼Œå› ä¸ºæ˜¯å•ç‚¹æ›´æ–°ï¼Œæ‰€ä»¥ä¸éœ€è¦å»ºç«‹æ‡’æ›´æ–°æœºåˆ¶
 void add(int jobi, int jobv, int l, int r, int i) {
     if (l == r) {
         sum[i] += jobv;
@@ -39,7 +39,7 @@ void add(int jobi, int jobv, int l, int r, int i) {
     }
 }
 
-// ²éÑ¯jobl~jobr·¶Î§µÄÀÛ¼ÓºÍ
+// æŸ¥è¯¢jobl~jobrèŒƒå›´çš„ç´¯åŠ å’Œ
 int Sum(int jobl, int jobr, int l, int r, int i) {
     if (jobl <= l && r <= jobr) {
         return sum[i];
@@ -55,12 +55,12 @@ int Sum(int jobl, int jobr, int l, int r, int i) {
     return ans;
 }
 
-// Ïß¶ÎÊ÷ÉÏÕÒµ½µÚkÃûµÄÊÇÊ²Ã´£¬ÕÒµ½ºóÉ¾µô´ÊÆµ£¬·µ»ØµÄ¹ý³ÌÐÞ¸ÄÀÛ¼ÓºÍ
-// ×¢ÒâÕâ¸öÅÅÃûÊÇÔÚ×ÓÊ÷ÖÐµÄÅÅÃû
+// çº¿æ®µæ ‘ä¸Šæ‰¾åˆ°ç¬¬kåçš„æ˜¯ä»€ä¹ˆï¼Œæ‰¾åˆ°åŽåˆ æŽ‰è¯é¢‘ï¼Œè¿”å›žçš„è¿‡ç¨‹ä¿®æ”¹ç´¯åŠ å’Œ
+// æ³¨æ„è¿™ä¸ªæŽ’åæ˜¯åœ¨å­æ ‘ä¸­çš„æŽ’å
 int getAndDelete(int k, int l, int r, int i) {
     int ans;
     if (l == r) {
-        //ÕÒµ½Ä¿±ê É¾³ý´ÊÆµ
+        //æ‰¾åˆ°ç›®æ ‡ åˆ é™¤è¯é¢‘
         sum[i]--;
         ans = l;
     } else {
@@ -69,20 +69,20 @@ int getAndDelete(int k, int l, int r, int i) {
             ans = getAndDelete(k, l, mid, i << 1);
         } else {
             ans = getAndDelete(k - sum[i << 1], mid + 1, r, i << 1 | 1);
-            //Òª¼õÈ¥×ó²àÅÅÃûµÄÓ°Ïì
+            //è¦å‡åŽ»å·¦ä¾§æŽ’åçš„å½±å“
         }
         sum[i] = sum[i << 1] + sum[i << 1 | 1];
-        //·µ»ØµÄ¹ý³ÌÐÞ¸ÄÀÛ¼ÓºÍ
+        //è¿”å›žçš„è¿‡ç¨‹ä¿®æ”¹ç´¯åŠ å’Œ
     }
     return ans;
 }
 
 void compute() {
     build(1, n, 1);
-    //½«Ïß¶ÎÊ÷ÖØÐÂ¸´Ô­
+    //å°†çº¿æ®µæ ‘é‡æ–°å¤åŽŸ
     for (int i = 1; i <= n; i++) {
         arr[i] = getAndDelete((int) arr[i] + 1, 1, n, 1);
-        //´ËÊ±Õâ¸öarrÊý×éÓÃÀ´´æ·ÅÅÅÁÐ
+        //æ­¤æ—¶è¿™ä¸ªarræ•°ç»„ç”¨æ¥å­˜æ”¾æŽ’åˆ—
     }
 }
 

@@ -5,18 +5,18 @@ const int MAXN = 2505;
 const int MAXM = 15005;
 
 auto compare = [](const pair<int, int>& left, const pair<int, int>& right) {
-    return left.second > right.second; // ×¢ÒâÕâÀïÊÇ´óÓÚ£¬ÒòÎªÎÒÃÇÏëÒªĞ¡¸ù¶Ñ
+    return left.second > right.second; // æ³¨æ„è¿™é‡Œæ˜¯å¤§äºï¼Œå› ä¸ºæˆ‘ä»¬æƒ³è¦å°æ ¹å †
 };
 
 priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(compare)> heap(compare);
-//³õÊ¼»¯½¨Á¢Ğ¡¸ù¶Ñ
+//åˆå§‹åŒ–å»ºç«‹å°æ ¹å †
 vector<vector<pair<int ,int >>>graph;
-//ÁÚ½Ó±í½¨Í¼
+//é‚»æ¥è¡¨å»ºå›¾
 int edge[MAXM][3];
 int Distance[MAXN];
-//¼ÇÂ¼µ½Ô´µãµÄ×îĞ¡¾àÀë
+//è®°å½•åˆ°æºç‚¹çš„æœ€å°è·ç¦»
 bool visit[MAXN];
-//¼ÇÂ¼Õâ¸öµãÊÇ·ñ±»·ÃÎÊ¹ı
+//è®°å½•è¿™ä¸ªç‚¹æ˜¯å¦è¢«è®¿é—®è¿‡
 int n,m,s,en;
 
 int main()
@@ -28,17 +28,17 @@ int main()
         graph[edge[i][0]].push_back({edge[i][1],edge[i][2]});
         graph[edge[i][1]].push_back({edge[i][0],edge[i][2]});
     }
-    //³õÊ¼»¯½¨Í¼
+    //åˆå§‹åŒ–å»ºå›¾
 
     for(int i=1;i<=n;i++){
         Distance[i]=INT_MAX;
     }
-    //½«Êı×é³õÊ¼»¯
+    //å°†æ•°ç»„åˆå§‹åŒ–
 
     Distance[s]=0;
-    //ÒÔsµã×÷ÎªÔ´µã´«ÊäĞÅºÅ
+    //ä»¥sç‚¹ä½œä¸ºæºç‚¹ä¼ è¾“ä¿¡å·
     heap.push({s,0});
-    //Ğ¡¸ù¶Ñ´¢´æµÄĞÎÊ½ÊÇ  ½Úµã¡ª¡ªÈ¨Öµ  ÒÔÈ¨Öµ½¨¶Ñ
+    //å°æ ¹å †å‚¨å­˜çš„å½¢å¼æ˜¯  èŠ‚ç‚¹â€”â€”æƒå€¼  ä»¥æƒå€¼å»ºå †
     while(!heap.empty()){
         int u=heap.top().first;
         heap.pop();

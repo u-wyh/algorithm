@@ -4,7 +4,7 @@ using namespace std;
 #define int long long
 const int MOD = 1e9 + 7;
 
-// ¿ìËÙÃİº¯Êı£¬¼ÆËã a^b % MOD
+// å¿«é€Ÿå¹‚å‡½æ•°ï¼Œè®¡ç®— a^b % MOD
 int power(int a, int b) {
     int ans = 1;
     a = a % MOD;
@@ -18,7 +18,7 @@ int power(int a, int b) {
     return ans;
 }
 
-// ¼ÆËãÄ£ MOD ÏÂµÄÄæÔª
+// è®¡ç®—æ¨¡ MOD ä¸‹çš„é€†å…ƒ
 int inv(int x) {
     return power(x, MOD - 2);
 }
@@ -27,31 +27,31 @@ signed main() {
     int n, p, t;
     cin >> n >> p >> t;
 
-    int inv2 = inv(2); // 1/2 µÄÄæÔª
-    int inv2n = inv(2 * n); // 1/(2n) µÄÄæÔª
-    int invt1 = inv(t + 1); // 1/(t+1) µÄÄæÔª
+    int inv2 = inv(2); // 1/2 çš„é€†å…ƒ
+    int inv2n = inv(2 * n); // 1/(2n) çš„é€†å…ƒ
+    int invt1 = inv(t + 1); // 1/(t+1) çš„é€†å…ƒ
 
     int q = ((1 - 2 * p) % MOD + MOD) % MOD;
     q = (q * q) % MOD;
 
-    // ¼ÆËãµÈ±ÈÊıÁĞµÄºÍ£ºsum = (q^(t+1) - 1) / (q - 1)
+    // è®¡ç®—ç­‰æ¯”æ•°åˆ—çš„å’Œï¼šsum = (q^(t+1) - 1) / (q - 1)
     int sum;
     if (q == 1) {
-        // Èç¹û q == 1£¬µÈ±ÈÊıÁĞµÄºÍÎª t + 1
+        // å¦‚æœ q == 1ï¼Œç­‰æ¯”æ•°åˆ—çš„å’Œä¸º t + 1
         sum = (t + 1) % MOD;
     } else {
-        // ·ñÔòÊ¹ÓÃµÈ±ÈÊıÁĞÇóºÍ¹«Ê½
+        // å¦åˆ™ä½¿ç”¨ç­‰æ¯”æ•°åˆ—æ±‚å’Œå…¬å¼
         sum = q*(power(q, t + 1) - 1 + MOD) % MOD;
         sum = sum * inv(q - 1) % MOD;
     }
 
-    // ¼ÆËã´ğ°¸
+    // è®¡ç®—ç­”æ¡ˆ
     int ans = (1+t + sum) % MOD; // 1 + sum
-    ans = ans * inv2 % MOD; // ³ËÒÔ 1/2
-    ans = ans * inv2n % MOD; // ³ËÒÔ 1/(2n)
-    ans = ans * invt1 % MOD; // ³ËÒÔ 1/(t+1)
+    ans = ans * inv2 % MOD; // ä¹˜ä»¥ 1/2
+    ans = ans * inv2n % MOD; // ä¹˜ä»¥ 1/(2n)
+    ans = ans * invt1 % MOD; // ä¹˜ä»¥ 1/(t+1)
 
-    // Êä³ö½á¹û
+    // è¾“å‡ºç»“æœ
     cout << (ans+MOD)%MOD << endl;
     return 0;
 }

@@ -20,7 +20,7 @@ int lowbit(int i) {
     return i & -i;
 }
 
-// Ïß¶ÎÊ÷µ¥µãĞŞ¸Ä£¬jobiÕâ¸öÊı×Ö´ÊÆµÔö¼Ójobv
+// çº¿æ®µæ ‘å•ç‚¹ä¿®æ”¹ï¼Œjobiè¿™ä¸ªæ•°å­—è¯é¢‘å¢åŠ jobv
 int innerAdd(int jobi, int jobv,int k, int l, int r, int i) {
     if (i == 0)
         i = ++cnt;
@@ -40,8 +40,8 @@ int innerAdd(int jobi, int jobv,int k, int l, int r, int i) {
     return i;
 }
 
-// ²éÑ¯µÄÊı×Ö·¶Î§[jobl...jobr]£¬Ïß¶ÎÊ÷µÄÊı×Ö·¶Î§[l..r]£¬½Úµã±àºÅi
-// ·µ»ØÓĞ¶àÉÙÄæĞòÈ¨Öµ
+// æŸ¥è¯¢çš„æ•°å­—èŒƒå›´[jobl...jobr]ï¼Œçº¿æ®µæ ‘çš„æ•°å­—èŒƒå›´[l..r]ï¼ŒèŠ‚ç‚¹ç¼–å·i
+// è¿”å›æœ‰å¤šå°‘é€†åºæƒå€¼
 pair<long long,int> innerQuery(int jobl, int jobr, int l, int r, int i) {
     if (i == 0)
         return {0,0};
@@ -64,14 +64,14 @@ pair<long long,int> innerQuery(int jobl, int jobr, int l, int r, int i) {
     return {ans,tot};
 }
 
-// arrµÄiÎ»ÖÃµÄÊı×Ö£¬pos´ÊÆµÔö¼Óval
+// arrçš„iä½ç½®çš„æ•°å­—ï¼Œposè¯é¢‘å¢åŠ val
 void add(int i, int pos,int val,int k) {
     for (int j = i; j <= n+1; j += lowbit(j)) {
         root[j] = innerAdd(pos, val,k, 1, n+1, root[j]);
     }
 }
 
-// arr[al..ar]·¶Î§ÉÏ£¬ÓĞ¶àÉÙÊı×ÖÔÚ[numl..numr]·¶Î§ÉÏ
+// arr[al..ar]èŒƒå›´ä¸Šï¼Œæœ‰å¤šå°‘æ•°å­—åœ¨[numl..numr]èŒƒå›´ä¸Š
 pair<long long,int> query(int al, int ar, int numl, int numr) {
     long long ans = 0;
     int tot=0;
@@ -92,8 +92,8 @@ pair<long long,int> query(int al, int ar, int numl, int numr) {
     return {ans,tot};
 }
 
-// ½»»»aºÍbÎ»ÖÃµÄÊı×Ö£¬±£Ö¤aÔÚÇ°£¬bÔÚºó
-// ĞŞÕıºÃÄæĞò¶ÔµÄÊıÁ¿ans
+// äº¤æ¢aå’Œbä½ç½®çš„æ•°å­—ï¼Œä¿è¯aåœ¨å‰ï¼Œbåœ¨å
+// ä¿®æ­£å¥½é€†åºå¯¹çš„æ•°é‡ans
 void compute(int a, int b) {
     pair<long long,int>p;
 

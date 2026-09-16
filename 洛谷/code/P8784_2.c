@@ -1,18 +1,18 @@
 // https://www.luogu.com.cn/problem/P8784
 #include <stdio.h>
-#include <stdlib.h> // ÒıÈëstdlib.hÒÔÊ¹ÓÃmallocºÍfree
+#include <stdlib.h> // å¼•å…¥stdlib.hä»¥ä½¿ç”¨mallocå’Œfree
 
 const int mod = 1e9 + 7;
 const int N = 1e7;
 
 int main() {
-    int *f = (int*)malloc(N * sizeof(int)); // ¶¯Ì¬·ÖÅäÄÚ´æ
-    if (f == NULL) { // ¼ì²éÄÚ´æÊÇ·ñ³É¹¦·ÖÅä
+    int *f = (int*)malloc(N * sizeof(int)); // åŠ¨æ€åˆ†é…å†…å­˜
+    if (f == NULL) { // æ£€æŸ¥å†…å­˜æ˜¯å¦æˆåŠŸåˆ†é…
         fprintf(stderr, "Memory allocation failed\n");
         return 1;
     }
 
-    // ³õÊ¼»¯Êı×éµÄÇ°¼¸¸öÔªËØ
+    // åˆå§‹åŒ–æ•°ç»„çš„å‰å‡ ä¸ªå…ƒç´ 
     f[0] = 0;
     f[1] = 1;
     f[2] = 2;
@@ -21,14 +21,14 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    // ¼ÆËãf[n]
+    // è®¡ç®—f[n]
     for (int i = 4; i <= n; ++i) {
         f[i] = (2 * f[i - 1] % mod + f[i - 3] % mod) % mod;
     }
 
     printf("%d\n", f[n]);
 
-    // ÊÍ·ÅÄÚ´æ
+    // é‡Šæ”¾å†…å­˜
     free(f);
 
     return 0;

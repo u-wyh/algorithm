@@ -10,14 +10,14 @@ int d[N],sub[N];
 int change(int x,int y,int z){
 	if(x>A||y>B||z>C)return 0;
 	return ((x-1)*B+y-1)*C+z;
-}//½«ÈıÎ¬×ª»¯³ÉÒ»Î¬
+}//å°†ä¸‰ç»´è½¬åŒ–æˆä¸€ç»´
 
 void fun(int x,int y,int z,int d){
     sub[change(x,y,z)]+=d;
 }
 
 bool build(){
-	//Èı¸ö·½Ïò¼ÆËãÇ°×ººÍ
+	//ä¸‰ä¸ªæ–¹å‘è®¡ç®—å‰ç¼€å’Œ
 	for(int i=1;i<=A;i++)
 		for(int j=1;j<=B;j++)
 			for(int k=1;k<=C;k++)
@@ -37,7 +37,7 @@ bool build(){
 }
 
 bool check(int x){
-	memset(sub,0,sizeof(sub));//¼Ç×¡ÕâÀïÒªÇå¿Õ£¬²»È»Ö®Ç°µÄ»¹»áÁôÔÚÊı×éÖĞ
+	memset(sub,0,sizeof(sub));//è®°ä½è¿™é‡Œè¦æ¸…ç©ºï¼Œä¸ç„¶ä¹‹å‰çš„è¿˜ä¼šç•™åœ¨æ•°ç»„ä¸­
 	for(int i=1;i<=x;i++){
 		fun(X1[i],Y1[i],Z1[i],d[i]);
 		fun(X2[i]+1,Y1[i],Z1[i],-d[i]);
@@ -47,7 +47,7 @@ bool check(int x){
 		fun(X2[i]+1,Y2[i]+1,Z1[i],d[i]);
 		fun(X1[i],Y2[i]+1,Z2[i]+1,d[i]);
 		fun(X2[i]+1,Y2[i]+1,Z2[i]+1,-d[i]);
-	}//¶ÔsubÊı×é½øĞĞ²î·Ö
+	}//å¯¹subæ•°ç»„è¿›è¡Œå·®åˆ†
 	return build();
 }
 
@@ -59,7 +59,7 @@ int main()
 	for(int i=1;i<=m;i++)
         cin>>X1[i]>>X2[i]>>Y1[i]>>Y2[i]>>Z1[i]>>Z2[i]>>d[i];
 	int l=1,r=m,ans=m;
-	while(l<=r){//¶ş·Ö´ğ°¸£¬È¡ÁÙ½çµã
+	while(l<=r){//äºŒåˆ†ç­”æ¡ˆï¼Œå–ä¸´ç•Œç‚¹
 		int mid=(l+r)/2;
 		if(check(mid)){
             ans=mid;

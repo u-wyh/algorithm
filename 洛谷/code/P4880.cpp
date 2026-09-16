@@ -70,17 +70,17 @@ int main()
 //        cout<<dis[i]<<' ';
 //    }
 //    cout<<endl;
-    if(dis[st]<nums[1].t||t==0) {  //²»ÓÃ¹ÜË²ÒÆµÄÁ½ÖÖÇé¿ö
+    if(dis[st]<nums[1].t||t==0) {  //ä¸ç”¨ç®¡ç¬ç§»çš„ä¸¤ç§æƒ…å†µ
 		cout<<dis[st];
 		return 0;
 	}
-	for(int i=1;i<=t;i++) {  //Ã¶¾ÙË²ÒÆÕÒ´ğ°¸
-		if(dis[nums[i].pos]<=nums[i].t) {  //ÊØÖê´ıÍÃ»òÕıºÃ×¥×¡µÄÇé¿ö
+	for(int i=1;i<=t;i++) {  //æšä¸¾ç¬ç§»æ‰¾ç­”æ¡ˆ
+		if(dis[nums[i].pos]<=nums[i].t) {  //å®ˆæ ªå¾…å…”æˆ–æ­£å¥½æŠ“ä½çš„æƒ…å†µ
 			cout<<nums[i].t;
 			return 0;
 		}
 		else {
-			if(dis[nums[i].pos]<nums[i+1].t) {  //ÔÚÏÂÒ»´ÎË²ÒÆÇ°×¥×¡µÄÇé¿ö
+			if(dis[nums[i].pos]<nums[i+1].t) {  //åœ¨ä¸‹ä¸€æ¬¡ç¬ç§»å‰æŠ“ä½çš„æƒ…å†µ
 				cout<<dis[nums[i].pos];
 				return 0;
 			}

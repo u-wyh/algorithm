@@ -6,8 +6,8 @@ const int MAXN = 3e5+5;
 int n,ans;
 int arr[MAXN],st[MAXN];
 int L[MAXN],R[MAXN],l,r;
-//左边第一个严格大于自己的数字下标
-//右边第一个严格小于自己的数字下标
+//宸﹁竟绗竴涓弗鏍煎ぇ浜庤嚜宸辩殑鏁板瓧涓嬫爣
+//鍙宠竟绗竴涓弗鏍煎皬浜庤嚜宸辩殑鏁板瓧涓嬫爣
 
 inline int read(){
     int x=0,f=1;

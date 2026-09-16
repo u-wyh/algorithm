@@ -7,11 +7,11 @@ char s1[MAXN];
 char s2[MAXN];
 int Next[MAXN];
 long long p[MAXN];
-long long h[MAXN];//µÚÒ»¸ö×Ö·û´®µÄ¹şÏ£Êı×é
+long long h[MAXN];//ç¬¬ä¸€ä¸ªå­—ç¬¦ä¸²çš„å“ˆå¸Œæ•°ç»„
 long long val;
 int n,m;
 
-//¹şÏ£µÄÔ¤´¦Àí
+//å“ˆå¸Œçš„é¢„å¤„ç†
 void build(const char* str) {
     p[0] = 1;
     for (int j = 1; j < n; ++j) {
@@ -23,7 +23,7 @@ void build(const char* str) {
     }
 }
 
-//ÕâÀïÊÇ¼ÆËãs2µÄ¹şÏ£Öµ
+//è¿™é‡Œæ˜¯è®¡ç®—s2çš„å“ˆå¸Œå€¼
 inline long long hashString(const char* str) {
     long long ans = str[0] - ' ' + 1;
     for (int j = 1; j < m; ++j) {
@@ -32,7 +32,7 @@ inline long long hashString(const char* str) {
     return ans;
 }
 
-// ·¶Î§ÊÇs1[l,r]£¬×ó±ÕÓÒ±Õ
+// èŒƒå›´æ˜¯s1[l,r]ï¼Œå·¦é—­å³é—­
 inline long long getHash(int l, int r) {
     long long ans = h[r];
     if (l > 0) {
@@ -41,7 +41,7 @@ inline long long getHash(int l, int r) {
     return ans;
 }
 
-// ¼ÆËãnextÊı×é
+// è®¡ç®—nextæ•°ç»„
 void nextArray(const char *s, int m) {
     if (m == 1) {
         Next[0] = -1;
@@ -65,7 +65,7 @@ void nextArray(const char *s, int m) {
     }
 }
 
-// KMPËã·¨µÄºËĞÄº¯Êı
+// KMPç®—æ³•çš„æ ¸å¿ƒå‡½æ•°
 int kmp(const char *s1, const char *s2) {
     int x = 0, y = 0;
     nextArray(s2, m);
@@ -73,18 +73,18 @@ int kmp(const char *s1, const char *s2) {
 //        cout<<Next[i]<<' ';
 //    }
 //    cout<<endl;
-    // s1ÖĞµ±Ç°±È¶ÔµÄÎ»ÖÃÊÇx
-    // s2ÖĞµ±Ç°±È¶ÔµÄÎ»ÖÃÊÇy
+    // s1ä¸­å½“å‰æ¯”å¯¹çš„ä½ç½®æ˜¯x
+    // s2ä¸­å½“å‰æ¯”å¯¹çš„ä½ç½®æ˜¯y
     while (x < n && y < m) {
         if (s1[x] == s2[y]) {
             x++;
             y++;
         } else if (y == 0) {
             x++;
-            //±íÊ¾s2ÒÑ¾­ÔÚµÚÒ»¸öÎ»ÖÃÁË
+            //è¡¨ç¤ºs2å·²ç»åœ¨ç¬¬ä¸€ä¸ªä½ç½®äº†
         } else {
             y = Next[y];
-            //±íÊ¾s2ÍùÇ°Ìø
+            //è¡¨ç¤ºs2å¾€å‰è·³
         }
     }
 
@@ -95,7 +95,7 @@ int main()
 {
     cin>>s1>>s2;
     n=strlen(s1);
-    m=strlen(s2);//Á½¸ö×Ö·û´®µÄ³¤¶È
+    m=strlen(s2);//ä¸¤ä¸ªå­—ç¬¦ä¸²çš„é•¿åº¦
     auto start = std::chrono::high_resolution_clock::now();
     int result = kmp(s1, s2);
     if (result != -1) {
@@ -104,9 +104,9 @@ int main()
         printf("Not found\n");
     }
     auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double, std::micro> duration = end - start; // Ê¹ÓÃÎ¢Ãë×÷Îªµ¥Î»
-    // Êä³öÔËĞĞÊ±¼ä
-    std::cout << "kmpÔËĞĞÊ±¼ä: " << duration.count() << " Î¢Ãë" << std::endl;
+    std::chrono::duration<double, std::micro> duration = end - start; // ä½¿ç”¨å¾®ç§’ä½œä¸ºå•ä½
+    // è¾“å‡ºè¿è¡Œæ—¶é—´
+    std::cout << "kmpè¿è¡Œæ—¶é—´: " << duration.count() << " å¾®ç§’" << std::endl;
 
     auto start1 = std::chrono::high_resolution_clock::now();
     val=hashString(s2);
@@ -125,8 +125,8 @@ int main()
     }
     auto end1 = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::micro> duration1 = end1 - start1;
-    // Êä³öÔËĞĞÊ±¼ä
-    std::cout << "¹şÏ£ÔËĞĞÊ±¼ä: " << duration1.count() << " Î¢Ãë" << std::endl;
+    // è¾“å‡ºè¿è¡Œæ—¶é—´
+    std::cout << "å“ˆå¸Œè¿è¡Œæ—¶é—´: " << duration1.count() << " å¾®ç§’" << std::endl;
     return 0;
 }
 /*

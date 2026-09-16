@@ -22,7 +22,7 @@ int len[MAXM];
 
 struct Compare {
     bool operator()(const pair<double, pair<int, int>>& a, const pair<double, pair<int, int>>& b) {
-        return a.first > b.first; // Ğ¡¸ù¶Ñ£¬°´ double ÖµÉıĞòÅÅÁĞ
+        return a.first > b.first; // å°æ ¹å †ï¼ŒæŒ‰ double å€¼å‡åºæ’åˆ—
     }
 };
 
@@ -40,7 +40,7 @@ void out(int u, int v) {
     if (u == 1) {
         return;
     }
-    out(from[u][v].u, from[u][v].v); // µİ¹éµ÷ÓÃ
+    out(from[u][v].u, from[u][v].v); // é€’å½’è°ƒç”¨
     cout << u - 1 << ' ';
 }
 

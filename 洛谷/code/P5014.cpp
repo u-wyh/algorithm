@@ -5,9 +5,9 @@ using namespace std;
 const int MOD = 998244353;
 const int MAXN = 2e6+5;
 
-// ½×³ËÓàÊı±í
+// é˜¶ä¹˜ä½™æ•°è¡¨
 long long fac[MAXN];
-// ½×³ËÄæÔª±í
+// é˜¶ä¹˜é€†å…ƒè¡¨
 long long inv[MAXN];
 
 long long power(long long x, long long p) {
@@ -22,7 +22,7 @@ long long power(long long x, long long p) {
 	return ans;
 }
 
-// À´×Ô½²½â099£¬ÌâÄ¿3£¬Éú³É½×³ËÓàÊı±í¡¢½×³ËÄæÔª±í
+// æ¥è‡ªè®²è§£099ï¼Œé¢˜ç›®3ï¼Œç”Ÿæˆé˜¶ä¹˜ä½™æ•°è¡¨ã€é˜¶ä¹˜é€†å…ƒè¡¨
 void build(int n) {
 	fac[0] = inv[0] = 1;
 	fac[1] = 1;

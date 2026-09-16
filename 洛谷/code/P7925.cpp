@@ -7,7 +7,7 @@ const int INF = 1e18;
 
 int n,m;
 int val[MAXN];
-int need[MAXN];//��ʾ��������ڵ�Ϊ�׵������� ����ж��ٸ�ƻ���Ϳ���׬Ǯ
+int need[MAXN];//表示来到这个节点为首的子树上 最低有多少个苹果就可以赚钱
 
 int cnt=1;
 int head[MAXN];
@@ -43,30 +43,30 @@ inline void dfs(int u){
         dfs(v);
     }
     if(val[u]>=0){
-        //������λ����ƻ��  ��ô�϶�ֱ�Ӿ���׬Ǯ��
+        //如果这个位置是苹果  那么肯定直接就是赚钱的
         need[u]=0;
         return ;
     }
     clear();
     for(int i=head[u];i;i=nxt[i]){
         int v=to[i];
-        q.push({need[v],v});//�����ӽڵ����
+        q.push({need[v],v});//所有子节点入队
     }
-    need[u]-=val[u];//����Ŀǰ����ͻ���
+    need[u]-=val[u];//这是目前的最低花费
     bool flag=false;
-    int tot=0;//����Ŀǰӵ�е�ƻ������
+    int tot=0;//这是目前拥有的苹果数量
     while(!q.empty()){
         if(tot-need[u]>=0){
-            //��ʾƻ���Ѿ�����Ҫ�Ķ��� ��ô����׬��
+            //表示苹果已经比需要的多了 那么就是赚了
             flag=true;
             break;
         }
         node x=q.top();
         q.pop();
         if(tot<need[x.id]){
-            //��ʾ�����е�ƻ�������޷������������׬Ǯ
-            need[u]+=need[x.id]-tot;//��ô����Ҫ�����������׬Ǯ  ��Ϊ���Ѿ��������׵���
-            tot=need[x.id];//��ӵ�е�ƻ��������Ϊ��ʱ��Ҫ��
+            //表示现在有的苹果数量无法进入这个子树赚钱
+            need[u]+=need[x.id]-tot;//那么至少要进入这个子树赚钱  因为这已经是最容易的了
+            tot=need[x.id];//将拥有的苹果数量变为此时的要求
         }
         tot+=val[x.id];
         for(int i=head[x.id];i;i=nxt[i]){

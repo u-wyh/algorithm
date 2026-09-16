@@ -13,8 +13,8 @@ int min(int x, int y) {
 }
 
 void solve(int a, int b, int c) {
-    memset(dp, INT_MAX, sizeof(dp)); // Ä¬ÈÏ×î´ó
-    dp[1][a] = f[1][a]; // ³õÖµ
+    memset(dp, INT_MAX, sizeof(dp)); // é»˜è®¤æœ€å¤§
+    dp[1][a] = f[1][a]; // åˆå€¼
     for (int i = 2; i <= n; i++) {
         dp[i][a] = dp[i - 1][a] + f[i][a];
         dp[i][b] = min(dp[i - 1][a], dp[i - 1][b]) + f[i][b];

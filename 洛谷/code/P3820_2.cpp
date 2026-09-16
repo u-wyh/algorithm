@@ -28,7 +28,7 @@ void merge(int x,int y){
 }
 void inital(){
 	for(int i=0;i<=n;i++){
-		 a[i].resize(m+3,0);//Ç§Íò±ð¿ªm+1
+		 a[i].resize(m+3,0);//åƒä¸‡åˆ«å¼€m+1
 		f[i].resize(m+3,0);
 	}
 }

@@ -10,10 +10,10 @@ int main(){
 		for(int j=i-1;j>0;j--){
 			if(a[i]>=a[j])
 			f[i]=max(f[i],f[j]);
-			if(a[i]==a[j])break;//前面已经被处理过可以跳过
-		}//内层倒序循环
+			if(a[i]==a[j])break;//鍓嶉潰宸茬粡琚鐞嗚繃鍙互璺宠繃
+		}//鍐呭眰鍊掑簭寰幆
 		f[i]++;
-	}//最长不下降序列
+	}//鏈�闀夸笉涓嬮檷搴忓垪
 	for(int i=1;i<=n;i++){
 		for(int j=i-1;j>0;j--){
 			if(a[i]<=a[j])
@@ -21,7 +21,7 @@ int main(){
 			if(a[i]==a[j])break;
 		}
 		f1[i]++;
-	}//最长不上升序列
+	}//鏈�闀夸笉涓婂崌搴忓垪
 	for(int i=1;i<=n;i++){
 		s=max(s,f[i]);
 		s=max(s,f1[i]);

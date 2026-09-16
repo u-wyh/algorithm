@@ -118,7 +118,7 @@ int main() {
         }
         // cout<<endl;
         int maxn = 0;
-        //´ÓÇ°¿ªÊ¼Ã¶¾Ù
+        //ä»Žå‰å¼€å§‹æžšä¸¾
         for (int j = 1; j <= rear; j++) {
             int v = point[j];
             if (dis[v] == dis[u] + 1) {
@@ -135,7 +135,7 @@ int main() {
             }
         }
         maxn = 0;
-        //´Óºó¿ªÊ¼Ã¶¾Ù
+        //ä»ŽåŽå¼€å§‹æžšä¸¾
         for (int j = rear; j >= 1; j--) {
             int v = point[j];
             if (dis[v] == dis[u] + 1) {

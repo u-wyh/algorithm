@@ -35,7 +35,7 @@ signed main()
     }
     for(int i=1;i<=n;i++){
         cin>>nums[i].c;
-        arr[++cnt].st=0;//³¬¼¶Ô´µã½¨±ß
+        arr[++cnt].st=0;//è¶…çº§æºç‚¹å»ºè¾¹
         arr[cnt].en=i;
         arr[cnt].val=nums[i].c;
     }

@@ -6,7 +6,7 @@
 
 int fa[Max];
 
-int find(int x)//并查集中的查询操作{
+int find(int x)//骞舵煡闆嗕腑鐨勬煡璇㈡搷浣渰
 	if(x==fa[x])
         return x;
 	return

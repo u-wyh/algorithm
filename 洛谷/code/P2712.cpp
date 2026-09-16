@@ -5,7 +5,7 @@ const int MAXN = 105;
 const int MAXM = 105;
 
 int n;
-int place[505];//±íÊ¾Õâ¸öÎ»ÖÃÈç¹ûÓĞ¼à¿Ø  ÊÇ¼¸ºÅ¼à¿Ø
+int place[505];//è¡¨ç¤ºè¿™ä¸ªä½ç½®å¦‚æœæœ‰ç›‘æ§  æ˜¯å‡ å·ç›‘æ§
 int look[MAXN][MAXM];
 int head[MAXN];
 int Next[MAXM];

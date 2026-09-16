@@ -32,7 +32,7 @@ int main ()
 		memset (vis, 0, sizeof vis);
 		memset (len, 0, sizeof len);
 		input ();
-		for (re int i (1); i <= cnt; ++i)//Manacher Ä£°å
+		for (re int i (1); i <= cnt; ++i)//Manacher æ¨¡æ¿
 		{
 			if (i <= mx) len[i] = min (mx - i, len[po * 2 - i]);
 			while (st[i + len[i]] == st[i - len[i]]) len[i]++;
@@ -40,11 +40,11 @@ int main ()
 		}
 		for (re int i (cnt); i >= 1; --i)
 		{
-			if (i + len[i] - 1 == cnt) vis[i] = 1;//Èç¹ûÄÜÒ»´Î·­×ª³É
-			else if (vis[i + len[i] - 2] and i == len[i]) vis[i] = 1;//Èç¹ûËüÄÜ·­×ª³ÉÄ³¸ö×î³¤·­×ª×Ó´®£¬Èç qwqwq µÄ qwqw µÄ qw £¬ÇÒ²»»áÔ½½ç
+			if (i + len[i] - 1 == cnt) vis[i] = 1;//å¦‚æœèƒ½ä¸€æ¬¡ç¿»è½¬æˆ
+			else if (vis[i + len[i] - 2] and i == len[i]) vis[i] = 1;//å¦‚æœå®ƒèƒ½ç¿»è½¬æˆæŸä¸ªæœ€é•¿ç¿»è½¬å­ä¸²ï¼Œå¦‚ qwqwq çš„ qwqw çš„ qw ï¼Œä¸”ä¸ä¼šè¶Šç•Œ
 		}
 		for (re int i (1); i <= cnt; ++i) if (st[i] >= 'a' and st[i] <= 'z' and vis[i]) printf ("%d ", i / 2);
-			//Manacher ´¦ÀíºóµÄ×Ö·û´®×ª»¯³ÉÔ­×Ö·û´®£¬³¤¶ÈÖ±½Ó³ıÒÔ 2 ¾Í¿ÉÒÔµÃµ½Ô­×Ö·û´®µÄ³¤¶È
+			//Manacher å¤„ç†åçš„å­—ç¬¦ä¸²è½¬åŒ–æˆåŸå­—ç¬¦ä¸²ï¼Œé•¿åº¦ç›´æ¥é™¤ä»¥ 2 å°±å¯ä»¥å¾—åˆ°åŸå­—ç¬¦ä¸²çš„é•¿åº¦
 		printf ("\n");
 	}
 	return 0;

@@ -18,7 +18,7 @@ string mx(string a,string b){
 }
 
 string ask(int l,int r){
-	int lc=log2(r-l+1);//区间长度求log
+	int lc=log2(r-l+1);//鍖洪棿闀垮害姹俵og
 	return mx(st[l][lc],st[r-(1<<lc)+1][lc]);
 }
 
@@ -29,7 +29,7 @@ int main()
 		char x[20];
 		scanf("%s",x);
 		st[i][0]=x;
-		//边界条件
+		//杈圭晫鏉′欢
 	}
 	for(int j=1;(1<<j)<=n;j++){
 		for(int i=1;i+(1<<(j-1))<=n;i++){

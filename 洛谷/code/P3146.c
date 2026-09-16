@@ -14,18 +14,18 @@ int main() {
     int n, ans = 0;
     scanf("%d", &n);
 
-    // ¶ÁÈ¡Êı¾İ²¢³õÊ¼»¯
+    // è¯»å–æ•°æ®å¹¶åˆå§‹åŒ–
     for (int i = 1; i <= n; i++) {
         scanf("%d", &f[i][i]);
         ans = max(ans, f[i][i]);
     }
 
-    // ¶¯Ì¬¹æ»®Çó½â×î³¤¹«¹²×ÓĞòÁĞ
+    // åŠ¨æ€è§„åˆ’æ±‚è§£æœ€é•¿å…¬å…±å­åºåˆ—
     for (int len = 2; len <= n; len++) {
         for (int l = 1; l <= n - len + 1; l++) {
             int r = l + len - 1;
             for (int k = l; k < r; k++) {
-                if (f[l][k] == f[k + 1][r] && f[l][k] != 0) { // ×¢Òâ¼ì²éf[l][k]ÊÇ·ñÎª0
+                if (f[l][k] == f[k + 1][r] && f[l][k] != 0) { // æ³¨æ„æ£€æŸ¥f[l][k]æ˜¯å¦ä¸º0
                     f[l][r] = max(f[l][r], f[l][k] + 1);
                     ans = max(ans, f[l][r]);
                 }

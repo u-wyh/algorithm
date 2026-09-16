@@ -30,7 +30,7 @@ int main()
 	{
 		int a,b;	cin>>a>>b;
 		char c;		cin>>c;
-		if(find(a)==find(b)&&col[a]!=c)		ans[++cnt]=0;//ÅĞ¶ÏÂ·¾¶ÉÏÊÇ·ñÓĞÆ«ºÃµÄÅ£ÄÌ
+		if(find(a)==find(b)&&col[a]!=c)		ans[++cnt]=0;//åˆ¤æ–­è·¯å¾„ä¸Šæ˜¯å¦æœ‰åå¥½çš„ç‰›å¥¶
 		else	ans[++cnt]=1;
 	}
 	for(int i=1;i<=cnt;i++)	cout<<ans[i];

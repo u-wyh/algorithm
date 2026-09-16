@@ -31,28 +31,28 @@ void write(int x)
 
 struct {
     int nxt, to;
-} e[MAXM]; int head[MAXN], tot=1; // Ë«Ïò±ßÓÅ»¯
+} e[MAXM]; int head[MAXN], tot=1; // åŒå‘è¾¹ä¼˜åŒ–
 inline void add(int u, int v) {
     e[++tot].to=v, e[tot].nxt=head[u], head[u]=tot;
 }
 bitset<MAXM> vis, in_stack;
 int stk[MAXN], r;
-inline void dfs(int u) { // ¸ĞĞ»rzyÉñ£¡£¡£¡
+inline void dfs(int u) { // æ„Ÿè°¢rzyç¥ï¼ï¼ï¼
     for (int i=head[u]; i; i=head[u]) {
-    // ×¢ÒâÕâÀïµÄÑ­»·¸³Öµ
+    // æ³¨æ„è¿™é‡Œçš„å¾ªç¯èµ‹å€¼
         int to=e[i].to;
-        head[u]=e[i].nxt; // ÓÅ»¯1
+        head[u]=e[i].nxt; // ä¼˜åŒ–1
         if (vis[i]) continue;
         vis[i]=vis[i^1]=true;
         dfs(e[i].to);
     }
-    // ½ø³öÕ»¹ı³Ì
+    // è¿›å‡ºæ ˆè¿‡ç¨‹
     if (in_stack[u]) {
         while (stk[r]!=u && r) {
             in_stack[stk[r]]=false;
             write(stk[r--]); putchar(' ');
         }
-        write(stk[r--]); putchar('\n'); // ±¾Ìâ×¨ÊôµÄSPJÓÅ»¯
+        write(stk[r--]); putchar('\n'); // æœ¬é¢˜ä¸“å±çš„SPJä¼˜åŒ–
     }
     else in_stack[u]=true;
     stk[++r]=u;

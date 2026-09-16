@@ -4,7 +4,7 @@ using namespace std;
 const int maxn=501;
 int n;
 int mp[maxn][maxn];
-inline int read(){//¿ì¶Á
+inline int read(){//å¿«è¯»
 	int x=0,y=1;
 	char ch=getchar();
 	while(!isdigit(ch)){if(ch=='-')y=-y; ch=getchar();}

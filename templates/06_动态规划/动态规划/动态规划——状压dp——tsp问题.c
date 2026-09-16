@@ -20,7 +20,7 @@ int f(int s,int i,int n)
     }
     int ans = INT_MAX;
     for (int j = 0; j < n; j++) {
-        // 0...n-1这些村，都看看是不是下一个落脚点
+        // 0...n-1杩欎簺鏉戯紝閮界湅鐪嬫槸涓嶆槸涓嬩竴涓惤鑴氱偣
         if ((s & (1 << j)) == 0) {
             ans = min(ans, graph[i][j] + f(s | (1 << j), j,n));
         }

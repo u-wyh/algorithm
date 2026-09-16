@@ -6,31 +6,31 @@ const int MAXN = 1e5+5;
 int n,m,k;
 int val[MAXN];
 int fun[MAXN];
-int visit[MAXN];//djËã·¨ÓÃ
+int visit[MAXN];//djç®—æ³•ç”¨
 
-//Á´Ê½Ç°ÏòĞÇ½¨Í¼
+//é“¾å¼å‰å‘æ˜Ÿå»ºå›¾
 int head[MAXN];
 int Next[MAXN<<1];
 int to[MAXN<<1];
 int weight[MAXN<<1];
 int tot=1;
 
-//Ïß¶ÎÊ÷
-int tree[MAXN<<2];//±ßÈ¨×ªµãÈ¨
-int cost[MAXN<<2];//µãÈ¨
+//çº¿æ®µæ ‘
+int tree[MAXN<<2];//è¾¹æƒè½¬ç‚¹æƒ
+int cost[MAXN<<2];//ç‚¹æƒ
 
-//Ê÷Á´ÆÊ·Ö²¿·Ö
-int son[MAXN];//ÖØ¶ù×Ó±àºÅ  Ò¶×Ó½áµãÃ»ÓĞ
-int id[MAXN];//ÖØĞÂ±àºÅºóµÄ±àºÅ
-int rk[MAXN];//ÖØĞÂ±àºÅºóµÄ±àºÅ¶ÔÓ¦Ô­À´µÄ±àºÅÊÇÊ²Ã´
+//æ ‘é“¾å‰–åˆ†éƒ¨åˆ†
+int son[MAXN];//é‡å„¿å­ç¼–å·  å¶å­ç»“ç‚¹æ²¡æœ‰
+int id[MAXN];//é‡æ–°ç¼–å·åçš„ç¼–å·
+int rk[MAXN];//é‡æ–°ç¼–å·åçš„ç¼–å·å¯¹åº”åŸæ¥çš„ç¼–å·æ˜¯ä»€ä¹ˆ
 int cnt;
-int fa[MAXN];//¸¸Ç×½Úµã±àºÅ
-int deep[MAXN];//½ÚµãÉî¶È
-int sz[MAXN];//ÒÔ¸Ã½ÚµãÎªÊ×µÄ×ÓÊ÷½Úµã×ÜÊı
-int top[MAXN];//ÕâÌõÖØÁ´µÄÍ·½áµã
+int fa[MAXN];//çˆ¶äº²èŠ‚ç‚¹ç¼–å·
+int deep[MAXN];//èŠ‚ç‚¹æ·±åº¦
+int sz[MAXN];//ä»¥è¯¥èŠ‚ç‚¹ä¸ºé¦–çš„å­æ ‘èŠ‚ç‚¹æ€»æ•°
+int top[MAXN];//è¿™æ¡é‡é“¾çš„å¤´ç»“ç‚¹
 
 auto compare = [](const pair<int, int>& left, const pair<int, int>& right) {
-    return left.second > right.second; // ×¢ÒâÕâÀïÊÇ´óÓÚ£¬ÒòÎªÎÒÃÇÏëÒªĞ¡¸ù¶Ñ
+    return left.second > right.second; // æ³¨æ„è¿™é‡Œæ˜¯å¤§äºï¼Œå› ä¸ºæˆ‘ä»¬æƒ³è¦å°æ ¹å †
 };
 priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(compare)> heap(compare);
 
@@ -54,7 +54,7 @@ inline void addedge(int u,int v,int w){
     head[u]=tot++;
 }
 
-//µÚÒ»±édfs Íê³Ész¡¢deep¡¢fa¡¢sonÊı×éµÄÍ³¼Æ
+//ç¬¬ä¸€édfs å®Œæˆszã€deepã€faã€sonæ•°ç»„çš„ç»Ÿè®¡
 void dfs1(int u,int f){
     fa[u]=f;
     deep[u]=deep[f]+1;
@@ -64,7 +64,7 @@ void dfs1(int u,int f){
         if(v==f){
             continue;
         }
-        val[v]=weight[i];//ÕâÀï±ä»¯
+        val[v]=weight[i];//è¿™é‡Œå˜åŒ–
         dfs1(v,u);
         sz[u]+=sz[v];
         if(sz[son[u]]<sz[v]){
@@ -74,20 +74,20 @@ void dfs1(int u,int f){
     //cout<<u<<' '<<sz[u]<<endl;
 }
 
-//µÚ¶ş±édfs Íê³Étop¡¢rk¡¢id
+//ç¬¬äºŒédfs å®Œæˆtopã€rkã€id
 void dfs2(int u,int t){
     top[u]=t;
     id[u]=++cnt;
     rk[cnt]=u;
     if(son[u]){
-        //´æÔÚÖØ¶ù×Ó  ÓÅÏÈ±éÀú
+        //å­˜åœ¨é‡å„¿å­  ä¼˜å…ˆéå†
         dfs2(son[u],t);
     }
     for(int i=head[u];i;i=Next[i]){
         int v=to[i];
         if(v!=fa[u]&&v!=son[u]){
             dfs2(v,v);
-            //ÁíÍâÔÚ¿ªÒ»ÌõÖØÁ´
+            //å¦å¤–åœ¨å¼€ä¸€æ¡é‡é“¾
         }
     }
 }
@@ -105,7 +105,7 @@ void dfs(int u,int f){
     }
 }
 
-//×¢Òâ±àºÅÎÊÌâ
+//æ³¨æ„ç¼–å·é—®é¢˜
 void build(int l,int r,int i){
     cost[i]=1e9;
     if(l==r){

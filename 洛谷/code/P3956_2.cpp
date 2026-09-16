@@ -11,7 +11,7 @@ int ans=INT_MAX;
 int walk[4][2]={{0,1},{0,-1},{1,0},{-1,0}};
 
 void dfs(int x,int y,int k,int f){
-    //表示到了xy  花费为k  f=1表示可用魔法
+    //琛ㄧず鍒颁簡xy  鑺辫垂涓簁  f=1琛ㄧず鍙敤榄旀硶
     if(k>=ans||k>t[x][y]){
         return;
     }

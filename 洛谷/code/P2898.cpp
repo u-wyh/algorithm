@@ -81,7 +81,7 @@ int main()
     for(int i=1;i<=m;i++){
         nums[i].l=read(),nums[i].r=read(),nums[i].w=read();
     }
-    int l=1,r=m,ans=0;//这里二分答案求的是最大可以符合条件的
+    int l=1,r=m,ans=0;//杩欓噷浜屽垎绛旀姹傜殑鏄渶澶у彲浠ョ鍚堟潯浠剁殑
     while(l<=r){
         int mid=(l+r)/2;
         if(check(mid)){

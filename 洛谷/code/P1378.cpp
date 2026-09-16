@@ -10,7 +10,7 @@ const double PI=3.1415926535;
 bool s[maxn];
 double x[maxn],y[maxn],r[maxn],xa,ya,xb,yb,ansmax;
 int n;
-double cal(int i)//ÕâÊÇ¼ÆËãµ±Ç°µÄµãµÄ°ë¾¶µÄº¯Êı
+double cal(int i)//è¿™æ˜¯è®¡ç®—å½“å‰çš„ç‚¹çš„åŠå¾„çš„å‡½æ•°
 {
     double s1=min(abs(x[i]-xa),abs(x[i]-xb));
     double s2=min(abs(y[i]-ya),abs(y[i]-yb));
@@ -19,7 +19,7 @@ double cal(int i)//ÕâÊÇ¼ÆËãµ±Ç°µÄµãµÄ°ë¾¶µÄº¯Êı
     if(i!=j&&s[j])
     {
         double d=sqrt((x[i]-x[j])*(x[i]-x[j])+(y[i]-y[j])*(y[i]-y[j]));
-        ans=min(ans,max(d-r[j],0.0));//Èç¹û¾àÀë¶¼Ğ¡ÓÚ0ÁË£¬ÄÇÎÒ»¹ÒªÄãÓĞºÎÓÃ
+        ans=min(ans,max(d-r[j],0.0));//å¦‚æœè·ç¦»éƒ½å°äº0äº†ï¼Œé‚£æˆ‘è¿˜è¦ä½ æœ‰ä½•ç”¨
     }
     return ans;
 }
@@ -50,6 +50,6 @@ int main()
     for(int i=1;i<=n;i++)
         scanf("%lf%lf",&x[i],&y[i]);
     dfs(1,0);
-    printf("%d",int(ss-ansmax+0.5));//ËÄÉáÎåÈë
+    printf("%d",int(ss-ansmax+0.5));//å››èˆäº”å…¥
     return 0;
 }

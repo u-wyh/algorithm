@@ -29,14 +29,14 @@ int main() {
     }
 
     for (int i = 1; i <= n; ++i) {
-        // ¸üĞÂ gcd ÁĞ±í
+        // æ›´æ–° gcd åˆ—è¡¨
         for (int j = 1; j <= cnt_g; ++j) {
             g[j].val = gcd(g[j].val, a[i]);
         }
         cnt_g++;
         g[cnt_g] = {a[i], i, i};
 
-        // È¥ÖØ gcd ÁĞ±í
+        // å»é‡ gcd åˆ—è¡¨
         int len = 0;
         for (int j = 1; j <= cnt_g; ++j) {
             if (g[j].val == g[j - 1].val) {
@@ -48,20 +48,20 @@ int main() {
         }
         cnt_g = len;
 
-        // ¼ÇÂ¼Ã¿¸ö gcd Öµ¶ÔÓ¦µÄ×óÓÒ±ß½ç
+        // è®°å½•æ¯ä¸ª gcd å€¼å¯¹åº”çš„å·¦å³è¾¹ç•Œ
         for (int j = 1; j <= cnt_g; ++j) {
             l[g[j].val] = g[j].l;
             r[g[j].val] = g[j].r;
         }
 
-        // ¸üĞÂ°´Î»»òÁĞ±í
+        // æ›´æ–°æŒ‰ä½æˆ–åˆ—è¡¨
         for (int j = 1; j <= cnt_o; ++j) {
             o[j].val |= a[i];
         }
         cnt_o++;
         o[cnt_o] = {a[i], i, i};
 
-        // È¥ÖØ°´Î»»òÁĞ±í
+        // å»é‡æŒ‰ä½æˆ–åˆ—è¡¨
         len = 0;
         for (int j = 1; j <= cnt_o; ++j) {
             if (o[j].val == o[j - 1].val) {
@@ -73,7 +73,7 @@ int main() {
         }
         cnt_o = len;
 
-        // Í³¼ÆÂú×ãÌõ¼şµÄ×ÓÊı×é
+        // ç»Ÿè®¡æ»¡è¶³æ¡ä»¶çš„å­æ•°ç»„
         for (int j = 1; j <= cnt_o; ++j) {
             ll target = o[j].val ^ k;
             if (l[target] != 0 && min(o[j].r, r[target]) >= max(o[j].l, l[target])) {
@@ -81,7 +81,7 @@ int main() {
             }
         }
 
-        // Çå¿Õ gcd ÖµµÄ×óÓÒ±ß½ç¼ÇÂ¼
+        // æ¸…ç©º gcd å€¼çš„å·¦å³è¾¹ç•Œè®°å½•
         for (int j = 1; j <= cnt_g; ++j) {
             l[g[j].val] = r[g[j].val] = 0;
         }

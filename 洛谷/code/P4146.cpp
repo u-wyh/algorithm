@@ -30,7 +30,7 @@ inline int read(){
 }
 
 void up(int i) {
-    sz[i] = sz[ls[i]] + sz[rs[i]] + 1; // н╛╩╓╫з╣Ц╢Сп║
+    sz[i] = sz[ls[i]] + sz[rs[i]] + 1; // Г╩╢Ф┼╓Х┼┌Г┌╧Е╓╖Е╟▐
     tree[i] = val[i];
     if (ls[i]) tree[i] = max(tree[i], tree[ls[i]]);
     if (rs[i]) tree[i] = max(tree[i], tree[rs[i]]);
@@ -78,7 +78,7 @@ int merge(int l, int r) {
         return l + r;
     }
     if (priority[l] >= priority[r]) {
-        down(l);//об╥╒юапео╒
+        down(l);//Д╦▀Е▐▒Ф┤▓Д©║Ф│╞
         rs[l] = merge(rs[l], r);
         up(l);
         return l;

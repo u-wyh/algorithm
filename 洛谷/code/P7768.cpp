@@ -72,7 +72,7 @@ int add(int jobi, int jobv, int l, int r, int i) {
     return rt;
 }
 
-//Íê³ÉdfnÐò½¨Á¢
+//å®Œæˆdfnåºå»ºç«‹
 void dfs1(int u, int f) {
     dep[u] = dep[f] + 1;
     depth = max(depth, dep[u]);
@@ -90,7 +90,7 @@ void dfs1(int u, int f) {
     }
 }
 
-//ÔÚÕâ¸ödfsÖÐÐÂ½¨Ê÷
+//åœ¨è¿™ä¸ªdfsä¸­æ–°å»ºæ ‘
 void dfs2(int u, int f) {
     root[dfn[u]] = add(dep[u], val[u] , 1, depth, root[dfn[u] - 1]);
     for (int ei = head[u]; ei > 0; ei = nxt[ei]) {

@@ -1,9 +1,9 @@
-// ×îÓÅÕËµ¥Æ½ºâ
-// ¸øÄãÒ»¸ö±íÊ¾½»Ò×µÄÊı×é transactions
-// ÆäÖĞ transactions[i] = [fromi, toi, amounti]
-// ±íÊ¾ ID = fromi µÄÈË¸ø ID = toi µÄÈË¹²¼Æ amounti
-// ÇëÄã¼ÆËã²¢·µ»Ø»¹ÇåËùÓĞÕ®ÎñµÄ×îĞ¡½»Ò×±ÊÊı
-// ²âÊÔÁ´½Ó : https://leetcode.cn/problems/optimal-account-balancing/
+// æœ€ä¼˜è´¦å•å¹³è¡¡
+// ç»™ä½ ä¸€ä¸ªè¡¨ç¤ºäº¤æ˜“çš„æ•°ç»„ transactions
+// å…¶ä¸­ transactions[i] = [fromi, toi, amounti]
+// è¡¨ç¤º ID = fromi çš„äººç»™ ID = toi çš„äººå…±è®¡ amounti
+// è¯·ä½ è®¡ç®—å¹¶è¿”å›è¿˜æ¸…æ‰€æœ‰å€ºåŠ¡çš„æœ€å°äº¤æ˜“ç¬”æ•°
+// æµ‹è¯•é“¾æ¥ : https://leetcode.cn/problems/optimal-account-balancing/
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -18,15 +18,15 @@ int f(int status, int sum, int* dp) {
         return dp[status];
     }
     int ans = 0;
-    if ((status & (status - 1)) != 0) { // ¼¯ºÏÖĞ²»Ö»Ò»¸öÔªËØ
+    if ((status & (status - 1)) != 0) { // é›†åˆä¸­ä¸åªä¸€ä¸ªå…ƒç´ 
         if (sum == 0) {
             for (int i = 0; i < n; i++) {
                 if ((status & (1 << i)) != 0) {
-                    // ÕÒµ½ÈÎºÎÒ»¸öÔªËØ£¬È¥³ıÕâ¸öÔªËØ
-                    // Ê£ÏÂµÄ¼¯ºÏ½øĞĞ³¢ÊÔ£¬·µ»ØÖµ + 1
+                    // æ‰¾åˆ°ä»»ä½•ä¸€ä¸ªå…ƒç´ ï¼Œå»é™¤è¿™ä¸ªå…ƒç´ 
+                    // å‰©ä¸‹çš„é›†åˆè¿›è¡Œå°è¯•ï¼Œè¿”å›å€¼ + 1
                     ans = f( status ^ (1 << i), sum - debt[i], dp) + 1;
-                    // È»ºó²»ĞèÒªÔÙ³¢ÊÔÏÂÒ»¸öÔªËØÁË£¬ÒòÎª´ğ°¸Ò»¶¨ÊÇÒ»ÑùµÄ
-                    // ËùÒÔÖ±½Óbreak
+                    // ç„¶åä¸éœ€è¦å†å°è¯•ä¸‹ä¸€ä¸ªå…ƒç´ äº†ï¼Œå› ä¸ºç­”æ¡ˆä¸€å®šæ˜¯ä¸€æ ·çš„
+                    // æ‰€ä»¥ç›´æ¥break
                     break;
                 }
             }

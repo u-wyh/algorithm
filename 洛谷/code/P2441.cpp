@@ -2,10 +2,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 int a[200001]={0};
-int fa[200001]={0};  // father Êı×é
-int dfs(int x,int y){     //ËÑË÷¡£
+int fa[200001]={0};  // father æ•°ç»„
+int dfs(int x,int y){     //æœç´¢ã€‚
 	if(x == 0) return -1;
-	if(__gcd(a[x],a[y]) > 1) return x;  //ÍµÒ»ÏÂÀÁ~Ö±½ÓÊ¹ÓÃgcdº¯Êı¡£
+	if(__gcd(a[x],a[y]) > 1) return x;  //å·ä¸€ä¸‹æ‡’~ç›´æ¥ä½¿ç”¨gcdå‡½æ•°ã€‚
 	return dfs(fa[x],y);
 }
 int main(){
@@ -17,14 +17,14 @@ int main(){
 	for(int i=1;i<=n-1;i++){
 		int x,y;
 		cin>>x>>y;
-		fa[y]=x;  //½¨Ê÷
+		fa[y]=x;  //å»ºæ ‘
 	}
 	for(int i=1;i<=k;i++){
 		int x,y;
 		cin>>x;
 		if(x==1){
 			cin>>y;
-			cout<<dfs(fa[y],y)<<endl;  //ËÑË÷
+			cout<<dfs(fa[y],y)<<endl;  //æœç´¢
 		}
 		else{
 			cin>>x>>y;

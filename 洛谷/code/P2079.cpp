@@ -16,13 +16,13 @@ int main()
 	{
 		cin >> c[i] >> x[i] >> y[i];
 	}
-	memset(dp,-0x3f,sizeof(dp));//≥ı ºªØ
-	dp[0][500] = 0;//∆Ω“∆
+	memset(dp,-0x3f,sizeof(dp));//ÂàùÂßãÂåñ
+	dp[0][500] = 0;//Âπ≥Áßª
 	for (int i = 1;i <= n;i++)
 	{
 		for (int j = v;j >= c[i];j--)
 		{
-			if (x[i] >= 0)//≈–∂œ√∂æŸÀ≥–Ú
+			if (x[i] >= 0)//Âà§Êñ≠Êûö‰∏æÈ°∫Â∫è
 			{
 				for (int k = 1000;k >= x[i];k--)
 				{

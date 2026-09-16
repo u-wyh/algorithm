@@ -1,11 +1,11 @@
-// �ڶ������з���Ӳ��
-// ����һ���� n �����Ķ������ĸ���� root
-// ��������ÿ����� node ����Ӧ�� node.val öӲ��
-// ��������һ���� n öӲ��
-// ��һ���ƶ��У����ǿ���ѡ���������ڵĽ�㣬Ȼ��һöӲ�Ҵ�����һ������ƶ�����һ�����
-// �ƶ������ǴӸ���㵽�ӽ�㣬���ߴ��ӽ���ƶ��������
-// ����ʹÿ������� ֻ�� һöӲ������� ���� �ƶ�����
-// �������� : https://leetcode.cn/problems/distribute-coins-in-binary-tree/
+// 在二叉树中分配硬币
+// 给你一个有 n 个结点的二叉树的根结点 root
+// 其中树中每个结点 node 都对应有 node.val 枚硬币
+// 整棵树上一共有 n 枚硬币
+// 在一次移动中，我们可以选择两个相邻的结点，然后将一枚硬币从其中一个结点移动到另一个结点
+// 移动可以是从父结点到子结点，或者从子结点移动到父结点
+// 返回使每个结点上 只有 一枚硬币所需的 最少 移动次数
+// 测试链接 : https://leetcode.cn/problems/distribute-coins-in-binary-tree/
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -17,9 +17,9 @@ struct TreeNode {
 };
 
 struct Info {
-    int cnt;//�ڵ�
+    int cnt;//节点
     int moves;
-    int sum;//����
+    int sum;//币数
 
     Info(int a,int b,int c) :cnt(a),sum(b),moves(c) {}
 };
@@ -29,8 +29,8 @@ Info f(TreeNode* x){
         return Info(0,0,0);
     }
 
-    Info infol = f(x->left);//����ȫ����Ϣ
-    Info infor = f(x->right);//����ȫ����Ϣ
+    Info infol = f(x->left);//左树全集信息
+    Info infor = f(x->right);//右树全集信息
 
     int sum=infol.sum+infor.sum+x->val;
     int cnt=infol.cnt+infor.cnt+1;

@@ -1,9 +1,9 @@
-// ¶þ²æÊ÷µÄÖ±¾¶
-// ¸øÄãÒ»¿Ã¶þ²æÊ÷µÄ¸ù½Úµã£¬·µ»Ø¸ÃÊ÷µÄÖ±¾¶
-// ¶þ²æÊ÷µÄ Ö±¾¶ ÊÇÖ¸Ê÷ÖÐÈÎÒâÁ½¸ö½ÚµãÖ®¼ä×î³¤Â·¾¶µÄ³¤¶È
-// ÕâÌõÂ·¾¶¿ÉÄÜ¾­¹ýÒ²¿ÉÄÜ²»¾­¹ý¸ù½Úµã root
-// Á½½ÚµãÖ®¼äÂ·¾¶µÄ ³¤¶È ÓÉËüÃÇÖ®¼ä±ßÊý±íÊ¾
-// ²âÊÔÁ´½Ó : https://leetcode.cn/problems/diameter-of-binary-tree/
+// äºŒå‰æ ‘çš„ç›´å¾„
+// ç»™ä½ ä¸€æ£µäºŒå‰æ ‘çš„æ ¹èŠ‚ç‚¹ï¼Œè¿”å›žè¯¥æ ‘çš„ç›´å¾„
+// äºŒå‰æ ‘çš„ ç›´å¾„ æ˜¯æŒ‡æ ‘ä¸­ä»»æ„ä¸¤ä¸ªèŠ‚ç‚¹ä¹‹é—´æœ€é•¿è·¯å¾„çš„é•¿åº¦
+// è¿™æ¡è·¯å¾„å¯èƒ½ç»è¿‡ä¹Ÿå¯èƒ½ä¸ç»è¿‡æ ¹èŠ‚ç‚¹ root
+// ä¸¤èŠ‚ç‚¹ä¹‹é—´è·¯å¾„çš„ é•¿åº¦ ç”±å®ƒä»¬ä¹‹é—´è¾¹æ•°è¡¨ç¤º
+// æµ‹è¯•é“¾æŽ¥ : https://leetcode.cn/problems/diameter-of-binary-tree/
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -27,8 +27,8 @@ Info f(TreeNode* x){
         return Info(0,0);
     }
 
-    Info infol = f(x->left);//×óÊ÷È«¼¯ÐÅÏ¢
-    Info infor = f(x->right);//ÓÒÊ÷È«¼¯ÐÅÏ¢
+    Info infol = f(x->left);//å·¦æ ‘å…¨é›†ä¿¡æ¯
+    Info infor = f(x->right);//å³æ ‘å…¨é›†ä¿¡æ¯
 
     int height=max(infol.height,infor.height)+1;
     int diameter=max(infol.diameter,infor.diameter);

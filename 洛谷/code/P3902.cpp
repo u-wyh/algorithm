@@ -16,7 +16,7 @@ int main()
             sa[ans]=a[i];
         }else{
             tz=lower_bound(sa,sa+ans,a[i])-sa;
-            //ÕâÀïÓÃtzÁÙÊ±´æ´¢ÕÒµ½µÄÏÂ±ê
+            //è¿™é‡Œç”¨tzä¸´æ—¶å­˜å‚¨æ‰¾åˆ°çš„ä¸‹æ ‡
             sa[tz]=a[i];
         }
     }

@@ -1,7 +1,7 @@
 // https://www.luogu.com.cn/problem/P10447
 #include<bits/stdc++.h>
 using namespace std;
-const int MAXN=25,MAXM=(1<<20),inf=0x3f;//¶¨Òå±äÁ¿£¬infÎªÎŞÏŞ
+const int MAXN=25,MAXM=(1<<20),inf=0x3f;//å®šä¹‰å˜é‡ï¼Œinfä¸ºæ— é™
 
 int n,a[MAXN][MAXN],f[MAXM][MAXN];
 int main(){
@@ -10,18 +10,18 @@ int main(){
 		for(int j=0;j<n;j++)
 			scanf("%d",&a[i][j]);
 	memset(f,inf,sizeof(f));
-	f[1][0]=0;//»¹Ã»¿ªÊ¼ÂÃ³Ì£¬Îª0
-	for(int i=1;i<(1<<n);i++)//Ã¶¾Ù×´Ì¬
+	f[1][0]=0;//è¿˜æ²¡å¼€å§‹æ—…ç¨‹ï¼Œä¸º0
+	for(int i=1;i<(1<<n);i++)//æšä¸¾çŠ¶æ€
 	{
-		for(int j=0;j<n;j++)//Ã¶¾ÙÃ¿¸öµã
+		for(int j=0;j<n;j++)//æšä¸¾æ¯ä¸ªç‚¹
 		{
-			if(!((i>>j)&1)) continue;//¾­¹ıÁË
-			for(int k=0;k<n;k++)//ÉÏÒ»´Î¾­¹ıÁËÄÄĞ©µã£¿
-				if(((i^(1<<j))>>k)&1)//Ã¶¾Ù´ÓÉÏÒ»¸ö¾­¹ıµÄ½Úµã×ßµ½j½Úµã
-					f[i][j]=min(f[i][j],f[i^(1<<j)][k]+a[k][j]);//×´Ì¬×ªÒÆ
+			if(!((i>>j)&1)) continue;//ç»è¿‡äº†
+			for(int k=0;k<n;k++)//ä¸Šä¸€æ¬¡ç»è¿‡äº†å“ªäº›ç‚¹ï¼Ÿ
+				if(((i^(1<<j))>>k)&1)//æšä¸¾ä»ä¸Šä¸€ä¸ªç»è¿‡çš„èŠ‚ç‚¹èµ°åˆ°jèŠ‚ç‚¹
+					f[i][j]=min(f[i][j],f[i^(1<<j)][k]+a[k][j]);//çŠ¶æ€è½¬ç§»
 		}
 	}
 	printf("%d\n",f[(1<<n)-1][n-1]);//out
 	return 0;
-    //Íê½áÈö»¨
+    //å®Œç»“æ’’èŠ±
 }

@@ -8,7 +8,7 @@ int Next[MAXN<<1];
 int to[MAXN<<1];
 int weight[MAXN<<1];
 int cnt=1;
-long dis[MAXN];//ÒÔiÎ»Í·½áµãµÄ×ÓÊ÷  ÏòÏÂ×îÉîµÄ¾àÀë
+long dis[MAXN];//ä»¥iä½å¤´ç»“ç‚¹çš„å­æ ‘  å‘ä¸‹æœ€æ·±çš„è·ç¦»
 long ans=0;
 int n,st;
 

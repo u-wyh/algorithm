@@ -1,4 +1,4 @@
-//ÌâÄ¿Á´½Ó£ºP1439
+//é¢˜ç›®é“¾æ¥ï¼šP1439
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;
@@ -18,7 +18,7 @@ int f1(int m,int n)
     int p4=s1[m]==s2[n]?(p1+1):0;
     return max(max(p1,p2),max(p3,p4));
 }
-//±©Á¦µİ¹é°æ±¾
+//æš´åŠ›é€’å½’ç‰ˆæœ¬
 
 int f2(int m,int n)
 {
@@ -32,7 +32,7 @@ int f2(int m,int n)
     }
     return ans;
 }
-//°æ±¾Ò»µÄµÈĞ§Ğ´·¨
+//ç‰ˆæœ¬ä¸€çš„ç­‰æ•ˆå†™æ³•
 
 int f3(int len1, int len2) {
     if (len1 == 0 || len2 == 0) {
@@ -59,7 +59,7 @@ int longest() {
     }
     return f3(n,n);
 }
-//¼ÇÒä»¯ËÑË÷°æ±¾
+//è®°å¿†åŒ–æœç´¢ç‰ˆæœ¬
 
 int longest2() {
     for(int i=0;i<=n;i++){

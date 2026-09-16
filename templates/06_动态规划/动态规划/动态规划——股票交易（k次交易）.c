@@ -34,7 +34,7 @@ int maxprofit2(int *nums,int n,int k)
     for (int i = 1, best; i <= k; i++) {
         best = dp[i - 1][0] - nums[0];
         for (int j = 1; j <=n; j++) {
-            // ÓÃbest±äÁ¿Ìæ´úÁËÃ¶¾ÙÐÐÎª
+            // ç”¨bestå˜é‡æ›¿ä»£äº†æžšä¸¾è¡Œä¸º
             dp[i][j] = max(dp[i][j - 1], best + nums[j]);
             best = max(best, dp[i - 1][j] - nums[j]);
         }

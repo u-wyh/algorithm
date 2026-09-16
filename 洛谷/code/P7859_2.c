@@ -13,7 +13,7 @@ int main()
     }
     int ans=0;
     for (int i = 0; i < (1 << n); i++) {
-        bool bj = false; // C语言中，布尔类型用false和true表示
+        bool bj = false; // C璇█涓紝甯冨皵绫诲瀷鐢╢alse鍜宼rue琛ㄧず
         for (int j = 1; j <= m; j++) {
             if ((i & (1 << (x[j] - 1))) && (i & (1 << (y[j] - 1)))) {
                 bj = true;

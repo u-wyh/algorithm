@@ -6,7 +6,7 @@ const int MAXN = 1e5+5;
 int n,m;
 int val[MAXN];
 
-// Ê÷Á´ÆÊ·Ö
+// æ ‘é“¾å‰–åˆ†
 int fa[MAXN];
 int sz[MAXN];
 int son[MAXN];

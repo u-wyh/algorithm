@@ -10,17 +10,17 @@ int main() {
     int s = 0, v = a;
     while (v) {
         v /= 10;
-        s++; // 计算位数
+        s++; // 璁＄畻浣嶆暟
     }
 
-    for (int i = a; i < b; i++) { // 枚举n
+    for (int i = a; i < b; i++) { // 鏋氫妇n
         int n = i;
-        int m = (n % 10) * p[s - 1] + n / 10; // 如上文计算m
-        while (n != m) { // 若n == m，则m枚举完毕
-            if (n < m && m <= b) { // 即符合条件，ans++
+        int m = (n % 10) * p[s - 1] + n / 10; // 濡備笂鏂囪绠梞
+        while (n != m) { // 鑻 == m锛屽垯m鏋氫妇瀹屾瘯
+            if (n < m && m <= b) { // 鍗崇鍚堟潯浠讹紝ans++
                 ans++;
             }
-            m = (m % 10) * p[s - 1] + m / 10; // 枚举m
+            m = (m % 10) * p[s - 1] + m / 10; // 鏋氫妇m
         }
     }
 

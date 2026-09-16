@@ -35,11 +35,11 @@ int main() {
     for (int i = 2; i <= n; i++) {
         t = gcd(t, a[i]);
     }
-    if (t > 1) { // нчоч╫Б
+    if (t > 1) { // Ф≈═И≥░Х╖ё
         printf("INF\n");
         return 0;
     }
-    // споч╡╩Ё╛╧ЩN^2
+    // Ф°┴И≥░Д╦█Х╤┘Х©┤N^2
     dp[0] = 1;
     for (int i = 0; i <= 1000000; i++) {
         if (dp[i]) {

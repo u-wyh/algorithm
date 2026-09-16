@@ -9,11 +9,11 @@ int n,m;
 int degree[MAXN];
 bool visit[MAXN];
 
-int tot=0;//»·µÄ¸öÊı
-vector<int>ans[MAXM];//¼ÇÂ¼´ğ°¸
+int tot=0;//ç¯çš„ä¸ªæ•°
+vector<int>ans[MAXM];//è®°å½•ç­”æ¡ˆ
 
 stack<int>st;
-bool in[MAXM];//ÊÇ·ñÔÚÕ»ÖĞ
+bool in[MAXM];//æ˜¯å¦åœ¨æ ˆä¸­
 
 int cnt=0;
 int head[MAXN];
@@ -45,7 +45,7 @@ void dfs(int u){
     for(int i=head[u];i!=-1;i=Next[i]){
         if(!vis[i]){
             vis[i]=vis[i^1]=true;
-            head[u]=Next[i];//Ïàµ±ÓÚÊÇ°Ñµ±Ç°µÄhead[u]ÕâÌõ±ßÉ¾³ıÁË
+            head[u]=Next[i];//ç›¸å½“äºæ˜¯æŠŠå½“å‰çš„head[u]è¿™æ¡è¾¹åˆ é™¤äº†
             int v=to[i];
             dfs(v);
         }

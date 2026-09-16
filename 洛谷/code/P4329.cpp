@@ -21,7 +21,7 @@ int main()
         int cnt=0;
         for(int x=i;x;x>>=1){
             if(x&1){
-                cnt++;//统计1个数
+                cnt++;//缁熻1涓暟
             }
         }
         cnt--;

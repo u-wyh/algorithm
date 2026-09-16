@@ -1,5 +1,5 @@
 //P2862
-//ÕâµÀÌâÒªÌØ±ð×¢Òâ  Éæ¼°µ½ÁË¸ºÊý ÄÇÃ´È¡ÖÐÖ¸µÄÊ±ºò²»ÄÜÓÃ³ýÒÔ2  ÒªÓÃ>>1
+//è¿™é“é¢˜è¦ç‰¹åˆ«æ³¨æ„  æ¶‰åŠåˆ°äº†è´Ÿæ•° é‚£ä¹ˆå–ä¸­æŒ‡çš„æ—¶å€™ä¸èƒ½ç”¨é™¤ä»¥2  è¦ç”¨>>1
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;
@@ -10,7 +10,7 @@ struct point{
     int x,y;
 }nums[MAXN];
 int ans,tot;
-int tree[MAXM<<4],lazy[MAXM<<4];//ÒòÎªÕâÀïÊÇÕý¸ºÁ½¸öÇø¼ä
+int tree[MAXM<<4],lazy[MAXM<<4];//å› ä¸ºè¿™é‡Œæ˜¯æ­£è´Ÿä¸¤ä¸ªåŒºé—´
 struct node{
     int x,l,r,val;
 }p[MAXN<<1];

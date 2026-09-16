@@ -26,7 +26,7 @@ void up(int i) {
     size[i] = size[ls[i]] + size[rs[i]] + 1;
 }
 
-//¸ù¾İÅÅÃû·ÖÁÑÊ÷
+//æ ¹æ®æ’ååˆ†è£‚æ ‘
 void split(int l, int r, int i, int rank) {
     if (i == 0) {
         rs[l] = ls[r] = 0;
@@ -75,7 +75,7 @@ int main() {
         ls[0] = rs[0] = 0;
         key[++cnt] = x;
         size[cnt] = 1;
-        priority[cnt] = (double)rand() / RAND_MAX;//ĞÂÔö½Úµã
+        priority[cnt] = (double)rand() / RAND_MAX;//æ–°å¢èŠ‚ç‚¹
         head[0] = merge(merge(l, cnt), r);
     }
     for(int i=1;i<=num;i++){

@@ -32,7 +32,7 @@ inline void dfs(R int x){
         R int xx=edge[i].to;
         (dis[xx]+=dis[x]+cnt[x]*edge[i].dis)%=mod;
         (cnt[xx]+=cnt[x])%=mod;
-        --in[xx];//ÍØÆËÅÅĞò
+        --in[xx];//æ‹“æ‰‘æ’åº
         if(!in[xx])dfs(xx);
     }
 }

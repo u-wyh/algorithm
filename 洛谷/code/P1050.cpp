@@ -6,14 +6,14 @@ string s;
 int k;
 vector<int>a,b;
 
-// ÒÆ³ıÇ°µ¼Áã
+// ç§»é™¤å‰å¯¼é›¶
 void removeLeadingZeros(vector<int>& num) {
     while(num.size()>1&&num.back()==0){
 		num.pop_back();
 	}
 }
 
-// ´óÕûÊı³ËÒÔĞ¡ÕûÊı
+// å¤§æ•´æ•°ä¹˜ä»¥å°æ•´æ•°
 vector<int> mul(const vector<int>& a, int b) {
     vector<int>res;
 	int diff=0;
@@ -26,7 +26,7 @@ vector<int> mul(const vector<int>& a, int b) {
 	return res;
 }
 
-// ´óÕûÊı³ËÒÔ´óÕûÊı
+// å¤§æ•´æ•°ä¹˜ä»¥å¤§æ•´æ•°
 vector<int> mul(const vector<int>& a, const vector<int>& b) {
     vector<int>res(a.size()+b.size(),0);
 	for(int i=0;i<(int)a.size();i++){
@@ -43,8 +43,8 @@ vector<int> mul(const vector<int>& a, const vector<int>& b) {
 	return res;
 }
 
-// ×Ö·û´®×ª´óÕûÊı
-//ÕâÀïÓĞµãÎÊÌâ  ¾ÍÊÇÃ»ÓĞ¿¼ÂÇ¸ºÊı
+// å­—ç¬¦ä¸²è½¬å¤§æ•´æ•°
+//è¿™é‡Œæœ‰ç‚¹é—®é¢˜  å°±æ˜¯æ²¡æœ‰è€ƒè™‘è´Ÿæ•°
 vector<int> strToNum(const string& s) {
     vector<int>num;
 	for(int i=s.length()-1;i>=0;i--){
@@ -55,7 +55,7 @@ vector<int> strToNum(const string& s) {
 	return num;
 }
 
-// ´óÕûÊı×ª×Ö·û´®
+// å¤§æ•´æ•°è½¬å­—ç¬¦ä¸²
 string numToStr(const vector<int>& num) {
     string s;
 	for(int i=(int)num.size()-1;i>=0;i--){

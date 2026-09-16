@@ -17,8 +17,8 @@ unordered_map<int, int> tb;
 
 inline void dfs1(int p, int w, int k)
 {
-	if (w > m || k > ans || (tb.count(w) && tb[w] < k)) return; // ¼ôÖ¦
-	if (w == m) { ans = min(ans, k); return; } // ²»ÓÃËÑÁË
+	if (w > m || k > ans || (tb.count(w) && tb[w] < k)) return; // å‰ªæ
+	if (w == m) { ans = min(ans, k); return; } // ä¸ç”¨æœäº†
 	if (p == mid + 1)
 	{
 		if (w <= m)
@@ -27,22 +27,22 @@ inline void dfs1(int p, int w, int k)
 				tb[w] = min(tb[w], k);
 			else 
 				tb[w] = k;
-			// ¼ÇÂ¼Ä¿Ç°ÄÜµÃµ½ÖÊÁ¿Á¿ w ×îÉÙĞèÒªµÄµ¶Êı
+			// è®°å½•ç›®å‰èƒ½å¾—åˆ°è´¨é‡é‡ w æœ€å°‘éœ€è¦çš„åˆ€æ•°
 		}
 		return;
 	}
-	dfs1(p + 1, w, k);				 // Éú¹Ïµ°×Ó£¬²»ÒªÁË
-	dfs1(p + 1, w + a[p], k + 1);	 // ÅüÒ»µ¶¿´¿´
-	dfs1(p + 1, w + (a[p] << 1), k); // Ò»ÑÛ±£Êì£¬²»ÓÃÅüÁË
+	dfs1(p + 1, w, k);				 // ç”Ÿç“œè›‹å­ï¼Œä¸è¦äº†
+	dfs1(p + 1, w + a[p], k + 1);	 // åŠˆä¸€åˆ€çœ‹çœ‹
+	dfs1(p + 1, w + (a[p] << 1), k); // ä¸€çœ¼ä¿ç†Ÿï¼Œä¸ç”¨åŠˆäº†
 }
-inline void dfs2(int p, int w, int k) // ´ó²¿Í¬ÉÏ
+inline void dfs2(int p, int w, int k) // å¤§éƒ¨åŒä¸Š
 {
 	if (w > m || k > ans) return;
 	if (w == m) { ans = min(ans, k); return; }
 	if (p == n + 1)
 	{
 		if (w <= m && tb.count(m - w))
-			ans = min(ans, tb[m - w] + k); // ÈôÄÜ¹»µÃµ½¸ÕºÃÖÊÁ¿ m µÄ¹Ï£¬¸üĞÂ´ğ°¸
+			ans = min(ans, tb[m - w] + k); // è‹¥èƒ½å¤Ÿå¾—åˆ°åˆšå¥½è´¨é‡ m çš„ç“œï¼Œæ›´æ–°ç­”æ¡ˆ
 		return;
  	}
 	dfs2(p + 1, w, k);
@@ -58,7 +58,7 @@ int main()
 	
 	cin >> n >> m;
 	m <<= 1; mid = n >> 1;
-	// Ô¤ÏÈ°Ñ¹ÏµÄÖÊÁ¿·­±¶£¬·ÀÖ¹³öÏÖĞ¡Êı
+	// é¢„å…ˆæŠŠç“œçš„è´¨é‡ç¿»å€ï¼Œé˜²æ­¢å‡ºç°å°æ•°
 	for (reg int i = 1; i <= n; ++i)
 		cin >> a[i];
 		

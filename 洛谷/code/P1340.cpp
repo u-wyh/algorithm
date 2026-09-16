@@ -33,8 +33,8 @@ bool un(int x,int y){
         return false;
     }
 }
-//Èç¹ûÕâÁ½¸ö½ÚµãÒÔÇ°¾Í²»ÊÇÒ»¸ö×éÀïÃæµÄ  ÄÇÃ´ºÏ²¢ËûÃÇ
-//·ñÔò·µ»Øfalse
+//å¦‚æœè¿™ä¸¤ä¸ªèŠ‚ç‚¹ä»¥å‰å°±ä¸æ˜¯ä¸€ä¸ªç»„é‡Œé¢çš„  é‚£ä¹ˆåˆå¹¶ä»–ä»¬
+//å¦åˆ™è¿”å›false
 
 void update(int i,int k){
     if(edge[k].val<=edge[i].val){
@@ -83,10 +83,10 @@ int main()
         //sort(edge+1,edge+i+1,cmp);
         int ans=0;
         int edgecnt=0;
-        //edgecntÍ³¼Æ¼ÇÂ¼ÁË¶àÉÙÌõ±ß
+        //edgecntç»Ÿè®¡è®°å½•äº†å¤šå°‘æ¡è¾¹
         for(int j=1;j<=i;j++){
             if(un(edge[j].st,edge[j].en)){
-                //Èç¹ûÕâÌõ±ßµÄ×óÓÒÒÔÇ°²»ÔÚÒ»¸ö×éÀïÃæ   ¼ÌĞø
+                //å¦‚æœè¿™æ¡è¾¹çš„å·¦å³ä»¥å‰ä¸åœ¨ä¸€ä¸ªç»„é‡Œé¢   ç»§ç»­
                 ans+=edge[j].val;
                 edgecnt++;
                 if(edgecnt==n-1){

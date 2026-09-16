@@ -1,10 +1,10 @@
 # https://www.luogu.com.cn/problem/P6435
 def multiply(a, b, mod):
-    """¾ØÕó³Ë·¨£¬½á¹û¶Ô mod È¡Ä£"""
+    """çŸ©é˜µä¹˜æ³•ï¼Œç»“æœå¯¹ mod å–æ¨¡"""
     n = len(a)
     m = len(b[0])
     k = len(a[0])
-    ans = [[0] * m for _ in range(n)]  # ³õÊ¼»¯½á¹û¾ØÕó
+    ans = [[0] * m for _ in range(n)]  # åˆå§‹åŒ–ç»“æœçŸ©é˜µ
     for i in range(n):
         for j in range(m):
             for p in range(k):
@@ -12,9 +12,9 @@ def multiply(a, b, mod):
     return ans
 
 def power(a, p, mod):
-    """¾ØÕó¿ìËÙÃİ£¬½á¹û¶Ô mod È¡Ä£"""
+    """çŸ©é˜µå¿«é€Ÿå¹‚ï¼Œç»“æœå¯¹ mod å–æ¨¡"""
     n = len(a)
-    base = [[0] * n for _ in range(n)]  # ³õÊ¼»¯µ¥Î»¾ØÕó
+    base = [[0] * n for _ in range(n)]  # åˆå§‹åŒ–å•ä½çŸ©é˜µ
     for i in range(n):
         base[i][i] = 1
     while p:
@@ -25,24 +25,24 @@ def power(a, p, mod):
     return base
 
 def main():
-    # ÊäÈë
+    # è¾“å…¥
     n, a, b, c, mod = map(int, input().split())
     
-    # ³õÊ¼»¯ nums ºÍ base ¾ØÕó
-    nums = [[1, 1, 1]]  # 1x3 ¾ØÕó
+    # åˆå§‹åŒ– nums å’Œ base çŸ©é˜µ
+    nums = [[1, 1, 1]]  # 1x3 çŸ©é˜µ
     base = [
         [a + b, 0, 0],
         [b, a + b, 0],
         [c, 0, 1]
-    ]  # 3x3 ¾ØÕó
+    ]  # 3x3 çŸ©é˜µ
     
-    # ¼ÆËã base µÄ (n-1) ´ÎÃİ
+    # è®¡ç®— base çš„ (n-1) æ¬¡å¹‚
     base_pow = power(base, n - 1, mod)
     
-    # ¼ÆËã nums * base^(n-1)
+    # è®¡ç®— nums * base^(n-1)
     result = multiply(nums, base_pow, mod)
     
-    # Êä³ö½á¹û
+    # è¾“å‡ºç»“æœ
     print(result[0][0])
 
 if __name__ == "__main__":

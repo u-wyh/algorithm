@@ -14,7 +14,7 @@ int lazy[MAXT];
 int sum[MAXT];
 int pass[MAXT];
 
-//²åÈëÊı×éÖĞÏÂ±êÎªnumµÄÊı×Ö
+//æ’å…¥æ•°ç»„ä¸­ä¸‹æ ‡ä¸ºnumçš„æ•°å­—
 void insert(int num){
     int cur=1;
     pass[1]++;
@@ -30,7 +30,7 @@ void insert(int num){
     }
 }
 
-//²éÑ¯¶ş½øÖÆµÄÇ°xÎ»ºÍyÒ»ÑùµÄÓĞ¼¸¸ö
+//æŸ¥è¯¢äºŒè¿›åˆ¶çš„å‰xä½å’Œyä¸€æ ·çš„æœ‰å‡ ä¸ª
 int querypass(int x,int y){
     int cur=1;
     for(int i=0;i<x;i++){
@@ -59,7 +59,7 @@ void down(int i){
     }
 }
 
-//½«¶ş½øÖÆµÄÇ°xÎ»ºÍyÒ»ÑùµÄ½Úµã  ¼ÓÉÏv*k  ÆäÖĞkÊÇÊµ¼ÊÉÏ»á¼ÓÉÏvµÄÊı×Ö¸öÊı
+//å°†äºŒè¿›åˆ¶çš„å‰xä½å’Œyä¸€æ ·çš„èŠ‚ç‚¹  åŠ ä¸Šv*k  å…¶ä¸­kæ˜¯å®é™…ä¸Šä¼šåŠ ä¸Švçš„æ•°å­—ä¸ªæ•°
 void add(int x,int y,int k,int v){
     int cur=1;
     down(1);

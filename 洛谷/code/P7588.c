@@ -13,7 +13,7 @@ int change(int n){
 
 int euler(int n) {
     int visit[n + 1];
-    memset(visit, 0, sizeof(visit)); // 0±íÊ¾ÖÊÊı£¬1±íÊ¾ºÏÊı
+    memset(visit, 0, sizeof(visit)); // 0è¡¨ç¤ºè´¨æ•°ï¼Œ1è¡¨ç¤ºåˆæ•°
     int prime[n / 2 + 1];
     int cnt = 0;
 
@@ -23,9 +23,9 @@ int euler(int n) {
         }
 
         for (int j = 0; j < cnt && i * prime[j] <= n; j++) {
-            visit[i * prime[j]] = 1; // ±ê¼ÇÎªºÏÊı
+            visit[i * prime[j]] = 1; // æ ‡è®°ä¸ºåˆæ•°
             if (i % prime[j] == 0) {
-                break; // Ã¿¸öºÏÊıÖ»±»Æä×îĞ¡µÄÖÊÒòÊıÉ¸È¥Ò»´Î
+                break; // æ¯ä¸ªåˆæ•°åªè¢«å…¶æœ€å°çš„è´¨å› æ•°ç­›å»ä¸€æ¬¡
             }
         }
     }

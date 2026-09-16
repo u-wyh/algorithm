@@ -28,26 +28,26 @@ int main() {
         scanf("%d", &a[i]);
     }
     l = 1;
-    r = 1e18; // ×¢ÒâlÓ¦ÉèÎª1
+    r = 1e18; // æ³¨æ„låº”è®¾ä¸º1
 
     while (l <= r) {
         LL mid = (l + r) >> 1;
         if (work(mid) <= k) {
             r = mid - 1;
-            if (work(mid) == k) ans1 = mid; // ×¢Òâ·ûºÏÌõ¼ş²Å¸üĞÂ´ğ°¸
+            if (work(mid) == k) ans1 = mid; // æ³¨æ„ç¬¦åˆæ¡ä»¶æ‰æ›´æ–°ç­”æ¡ˆ
         } else {
             l = mid + 1;
         }
     }
 
     l = 1;
-    r = 1e18; // ×¢ÒâlÓ¦ÉèÎª1
+    r = 1e18; // æ³¨æ„låº”è®¾ä¸º1
 
     while (l <= r) {
         LL mid = (l + r) >> 1;
         if (work(mid) >= k) {
             l = mid + 1;
-            if (work(mid) == k) ans2 = mid; // ×¢Òâ·ûºÏÌõ¼ş²Å¸üĞÂ´ğ°¸
+            if (work(mid) == k) ans2 = mid; // æ³¨æ„ç¬¦åˆæ¡ä»¶æ‰æ›´æ–°ç­”æ¡ˆ
         } else {
             r = mid - 1;
         }

@@ -17,7 +17,7 @@ void topo(){
         q.pop();
         ans+=v[x];
         rd[a[x]]--;
-        vis[x]=1;//表示不在环上
+        vis[x]=1;//琛ㄧず涓嶅湪鐜笂
         if(!rd[a[x]])
             q.push(a[x]);
     }

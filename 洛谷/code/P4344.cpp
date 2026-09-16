@@ -1,12 +1,12 @@
 // https://www.luogu.com.cn/problem/P4344
-//Ïß¶ÎÊ÷  P4344
+//çº¿æ®µæ ‘  P4344
 #include <iostream>
 #include <vector>
 using namespace std;
 
 typedef long long ll;
 
-// ¶ÁÈ¡ÕûÊı
+// è¯»å–æ•´æ•°
 template<typename T>
 inline void read(T &FF) {
     T RR = 1; FF = 0; char CH = cin.get();
@@ -15,7 +15,7 @@ inline void read(T &FF) {
     FF *= RR;
 }
 
-// Ğ´ÈëÕûÊı
+// å†™å…¥æ•´æ•°
 template<typename T>
 inline void write(T x) {
     if (x < 0) putchar('-'), x *= -1;
@@ -23,7 +23,7 @@ inline void write(T x) {
     putchar(x % 10 + 48);
 }
 
-// Ğ´ÈëÕûÊı²¢»»ĞĞ
+// å†™å…¥æ•´æ•°å¹¶æ¢è¡Œ
 template<typename T>
 inline void writen(T x) {
     write(x);
@@ -32,18 +32,18 @@ inline void writen(T x) {
 
 const int N = 2e5 + 10;
 
-// Ïß¶ÎÊ÷½á¹¹Ìå
+// çº¿æ®µæ ‘ç»“æ„ä½“
 struct Tree {
     int left, right, leftMax, rightMax, sum, tag, length, answer;
 };
 
-// Ïß¶ÎÊ÷Êı×é
+// çº¿æ®µæ ‘æ•°ç»„
 vector<Tree> t(N * 4);
 
-// ¶ÁÈ¡ÊäÈë²ÎÊı
+// è¯»å–è¾“å…¥å‚æ•°
 int n, m, l0, r0, l1, r1, f;
 
-// ¸üĞÂµ±Ç°½ÚµãµÄĞÅÏ¢
+// æ›´æ–°å½“å‰èŠ‚ç‚¹çš„ä¿¡æ¯
 void pushUp(int num) {
     t[num].sum = t[num * 2].sum + t[num * 2 + 1].sum;
     if (t[num * 2].leftMax == t[num * 2].length)
@@ -57,23 +57,23 @@ void pushUp(int num) {
     t[num].answer = max(max(t[num * 2].answer, t[num * 2 + 1].answer), t[num * 2].rightMax + t[num * 2 + 1].leftMax);
 }
 
-// ½«½Úµã±ê¼ÇÎªÈ«1   Õâ¸öÇø¼äµÄËùÓĞÊı×ÖÓ¦¸ÃÈ«²¿¸ÄÎª0
-//ÀÁ×¡ÁË
+// å°†èŠ‚ç‚¹æ ‡è®°ä¸ºå…¨1   è¿™ä¸ªåŒºé—´çš„æ‰€æœ‰æ•°å­—åº”è¯¥å…¨éƒ¨æ”¹ä¸º0
+//æ‡’ä½äº†
 void down1(int num) {
     t[num].answer = t[num].leftMax = t[num].rightMax = t[num].length;
     t[num].sum = 0;
     t[num].tag = 1;
 }
 
-// ½«½Úµã±ê¼ÇÎªÈ«2   Õâ¸öÇø¼äµÄËùÓĞÊı×ÖÓ¦¸ÃÈ«²¿¸ÄÎª1
-//ÀÁ×¡ÁË
+// å°†èŠ‚ç‚¹æ ‡è®°ä¸ºå…¨2   è¿™ä¸ªåŒºé—´çš„æ‰€æœ‰æ•°å­—åº”è¯¥å…¨éƒ¨æ”¹ä¸º1
+//æ‡’ä½äº†
 void down2(int num) {
     t[num].answer = t[num].leftMax = t[num].rightMax = 0;
     t[num].sum = t[num].length;
     t[num].tag = 2;
 }
 
-// ÏÂÍÆ±ê¼Ç
+// ä¸‹æ¨æ ‡è®°
 void pushDown(int num) {
     if (t[num].tag == 1) {
         down1(num * 2);
@@ -85,10 +85,10 @@ void pushDown(int num) {
         down2(num * 2 + 1);
         t[num].tag = 0;
     }
-    //Ã¿´ÎÖ»ÏòÏÂ¸üĞÂÒ»²ã
+    //æ¯æ¬¡åªå‘ä¸‹æ›´æ–°ä¸€å±‚
 }
 
-// ¹¹½¨Ïß¶ÎÊ÷
+// æ„å»ºçº¿æ®µæ ‘
 void build(int num, int left, int right) {
     t[num].tag = 0;
     t[num].left = left;
@@ -105,13 +105,13 @@ void build(int num, int left, int right) {
     pushUp(num);
 }
 
-// ĞŞ¸ÄÇø¼ä  ½«xyÇø¼äµÄÊı×Ö½øĞĞĞŞ¸Ä  ¸ù¾İzµÄÖ¸Ê¾ĞŞ¸Ä
+// ä¿®æ”¹åŒºé—´  å°†xyåŒºé—´çš„æ•°å­—è¿›è¡Œä¿®æ”¹  æ ¹æ®zçš„æŒ‡ç¤ºä¿®æ”¹
 void change(int num, int x, int y, int z) {
     if (t[num].left >= x && t[num].right <= y) {
         if (z == 1)
-            down1(num);//ÀÁ×¡
+            down1(num);//æ‡’ä½
         if (z == 2)
-            down2(num);//ÀÁ×¡
+            down2(num);//æ‡’ä½
         return;
     }
     pushDown(num);
@@ -119,11 +119,11 @@ void change(int num, int x, int y, int z) {
         change(num * 2, x, y, z);
     if (t[num * 2 + 1].left <= y)
         change(num * 2 + 1, x, y, z);
-    //Èç¹ûµ±Ç°Çø¼äÃ»ÓĞÃüÖĞÒªÇó  ÄÇÃ´ÏòÏÂ´«µİ  È»ºóÏòÉÏ»ã×Ü
+    //å¦‚æœå½“å‰åŒºé—´æ²¡æœ‰å‘½ä¸­è¦æ±‚  é‚£ä¹ˆå‘ä¸‹ä¼ é€’  ç„¶åå‘ä¸Šæ±‡æ€»
     pushUp(num);
 }
 
-// ²éÑ¯Çø¼ä1µÄÊıÁ¿
+// æŸ¥è¯¢åŒºé—´1çš„æ•°é‡
 int query0(int num, int x, int y) {
     if (t[num].left >= x && t[num].right <= y)
         return t[num].sum;
@@ -135,7 +135,7 @@ int query0(int num, int x, int y) {
     return query0(num * 2, x, y) + query0(num * 2 + 1, x, y);
 }
 
-// ²éÑ¯Çø¼ä0µÄÊıÁ¿
+// æŸ¥è¯¢åŒºé—´0çš„æ•°é‡
 int query1(int num, int x, int y) {
     if (t[num].left >= x && t[num].right <= y)
         return t[num].length - t[num].sum;
@@ -147,7 +147,7 @@ int query1(int num, int x, int y) {
     return query1(num * 2, x, y) + query1(num * 2 + 1, x, y);
 }
 
-// Ö´ĞĞ²Ù×÷1
+// æ‰§è¡Œæ“ä½œ1
 void performOperation1() {
     read(l1);
     read(r1);
@@ -155,7 +155,7 @@ void performOperation1() {
     if (x == 0)
         return;
     change(1, l0, r0, 1);
-    //½«Õâ¸öÇø¼äµÄËùÓĞÊı×ÖÈ«²¿¸ÄÎª0
+    //å°†è¿™ä¸ªåŒºé—´çš„æ‰€æœ‰æ•°å­—å…¨éƒ¨æ”¹ä¸º0
     int left = l1, right = r1 + 1;
     while (left + 1 < right) {
         int mid = (left + right) / 2;
@@ -164,31 +164,31 @@ void performOperation1() {
         else
             right = mid;
     }
-    //Í¨¹ı¶ş·ÖÀ´ÅĞ¶ÏÄÄ¸öÇø¼äÊÇ¿ÉÒÔÂú×ãµÄ
-    //ÄÇÃ´Ö±½Ó½«Õâ¸öÇø¼äĞŞ¸ÄÎª1
+    //é€šè¿‡äºŒåˆ†æ¥åˆ¤æ–­å“ªä¸ªåŒºé—´æ˜¯å¯ä»¥æ»¡è¶³çš„
+    //é‚£ä¹ˆç›´æ¥å°†è¿™ä¸ªåŒºé—´ä¿®æ”¹ä¸º1
     change(1, l1, left, 2);
 }
 
-// ²éÑ¯Çø¼ä×î´óÁ¬Ğø0µÄ³¤¶È
+// æŸ¥è¯¢åŒºé—´æœ€å¤§è¿ç»­0çš„é•¿åº¦
 int query2(int num, int x, int y) {
     if (t[num].left >= x && t[num].right <= y)
-        //ÃüÖĞÇø¼ä  Ö±½Ó·µ»Ø´ğ°¸
+        //å‘½ä¸­åŒºé—´  ç›´æ¥è¿”å›ç­”æ¡ˆ
         return t[num].answer;
     pushDown(num);
-    //ÀÁ¸üĞÂ  ½«ĞÅÏ¢ÏòÏÂ´«µİ
+    //æ‡’æ›´æ–°  å°†ä¿¡æ¯å‘ä¸‹ä¼ é€’
     if (t[num * 2].right < x)
-        //×ó¶ù×ÓµÄÓÒ±ß½çÃ»ÓĞÃüÖĞ  Ö±½ÓÈ¥ÓÒ¶ù×Ó¾ÍºÃ
+        //å·¦å„¿å­çš„å³è¾¹ç•Œæ²¡æœ‰å‘½ä¸­  ç›´æ¥å»å³å„¿å­å°±å¥½
         return query2(num * 2 + 1, x, y);
     if (t[num * 2 + 1].left > y)
-        //ÓÒ¶ù×ÓµÄ×ó±ß½çÃ»ÓĞÃüÖĞ  Ö±½ÓÈ¥×ó¶ù×Ó¾ÍºÃ
+        //å³å„¿å­çš„å·¦è¾¹ç•Œæ²¡æœ‰å‘½ä¸­  ç›´æ¥å»å·¦å„¿å­å°±å¥½
         return query2(num * 2, x, y);
     return max(max(query2(num * 2, x, y), query2(num * 2 + 1, x, y)),
                min(t[num * 2].rightMax, t[num * 2 + 1].left - x) + min(t[num * 2 + 1].leftMax, y - t[num * 2].right));
-               //ÕâÀïµÄmin±íÊ¾  ÒªÃ´ÊÇ×î´óleftmax»òÕßrightmax  ÒªÃ´ÊÇ×óÓÒµÄÏŞÖÆxy  ÕâÁ½¸öÈ¡×îĞ¡Öµ²ÅĞĞ  ±íÊ¾×óÓÒ¶ù×Ó½»½ç´¦Ñ°ÕÒ´ğ°¸
-               //Õâ¸ö×ÜÌåÊ½×Ó±íÊ¾µÄÊÇ
-               //ÒªÃ´Ö±½Ó¾ÍÊÇ×ó¶ù×ÓµÄ²»°üÀ¨ÓÒ±ß½çÇøÓòÊÇ´ğ°¸
-               //ÒªÃ´ÊÇÓÒ¶ù×Ó²»°üÀ¨×ó±ß½çÊÇ´ğ°¸
-               //ÒªÃ´¾ÍÊÇÁ½¸ö¶ù×ÓµÄ½»½ç´¦ÊÇ´ğ°¸ Ò²¾ÍÊÇminÕâ¸öÊ½×Ó
+               //è¿™é‡Œçš„minè¡¨ç¤º  è¦ä¹ˆæ˜¯æœ€å¤§leftmaxæˆ–è€…rightmax  è¦ä¹ˆæ˜¯å·¦å³çš„é™åˆ¶xy  è¿™ä¸¤ä¸ªå–æœ€å°å€¼æ‰è¡Œ  è¡¨ç¤ºå·¦å³å„¿å­äº¤ç•Œå¤„å¯»æ‰¾ç­”æ¡ˆ
+               //è¿™ä¸ªæ€»ä½“å¼å­è¡¨ç¤ºçš„æ˜¯
+               //è¦ä¹ˆç›´æ¥å°±æ˜¯å·¦å„¿å­çš„ä¸åŒ…æ‹¬å³è¾¹ç•ŒåŒºåŸŸæ˜¯ç­”æ¡ˆ
+               //è¦ä¹ˆæ˜¯å³å„¿å­ä¸åŒ…æ‹¬å·¦è¾¹ç•Œæ˜¯ç­”æ¡ˆ
+               //è¦ä¹ˆå°±æ˜¯ä¸¤ä¸ªå„¿å­çš„äº¤ç•Œå¤„æ˜¯ç­”æ¡ˆ ä¹Ÿå°±æ˜¯minè¿™ä¸ªå¼å­
 }
 
 int main() {

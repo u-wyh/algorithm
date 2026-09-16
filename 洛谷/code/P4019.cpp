@@ -7,7 +7,7 @@ const int MOD = 987654321;
 
 int n,m,c;
 long long f[MAXN][MAXC];
-bool used[MAXN][MAXC];//表示是否可以选择这种颜色
+bool used[MAXN][MAXC];//琛ㄧず鏄惁鍙互閫夋嫨杩欑棰滆壊
 bool same[MAXN];
 
 void compute(){

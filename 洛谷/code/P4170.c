@@ -46,7 +46,7 @@ int main()
     //for(int i=0;i<n;i++)
         //printf("%c\n",s[i]);
     //printf("%d\n",n);
-    //n是实际有效字符串长度
+    //n鏄疄闄呮湁鏁堝瓧绗︿覆闀垮害
     printf("%d\n",compute(s,n));
     return 0;
 }

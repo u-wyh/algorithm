@@ -16,8 +16,8 @@ int compareInts(const void *a, const void *b) {
 
 int main() {
     scanf("%d", &n);
-    memset(ans, 0x3f, sizeof(ans)); // ³õÊ¼»¯ÎªÒ»¸ö´óÊý
-    for (int i = 0; i < n; i++) { // ×¢ÒâÊý×éË÷Òý´Ó0¿ªÊ¼
+    memset(ans, 0x3f, sizeof(ans)); // åˆå§‹åŒ–ä¸ºä¸€ä¸ªå¤§æ•°
+    for (int i = 0; i < n; i++) { // æ³¨æ„æ•°ç»„ç´¢å¼•ä»Ž0å¼€å§‹
         scanf("%d%d", &a[i].x, &a[i].y);
     }
     for (int x = 0; x < n; x++) {
@@ -30,7 +30,7 @@ int main() {
                 if (p > 0) {
                     dis[p] += dis[p - 1];
                 }
-                ans[p] = (ans[p] < dis[p]) ? ans[p] : dis[p]; // Ê¹ÓÃÈýÔªÔËËã·û½øÐÐ×îÐ¡Öµ±È½Ï
+                ans[p] = (ans[p] < dis[p]) ? ans[p] : dis[p]; // ä½¿ç”¨ä¸‰å…ƒè¿ç®—ç¬¦è¿›è¡Œæœ€å°å€¼æ¯”è¾ƒ
             }
         }
     }

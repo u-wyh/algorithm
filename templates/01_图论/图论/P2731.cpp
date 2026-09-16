@@ -1,7 +1,7 @@
 //https://www.luogu.com.cn/problem/P2731
-//����ͼ
-//�����Ŀ�Ѿ���ʾһ�������ŷ��·��  ���Բ���Ҫ�ж�
-//�����ɾ�ߵķ�ʽ�ǽ��ߵı������Ϊ�ѷ���  �Ӷ������������
+//无向图
+//这道题目已经表示一定会存在欧拉路径  所以不需要判定
+//这道题删边的方式是将边的编号设置为已访问  从而不会继续遍历
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;
@@ -17,10 +17,10 @@ bool vis[MAXM];
 void dfs(int u){
     for(int i=0;i<vec[u].size();i++){
         if(!vis[vec[u][i].second]){
-            //��������Ϊ�˲���ʼ��vis����
+            //这样做是为了不初始化vis数组
             vis[vec[u][i].second]=true;
             vis[vec[u][i].second^1]=true;
-            //����������ȫ������
+            //将这两条边全部否认
             dfs(vec[u][i].first);
         }
     }
@@ -45,7 +45,7 @@ int main()
         sort(vec[i].begin(),vec[i].end());
     }
     int s=505;
-    //�ҵ�·�����
+    //找到路径起点
     for(int i=1;i<=500;i++){
         if(degree[i]%2){
             s=i;

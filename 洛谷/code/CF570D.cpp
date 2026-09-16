@@ -10,7 +10,7 @@ int val[MAXN];
 bool vis[MAXN][26];
 int ans[MAXN];
 
-// Ê÷Á´ÆÊ·Ö
+// æ ‘é“¾å‰–åˆ†
 int fa[MAXN];
 int sz[MAXN];
 int dep[MAXN];

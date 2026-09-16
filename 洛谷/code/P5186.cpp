@@ -13,7 +13,7 @@ inline int read()
     while (c<'0'||c>'9') {if (c=='-') f=-1; c=getchar();}
     while (c>='0'&&c<='9') {a=a*10+c-'0'; c=getchar();}
     return a*f;
-}//¿ì¶Á±È scanf ºÃ´ò¶àÁË
+}//å¿«è¯»æ¯” scanf å¥½æ‰“å¤šäº†
 
 signed main()
 {

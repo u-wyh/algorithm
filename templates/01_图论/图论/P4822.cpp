@@ -1,10 +1,10 @@
 //P4822
-//�ֲ����·
-//�������Ҫ������ǲ��֮�����ߵķ���
+//分层最短路
+//这道题主要考察的是层际之间连边的方法
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 55;
-const int MAXM = 100000;//���Ҫ���� ��Ϊ�ж��ͼ֮�� ���֮��ҲҪ����
+const int MAXM = 100000;//这个要开大 因为有多层图之外 层际之间也要连边
 
 int n,m,k;
 
@@ -63,12 +63,12 @@ int main()
         int u,v,w;
         cin>>u>>v>>w;
         for(int j=0;j<=k;j++){
-            //����k+1��ͼ
+            //建立k+1层图
             addedge(u+j*n,v+j*n,w);
             addedge(v+j*n,u+j*n,w);
         }
         for(int j=0;j<k;j++){
-            //�������֮���·��
+            //建立层际之间的路径
             addedge(u+j*n,v+n+j*n,w/2);
             addedge(v+j*n,u+n+j*n,w/2);
         }
@@ -76,7 +76,7 @@ int main()
     dijkstra(1);
     int ans=INT_MAX;
     for(int i=0;i<=k;i++){
-        //ֻҪ����n�Žڵ� ��������һ��  ������
+        //只要到达n号节点 不管是那一层  都可以
         ans=min(ans,dis[n+i*n]);
     }
     cout<<ans<<endl;

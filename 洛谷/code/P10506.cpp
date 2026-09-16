@@ -11,7 +11,7 @@ void build(){
     sg[1]=0;
     for (int i = 2; i <= 1000; i++) {
         int k=0;
-        memset(appear, false, sizeof(appear)); // ÖØÖÃ appear Êý×é
+        memset(appear, false, sizeof(appear)); // é‡ç½® appear æ•°ç»„
         for (int j = 1; j <= i/2; j++) {
             if(i%j==0){
                 k^=sg[j];
@@ -24,7 +24,7 @@ void build(){
         }
         for (int s = 0; s < MAXN; s++) {
             if (!appear[s]) {
-                sg[i] = s; // ÕÒµ½×îÐ¡µÄÎ´³öÏÖµÄ SG Öµ
+                sg[i] = s; // æ‰¾åˆ°æœ€å°çš„æœªå‡ºçŽ°çš„ SG å€¼
                 break;
             }
         }

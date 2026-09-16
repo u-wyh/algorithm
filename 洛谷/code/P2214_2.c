@@ -7,7 +7,7 @@
 
 int f[N + 5], v[N + 5], n, b, u, now, ans;
 
-// ÊµÏÖminº¯Êı
+// å®ç°minå‡½æ•°
 int min(int a, int b) {
     return a < b ? a : b;
 }
@@ -30,7 +30,7 @@ int main() {
         scanf("%d", &x);
         x -= now;
         now += x;
-        // Èç¹ûnowÎª0£¬Ôò²»¼õÉÙ²½Êı
+        // å¦‚æœnowä¸º0ï¼Œåˆ™ä¸å‡å°‘æ­¥æ•°
         if (now > 0) {
             now--;
         }

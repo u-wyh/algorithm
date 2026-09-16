@@ -4,7 +4,7 @@
 using namespace std;
 const int MAXN = 1e6+5;
 
-vector<int> nums[26]; // 假设您想为每个字母分配一个vector，但这里只使用了nums[1]
+vector<int> nums[26]; // 鍋囪鎮ㄦ兂涓烘瘡涓瓧姣嶅垎閰嶄竴涓獀ector锛屼絾杩欓噷鍙娇鐢ㄤ簡nums[1]
 int cnt[26];
 int arr[MAXN];
 int n;
@@ -21,7 +21,7 @@ void add(int i, int v) {
     }
 }
 
-// 1~i范围的累加和
+// 1~i鑼冨洿鐨勭疮鍔犲拰
 int sum(int i) {
     int ans = 0;
     while (i > 0) {

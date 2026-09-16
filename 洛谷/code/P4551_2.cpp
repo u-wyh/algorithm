@@ -19,7 +19,7 @@ void add(int u,int v,int w){
 
 int sum[2000001];
 
-void dfs(int x,int fa){//Ô¤´¦Àí
+void dfs(int x,int fa){//é¢„å¤„ç†
     for(int i=head[x];~i;i=edge[i].nxt){
         int v=edge[i].v;
         int w=edge[i].w;
@@ -35,7 +35,7 @@ struct trie{
 int tot;
 void build(int val,int x){
     for(int i=(1<<30);i;i>>=1){
-        bool c=val&i;//È¡³ö¶ş½øÖÆÏÂÕâ¸öÊıµÄµ±Ç°Î»ÖÃ
+        bool c=val&i;//å–å‡ºäºŒè¿›åˆ¶ä¸‹è¿™ä¸ªæ•°çš„å½“å‰ä½ç½®
         if(!t[x].ch[c]){
             t[x].ch[c]=++tot;
         }
@@ -46,11 +46,11 @@ int query(int val,int x){
     int ans=0;
     for(int i=(1<<30);i;i>>=1){
         bool c=val&i;
-        if(t[x].ch[!c]){//Èç¹ûÕâÒ»Î»¿ÉÒÔ½øĞĞÒì»ò¾ÍÑØ×ÅÕâÒ»ÌõÍùÏÂ×ß
+        if(t[x].ch[!c]){//å¦‚æœè¿™ä¸€ä½å¯ä»¥è¿›è¡Œå¼‚æˆ–å°±æ²¿ç€è¿™ä¸€æ¡å¾€ä¸‹èµ°
             ans+=i;
             x=t[x].ch[!c];
         }
-        else x=t[x].ch[c];//·ñÔò¾ÍÑØ×ÅÁíÒ»ÌõÂ·ÍùÏÂ×ß
+        else x=t[x].ch[c];//å¦åˆ™å°±æ²¿ç€å¦ä¸€æ¡è·¯å¾€ä¸‹èµ°
     }
     return ans;
 }
@@ -64,11 +64,11 @@ int main(){
         add(u,v,w);
         add(v,u,w);
     }
-    dfs(1,-1);//Ô¤´¦Àí³öÃ¿Ò»¸ö½Úµãµ½¸ùµÄÒì»òºÍ
-    for(int i=1;i<=n;++i)build(sum[i],0);//½¨Á¢trieÊı
+    dfs(1,-1);//é¢„å¤„ç†å‡ºæ¯ä¸€ä¸ªèŠ‚ç‚¹åˆ°æ ¹çš„å¼‚æˆ–å’Œ
+    for(int i=1;i<=n;++i)build(sum[i],0);//å»ºç«‹trieæ•°
     int ans=0;
     for(int i=1;i<=n;++i){
-        ans=max(ans,query(sum[i],0));//²éÑ¯£¬È¡×î´óÖµ
+        ans=max(ans,query(sum[i],0));//æŸ¥è¯¢ï¼Œå–æœ€å¤§å€¼
     }
     printf("%d\n",ans);
 }

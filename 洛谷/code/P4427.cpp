@@ -22,7 +22,7 @@ inline void add(int u, int V) {
     al[u] = ct;
 }
 
-inline void dfs(int u) { // ´¦ÀívalµÄĞÅÏ¢ÒÔ¼°±¶ÔöµÄĞÅÏ¢
+inline void dfs(int u) { // å¤„ç†valçš„ä¿¡æ¯ä»¥åŠå€å¢çš„ä¿¡æ¯
     book[u] = true;
     for (int i = 0; fa[u][i]; i++) {
         fa[u][i + 1] = fa[fa[u][i]][i];
@@ -43,7 +43,7 @@ inline void dfs(int u) { // ´¦ÀívalµÄĞÅÏ¢ÒÔ¼°±¶ÔöµÄĞÅÏ¢
     }
 }
 
-inline int lca(int u, int v) { // ±¶ÔöÇólca
+inline int lca(int u, int v) { // å€å¢æ±‚lca
     if (dep[u] < dep[v]) {
         swap(u, v);
     }
@@ -73,12 +73,12 @@ int main() {
         add(u, v);
         add(v, u);
     }
-    dfs(1); // dfs´¦Àí
+    dfs(1); // dfså¤„ç†
     scanf("%d", &m);
     for (int i = 1, u, v, k; i <= m; i++) {
         scanf("%d%d%d", &u, &v, &k);
-        int l = lca(u, v); // È»ºóÎÒÃÇ¾ÍÖ±½Ó¼õÁË£¬×¢ÒâlcaÖ»Ëãµ«ÊÇÒªËãÒ»´Î
+        int l = lca(u, v); // ç„¶åæˆ‘ä»¬å°±ç›´æ¥å‡äº†ï¼Œæ³¨æ„lcaåªç®—ä½†æ˜¯è¦ç®—ä¸€æ¬¡
         printf("%lld\n", (val[u][k] + val[v][k] + 2 * mod - val[fa[l][0]][k] - val[l][k]) % mod);
     }
-    return 0; // °İ°İ³ÌĞò~
+    return 0; // æ‹œæ‹œç¨‹åº~
 }

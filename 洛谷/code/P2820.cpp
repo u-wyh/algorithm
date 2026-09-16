@@ -3,7 +3,7 @@
 using namespace std;
 const int MAXN = 105;
 
-//int fa[MAXN],sz[MAXN];//½¨Á¢Á¬Í¨¹ØÏµµÄ²¢²é¼¯
+//int fa[MAXN],sz[MAXN];//å»ºç«‹è¿žé€šå…³ç³»çš„å¹¶æŸ¥é›†
 int n,k;
 int fa1[MAXN],cnt[MAXN];
 struct node{

@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAX_VALUE 6  // ×î´óµ¯Öé¼ÛÖµ
-#define MAX_SUM (2 * 10000 * 6)  // ¼ÙÉè×î´ó×ÜºÍ²»³¬¹ı 2 * 10^4 * 6
+#define MAX_VALUE 6  // æœ€å¤§å¼¹ç ä»·å€¼
+#define MAX_SUM (2 * 10000 * 6)  // å‡è®¾æœ€å¤§æ€»å’Œä¸è¶…è¿‡ 2 * 10^4 * 6
 
-int dp[MAX_SUM + 1];  // ¶¯Ì¬¹æ»®Êı×é£¬ÓÃÓÚ¼ÇÂ¼ÊÇ·ñ¿ÉÒÔ×é³ÉÄ³¸öºÍ
-int a[MAX_VALUE + 1];  // ´æ´¢Ã¿ÖÖ¼ÛÖµµ¯ÖéµÄÊıÁ¿
+int dp[MAX_SUM + 1];  // åŠ¨æ€è§„åˆ’æ•°ç»„ï¼Œç”¨äºè®°å½•æ˜¯å¦å¯ä»¥ç»„æˆæŸä¸ªå’Œ
+int a[MAX_VALUE + 1];  // å­˜å‚¨æ¯ç§ä»·å€¼å¼¹ç çš„æ•°é‡
 
 int main() {
     int Case = 0;
@@ -17,7 +17,7 @@ int main() {
             scanf("%d", &a[i]);
             sum += i * a[i];
         }
-        if (sum == 0) break;  // ½áÊøÌõ¼ş
+        if (sum == 0) break;  // ç»“æŸæ¡ä»¶
 
         printf("Collection #%d:\n", Case);
         if (sum % 2 != 0) {
@@ -25,8 +25,8 @@ int main() {
             continue;
         }
 
-        memset(dp, 0, sizeof(dp));  // ³õÊ¼»¯dpÊı×é
-        dp[0] = 1;  // ³õÊ¼×´Ì¬£¬ºÍÎª0Ê±×ÜÊÇ¿ÉÒÔ×é³ÉµÄ
+        memset(dp, 0, sizeof(dp));  // åˆå§‹åŒ–dpæ•°ç»„
+        dp[0] = 1;  // åˆå§‹çŠ¶æ€ï¼Œå’Œä¸º0æ—¶æ€»æ˜¯å¯ä»¥ç»„æˆçš„
 
         for (int i = 1; i <= 6; i++) {
             for (int j = sum / 2; j >= i; j--) {

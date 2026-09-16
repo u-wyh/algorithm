@@ -31,7 +31,7 @@ void dfs(int x,int y){
 	for(int i=1;i<=9;i++)
 		if(check(x,y,i)&&check_lr(x,y,i)&&check_ud(x,y,i))
 			ANS[x][y]=i,init(x,y,i),dfs(x,y+1),outit(x,y,i);
-//initÓÃÀ´±ê¼ÇÕâ¸ö¸ñ×ÓÓÃ¹ýÁË£¬outitÓÃÀ´»ØËÝ£¬È¡Ïû±ê¼Ç
+//initç”¨æ¥æ ‡è®°è¿™ä¸ªæ ¼å­ç”¨è¿‡äº†ï¼Œoutitç”¨æ¥å›žæº¯ï¼Œå–æ¶ˆæ ‡è®°
 }int main(){
 	for(int i=1;i<=9;i++) {if(i%3==0) continue;cin>>h[1][i];}
 	for(int i=1;i<=9;i++) cin>>l[1][i];

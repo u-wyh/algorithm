@@ -14,42 +14,42 @@ int totalCake;
 int needCake;
 int wasteCake;
 
-bool sub_DFS(int toTest, int origin)            // origin£º±éÀúµ°¸âÊı×éµÄÆğµã
+bool sub_DFS(int toTest, int origin)            // originï¼šéå†è›‹ç³•æ•°ç»„çš„èµ·ç‚¹
 {
-    /* ½áÊøµİ¹é */
+    /* ç»“æŸé€’å½’ */
     if(toTest<1)
-        return true;                            // ÒÑ¾­Íê³É1~toTestµÄÈËµÄÎ¹Ê³£¬²âÊÔÍ¨¹ı
+        return true;                            // å·²ç»å®Œæˆ1~toTestçš„äººçš„å–‚é£Ÿï¼Œæµ‹è¯•é€šè¿‡
     if(totalCake-wasteCake<needCake)
-        return false;                           // ×Üµ°¸âĞ¡ÓÚ×ÜĞèÇó£¬±ØÈ»Ê§°Ü£¬Í£Ö¹ËÑË÷
+        return false;                           // æ€»è›‹ç³•å°äºæ€»éœ€æ±‚ï¼Œå¿…ç„¶å¤±è´¥ï¼Œåœæ­¢æœç´¢
 
-    /* ËÑË÷ */
+    /* æœç´¢ */
     bool flag = false;
-    for(int i=origin;i<=n;++i)                  // ±éÀúµ°¸â£¬³¢ÊÔ½«µ°¸âÎ¹¸øµÚtoTestºÅÈË
+    for(int i=origin;i<=n;++i)                  // éå†è›‹ç³•ï¼Œå°è¯•å°†è›‹ç³•å–‚ç»™ç¬¬toTestå·äºº
     {
         if(arr[i]>=nums[toTest])
         {
-            needCake-=nums[toTest];            // Î¹Ê³£ºÏûºÄµ°¸â£¬Âú×ãĞèÇó
+            needCake-=nums[toTest];            // å–‚é£Ÿï¼šæ¶ˆè€—è›‹ç³•ï¼Œæ»¡è¶³éœ€æ±‚
             totalCake-=nums[toTest];
             arr[i]-=nums[toTest];
 
-            bool wasted = false;                // »ØËİ£ºÊÇ·ñÊ¹ÓÃÁËµ°¸âÔüÓÅ»¯
-            if(arr[i]<nums[1])                // ÓÅ»¯£ºµ°¸âÔü²»ÄÜÂú×ã×îµÍĞèÇó£¬²»¿ÉÓÃ
+            bool wasted = false;                // å›æº¯ï¼šæ˜¯å¦ä½¿ç”¨äº†è›‹ç³•æ¸£ä¼˜åŒ–
+            if(arr[i]<nums[1])                // ä¼˜åŒ–ï¼šè›‹ç³•æ¸£ä¸èƒ½æ»¡è¶³æœ€ä½éœ€æ±‚ï¼Œä¸å¯ç”¨
             {
-                wasteCake+=arr[i];             // ´Ëµ°¸âÔü½«±»ÀË·Ñ£¬ÉèÖÃÓÅ»¯Æô¶¯µÄ±êÖ¾
+                wasteCake+=arr[i];             // æ­¤è›‹ç³•æ¸£å°†è¢«æµªè´¹ï¼Œè®¾ç½®ä¼˜åŒ–å¯åŠ¨çš„æ ‡å¿—
                 wasted = true;
             }
-            if(nums[toTest]==nums[toTest-1])  // ÏÂÒ»¸ö²âÊÔ¶ÔÏóµÄ×ìºÍµ±Ç°µÄ×ìÒ»Ñù´ó
+            if(nums[toTest]==nums[toTest-1])  // ä¸‹ä¸€ä¸ªæµ‹è¯•å¯¹è±¡çš„å˜´å’Œå½“å‰çš„å˜´ä¸€æ ·å¤§
             {
-                if(sub_DFS(toTest-1,i))         // ÓÅ»¯£º´Óµ±Ç°µÄÎ»ÖÃ¼ÌĞø±éÀúµ°¸âÁĞ±í
-                    flag = true;                // ÓÅ»¯£ºÕÒµ½½â¾ö·½°¸£¬¾Í²»ÔÙ¼ÌĞøËÑË÷
+                if(sub_DFS(toTest-1,i))         // ä¼˜åŒ–ï¼šä»å½“å‰çš„ä½ç½®ç»§ç»­éå†è›‹ç³•åˆ—è¡¨
+                    flag = true;                // ä¼˜åŒ–ï¼šæ‰¾åˆ°è§£å†³æ–¹æ¡ˆï¼Œå°±ä¸å†ç»§ç»­æœç´¢
             }
-            else if(sub_DFS(toTest-1,1))        // ÎŞ·¨ÓÅ»¯£¬Ö±½Óµİ¹é¡£
-                flag = true;                    // ÓÅ»¯£ºÍ¬ÉÏ·ÖÖ§
+            else if(sub_DFS(toTest-1,1))        // æ— æ³•ä¼˜åŒ–ï¼Œç›´æ¥é€’å½’ã€‚
+                flag = true;                    // ä¼˜åŒ–ï¼šåŒä¸Šåˆ†æ”¯
 
-            /* »ØËİ */
-            if(wasted)                          // Èô×öÁËÓÅ»¯£¬Ôò³·»Ø
+            /* å›æº¯ */
+            if(wasted)                          // è‹¥åšäº†ä¼˜åŒ–ï¼Œåˆ™æ’¤å›
                 wasteCake-=arr[i];
-            arr[i]+=nums[toTest];             // ³·»ØÈ«²¿±ä»¯
+            arr[i]+=nums[toTest];             // æ’¤å›å…¨éƒ¨å˜åŒ–
             totalCake+=nums[toTest];
             needCake+=nums[toTest];
 
@@ -58,18 +58,18 @@ bool sub_DFS(int toTest, int origin)            // origin£º±éÀúµ°¸âÊı×éµÄÆğµã
         }
     }
 
-    /* ½áÊøµİ¹é */
-    return false;                               // ÎŞ·¨ÕÒµ½ºÏÊÊµÄµ°¸â£¬²âÊÔÊ§°Ü
+    /* ç»“æŸé€’å½’ */
+    return false;                               // æ— æ³•æ‰¾åˆ°åˆé€‚çš„è›‹ç³•ï¼Œæµ‹è¯•å¤±è´¥
 }
 
-inline bool DFS(int toTest)                     // DFS£º¼ì²é´ğ°¸toTestÊÇ·ñ¿ÉĞĞ
+inline bool DFS(int toTest)                     // DFSï¼šæ£€æŸ¥ç­”æ¡ˆtoTestæ˜¯å¦å¯è¡Œ
 {
-    /* ×¼±¸±äÁ¿ */
+    /* å‡†å¤‡å˜é‡ */
     totalCake = sum;
     needCake = pre[toTest];
     wasteCake = 0;
 
-    /* Æô¶¯µİ¹é */
+    /* å¯åŠ¨é€’å½’ */
     return sub_DFS(toTest,1);
 }
 

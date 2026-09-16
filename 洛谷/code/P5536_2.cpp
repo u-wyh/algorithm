@@ -16,7 +16,7 @@ bool cmp(int a,int b){
 void add(int x,int y){
 	ver[++cut]=y;Next[cut]=head[x];head[x]=cut;
 }
-//ÇóÖ±¾¶
+//æ±‚ç›´å¾„
 void dfs1(int x,int fa){
 	if(deep[x]>zj){
 		zj=deep[x];
@@ -61,21 +61,21 @@ int main(){
     	add(x,y);
     	add(y,x);
 	}
-    //Ö±¾¶
+    //ç›´å¾„
 	dfs1(1,0);
 	memset(deep,0,sizeof(deep));
 	zj=0;
 	dfs2(num,0);
     //
 	int kkk=num;
-    //ÕÒÖ±¾¶µÄÖÐµã
+    //æ‰¾ç›´å¾„çš„ä¸­ç‚¹
 	for(int i=1;i<=(deep[num]+1)/2;++i)kkk=f[kkk];
 	memset(deep,0,sizeof(deep));
-    //ÔÙËÑÒ»´Î
+    //å†æœä¸€æ¬¡
 	dfs_k(kkk,0);
 	for(int i=1;i<=n;++i)ans[i]=maxdeep[i]-deep[i];
 	sort(ans+1,ans+n+1,cmp);
-    //QwQ½áºÏÍ¼Æ¬²»ÄÑÏë
+    //QwQç»“åˆå›¾ç‰‡ä¸éš¾æƒ³
 	for(int i=k+1;i<=n;++i)ans_k=max(ans_k,ans[i]+1);
 	printf("%d\n",ans_k);
     return 0;

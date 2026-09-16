@@ -17,7 +17,7 @@ LL C(LL a, LL b) {
 
 int main() {
     scanf("%lld", &n);
-    // Ö»Ğè±éÀú 16 ĞĞ
+    // åªéœ€éå† 16 è¡Œ
     if (n == 1) {
         printf("1\n");
         return 0;

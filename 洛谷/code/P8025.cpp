@@ -7,21 +7,21 @@ const int MAXN = 1e6+5;
 
 int n,m,st;
 
-//Á´Ê½Ç°ÏòĞÇ½¨Í¼
+//é“¾å¼å‰å‘æ˜Ÿå»ºå›¾
 int head[MAXN];
 int Next[MAXN<<1];
 int to[MAXN<<1];
 int tot=1;
 
-//Ê÷Á´ÆÊ·Ö²¿·Ö
-int son[MAXN];//ÖØ¶ù×Ó±àºÅ  Ò¶×Ó½áµãÃ»ÓĞ
-int id[MAXN];//ÖØĞÂ±àºÅºóµÄ±àºÅ
-int rk[MAXN];//ÖØĞÂ±àºÅºóµÄ±àºÅ¶ÔÓ¦Ô­À´µÄ±àºÅÊÇÊ²Ã´
+//æ ‘é“¾å‰–åˆ†éƒ¨åˆ†
+int son[MAXN];//é‡å„¿å­ç¼–å·  å¶å­ç»“ç‚¹æ²¡æœ‰
+int id[MAXN];//é‡æ–°ç¼–å·åçš„ç¼–å·
+int rk[MAXN];//é‡æ–°ç¼–å·åçš„ç¼–å·å¯¹åº”åŸæ¥çš„ç¼–å·æ˜¯ä»€ä¹ˆ
 int cnt;
-int fa[MAXN];//¸¸Ç×½Úµã±àºÅ
-int deep[MAXN];//½ÚµãÉî¶È
-int sz[MAXN];//ÒÔ¸Ã½ÚµãÎªÊ×µÄ×ÓÊ÷½Úµã×ÜÊı
-int top[MAXN];//ÕâÌõÖØÁ´µÄÍ·½áµã
+int fa[MAXN];//çˆ¶äº²èŠ‚ç‚¹ç¼–å·
+int deep[MAXN];//èŠ‚ç‚¹æ·±åº¦
+int sz[MAXN];//ä»¥è¯¥èŠ‚ç‚¹ä¸ºé¦–çš„å­æ ‘èŠ‚ç‚¹æ€»æ•°
+int top[MAXN];//è¿™æ¡é‡é“¾çš„å¤´ç»“ç‚¹
 
 inline int read(){
     int x=0,f=1;
@@ -42,7 +42,7 @@ inline void addedge(int u,int v){
     head[u]=tot++;
 }
 
-//µÚÒ»±édfs Íê³Ész¡¢deep¡¢fa¡¢sonÊı×éµÄÍ³¼Æ
+//ç¬¬ä¸€édfs å®Œæˆszã€deepã€faã€sonæ•°ç»„çš„ç»Ÿè®¡
 void dfs1(int u,int f){
     fa[u]=f;
     deep[u]=deep[f]+1;
@@ -60,20 +60,20 @@ void dfs1(int u,int f){
     }
 }
 
-//µÚ¶ş±édfs Íê³Étop¡¢rk¡¢id
+//ç¬¬äºŒédfs å®Œæˆtopã€rkã€id
 void dfs2(int u,int t){
     top[u]=t;
     id[u]=++cnt;
     rk[cnt]=u;
     if(son[u]){
-        //´æÔÚÖØ¶ù×Ó  ÓÅÏÈ±éÀú
+        //å­˜åœ¨é‡å„¿å­  ä¼˜å…ˆéå†
         dfs2(son[u],t);
     }
     for(int i=head[u];i;i=Next[i]){
         int v=to[i];
         if(v!=fa[u]&&v!=son[u]){
             dfs2(v,v);
-            //ÁíÍâÔÚ¿ªÒ»ÌõÖØÁ´
+            //å¦å¤–åœ¨å¼€ä¸€æ¡é‡é“¾
         }
     }
 }
@@ -81,7 +81,7 @@ void dfs2(int u,int t){
 int lca;
 int ans;
 
-//º¯Êı×÷ÓÃÊÇ£ºÅĞ¶ÏxÔÚlimit²½Ö®ÄÚÊÇ·ñ¿ÉÒÔ×ßµ½y
+//å‡½æ•°ä½œç”¨æ˜¯ï¼šåˆ¤æ–­xåœ¨limitæ­¥ä¹‹å†…æ˜¯å¦å¯ä»¥èµ°åˆ°y
 inline bool check(int x,int y,int limit){
     //cout<<x<<' '<<y<<' '<<id[x]<<' '<<id[y]<<' ';
     ans=0;
@@ -105,20 +105,20 @@ void sum(int u,int limit){
         st=u;
         return ;
     }
-    //µ½ÁËÕâÀï ËµÃ÷ÎŞ·¨ÔÚlimit²½ÒÔÄÚ×ßµ½u
+    //åˆ°äº†è¿™é‡Œ è¯´æ˜æ— æ³•åœ¨limitæ­¥ä»¥å†…èµ°åˆ°u
     int father=lca;
     if(!check(st,lca,limit)){
         u=father;
     }
     else{
         limit=limit-ans;
-        check(u,father,limit);//ÎªÁËµÃµ½¾àÀë
+        check(u,father,limit);//ä¸ºäº†å¾—åˆ°è·ç¦»
         st=u;
         u=father;
         limit=ans-limit;
     }
-    //ÄÇÃ´ÕâÀïÒª×öµÄ¾ÍÊÇ´Óstµ½u×ßlimit²½»áµ½ÄÄÀï  st±ÈuµÍ
-    //²¢ÇÒ´ËÊ±uÊÇstµÄ×æÏÈ
+    //é‚£ä¹ˆè¿™é‡Œè¦åšçš„å°±æ˜¯ä»ståˆ°uèµ°limitæ­¥ä¼šåˆ°å“ªé‡Œ  stæ¯”uä½
+    //å¹¶ä¸”æ­¤æ—¶uæ˜¯stçš„ç¥–å…ˆ
     int tmp=0;
     while(top[st]!=top[father]){
         if(tmp+(id[st]-id[top[st]]+1)<=limit){

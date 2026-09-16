@@ -5,14 +5,14 @@
 int n, m;
 int a[101000], b[101000];
 
-// Ê¹ÓÃqsortº¯Êı¶ÔÊı×éb½øĞĞÅÅĞò
+// ä½¿ç”¨qsortå‡½æ•°å¯¹æ•°ç»„bè¿›è¡Œæ’åº
 int compare(const void *a, const void *b) {
     return (*(int*)a - *(int*)b);
 }
 
-// ¶ş·Ö²éÕÒµÄCÓïÑÔÊµÏÖ
+// äºŒåˆ†æŸ¥æ‰¾çš„Cè¯­è¨€å®ç°
 int binary_search(int x) {
-    int l = 0, r = m - 1; // ×¢ÒâCÓïÑÔÖĞÊı×éË÷Òı´Ó0¿ªÊ¼
+    int l = 0, r = m - 1; // æ³¨æ„Cè¯­è¨€ä¸­æ•°ç»„ç´¢å¼•ä»0å¼€å§‹
     while (l <= r) {
         int mid = (l + r) / 2;
         if (b[mid] == a[x]) return 1;
@@ -26,10 +26,10 @@ int binary_search(int x) {
 
 int main() {
     scanf("%d%d", &n, &m);
-    for (int i = 0; i < n; i++) scanf("%d", &a[i]); // ×¢ÒâCÓïÑÔÊı×éË÷Òı´Ó0¿ªÊ¼
+    for (int i = 0; i < n; i++) scanf("%d", &a[i]); // æ³¨æ„Cè¯­è¨€æ•°ç»„ç´¢å¼•ä»0å¼€å§‹
     for (int i = 0; i < m; i++) scanf("%d", &b[i]);
 
-    // Ê¹ÓÃqsort¶ÔÊı×éb½øĞĞÅÅĞò
+    // ä½¿ç”¨qsortå¯¹æ•°ç»„bè¿›è¡Œæ’åº
     qsort(b, m, sizeof(int), compare);
 
     for (int i = 0; i < n; i++) if (binary_search(i)) printf("%d ", a[i]);

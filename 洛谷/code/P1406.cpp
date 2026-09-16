@@ -1,7 +1,7 @@
 // https://www.luogu.com.cn/problem/P1406
 #include<bits/stdc++.h>
 using namespace std;
-int n,i,a[6][6],b[30],vis[30],sum;//vis数组用于标记
+int n,i,a[6][6],b[30],vis[30],sum;//vis鏁扮粍鐢ㄤ簬鏍囪
 void dfs(int x,int y,int z){
     if (y>n){
         if (z!=sum) return;
@@ -12,10 +12,10 @@ void dfs(int x,int y,int z){
             for (int j=1;j<n;j++) printf("%d ",a[i][j]);
             printf("%d\n",a[i][n]);
         }
-        exit(0);//优化3
+        exit(0);//浼樺寲3
     }
     for (int i=1;i<=n*n;i++)
-        if (!vis[i]){//优化2
+        if (!vis[i]){//浼樺寲2
             if (y==n && z+b[i]!=sum) continue;
             if (x==n){
                 int s=0;
@@ -40,9 +40,9 @@ void dfs(int x,int y,int z){
 }
 int main(){
     cin>>n;
-    for (i=1;i<=n*n;i++) scanf("%d",&b[i]),sum+=b[i];//优化1
+    for (i=1;i<=n*n;i++) scanf("%d",&b[i]),sum+=b[i];//浼樺寲1
     sum/=n;
     cout<<sum<<endl;
-    sort(b+1,b+n*n+1);//把b数组从小到大排序后第一次查找到的结果即为字典序最小的
+    sort(b+1,b+n*n+1);//鎶奲鏁扮粍浠庡皬鍒板ぇ鎺掑簭鍚庣涓�娆℃煡鎵惧埌鐨勭粨鏋滃嵆涓哄瓧鍏稿簭鏈�灏忕殑
     dfs(1,1,0);
 }

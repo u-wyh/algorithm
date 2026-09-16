@@ -5,7 +5,7 @@
 
 #define MOD 998244353
 
-// ¼ì²éÊÇ·ñÎªÖÊÊı
+// æ£€æŸ¥æ˜¯å¦ä¸ºè´¨æ•°
 bool isPrime(int n) {
     if (n <= 1) return false;
     for (int i = 2; i * i <= n; i++) {
@@ -14,7 +14,7 @@ bool isPrime(int n) {
     return true;
 }
 
-// ¼ÆËãÊıÎ»ºÍ
+// è®¡ç®—æ•°ä½å’Œ
 int digitSum(long long n) {
     int sum = 0;
     while (n > 0) {
@@ -29,7 +29,7 @@ int main() {
     scanf("%lld %lld", &L, &R);
     long long result = 0;
 
-    // Éú³É²¢¼ì²éÍêÈ«Æ½·½Êı
+    // ç”Ÿæˆå¹¶æ£€æŸ¥å®Œå…¨å¹³æ–¹æ•°
     for (long long i = (long long)ceil(sqrt(L)); i * i <= R; i++) {
         long long square = i * i;
         if (isPrime(digitSum(square))) {

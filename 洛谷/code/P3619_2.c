@@ -18,13 +18,13 @@ typedef struct {
 int cmp(const void *a, const void *b) {
     node *na = (node *)a;
     node *nb = (node *)b;
-    return na->tim - nb->tim; // ÓÉÓÚb´óÓÚ0£¬ËùÒÔÏÈ×ötÐ¡µÄÈÎÎñ
+    return na->tim - nb->tim; // ç”±äºŽbå¤§äºŽ0ï¼Œæ‰€ä»¥å…ˆåštå°çš„ä»»åŠ¡
 }
 
 int comp(const void *a, const void *b) {
     ss *sa = (ss *)a;
     ss *sb = (ss *)b;
-    // ×¢ÒâÕâÀï·µ»ØµÄÊÇÄæÐò£¬ÒòÎªqsortÄ¬ÈÏÊÇÉýÐò£¬ÎÒÃÇÐèÒª½µÐò
+    // æ³¨æ„è¿™é‡Œè¿”å›žçš„æ˜¯é€†åºï¼Œå› ä¸ºqsorté»˜è®¤æ˜¯å‡åºï¼Œæˆ‘ä»¬éœ€è¦é™åº
     return (sb->b + sb->tim) - (sa->b + sa->tim);
 }
 

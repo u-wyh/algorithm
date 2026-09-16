@@ -23,13 +23,13 @@ bool cmp(node a,node b){
 }
 
 void Add(int n){
-    //½«Ò»¸öÊý×Ö¼ÓÈë  ²¢¼ÆËã¹±Ï×
+    //å°†ä¸€ä¸ªæ•°å­—åŠ å…¥  å¹¶è®¡ç®—è´¡çŒ®
     sum+=tot[arr[n]^k];
     tot[arr[n]]++;
 }
 
 void Sub(int n){
-    //¼õÈ¥Ò»¸öÊý×Ö   ²¢´¦ÀíÓ°Ïì
+    //å‡åŽ»ä¸€ä¸ªæ•°å­—   å¹¶å¤„ç†å½±å“
     tot[arr[n]]--;
     sum-=tot[arr[n]^k];
 }
@@ -56,7 +56,7 @@ signed main()
         while(nums[i].r>r) Add(++r);
         while(nums[i].l-1>l) Sub(l++);
         while(nums[i].r<r) Sub(r--);
-        //Æ¥ÅäÇø¼ä  µÃµ½´ð°¸
+        //åŒ¹é…åŒºé—´  å¾—åˆ°ç­”æ¡ˆ
         ans[nums[i].id]=sum;
     }
     for(int i=1;i<=m;i++){

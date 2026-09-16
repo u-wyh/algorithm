@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// ¶¯Ì¬·ÖÅä¶şÎ¬Êı×é
+// åŠ¨æ€åˆ†é…äºŒç»´æ•°ç»„
 int** createMatrix(int rows, int cols) {
     int** matrix = (int**)malloc(rows * sizeof(int*));
     if (matrix == NULL) {
@@ -23,7 +23,7 @@ int** createMatrix(int rows, int cols) {
     return matrix;
 }
 
-// ¾ØÕóÏà³Ë
+// çŸ©é˜µç›¸ä¹˜
 int** multiply(int** a, int** b, int n, int m, int p) {
     int** result = createMatrix(n, p);
     for (int i = 0; i < n; i++) {
@@ -37,7 +37,7 @@ int** multiply(int** a, int** b, int n, int m, int p) {
     return result;
 }
 
-// ¾ØÕó¿ìËÙÃİ
+// çŸ©é˜µå¿«é€Ÿå¹‚
 int** power(int** m, int p, int n) {
     int** ans = createMatrix(n, n);
     for (int i = 0; i < n; i++) {
@@ -54,7 +54,7 @@ int** power(int** m, int p, int n) {
     return ans;
 }
 
-// ÊÍ·Å¶şÎ¬Êı×é
+// é‡Šæ”¾äºŒç»´æ•°ç»„
 void freeMatrix(int** matrix, int rows) {
     for (int i = 0; i < rows; i++) {
         free(matrix[i]);
@@ -62,7 +62,7 @@ void freeMatrix(int** matrix, int rows) {
     free(matrix);
 }
 
-// ¼ÆËãì³²¨ÄÇÆõÊıÁĞ
+// è®¡ç®—æ–æ³¢é‚£å¥‘æ•°åˆ—
 int fib2(int n) {
     if (n == 0) return 0;
     if (n == 1) return 1;
@@ -78,7 +78,7 @@ int fib2(int n) {
     int** result = multiply(start, power(base, n - 1,2), 1, 2, 2);
     int fib = result[0][0];
 
-    // ÊÍ·ÅÄÚ´æ
+    // é‡Šæ”¾å†…å­˜
     freeMatrix(start, 1);
     freeMatrix(base, 2);
     freeMatrix(result, 1);

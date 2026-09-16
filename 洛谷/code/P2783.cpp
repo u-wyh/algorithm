@@ -4,13 +4,13 @@ using namespace std;
 const int MAXN = 1e4+5;
 const int MAXM = 5e4+5;
 
-//Á¬±ßÁ´Ê½Ç°ÏòĞÇ
+//è¿è¾¹é“¾å¼å‰å‘æ˜Ÿ
 int head[MAXN];
 int Next[MAXM<<1];
 int to[MAXM<<1];
 int cnt0=1;
 
-//ÑÕÉ«Á´Ê½Ç°ÏòĞÇ
+//é¢œè‰²é“¾å¼å‰å‘æ˜Ÿ
 int head1[MAXN];
 int Next1[MAXM<<1];
 int to1[MAXM<<1];
@@ -24,18 +24,18 @@ int col[MAXN];
 int val[MAXN];
 int n,m;
 
-//Ïß¶ÎÊ÷
+//çº¿æ®µæ ‘
 int tree[MAXN<<2];
 
-//Ê÷Á´ÆÊ·Ö²¿·Ö
-int son[MAXN];//ÖØ¶ù×Ó±àºÅ  Ò¶×Ó½áµãÃ»ÓĞ
-int id[MAXN];//ÖØĞÂ±àºÅºóµÄ±àºÅ
-int rk[MAXN];//ÖØĞÂ±àºÅºóµÄ±àºÅ¶ÔÓ¦Ô­À´µÄ±àºÅÊÇÊ²Ã´
+//æ ‘é“¾å‰–åˆ†éƒ¨åˆ†
+int son[MAXN];//é‡å„¿å­ç¼–å·  å¶å­ç»“ç‚¹æ²¡æœ‰
+int id[MAXN];//é‡æ–°ç¼–å·åçš„ç¼–å·
+int rk[MAXN];//é‡æ–°ç¼–å·åçš„ç¼–å·å¯¹åº”åŸæ¥çš„ç¼–å·æ˜¯ä»€ä¹ˆ
 int cnt;
-int fa[MAXN];//¸¸Ç×½Úµã±àºÅ
-int deep[MAXN];//½ÚµãÉî¶È
-int sz[MAXN];//ÒÔ¸Ã½ÚµãÎªÊ×µÄ×ÓÊ÷½Úµã×ÜÊı
-int top[MAXN];//ÕâÌõÖØÁ´µÄÍ·½áµã
+int fa[MAXN];//çˆ¶äº²èŠ‚ç‚¹ç¼–å·
+int deep[MAXN];//èŠ‚ç‚¹æ·±åº¦
+int sz[MAXN];//ä»¥è¯¥èŠ‚ç‚¹ä¸ºé¦–çš„å­æ ‘èŠ‚ç‚¹æ€»æ•°
+int top[MAXN];//è¿™æ¡é‡é“¾çš„å¤´ç»“ç‚¹
 
 int read(){
     int x=0,f=1;
@@ -88,8 +88,8 @@ void tarjan(int u,int f,int tot){
     }
 }
 
-//ÒÔÏÂÎªÊ÷Á´ÆÊ·Ö
-//µÚÒ»±édfs Íê³Ész¡¢deep¡¢fa¡¢sonÊı×éµÄÍ³¼Æ
+//ä»¥ä¸‹ä¸ºæ ‘é“¾å‰–åˆ†
+//ç¬¬ä¸€édfs å®Œæˆszã€deepã€faã€sonæ•°ç»„çš„ç»Ÿè®¡
 void dfs1(int u,int f){
     fa[u]=f;
     deep[u]=deep[f]+1;
@@ -107,25 +107,25 @@ void dfs1(int u,int f){
     }
 }
 
-//µÚ¶ş±édfs Íê³Étop¡¢rk¡¢id
+//ç¬¬äºŒédfs å®Œæˆtopã€rkã€id
 void dfs2(int u,int t){
     top[u]=t;
     id[u]=++cnt;
     rk[cnt]=u;
     if(son[u]){
-        //´æÔÚÖØ¶ù×Ó  ÓÅÏÈ±éÀú
+        //å­˜åœ¨é‡å„¿å­  ä¼˜å…ˆéå†
         dfs2(son[u],t);
     }
     for(int i=head[u];i;i=Next[i]){
         int v=to[i];
         if(v!=fa[u]&&v!=son[u]){
             dfs2(v,v);
-            //ÁíÍâÔÚ¿ªÒ»ÌõÖØÁ´
+            //å¦å¤–åœ¨å¼€ä¸€æ¡é‡é“¾
         }
     }
 }
 
-//×¢Òâ±àºÅÎÊÌâ
+//æ³¨æ„ç¼–å·é—®é¢˜
 void build(int l,int r,int i){
     if(l==r){
         tree[i]=val[rk[l]];

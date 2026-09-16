@@ -1,6 +1,6 @@
 // https://www.luogu.com.cn/problem/P1816
 #include <stdio.h>
-#include <limits.h> // ÒıÈëINT_MAX£¬ÓÃÓÚ³õÊ¼»¯ans
+#include <limits.h> // å¼•å…¥INT_MAXï¼Œç”¨äºåˆå§‹åŒ–ans
 
 int a[100001];
 
@@ -12,20 +12,20 @@ int main() {
         scanf("%d", &a[i]);
     }
 
-    // Ê¹ÓÃINT_MAX³õÊ¼»¯ans£¬ÒòÎªËüÊÇCÓïÑÔÖĞintÀàĞÍÄÜ±íÊ¾µÄ×î´óÖµ
+    // ä½¿ç”¨INT_MAXåˆå§‹åŒ–ansï¼Œå› ä¸ºå®ƒæ˜¯Cè¯­è¨€ä¸­intç±»å‹èƒ½è¡¨ç¤ºçš„æœ€å¤§å€¼
     ans = INT_MAX;
 
     for (int i = 1; i <= n; i++) {
         scanf("%d%d", &t, &k);
-        ans = INT_MAX; // Ã¿´Î²éÑ¯Ç°ÖØÖÃans
+        ans = INT_MAX; // æ¯æ¬¡æŸ¥è¯¢å‰é‡ç½®ans
 
         for (int j = t; j <= k; j++) {
-            ans = (ans < a[j]) ? ans : a[j]; // Ê¹ÓÃÈıÔªÔËËã·û½øĞĞmin²Ù×÷
+            ans = (ans < a[j]) ? ans : a[j]; // ä½¿ç”¨ä¸‰å…ƒè¿ç®—ç¬¦è¿›è¡Œminæ“ä½œ
         }
 
         printf("%d ", ans);
     }
 
-    printf("\n"); // Í¨³£ÔÚÊä³öÍê³Éºó¼ÓÒ»¸ö»»ĞĞ·û
+    printf("\n"); // é€šå¸¸åœ¨è¾“å‡ºå®ŒæˆååŠ ä¸€ä¸ªæ¢è¡Œç¬¦
     return 0;
 }

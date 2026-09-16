@@ -6,10 +6,10 @@
 
 int n, ans, ans1;
 int fx[4] = {-1, 0, 1, 0};
-int fy[4] = {0, 1, 0, -1}; // ·½ÏòÊı×é
+int fy[4] = {0, 1, 0, -1}; // æ–¹å‘æ•°ç»„
 char d[MAXN][MAXN], f[MAXN][MAXN];
 
-void dfs(int x, int y) { // ÇóÑÍÃ»ºóÓĞ¼¸¸ö´óÂ½
+void dfs(int x, int y) { // æ±‚æ·¹æ²¡åæœ‰å‡ ä¸ªå¤§é™†
     d[x][y] = '.';
     for (int i = 0; i < 4; i++) {
         int xt = x + fx[i], yt = y + fy[i];
@@ -18,7 +18,7 @@ void dfs(int x, int y) { // ÇóÑÍÃ»ºóÓĞ¼¸¸ö´óÂ½
     }
 }
 
-void df(int x, int y) { // ÇóÑÍÃ»Ç°ÓĞ¼¸¸ö´óÂ½
+void df(int x, int y) { // æ±‚æ·¹æ²¡å‰æœ‰å‡ ä¸ªå¤§é™†
     f[x][y] = '.';
     for (int i = 0; i < 4; i++) {
         int xt = x + fx[i], yt = y + fy[i];
@@ -31,10 +31,10 @@ int main() {
     scanf("%d", &n);
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= n; j++) {
-            scanf(" %c", &d[i][j]); // ×¢Òâ%cÇ°µÄ¿Õ¸ñ£¬ÒÔÌø¹ıÖ®Ç°µÄ»»ĞĞ·û
+            scanf(" %c", &d[i][j]); // æ³¨æ„%cå‰çš„ç©ºæ ¼ï¼Œä»¥è·³è¿‡ä¹‹å‰çš„æ¢è¡Œç¬¦
             f[i][j] = d[i][j];
         }
-        getchar(); // ¶ÁÈ¡²¢¶ªÆú»»ĞĞ·û
+        getchar(); // è¯»å–å¹¶ä¸¢å¼ƒæ¢è¡Œç¬¦
     }
 
     for (int i = 1; i <= n; i++) {

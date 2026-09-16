@@ -8,26 +8,26 @@ const int MAXN = 1e5+5;
 int n,m,root,mod;
 int val[MAXN];
 
-//Á´Ê½Ç°ÏòĞÇ½¨Í¼
+//é“¾å¼å‰å‘æ˜Ÿå»ºå›¾
 int head[MAXN];
 int Next[MAXN<<1];
 int to[MAXN<<1];
 int tot=1;
 
-//Ïß¶ÎÊ÷
+//çº¿æ®µæ ‘
 int tree[MAXN<<2];
 int lazy[MAXN<<2];
-int len[MAXN<<2];//Òª¼ÇÂ¼³¤¶È ÒòÎªÕâÀï¼ÓµÄ»°ÊÇÃ¿Ò»¸öÔªËØ¶¼Òª¼Ó
+int len[MAXN<<2];//è¦è®°å½•é•¿åº¦ å› ä¸ºè¿™é‡ŒåŠ çš„è¯æ˜¯æ¯ä¸€ä¸ªå…ƒç´ éƒ½è¦åŠ 
 
-//Ê÷Á´ÆÊ·Ö²¿·Ö
-int son[MAXN];//ÖØ¶ù×Ó±àºÅ  Ò¶×Ó½áµãÃ»ÓĞ
-int id[MAXN];//ÖØĞÂ±àºÅºóµÄ±àºÅ
-int rk[MAXN];//ÖØĞÂ±àºÅºóµÄ±àºÅ¶ÔÓ¦Ô­À´µÄ±àºÅÊÇÊ²Ã´
+//æ ‘é“¾å‰–åˆ†éƒ¨åˆ†
+int son[MAXN];//é‡å„¿å­ç¼–å·  å¶å­ç»“ç‚¹æ²¡æœ‰
+int id[MAXN];//é‡æ–°ç¼–å·åçš„ç¼–å·
+int rk[MAXN];//é‡æ–°ç¼–å·åçš„ç¼–å·å¯¹åº”åŸæ¥çš„ç¼–å·æ˜¯ä»€ä¹ˆ
 int cnt;
-int fa[MAXN];//¸¸Ç×½Úµã±àºÅ
-int deep[MAXN];//½ÚµãÉî¶È
-int sz[MAXN];//ÒÔ¸Ã½ÚµãÎªÊ×µÄ×ÓÊ÷½Úµã×ÜÊı
-int top[MAXN];//ÕâÌõÖØÁ´µÄÍ·½áµã
+int fa[MAXN];//çˆ¶äº²èŠ‚ç‚¹ç¼–å·
+int deep[MAXN];//èŠ‚ç‚¹æ·±åº¦
+int sz[MAXN];//ä»¥è¯¥èŠ‚ç‚¹ä¸ºé¦–çš„å­æ ‘èŠ‚ç‚¹æ€»æ•°
+int top[MAXN];//è¿™æ¡é‡é“¾çš„å¤´ç»“ç‚¹
 
 inline int read(){
     int x=0,f=1;
@@ -48,7 +48,7 @@ inline void addedge(int u,int v){
     head[u]=tot++;
 }
 
-//µÚÒ»±édfs Íê³Ész¡¢deep¡¢fa¡¢sonÊı×éµÄÍ³¼Æ
+//ç¬¬ä¸€édfs å®Œæˆszã€deepã€faã€sonæ•°ç»„çš„ç»Ÿè®¡
 void dfs1(int u,int f){
     fa[u]=f;
     deep[u]=deep[f]+1;
@@ -67,31 +67,31 @@ void dfs1(int u,int f){
     //cout<<u<<' '<<sz[u]<<endl;
 }
 
-//µÚ¶ş±édfs Íê³Étop¡¢rk¡¢id
+//ç¬¬äºŒédfs å®Œæˆtopã€rkã€id
 void dfs2(int u,int t){
     top[u]=t;
     id[u]=++cnt;
     rk[cnt]=u;
     if(son[u]){
-        //´æÔÚÖØ¶ù×Ó  ÓÅÏÈ±éÀú
+        //å­˜åœ¨é‡å„¿å­  ä¼˜å…ˆéå†
         dfs2(son[u],t);
     }
     for(int i=head[u];i;i=Next[i]){
         int v=to[i];
         if(v!=fa[u]&&v!=son[u]){
             dfs2(v,v);
-            //ÁíÍâÔÚ¿ªÒ»ÌõÖØÁ´
+            //å¦å¤–åœ¨å¼€ä¸€æ¡é‡é“¾
         }
     }
 }
 
-//Ïß¶ÎÊ÷²¿·Ö
+//çº¿æ®µæ ‘éƒ¨åˆ†
 void up(int i){
     tree[i]=tree[i<<1]+tree[i<<1|1];
     tree[i]%=mod;
 }
 
-//×¢Òâ±àºÅÎÊÌâ
+//æ³¨æ„ç¼–å·é—®é¢˜
 void build(int l,int r,int i){
     lazy[i]=0;
     len[i]=r-l+1;
@@ -163,14 +163,14 @@ inline void update(int x,int y,int val){
     while(top[x]!=top[y]){
         if(deep[top[x]]<deep[top[y]])
             swap(x,y);
-        add(id[top[x]],id[x],val,1,n,1);//½áËãÕâÌõÖØÁ´ÉÏ´æÔÚµÄ¹±Ï×
+        add(id[top[x]],id[x],val,1,n,1);//ç»“ç®—è¿™æ¡é‡é“¾ä¸Šå­˜åœ¨çš„è´¡çŒ®
         x=fa[top[x]];
     }
-    //Á½µãÔÚÍ¬Ò»ÌõÖØÁ´ÉÏ
+    //ä¸¤ç‚¹åœ¨åŒä¸€æ¡é‡é“¾ä¸Š
     if(id[x]>id[y])
         swap(x,y);
     add(id[x],id[y],val,1,n,1);
-    //½áËã¹±Ï×Çø¼ä
+    //ç»“ç®—è´¡çŒ®åŒºé—´
 }
 
 inline int sum(int x,int y){

@@ -1,8 +1,8 @@
 // https://www.luogu.com.cn/problem/P4255
 // P4255
-// ÕâµÀÌâ·Ç³£¶ÀÌØµÄµØ·½ÔÚÓÚËüÊÇÍ¨¹ı±ßÀ´±£´æµãµÄĞÅÏ¢
-// ±ÈÈç  aºÅ³ÇÊĞ  ÓĞ3¸öÈËĞÅÑöA  4¸öÈËĞÅÑöB  ÄÇÃ´¾ÍÊÇa->A È¨ÖµÎª3   a->B È¨ÖµÎª4
-// ÄÇÃ´Èç¹û aºÅ³ÇÊĞºÍbºÅ³ÇÊĞºÏ²¢ÁË  ÄÇÃ´¾ÍÊÇÔÚÁ¬±ß
+// è¿™é“é¢˜éå¸¸ç‹¬ç‰¹çš„åœ°æ–¹åœ¨äºå®ƒæ˜¯é€šè¿‡è¾¹æ¥ä¿å­˜ç‚¹çš„ä¿¡æ¯
+// æ¯”å¦‚  aå·åŸå¸‚  æœ‰3ä¸ªäººä¿¡ä»°A  4ä¸ªäººä¿¡ä»°B  é‚£ä¹ˆå°±æ˜¯a->A æƒå€¼ä¸º3   a->B æƒå€¼ä¸º4
+// é‚£ä¹ˆå¦‚æœ aå·åŸå¸‚å’Œbå·åŸå¸‚åˆå¹¶äº†  é‚£ä¹ˆå°±æ˜¯åœ¨è¿è¾¹
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
@@ -15,14 +15,14 @@ int n,m,q;
 struct Edge{
     int u,v;
 }edge[MAXN];
-bool ok[MAXN];//±íÊ¾ÕâÌõÂ·ÊÇ·ñ¿ÉÒÔ´æÔÚ
+bool ok[MAXN];//è¡¨ç¤ºè¿™æ¡è·¯æ˜¯å¦å¯ä»¥å­˜åœ¨
 
 int cnt=1;
 int head[MAXN];
 int nxt[MAXT];
 int to[MAXT];
 int weight[MAXT];
-map<int,int>vis[MAXN];//vis[i][j]Õâ¸öº¬ÒåÊÇ  ¶ÔÓÚ  ³ÇÊĞi  ËûµÄĞÅÑöÎªjµÄ  ±ß  ±àºÅÊÇ¶àÉÙ
+map<int,int>vis[MAXN];//vis[i][j]è¿™ä¸ªå«ä¹‰æ˜¯  å¯¹äº  åŸå¸‚i  ä»–çš„ä¿¡ä»°ä¸ºjçš„  è¾¹  ç¼–å·æ˜¯å¤šå°‘
 
 struct node{
     int op,x,n,c;
@@ -61,7 +61,7 @@ int power(int a,int b){
 }
 
 inline void addedge(int u,int v,int w){
-    int num=vis[u][v];//±íÊ¾ÊÇ·ñÓĞ¹ıu³ÇÊĞºÍĞÅÑövµÄÁ¬±ß
+    int num=vis[u][v];//è¡¨ç¤ºæ˜¯å¦æœ‰è¿‡uåŸå¸‚å’Œä¿¡ä»°vçš„è¿è¾¹
     if(num==0){
         vis[u][v]=cnt;
 
@@ -86,7 +86,7 @@ void un(int x,int y){
         return ;
     }
     if(vis[fx].size()>vis[fy].size()){
-        swap(fx,fy);//Æô·¢Ê½ºÏ²¢  ÖÖÀàÉÙµÄ¸øµ½ÖÖÀà¶àµÄÖĞÈ¥
+        swap(fx,fy);//å¯å‘å¼åˆå¹¶  ç§ç±»å°‘çš„ç»™åˆ°ç§ç±»å¤šçš„ä¸­å»
     }
     for(int i=head[fx];i;i=nxt[i]){
         addedge(fy,to[i],weight[i]);
@@ -121,7 +121,7 @@ signed main()
     for(int i=1;i<=n;i++){
         int v,w;
         w=read(),v=read();
-        addedge(i,v,w);//±íÊ¾³ÇÊĞi  ÓĞw¸öĞÅÑöv µÄÈË
+        addedge(i,v,w);//è¡¨ç¤ºåŸå¸‚i  æœ‰wä¸ªä¿¡ä»°v çš„äºº
         sz[i]=w;
         fa[i]=i;
     }

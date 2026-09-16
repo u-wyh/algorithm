@@ -17,12 +17,12 @@ int max(int a, int b) {
 
 int main() {
     scanf("%d%d", &n, &c);
-    memset(f, 0x7f, sizeof(f)); // 赋成极大值（0x7f7f7f7f在int中为极大值），防止后面的min函数出错
+    memset(f, 0x7f, sizeof(f)); // 璧嬫垚鏋佸ぇ鍊硷紙0x7f7f7f7f鍦╥nt涓负鏋佸ぇ鍊硷級锛岄槻姝㈠悗闈㈢殑min鍑芥暟鍑洪敊
     for (int i = 1; i <= n; i++) {
         scanf("%d%d", &a[i], &b[i]);
         sum[i] = sum[i - 1] + b[i];
     }
-    f[c][c][0] = f[c][c][1] = 0; // 初始化，瞬间被关
+    f[c][c][0] = f[c][c][1] = 0; // 鍒濆鍖栵紝鐬棿琚叧
 
     for (int l = 2; l <= n; l++) {
         for (int i = 1; i + l - 1 <= n; i++) {

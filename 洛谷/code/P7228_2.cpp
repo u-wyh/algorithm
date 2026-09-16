@@ -9,8 +9,8 @@ struct edge{
     int next;
 }e[MAXN<<1];
 int head[MAXN];
-bool towards[MAXN];//È·ÈÏ±ßÒª²»Òªµ÷»»·½Ïò
-bool f=0;//³õÊ¼Îª0»ò1¶¼Ã»¹ØÏµ
+bool towards[MAXN];//ç¡®è®¤è¾¹è¦ä¸è¦è°ƒæ¢æ–¹å‘
+bool f=0;//åˆå§‹ä¸º0æˆ–1éƒ½æ²¡å…³ç³»
 bool vis[MAXN];
 void dfs(int p)
 {
@@ -38,8 +38,8 @@ int main()
     for(int i=1,j=MAXN+1,u,v;i<n;i++,j++)
     {
         cin>>u>>v;
-        e[i].v=v,e[i].next=head[u],head[u]=i;//¼Ó±ß
-        e[j].v=u,e[j].next=head[v],head[v]=j;//ÎŞÏòÍ¼¼Ó·´Ïò±ß
+        e[i].v=v,e[i].next=head[u],head[u]=i;//åŠ è¾¹
+        e[j].v=u,e[j].next=head[v],head[v]=j;//æ— å‘å›¾åŠ åå‘è¾¹
     }
     dfs(1);
     for(int i=1;i<n;i++)
