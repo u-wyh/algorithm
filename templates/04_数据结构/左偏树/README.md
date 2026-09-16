@@ -10,20 +10,20 @@
 
 ## 代码目录
 
-文件名沿用中文算法名；确认 OJ 来源的题目统一采用 `OJ编号-题目名称.cpp`。这批代码保留原有实现和学习注释，其中 P3377 虽是模板题，仍作为题目解答列出；独立的随机对拍程序标为模板。
+真正的模板保留算法名称；确认 OJ 来源的练习题采用纯题号文件名。这批代码保留原有实现和学习注释，其中 P3377 虽是模板题，仍作为题目解答列出；独立的随机对拍程序标为模板。
 
 | 文件 | 类型 | 内容与知识点 | 原题 |
 | --- | --- | --- | --- |
 | [可持久化左偏树模板-随机对拍.cpp](可持久化左偏树模板-随机对拍.cpp) | 模板 | 节点复制、保留历史版本、随机对拍 | — |
-| [P3377-可并堆1.cpp](P3377-可并堆1.cpp) | 基础题 | 小根堆合并、删除堆顶、并查集定位堆根 | [洛谷 P3377](https://www.luogu.com.cn/problem/P3377) |
-| [P1456-Monkey King.cpp](P1456-Monkey%20King.cpp) | 练习题 | 大根堆合并、堆顶修改 | [洛谷 P1456](https://www.luogu.com.cn/problem/P1456) |
-| [P1552-派遣.cpp](P1552-派遣.cpp) | 练习题 | 树上合并、大根堆、预算贪心 | [洛谷 P1552](https://www.luogu.com.cn/problem/P1552) |
-| [P3261-城池攻占.cpp](P3261-城池攻占.cpp) | 进阶题 | 树上合并、批量加乘懒标记 | [洛谷 P3261](https://www.luogu.com.cn/problem/P3261) |
-| [P3273-棘手的操作.cpp](P3273-棘手的操作.cpp) | 进阶题 | 集合修改、启发式合并、全局最大值 | [洛谷 P3273](https://www.luogu.com.cn/problem/P3273) |
-| [P4331-Sequence.cpp](P4331-Sequence.cpp) | 进阶题 | 单调栈分段、中位数、绝对值最小化 | [洛谷 P4331](https://www.luogu.com.cn/problem/P4331) |
-| [P4971-断罪者.cpp](P4971-断罪者.cpp) | 进阶题 | 删除指定节点、合并堆、堆顶修改 | [洛谷 P4971](https://www.luogu.com.cn/problem/P4971) |
-| [P2409-Y的积木.cpp](P2409-Y的积木.cpp) | 进阶题 | 可持久化左偏树、前 k 小方案 | [洛谷 P2409](https://www.luogu.com.cn/problem/P2409) |
-| [P2483-魔法猪学院.cpp](P2483-魔法猪学院.cpp) | 综合题 | 可持久化左偏树、最短路、前 k 小路径 | [洛谷 P2483](https://www.luogu.com.cn/problem/P2483) |
+| [P3377.cpp](P3377.cpp) | 基础题 | 小根堆合并、删除堆顶、并查集定位堆根 | [洛谷 P3377](https://www.luogu.com.cn/problem/P3377) |
+| [P1456.cpp](P1456.cpp) | 练习题 | 大根堆合并、堆顶修改 | [洛谷 P1456](https://www.luogu.com.cn/problem/P1456) |
+| [P1552.cpp](P1552.cpp) | 练习题 | 树上合并、大根堆、预算贪心 | [洛谷 P1552](https://www.luogu.com.cn/problem/P1552) |
+| [P3261.cpp](P3261.cpp) | 进阶题 | 树上合并、批量加乘懒标记 | [洛谷 P3261](https://www.luogu.com.cn/problem/P3261) |
+| [P3273.cpp](P3273.cpp) | 进阶题 | 集合修改、启发式合并、全局最大值 | [洛谷 P3273](https://www.luogu.com.cn/problem/P3273) |
+| [P4331.cpp](P4331.cpp) | 进阶题 | 单调栈分段、中位数、绝对值最小化 | [洛谷 P4331](https://www.luogu.com.cn/problem/P4331) |
+| [P4971.cpp](P4971.cpp) | 进阶题 | 删除指定节点、合并堆、堆顶修改 | [洛谷 P4971](https://www.luogu.com.cn/problem/P4971) |
+| [P2409.cpp](P2409.cpp) | 进阶题 | 可持久化左偏树、前 k 小方案 | [洛谷 P2409](https://www.luogu.com.cn/problem/P2409) |
+| [P2483.cpp](P2483.cpp) | 综合题 | 可持久化左偏树、最短路、前 k 小路径 | [洛谷 P2483](https://www.luogu.com.cn/problem/P2483) |
 
 ## 推荐学习顺序
 

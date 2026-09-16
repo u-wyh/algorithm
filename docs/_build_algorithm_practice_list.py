@@ -15,11 +15,49 @@ ARCHIVE = ROOT / "洛谷" / "code"
 CODE_EXTS = {".cpp", ".c", ".py"}
 URL_RE = re.compile(rb"https?://[^\s\x00-\x20<>\"']+")
 COMMENT_ID_RE = re.compile(rb"(?<![A-Za-z0-9])P(\d{3,6})(?![A-Za-z0-9])", re.I)
-EXCLUDED_COMMENT_IDS = {
+SOURCE_REVIEW_EXCEPTIONS = {
+    "templates/01_图论/tarjan/tarjan——边双缩点模板.cpp": "P18867 链接未能核实，且文件说明缺少与该题号一致的证据；保留原名。",
     "templates/05_数学数论/数学/高精度——乘法.c": "注释中的 P303 不能可靠确定题号。",
     "templates/05_数学数论/数学/高精度——除法（高对高）.c": "注释写 P1601（加法题），与本文件除法内容冲突。",
 }
 LEFTIST_ORDER = ["P3377", "P1456", "P1552", "P4971", "P3261", "P3273", "P4331", "P2409", "P2483"]
+GENERIC_DEMO_FILES = {
+    "templates/01_图论/图论/图——邻接表.cpp",
+    "templates/01_图论/图论/图论——A星展示.cpp",
+    "templates/02_树上问题/倍增st表/倍增和st表——基础.cpp",
+    "templates/02_树上问题/树基础与LCA/二叉树.c",
+    "templates/02_树上问题/树基础与LCA/二叉树——前中后遍历.c",
+    "templates/03_字符串/前缀树/前缀树——模板.cpp",
+    "templates/04_数据结构/左偏树/可持久化左偏树模板-随机对拍.cpp",
+    "templates/04_数据结构/平衡树/splay树——展示.cpp",
+    "templates/04_数据结构/并查集/并查集——模板.c",
+    "templates/04_数据结构/并查集/并查集——模板2.c",
+    "templates/04_数据结构/杂项数据结构/位图——模板.cpp",
+    "templates/05_数学数论/数学/快速幂——矩阵乘法展示.cpp",
+    "templates/05_数学数论/数学/扩展欧几里得——算法展示.cpp",
+    "templates/05_数学数论/数学/线性基——异或过程展示.cpp",
+    "templates/05_数学数论/数学/逆元——模板.cpp",
+    "templates/05_数学数论/数学/高斯消元——加法运算展示.cpp",
+    "templates/05_数学数论/数学/高斯消元——同余运算展示.cpp",
+    "templates/05_数学数论/数学/高斯消元——异或运算展示.cpp",
+    "templates/05_数学数论/数学/高精度——模板.cpp",
+    "templates/05_数学数论/数论/莫比乌斯函数——模板.cpp",
+    "templates/07_搜索与贪心/单调队列单调栈/单调栈——模板.cpp",
+    "templates/09_基础技巧/位运算/二进位制打印.c",
+    "templates/09_基础技巧/位运算/位运算的加减乘除.c",
+    "templates/09_基础技巧/位运算/位运算的神奇操作.c",
+    "templates/09_基础技巧/位运算/异或的神奇操作.c",
+    "templates/09_基础技巧/基础技巧/递归函数.c",
+    "templates/09_基础技巧/排序/归并分治.c",
+    "templates/09_基础技巧/排序/归并排序.c",
+    "templates/09_基础技巧/排序/排序——三傻排序.c",
+    "templates/09_基础技巧/排序/排序——三大高级排序.c",
+    "templates/09_基础技巧/排序/排序——基数排序.c",
+    "templates/09_基础技巧/排序/排序——堆排序.c",
+    "templates/09_基础技巧/排序/排序——随机快速排序.c",
+    "templates/09_基础技巧/排序/排序——随机快速排序2.c",
+    "templates/模板/仙人掌树/仙人掌树——找环模板.cpp",
+}
 
 
 def urls(data: bytes) -> list[str]:
@@ -138,10 +176,8 @@ def comment_problem_id(data: bytes) -> str | None:
 
 def identify(path: Path) -> tuple[tuple[str, str] | None, str | None]:
     rel = path.relative_to(ROOT).as_posix()
-    if "模板" in path.stem or "模版" in path.stem:
-        return None, None
-    if rel in EXCLUDED_COMMENT_IDS:
-        return None, EXCLUDED_COMMENT_IDS[rel]
+    if rel in SOURCE_REVIEW_EXCEPTIONS:
+        return None, SOURCE_REVIEW_EXCEPTIONS[rel]
     data = path.read_bytes()
     found: dict[str, tuple[str, int]] = {}
     for source in urls(data):
@@ -176,6 +212,11 @@ def filename_id(name: str) -> str | None:
     stem = Path(name).stem
     m = re.fullmatch(r"((?:P|B|CFGYM|CF|HDU|POJ|LOJ|UOJ|SPOJ_|AT_|LC)\w+?)(?:_\d+)?", stem, re.I)
     return m[1].upper() if m else None
+
+
+def is_generic_demo(path: Path) -> bool:
+    """Only exclude manually reviewed reusable templates and demonstrations."""
+    return path.relative_to(ROOT).as_posix() in GENERIC_DEMO_FILES
 
 
 def link_to_file(path: Path) -> str:
@@ -215,13 +256,23 @@ def main() -> None:
     code = sorted(path for path in TEMPLATES.rglob("*") if path.suffix.lower() in CODE_EXTS)
     groups: dict[tuple[str, str], dict[str, dict]] = collections.defaultdict(dict)
     unresolved: list[tuple[Path, str]] = []
-    candidates: list[tuple[Path, str]] = []
+    candidates: list[tuple[Path, str, str]] = []
     source_files = 0
+    generic_demos = 0
+    utilities = 0
     for path in code:
+        if path.name == "count.py" and path.parent.name == "tools":
+            utilities += 1
+            continue
         identified, issue = identify(path)
         if issue:
             unresolved.append((path, issue))
         if not identified:
+            if not issue:
+                if is_generic_demo(path):
+                    generic_demos += 1
+                else:
+                    unresolved.append((path, "没有可核实的 OJ 编号；需判断是否为具体练习题。"))
             continue
         problem, source = identified
         source_files += 1
@@ -232,8 +283,14 @@ def main() -> None:
             topic += "（综合）"
         item = groups[(top, topic)].setdefault(problem, {"source": source, "files": []})
         item["files"].append(path)
-        if path.stem.upper() != problem:
-            candidates.append((path, problem))
+        if not re.fullmatch(re.escape(problem) + r"(?:_[2-9]\d*)?", path.stem, re.I):
+            if problem.startswith("LC_"):
+                reason = "原题 slug 已确认，但数字题号未核实；不以英文题名改名。"
+            elif problem.startswith("NC_PRACTICE_"):
+                reason = "牛客 practice UUID 已确认，但不符合现有比赛编号规则。"
+            else:
+                reason = "题号已确认，文件名待规范。"
+            candidates.append((path, problem, reason))
 
     by_id, by_url = archive_index()
     all_problem_ids = {problem for entries in groups.values() for problem in entries}
@@ -291,10 +348,13 @@ def main() -> None:
             lines.append("")
     (ROOT / "docs" / "算法学习题单.md").write_text("\n".join(lines), encoding="utf-8")
 
-    candidate_lines = ["# templates 练习题命名候选清单", "", f"当前有 **{len(candidates)}** 份命名候选、**{len(unresolved)}** 份来源待确认文件。", "", "以下文件已凭原题链接或文件头题号进入第一版题单，但名称不是纯 OJ 题号。这里只记录候选；同题多版本的保留和编号需下一轮逐组比较，不能直接批量改名。", "", "| 当前文件 | 确认题号 |", "| --- | --- |"]
-    for path, problem in sorted(candidates, key=lambda pair: pair[0].as_posix()):
-        candidate_lines.append(f"| {link_to_file(path)} | {problem} |")
-    candidate_lines.extend(["", "## 来源待确认", "", "这些文件有题目线索，但不足以可靠纳入正式题单；其余没有明确题号的通用示例不在此列。", "", "| 文件 | 原因 |", "| --- | --- |"])
+    candidate_lines = ["# templates 练习题命名候选清单", "", f"当前有 **{len(candidates)}** 份已确认来源但正式编号或文件名待处理的文件、**{len(unresolved)}** 份来源或用途待确认文件。", ""]
+    if candidates:
+        candidate_lines.extend(["## 已知来源，编号或命名待处理", "", "| 当前文件 | 来源线索 | 原因 |", "| --- | --- | --- |"])
+        for path, problem, reason in sorted(candidates, key=lambda pair: pair[0].as_posix()):
+            candidate_lines.append(f"| {link_to_file(path)} | {problem} | {reason} |")
+        candidate_lines.append("")
+    candidate_lines.extend(["## 来源或用途待确认", "", "下列文件的现有题号、链接或用途信息不足以安全改名；已确认的通用模板与算法演示不在此列。", "", "| 文件 | 原因 |", "| --- | --- |"])
     for path, reason in sorted(unresolved, key=lambda pair: pair[0].as_posix()):
         candidate_lines.append(f"| {link_to_file(path)} | {reason} |")
     candidate_lines.append("")
@@ -308,6 +368,8 @@ def main() -> None:
     print("only_templates", len(only_templates - covered))
     print("multi_topic_problems", sum(n > 1 for n in associations.values()))
     print("unresolved_source_files", len(unresolved))
+    print("confirmed_generic_demos", generic_demos)
+    print("utilities", utilities)
     print("noncanonical_practice_files", len(candidates))
     print("top_topics", sorted(topic_sizes.items(), key=lambda x: (-x[1], x[0]))[:10])
 
