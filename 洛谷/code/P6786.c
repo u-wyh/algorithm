@@ -1,84 +1,58 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX_N 300005
+#define MAXN 500050
 
-typedef long long ll;
+typedef long long LL;
 
-int a[MAX_N];
-ll ans;
+LL N, a[MAXN], x[MAXN], t[MAXN], f[MAXN], cnt = 0, Ans = 0;
 
-// 使用结构体模拟map
-typedef struct {
-    int key;
-    int value;
-    struct Node* next;
-} Node;
-
-Node* head[MAX_N];
-
-// 插入键值对到模拟的map中
-void insert(int key, int value) {
-    Node* newNode = (Node*)malloc(sizeof(Node));
-    newNode->key = key;
-    newNode->value = value;
-    newNode->next = head[key];
-    head[key] = newNode;
+int compare(const void *a, const void *b) {
+    return (*(LL *)a - *(LL *)b);
 }
 
-// 从模拟的map中获取值
-int get(int key) {
-    Node* current = head[key];
-    if (current == NULL) return 0;
-    int value = current->value;
-    // 如果需要删除，则可以将current->next赋给head[key]
-    // 但由于我们只需要读取值，所以这里不删除
-    return value;
-}
+void Init() {
+    scanf("%lld", &N);
+    for (int i = 0; i < N; ++i) scanf("%lld", &a[i]);
+    qsort(a, N, sizeof(LL), compare); // 使用qsort进行排序
 
-// 清空模拟的map中的某个键（可选，如果需要重复使用）
-void clear(int key) {
-    Node* prev = NULL;
-    Node* current = head[key];
-    while (current != NULL) {
-        prev = current;
-        current = current->next;
-        free(prev);
+    for (int i = 0; i < N; ++i) {
+        if (i == 0 || a[i] != a[i - 1]) {
+            x[cnt] = a[i];
+            t[cnt] = 1;
+            ++cnt;
+        } else {
+            ++t[cnt - 1];
+        }
     }
-    head[key] = NULL;
+
+    for (int i = 0; i < cnt; ++i) {
+        f[i] = x[i] * t[i];
+        if (f[i] > Ans) Ans = f[i]; // 更新最大值
+    }
+}
+
+void Solve() {
+    for (int i = 1; i < cnt; ++i) {
+        if (x[i] % 3 != 0) continue; // 如果不能整除三则跳过
+        LL val = x[i] / 3 * 2;
+        // 使用二分查找（这里直接使用简单循环替代，因为数组已排序）
+        int pos = 0;
+        while (pos < i && x[pos] < val) ++pos;
+        if (pos < i && x[pos] == val) {
+            f[i] += f[pos]; // 更新f值
+            if (f[i] > Ans) Ans = f[i]; // 取最大值
+        }
+    }
+}
+
+void Print() {
+    printf("%lld\n", Ans);
 }
 
 int main() {
-    int n;
-    scanf("%d", &n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &a[i]);
-        insert(a[i], 1);  // 初始计数为1
-    }
-
-    // 由于C语言不支持直接对数组排序的函数，这里省略排序步骤，
-    // 假设输入已经是有序的，或者我们可以使用qsort等函数进行排序
-    // qsort(a, n, sizeof(int), compare); // 需要定义compare函数
-
-    // 假设a已经是有序的，继续执行后续逻辑
-    for (int i = 0; i < n; i++) {
-        ll tmp = a[i], cnt = 0;
-        int value = get(tmp);
-        while (value > 0) {
-            cnt += tmp * value;
-            value--;  // 相当于mp[tmp]--
-            if (tmp % 2 == 0) tmp = tmp / 2 * 3;
-            else break;
-        }
-        // 由于我们的模拟map不支持一键清空所有值，这里不直接清空
-        // 但如果需要再次使用，可以在外部调用clear函数
-        ans = (ans > cnt) ? ans : cnt;
-    }
-
-    printf("%lld\n", ans);
-
-    // 清理模拟map（如果需要）
-    // 注意：这里为了简单起见，没有实现清理逻辑
-
+    Init();
+    Solve();
+    Print();
     return 0;
 }

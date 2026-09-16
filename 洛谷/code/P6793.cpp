@@ -119,11 +119,9 @@ void buildst(int n){
     }
     for(int i=1;i<=n;i++){
         st[i][0]=i;
-        // st[i][0]=height[i];
     }
     for(int i=1;i<=lg2[n];i++){
         for(int j=1;j+(1<<(i-1))-1<=n;j++){
-            // st[j][i]=min(st[j][i-1],st[j+(1<<(i-1))][i-1]);
             if(height[st[j][i-1]]<height[st[j+(1<<(i-1))][i-1]]){
                 st[j][i]=st[j][i-1];
             }
@@ -137,7 +135,6 @@ void buildst(int n){
 int query(int l,int r){
     l++;
     int p=lg2[r-l+1];
-    // return min(st[l][p],st[r-(1<<p)+1][p]);
     if(height[st[l][p]]<height[st[r-(1<<p)+1][p]]){
         return st[l][p];
     }
@@ -146,15 +143,11 @@ int query(int l,int r){
     }
 }
 
-// int pos1[MAXN],cnt1;
-// int pos2[MAXN],cnt2;
-
 int compute(int l,int r){
     if(l==r){
         return id[sa[l]];
     }
     int mid=query(l,r);
-    // cout<<' '<<l<<' '<<r<<' '<<mid<<endl;
     int lt=compute(l,mid-1);
     int rt=compute(mid,r);
     if(1ll*lt*rt>=0){
@@ -164,7 +157,6 @@ int compute(int l,int r){
         swap(lt,rt);
     }
     int t=min(lt,-rt);
-    // cout<<' '<<l<<' '<<r<<' '<<mid<<' '<<height[mid]<<' '<<k<<' '<<(1ll*height[mid]*k)<<endl;
     ans-=1ll*min(height[mid],k)*t;
     lt-=t;
     rt+=t;
@@ -195,28 +187,7 @@ int main()
     getheight(tot);
     buildst(tot);
     ans=1ll*(n-k+1)*k;
-    // cout<<888<<endl;
     compute(1,tot);
-    // for(int i=1;i<=tot;i++){
-    //     if(len[sa[i]]>=k){
-    //         if(id[sa[i]]==1){
-    //             pos1[++cnt1]=i;
-    //         }
-    //         else{
-    //             pos2[++cnt2]=i;
-    //         }
-    //     }
-    // }
-    // for(int i=1;i<=tot;i++){
-    //     cout<<i<<":  "<<id[i]<<' '<<height[i]<<endl;
-    // }
-    // // cout<<' '<<ans<<endl;
-    // for(int i=1;i<=(n-k+1);i++){
-    //     ans-=min(query(min(pos1[i],pos2[i]),max(pos1[i],pos2[i])),k);
-    //     // int t=min(query(min(pos1[i],pos2[i]),max(pos1[i],pos2[i])),k);
-    //     // cout<<t<<' '<<pos1[i]<<' '<<pos2[i]<<endl;
-    //     // ans-=t;
-    // }
     cout<<ans<<endl;
     return 0;
 }

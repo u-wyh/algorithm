@@ -1,29 +1,57 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<limits.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-int cmp(const void *pa,const void *pb)
-{
-    int* a=(int *)pa;
-    int* b=(int *)pb;
-    return *b-*a;
+#define Max 10000
+
+int tian[Max], king[Max];
+int n, i, j, ii, jj, ans;
+
+// 比较函数，用于qsort
+int cmp(const void *a, const void *b) {
+    return (*(int*)b - *(int*)a);
 }
 
-int main()
-{
-    int n;
-    scanf("%d",&n);
-    int a[n+1],b[n+1];
-    for(int i=1;i<=n;i++)
-    {
-        scanf("%d",&a[i]);
+int main() {
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++) {
+        scanf("%d", &tian[i]);
     }
-    for(int i=1;i<=n;i++)
-    {
-        scanf("%d",&b[i]);
+    for (i = 1; i <= n; i++) {
+        scanf("%d", &king[i]);
     }
-    qsort(a+1,n,sizeof(int),cmp);
-    qsort(b+1,n,sizeof(int),cmp);
-    int g[n+1][n+1];
+
+    // 使用qsort进行排序
+    qsort(tian + 1, n, sizeof(int), cmp);
+    qsort(king + 1, n, sizeof(int), cmp);
+
+    ans = 0;
+    ii = n;
+    jj = n;
+
+    for (i = 1, j = 1; i <= ii;) {
+        if (tian[i] > king[j]) {
+            ans += 200;
+            i++;
+            j++;
+        } else if (tian[i] < king[j]) {
+            ans -= 200;
+            j++;
+            ii--;
+        } else {
+            if (tian[ii] > king[jj]) {
+                ans += 200;
+                ii--;
+                jj--;
+            } else {
+                if (tian[ii] < king[j]) {
+                    ans -= 200;
+                }
+                ii--;
+                j++;
+            }
+        }
+    }
+
+    printf("%d\n", ans);
     return 0;
 }

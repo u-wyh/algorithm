@@ -1,148 +1,80 @@
+//P3605
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;
-const int MAXT = MAXN*40;
 
-int n,len;
-int val[MAXN];
-int sorted[MAXN];
-
+int n;
+struct node{
+    int num,id,sub;
+}arr[MAXN];
+int dfncnt=0;
+int dfn[MAXN];
+int size[MAXN];
 int head[MAXN];
-int nxt[MAXN];
-int to[MAXN];
-int cntg=1;
-
+int Next[MAXN<<1];
+int to[MAXN<<1];
+int cnt=1;
+int tree[MAXN];
 int ans[MAXN];
 
-int root[MAXN];
-int ls[MAXT];
-int rs[MAXT];
-int sz[MAXT];
-int cnt;
-
-void addedge(int u,int v){
-    nxt[cntg]=head[u];
-    to[cntg]=v;
-    head[u]=cntg++;
+bool cmp(node a,node b){
+    return a.num>b.num;
 }
 
-int find(int val){
-    int l=1,r=len,ans=1;
-    while(l<=r){
-        int mid=(l+r)>>1;
-        if(sorted[mid]>=val){
-            ans=mid;
-            r=mid-1;
-        }
-        else{
-            l=mid+1;
-        }
+void add(int i,int v){
+    while(i<=n){
+        tree[i]+=v;
+        i+=i&-i;
+    }
+}
+
+int sum(int i){
+    int ans=0;
+    while(i){
+        ans+=tree[i];
+        i-=i&-i;
     }
     return ans;
 }
 
-int add(int val,int l,int r,int i){
-    if(i==0){
-        i=++cnt;
-    }
-    if(l==r){
-        sz[i]++;
-    }
-    else{
-        int mid=(l+r)>>1;
-        if(val<=mid){
-            ls[i]=add(val,l,mid,ls[i]);
-        }
-        else{
-            rs[i]=add(val,mid+1,r,rs[i]);
-        }
-        sz[i]=sz[ls[i]]+sz[rs[i]];
-    }
-    return i;
+void addedge(int u,int v){
+    Next[cnt]=head[u];
+    to[cnt]=v;
+    head[u]=cnt++;
 }
 
-int merge(int l,int r,int v,int u){
-    if(u==0||v==0){
-        return u+v;
-    }
-    if(l==r){
-        sz[u]+=sz[v];
-    }
-    else{
-        int mid=(l+r)>>1;
-        ls[u]=merge(l,mid,ls[v],ls[u]);
-        rs[u]=merge(mid+1,r,rs[v],rs[u]);
-        sz[u]=sz[ls[u]]+sz[rs[u]];
-    }
-    return u;
-}
-
-int query(int jobl,int jobr,int l,int r,int i){
-    if(jobl>jobr||i==0){
-        return 0;
-    }
-    if(jobl<=l&&r<=jobr){
-        return sz[i];
-    }
-    else{
-        int ans=0;
-        int mid=(l+r)>>1;
-        if(jobl<=mid){
-            ans+=query(jobl,jobr,l,mid,ls[i]);
-        }
-        if(jobr>mid){
-            ans+=query(jobl,jobr,mid+1,r,rs[i]);
-        }
-        return ans;
-    }
-}
-
-void calc(int u){
-    for(int i=head[u];i;i=nxt[i]){
+void dfs(int u){
+    dfn[u]=++dfncnt;
+    size[u]=1;
+    for(int i=head[u];i;i=Next[i]){
         int v=to[i];
-        calc(v);
-        root[u]=merge(1,len,root[v],root[u]);
+        if(dfn[v])
+            continue;
+        dfs(v);
+        size[u]+=size[v];
     }
-    ans[u]=query(val[u]+1,len,1,len,root[u]);
-}
-
-void prepare(){
-    for(int i=1;i<=n;i++){
-        sorted[i]=val[i];
-    }
-    sort(sorted+1,sorted+n+1);
-    len=1;
-    for(int i=2;i<=n;i++){
-        if(sorted[i]!=sorted[i-1]){
-            sorted[++len]=sorted[i];
-        }
-    }
-
-    for(int i=1;i<=n;i++){
-        val[i]=find(val[i]);
-        root[i]=add(val[i],1,len,root[i]);
-    }
-
-    calc(1);
 }
 
 int main()
 {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-
     cin>>n;
     for(int i=1;i<=n;i++){
-        cin>>val[i];
+        cin>>arr[i].num;
+        arr[i].id=i;
     }
     for(int i=2;i<=n;i++){
-        int fa;
-        cin>>fa;
-        addedge(fa,i);
+        int u;
+        cin>>u;
+        addedge(u,i);
     }
-
-    prepare();
-
+    dfs(1);
+    sort(arr+1,arr+n+1,cmp);//将能力从高到低排序
+    //树状数组查询自己的下级中已经有多少能力比自己强的填了上去
+    for(int i=1;i<=n;i++){
+        arr[i].sub=dfn[arr[i].id];//改为dfn排名
+        ans[arr[i].id]=sum(arr[i].sub+size[arr[i].id]-1)-sum(arr[i].sub);
+        add(arr[i].sub,1);
+    }
     for(int i=1;i<=n;i++){
         cout<<ans[i]<<endl;
     }

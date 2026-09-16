@@ -1,60 +1,56 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-long long sum[400005];
 long long mod;
+long long sum[400005];
+long long d[100005];
 
-void update(int now){
-	sum[now]=(sum[now<<1]*sum[now<<1|1])%mod;//时刻mod
+void up(int i){
+    sum[i]=(sum[i<<1]*sum[i<<1|1])%mod;
 }
-void build(int i,int l,int r)
-{
-	if(l==r)
-	{
-		sum[i]=1;//建树置1
-		return ;
-	}
-	int mid=(l+r)>>1;
-	build(i<<1,l,mid);
-	build(i<<1|1,mid+1,r);
-	update(now);
+
+void build(int l,int r,int i){
+    if(l==r){
+        sum[i]=1;
+    }else{
+        int mid=(l+r)/2;
+        build(l,mid,i<<1);
+        build(mid+1,r,i<<1|1);
+        up(i);
+    }
 }
-void change(int now,int l,int r,int lgo,int rgo,int nm)//套的区间修改模板
-{
-	if(l>=lgo&&r<=rgo)
-	{
-		sum[now]=nm;
-		return ;
-	}
-	int mid=(l+r)>>1;
-	if(lgo<=mid)
-	change(now<<1,l,mid,lgo,rgo,nm);
-	if(rgo>mid)
-	change(now<<1|1,mid+1,r,lgo,rgo,nm);
-	update(now);
+
+void update(int jobi,double jobv,int l,int r,int i){
+    if(l==r){
+        sum[i]=(long long )(sum[i]*jobv)%mod;
+    }else{
+        int mid=(l+r)/2;
+        if(jobi<=mid){
+            update(jobi,jobv,l,mid,i<<1);
+        }else{
+            update(jobi,jobv,mid+1,r,i<<1|1);
+        }
+        up(i);
+    }
 }
+
 int main()
 {
-	int t;
-	cin>>t;
-	for(int i=1;i<=t;i++)
-	{
-		int q,op,m;
-		cin>>q>>mod;
-		build(1,1,q);
-		for(int i=1;i<=q;i++)
-		{
-			cin>>op>>m;
-			if(op==1)
-			{
-				change(1,1,q,i,i,m);//可以将i离散化
-				sum[1]%=mod;
-			}
-			else
-			change(1,1,q,m,m,1);
-
-			cout<<sum[1]%mod<<endl;//输出树根
-		}
-	}
+    int t;
+    cin>>t;
+    while(t--){
+        int q,op,m;
+        cin>>q>>mod;
+        build(1,q,1);
+        for(int i=1;i<=q;i++){
+            cin>>op>>d[i];
+            if(op==1){
+                update(i,d[i],1,q,1);
+            }else{
+                update(d[d[i]],1.0/d[i],1,q,1);
+            }
+            cout<<sum[1]<<endl;
+        }
+    }
     return 0;
 }

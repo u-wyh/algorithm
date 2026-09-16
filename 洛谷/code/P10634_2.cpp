@@ -4,7 +4,6 @@ using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 25005;
 const int MAXK = 30;
-const int MOD = 998244353;
 const int BASE = 499;
 
 int n,m,k;
@@ -38,7 +37,7 @@ inline int read(){
 void build(){
     p[0]=1;
     for(int i=1;i<=m;i++){
-        p[i]=(p[i-1]*BASE)%MOD;
+        p[i]=p[i-1]*BASE;
     }
 }
 
@@ -57,9 +56,8 @@ inline void buildrank(){
 inline int gethash(){
     int val=0;
     for(int i=1;i<=k;i++){
-        val=(val+(all[i]*rk[i]%MOD))%MOD;
+        val+=all[i]*rk[i];
     }
-    val=(val%MOD+MOD)%MOD;
     return val;
 }
 
@@ -80,7 +78,7 @@ signed main()
     }
     buildrank();
     for(int i=1;i<=m;i++){
-        hasht=(hasht+(p[m-i]*rk[t[i]]%MOD))%MOD;
+        hasht+=p[m-i]*rk[t[i]];
     }
 
     for(int i=1;i<=k;i++){
@@ -88,7 +86,7 @@ signed main()
     }
     for(int i=1;i<=m;i++){
         cnt[s[i]]++;
-        all[s[i]]=(all[s[i]]+p[m-i])%MOD;
+        all[s[i]]+=p[m-i];
     }
     buildrank();
     if(gethash()==hasht){
@@ -101,10 +99,10 @@ signed main()
 
         buildrank();
         for(int j=1;j<=k;j++){
-            all[j]=(all[j]*BASE)%MOD;
+            all[j]*=BASE;
         }
-        all[s[i-m]]=(all[s[i-m]]-p[m])%MOD;
-        all[s[i]]=(all[s[i]]+p[0])%MOD;
+        all[s[i-m]]-=p[m];
+        all[s[i]]+=p[0];
 
         if(gethash()==hasht){
             ans[++anslen]=i-m+1;

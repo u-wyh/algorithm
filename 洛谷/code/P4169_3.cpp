@@ -1,61 +1,24 @@
-// 天使玩偶，C++版
-// 本题就是讲解170，题目6，讲了CDQ分治的解法，这里用kdt的解法
-// 规定(x1, y1)和(x2, y2)之间的距离 = | x1 - x2 | + | y1 - y2 |
-// 一开始先给定n个点的位置，接下来有m条操作，每种操作是如下两种类型中的一种
-// 操作 1 x y : 在(x, y)位置添加一个点
-// 操作 2 x y : 打印已经添加的所有点中，距离(x, y)最近的点有多远
-// 1 <= n、m <= 3 * 10^5
-// 0 <= x、y <= 10^6
-// 测试链接 : https://www.luogu.com.cn/problem/P4169
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 #define int long long
 const int MAXN = 6e5+5;
+const int MAXP = 21;
 const int INF = 2e18;
 
 int n,m;
 int x[MAXN];
 int y[MAXN];
+int arr[MAXN];
 
 int cntkdt;
-int root;
+// 每个组的根节点
+int root[MAXP];
 int ls[MAXN];
 int rs[MAXN];
-int sz[MAXN];
-int sum[MAXN];
 int xmin[MAXN];
 int xmax[MAXN];
 int ymin[MAXN];
 int ymax[MAXN];
-
-// 替罪羊树平衡因子
-double ALPHA = 0.7;
-// 这些信息都是为了处理不平衡时的重构操作
-// 最上方的不平衡点
-int top;
-// 不平衡点的父亲
-int topFather;
-// 这个不平衡点在他父亲的那一边
-int topSide;
-// 最顶部不平衡点用什么维度进行的划分
-int topDimension;
-// 不平衡时收集节点编号
-int arr[MAXN];
-// 遍历不平衡子树，收集到的节点数量
-int treeSiz;
-
-int ans;
-
-int init(int qx,int qy){
-    cntkdt++;
-    x[cntkdt]=qx;
-    y[cntkdt]=qy;
-    ls[cntkdt]=rs[cntkdt]=0;
-    sz[cntkdt]=1;
-    xmin[cntkdt]=xmax[cntkdt]=qx;
-    ymin[cntkdt]=ymax[cntkdt]=qy;
-    return cntkdt;
-}
 
 int compare(int i,int j,int dimension){
     int v1=dimension==0?x[i]:y[i];
@@ -71,15 +34,10 @@ struct cmp{
 };
 
 void maintain(int i){
-    sz[i]=sz[ls[i]]+sz[rs[i]]+1;
     xmin[i]=min(x[i],min(xmin[ls[i]],xmin[rs[i]]));
     xmax[i]=max(x[i],max(xmax[ls[i]],xmax[rs[i]]));
     ymin[i]=min(y[i],min(ymin[ls[i]],ymin[rs[i]]));
     ymax[i]=max(y[i],max(ymax[ls[i]],ymax[rs[i]]));
-}
-
-bool balance(int i){
-    return ALPHA*sz[i]>=max(sz[ls[i]],sz[rs[i]]);
 }
 
 // 将编号范围为l到r的点按照dimension维度排序
@@ -99,63 +57,23 @@ int build(int l,int r,int dimension){
     return rt;
 }
 
-// 收集整个不平衡子树  准备重构
-void dfs(int u){
-    if(u){
-        arr[++treeSiz]=u;
-        dfs(ls[u]);
-        dfs(rs[u]);
-    }
-}
-
-// 对不平衡的替罪羊树部分进行调整
-void rebuild(){
-    if(top!=0){
-        treeSiz=0;
-        dfs(top);
-        int newRoot=build(1,treeSiz,topDimension);
-        if(topFather==0){
-            root=newRoot;
-        }
-        else if(topSide==1){
-            ls[topFather]=newRoot;
-        }
-        else{
-            rs[topFather]=newRoot;
-        }
-    }
-}
-
-// 目前来到了u  它的父亲是fa  是fa的side儿子，维度是dimension
-int add(int insertNode,int u,int fa,int side,int dimension){
-    if(u==0){
-        return insertNode;
-    }
-    if(compare(insertNode,u,dimension)<=0){
-        ls[u]=add(insertNode,ls[u],u,1,dimension^1);
-    }
-    else{
-        rs[u]=add(insertNode,rs[u],u,2,dimension^1);
-    }
-    maintain(u);
-    if(!balance(u)){
-        top=u;
-        topFather=fa;
-        topDimension=dimension;
-        topSide=side;
-    }
-    return u;
-}
-
-// 插入一个qx qy qv的节点
 void add(int qx,int qy){
-    // 可能会导致不平衡 所以提前设置一下
-    top=topFather=topSide=topDimension=0;
-    // 初始化一个kd树节点
-    int insertnode=init(qx,qy);
-    root=add(insertnode,root,0,0,0);
-    rebuild();
+    cntkdt++;
+    x[cntkdt]=qx;
+    y[cntkdt]=qy;
+    arr[cntkdt]=cntkdt;
+    // 找到第一个根节点为空的组
+    // 因为非空的组都是满的
+    int p=0;
+    while(root[p]!=0){
+        root[p++]=0;
+    }
+    // 第一个非空的组，将会把前面所有组的值全部收集上来
+    // 实际上，他们的编号都是固定的  一定都是最后的几个
+    root[p]=build(cntkdt-(1<<p)+1,cntkdt,0);
 }
+
+int ans;
 
 int guess(int qx,int qy,int i){
     if (i == 0) {
@@ -191,6 +109,12 @@ void updateAns(int qx,int qy,int i){
     }
 }
 
+void updateAns(int qx,int qy){
+    for(int p=0;p<MAXP;p++){
+        updateAns(qx,qy,root[p]);
+    }
+}
+
 signed main()
 {
     cin>>n>>m;
@@ -208,7 +132,7 @@ signed main()
         }
         else{
             ans=INF;
-            updateAns(qx,qy,root);
+            updateAns(qx,qy);
             cout<<ans<<endl;
         }
     }

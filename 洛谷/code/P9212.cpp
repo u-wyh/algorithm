@@ -103,6 +103,9 @@ int query(int l,int r){
 
 void computesml(){
     for(int p=1;p<=limit;p++){
+        if(headq[p]==0){
+            continue;
+        }
         b=(int)sqrt(p);
         for(int i=1;i<=n;i++){
             reminder[i]=(val[i]%p);

@@ -1,28 +1,59 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <string.h>
 
-int n,m,k;
-int r[20005],c[20005],d1[40010],d2[40010];
+#define MAXN 501
+#define MAXK 20001
 
-int main()
-{
-    scanf("%d %d %d",&n,&m,&k);
-    int a[k],b[k];
-    for(int i=1;i<=k;i++){
-        scanf("%d %d",&a[i],&b[i]);
-        r[a[i]]=1;
-        c[b[i]]=1;
-        d1[a[i]+b[i]]=1;
-        d2[a[i]-b[i]+20010]=1;
+int x[MAXN], y[MAXN], n, m, k;
+int flag[MAXK], vis[MAXK], sum, ans;
+
+int main() {
+    scanf("%d %d %d", &n, &m, &k);
+    for (int i = 1; i <= k; i++) {
+        scanf("%d %d", &x[i], &y[i]);
+        vis[x[i]] = 1; // 标记有国王的行
     }
-    int ans=0;
-    for(int i=1;i<=n;i++){
-        for(int j=1;j<=m;j++){
-            if(r[i]==1)
-                break;
-            if(c[j]==1)
-                continue;
-            if(d1[i+j]==1||)
+
+    memset(flag, 0, sizeof(flag)); // 初始化flag数组
+    ans = 0;
+
+    for (int i = 1; i <= n; i++) {
+        if (vis[i]) continue; // 如果当前行有国王，则跳过
+
+        sum = m; // 初始化当前行的空闲列数为m
+
+        for (int j = 1; j <= k; j++) {
+            if (flag[y[j]] != i) sum--; // 减去当前国王控制的列
+            flag[y[j]] = i; // 标记列被当前行国王控制
+
+            if (x[j] < i) { // 当前国王在当前行上方
+                if (y[j] + i - x[j] >= 1 && y[j] + i - x[j] <= m) {
+                    // 右下方向对角线
+                    if (flag[y[j] + i - x[j]] != i) sum--;
+                    flag[y[j] + i - x[j]] = i;
+                }
+                if (y[j] - i + x[j] >= 1 && y[j] - i + x[j] <= m) {
+                    // 左下方向对角线
+                    if (flag[y[j] - i + x[j]] != i) sum--;
+                    flag[y[j] - i + x[j]] = i;
+                }
+            } else { // 当前国王在当前行下方
+                if (y[j] + (x[j] - i) >= 1 && y[j] + (x[j] - i) <= m) {
+                    // 右下方向对角线
+                    if (flag[y[j] + (x[j] - i)] != i) sum--;
+                    flag[y[j] + (x[j] - i)] = i;
+                }
+                if (y[j] - (x[j] - i) >= 1 && y[j] - (x[j] - i) <= m) {
+                    // 左下方向对角线
+                    if (flag[y[j] - (x[j] - i)] != i) sum--;
+                    flag[y[j] - (x[j] - i)] = i;
+                }
+            }
         }
+
+        ans += sum; // 累加当前行的空闲列数
     }
+
+    printf("%d\n", ans);
     return 0;
 }
