@@ -1,56 +1,62 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <stdbool.h> // 引入布尔类型支持
 
-#define MAXN 26
-#define MAXM 16
+#define MAX_N 1000
+#define MAX_M 1000
 
-int n,need[MAXN],now[MAXN];
-int m,vitamin[MAXM][MAXN],ans;
+int ans[MAX_N]; // 存储解的数组
+int a[MAX_N];   // 牛每天需要的每种维他命的最小量
+int b[MAX_M][MAX_N]; // 每种饲料包含的各种维他命的量的多少
+int c[MAX_N];  // 搜索过程中选择的饲料编号
+int n, m, minn = 100000000;
 
-void dfs(int u,int v){
-    if(v>=ans)
-        return ;
-    //结束条件  如果选的饲料种数比目前的ans还要大，那么必然不对
-    if(u>m){
-        int i;
-        for (i = 1; i <= n; i++) {
-            if (now[i] < need[i]) {
-                return ;
-            }
+// 判断是否满足维他命需求
+bool pd(int x) {
+    for (int i = 1; i <= n; i++) {
+        int sum = 0;
+        for (int j = 1; j <= x; j++) {
+            sum += b[c[j]][i];
         }
-        ans=v;
-        //如果已经u>m了  说明没有可以选择得了   那么判断目前选择的饲料能否满足题目要求
-        //如果可以  ans=v  否则退出
+        if (sum < a[i]) return false;
     }
-    dfs(u+1,v);//表示不选u这一种饲料
-    for(int i=1;i<=n;i++){
-        now[i]+=vitamin[u][i];
-    }
-    dfs(u+1,v+1);//表示选择这一种饲料
+    return true;
 }
 
-int main()
-{
-    scanf("%d",&n);
-    for(int i=1;i<=n;i++){
-        scanf("%d",&need[i]);
+// 搜索函数
+void search(int t, int s) {
+    if (t > m) {
+        if (pd(s)) {
+            if (s < minn) {
+                minn = s;
+                for (int i = 1; i <= minn; i++) {
+                    ans[i] = c[i];
+                }
+            }
+        }
+        return;
     }
-    scanf("%d",&m);
-    for(int i=1;i<=m;i++){
-        for(int j=1;j<=n;j++){
-            scanf("%d",&vitamin[i][j]);
+    c[s + 1] = t;
+    search(t + 1, s + 1);
+    c[s + 1] = 0; // 注意：在C中，数组元素未初始化时其值是不确定的，但这里显式设为0是清晰的回溯操作
+    search(t + 1, s);
+}
+
+int main() {
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++) {
+        scanf("%d", &a[i]);
+    }
+    scanf("%d", &m);
+    for (int i = 1; i <= m; i++) {
+        for (int j = 1; j <= n; j++) {
+            scanf("%d", &b[i][j]);
         }
     }
-    //我的数组下标都是从1开始的
-
-    ans=m;
-    //先把ans设置为最大的  ans=m的时候一定可以实现题目要求
-    //在dfs中进行比较ans是否有更好的答案
-    memset(now,0,sizeof(now));
-    //全部实现初始化
-    dfs(1,0);
-    //dfs(u,v)的含义是目前到了第u种饲料，已经选择了v种
-    //dfs(1,0)就是最初的状态  即：现在是第1中饲料   已经选择的是0种
-    printf("%d\n",ans);
+    search(1, 0);
+    printf("%d ", minn);
+    for (int i = 1; i <= minn; i++) {
+        printf("%d ", ans[i]);
+    }
+    printf("\n");
     return 0;
 }

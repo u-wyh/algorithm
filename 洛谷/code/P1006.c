@@ -2,42 +2,42 @@
 #include<string.h>
 #include<stdlib.h>
 
-#define maxn 60
+#define MAX_N 110
+#define MAX_M 60
 
-int a[maxn][maxn];
-int F[2 * maxn][maxn][maxn];
+int f[MAX_N][MAX_M][MAX_M];
+int a[MAX_M][MAX_M];
+
+int max(int a, int b);
 
 int main() {
-    int m, n;
-    scanf("%d %d", &m, &n);
-    for (int i = 1; i <= m; i++) {
-        for (int j = 1; j <= n; j++) {
+    int n, m;
+    scanf("%d%d", &n, &m);
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= m; j++) {
             scanf("%d", &a[i][j]);
         }
     }
-
-    // 初始化F数组为-1
-    memset(F, -1, sizeof(F));
-    // 初始化左上角点
-    F[2][1][1] = 0;
-
-    // 动态规划填充F数组
-    for (int k = 3; k < m + n; k++) {
-        for (int i = 1; i < n; i++) {
-            for (int j = i + 1; j <= n; j++) {
-                int s = F[k][i][j];
-                if (F[k - 1][i][j] > s) s = F[k - 1][i][j];
-                if (F[k - 1][i - 1][j] > s) s = F[k - 1][i - 1][j];
-                if (F[k - 1][i][j - 1] > s) s = F[k - 1][i][j - 1];
-                if (F[k - 1][i - 1][j - 1] > s) s = F[k - 1][i - 1][j - 1];
-                if (s == -1) continue; // 如果s仍然是-1，说明不能到达该点
-                F[k][i][j] = s + a[k - i][i] + a[k - j][j];
+    f[1][1][1] = a[1][1];
+    for (int p = 2; p <= n + m - 1; p++) {
+        for (int i = 1; i <= n && i <= p; i++) {
+            for (int j = 1; j <= n && j <= p; j++) {
+                if (i == 1 && j == 1) continue;
+                f[p][i][j] = 0; // 初始化f[p][i][j]为0，虽然在这个例子中可能不是必要的，因为接下来的赋值会覆盖它
+                f[p][i][j] = max(max(f[p - 1][i][j], f[p - 1][i - 1][j]), max(f[p - 1][i][j - 1], f[p - 1][i - 1][j - 1]));
+                if (i == j) {
+                    f[p][i][j] += a[i][p - i + 1];
+                } else {
+                    f[p][i][j] += a[i][p - i + 1] + a[j][p - j + 1];
+                }
             }
         }
     }
-
-    // 输出右下角的结果（假设总是可达的，实际可能需要检查）
-    printf("%d\n", F[m + n - 1][n - 1][n]);
-
+    printf("%d\n", f[n + m - 1][n][n]);
     return 0;
+}
+
+// 由于C标准库中没有max函数，我们需要自己定义它
+int max(int a, int b) {
+    return a > b ? a : b;
 }

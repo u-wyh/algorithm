@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <algorithm>
 #include <stdbool.h>
 #include <string.h>
 
@@ -66,7 +67,7 @@ int main() {
     scanf("%d", &t);
     while (t--) {
         scanf("%d%d", &l, &r);
-        int count = upper_bound(ans + 1, ans + k + 1, r) - lower_bound(ans + 1, ans + k + 1, l);
+        int count = std::upper_bound(ans + 1, ans + k + 1, r) - std::lower_bound(ans + 1, ans + k + 1, l);
         printf("%d\n", count);
     }
     return 0;

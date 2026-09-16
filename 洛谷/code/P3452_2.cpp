@@ -5,7 +5,7 @@ const int MAXM = 2e6+5;
 
 int n,m;
 int fa[MAXN];
-int size[MAXN];
+int sz[MAXN];
 int ans[MAXN];
 struct node{
     int u,v;
@@ -34,7 +34,7 @@ inline void un(int x,int y){
     int fx=find(x);
     int fy=find(y);
     if(fx!=fy){
-        size[fx]+=size[fy];
+        sz[fx]+=sz[fy];
         fa[fy]=fx;
     }
 }
@@ -48,7 +48,7 @@ int main()
     cin>>n>>m;
     for(int i=1;i<=n;i++){
         fa[i]=i;
-        size[i]=1;
+        sz[i]=1;
     }
     vector<int>vec[n+1];
     for(int i=1,u,v;i<=m;i++){
@@ -84,7 +84,7 @@ int main()
     for(int i=1;i<=n;i++){
         if(fa[i]==i){
             cnt++;
-            ans[cnt]=size[i];
+            ans[cnt]=sz[i];
         }
     }
     sort(ans+1,ans+cnt+1);

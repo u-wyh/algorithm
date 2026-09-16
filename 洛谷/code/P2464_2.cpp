@@ -16,10 +16,10 @@ int key[MAXN];
 int fa[MAXN];
 int ls[MAXN];
 int rs[MAXN];
-int size[MAXN];
+int sz[MAXN];
 
 void up(int i) {
-    size[i] = size[ls[i]] + size[rs[i]] + 1;
+    sz[i] = sz[ls[i]] + sz[rs[i]] + 1;
 }
 
 int lr(int i) {
@@ -76,12 +76,12 @@ void splay(int i, int goal) {
 int find(int rank) {
     int i = head;
     while (i != 0) {
-        if (size[ls[i]] + 1 == rank) {
+        if (sz[ls[i]] + 1 == rank) {
             return i;
-        } else if (size[ls[i]] >= rank) {
+        } else if (sz[ls[i]] >= rank) {
             i = ls[i];
         } else {
-            rank -= size[ls[i]] + 1;
+            rank -= sz[ls[i]] + 1;
             i = rs[i];
         }
     }
@@ -90,7 +90,7 @@ int find(int rank) {
 
 void add(int num) {
     key[++cnt] = num;
-    size[cnt] = 1;
+    sz[cnt] = 1;
     if (head == 0) {
         head = cnt;
     } else {
@@ -123,7 +123,7 @@ int getRank(int num) {
         if (key[i] >= num) {
             i = ls[i];
         } else {
-            ans += size[ls[i]] + 1;
+            ans += sz[ls[i]] + 1;
             i = rs[i];
         }
     }

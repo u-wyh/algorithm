@@ -1,69 +1,90 @@
-// luogu-judger-enable-o2
+// https://www.luogu.com.cn/problem/P2536
 #include<bits/stdc++.h>
 using namespace std;
-int trie[250005][4],maxnode=0,n,size[250005],mbl,ans;
-int p;
-char mb[1005],x[1005];
-bool b[250005][4],ended[2500005];
+const int MAXN = 250005;
+const int MAXV = 1005;
 
-void insert(char s[]){
-	int now=0,len=strlen(s);
-	for(int i=0;i<len;i++){
-		if(s[i]=='A')p=0;
-		if(s[i]=='C')p=1;
-		if(s[i]=='T')p=2;
-		if(s[i]=='G')p=3;
-	    size[now]++;
-		if(!trie[now][p])trie[now][p]=++maxnode;
-		now=trie[now][p];
-	}
-	size[now]++;
-	ended[now]++;
-	return;
+int en[MAXN];
+bitset<MAXV>vis[MAXN];
+
+string temp;
+int n,m;
+string s;
+
+int tree[MAXN][4];
+int cnt=0;
+int ans=0;
+
+void insert(string word){
+    //i是目标串的编号
+    int cur=0;//头结点设置为0
+    for (char ch : word){
+        int p;
+        if(ch=='A')p=0;
+		if(ch=='C')p=1;
+		if(ch=='T')p=2;
+		if(ch=='G')p=3;
+        if(tree[cur][p]==0){
+            tree[cur][p]=++cnt;
+            //没有路就要新建一条路  并赋予编号
+        }
+        cur=tree[cur][p];
+    }
+    en[cur]++;
 }
 
-void dfs(int ws,int now){
-	if(!size[now])
-        return;
-	if(ws==mbl){
-		ans+=ended[now];
-		size[now]-=ended[now];
-		ended[now]=0;
+//匹配成功就减去这个字符串
+//这是为了不使通配符可以无限循环下去
+void dfs(int now,int cur){
+    //now表示现在到了模版串的第几个字符
+    //cur表示现在到了字典树的那个节点
+    if(vis[cur][now]){
+        return ;
+    }
+    vis[cur][now]=1;
+    if(now==m){
+        //temp[m]无法到达  也是最终判断
+        ans+=en[cur];
 		return;
-	}
-	if(mb[ws]=='?'){
-		for(int i=0;i<4;i++){
-		    int son=trie[now][i];
-			if(son)
-                dfs(ws+1,son);
-		}
-	}
-	else if(mb[ws]=='*'){
-		dfs(ws+1,now);
-		for(int i=0;i<4;i++){
-            if(trie[now][i]){
-                dfs(ws+1,trie[now][i]);
-                dfs(ws,trie[now][i]);
+    }
+    if(temp[now]=='?'){
+        for(int i=0;i<4;i++){
+            if(tree[cur][i]){
+                dfs(now+1,tree[cur][i]);
             }
         }
-	}
-	else {
-		if(mb[ws]=='A')p=0;
-		if(mb[ws]=='C')p=1;
-		if(mb[ws]=='T')p=2;
-		if(mb[ws]=='G')p=3;
-		if(trie[now][p])dfs(ws+1,trie[now][p]);
-	}
-	size[now]=0;
-	for(int i=0;i<4;i++)if(trie[now][i])size[now]+=size[trie[now][i]];
+    }
+    else if(temp[now]=='*'){
+        dfs(now+1,cur);
+        for(int i=0;i<4;i++){
+            if(tree[cur][i]){
+                dfs(now+1,tree[cur][i]);
+                dfs(now,tree[cur][i]);
+            }
+        }
+    }
+    else {
+        char ch=temp[now];
+        int p;
+        if(ch=='A')p=0;
+		if(ch=='C')p=1;
+		if(ch=='T')p=2;
+		if(ch=='G')p=3;
+		if(tree[cur][p])
+            dfs(now+1,tree[cur][p]);
+    }
 }
-int main(){
-	scanf("%s%d",mb,&n);
-	mbl=strlen(mb);
-	for(int i=1;i<=n;i++){
-		scanf("%s",x);
-		insert(x);
-	}
-	dfs(0,0);
-	cout<<n-ans;
+
+int main()
+{
+    cin>>temp;
+    m=temp.length();
+    cin>>n;
+    for(int i=1;i<=n;i++){
+        cin>>s;
+        insert(s);
+    }
+    dfs(0,0);
+    cout<<(n-ans);
+    return 0;
 }

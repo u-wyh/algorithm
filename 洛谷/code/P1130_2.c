@@ -1,45 +1,44 @@
 #include <stdio.h>
 #include <limits.h> // 用于INT_MAX
+#include <string.h> // 用于memset，但在这个例子中其实不需要
 
-#define LL long long
+int n, m;
+int a[2005][2005];
+int ans = INT_MAX; // ans必须要定大，不然找不到最小值
 
-LL n, m;
-LL gay[2005][2005];
-LL dp[2005][2000];
-LL minn = LLONG_MAX; // 使用C语言中的LLONG_MAX表示最大长整型
-
-LL min(LL a, LL b) {
-    return a < b ? a : b;
-}
+int min(int a, int b);
 
 int main() {
-    scanf("%lld %lld", &n, &m);
-    for (LL i = 1; i <= m; i++) {
-        for (LL j = 1; j <= n; j++) {
-            scanf("%lld", &gay[i][j]); // 注意这里需要%lld来读取long long类型
+    scanf("%d%d", &n, &m);
+    // 注意：在C语言中，数组索引通常从0开始，所以这里直接从0开始读取
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            scanf("%d", &a[i][j]);
         }
     }
 
-    // 初始化dp数组，注意这里对于第0个人的处理需要特别小心
-    for (LL j = 1; j <= n; j++) {
-        dp[0][j-1] = LLONG_MAX; // 初始化为最大值，因为需要从其他状态转移而来
-        for (LL i = 1; i <= m; i++) {
-            dp[i][j] = LLONG_MAX; // 每个dp状态都初始化为最大值
-            // 第i个人做第j步，可以由它的第j-1个步骤的第i-1个人或者第i个人转移过来
-            if (j > 1) {
-                dp[i][j] = min(dp[i-1][j-1], dp[i][j-1]) + gay[i][j];
-            } else {
-                dp[i][j] = gay[i][j]; // 如果是第一步，则直接取当前花费
-            }
+    // 从倒数第2步开始，向第一步推进
+    // 注意这里的边界条件，因为j是从n-2开始的，所以j+1不会越界
+    for (int j = n - 2; j >= 0; j--) {
+        for (int i = 0; i < m; i++) {
+            // 取最小值，更新为之后的步骤的最小值
+            // 注意使用模运算来处理环形队列的情况
+            a[i][j] = min(a[(i + 1) % m][j + 1], a[i][j + 1]) + a[i][j];
         }
     }
 
-    // 遍历所有可能的最后一步，找到最小值
-    for (LL i = 1; i <= m; i++) {
-        minn = min(minn, dp[i][n]);
+    // 找答案
+    for (int i = 0; i < m; i++) {
+        ans = min(ans, a[i][0]);
     }
 
-    printf("%lld\n", minn);
+    // 输出答案
+    printf("%d\n", ans);
+
     return 0;
 }
 
+// 添加min函数定义，因为C标准库中没有min函数
+int min(int a, int b) {
+    return a < b ? a : b;
+}

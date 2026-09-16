@@ -13,23 +13,23 @@ int cmp(const road &a,const road &b){
     return a.t<b.t;
 }
 
-int father[Max],size[Max],stack1[Max];
+int father[Max],sz[Max],stack1[Max];
 
 void build(int n){
     for(int i=0;i<=n;i++){
         father[i]=i;
-        size[i]=1;
+        sz[i]=1;
     }
 }
 
 int find(int i){
-    int size=0;
+    int sz=0;
     while(i!=father[i]){
-        stack1[size++]=i;
+        stack1[sz++]=i;
         i=father[i];
     }
-    while(size>0){
-        father[stack1[--size]]=i;
+    while(sz>0){
+        father[stack1[--sz]]=i;
     }
     return i;
 }
@@ -38,11 +38,11 @@ void un(int x,int y){
     int fx=find(x);
     int fy=find(y);
     if(fx!=fy){
-        if(size[fx]>=size[fy]){
-            size[fx]+=size[fy];
+        if(sz[fx]>=sz[fy]){
+            sz[fx]+=sz[fy];
             father[fy]=fx;
         }else{
-            size[fy]+=size[fx];
+            sz[fy]+=sz[fx];
             father[fx]=fy;
         }
     }
@@ -56,7 +56,7 @@ bool check(int x){
         un(nums[i].x,nums[i].y);
     }
     for(int i=1;i<=n;i++){
-        if(size[i]==n)
+        if(sz[i]==n)
             return true;
     }
     return false;
@@ -73,7 +73,7 @@ int main()
     while(l<=r){
         memset(father,0,sizeof(father));
         memset(stack1,0,sizeof(stack1));
-        memset(size,0,sizeof(size));
+        memset(sz,0,sizeof(sz));
         mid=(l+r)/2;
         if(check(m)){
             ans=m;

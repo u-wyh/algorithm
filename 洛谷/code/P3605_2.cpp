@@ -9,7 +9,7 @@ struct node{
 }arr[MAXN];
 int dfncnt=0;
 int dfn[MAXN];
-int size[MAXN];
+int sz[MAXN];
 int head[MAXN];
 int Next[MAXN<<1];
 int to[MAXN<<1];
@@ -45,13 +45,13 @@ void addedge(int u,int v){
 
 void dfs(int u){
     dfn[u]=++dfncnt;
-    size[u]=1;
+    sz[u]=1;
     for(int i=head[u];i;i=Next[i]){
         int v=to[i];
         if(dfn[v])
             continue;
         dfs(v);
-        size[u]+=size[v];
+        sz[u]+=sz[v];
     }
 }
 
@@ -72,7 +72,7 @@ int main()
     //树状数组查询自己的下级中已经有多少能力比自己强的填了上去
     for(int i=1;i<=n;i++){
         arr[i].sub=dfn[arr[i].id];//改为dfn排名
-        ans[arr[i].id]=sum(arr[i].sub+size[arr[i].id]-1)-sum(arr[i].sub);
+        ans[arr[i].id]=sum(arr[i].sub+sz[arr[i].id]-1)-sum(arr[i].sub);
         add(arr[i].sub,1);
     }
     for(int i=1;i<=n;i++){
