@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1031
 #include <stdio.h>
 
 int n, a[101], mid, all, ans;

@@ -1,3 +1,4 @@
+# https://www.luogu.com.cn/problem/P6435
 def multiply(a, b, mod):
     """矩阵乘法，结果对 mod 取模"""
     n = len(a)

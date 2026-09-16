@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P10155
 #include <stdio.h>
 
 #define NN 2000004 // 定义数组大小

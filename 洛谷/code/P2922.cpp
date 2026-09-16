@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2922
 #include<bits/stdc++.h>
 using namespace std;
 struct cow{

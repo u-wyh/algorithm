@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1052
 #include<stdio.h>
 #define Max 100000005
 

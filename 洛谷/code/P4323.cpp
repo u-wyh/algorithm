@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P4323
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXM = 1300005;//这个范围内存在1e5个质数   用于欧拉筛

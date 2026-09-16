@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P5146
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h> // 引入INT_MAX和INT_MIN，但在这个例子中我们不需要它们，因为我们直接使用long long的常量

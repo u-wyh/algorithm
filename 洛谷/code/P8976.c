@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P8976
 #include <stdio.h>
 
 #define int long long

@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1540
 // P1540 [NOIP 2010 提高组] 机器翻译
 // FIFO cache simulation
 // 若单词不在内存中（未命中），查词典次数 +1，将其加入内存

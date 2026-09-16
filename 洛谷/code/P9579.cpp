@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P9579
 #include<bits/stdc++.h>
 using namespace std;
 struct node{long long a,b;}spe[500005];

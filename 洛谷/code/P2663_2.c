@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2663
 #include <stdio.h>
 #define MAX_N 107
 #define MAX_SUM 10007

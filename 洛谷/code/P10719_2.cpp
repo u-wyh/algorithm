@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P10719
 #include<iostream>
 using namespace std;
 bool a[114][514];// ¥Ê¥¢ ‰»Î

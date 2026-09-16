@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/B3874
 #include <stdio.h>
 
 #define N 300005

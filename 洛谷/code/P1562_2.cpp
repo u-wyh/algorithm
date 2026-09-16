@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1562
 #include<bits/stdc++.h>
 
 #define xianzhi ~(now|ld|rd|sta[d])

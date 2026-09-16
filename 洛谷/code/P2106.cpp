@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2106
 //P2106
 #include<bits/stdc++.h>
 using namespace std;

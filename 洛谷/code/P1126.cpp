@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1126
 #include<iostream>
 using namespace std;
 bool a[55][55];

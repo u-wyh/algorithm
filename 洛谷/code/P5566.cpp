@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P5566
 #include <bits/stdc++.h>
 int n, ans, k;
 int main()

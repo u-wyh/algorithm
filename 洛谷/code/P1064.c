@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1064
 #include<stdio.h>
 
 int max(int a,int b)

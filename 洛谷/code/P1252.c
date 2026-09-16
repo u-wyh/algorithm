@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1252
 #include <stdio.h>
 
 int minx = 2147483647, flag, ans; // 定义最小值，标志变量和最小路程

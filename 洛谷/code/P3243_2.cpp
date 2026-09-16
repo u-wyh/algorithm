@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P3243
 //这个不对 求的是字典序最小的情况
 #include<bits/stdc++.h>
 using namespace std;

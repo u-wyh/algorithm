@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P9484
 #include<bits/stdc++.h>
 int t,n,q;
 int x,y;

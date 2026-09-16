@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1910
 #include<stdio.h>
 #define N 101
 #define M 1001

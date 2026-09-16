@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P10247
 #include <bits/stdc++.h>
 
 inline bool ok(int a, int b, int c, int d) {

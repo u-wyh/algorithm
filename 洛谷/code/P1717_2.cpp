@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1717
 #include<bits/stdc++.h>
 using namespace std;
 int m,n,sum,t[1000],ans=-1,bj,b[1000],t1;

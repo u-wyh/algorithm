@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1196
 #include<stdio.h>
 #include<stdbool.h>
 #include<stdlib.h>

@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1157
 #include<stdio.h>
 
 int a[30];

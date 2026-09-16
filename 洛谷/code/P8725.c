@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P8725
 #include<stdio.h>
 
 #define mod 1000000007

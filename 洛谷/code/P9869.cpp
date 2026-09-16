@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P9869
 #include<bits/stdc++.h>
 #define afor(x,y,z) for(int x=y;x<=z;x++)
 #define bfor(x,y,z) for(int x=y;x>=z;x--)

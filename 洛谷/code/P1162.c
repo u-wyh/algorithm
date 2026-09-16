@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1162
 #include<stdio.h>
 #define Max 35
 

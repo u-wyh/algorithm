@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1665
 #include <stdio.h>
 
 int n, ans;

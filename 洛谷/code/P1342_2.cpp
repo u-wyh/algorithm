@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1342
 #include<bits/stdc++.h>
 #define ll long long
 #define Maxn 2000005

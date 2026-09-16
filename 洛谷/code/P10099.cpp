@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P10099
 #include<bits/stdc++.h>
 using namespace std;
 const int mod=1e9+7;

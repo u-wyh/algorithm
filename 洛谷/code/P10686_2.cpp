@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P10686
 #include<bits/stdc++.h>//ÍòÄÜÍ·
 using namespace std;
 const int N=5e6+10;

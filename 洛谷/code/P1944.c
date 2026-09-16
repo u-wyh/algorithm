@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1944
 #include<stdio.h>
 #include<string.h>
 #define Max 1000000

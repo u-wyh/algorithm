@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2578
 #include<bits/stdc++.h>
 
 bool hsh[100000000];

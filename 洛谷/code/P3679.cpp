@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P3679
 // P3679 [CERC2016] 二分毯 Bipartite Blanket
 // 核心结论：点集 V = S ∪ T (S⊆A, T⊆B) 能被匹配覆盖 ⇔ S 和 T 各自都能被匹配覆盖
 // 步骤：

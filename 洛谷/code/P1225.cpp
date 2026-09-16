@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1225
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1<<16;

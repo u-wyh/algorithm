@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1558
 #include <bits/stdc++.h>
 #define ll(x) ((x)<<1)
 #define rr(x) ((x)<<1|1)

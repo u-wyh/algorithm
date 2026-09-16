@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P9588
 #include<bits/stdc++.h>
 using namespace std;
 int a[200005], s[200005], n;

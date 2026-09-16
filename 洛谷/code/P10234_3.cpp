@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P10234
 #include <bits/stdc++.h>
 #define big long long
 using namespace std;

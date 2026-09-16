@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1060
 #include<stdio.h>
 #define N 25
 #define M 30000

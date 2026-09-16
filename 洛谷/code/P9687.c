@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P9687
 #include<stdio.h>
 
 int main()

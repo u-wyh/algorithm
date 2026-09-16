@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P3611
 #include <bits/stdc++.h>
 using namespace std;
 int n, m, q[1000001];

@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P3305
 #include<bits/stdc++.h>
 using namespace std;
 const double eps = 1e-6;

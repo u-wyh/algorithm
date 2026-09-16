@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2661
 //P2661
 #include<cstdio>
 #include<algorithm>//”√µΩmin

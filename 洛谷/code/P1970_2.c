@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1970
 #include <stdio.h>
 
 #define MAX_N 1000005

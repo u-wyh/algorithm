@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2868
 #include<bits/stdc++.h>
 using namespace std;
 const double sml = 1e-6;

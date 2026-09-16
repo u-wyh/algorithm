@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P10606
 #include<stdio.h>
 
 int min(int a,int b)

@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P8646
 #include <stdio.h>
 
 int read() {

@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P7228
 #include<iostream>
 #define endl '\n'
 using namespace std;

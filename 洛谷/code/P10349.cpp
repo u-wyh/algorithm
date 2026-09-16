@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P10349
 #include<iostream>
 using namespace std;
 int n,lans,rans,l[300001],r[300001];

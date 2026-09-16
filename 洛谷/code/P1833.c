@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1833
 #include<stdio.h>
 
 typedef struct time

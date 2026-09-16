@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1044
 #include<stdio.h>
 
 long long  C(int n)

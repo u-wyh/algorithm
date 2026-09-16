@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1690
 #include<bits/stdc++.h>
 using namespace std;
 long long n,t[1001][1001],m,k[1001];

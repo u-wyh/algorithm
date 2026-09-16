@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P8666
 #include<bits/stdc++.h>
 #define N 1000005
 using namespace std;

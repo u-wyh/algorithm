@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1387
 #include <stdio.h>
 
 #define min(a, b) ((a) < (b) ? (a) : (b))

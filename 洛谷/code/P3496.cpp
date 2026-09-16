@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P3496
 #include<cstdio>
 using namespace std;
 const int MAXN=200010,MAXM=1000010;//×¢Òâ±ßÊýÒª³Ë2

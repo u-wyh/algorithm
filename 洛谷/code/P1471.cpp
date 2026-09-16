@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1471
 #include <cstdio>
 using namespace std;
 

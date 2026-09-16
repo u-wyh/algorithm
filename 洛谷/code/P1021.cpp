@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1021
 #include<iostream>
 #include<cstring>//м╥нд╪Ч
 using namespace std;

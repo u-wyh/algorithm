@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2860
 // 这道题实际上是一个无向图缩点
 #include<bits/stdc++.h>
 using namespace std;

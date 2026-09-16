@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1130
 #include <stdio.h>
 #include <limits.h> // 用于INT_MAX
 #include <string.h> // 用于memset，但在这个例子中其实不需要

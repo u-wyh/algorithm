@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1250
 #include<stdio.h>
 #include<stdlib.h>
 #define MAX 30000+4

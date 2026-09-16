@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2392
 #include<stdio.h>
 
 int s[4],a[21],nowtime,maxtime,sum,ans,maxdeep;

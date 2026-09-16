@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2255
 #include <stdio.h>
 
 #define MAX_N 152  // 因为数组索引从0开始，所以定义为152以支持0到151的索引

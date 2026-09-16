@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1850
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2005; // 修改为2005，因为n最大2000

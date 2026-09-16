@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1042
 #include<stdio.h>
 
 int f[2]={11,21};

@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1747
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 25

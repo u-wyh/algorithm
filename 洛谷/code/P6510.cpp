@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P6510
 #include <bits/stdc++.h>
 using namespace std;
 const int maxn = 100005;

@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P7623
 #include <stdio.h>
 
 #define LL long long

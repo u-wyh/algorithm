@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2966
 //P2966
 //Floyd中G[i][j]实际上是一个滚动数组，真正的DP数组是G[k][i][j]，
 //其中k是阶段.G[k][i][j]表示只经过1~k这些节点，i到j的最短距离

@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1439
 #include <stdio.h>
 #include <limits.h> // “˝»ÎINT_MAX
 

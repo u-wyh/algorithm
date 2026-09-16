@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P10449
 #include<bits/stdc++.h>
 using namespace std;
 const int N=7;

@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2404
 #include <stdio.h>
 
 int n, p[11] = {1}, cnt = 1, m;

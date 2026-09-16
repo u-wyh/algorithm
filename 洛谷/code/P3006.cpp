@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P3006
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P10463
 #include<bits/stdc++.h>
 #define int long long
 #define mid ((l + r) >> 1)

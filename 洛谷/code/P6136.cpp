@@ -8,7 +8,7 @@
 // 6，查询x的后继，x的后继为，大于x的数中最小的数，不存在返回整数最大值
 // 所有操作的次数 <= 10^5
 // -10^7 <= x <= +10^7
-// 测试链接 : https://www.luogu.com.cn/problem/P3369
+// 测试链接 : https://www.luogu.com.cn/problem/P6136
 // 提交以下的code，提交时请把类名改成"Main"，可以通过所有测试用例
 #include <bits/stdc++.h>
 using namespace std;

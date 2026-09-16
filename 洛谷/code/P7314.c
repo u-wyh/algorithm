@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P7314
 #include<stdio.h>
 
 long long min(long long a,long long b)

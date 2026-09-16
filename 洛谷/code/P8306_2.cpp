@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P8306
 #include<bits/stdc++.h>
 using namespace std;
 int T,q,n,t[3000005][65],cnt[3000005],idx;

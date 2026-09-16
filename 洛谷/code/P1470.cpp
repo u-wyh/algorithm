@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1470
 //关键词报警功能
 
 #include<bits/stdc++.h>

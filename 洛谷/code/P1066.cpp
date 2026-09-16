@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1066
 #include<iostream>
 #include<cstdio>
 #define rint register int

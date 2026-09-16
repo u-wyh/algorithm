@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P4943
 #include<bits/stdc++.h>
 using namespace std;
 int n,m,p,k=0,k1,u,v,w,x,y,lsg,b[1000000],vis[1000000];

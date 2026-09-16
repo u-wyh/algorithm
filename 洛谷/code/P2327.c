@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2327
 #include <stdio.h>
 
 int i, j, k, m, n, ans = 2, a[10001], b[10001];

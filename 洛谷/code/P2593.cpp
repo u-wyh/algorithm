@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2593
 #include <stdio.h>
 #include <string.h>
 bool DPC[110][3][3];

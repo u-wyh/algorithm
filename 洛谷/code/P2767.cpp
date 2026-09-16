@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2767
 #include<bits/stdc++.h>
 using namespace std;
 const int MOD = 1e4+7;

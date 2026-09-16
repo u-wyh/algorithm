@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P3743
 #include <stdio.h>
 
 int n; // 设备数量

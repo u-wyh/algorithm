@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P7795
 #include<stdio.h>
 #include<stdbool.h>
 #define MAX 300000+5

@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P6191
 #include<bits/stdc++.h>
 using namespace std;
 int fn[100001],fg[100001],n,k;

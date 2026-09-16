@@ -1,3 +1,4 @@
+# https://www.luogu.com.cn/problem/P12364
 def exgcd(a, b):
     if b == 0:
         return (a, 1, 0)

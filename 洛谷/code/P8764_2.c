@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P8764
 #include <stdio.h>
 
 typedef long long ll;

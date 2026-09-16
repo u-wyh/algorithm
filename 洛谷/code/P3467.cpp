@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P3467
 #include<bits/stdc++.h>
 using namespace std;
 int n,sol,x,y;

@@ -1,4 +1,5 @@
-﻿#include <bits/stdc++.h>
+﻿// https://www.luogu.com.cn/problem/P1500
+#include <bits/stdc++.h>
 using namespace std;
 
 struct Person {

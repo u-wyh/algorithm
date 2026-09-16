@@ -1,3 +1,4 @@
+// https://codeforces.com/problemset/problem/843/B
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

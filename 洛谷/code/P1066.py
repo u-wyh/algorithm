@@ -1,3 +1,4 @@
+# https://www.luogu.com.cn/problem/P1066
 def main():
     
     k, w = map(int, input().split())

@@ -1,3 +1,4 @@
+# https://www.luogu.com.cn/problem/P2030
 import sys
 import bisect
 

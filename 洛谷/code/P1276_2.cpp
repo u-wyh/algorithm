@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1276
 #include<iostream>
 #include<cstring>
 #include<cstdio>

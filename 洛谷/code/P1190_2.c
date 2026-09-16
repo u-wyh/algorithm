@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1190
 #include<stdio.h>
 
 int n, m, w[10001], s[101], maxx; // 定义全局变量

@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P6086
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e6+5;

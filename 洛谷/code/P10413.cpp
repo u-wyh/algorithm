@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P10413
 #include<bits/stdc++.h>
 using namespace std;
 const int n=2023,mod=2023;

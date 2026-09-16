@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2167
 #include<bits/stdc++.h>
 using namespace std;
 const int MOD = 1000003;

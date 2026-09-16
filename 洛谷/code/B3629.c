@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/B3629
 #include<stdio.h>
 
 int check(int n){

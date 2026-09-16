@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P6649
 #include <stdio.h>
 #include <limits.h> // 用于定义INT_MAX
 

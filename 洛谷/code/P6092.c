@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P6092
 #include<stdio.h>
 #include<limits.h>
 #include<stdlib.h>

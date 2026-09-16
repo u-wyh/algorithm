@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1002
 #include<stdio.h>
 #include<math.h>
 #define Max 21

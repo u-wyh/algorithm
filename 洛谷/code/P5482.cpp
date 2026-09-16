@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P5482
 #include <bits/stdc++.h>
 using namespace std;
 const int N=1e6+10,M=1e5+10;

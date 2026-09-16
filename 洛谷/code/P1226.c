@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1226
 #include <stdio.h>
 
 long a, b, p,A,B;

@@ -1,3 +1,4 @@
+# https://www.luogu.com.cn/problem/P2100
 MOD = 10**8
 
 def multiply(a, b):

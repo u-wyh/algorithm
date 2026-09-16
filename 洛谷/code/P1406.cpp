@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1406
 #include<bits/stdc++.h>
 using namespace std;
 int n,i,a[6][6],b[30],vis[30],sum;//vis数组用于标记

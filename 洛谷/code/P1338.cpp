@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1338
 #include <bits/stdc++.h>
 using namespace std;
 long long n,m;    //某测试点要开long long才能过

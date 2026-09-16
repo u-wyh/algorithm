@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P9045
 #include <stdio.h>
 #include <stdbool.h> // 引入布尔类型支持
 

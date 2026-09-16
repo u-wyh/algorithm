@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P10447
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN=25,MAXM=(1<<20),inf=0x3f;//定义变量，inf为无限

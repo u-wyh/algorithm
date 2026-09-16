@@ -1,3 +1,4 @@
+# https://www.luogu.com.cn/problem/P2290
 def main():
     n = int(input().strip())
     degs = list(map(int, input().split()))

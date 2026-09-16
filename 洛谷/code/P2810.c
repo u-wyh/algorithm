@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2810
 #include<stdio.h>
 
 long long check(long long x){

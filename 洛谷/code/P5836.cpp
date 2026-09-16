@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P5836
 #include<bits/stdc++.h>
 using namespace std;
 int fa[100010],ans[100010],M,N;

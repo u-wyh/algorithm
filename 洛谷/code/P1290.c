@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1290
 #include <stdio.h>
 
 int m, n, q;

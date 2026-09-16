@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1341
 //P1341
 //ÎÞÏòÍ¼+ÅÐ¶¨
 #include<bits/stdc++.h>

@@ -1,3 +1,4 @@
+# https://www.luogu.com.cn/problem/P1625
 import math
 
 n, m = map(int, input().split())

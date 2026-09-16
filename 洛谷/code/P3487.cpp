@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P3487
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXK = 1e6+5;

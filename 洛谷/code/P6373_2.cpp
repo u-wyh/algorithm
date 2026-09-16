@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P6373
 #include <iostream>
 #include <cstdio>
 #define ll long long

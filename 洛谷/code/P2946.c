@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2946
 #include<stdio.h>
 #define p 10000000
 

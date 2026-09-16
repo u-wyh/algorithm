@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P7818
 //P7818
 // 前置知识：树状数组  
 #include<bits/stdc++.h>

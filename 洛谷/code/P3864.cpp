@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P3864
 #include<bits/stdc++.h>
 using namespace std;
 vector<string> Dict; //用Dict存放所有字典中的名字

@@ -1,3 +1,4 @@
+# https://www.luogu.com.cn/problem/P9752
 def main():
     n = int(input().strip())
     states = []

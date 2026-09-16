@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P6225
 #include<iostream>
 #include<cstdio>
 #include<algorithm>

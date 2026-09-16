@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1024
 #include<stdio.h>
 
 double a, b, c, d;

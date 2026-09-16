@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P8784
 #include <stdio.h>
 #define N  10000005
 const int MOD = 1000000007;

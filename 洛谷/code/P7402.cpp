@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P7402
 #include<iostream>
 #include<cmath>
 #define int long long//¼ÇµÃ¿ªlong long

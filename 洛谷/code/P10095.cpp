@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P10095
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;

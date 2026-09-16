@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1300
 //P1300
 #include<bits/stdc++.h>
 using namespace std;

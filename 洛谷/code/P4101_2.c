@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P4101
 #include<stdio.h>
 
 int T;

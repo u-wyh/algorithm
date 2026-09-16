@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/B3930
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h> // 为了使用INT_MAX

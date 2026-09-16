@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P4673
 #include <bits/stdc++.h>
 #define MAXN 500010
 using namespace std;

@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1931
 #include <bits/stdc++.h>
 using namespace std;
 int const N=35;

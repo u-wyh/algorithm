@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P8673
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 1e3 + 5;

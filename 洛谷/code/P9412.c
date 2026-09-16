@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P9412
 #include <stdio.h>
 
 int n, a[15];

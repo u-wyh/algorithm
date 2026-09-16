@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2285
 #include <bits/stdc++.h>
 using namespace std;
 const int M = 1e4+5;

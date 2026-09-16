@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P9048
 #include <stdio.h>
 
 char s[800010];

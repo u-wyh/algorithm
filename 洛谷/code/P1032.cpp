@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1032
 //P1032 ×Ö´®±ä»»
 #include <bits/stdc++.h>
 using namespace std;

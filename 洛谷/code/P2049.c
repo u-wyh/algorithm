@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P2049
 #include<stdio.h>
 #define Max 105
 

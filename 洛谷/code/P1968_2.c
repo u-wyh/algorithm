@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1968
 #include <stdio.h>
 
 // 自定义max函数，因为C标准库中没有

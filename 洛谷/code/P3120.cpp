@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P3120
 #include <bits/stdc++.h>
 #define MOD 1000000007
 static char buf[1000000],*paa=buf,*pd=buf;

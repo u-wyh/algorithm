@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/B3666
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P3052
 #include<bits/stdc++.h>
 using namespace std;
 int n,m,c[19],tot,ans=1e9,b[19];

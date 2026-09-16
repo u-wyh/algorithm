@@ -7,7 +7,7 @@
 // 0 <= m、q <= 5 * 10^5
 // 1 <= 点权、边权 <= 10^9
 // 本题要求强制在线，具体规定请打开测试链接查看
-// 测试链接 : https://www.luogu.com.cn/problem/P7834
+// 测试链接 : https://www.luogu.com.cn/problem/P4197
 // 如下实现是C++的版本，C++版本和java版本逻辑完全一样
 // 提交如下代码，可以通过所有测试用例
 #include <bits/stdc++.h>

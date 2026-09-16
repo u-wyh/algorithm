@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P10098
 #include<stdio.h>
 
 typedef struct

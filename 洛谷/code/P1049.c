@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1049
 #include<stdio.h>
 #include<limits.h>
 #define Max1 31

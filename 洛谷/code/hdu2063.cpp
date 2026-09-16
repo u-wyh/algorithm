@@ -1,3 +1,4 @@
+// https://acm.hdu.edu.cn/showproblem.php?pid=2063
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

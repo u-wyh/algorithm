@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P7822
 #include <stdio.h>
 
 #define MODNUM 1000000007

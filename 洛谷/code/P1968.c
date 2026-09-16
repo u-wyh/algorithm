@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1968
 #include<stdio.h>
 
 double max(double a,double b)

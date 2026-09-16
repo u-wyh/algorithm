@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P3205
 #include <stdio.h>
 
 #define MOD 19650827

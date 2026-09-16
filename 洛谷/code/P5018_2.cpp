@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P5018
 #include<cstdio>
 #include<iostream>
 #define N 1000005
