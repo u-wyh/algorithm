@@ -1,0 +1,28 @@
+# 编译与调试产物
+*.exe
+*.o
+*.obj
+*.out
+*.dll
+*.pdb
+*.ilk
+*.class
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 本地构建与编辑器配置
+build/
+cmake-build-*/
+Debug/
+Release/
+.vscode/
+.idea/
+.claude/settings.local.json
+
+# 临时与运行生成文件
+*.bak
+*.tmp
+*~
+洛谷/练习赛/network/received_files/
