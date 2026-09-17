@@ -303,7 +303,9 @@ def main() -> None:
         "",
         f"当前收录 **{len(all_problem_ids)}** 道题，覆盖 **{len(groups)}** 个现有目录知识点。",
         "",
-        "第一版仅依据 `templates` 现有目录与文件中的明确题号、原题链接建立对应关系。目录表示本仓库的学习归类；同一题可以属于多个目录。题目按编号排列，不代表难度。",
+        "需要查找整个 `洛谷/code` 归档中的练习，可转到[全量算法练习清单](全量算法练习清单.md)。本页保留由 `templates` 目录直接支持的专题学习路线。",
+        "",
+        "本题单主要依据 [`templates` 算法知识地图](../templates/README.md)中的现有分类，以及文件中的明确题号和原题链接整理。目录表示这份代码在本仓库中的学习归属；一道题可能有多种做法，也可以出现在多个知识点下。题目按编号排列，不代表难度。",
         "",
         "## 使用方式",
         "",
@@ -316,17 +318,22 @@ def main() -> None:
         "",
     ]
     top_names = {"模板": "历史模板区"}
-    for top in sorted({key[0] for key in groups}):
+    tops = sorted({key[0] for key in groups})
+    for top_index, top in enumerate(tops, 1):
         title = top_names.get(top, re.sub(r"^\d\d_", "", top))
-        lines.append(f"- [{title}](#{title})")
+        lines.append(f"- [{title}](#section-{top_index:02d})")
+        topics = sorted((key[1] for key in groups if key[0] == top))
+        for topic_index, topic in enumerate(topics, 1):
+            lines.append(f"  - [{topic}（{len(groups[(top, topic)])} 题）](#study-{top_index:02d}-{topic_index:02d})")
     lines.append("")
-    for top in sorted({key[0] for key in groups}):
+    for top_index, top in enumerate(tops, 1):
         title = top_names.get(top, re.sub(r"^\d\d_", "", top))
-        lines.extend([f"## {title}", ""])
-        for _, topic in sorted((key for key in groups if key[0] == top), key=lambda x: x[1]):
+        lines.extend([f'<a id="section-{top_index:02d}"></a>', f"## {title}", ""])
+        topics = sorted((key[1] for key in groups if key[0] == top))
+        for topic_index, topic in enumerate(topics, 1):
             entries = groups[(top, topic)]
             topic_sizes[f"{title} / {topic}"] = len(entries)
-            lines.extend([f"### {topic}", ""])
+            lines.extend([f'<a id="study-{top_index:02d}-{topic_index:02d}"></a>', f"### {topic}", ""])
             if top == "04_数据结构" and topic == "左偏树":
                 lines.extend(["建议先读基础模板与 P3377、P1456，再看 P1552、P4971、P3261、P3273、P4331，最后读可持久化模板、P2409 与 P2483；详见本目录 README。", ""])
             lines.extend(["| 题号 | 原题 | templates 代码 | 洛谷/code |", "| --- | --- | --- | --- |"])

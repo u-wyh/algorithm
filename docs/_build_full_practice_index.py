@@ -312,6 +312,13 @@ def main() -> None:
             "notes": sorted(set(item["notes"])),
         })
 
+    topic_groups = {}
+    for category in CATEGORIES:
+        by_knowledge = collections.defaultdict(list)
+        for entry in grouped[category]:
+            by_knowledge[entry["knowledge"]].append(entry)
+        topic_groups[category] = sorted(by_knowledge.items(), key=lambda pair: (-len(pair[1]), pair[0]))
+
     lines = [
         "# 全量算法练习清单", "",
         f"按当前仓库生成，覆盖 `洛谷/code` 的 **{len(archive_paths)} 份练习代码**，连同 `templates` 中已能确认题号的练习实现，共 **{len(records)} 个题目或待核实文件组**。同题多语言、多版本合并在一行。",
@@ -321,20 +328,26 @@ def main() -> None:
         "已有较细的 `templates` 学习路线和一题多知识点关系，仍见[专题题单](算法学习题单.md)。此表为便于查找，给每题选一个主要归类；其余官方标签照列，不表示算法唯一。没有稳定 OJ 编号的比赛训练文件另见[练习赛代码索引](练习赛代码索引.md)，按场次归档。", "",
         "## 分类导航", "",
     ]
-    for category in CATEGORIES:
+    for category_index, category in enumerate(CATEGORIES, 1):
         if grouped[category]:
-            lines.append(f"- [{category}](#{category})：{len(grouped[category])} 项")
-    lines.extend(["", "## 分类列表", ""])
-    for category in CATEGORIES:
+            lines.append(f"- [{category}](#category-{category_index:02d})：{len(grouped[category])} 项")
+    lines.extend(["", "## 知识点目录", "", "展开大类后可直接跳到对应的知识点题目表。", ""])
+    for category_index, category in enumerate(CATEGORIES, 1):
+        if not grouped[category]:
+            continue
+        lines.extend(["<details>", f"<summary>{category}（{len(grouped[category])} 项，{len(topic_groups[category])} 个知识点）</summary>", "", f"- [查看全部{category}题目](#category-{category_index:02d})"])
+        for topic_index, (knowledge, subset) in enumerate(topic_groups[category], 1):
+            lines.append(f"- [{knowledge}（{len(subset)}）](#topic-{category_index:02d}-{topic_index:03d})")
+        lines.extend(["", "</details>", ""])
+    lines.extend(["## 分类列表", ""])
+    for category_index, category in enumerate(CATEGORIES, 1):
         entries = grouped[category]
         if not entries:
             continue
-        lines.extend([f"### {category}", ""])
-        by_knowledge = collections.defaultdict(list)
-        for entry in entries:
-            by_knowledge[entry["knowledge"]].append(entry)
-        for knowledge, subset in sorted(by_knowledge.items(), key=lambda pair: (-len(pair[1]), pair[0])):
+        lines.extend([f'<a id="category-{category_index:02d}"></a>', f"### {category}", ""])
+        for topic_index, (knowledge, subset) in enumerate(topic_groups[category], 1):
             lines.extend([
+                f'<a id="topic-{category_index:02d}-{topic_index:03d}"></a>',
                 f"#### {knowledge}（{len(subset)}）", "",
                 "| 题号 / 文件 | 官方题目标签 | 练习代码 | templates 代码 | 归类依据 | 备注 |",
                 "| --- | --- | --- | --- | --- | --- |",
