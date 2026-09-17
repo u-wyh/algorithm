@@ -1,0 +1,10 @@
+# 线段树分治
+
+本目录有 14 份直接保存的代码。从下方入口按现有文件名查找；题目与算法的学习关系见[算法学习题单](../../../docs/算法学习题单.md)。
+
+## OJ 编号文件
+
+- [AT_ABC308G.cpp](<AT_ABC308G.cpp>)、[CF1681F.cpp](<CF1681F.cpp>)、[CF576E.cpp](<CF576E.cpp>)、[CF601E.cpp](<CF601E.cpp>)、[CF938G.cpp](<CF938G.cpp>)、[CF981E.cpp](<CF981E.cpp>)、[LOJ121.cpp](<LOJ121.cpp>)、[LOJ6515.cpp](<LOJ6515.cpp>)
+- [P3733.cpp](<P3733.cpp>)、[P4219.cpp](<P4219.cpp>)、[P4585.cpp](<P4585.cpp>)、[P5227.cpp](<P5227.cpp>)、[P5631.cpp](<P5631.cpp>)、[P5787.cpp](<P5787.cpp>)
+
+返回[上级导航](../README.md)；查看[全量练习清单](../../../docs/全量算法练习清单.md)。
