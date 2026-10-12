@@ -1,0 +1,579 @@
+当前文件	改名前文件
+templates/01_图论/kruskal重构树/AT_AGC002D.cpp	templates/01_图论/kruskal重构树/kruskal重构树——到达z个不同点.cpp
+templates/01_图论/kruskal重构树/CF1416D.cpp	templates/01_图论/kruskal重构树/kruskal重构树——线段树.cpp
+templates/01_图论/kruskal重构树/CF1706E.cpp	templates/01_图论/kruskal重构树/kruskal重构树——dfn序st表.cpp
+templates/01_图论/kruskal重构树/P2245.cpp	templates/01_图论/kruskal重构树/kruskal重构树——模板.cpp
+templates/01_图论/kruskal重构树/P3665.cpp	templates/01_图论/kruskal重构树/kruskal重构树——最小生成树.cpp
+templates/01_图论/kruskal重构树/P4768.cpp	templates/01_图论/kruskal重构树/kruskal重构树——结合dijkstra.cpp
+templates/01_图论/kruskal重构树/P7834.cpp	templates/01_图论/kruskal重构树/kruskal重构树——可持久化线段树.cpp
+templates/01_图论/kruskal重构树/P9638.cpp	templates/01_图论/kruskal重构树/kruskal重构树——最大树.cpp
+templates/01_图论/tarjan/P10875.cpp	templates/01_图论/tarjan/tarjan——并查集.cpp
+templates/01_图论/tarjan/P10953.cpp	templates/01_图论/tarjan/tarjan——边双缩点.cpp
+templates/01_图论/tarjan/P1656.cpp	templates/01_图论/tarjan/tarjan——桥模板.cpp
+templates/01_图论/tarjan/P2746.cpp	templates/01_图论/tarjan/tarjan——缩点.cpp
+templates/01_图论/tarjan/P3379.cpp	templates/01_图论/tarjan/tarjan——LCA模板.cpp
+templates/01_图论/tarjan/P3388.cpp	templates/01_图论/tarjan/tarjan——割点模板.cpp
+templates/01_图论/tarjan/P4320.cpp	templates/01_图论/tarjan/圆方树——模板.cpp
+templates/01_图论/tarjan/P5025.cpp	templates/01_图论/tarjan/tarjan——线段树优化建边.cpp
+templates/01_图论/tarjan/P7103.cpp	templates/01_图论/tarjan/tarjan——LCA应用.cpp
+templates/01_图论/tarjan/P8435.cpp	templates/01_图论/tarjan/tarjan——点双连通分量.cpp
+templates/01_图论/tarjan/P8436.cpp	templates/01_图论/tarjan/tarjan——边双连通分量.cpp
+templates/01_图论/tarjan/强连通分量/B3609.cpp	templates/01_图论/tarjan/强连通分量/强连通分量——模板.cpp
+templates/01_图论/tarjan/强连通分量/P2341.cpp	templates/01_图论/tarjan/强连通分量/强连通分量——出入度.cpp
+templates/01_图论/tarjan/强连通分量/P3387.cpp	templates/01_图论/tarjan/强连通分量/强连通分量——动态规划.cpp
+templates/01_图论/tarjan/点双/P3388.cpp	templates/01_图论/tarjan/点双/割点——模板.cpp
+templates/01_图论/tarjan/点双/P4320.cpp	templates/01_图论/tarjan/点双/圆方树——模板.cpp
+templates/01_图论/tarjan/点双/P4334.cpp	templates/01_图论/tarjan/点双/圆方树——重链剖分.cpp
+templates/01_图论/tarjan/点双/P4606.cpp	templates/01_图论/tarjan/点双/圆方树——虚树.cpp
+templates/01_图论/tarjan/点双/P5058.cpp	templates/01_图论/tarjan/点双/割点——应用.cpp
+templates/01_图论/tarjan/点双/P8435.cpp	templates/01_图论/tarjan/点双/点双——模板.cpp
+templates/01_图论/tarjan/点双/SPOJ_KNIGHTS.cpp	templates/01_图论/tarjan/点双/点双——圆桌.cpp
+templates/01_图论/tarjan/边双/CF118E.cpp	templates/01_图论/tarjan/边双/割边——应用.cpp
+templates/01_图论/tarjan/边双/CF555E.cpp	templates/01_图论/tarjan/边双/边双——边差分.cpp
+templates/01_图论/tarjan/边双/CF652E.cpp	templates/01_图论/tarjan/边双/边双——trail.cpp
+templates/01_图论/tarjan/边双/P5234.cpp	templates/01_图论/tarjan/边双/边双——树的直径.cpp
+templates/01_图论/tarjan/边双/P8436.cpp	templates/01_图论/tarjan/边双/边双——模板.cpp
+templates/01_图论/tarjan/边双/U582665.cpp	templates/01_图论/tarjan/边双/割边——模板.cpp
+templates/01_图论/twosat/CF1215F.cpp	templates/01_图论/twosat/twosat——前缀优化建图.cpp
+templates/01_图论/twosat/HDU3062.cpp	templates/01_图论/twosat/twosat——模板.cpp
+templates/01_图论/twosat/P5782.cpp	templates/01_图论/twosat/twosat——输出方案模板.cpp
+templates/01_图论/twosat/P5782_2.cpp	templates/01_图论/twosat/twosat——输出方案模板2.cpp
+templates/01_图论/twosat/P6378.cpp	templates/01_图论/twosat/twosat——经典.cpp
+templates/01_图论/twosat/POJ3683.cpp	templates/01_图论/twosat/twosat——输出方案.cpp
+templates/01_图论/二分图/P3386.cpp	templates/01_图论/二分图/二分图——HK算法.cpp
+templates/01_图论/二分图/P3386_2.cpp	templates/01_图论/二分图/二分图——匈牙利算法.cpp
+templates/01_图论/图论/AT_ARC084B.cpp	templates/01_图论/图论/同余最短路——01bfs.cpp
+templates/01_图论/图论/CF786B.cpp	templates/01_图论/图论/线段树优化建图——模板.cpp
+templates/01_图论/图论/HDU1560.cpp	templates/01_图论/图论/图论——IDA星模板.cpp
+templates/01_图论/图论/HDU1667.cpp	templates/01_图论/图论/图论——IDA星（进阶）.cpp
+templates/01_图论/图论/P10193.cpp	templates/01_图论/图论/DJ算法——多源最短路.cpp
+templates/01_图论/图论/P1119.cpp	templates/01_图论/图论/floyd算法——更新点.cpp
+templates/01_图论/图论/P1127.cpp	templates/01_图论/图论/欧拉图——应用.cpp
+templates/01_图论/图论/P1491.cpp	templates/01_图论/图论/DJ算法——次短路问题.cpp
+templates/01_图论/图论/P2149.cpp	templates/01_图论/图论/拓扑排序——求最长公共路径.cpp
+templates/01_图论/图论/P2371.cpp	templates/01_图论/图论/同余最短路——DJ算法.cpp
+templates/01_图论/图论/P2371_2.cpp	templates/01_图论/图论/同余最短路——二次转圈法.cpp
+templates/01_图论/图论/P2474.cpp	templates/01_图论/图论/差分约束——结合floyd.cpp
+templates/01_图论/图论/P2534.cpp	templates/01_图论/图论/图论——IDA星应用.cpp
+templates/01_图论/图论/P2662.cpp	templates/01_图论/图论/同余最短路——DJ算法2.cpp
+templates/01_图论/图论/P2731.cpp	templates/01_图论/图论/欧拉图——欧拉路径模板（无向图）.cpp
+templates/01_图论/图论/P2865.cpp	templates/01_图论/图论/图论——spfa模板.cpp
+templates/01_图论/图论/P2901.cpp	templates/01_图论/图论/图论——A星（k短路）模板.cpp
+templates/01_图论/图论/P2910.cpp	templates/01_图论/图论/floyd算法——模板.cpp
+templates/01_图论/图论/P2966.cpp	templates/01_图论/图论/floyd算法——本质应用.cpp
+templates/01_图论/图论/P3065.cpp	templates/01_图论/图论/拓扑排序——结合前缀树.cpp
+templates/01_图论/图论/P3385.cpp	templates/01_图论/图论/图论——bellman(SPFA).cpp
+templates/01_图论/图论/P3403.cpp	templates/01_图论/图论/同余最短路——模板.cpp
+templates/01_图论/图论/P3588.cpp	templates/01_图论/图论/线段树优化建图——虚点.cpp
+templates/01_图论/图论/P3831.cpp	templates/01_图论/图论/分层最短路.cpp
+templates/01_图论/图论/P4568.cpp	templates/01_图论/图论/DJ算法——分层最短路模板.cpp
+templates/01_图论/图论/P4779.cpp	templates/01_图论/图论/DJ算法——最短路模版.cpp
+templates/01_图论/图论/P4822.cpp	templates/01_图论/图论/分层最短路——层际连边.cpp
+templates/01_图论/图论/P4878.cpp	templates/01_图论/图论/差分约束——两种形式综合.cpp
+templates/01_图论/图论/P4926.cpp	templates/01_图论/图论/差分约束——限制性超级源点.cpp
+templates/01_图论/图论/P5905.cpp	templates/01_图论/图论/johnson——模板.cpp
+templates/01_图论/图论/P5960.cpp	templates/01_图论/图论/差分约束——模板形式一.cpp
+templates/01_图论/图论/P5960_2.cpp	templates/01_图论/图论/差分约束——模板形式二.cpp
+templates/01_图论/图论/P6419.cpp	templates/01_图论/图论/树上换根——最短路.cpp
+templates/01_图论/图论/P6464.cpp	templates/01_图论/图论/floyd算法——修改边权.cpp
+templates/01_图论/图论/P7297.cpp	templates/01_图论/图论/分层最短路——01bfs.cpp
+templates/01_图论/图论/P7771.cpp	templates/01_图论/图论/欧拉图——欧拉路径模板.cpp
+templates/01_图论/图论/P9140.cpp	templates/01_图论/图论/同余最短路——二次转圈结合背包.cpp
+templates/01_图论/欧拉回路/P2731.cpp	templates/01_图论/欧拉回路/欧拉路径——无向图.cpp
+templates/01_图论/欧拉回路/P7771.cpp	templates/01_图论/欧拉回路/temp.cpp
+templates/01_图论/欧拉回路/P7771_2.cpp	templates/01_图论/欧拉回路/欧拉路径——有向图.cpp
+templates/01_图论/网络流/LOJ115.cpp	templates/01_图论/网络流/上下界网络流——无源汇可行流.cpp
+templates/01_图论/网络流/P1344.cpp	templates/01_图论/网络流/最小割——割边最少.cpp
+templates/01_图论/网络流/P1345.cpp	templates/01_图论/网络流/最小割——拆点最大流.cpp
+templates/01_图论/网络流/P2045.cpp	templates/01_图论/网络流/最小费用最大流——spfa.cpp
+templates/01_图论/网络流/P3376.cpp	templates/01_图论/网络流/最大流——Dinic.cpp
+templates/01_图论/网络流/P3376_2.cpp	templates/01_图论/网络流/最大流——Edmonds–Karp.cpp
+templates/01_图论/网络流/P3381.cpp	templates/01_图论/网络流/最小费用最大流——dijkstra.cpp
+templates/01_图论/网络流/P4452.cpp	templates/01_图论/网络流/最小费用最大流——拆点.cpp
+templates/02_树上问题/优化求LCA/P3379.cpp	templates/02_树上问题/优化求LCA/优化LCA——dfn序.cpp
+templates/02_树上问题/优化求LCA/P3379_2.cpp	templates/02_树上问题/优化求LCA/优化LCA——欧拉序.cpp
+templates/02_树上问题/倍增st表/P1890.cpp	templates/02_树上问题/倍增st表/倍增和st表——最大公约数.cpp
+templates/02_树上问题/倍增st表/P2880.cpp	templates/02_树上问题/倍增st表/倍增和st表——查询最值.cpp
+templates/02_树上问题/倍增st表/P3295.cpp	templates/02_树上问题/倍增st表/倍增和st表——并查集.cpp
+templates/02_树上问题/倍增st表/P4155.cpp	templates/02_树上问题/倍增st表/倍增和st表——模板.cpp
+templates/02_树上问题/倍增st表/P9019.cpp	templates/02_树上问题/倍增st表/倍增和st表——前缀差分.cpp
+templates/02_树上问题/树上启发式合并/CF208E.cpp	templates/02_树上问题/树上启发式合并/树上启发式合并——倍增st表.cpp
+templates/02_树上问题/树上启发式合并/CF246E.cpp	templates/02_树上问题/树上启发式合并/树上启发式合并——向下k层.cpp
+templates/02_树上问题/树上启发式合并/CF600E.cpp	templates/02_树上问题/树上启发式合并/树上启发式合并——统计最大次数.cpp
+templates/02_树上问题/树上启发式合并/CF741D.cpp	templates/02_树上问题/树上启发式合并/树上启发式合并——回文转异或.cpp
+templates/02_树上问题/树上启发式合并/P3302.cpp	templates/02_树上问题/树上启发式合并/树上启发式合并——结合主席树.cpp
+templates/02_树上问题/树上启发式合并/P9233.cpp	templates/02_树上问题/树上启发式合并/树上启发式合并——出现次数信息.cpp
+templates/02_树上问题/树上启发式合并/U41492.cpp	templates/02_树上问题/树上启发式合并/树上启发式合并——模板.cpp
+templates/02_树上问题/树上问题/CF1187E.cpp	templates/02_树上问题/树上问题/树上换根——换根2.cpp
+templates/02_树上问题/树上问题/CF1406C.cpp	templates/02_树上问题/树上问题/树上问题——唯一重心.cpp
+templates/02_树上问题/树上问题/CF219D.cpp	templates/02_树上问题/树上问题/树上换根——换根3.cpp
+templates/02_树上问题/树上问题/CF708C.cpp	templates/02_树上问题/树上问题/树上问题——重心1.cpp
+templates/02_树上问题/树上问题/NC_78807_G.cpp	templates/02_树上问题/树上问题/树上倍增——回文.cpp
+templates/02_树上问题/树上问题/P1967.cpp	templates/02_树上问题/树上问题/树上倍增——卡车.cpp
+templates/02_树上问题/树上问题/P2195.cpp	templates/02_树上问题/树上问题/树的直径——并查集.cpp
+templates/02_树上问题/树上问题/P2491.cpp	templates/02_树上问题/树上问题/树的直径——区间.cpp
+templates/02_树上问题/树上问题/P2680.cpp	templates/02_树上问题/树上问题/树上差分——边差分模板.cpp
+templates/02_树上问题/树上问题/P2986.cpp	templates/02_树上问题/树上问题/树上问题——边权点权求重心.cpp
+templates/02_树上问题/树上问题/P3047.cpp	templates/02_树上问题/树上问题/树上换根——距离为k点权和.cpp
+templates/02_树上问题/树上问题/P3128.cpp	templates/02_树上问题/树上问题/树上差分——点差分模版.cpp
+templates/02_树上问题/树上问题/P3258.cpp	templates/02_树上问题/树上问题/树上差分——tarjan求lca.cpp
+templates/02_树上问题/树上问题/P3304.cpp	templates/02_树上问题/树上问题/树的直径——直径公共部分.cpp
+templates/02_树上问题/树上问题/P3366.cpp	templates/02_树上问题/树上问题/生成树——prim算法优化.cpp
+templates/02_树上问题/树上问题/P3366_2.cpp	templates/02_树上问题/树上问题/生成树——最小生成树k算法.cpp
+templates/02_树上问题/树上问题/P3366_3.cpp	templates/02_树上问题/树上问题/生成树——最小生成树p算法.cpp
+templates/02_树上问题/树上问题/P3478.cpp	templates/02_树上问题/树上问题/树上换根——换根.cpp
+templates/02_树上问题/树上问题/P3629.cpp	templates/02_树上问题/树上问题/树的直径——加边.cpp
+templates/02_树上问题/树上问题/P4716.cpp	templates/02_树上问题/树上问题/最小树形图——朱刘算法.cpp
+templates/02_树上问题/树上问题/P6086.cpp	templates/02_树上问题/树上问题/prufer序——堆模板.cpp
+templates/02_树上问题/树上问题/P6086_2.cpp	templates/02_树上问题/树上问题/prufer序——线性模板.cpp
+templates/02_树上问题/树上问题/P9648.cpp	templates/02_树上问题/树上问题/树上差分——变形应用.cpp
+templates/02_树上问题/树上问题/POJ1655.cpp	templates/02_树上问题/树上问题/树上问题——重心.cpp
+templates/02_树上问题/树上问题/POJ3107.cpp	templates/02_树上问题/树上问题/树上问题——重心2.cpp
+templates/02_树上问题/树上问题/POJ3417.cpp	templates/02_树上问题/树上问题/树上差分——边差分.cpp
+templates/02_树上问题/树上问题/POJ3585.cpp	templates/02_树上问题/树上问题/树上换根——边权.cpp
+templates/02_树上问题/树上问题/U81904.cpp	templates/02_树上问题/树上问题/树的直径——两次dfs.cpp
+templates/02_树上问题/树基础与LCA/P2982.cpp	templates/02_树上问题/树基础与LCA/dfn序——综合应用.cpp
+templates/02_树上问题/树基础与LCA/P5021.cpp	templates/02_树上问题/树基础与LCA/二分法——结合树上问题.cpp
+templates/02_树上问题/树链剖分/CF1009F.cpp	templates/02_树上问题/树链剖分/长链剖分——动态规划.cpp
+templates/02_树上问题/树链剖分/P1505.cpp	templates/02_树上问题/树链剖分/树链剖分——边权模板.cpp
+templates/02_树上问题/树链剖分/P2146.cpp	templates/02_树上问题/树链剖分/树链剖分——懒更新.cpp
+templates/02_树上问题/树链剖分/P2486.cpp	templates/02_树上问题/树链剖分/树链剖分——路径拼接.cpp
+templates/02_树上问题/树链剖分/P2590.cpp	templates/02_树上问题/树链剖分/树链剖分——路径查询.cpp
+templates/02_树上问题/树链剖分/P3038.cpp	templates/02_树上问题/树链剖分/树链剖分——边权化点权.cpp
+templates/02_树上问题/树链剖分/P3379.cpp	templates/02_树上问题/树链剖分/树链剖分——LCA.cpp
+templates/02_树上问题/树链剖分/P3384.cpp	templates/02_树上问题/树链剖分/树链剖分——模板.cpp
+templates/02_树上问题/树链剖分/P3976.cpp	templates/02_树上问题/树链剖分/树链剖分——路径组合.cpp
+templates/02_树上问题/树链剖分/P3979.cpp	templates/02_树上问题/树链剖分/树链剖分——变换根.cpp
+templates/02_树上问题/树链剖分/P4315.cpp	templates/02_树上问题/树链剖分/树链剖分——存在优先级的线段树.cpp
+templates/02_树上问题/树链剖分/P5903.cpp	templates/02_树上问题/树链剖分/长链剖分——模板.cpp
+templates/02_树上问题/树链剖分/P5904.cpp	templates/02_树上问题/树链剖分/长链剖分——动态规划优化.cpp
+templates/02_树上问题/点分治/CF150E.cpp	templates/02_树上问题/点分治/点分治——二分.cpp
+templates/02_树上问题/点分治/CF293E.cpp	templates/02_树上问题/点分治/静态点分治——容斥树状数组.cpp
+templates/02_树上问题/点分治/P10603.cpp	templates/02_树上问题/点分治/点分树——模板2.cpp
+templates/02_树上问题/点分治/P10604.cpp	templates/02_树上问题/点分治/点分树——二分.cpp
+templates/02_树上问题/点分治/P2056.cpp	templates/02_树上问题/点分治/点分树——树上开关.cpp
+templates/02_树上问题/点分治/P2634.cpp	templates/02_树上问题/点分治/静态点分治——模板.cpp
+templates/02_树上问题/点分治/P3241.cpp	templates/02_树上问题/点分治/点分树——前缀和.cpp
+templates/02_树上问题/点分治/P3345.cpp	templates/02_树上问题/点分治/点分树——重心移动.cpp
+templates/02_树上问题/点分治/P3714.cpp	templates/02_树上问题/点分治/点分治——线段树.cpp
+templates/02_树上问题/点分治/P3806.cpp	templates/02_树上问题/点分治/静态点分治——距离为k.cpp
+templates/02_树上问题/点分治/P4075.cpp	templates/02_树上问题/点分治/点分治——哈希前后缀.cpp
+templates/02_树上问题/点分治/P4149.cpp	templates/02_树上问题/点分治/静态点分治——边数最少.cpp
+templates/02_树上问题/点分治/P4178.cpp	templates/02_树上问题/点分治/静态点分治——容斥模板.cpp
+templates/02_树上问题/点分治/P4886.cpp	templates/02_树上问题/点分治/点分治——树上二分.cpp
+templates/02_树上问题/点分治/P5311.cpp	templates/02_树上问题/点分治/点分树——树状数组.cpp
+templates/02_树上问题/点分治/P6326.cpp	templates/02_树上问题/点分治/点分治——01背包.cpp
+templates/02_树上问题/点分治/P6329.cpp	templates/02_树上问题/点分治/点分树——模板.cpp
+templates/02_树上问题/点分治/P6626.cpp	templates/02_树上问题/点分治/静态点分治——树形容斥.cpp
+templates/02_树上问题/点分治/P7215.cpp	templates/02_树上问题/点分治/点分治——bfs.cpp
+templates/02_树上问题/点分治/P9678.cpp	templates/02_树上问题/点分治/点分治——单调栈.cpp
+templates/02_树上问题/虚树/CF1320E.cpp	templates/02_树上问题/虚树/虚树——dijkstra.cpp
+templates/02_树上问题/虚树/CF613D.cpp	templates/02_树上问题/虚树/虚树——模板.cpp
+templates/02_树上问题/虚树/P2495.cpp	templates/02_树上问题/虚树/虚树——倍增.cpp
+templates/02_树上问题/虚树/P3233.cpp	templates/02_树上问题/虚树/虚树——进阶树形dp.cpp
+templates/02_树上问题/虚树/P3320.cpp	templates/02_树上问题/虚树/虚树——最小联通树.cpp
+templates/02_树上问题/虚树/P4103.cpp	templates/02_树上问题/虚树/虚树——树形dp.cpp
+templates/02_树上问题/边分治/BZOJ2870.cpp	templates/02_树上问题/边分治/边分治——模板.cpp
+templates/02_树上问题/边分治/CF833D.cpp	templates/02_树上问题/边分治/边分治——容斥.cpp
+templates/03_字符串/AC自动机/P2414.cpp	templates/03_字符串/AC自动机/AC自动机——fail树.cpp
+templates/03_字符串/AC自动机/P2444.cpp	templates/03_字符串/AC自动机/AC自动机——完备状态.cpp
+templates/03_字符串/AC自动机/P3082.cpp	templates/03_字符串/AC自动机/AC自动机——应用.cpp
+templates/03_字符串/AC自动机/P3311.cpp	templates/03_字符串/AC自动机/AC自动机——警报标记.cpp
+templates/03_字符串/AC自动机/P5319.cpp	templates/03_字符串/AC自动机/AC自动机——01分数规划.cpp
+templates/03_字符串/AC自动机/P5357.cpp	templates/03_字符串/AC自动机/AC自动机——模板.cpp
+templates/03_字符串/AC自动机/P5840.cpp	templates/03_字符串/AC自动机/AC自动机——fail树上差分.cpp
+templates/03_字符串/AC自动机/P8451.cpp	templates/03_字符串/AC自动机/AC自动机——出现统计.cpp
+templates/03_字符串/KMP/P10581.cpp	templates/03_字符串/KMP/KMP算法——矩阵加速.cpp
+templates/03_字符串/KMP/P2375.cpp	templates/03_字符串/KMP/失配树——应用.cpp
+templates/03_字符串/KMP/P3375.cpp	templates/03_字符串/KMP/KMP算法——1based.cpp
+templates/03_字符串/KMP/P3375_2.cpp	templates/03_字符串/KMP/KMP算法——next数组优化.cpp
+templates/03_字符串/KMP/P3375_3.cpp	templates/03_字符串/KMP/KMP算法——模板.cpp
+templates/03_字符串/KMP/P4391.cpp	templates/03_字符串/KMP/KMP算法——最短循环节.cpp
+templates/03_字符串/KMP/P4824.cpp	templates/03_字符串/KMP/KMP算法——删除s2.cpp
+templates/03_字符串/KMP/P5829.cpp	templates/03_字符串/KMP/失配树——1based模板.cpp
+templates/03_字符串/KMP/P5829_2.cpp	templates/03_字符串/KMP/失配树——模板.cpp
+templates/03_字符串/Manacher/P1659.cpp	templates/03_字符串/Manacher/Manacher算法——前k乘积.cpp
+templates/03_字符串/Manacher/P3279.cpp	templates/03_字符串/Manacher/Manacher算法——反演.cpp
+templates/03_字符串/Manacher/P3501.cpp	templates/03_字符串/Manacher/Manacher算法——异或运算.cpp
+templates/03_字符串/Manacher/P3649.cpp	templates/03_字符串/Manacher/回文自动机——fail指针.cpp
+templates/03_字符串/Manacher/P3805.cpp	templates/03_字符串/Manacher/Manacher算法——模板.cpp
+templates/03_字符串/Manacher/P4287.cpp	templates/03_字符串/Manacher/Manacher算法——回文串数量.cpp
+templates/03_字符串/Manacher/P4555.cpp	templates/03_字符串/Manacher/Manacher算法——双回文子串.cpp
+templates/03_字符串/Manacher/P5496.cpp	templates/03_字符串/Manacher/回文自动机——模板.cpp
+templates/03_字符串/前缀树/CF241B.cpp	templates/03_字符串/前缀树/前缀树——前k大异或值之和.cpp
+templates/03_字符串/前缀树/P2536.cpp	templates/03_字符串/前缀树/前缀树——通配符.cpp
+templates/03_字符串/前缀树/P3293.cpp	templates/03_字符串/前缀树/可持久化前缀树——结合可持久化线段树.cpp
+templates/03_字符串/前缀树/P3294.cpp	templates/03_字符串/前缀树/前缀树——贪心.cpp
+templates/03_字符串/前缀树/P4098.cpp	templates/03_字符串/前缀树/可持久化前缀树——次大值的异或.cpp
+templates/03_字符串/前缀树/P4592.cpp	templates/03_字符串/前缀树/可持久化前缀树——dfn序.cpp
+templates/03_字符串/前缀树/P4735.cpp	templates/03_字符串/前缀树/可持久化前缀树——01trie.cpp
+templates/03_字符串/前缀树/P5795.cpp	templates/03_字符串/前缀树/可持久化前缀树——二维异或值第k大.cpp
+templates/03_字符串/前缀树/P6088.cpp	templates/03_字符串/前缀树/可持久化前缀树——trie模版.cpp
+templates/03_字符串/前缀树/P6623.cpp	templates/03_字符串/前缀树/前缀树——树形dp.cpp
+templates/03_字符串/后缀数组 后缀自动机/P3804.cpp	templates/03_字符串/后缀数组 后缀自动机/后缀自动机——模板.cpp
+templates/03_字符串/后缀数组 后缀自动机/P3809.cpp	templates/03_字符串/后缀数组 后缀自动机/后缀数组——模板.cpp
+templates/03_字符串/哈希/CF1175F.cpp	templates/03_字符串/哈希/异或哈希——模板.cpp
+templates/03_字符串/哈希/CF1746F.cpp	templates/03_字符串/哈希/随机化——k倍问题.cpp
+templates/03_字符串/哈希/P10634.cpp	templates/03_字符串/哈希/哈希——动态哈希.cpp
+templates/03_字符串/哈希/P11262.cpp	templates/03_字符串/哈希/哈希——随机权值.cpp
+templates/03_字符串/哈希/P3167.cpp	templates/03_字符串/哈希/哈希——通配符.cpp
+templates/03_字符串/哈希/P3370.cpp	templates/03_字符串/哈希/哈希——字符串哈希值.cpp
+templates/03_字符串/哈希/P3449.cpp	templates/03_字符串/哈希/哈希——回文双哈希.cpp
+templates/03_字符串/哈希/P3538.cpp	templates/03_字符串/哈希/哈希——循环节.cpp
+templates/03_字符串/哈希/P3587.cpp	templates/03_字符串/哈希/随机化——异或.cpp
+templates/03_字符串/哈希/P3763.cpp	templates/03_字符串/哈希/哈希——允许差异的匹配.cpp
+templates/03_字符串/哈希/P4036.cpp	templates/03_字符串/哈希/哈希——结合fhq.cpp
+templates/03_字符串/哈希/P4323.cpp	templates/03_字符串/哈希/树上哈希——换根dp.cpp
+templates/03_字符串/哈希/P5018.cpp	templates/03_字符串/哈希/哈希——双哈希.cpp
+templates/03_字符串/扩展KMP/CF126B.cpp	templates/03_字符串/扩展KMP/扩展KMP(Z算法)——应用.cpp
+templates/03_字符串/扩展KMP/CF432D.cpp	templates/03_字符串/扩展KMP/扩展KMP(Z算法)——循环节个数.cpp
+templates/03_字符串/扩展KMP/P5410.cpp	templates/03_字符串/扩展KMP/扩展KMP(Z算法)——模板.cpp
+templates/03_字符串/扩展KMP/P8112.cpp	templates/03_字符串/扩展KMP/扩展KMP(Z算法)——e数组应用.cpp
+templates/03_字符串/扩展KMP/UVA455.cpp	templates/03_字符串/扩展KMP/扩展KMP(Z算法)——循环节.cpp
+templates/04_数据结构/左偏树/P1456.cpp	templates/04_数据结构/左偏树/P1456-Monkey King.cpp
+templates/04_数据结构/左偏树/P1552.cpp	templates/04_数据结构/左偏树/P1552-派遣.cpp
+templates/04_数据结构/左偏树/P2409.cpp	templates/04_数据结构/左偏树/P2409-Y的积木.cpp
+templates/04_数据结构/左偏树/P2483.cpp	templates/04_数据结构/左偏树/P2483-魔法猪学院.cpp
+templates/04_数据结构/左偏树/P3261.cpp	templates/04_数据结构/左偏树/P3261-城池攻占.cpp
+templates/04_数据结构/左偏树/P3273.cpp	templates/04_数据结构/左偏树/P3273-棘手的操作.cpp
+templates/04_数据结构/左偏树/P3377.cpp	templates/04_数据结构/左偏树/P3377-可并堆1.cpp
+templates/04_数据结构/左偏树/P4331.cpp	templates/04_数据结构/左偏树/P4331-Sequence.cpp
+templates/04_数据结构/左偏树/P4971.cpp	templates/04_数据结构/左偏树/P4971-断罪者.cpp
+templates/04_数据结构/平衡树/AT_AGC028B.cpp	templates/04_数据结构/平衡树/笛卡尔树——期望.cpp
+templates/04_数据结构/平衡树/CF1748E.cpp	templates/04_数据结构/平衡树/笛卡尔树——方案计数.cpp
+templates/04_数据结构/平衡树/P1377.cpp	templates/04_数据结构/平衡树/笛卡尔树——树的序.cpp
+templates/04_数据结构/平衡树/P1486.cpp	templates/04_数据结构/平衡树/splay树——全局变量辅助.cpp
+templates/04_数据结构/平衡树/P1801.cpp	templates/04_数据结构/平衡树/有序表——使用.cpp
+templates/04_数据结构/平衡树/P2042.cpp	templates/04_数据结构/平衡树/splay树——线段树.cpp
+templates/04_数据结构/平衡树/P2596.cpp	templates/04_数据结构/平衡树/splay树——区间移动.cpp
+templates/04_数据结构/平衡树/P3369.cpp	templates/04_数据结构/平衡树/AVL树——模板.cpp
+templates/04_数据结构/平衡树/P3369_2.cpp	templates/04_数据结构/平衡树/FHQ treap——词频不压缩版.cpp
+templates/04_数据结构/平衡树/P3369_3.cpp	templates/04_数据结构/平衡树/FHQ treap——词频压缩版.cpp
+templates/04_数据结构/平衡树/P3369_4.cpp	templates/04_数据结构/平衡树/Treap树——模板.cpp
+templates/04_数据结构/平衡树/P3369_5.cpp	templates/04_数据结构/平衡树/splay树——模板.cpp
+templates/04_数据结构/平衡树/P3369_6.cpp	templates/04_数据结构/平衡树/有序表——替罪羊树.cpp
+templates/04_数据结构/平衡树/P3369_7.cpp	templates/04_数据结构/平衡树/有序表——跳表.cpp
+templates/04_数据结构/平衡树/P3391.cpp	templates/04_数据结构/平衡树/FHQ treap——区间翻转.cpp
+templates/04_数据结构/平衡树/P3391_2.cpp	templates/04_数据结构/平衡树/splay树——区间翻转.cpp
+templates/04_数据结构/平衡树/P3835.cpp	templates/04_数据结构/平衡树/FHQ treap——可持久化平衡树.cpp
+templates/04_数据结构/平衡树/P4008.cpp	templates/04_数据结构/平衡树/FHQ treap——区间移动.cpp
+templates/04_数据结构/平衡树/P5055.cpp	templates/04_数据结构/平衡树/FHQ treap——可持久化线段树.cpp
+templates/04_数据结构/平衡树/P5854.cpp	templates/04_数据结构/平衡树/笛卡尔树——模板.cpp
+templates/04_数据结构/平衡树/P6136.cpp	templates/04_数据结构/平衡树/FHQ treap——有序表.cpp
+templates/04_数据结构/平衡树/P6136_2.cpp	templates/04_数据结构/平衡树/splay树——有序表.cpp
+templates/04_数据结构/平衡树/P6453.cpp	templates/04_数据结构/平衡树/笛卡尔树——表格填数.cpp
+templates/04_数据结构/并查集/AT_ABC302H.cpp	templates/04_数据结构/并查集/可撤销并查集——模板.cpp
+templates/04_数据结构/并查集/CF1444C.cpp	templates/04_数据结构/并查集/可撤销并查集——类似二分图.cpp
+templates/04_数据结构/并查集/CF891C.cpp	templates/04_数据结构/并查集/可撤销并查集——最小生成树.cpp
+templates/04_数据结构/并查集/HDU3038.cpp	templates/04_数据结构/并查集/带权并查集——模板合理性统计.cpp
+templates/04_数据结构/并查集/P1196.cpp	templates/04_数据结构/并查集/带权并查集——加减关系.cpp
+templates/04_数据结构/并查集/P1525.cpp	templates/04_数据结构/并查集/并查集——正反集.cpp
+templates/04_数据结构/并查集/P2024.cpp	templates/04_数据结构/并查集/带权并查集——种类关系.cpp
+templates/04_数据结构/并查集/P2024_2.cpp	templates/04_数据结构/并查集/并查集——正反集延伸.cpp
+templates/04_数据结构/并查集/P2294.cpp	templates/04_数据结构/并查集/带权并查集——模板合理性检验.cpp
+templates/04_数据结构/并查集/P2391.cpp	templates/04_数据结构/并查集/并查集——维护序列连通性.cpp
+templates/04_数据结构/并查集/P3402.cpp	templates/04_数据结构/并查集/可持久化并查集——模板.cpp
+templates/04_数据结构/并查集/P3639.cpp	templates/04_数据结构/并查集/并查集——结合生成树.cpp
+templates/04_数据结构/并查集/P8779.cpp	templates/04_数据结构/并查集/带权并查集——模板.cpp
+templates/04_数据结构/杂项数据结构/CF896C.cpp	templates/04_数据结构/杂项数据结构/ODT树——模板.cpp
+templates/04_数据结构/杂项数据结构/P1441.cpp	templates/04_数据结构/杂项数据结构/位图——状态压缩.cpp
+templates/04_数据结构/杂项数据结构/P4344.cpp	templates/04_数据结构/杂项数据结构/ODT树——应用.cpp
+templates/04_数据结构/树套树/HDU1823.cpp	templates/04_数据结构/树套树/树套树——线段树套线段树.cpp
+templates/04_数据结构/树套树/P1975.cpp	templates/04_数据结构/树套树/树套树——树状数组套线段树逆序对.cpp
+templates/04_数据结构/树套树/P2617.cpp	templates/04_数据结构/树套树/树套树——树状数组套线段树2.cpp
+templates/04_数据结构/树套树/P3332.cpp	templates/04_数据结构/树套树/树套树——线段树套开点线段树.cpp
+templates/04_数据结构/树套树/P3380.cpp	templates/04_数据结构/树套树/树套树——树状数组套线段树.cpp
+templates/04_数据结构/树套树/P3380_2.cpp	templates/04_数据结构/树套树/树套树——线段树套平衡树.cpp
+templates/04_数据结构/树套树/P4175.cpp	templates/04_数据结构/树套树/树套树——树状数组套线段树dfn差分.cpp
+templates/04_数据结构/树状数组/P1637.cpp	templates/04_数据结构/树状数组/树状数组——升序三元组.cpp
+templates/04_数据结构/树状数组/P1908.cpp	templates/04_数据结构/树状数组/树状数组——逆序对数量.cpp
+templates/04_数据结构/树状数组/P1972.cpp	templates/04_数据结构/树状数组/树状数组——区间种类查询.cpp
+templates/04_数据结构/树状数组/P3149.cpp	templates/04_数据结构/树状数组/树状数组加离散化加逆序对.cpp
+templates/04_数据结构/树状数组/P3368.cpp	templates/04_数据结构/树状数组/树状数组——范围增加单点查询.cpp
+templates/04_数据结构/树状数组/P3372.cpp	templates/04_数据结构/树状数组/树状数组——范围增加范围查询.cpp
+templates/04_数据结构/树状数组/P3374.cpp	templates/04_数据结构/树状数组/树状数组——范围查询单点增加.cpp
+templates/04_数据结构/树状数组/P3722.cpp	templates/04_数据结构/树状数组/树状数组——范围问题.cpp
+templates/04_数据结构/树状数组/P4280.cpp	templates/04_数据结构/树状数组/树状数组——进阶逆序对.cpp
+templates/04_数据结构/树状数组/P4514.cpp	templates/04_数据结构/树状数组/树状数组——二维数组模版.cpp
+templates/04_数据结构/树状数组/P5852.cpp	templates/04_数据结构/树状数组/树状数组——结合set.cpp
+templates/04_数据结构/线段树/HDU4348.cpp	templates/04_数据结构/线段树/可持久化线段树——范围修改加标记永久化.cpp
+templates/04_数据结构/线段树/HDU4614.cpp	templates/04_数据结构/线段树/线段树——花瓶里的花.cpp
+templates/04_数据结构/线段树/HDU5919.cpp	templates/04_数据结构/线段树/可持久化线段树——第一次出现.cpp
+templates/04_数据结构/线段树/P10392.cpp	templates/04_数据结构/线段树/线段树——最大与次大.cpp
+templates/04_数据结构/线段树/P10513.cpp	templates/04_数据结构/线段树/线段树——括号问题.cpp
+templates/04_数据结构/线段树/P1856.cpp	templates/04_数据结构/线段树/线段树——扫描线——矩形周长并.cpp
+templates/04_数据结构/线段树/P2633.cpp	templates/04_数据结构/线段树/可持久化线段树——树上问题.cpp
+templates/04_数据结构/线段树/P2839.cpp	templates/04_数据结构/线段树/可持久化线段树——上中位数.cpp
+templates/04_数据结构/线段树/P2862.cpp	templates/04_数据结构/线段树/线段树——二维.cpp
+templates/04_数据结构/线段树/P2894.cpp	templates/04_数据结构/线段树/线段树——旅馆问题.cpp
+templates/04_数据结构/线段树/P3372.cpp	templates/04_数据结构/线段树/可持久化线段树——标记永久化.cpp
+templates/04_数据结构/线段树/P3373.cpp	templates/04_数据结构/线段树/线段树——乘加操作标准模板.cpp
+templates/04_数据结构/线段树/P3792.cpp	templates/04_数据结构/线段树/线段树——平方和.cpp
+templates/04_数据结构/线段树/P3834.cpp	templates/04_数据结构/线段树/可持久化线段树——查询第k小.cpp
+templates/04_数据结构/线段树/P3899.cpp	templates/04_数据结构/线段树/可持久化线段树——树上dfn.cpp
+templates/04_数据结构/线段树/P3919.cpp	templates/04_数据结构/线段树/可持久化线段树——单点修改模板.cpp
+templates/04_数据结构/线段树/P4087.cpp	templates/04_数据结构/线段树/线段树——最大与次大2.cpp
+templates/04_数据结构/线段树/P4137.cpp	templates/04_数据结构/线段树/可持久化线段树——最小自然数.cpp
+templates/04_数据结构/线段树/P4513.cpp	templates/04_数据结构/线段树/线段树——区间组合查询.cpp
+templates/04_数据结构/线段树/P5490.cpp	templates/04_数据结构/线段树/线段树——扫描线——矩形面积并.cpp
+templates/04_数据结构/线段树/P5568.cpp	templates/04_数据结构/线段树/线段树——异或和修改操作.cpp
+templates/04_数据结构/线段树/P7402.cpp	templates/04_数据结构/线段树/线段树——子段极差和.cpp
+templates/04_数据结构/线段树/P8099.cpp	templates/04_数据结构/线段树/线段树——结合拓扑排序.cpp
+templates/04_数据结构/线段树/P8765.cpp	templates/04_数据结构/线段树/线段树——括号问题2.cpp
+templates/04_数据结构/线段树/SPOJ_TTM.cpp	templates/04_数据结构/线段树/可持久化线段树——范围修改模板.cpp
+templates/04_数据结构/线段树合并与分裂/CF911G.cpp	templates/04_数据结构/线段树合并与分裂/线段树分裂——合并与分裂.cpp
+templates/04_数据结构/线段树合并与分裂/P1600.cpp	templates/04_数据结构/线段树合并与分裂/线段树合并——差分分析.cpp
+templates/04_数据结构/线段树合并与分裂/P3224.cpp	templates/04_数据结构/线段树合并与分裂/线段树合并——并查集.cpp
+templates/04_数据结构/线段树合并与分裂/P3521.cpp	templates/04_数据结构/线段树合并与分裂/线段树合并——逆序对.cpp
+templates/04_数据结构/线段树合并与分裂/P3605.cpp	templates/04_数据结构/线段树合并与分裂/线段树合并——模板.cpp
+templates/04_数据结构/线段树合并与分裂/P4556.cpp	templates/04_数据结构/线段树合并与分裂/线段树合并——树上差分.cpp
+templates/04_数据结构/线段树合并与分裂/P4577.cpp	templates/04_数据结构/线段树合并与分裂/线段树合并——动态规划.cpp
+templates/04_数据结构/线段树合并与分裂/P5298.cpp	templates/04_数据结构/线段树合并与分裂/线段树合并——dp前后缀.cpp
+templates/04_数据结构/线段树合并与分裂/P5494.cpp	templates/04_数据结构/线段树合并与分裂/线段树分裂——模板.cpp
+templates/05_数学数论/01分数规划/P3199.cpp	templates/05_数学数论/01分数规划/01分数规划——模板4.cpp
+templates/05_数学数论/01分数规划/P4322.cpp	templates/05_数学数论/01分数规划/01分数规划——模板5.cpp
+templates/05_数学数论/01分数规划/P4377.cpp	templates/05_数学数论/01分数规划/01分数规划——部分参数有限制.cpp
+templates/05_数学数论/01分数规划/POJ2728.cpp	templates/05_数学数论/01分数规划/01分数规划——结合最小生成树.cpp
+templates/05_数学数论/博弈论/P2148.cpp	templates/05_数学数论/博弈论/博弈论——sg函数打表找规律.cpp
+templates/05_数学数论/博弈论/P2197.cpp	templates/05_数学数论/博弈论/博弈论——尼姆博弈.cpp
+templates/05_数学数论/博弈论/P2252.cpp	templates/05_数学数论/博弈论/博弈论——威佐夫博弈.cpp
+templates/05_数学数论/博弈论/P2490.cpp	templates/05_数学数论/博弈论/博弈论——knim博弈.cpp
+templates/05_数学数论/博弈论/P3185.cpp	templates/05_数学数论/博弈论/博弈论——sg函数.cpp
+templates/05_数学数论/博弈论/P4018.cpp	templates/05_数学数论/博弈论/博弈论——巴什博奕扩展.cpp
+templates/05_数学数论/博弈论/P4279.cpp	templates/05_数学数论/博弈论/博弈论——反常游戏.cpp
+templates/05_数学数论/博弈论/P5363.cpp	templates/05_数学数论/博弈论/博弈论——阶梯博弈.cpp
+templates/05_数学数论/博弈论/P6487.cpp	templates/05_数学数论/博弈论/博弈论——斐波那契博弈.cpp
+templates/05_数学数论/数学/HDU5512.cpp	templates/05_数学数论/数学/裴蜀定理——类似博弈论.cpp
+templates/05_数学数论/数学/HDU5755.cpp	templates/05_数学数论/数学/高斯消元——同余模板.cpp
+templates/05_数学数论/数学/HDU5833.cpp	templates/05_数学数论/数学/高斯消元——异或主元与自由元.cpp
+templates/05_数学数论/数学/LIGHTOJ1077.cpp	templates/05_数学数论/数学/扩展欧几里得——格点.cpp
+templates/05_数学数论/数学/LOJ114.cpp	templates/05_数学数论/数学/线性基——异或高斯消元法.cpp
+templates/05_数学数论/数学/P1044.cpp	templates/05_数学数论/数学/卡特兰数——模板.cpp
+templates/05_数学数论/数学/P10596.cpp	templates/05_数学数论/数学/二项式反演——集合计数.cpp
+templates/05_数学数论/数学/P1082.cpp	templates/05_数学数论/数学/扩展欧几里得——模板.cpp
+templates/05_数学数论/数学/P1226.cpp	templates/05_数学数论/数学/快速幂——乘法快速幂.cpp
+templates/05_数学数论/数学/P1313.cpp	templates/05_数学数论/数学/二项式定理——系数.cpp
+templates/05_数学数论/数学/P1405.cpp	templates/05_数学数论/数学/扩展欧拉定理——模板.cpp
+templates/05_数学数论/数学/P1480.c	templates/05_数学数论/数学/高精度——除法（高对低）.c
+templates/05_数学数论/数学/P1495.cpp	templates/05_数学数论/数学/中国剩余定理——模板.cpp
+templates/05_数学数论/数学/P1516.cpp	templates/05_数学数论/数学/扩展欧几里得——环形.cpp
+templates/05_数学数论/数学/P1595.cpp	templates/05_数学数论/数学/二项式反演——错排问题.cpp
+templates/05_数学数论/数学/P1601.c	templates/05_数学数论/数学/高精度——加法.c
+templates/05_数学数论/数学/P1641.cpp	templates/05_数学数论/数学/卡特兰数——路径选择.cpp
+templates/05_数学数论/数学/P1722.cpp	templates/05_数学数论/数学/卡特兰数——公式4.cpp
+templates/05_数学数论/数学/P1883.cpp	templates/05_数学数论/数学/三分——模板.cpp
+templates/05_数学数论/数学/P1891.cpp	templates/05_数学数论/数学/欧拉函数——线性递推欧拉筛.cpp
+templates/05_数学数论/数学/P1976.cpp	templates/05_数学数论/数学/卡特兰数——路径计数模板.cpp
+templates/05_数学数论/数学/P2054.cpp	templates/05_数学数论/数学/扩展欧几里得——洗牌.cpp
+templates/05_数学数论/数学/P2142.c	templates/05_数学数论/数学/高精度——减法.c
+templates/05_数学数论/数学/P2155.cpp	templates/05_数学数论/数学/欧拉函数——阶乘.cpp
+templates/05_数学数论/数学/P2447.cpp	templates/05_数学数论/数学/高斯消元——异或结合位图.cpp
+templates/05_数学数论/数学/P2455.cpp	templates/05_数学数论/数学/高斯消元——加法判断解的情况.cpp
+templates/05_数学数论/数学/P2480.cpp	templates/05_数学数论/数学/数论——全家桶.cpp
+templates/05_数学数论/数学/P2532.cpp	templates/05_数学数论/数学/卡特兰数——左右相乘.cpp
+templates/05_数学数论/数学/P2579.cpp	templates/05_数学数论/数学/矩阵乘法——经典.cpp
+templates/05_数学数论/数学/P2822.cpp	templates/05_数学数论/数学/二项式定理——组合数.cpp
+templates/05_数学数论/数学/P2962.cpp	templates/05_数学数论/数学/高斯消元——异或模板.cpp
+templates/05_数学数论/数学/P3014.cpp	templates/05_数学数论/数学/康拓展开——正反过程综合.cpp
+templates/05_数学数论/数学/P3200.cpp	templates/05_数学数论/数学/卡特兰数——因子计数法.cpp
+templates/05_数学数论/数学/P3265.cpp	templates/05_数学数论/数学/线性基——向量模板.cpp
+templates/05_数学数论/数学/P3292.cpp	templates/05_数学数论/数学/线性基——向量结合树上倍增.cpp
+templates/05_数学数论/数学/P3389.cpp	templates/05_数学数论/数学/高斯消元——加法模板.cpp
+templates/05_数学数论/数学/P3807.cpp	templates/05_数学数论/数学/卢卡斯定理——模板.cpp
+templates/05_数学数论/数学/P3811.cpp	templates/05_数学数论/数学/逆元——连续数字逆元.cpp
+templates/05_数学数论/数学/P3812.cpp	templates/05_数学数论/数学/线性基——异或普通消元法.cpp
+templates/05_数学数论/数学/P3846.cpp	templates/05_数学数论/数学/BSGS——模板.cpp
+templates/05_数学数论/数学/P3857.cpp	templates/05_数学数论/数学/线性基——异或所有结果个数.cpp
+templates/05_数学数论/数学/P3868.cpp	templates/05_数学数论/数学/中国剩余定理——转换.cpp
+templates/05_数学数论/数学/P3951.cpp	templates/05_数学数论/数学/扩展欧几里得——组成.cpp
+templates/05_数学数论/数学/P3978.cpp	templates/05_数学数论/数学/卡特兰数——二叉树应用.cpp
+templates/05_数学数论/数学/P4035.cpp	templates/05_数学数论/数学/高斯消元——加法提炼矩阵.cpp
+templates/05_数学数论/数学/P4151.cpp	templates/05_数学数论/数学/线性基——向量模板4.cpp
+templates/05_数学数论/数学/P4397.cpp	templates/05_数学数论/数学/质数——结合数论.cpp
+templates/05_数学数论/数学/P4450.cpp	templates/05_数学数论/数学/莫比乌斯函数——模板.cpp
+templates/05_数学数论/数学/P4549.cpp	templates/05_数学数论/数学/裴蜀定理——模板.cpp
+templates/05_数学数论/数学/P4570.cpp	templates/05_数学数论/数学/线性基——异或运算应用.cpp
+templates/05_数学数论/数学/P4774.cpp	templates/05_数学数论/数学/中国剩余定理——扩展加推理.cpp
+templates/05_数学数论/数学/P4839.cpp	templates/05_数学数论/数学/线性基——向量结合线段树.cpp
+templates/05_数学数论/数学/P4859.cpp	templates/05_数学数论/数学/二项式反演——钦定系列结合背包.cpp
+templates/05_数学数论/数学/P5027.cpp	templates/05_数学数论/数学/高斯消元——加法检测错误数据.cpp
+templates/05_数学数论/数学/P5367.cpp	templates/05_数学数论/数学/康拓展开——模板.cpp
+templates/05_数学数论/数学/P5505.cpp	templates/05_数学数论/数学/二项式反演——分特产.cpp
+templates/05_数学数论/数学/P5656.cpp	templates/05_数学数论/数学/扩展欧几里得——一元二次方程.cpp
+templates/05_数学数论/数学/P5732.cpp	templates/05_数学数论/数学/二项式定理——杨辉三角.cpp
+templates/05_数学数论/数学/P5789.cpp	templates/05_数学数论/数学/矩阵乘法——结合图论.cpp
+templates/05_数学数论/数学/P6091.cpp	templates/05_数学数论/数学/原根——模板.cpp
+templates/05_数学数论/数学/P6478.cpp	templates/05_数学数论/数学/二项式反演——钦定系列结合树上问题.cpp
+templates/05_数学数论/数学/P7435.cpp	templates/05_数学数论/数学/矩阵乘法——线段树操作.cpp
+templates/05_数学数论/数学/P8624.cpp	templates/05_数学数论/数学/快速幂——乘法和矩阵快速幂.cpp
+templates/05_数学数论/数学/P8671.cpp	templates/05_数学数论/数学/约瑟夫环.cpp
+templates/05_数学数论/数学/POJ1265.cpp	templates/05_数学数论/数学/扩展欧几里得——区域.cpp
+templates/05_数学数论/数学/POJ2947.cpp	templates/05_数学数论/数学/高斯消元——同余模板2.cpp
+templates/05_数学数论/数学/U148828.c	templates/05_数学数论/数学/质数——Miller-Rabin素数测试.c
+templates/05_数学数论/数学/U72177.cpp	templates/05_数学数论/数学/康拓展开——阶乘进制 逆过程 树状数组.cpp
+templates/05_数学数论/数学/U72177_2.cpp	templates/05_数学数论/数学/康拓展开——阶乘进制 逆过程 线段树.cpp
+templates/05_数学数论/数论/P3803.cpp	templates/05_数学数论/数论/FFT——迭代版模板.cpp
+templates/05_数学数论/数论/P3803_2.cpp	templates/05_数学数论/数论/FFT——递归版模板.cpp
+templates/05_数学数论/数论/P3803_3.cpp	templates/05_数学数论/数论/NTT——模板.cpp
+templates/05_数学数论/数论/P4213.cpp	templates/05_数学数论/数论/杜教筛——模板.cpp
+templates/06_动态规划/动态规划/P1025.cpp	templates/06_动态规划/动态规划/动态规划优化——苹果盘子.cpp
+templates/06_动态规划/动态规划/P1121.cpp	templates/06_动态规划/动态规划/动态规划——最大环形两段和.cpp
+templates/06_动态规划/动态规划/P1169.cpp	templates/06_动态规划/动态规划/动态规划——悬线法.cpp
+templates/06_动态规划/动态规划/P1171.cpp	templates/06_动态规划/动态规划/状压dp——tsp问题.cpp
+templates/06_动态规划/动态规划/P1437.cpp	templates/06_动态规划/动态规划/动态规划优化——预处理——结构转换.cpp
+templates/06_动态规划/动态规划/P1439.cpp	templates/06_动态规划/动态规划/动态规划——最长公共子序列.cpp
+templates/06_动态规划/动态规划/P1439_2.cpp	templates/06_动态规划/动态规划/动态规划——超长最长公共子序列.cpp
+templates/06_动态规划/动态规划/P1613.cpp	templates/06_动态规划/动态规划/动态规划优化——倍增优化.cpp
+templates/06_动态规划/动态规划/P1622.cpp	templates/06_动态规划/动态规划/区间dp——释放囚犯.cpp
+templates/06_动态规划/动态规划/P1725.cpp	templates/06_动态规划/动态规划/动态规划优化——单调跳跃.cpp
+templates/06_动态规划/动态规划/P1879.cpp	templates/06_动态规划/动态规划/动态规划——状压dp.cpp
+templates/06_动态规划/动态规划/P1879_2.cpp	templates/06_动态规划/动态规划/轮廓线dp——模板.cpp
+templates/06_动态规划/动态规划/P1896.cpp	templates/06_动态规划/动态规划/轮廓线dp——国王.cpp
+templates/06_动态规划/动态规划/P2014.cpp	templates/06_动态规划/动态规划/动态规划——树形dp  选课.cpp
+templates/06_动态规划/动态规划/P2215.cpp	templates/06_动态规划/动态规划/动态规划——快速最长递增子序列.cpp
+templates/06_动态规划/动态规划/P2279.cpp	templates/06_动态规划/动态规划/树形dp——最低覆盖.cpp
+templates/06_动态规划/动态规划/P2435.cpp	templates/06_动态规划/动态规划/轮廓线dp——颜色.cpp
+templates/06_动态规划/动态规划/P2435_2.cpp	templates/06_动态规划/动态规划/轮廓线dp——颜色空间压缩.cpp
+templates/06_动态规划/动态规划/P2466.cpp	templates/06_动态规划/动态规划/动态规划——处理后效性.cpp
+templates/06_动态规划/动态规划/P2481.cpp	templates/06_动态规划/动态规划/数位dp——后缀背包.cpp
+templates/06_动态规划/动态规划/P2518.cpp	templates/06_动态规划/动态规划/康拓展开——结合数位dp.cpp
+templates/06_动态规划/动态规划/P2602.cpp	templates/06_动态规划/动态规划/数位dp——数码统计.cpp
+templates/06_动态规划/动态规划/P2627.cpp	templates/06_动态规划/动态规划/动态规划优化——单调求和.cpp
+templates/06_动态规划/动态规划/P2657.c	templates/06_动态规划/动态规划/动态规划——数位dp——windy数.c
+templates/06_动态规划/动态规划/P2704.cpp	templates/06_动态规划/动态规划/动态规划优化——预处理——枚举状态.cpp
+templates/06_动态规划/动态规划/P2744.cpp	templates/06_动态规划/动态规划/动态规划——重复利用结合dfs.cpp
+templates/06_动态规划/动态规划/P3107.cpp	templates/06_动态规划/动态规划/数位dp——出现次数大于一半.cpp
+templates/06_动态规划/动态规划/P3286.cpp	templates/06_动态规划/动态规划/数位dp——累加贡献.cpp
+templates/06_动态规划/动态规划/P3287.cpp	templates/06_动态规划/动态规划/动态规划优化——树二维.cpp
+templates/06_动态规划/动态规划/P3413.cpp	templates/06_动态规划/动态规划/数位dp——萌数.cpp
+templates/06_动态规划/动态规划/P3800.cpp	templates/06_动态规划/动态规划/动态规划优化——单调收集能量.cpp
+templates/06_动态规划/动态规划/P4310.cpp	templates/06_动态规划/动态规划/动态规划优化——枚举二进制位.cpp
+templates/06_动态规划/动态规划/P4342.cpp	templates/06_动态规划/动态规划/区间dp——断环为链.cpp
+templates/06_动态规划/动态规划/P5911.cpp	templates/06_动态规划/动态规划/状压dp——枚举子集.cpp
+templates/06_动态规划/动态规划/P7415.cpp	templates/06_动态规划/动态规划/数位dp——反向计算.cpp
+templates/06_动态规划/动态规划/P8766.cpp	templates/06_动态规划/动态规划/数位dp——状态压缩.cpp
+templates/06_动态规划/动态规划/P8775.cpp	templates/06_动态规划/动态规划/动态规划优化——来回多次变一次.cpp
+templates/06_动态规划/动态规划/POJ1821.cpp	templates/06_动态规划/动态规划/动态规划优化——单调刷木板.cpp
+templates/06_动态规划/动态规划/POJ2411.cpp	templates/06_动态规划/动态规划/轮廓线dp——贴瓷砖.cpp
+templates/06_动态规划/动态规划/POJ2411_2.cpp	templates/06_动态规划/动态规划/轮廓线dp——贴瓷砖空间压缩.cpp
+templates/06_动态规划/动态规划/U81904.cpp	templates/06_动态规划/动态规划/树的直径——树形dp.cpp
+templates/06_动态规划/杂项DP/HDU3001.cpp	templates/06_动态规划/杂项DP/tsp结合三进制状压.cpp
+templates/06_动态规划/杂项DP/P1578.cpp	templates/06_动态规划/杂项DP/极大化思想最大子矩阵.cpp
+templates/07_搜索与贪心/单调队列单调栈/P1950.cpp	templates/07_搜索与贪心/单调队列单调栈/单调栈——底层分析矩形个数.cpp
+templates/07_搜索与贪心/搜索/P1123.cpp	templates/07_搜索与贪心/搜索/搜索——dfs经典.cpp
+templates/07_搜索与贪心/搜索/P4160.cpp	templates/07_搜索与贪心/搜索/dfs——结合模拟 等分面积.cpp
+templates/07_搜索与贪心/搜索/P4799.cpp	templates/07_搜索与贪心/搜索/搜索——双向广搜模板.cpp
+templates/07_搜索与贪心/贪心算法/P2748.cpp	templates/07_搜索与贪心/贪心算法/反悔贪心——模板.cpp
+templates/08_离线分治/CDQ分治/CF1045G.cpp	templates/08_离线分治/CDQ分治/CDQ分治——范围窗口.cpp
+templates/08_离线分治/CDQ分治/P2163.cpp	templates/08_离线分治/CDQ分治/CDQ分治——二维空间计数.cpp
+templates/08_离线分治/CDQ分治/P2487.cpp	templates/08_离线分治/CDQ分治/CDQ分治——优化dp模板.cpp
+templates/08_离线分治/CDQ分治/P3157.cpp	templates/08_离线分治/CDQ分治/CDQ分治——动态逆序对.cpp
+templates/08_离线分治/CDQ分治/P3755.cpp	templates/08_离线分治/CDQ分治/CDQ分治——静态二维空间.cpp
+templates/08_离线分治/CDQ分治/P3810.cpp	templates/08_离线分治/CDQ分治/CDQ分治——三维偏序.cpp
+templates/08_离线分治/CDQ分治/P4093.cpp	templates/08_离线分治/CDQ分治/CDQ分治——优化动态规划.cpp
+templates/08_离线分治/CDQ分治/P4169.cpp	templates/08_离线分治/CDQ分治/CDQ分治——坐标变换.cpp
+templates/08_离线分治/CDQ分治/P4390.cpp	templates/08_离线分治/CDQ分治/CDQ分治——添加和查询.cpp
+templates/08_离线分治/CDQ分治/P4849.cpp	templates/08_离线分治/CDQ分治/CDQ分治——四维偏序优化dp.cpp
+templates/08_离线分治/CDQ分治/P5094.cpp	templates/08_离线分治/CDQ分治/CDQ分治——加速计算.cpp
+templates/08_离线分治/CDQ分治/P5621.cpp	templates/08_离线分治/CDQ分治/CDQ分治——四维偏序.cpp
+templates/08_离线分治/分块 莫队/分块/CF1039D.cpp	templates/08_离线分治/分块 莫队/分块/根号分治——树形dp.cpp
+templates/08_离线分治/分块 莫队/分块/CF1491H.cpp	templates/08_离线分治/分块 莫队/分块/分块——序列结合树上.cpp
+templates/08_离线分治/分块 莫队/分块/CF1921F.cpp	templates/08_离线分治/分块 莫队/分块/根号分治——等差数列.cpp
+templates/08_离线分治/分块 莫队/分块/CF786C.cpp	templates/08_离线分治/分块 莫队/分块/根号分治——二分.cpp
+templates/08_离线分治/分块 莫队/分块/CF797E.cpp	templates/08_离线分治/分块 莫队/分块/根号分治——动态规划.cpp
+templates/08_离线分治/分块 莫队/分块/P2325.cpp	templates/08_离线分治/分块 莫队/分块/分块——节点分块.cpp
+templates/08_离线分治/分块 莫队/分块/P2801.cpp	templates/08_离线分治/分块 莫队/分块/普通分块——区间增加.cpp
+templates/08_离线分治/分块 莫队/分块/P3247.cpp	templates/08_离线分治/分块 莫队/分块/并查集分块——可撤销并查集2.cpp
+templates/08_离线分治/分块 莫队/分块/P3396.cpp	templates/08_离线分治/分块 莫队/分块/根号分治——模板.cpp
+templates/08_离线分治/分块 莫队/分块/P3591.cpp	templates/08_离线分治/分块 莫队/分块/根号分治——长链剖分.cpp
+templates/08_离线分治/分块 莫队/分块/P3603.cpp	templates/08_离线分治/分块 莫队/分块/树上分块——重链序列分块.cpp
+templates/08_离线分治/分块 莫队/分块/P3603_2.cpp	templates/08_离线分治/分块 莫队/分块/树上分块——随机撒点.cpp
+templates/08_离线分治/分块 莫队/分块/P3863.cpp	templates/08_离线分治/分块 莫队/分块/时间分块——序列.cpp
+templates/08_离线分治/分块 莫队/分块/P4008.cpp	templates/08_离线分治/分块 莫队/分块/块状链表——模板.cpp
+templates/08_离线分治/分块 莫队/分块/P4117.cpp	templates/08_离线分治/分块 莫队/分块/分块——并查集.cpp
+templates/08_离线分治/分块 莫队/分块/P4119.cpp	templates/08_离线分治/分块 莫队/分块/双层分块——模板.cpp
+templates/08_离线分治/分块 莫队/分块/P4135.cpp	templates/08_离线分治/分块 莫队/分块/普通分块——频率偶数个数.cpp
+templates/08_离线分治/分块 莫队/分块/P4168.cpp	templates/08_离线分治/分块 莫队/分块/普通分块——众数.cpp
+templates/08_离线分治/分块 莫队/分块/P5046.cpp	templates/08_离线分治/分块 莫队/分块/分块——散整块讨论.cpp
+templates/08_离线分治/分块 莫队/分块/P5048.cpp	templates/08_离线分治/分块 莫队/分块/普通分块——众数优化.cpp
+templates/08_离线分治/分块 莫队/分块/P5309.cpp	templates/08_离线分治/分块 莫队/分块/根号分治——分块.cpp
+templates/08_离线分治/分块 莫队/分块/P5356.cpp	templates/08_离线分治/分块 莫队/分块/分块——块长优化.cpp
+templates/08_离线分治/分块 莫队/分块/P5443.cpp	templates/08_离线分治/分块 莫队/分块/并查集分块——可撤销并查集.cpp
+templates/08_离线分治/分块 莫队/分块/P6578.cpp	templates/08_离线分治/分块 莫队/分块/双层分块——基数排序.cpp
+templates/08_离线分治/分块 莫队/分块/P6707.cpp	templates/08_离线分治/分块 莫队/分块/块状链表——懒更新.cpp
+templates/08_离线分治/分块 莫队/分块/P8360.cpp	templates/08_离线分治/分块 莫队/分块/并查集分块——并查集块分析.cpp
+templates/08_离线分治/分块 莫队/分块/P9132.cpp	templates/08_离线分治/分块 莫队/分块/根号分治——轻重点.cpp
+templates/08_离线分治/分块 莫队/分块/SPOJ_GIVEAWAY.cpp	templates/08_离线分治/分块 莫队/分块/普通分块——单点修改.cpp
+templates/08_离线分治/分块 莫队/莫队/AT_JOISC2014C.cpp	templates/08_离线分治/分块 莫队/莫队/只增回滚莫队——模板.cpp
+templates/08_离线分治/分块 莫队/莫队/CF940F.cpp	templates/08_离线分治/分块 莫队/莫队/带修莫队——mex.cpp
+templates/08_离线分治/分块 莫队/莫队/P1903.cpp	templates/08_离线分治/分块 莫队/莫队/带修莫队——模板.cpp
+templates/08_离线分治/分块 莫队/莫队/P3709.cpp	templates/08_离线分治/分块 莫队/莫队/莫队——众数次数.cpp
+templates/08_离线分治/分块 莫队/莫队/P4074.cpp	templates/08_离线分治/分块 莫队/莫队/树上莫队——带修莫队.cpp
+templates/08_离线分治/分块 莫队/莫队/P4137.cpp	templates/08_离线分治/分块 莫队/莫队/只删回滚莫队——模板.cpp
+templates/08_离线分治/分块 莫队/莫队/P4477.cpp	templates/08_离线分治/分块 莫队/莫队/莫队——线段树.cpp
+templates/08_离线分治/分块 莫队/莫队/P4688.cpp	templates/08_离线分治/分块 莫队/莫队/莫队——位图.cpp
+templates/08_离线分治/分块 莫队/莫队/P4887.cpp	templates/08_离线分治/分块 莫队/莫队/莫队二次离线——模板.cpp
+templates/08_离线分治/分块 莫队/莫队/P5047.cpp	templates/08_离线分治/分块 莫队/莫队/莫队二次离线——分块.cpp
+templates/08_离线分治/分块 莫队/莫队/P5072.cpp	templates/08_离线分治/分块 莫队/莫队/莫队——链表.cpp
+templates/08_离线分治/分块 莫队/莫队/P5112.cpp	templates/08_离线分治/分块 莫队/莫队/莫队——哈希.cpp
+templates/08_离线分治/分块 莫队/莫队/P5355.cpp	templates/08_离线分治/分块 莫队/莫队/莫队——根号分治.cpp
+templates/08_离线分治/分块 莫队/莫队/P5398.cpp	templates/08_离线分治/分块 莫队/莫队/莫队二次离线——根号分治.cpp
+templates/08_离线分治/分块 莫队/莫队/P5501.cpp	templates/08_离线分治/分块 莫队/莫队/莫队二次离线——方式二.cpp
+templates/08_离线分治/分块 莫队/莫队/P5906.cpp	templates/08_离线分治/分块 莫队/莫队/只增回滚莫队——区间距离.cpp
+templates/08_离线分治/分块 莫队/莫队/P8078.cpp	templates/08_离线分治/分块 莫队/莫队/只删回滚莫队——链表.cpp
+templates/08_离线分治/分块 莫队/莫队/SPOJ_ADAUNIQ.cpp	templates/08_离线分治/分块 莫队/莫队/带修莫队——词频.cpp
+templates/08_离线分治/分块 莫队/莫队/SPOJ_COT2.cpp	templates/08_离线分治/分块 莫队/莫队/树上莫队——模板.cpp
+templates/08_离线分治/分块 莫队/莫队/SPOJ_DQUERY.cpp	templates/08_离线分治/分块 莫队/莫队/莫队——模板.cpp
+templates/08_离线分治/分块 莫队/莫队/SPOJ_ZQUERY.cpp	templates/08_离线分治/分块 莫队/莫队/只增回滚莫队——前缀和.cpp
+templates/08_离线分治/整体二分/CF1100F.cpp	templates/08_离线分治/整体二分/整体二分——线性基.cpp
+templates/08_离线分治/整体二分/CF603E.cpp	templates/08_离线分治/整体二分/整体二分——最小瓶颈.cpp
+templates/08_离线分治/整体二分/P1527.cpp	templates/08_离线分治/整体二分/整体二分——二维1.cpp
+templates/08_离线分治/整体二分/P1527_2.cpp	templates/08_离线分治/整体二分/整体二分——二维2.cpp
+templates/08_离线分治/整体二分/P2617.cpp	templates/08_离线分治/整体二分/整体二分——带修改.cpp
+templates/08_离线分治/整体二分/P3242.cpp	templates/08_离线分治/整体二分/整体二分——扫描线.cpp
+templates/08_离线分治/整体二分/P3250.cpp	templates/08_离线分治/整体二分/整体二分——树上操作.cpp
+templates/08_离线分治/整体二分/P3527.cpp	templates/08_离线分治/整体二分/整体二分——破环为链1.cpp
+templates/08_离线分治/整体二分/P3527_2.cpp	templates/08_离线分治/整体二分/整体二分——破环为链2.cpp
+templates/08_离线分治/整体二分/P3834.cpp	templates/08_离线分治/整体二分/整体二分——模板1.cpp
+templates/08_离线分治/整体二分/P3834_2.cpp	templates/08_离线分治/整体二分/整体二分——模板2.cpp
+templates/08_离线分治/整体二分/P4602.cpp	templates/08_离线分治/整体二分/整体二分——线段树.cpp
+templates/08_离线分治/线段树分治/AT_ABC308G.cpp	templates/08_离线分治/线段树分治/线段树分治——反面教材.cpp
+templates/08_离线分治/线段树分治/CF1681F.cpp	templates/08_离线分治/线段树分治/线段树分治——答案贡献.cpp
+templates/08_离线分治/线段树分治/CF576E.cpp	templates/08_离线分治/线段树分治/线段树分治——继承操作.cpp
+templates/08_离线分治/线段树分治/CF601E.cpp	templates/08_离线分治/线段树分治/线段树分治——结合01背包.cpp
+templates/08_离线分治/线段树分治/CF938G.cpp	templates/08_离线分治/线段树分治/线段树分治——并查集线性基.cpp
+templates/08_离线分治/线段树分治/CF981E.cpp	templates/08_离线分治/线段树分治/线段树分治——位置轴背包.cpp
+templates/08_离线分治/线段树分治/LOJ121.cpp	templates/08_离线分治/线段树分治/线段树分治——模板.cpp
+templates/08_离线分治/线段树分治/LOJ6515.cpp	templates/08_离线分治/线段树分治/线段树分治——背包递推.cpp
+templates/08_离线分治/线段树分治/P3733.cpp	templates/08_离线分治/线段树分治/线段树分治——位图线性基.cpp
+templates/08_离线分治/线段树分治/P4219.cpp	templates/08_离线分治/线段树分治/线段树分治——操作排序.cpp
+templates/08_离线分治/线段树分治/P4585.cpp	templates/08_离线分治/线段树分治/线段树分治——可持久化前缀树.cpp
+templates/08_离线分治/线段树分治/P5227.cpp	templates/08_离线分治/线段树分治/线段树分治——连通图.cpp
+templates/08_离线分治/线段树分治/P5631.cpp	templates/08_离线分治/线段树分治/线段树分治——答案轴.cpp
+templates/08_离线分治/线段树分治/P5787.cpp	templates/08_离线分治/线段树分治/线段树分治——二分图.cpp
+templates/09_基础技巧/二分/P2619.cpp	templates/09_基础技巧/二分/带权二分——模板.cpp
+templates/09_基础技巧/二分/P2798.cpp	templates/09_基础技巧/二分/带权二分——应用.cpp
+templates/09_基础技巧/二分/P5633.cpp	templates/09_基础技巧/二分/带权二分——恰好k个.cpp
+templates/09_基础技巧/启发式合并/P3201.cpp	templates/09_基础技巧/启发式合并/启发式合并.cpp
+templates/09_基础技巧/基础技巧/P1545.cpp	templates/09_基础技巧/基础技巧/线段最小覆盖问题.cpp
+templates/09_基础技巧/基础技巧/P2396.cpp	templates/09_基础技巧/基础技巧/枚举子集——卡常.cpp
+templates/09_基础技巧/差分前缀和/P3397.cpp	templates/09_基础技巧/差分前缀和/差分——二维模板.cpp
+templates/09_基础技巧/差分前缀和/P4231.cpp	templates/09_基础技巧/差分前缀和/差分——等差数列.cpp
+templates/09_基础技巧/差分前缀和/P5026.cpp	templates/09_基础技巧/差分前缀和/差分——等差数列升级.cpp
+templates/09_基础技巧/扫描线/P1904.cpp	templates/09_基础技巧/扫描线/扫描线——天际线2.cpp
+templates/模板/2sat/AT_ABC210F.cpp	templates/模板/2sat/2sat——前后缀优化建图.cpp
+templates/模板/2sat/P3825.cpp	templates/模板/2sat/2sat——特殊展开.cpp
+templates/模板/2sat/P4782.cpp	templates/模板/2sat/2sat——模板.cpp
+templates/模板/2sat/P6965.cpp	templates/模板/2sat/2sat——trie优化建图.cpp
+templates/模板/LCT/P3690.cpp	templates/模板/LCT/LCT——模板.cpp
+templates/模板/仙人掌树/P4129.cpp	templates/模板/仙人掌树/仙人掌树——非树模板.cpp
+templates/模板/仙人掌树/P5236.cpp	templates/模板/仙人掌树/仙人掌树——圆方树模板.cpp
+templates/模板/仙人掌树/UOJ87.cpp	templates/模板/仙人掌树/仙人掌树——虚树.cpp
+templates/模板/优化建图/CF1904F.cpp	templates/模板/优化建图/倍增优化建图.cpp
+templates/模板/优化建图/CF1904F_2.cpp	templates/模板/优化建图/树链剖分优化建图.cpp
+templates/模板/优化建图/P5344.cpp	templates/模板/优化建图/倍增优化建图——使用.cpp
+templates/模板/优化建图/P6378.cpp	templates/模板/优化建图/前后缀优化建图——2sat.cpp
+templates/模板/基环树/CF711D.cpp	templates/模板/基环树/基环树——模板.cpp
+templates/模板/基环树/P2607.cpp	templates/模板/基环树/基环树——树形dp.cpp
+templates/模板/基环树/P4381.cpp	templates/模板/基环树/基环树——单调队列.cpp
+templates/模板/基环树/P4949.cpp	templates/模板/基环树/基环树——重链剖分.cpp
