@@ -1,7 +1,7 @@
 // 用途：折半枚举两组子集和，计数总重量不超过上限的选取方案。
 // 时间：O(n×2^(n/2))，包括排序。
 // 空间：O(2^(n/2))。
-// 注意：本文件的‘双向’是折半枚举两个子集，不使用 BFS 队列。
+// 注意：n≤40、重量非负；总和及方案数可能超过 32 位，统一用 long long。
 // 例题：https://www.luogu.com.cn/problem/P4799
 // 题意：给定若干物品，统计总重量不超过上限的子集数。
 // 思路：物品分两半枚举子集和，排序后用双指针统计可配对数量。
@@ -10,17 +10,17 @@ using namespace std;
 const int MAXN = 40;
 const int MAXM = 1 << 20;
 
-long arr[MAXN];
-long lsum[MAXM];//左边展开的信息
-long rsum[MAXM];//右边展开的信息
+long long arr[MAXN];
+long long lsum[MAXM];//左边展开的信息
+long long rsum[MAXM];//右边展开的信息
 int n;
-long w;
+long long w;
 
 //暴力展开 从i开始到e结束  不要超过w  因为超过w没有任何意义
 //目前已经有了j个答案  暂时总和是s
 //递归函数  会一直递归到i==e
 //返回值是自己可以得到的最终答案
-int f(int i, int e, long s, long w, long* ans, int j) {
+int f(int i, int e, long long s, long long w, long long* ans, int j) {
     if (s > w) {
         return j;
     }
@@ -37,12 +37,12 @@ int f(int i, int e, long s, long w, long* ans, int j) {
     return j;
 }
 
-long compute(){
+long long compute(){
     int lsize = f(0, n >> 1, 0, w, lsum, 0);
     int rsize = f(n >> 1, n, 0, w, rsum, 0);
     sort(lsum, lsum+lsize);
     sort(rsum, rsum+rsize);
-    long ans = 0;
+    long long ans = 0;
     //汇总左右两边信息 双指针
     for (int i = lsize - 1, j = 0; i >= 0; i--) {
         while (j < rsize && lsum[i] + rsum[j] <= w) {

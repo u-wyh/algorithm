@@ -75,6 +75,7 @@ void heapInsert(int i) {
 }
 
 void addOrUpdateOrIgnore(int ei) {
+    // 未入堆则插入，已入堆则降低候选边权，已选点直接忽略。
     int v = to[ei];
     int w = weight[ei];
     if (where[v] == -1) {
@@ -89,6 +90,7 @@ void addOrUpdateOrIgnore(int ei) {
 }
 
 long long prim() {
+    // 从 1 号点出发，每次取连接已选点集的最轻边。
     nodeCnt = 1;
     where[1] = -2;//将节点1直接视为已经弹出过了
     for (int ei = head[1]; ei > 0; ei = Next[ei]) {

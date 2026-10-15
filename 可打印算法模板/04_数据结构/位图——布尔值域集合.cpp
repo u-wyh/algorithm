@@ -1,88 +1,56 @@
-// 用途：位图压缩布尔值域并快速查询。
-// 时间：单次 O(1)。
-// 空间：O(U/字长)。
+// 用途：用位图维护 0..n-1 中哪些整数已出现，支持设置、清除、翻转和查询。
+// 时间：初始化 O(n/32)，单次操作 O(1)。
+// 空间：O(n/32)。
+// 注意：n≤1000000，查询下标必须在 0..n-1；用无符号位避免左移到第 31 位时未定义行为。
+// 题意：操作 1 x 设置为存在，2 x 清除，3 x 翻转，4 x 输出当前是否存在。
+// 思路：每个 uint32_t 存 32 个标记，商定位字，余数定位位。
 #include <bits/stdc++.h>
 using namespace std;
 
-// 位图的实现
+const int MAXU = 1000000;
+
 class Bitset {
 public:
-    std::vector<int> set;
+    // 下标除以 32 找字，余数找该字中的位。
+    uint32_t word[(MAXU + 31) / 32];
 
-    // n个数字 : 0~n-1
-    Bitset(int n) {
-        // a/b如果结果想向上取整，可以写成 : (a+b-1)/b
-        // 前提是a和b都是非负数
-        set.resize((n + 31) / 32);
+    void init(int n) {
+        fill(word, word + (n + 31) / 32, 0U);
     }
 
-    //在num位上设置为1
     void add(int num) {
-        set[num / 32] |= 1 << (num % 32);
+        word[num / 32] |= 1U << (num % 32);
     }
 
-    //在num位上设置为0
     void remove(int num) {
-        set[num / 32] &= ~(1 << (num % 32));
+        word[num / 32] &= ~(1U << (num % 32));
     }
 
-    //num位上的数字翻转
     void reverse(int num) {
-        set[num / 32] ^= 1 << (num % 32);
+        // 异或 1 只翻转目标位。
+        word[num / 32] ^= 1U << (num % 32);
     }
 
-    //num位上的状态是什么
     bool contains(int num) const {
-        return ((set[num / 32] >> (num % 32)) & 1) == 1;
+        return (word[num / 32] >> (num % 32)) & 1U;
     }
 };
 
-// 对数器测试
+Bitset bits;
+
 int main() {
-    srand(time(0)); // 初始化随机数种子
-
-    int n = 1000;
-    int testTimes = 10000;
-    std::cout << "测试开始" << std::endl;
-
-    // 实现的位图结构
-    Bitset bitSet(n);
-    // 直接用unordered_set做对比测试
-    std::unordered_set<int> hashSet;
-
-    std::cout << "调用阶段开始" << std::endl;
-    for (int i = 0; i < testTimes; i++) {
-        double decide = static_cast<double>(rand()) / RAND_MAX;
-        // number -> 0 ~ n-1，等概率得到
-        int number = rand() % n;
-        if (decide < 0.333) {
-            bitSet.add(number);
-            hashSet.insert(number);
-        } else if (decide < 0.666) {
-            bitSet.remove(number);
-            hashSet.erase(number);
-        } else {
-            bitSet.reverse(number);
-            if (hashSet.find(number) != hashSet.end()) {
-                hashSet.erase(number);
-            } else {
-                hashSet.insert(number);
-            }
-        }
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int n, q;
+    cin >> n >> q;
+    bits.init(n);
+    while (q--) {
+        int op, x;
+        cin >> op >> x;
+        if (op == 1) bits.add(x);
+        else if (op == 2) bits.remove(x);
+        else if (op == 3) bits.reverse(x);
+        else cout << bits.contains(x) << '\n';
     }
-    std::cout << "调用阶段结束" << std::endl;
-    std::cout << "验证阶段开始" << std::endl;
-    for (int i = 0; i < n; i++) {
-        if (bitSet.contains(i) != (hashSet.find(i) != hashSet.end())) {
-            std::cout << "出错了!" << std::endl;
-            break; // 可以选择在这里终止程序，或者继续检查所有元素
-        }
-        else{
-            cout<<"第"<<setw(4)<<i<<"组测试正确"<<endl;
-        }
-    }
-    std::cout << "验证阶段结束" << std::endl;
-    std::cout << "测试结束" << std::endl;
-
     return 0;
 }

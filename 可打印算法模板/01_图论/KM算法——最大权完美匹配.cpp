@@ -12,6 +12,7 @@ long long weight[MAXN][MAXN], labelLeft[MAXN], labelRight[MAXN], slack[MAXN];
 bool seenLeft[MAXN], seenRight[MAXN];
 
 bool augment(int u) {
+    // 只沿等价边找增广路；非等价边更新右点 slack。
     seenLeft[u] = true;
     for (int v = 0; v < n; ++v) {
         if (seenRight[v]) continue;
@@ -30,6 +31,7 @@ bool augment(int u) {
 }
 
 long long maximumMatching() {
+    // 左点初始标号取该行最大边权，保证所有 gap 非负。
     fill(matchRight, matchRight + n, -1);
     for (int u = 0; u < n; ++u) {
         labelLeft[u] = weight[u][0];
@@ -45,6 +47,7 @@ long long maximumMatching() {
             long long step = INF;
             for (int v = 0; v < n; ++v)
                 if (!seenRight[v]) step = min(step, slack[v]);
+            // 调整访问到的左右点标号，至少出现一条新的等价边。
             for (int x = 0; x < n; ++x)
                 if (seenLeft[x]) labelLeft[x] -= step;
             for (int v = 0; v < n; ++v) {

@@ -78,6 +78,7 @@ int main() {
     cin >> n >> m >> source >> sink;
     int superSource = n + 1, superSink = n + 2;
     for (int i = 0, u, v; i < m; ++i) {
+        // 先固定每条边的下界，只把可追加的 upper-lower 留在残量网络。
         long long lower, upper;
         cin >> u >> v >> lower >> upper;
         addEdge(u, v, upper - lower);
@@ -85,6 +86,7 @@ int main() {
         balance[v] += lower;
     }
     int returnEdge = addEdge(sink, source, INF);
+    // 加 t→s 后变无源汇可行循环；超级源汇补齐每点的流量差。
     long long required = 0;
     for (int u = 1; u <= n; ++u) {
         if (balance[u] > 0) {

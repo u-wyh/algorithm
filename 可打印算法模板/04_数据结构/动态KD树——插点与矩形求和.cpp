@@ -1,9 +1,10 @@
 // 用途：动态插入带权平面点并查询矩形内点权和。
-// 时间：建树 O(n log n)，查询最坏 O(n)。
+// 时间：插入均摊约 O(log² n)，单次重构或查询最坏 O(n)。
 // 空间：O(n)。
 // 例题：https://www.luogu.com.cn/problem/P4148
 // 题意：动态插入带权点，询问矩形内权值和。
 // 思路：KD 树节点维护包围盒和子树和；整盒包含直接取和。
+// 注意：本题输入按上次查询答案异或解码；首个整数是坐标范围，不是点数。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

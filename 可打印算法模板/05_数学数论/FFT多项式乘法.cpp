@@ -62,12 +62,14 @@ int main()
         scanf("%lf",&B[i].x);
     }
     for(m=n+m,n=1;n<=m;n<<=1);
+    // 补到严格大于结果最高次数的 2 的幂，避免循环卷积覆盖有效系数。
     FFT(A,n,1);
     FFT(B,n,1);
     for(int i=0;i<n;i++){
         A[i]=A[i]*B[i];
     }
     FFT(A,n,-1);
+    // 逆变换需除以 n，再把浮点误差四舍五入。
     for(int i=0;i<=m;i++){
         printf("%lld ",llround(A[i].x/n));
     }

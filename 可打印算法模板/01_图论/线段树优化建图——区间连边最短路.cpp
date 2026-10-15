@@ -8,6 +8,7 @@
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 9*MAXN;
+const int MAXEDGE = 4000005; // 约 4n 条建树边 + 每次区间连边至多 2log₂n 条。
 const long long INF = 1e18;
 
 int n,q,st;
@@ -33,9 +34,9 @@ int ls2[MAXM];
 int rs2[MAXM];
 
 int head[MAXM];
-int nxt[MAXM<<2];
-int to[MAXM<<2];
-int weight[MAXM<<2];
+int nxt[MAXEDGE];
+int to[MAXEDGE];
+int weight[MAXEDGE];
 int cnt=1;
 
 inline int read(){
@@ -59,6 +60,7 @@ inline void addedge(int u,int v,int w){
 }
 
 int build1(int l,int r){
+    // 出树：父区间到子区间接 0 边，整段入树即可到达其所有叶点。
     if(l==r){
         return l;
     }
@@ -74,6 +76,7 @@ int build1(int l,int r){
 }
 
 int build2(int l,int r){
+    // 入树：子区间到父区间接 0 边，区间内叶点均可走到整段节点。
     if(l==r){
         return l;
     }
@@ -89,6 +92,7 @@ int build2(int l,int r){
 }
 
 void update1(int jobl,int jobr,int jobv,int jobw,int l,int r,int i){
+    // 点 jobv 指向区间 [jobl,jobr]，只连出树的规范覆盖节点。
     if(jobl<=l&&r<=jobr){
         addedge(jobv,i,jobw);
     }
@@ -104,6 +108,7 @@ void update1(int jobl,int jobr,int jobv,int jobw,int l,int r,int i){
 }
 
 void update2(int jobl,int jobr,int jobv,int jobw,int l,int r,int i){
+    // 区间 [jobl,jobr] 指向点 jobv，只连入树的规范覆盖节点。
     if(jobl<=l&&r<=jobr){
         addedge(i,jobv,jobw);
     }

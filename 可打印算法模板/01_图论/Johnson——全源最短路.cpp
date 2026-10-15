@@ -1,6 +1,6 @@
 // 用途：Johnson 求稀疏图全源最短路。
 // 时间：最坏 O(n²m + n(m+n)log n)。
-// 空间：O(n²+m)。
+// 空间：O(n+m)，每次 Dijkstra 复用距离数组。
 // 例题：https://www.luogu.com.cn/problem/P5905
 // 题意：稀疏有向图可含负边，求每对点最短距离。
 // 思路：先求势能并重标边权，再从每个点运行 Dijkstra；负环则无解。
@@ -20,6 +20,7 @@ int weight[MAXM];
 int cnt=1;
 
 int h[MAXN];
+// h[u] 是超级源点到 u 的最短路，用作重标势能。
 
 int dis[MAXN];
 long long ans;
@@ -44,6 +45,7 @@ inline void addedge(int u,int v,int w){
 }
 
 void spfa(){
+    // 超级源点连向所有点，先判负环并得到可使边权非负的势能。
     for(int i=1;i<=n;i++){
         h[i]=1e9;
     }
@@ -73,6 +75,7 @@ void spfa(){
 }
 
 void dijkstra(int s){
+    // 重标后边权非负；每个源点都重新初始化距离和已确定标记。
     for(int i=1;i<=n;i++){
         dis[i]=INF;
         vis[i]=false;
@@ -114,6 +117,7 @@ signed main()
     spfa();
 
     for(int u=1;u<=n;u++){
+        // w'(u,v)=w(u,v)+h[u]-h[v]，最短路路径次序不变。
         for(int i=head[u];i;i=nxt[i]){
             int v=to[i];
             weight[i]+=h[u]-h[v];
@@ -124,6 +128,7 @@ signed main()
         dijkstra(i);
         ans=0;
         for(int j=1;j<=n;j++){
+            // 有原路时还原 d=d'-h[i]+h[j]；无路按题目约定记 10^9。
             if(dis[j]==INF){
                 dis[j]=1e9;
                 ans+=j*dis[j];

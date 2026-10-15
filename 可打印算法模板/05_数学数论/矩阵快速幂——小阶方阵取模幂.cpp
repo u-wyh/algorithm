@@ -12,6 +12,7 @@ struct Matrix {
 
 Matrix multiply(const Matrix &left, const Matrix &right, int k, long long mod) {
     Matrix result;
+    // i-t-j 顺序跳过左矩阵的 0，计算 result[i][j] += left[i][t]*right[t][j]。
     for (int i = 0; i < k; ++i) {
         for (int t = 0; t < k; ++t) {
             if (left.a[i][t] == 0) continue;
@@ -26,6 +27,7 @@ Matrix multiply(const Matrix &left, const Matrix &right, int k, long long mod) {
 
 Matrix power(Matrix base, long long exponent, int k, long long mod) {
     Matrix result;
+    // 单位矩阵对应指数 0；每次处理指数最低位。
     for (int i = 0; i < k; ++i) result.a[i][i] = 1 % mod;
     while (exponent > 0) {
         if (exponent & 1) result = multiply(result, base, k, mod);

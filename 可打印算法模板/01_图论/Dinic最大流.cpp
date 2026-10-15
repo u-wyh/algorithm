@@ -41,6 +41,7 @@ void addedge(int u,int v,int w){
 }
 
 bool bfs(){
+    // 只沿有剩余容量的边分层，汇点不可达时最大流已求完。
     for(int i=1;i<=n;i++){
         dep[i]=-1;
     }
@@ -63,6 +64,7 @@ bool bfs(){
 }
 
 int dfs(int u,int f){
+    // 当前弧沿分层图送出最多 f；增广后同时更新正反残量。
     if(u==t){
         return f;
     }

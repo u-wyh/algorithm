@@ -1,7 +1,7 @@
 // 用途：维护区间取 min，并查询区间最大值与区间和。
 // 时间：均摊 O(q log² n)。
 // 空间：O(n)。
-// 注意：区间取 min 时仅在新值大于严格次大值时整段更新。
+// 注意：n≤100000，初值与更新值都须 ≥-100000；区间取 min 只在新值高于严格次大值时整段更新。
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -12,7 +12,7 @@ int LOWEST = -100001;
 // 原始数组
 int arr[MAXN];
 // 累加和
-long sum[MAXN << 2];
+long long sum[MAXN << 2];
 // 最大值(既是查询信息也是懒更新信息，课上已经讲解了)
 int Max[MAXN << 2];
 // 最大值个数
@@ -42,7 +42,7 @@ void up(int i) {
 // sum和max怎么调整
 void lazy(int i, int v) {
     if (v < Max[i]) {
-        sum[i] -= ((long) Max[i] - v) * cnt[i];
+        sum[i] -= (1LL * Max[i] - v) * cnt[i];
         Max[i] = v;
     }
 }
@@ -102,13 +102,13 @@ int queryMax(int jobl, int jobr, int l, int r, int i) {
     return ans;
 }
 
-long querySum(int jobl, int jobr, int l, int r, int i) {
+long long querySum(int jobl, int jobr, int l, int r, int i) {
     if (jobl <= l && r <= jobr) {
         return sum[i];
     }
     down(i);
     int mid = (l + r) >> 1;
-    long ans = 0;
+    long long ans = 0;
     if (jobl <= mid) {
         ans += querySum(jobl, jobr, l, mid, i << 1);
     }
@@ -137,7 +137,7 @@ int main()
             int ans1 = queryMax(jobl, jobr, 1, n, 1);
             cout<<ans1<<endl;
         } else {
-            long ans1 = querySum(jobl, jobr, 1, n, 1);
+            long long ans1 = querySum(jobl, jobr, 1, n, 1);
             cout<<ans1<<endl;
         }
     }

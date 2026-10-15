@@ -12,9 +12,11 @@ const int MAXN = 1000005;
 int value[MAXN], que[MAXN];
 
 void printWindows(int n, int k, bool wantMinimum) {
+    // que[head..tail) 存下标，队首始终是当前窗口的最值位置。
     int head = 0, tail = 0;
     bool first = true;
     for (int i = 1; i <= n; ++i) {
+        // 先删左侧已离窗的下标，再删队尾不会成为后续答案的下标。
         while (head < tail && que[head] <= i - k) ++head;
         while (head < tail && (wantMinimum ? value[que[tail - 1]] >= value[i]
                                           : value[que[tail - 1]] <= value[i]))

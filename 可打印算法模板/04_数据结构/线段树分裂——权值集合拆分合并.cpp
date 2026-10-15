@@ -1,13 +1,14 @@
 // 用途：维护多个可合并、可按值域分裂的权值集合及区间和、第 k 小。
-// 时间：单次 O(log V)。
-// 空间：O(节点数)。
+// 时间：单点加、区间和、第 k 小、分裂 O(log V)；合并 O(k)，k 为两树重叠节点数。
+// 空间：O(n+m log V) 个节点，回收合并后的节点。
 // 例题：https://www.luogu.com.cn/problem/P5494
 // 题意：若干权值集合支持按值域分裂、合并、计数和第 k 小。
 // 思路：动态开点权值线段树递归拆分或合并节点。
+// 注意：n,m≤200000；合并 x、y 后 y 清空；x≠y，计数非负，第 k 小的 k 必须合法。
 #include <bits/stdc++.h>
 using namespace std;
-const int MAXN = 200001;
-const int MAXT = MAXN * 10;
+const int MAXN = 200005;
+const int MAXT = MAXN * 25;
 
 int n, m;
 
@@ -28,6 +29,7 @@ void prepare() {
 }
 
 int newNode() {
+	// m 次分裂最多新增 O(m log n) 个节点；按题目上限调整 MAXT。
    	return pool[top--];
 }
 
@@ -144,6 +146,15 @@ void split(int jobl, int jobr, int l, int r, int t1) {
 	}
 	up(t1);
 	up(t2);
+	// 没有元素的一侧直接回收，避免多次空分裂耗尽节点池。
+	if (sum[t1] == 0) {
+		del(t1);
+		t1 = 0;
+	}
+	if (sum[t2] == 0) {
+		del(t2);
+		t2 = 0;
+	}
 	// 注意更新tree1  tree2
 	tree1 = t1;
 	tree2 = t2;
@@ -169,6 +180,7 @@ int main() {
 		} else if (op == 1) {
 			cin >> x >> y;
 			root[x] = merge(1, n, root[x], root[y]);
+			root[y] = 0;
 		} else if (op == 2) {
 			cin >> x >> y >> z;
 			root[x] = add(z, y, 1, n, root[x]);

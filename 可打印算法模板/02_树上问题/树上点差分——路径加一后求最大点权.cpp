@@ -20,6 +20,7 @@ void addEdge(int u, int v) {
 }
 
 void prepare() {
+    // 记录从根出发的遍历序；后面逆序累加子树差分值。
     int count = 1;
     order[0] = 1;
     depth[1] = 1;
@@ -66,6 +67,7 @@ int main() {
     for (int i = 0, u, v; i < q; ++i) {
         cin >> u >> v;
         int p = lca(u, v);
+        // 点差分：[u,v] 两端加，LCA 与 LCA 的父节点各减一。
         ++delta[u];
         ++delta[v];
         --delta[p];
@@ -73,6 +75,7 @@ int main() {
     }
     long long answer = 0;
     for (int i = n - 1; i >= 0; --i) {
+        // 后序把子树增量汇给父节点，此时 delta[u] 就是最终点权。
         int u = order[i];
         answer = max(answer, delta[u]);
         delta[parentJump[u][0]] += delta[u];

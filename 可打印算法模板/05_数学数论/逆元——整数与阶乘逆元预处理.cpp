@@ -1,7 +1,7 @@
 // 用途：预处理模素数下的整数逆元、阶乘及阶乘逆元。
-// 时间：O(log mod)。
-// 空间：O(1)。
-// 注意：模数须为素数且 n<模数；main 只演示预处理，不输出答案。
+// 时间：预处理 O(n+log mod)，单次逆元查询 O(1)。
+// 空间：O(n)。
+// 注意：模数须为素数且 1≤n<mod、n≤300000；main 只演示预处理，不输出答案。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;
@@ -30,7 +30,7 @@ long long power(long long a,long long b,long long mod){
 //费马小定理求(a/b)%mod的值
 long long compute(long long a,long long b,long long mod){
     long long inv=power(b,mod-2,mod);//求b在%mod的情况下的逆元
-    return (a*inv)%mod;
+    return ((a % mod) * inv) % mod;
 }
 
 //连续数字的逆元
@@ -38,7 +38,7 @@ long long compute(long long a,long long b,long long mod){
 void build(int n) {
     inv[1] = 1;
     for (int i = 2; i <= n; i++) {
-        inv[i] = (mod - (long long)inv[mod % i] * (mod / i) % mod + mod) % mod;
+        inv[i] = (mod - (long long)inv[mod % i] * (mod / i) % mod) % mod;
     }
 }
 
@@ -48,13 +48,13 @@ void build() {
     //先求出阶乘表
     fac[0] = 1; // 0! = 1
     for (int i = 1; i <= n; i++) {
-        fac[i] = (fac[i - 1] * i) % mod;
+        fac[i] = (long long)fac[i - 1] * i % mod;
     }
 
     // 利用线性递推优化计算逆元
     facinv[n] = power(fac[n], mod - 2,mod);//求出最后一个数字的阶乘逆元
     for (int i = n - 1; i >= 0; i--) {
-        facinv[i] = (facinv[i + 1] * (i + 1)) % mod;//线性递推
+        facinv[i] = (long long)facinv[i + 1] * (i + 1) % mod;//线性递推
     }
 }
 

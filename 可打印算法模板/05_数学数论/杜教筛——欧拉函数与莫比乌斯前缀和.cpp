@@ -18,8 +18,10 @@ int mu[MAXN];
 
 unordered_map<int,int>mp_mu;
 unordered_map<int,int>mp_phi;
+// 大于预处理上限的前缀和才进入记忆化表。
 
 void prepare(int n){
+    // 线性筛出 φ、μ，随后原地转成各自的前缀和。
     mu[1]=1,phi[1]=1;
     for(int i=2;i<=n;i++){
         if(!vis[i]){
@@ -47,6 +49,7 @@ void prepare(int n){
 }
 
 int du_phi(int n){
+    // 利用 Σφ * 1 = id，按相同的 floor(n/l) 一段段扣除贡献。
     if(n<MAXN){
         return phi[n];
     }
@@ -63,11 +66,13 @@ int du_phi(int n){
 }
 
 int du_mu(int n){
+    // 利用 Σμ * 1 = ε，n>1 的总卷积值为 0。
     if(n<MAXN){
         return mu[n];
     }
-    if(mp_mu[n]){
-        return mp_mu[n];
+    auto it = mp_mu.find(n);
+    if(it != mp_mu.end()){
+        return it->second;
     }
     int ans=1;
     for(int l=2,r;l<=n;l=r+1){

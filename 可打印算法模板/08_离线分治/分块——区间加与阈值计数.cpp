@@ -13,6 +13,7 @@ long long value[MAXN], sortedValue[MAXN], lazy[MAXB];
 int blockSize, blockCount, blockId[MAXN], leftEnd[MAXB], rightEnd[MAXB];
 
 void rebuild(int block) {
+    // 有序副本只存未加 lazy 的基础值，方便整块二分计数。
     for (int i = leftEnd[block]; i <= rightEnd[block]; ++i)
         sortedValue[i] = value[i];
     sort(sortedValue + leftEnd[block], sortedValue + rightEnd[block] + 1);
@@ -31,6 +32,7 @@ void build(int n) {
 }
 
 void addPartial(int left, int right, long long delta) {
+    // 边角修改改变基础值，因此只重排受影响的这一块。
     int block = blockId[left];
     for (int i = left; i <= right; ++i) value[i] += delta;
     rebuild(block);
@@ -44,6 +46,7 @@ void rangeAdd(int left, int right, long long delta) {
     }
     addPartial(left, rightEnd[first], delta);
     addPartial(leftEnd[last], right, delta);
+    // 完整块的每个值一起加，不必重排有序副本。
     for (int block = first + 1; block < last; ++block)
         lazy[block] += delta;
 }
@@ -56,6 +59,7 @@ int countPartial(int left, int right, long long threshold) {
 }
 
 int countWhole(int block, long long threshold) {
+    // 实际值=value+lazy；转成基础值 >= threshold-lazy 再二分。
     auto begin = sortedValue + leftEnd[block];
     auto end = sortedValue + rightEnd[block] + 1;
     return end - lower_bound(begin, end, threshold - lazy[block]);

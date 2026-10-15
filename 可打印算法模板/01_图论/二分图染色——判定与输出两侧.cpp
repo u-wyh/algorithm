@@ -16,6 +16,7 @@ void addEdge(int u, int v) {
 }
 
 bool colorComponent(int start) {
+    // 每个连通块单独 BFS；相邻点必须染成 1 与 2 两种相反颜色。
     int left = 0, right = 0;
     que[right++] = start;
     color[start] = 1;
@@ -23,6 +24,7 @@ bool colorComponent(int start) {
         int u = que[left++];
         for (int e = head[u]; e; e = nxt[e]) {
             int v = to[e];
+            // 自环或奇环会使一条边两端颜色相同。
             if (color[v] == color[u]) return false;
             if (color[v] == 0) {
                 color[v] = 3 - color[u];

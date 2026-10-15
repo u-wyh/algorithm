@@ -1,6 +1,6 @@
 // 用途：指数以十进制大整数给出时，计算 a^b mod m。
-// 时间：O(log mod)。
-// 空间：O(log mod)。
+// 时间：O(√m+|b|+log m)，|b| 是指数字符串长度。
+// 空间：O(|b|)。
 // 例题：https://www.luogu.com.cn/problem/P5091
 // 题意：指数是十进制大整数，计算 a^b mod m。
 // 思路：先求 φ(m)，读入大指数并根据扩展欧拉定理缩减指数。
@@ -9,6 +9,7 @@ using namespace std;
 #define int long long
 
 int phi(int n){
+    // 试除分解 m 的不同质因子，计算欧拉函数 φ(m)。
     int ans=n;
     for(int i=2;i*i<=n;i++){
         if(n%i==0){
@@ -53,6 +54,7 @@ signed main()
     bool big=false;
 
     for(char c:b){
+        // val 记录 b mod φ(m)；big 判断 b 是否已达到 φ(m)。
         int x=c-'0';
         val=(val*10+x)%p;
         if(!big){

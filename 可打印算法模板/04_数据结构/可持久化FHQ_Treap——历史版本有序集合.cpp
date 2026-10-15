@@ -4,10 +4,11 @@
 // 例题：https://www.luogu.com.cn/problem/P3835
 // 题意：每次操作产生版本，历史版本仍可查排名和第 k 小。
 // 思路：复制分裂与合并路径上的节点，未变部分共享旧节点。
+// 注意：删除的数须存在、第 k 小的 k 须合法；无前驱/后继输出 INT_MIN+1/INT_MAX；节点池按内存限制调整。
 #include <bits/stdc++.h>
 using namespace std;
 const int MAXN = 500001;
-const int MAXM = MAXN * 50;//正常情况下是要开100倍
+const int MAXM = MAXN * 50;
 
 int cnt = 0;
 int head[MAXN];//用于记录每一个版本的头结点是什么
@@ -15,7 +16,8 @@ int key[MAXM];
 int ls[MAXM];
 int rs[MAXM];
 int sz[MAXM];
-double priority[MAXM];
+uint32_t priority[MAXM];
+mt19937 rng(20261013);
 
 int copy(int i) {
     ++cnt;
@@ -31,7 +33,8 @@ void up(int i) {
     sz[i] = sz[ls[i]] + sz[rs[i]] + 1;
 }
 
-void split(int l, int r, int i, int num) {
+// 按 key≤num 拆分。num 用 long long，删除 INT_MIN 时 num-1 才不会溢出。
+void split(int l, int r, int i, long long num) {
     if (i == 0) {
         rs[l] = ls[r] = 0;
     } else {
@@ -75,7 +78,7 @@ void add(int v, int i, int num) {
     ++cnt;
     key[cnt] = num;
     sz[cnt] = 1;
-    priority[cnt] = (double)rand() / RAND_MAX;
+    priority[cnt] = rng();
     //为新建的节点编号
     head[v] = merge(merge(l, cnt), r);//记录该版本的头结点
 }
@@ -84,7 +87,7 @@ void remove(int v, int i, int num) {
     split(0, 0, i, num);
     int lm = rs[0];
     int r = ls[0];
-    split(0, 0, lm, num - 1);
+    split(0, 0, lm, 1LL * num - 1);
     int l = rs[0];
     int m = ls[0];
     ls[0] = rs[0] = 0;//每次要清空 解决脏数据
@@ -112,14 +115,15 @@ int index(int i, int x) {
     }
 }
 
-int pre(int i, int num) {
+pair<bool, int> pre(int i, int num) {
     if (i == 0) {
-        return INT_MIN + 1;
+        return {false, 0};
     }
     if (key[i] >= num) {
         return pre(ls[i], num);
     } else {
-        return max(key[i], pre(rs[i], num));
+        auto right = pre(rs[i], num);
+        return right.first ? right : make_pair(true, key[i]);
     }
 }
 
@@ -137,7 +141,6 @@ int post(int i, int num) {
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    srand(time(0));
     int n;
     cin >> n;
     for (int i = 1; i <= n; ++i) {
@@ -156,7 +159,8 @@ int main() {
             } else if (op == 4) {
                 cout << index(head[i], x) << "\n";
             } else if (op == 5) {
-                cout << pre(head[i], x) << "\n";
+                auto result = pre(head[i], x);
+                cout << (result.first ? result.second : INT_MIN + 1) << "\n";
             } else {
                 cout << post(head[i], x) << "\n";
             }

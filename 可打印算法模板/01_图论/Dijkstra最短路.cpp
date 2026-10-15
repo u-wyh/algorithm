@@ -18,6 +18,7 @@ struct Item { long long d; int u; } heapArr[MAXM + 5];
 int heapSize;
 
 void push(Item x) {
+    // 定长小根堆；每条边最多触发一次成功松弛，堆容量按 m 开。
     int i = ++heapSize;
     while (i > 1 && heapArr[i / 2].d > x.d) {
         heapArr[i] = heapArr[i / 2];
@@ -50,6 +51,7 @@ void addEdge(int u, int v, long long w) {
 }
 
 void dijkstra() {
+    // 非负权保证弹出的当前最短状态无需再被更短路径改写。
     fill(dista + 1, dista + n + 1, INF);
     dista[s] = 0;
     push({0, s});

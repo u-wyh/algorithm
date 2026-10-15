@@ -85,6 +85,7 @@ bool bfs(){
 }
 
 bool dfs(int u){
+    // 本轮只走 BFS 的下一层，右点失败后标 INF 防止重复尝试。
     for(int i=head[u];i;i=nxt[i]){
         int v=to[i];
         if(disrt[v]==dislt[u]+1){
@@ -100,6 +101,7 @@ bool dfs(int u){
 }
 
 int HK(){
+    // 每轮 BFS 找一批最短增广路，再从所有未匹配左点尝试增广。
     int match=0;
     while(bfs()){
         for(int i=1;i<=n;i++){

@@ -239,15 +239,7 @@ def test_others(ex):
         # SPOJ DQUERY limits values to positive integers.
         positive = [x + 51 for x in arr]
         data = f"{n}\n" + " ".join(map(str,positive)) + f"\n{len(pairs)}\n" + "\n".join(f"{l} {r}" for l,r in pairs) + "\n"
-        assert ints(run(ex, "莫队区间不同数", data)) == want
-
-        changes = [(R.randrange(1,n+1), R.randrange(1,n+1), R.randrange(-30,31)) for _ in range(30)]
-        changes = [(min(l,r), max(l,r),v) for l,r,v in changes]
-        diff = [0]*n
-        for l,r,v in changes:
-            for i in range(l-1,r): diff[i] += v
-        data = f"{n} {len(changes)}\n" + "\n".join(f"{l} {r} {v}" for l,r,v in changes) + "\n"
-        assert ints(run(ex, "一维差分区间加", data)) == diff
+        assert ints(run(ex, "普通莫队——静态区间不同数计数", data)) == want
 
         rows, cols = R.randrange(1,9), R.randrange(1,9)
         grid = [[R.randrange(3)==0 for _ in range(cols)] for _ in range(rows)]

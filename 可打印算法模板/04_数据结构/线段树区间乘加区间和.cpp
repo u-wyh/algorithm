@@ -1,7 +1,7 @@
 // 用途：模意义下区间乘、区间加与区间和。
 // 时间：建树 O(n)，单次操作 O(log n)。
 // 空间：O(n)。
-// 注意：乘标记先作用于加标记；模数必须为正。
+// 注意：n≤100000，1≤mod≤10^9+7；乘标记先作用于加标记。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
@@ -32,6 +32,7 @@ void build(int l,int r,int i){
 }
 
 void mullazy(int i,int val){
+    // 旧的加标记也要乘 val：先做过的加法会被后来的乘法放大。
     tree[i].val*=val;
     tree[i].add*=val;
     tree[i].mul*=val;
@@ -41,6 +42,7 @@ void mullazy(int i,int val){
 }
 
 void addlazy(int i,int val,int l,int r){
+    // 整段加 val，区间和增加 val×区间长度。
     tree[i].add+=val;
     tree[i].val+=val*(r-l+1);
     tree[i].val%=mod;
@@ -125,10 +127,12 @@ signed main()
         cin>>op>>x>>y;
         if(op==1){
             cin>>v;
+            v=(v%mod+mod)%mod;
             mul(x,y,v,1,n,1);
         }
         else if(op==2){
             cin>>v;
+            v=(v%mod+mod)%mod;
             add(x,y,v,1,n,1);
         }
         else{

@@ -1,45 +1,50 @@
-// 用途：二维差分处理矩形区间加值。
-// 时间：O(nm+q)。
-// 空间：O(nm)。
+// 用途：多次给闭矩形每格加 1，最后求每格被覆盖的次数。
+// 时间：O(n²+m)。
+// 空间：O(n²)。
+// 注意：本例是 n×n 网格、m 次加值；n、m≤1000，下标从 1 开始。
 // 例题：https://www.luogu.com.cn/problem/P3397
-// 题意：多次给二维矩形整体加值，输出最终网格。
-// 思路：在矩形四角做差分标记，最后求二维前缀和。
-#include<bits/stdc++.h>
+// 题意：每块地毯覆盖一个矩形，输出各格子被几块地毯覆盖。
+// 思路：四角做差分标记，所有地毯加入后再求二维前缀和。
+#include <bits/stdc++.h>
 using namespace std;
 
-int n,m;
-int nums[1005][1005];
+const int MAXN = 1005;
+int diff[MAXN][MAXN];
 
-void Set(int a,int b,int c,int d,int v){
-    nums[a][b]+=v;
-    nums[a][d+1]-=v;
-    nums[c+1][b]-=v;
-    nums[c+1][d+1]+=v;
+// 给左上角 (x1,y1)、右下角 (x2,y2) 的闭矩形加 value。
+// 四角分别记 +value、-value、-value、+value，供最后一次性恢复。
+void addRectangle(int x1, int y1, int x2, int y2, int value) {
+    diff[x1][y1] += value;
+    diff[x1][y2 + 1] -= value;
+    diff[x2 + 1][y1] -= value;
+    diff[x2 + 1][y2 + 1] += value;
 }
 
-void build(){
-    //来一遍二维前缀和即可
-    for(int i=1;i<=n;i++){
-        for(int j=1;j<=n;j++){
-            nums[i][j]+=nums[i-1][j]+nums[i][j-1]-nums[i-1][j-1];
-        }
-    }
+void restoreGrid(int n) {
+    // 按行列递增做二维前缀和，恢复每个格子的实际覆盖数。
+    for (int i = 1; i <= n; ++i)
+        for (int j = 1; j <= n; ++j)
+            diff[i][j] += diff[i - 1][j] + diff[i][j - 1] - diff[i - 1][j - 1];
 }
 
-int main()
-{
-    cin>>n>>m;
-    int a,b,c,d;
-    while(m--){
-        cin>>a>>b>>c>>d;
-        Set(a,b,c,d,1);
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int n, m;
+    cin >> n >> m;
+    for (int i = 0; i < m; ++i) {
+        int x1, y1, x2, y2;
+        cin >> x1 >> y1 >> x2 >> y2;
+        addRectangle(x1, y1, x2, y2, 1);
     }
-    build();
-    for(int i=1;i<=n;i++){
-        for(int j=1;j<=n;j++){
-            printf("%d ",nums[i][j]);
+    restoreGrid(n);
+    for (int i = 1; i <= n; ++i) {
+        for (int j = 1; j <= n; ++j) {
+            if (j > 1) cout << ' ';
+            cout << diff[i][j];
         }
-        printf("\n");
+        cout << '\n';
     }
     return 0;
 }

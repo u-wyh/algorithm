@@ -1,6 +1,7 @@
 // 用途：离线处理图的删边与两点间最小生成树路径最大边权查询。
-// 时间：单次均摊 O(log n)。
-// 空间：O(n)。
+// 时间：排序 O(m log m)，其后每次操作均摊 O(log(n+m))。
+// 空间：O(n+m+q)。
+// 注意：n≤1000，m、q≤100000；图始终连通、无重边和自环，边权为正。
 // 例题：https://www.luogu.com.cn/problem/P4172
 // 题意：删边过程中查询两点间最小生成树路径的最大边权。
 // 思路：离线倒序加边，用 LCT 维护最小生成森林及路径最大边。
@@ -32,6 +33,7 @@ int sta[MAXN];
 
 int maxedge[MAXN];
 int ans[MAXN];
+// 第 i 条边作为 LCT 的第 n+i 个点；maxedge[x] 是辅助树中的最大边编号。
 
 bool cmp(Edge &a,Edge &b){
     return a.w<b.w;
@@ -49,6 +51,7 @@ pair<int,int> key(int x,int y){
 }
 
 void up(int x){
+    // 原图点本身不带边权，只在边点之间比较最大边。
     maxedge[x]=(x<=n)?0:x-n;
     if(edge[maxedge[ls[x]]].w>edge[maxedge[x]].w){
         maxedge[x]=maxedge[ls[x]];
@@ -158,6 +161,7 @@ int findroot(int x){
 }
 
 void split(int x,int y){
+    // makeroot(x) 后访问 y，y 的辅助树恰好表示原树路径 x..y。
     makeroot(x);
     access(y);
     splay(y);
@@ -179,6 +183,7 @@ void cut(int x,int y){
 }
 
 void prepare(){
+    // 先标记所有将被删除的边，再为“全部操作结束时”的图建最小生成森林。
     for(int i=1;i<=n;i++){
         father[i]=i;
     }
@@ -209,6 +214,7 @@ void prepare(){
 }
 
 void addedge(int e){
+    // 倒序恢复一条边：若比当前树路径最大边轻，就替换该边。
     split(edge[e].x,edge[e].y);
     int maxe=maxedge[edge[e].y];
     if(edge[e].w<edge[maxe].w){
@@ -232,6 +238,7 @@ int main()
     prepare();
 
     for(int i=q;i>=1;i--){
+        // 倒序时删边变加边；询问对应原时间状态，直接读 LCT 路径最大边。
         if(qop[i]==1){
             split(qx[i],qy[i]);
             ans[i]=edge[maxedge[qy[i]]].w;

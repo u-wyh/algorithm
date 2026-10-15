@@ -26,6 +26,7 @@ void build(int n) {
 }
 
 void addPartial(int left, int right, long long delta) {
+    // 边角逐点改原值，同时修正该块的总和；懒标记不动。
     int b = blockId[left];
     for (int i = left; i <= right; ++i) value[i] += delta;
     blockSum[b] += (right - left + 1LL) * delta;
@@ -39,6 +40,7 @@ void rangeAdd(int left, int right, long long delta) {
     }
     addPartial(left, rightEnd[first], delta);
     addPartial(leftEnd[last], right, delta);
+    // 完整块无需逐点改，记录整体增量并直接更新块和。
     for (int b = first + 1; b < last; ++b) {
         lazy[b] += delta;
         blockSum[b] += (rightEnd[b] - leftEnd[b] + 1LL) * delta;
@@ -46,6 +48,7 @@ void rangeAdd(int left, int right, long long delta) {
 }
 
 long long sumPartial(int left, int right) {
+    // 原值尚未包含整块懒增量，边角查询时要补上。
     int b = blockId[left];
     long long answer = 0;
     for (int i = left; i <= right; ++i) answer += value[i] + lazy[b];
@@ -57,7 +60,7 @@ long long rangeSum(int left, int right) {
     if (first == last) return sumPartial(left, right);
     long long answer = sumPartial(left, rightEnd[first]) +
                        sumPartial(leftEnd[last], right);
-    for (int b = first + 1; b < last; ++b) answer += blockSum[b];
+    for (int b = first + 1; b < last; ++b) answer += blockSum[b]; // 块和已含懒增量。
     return answer;
 }
 

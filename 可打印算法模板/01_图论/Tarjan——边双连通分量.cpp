@@ -30,6 +30,8 @@ int ebccl[MAXN];
 int ebccr[MAXN];
 int idx;
 int ebccCnt;
+struct Frame { int u, edge, parentEdge; };
+Frame callStack[MAXN];
 
 void addEdge(int u, int v) {
    nxt[++cntg] = head[u];
@@ -38,31 +40,47 @@ void addEdge(int u, int v) {
 }
 
 void tarjan(int u, int preEdge) {
+    // 模拟递归 DFS：edge 是当前点尚未扫描的下一条边。
     dfn[u] = low[u] = ++cntd;
     sta[++top] = u;
-    for (int e = head[u]; e > 0; e = nxt[e]) {
-        if ((e ^ 1) == preEdge) {
-            continue;
-        }
-        int v = to[e];
-        if (dfn[v] == 0) {
-            tarjan(v, e);
-            low[u] = min(low[u], low[v]);
+    int sp = 1;
+    callStack[sp] = {u, head[u], preEdge};
+    while (sp) {
+        Frame &frame = callStack[sp];
+        int x = frame.u;
+        if (frame.edge) {
+            int e = frame.edge;
+            frame.edge = nxt[e];
+            if ((e ^ 1) == frame.parentEdge) continue; // 只跳过反向树边，保留重边。
+            int v = to[e];
+            if (!dfn[v]) {
+                dfn[v] = low[v] = ++cntd;
+                sta[++top] = v;
+                callStack[++sp] = {v, head[v], e};
+            } else {
+                low[x] = min(low[x], dfn[v]);
+            }
         } else {
-            low[u] = min(low[u], dfn[v]);
+            // 子树已扫完：low 回传给父点；low[x]=dfn[x] 时弹出一个边双。
+            if (dfn[x] == low[x]) {
+                ++ebccCnt;
+                ebccSiz[ebccCnt] = 0;
+                ebccl[ebccCnt] = idx + 1;
+                int pop;
+                do {
+                    pop = sta[top--];
+                    ++ebccSiz[ebccCnt];
+                    ebccArr[++idx] = pop;
+                } while (pop != x);
+                ebccr[ebccCnt] = idx;
+            }
+            int parentEdge = frame.parentEdge;
+            --sp;
+            if (parentEdge) {
+                int parent = to[parentEdge ^ 1];
+                low[parent] = min(low[parent], low[x]);
+            }
         }
-    }
-    if (dfn[u] == low[u]) {
-        ebccCnt++;
-        ebccSiz[ebccCnt] = 0;
-        ebccl[ebccCnt] = idx + 1;
-        int pop;
-        do {
-            pop = sta[top--];
-            ebccSiz[ebccCnt]++;
-            ebccArr[++idx] = pop;
-        } while (pop != u);
-        ebccr[ebccCnt] = idx;
     }
 }
 

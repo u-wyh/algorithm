@@ -44,7 +44,7 @@ def main() -> None:
             assert got == [str(a + b), str(a * b), str(a // b)]
             tests += 1
 
-        bit = ROOT / "04_数据结构/二维树状数组——单点加矩形和.cpp"
+        bit = ROOT / "04_数据结构/二维树状数组——单点赋值与矩形求和.cpp"
         bit_harness = temp / "bit.cpp"
         bit_harness.write_text(
             '#define main old_main\n#include "' + bit.as_posix() + '"\n#undef main\n'

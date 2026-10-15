@@ -30,6 +30,8 @@ int vbccl[MAXN];
 int vbccr[MAXN];
 int idx;
 int vbccCnt;
+struct Frame { int u, edge, parent; };
+Frame callStack[MAXN];
 
 void addEdge(int u, int v) {
     nxt[++cntg] = head[u];
@@ -38,28 +40,47 @@ void addEdge(int u, int v) {
 }
 
 void tarjan(int u) {
+    // 定长调用栈保留递归版的边扫描顺序，避免 50 万点链爆栈。
     dfn[u] = low[u] = ++cntd;
     sta[++top] = u;
-    for (int e = head[u]; e > 0; e = nxt[e]) {
-        int v = to[e];
-        if (dfn[v] == 0) {
-            tarjan(v);
-            low[u] = min(low[u], low[v]);
-            if (low[v] >= dfn[u]) {
-                vbccCnt++;
-                vbccSiz[vbccCnt] = 1;
-                vbccArr[++idx] = u;
-                vbccl[vbccCnt] = idx;
-                int pop;
-                do {
-                    pop = sta[top--];
-                    vbccSiz[vbccCnt]++;
-                    vbccArr[++idx] = pop;
-                } while (pop != v);
-                vbccr[vbccCnt] = idx;
+    int sp = 1;
+    callStack[sp] = {u, head[u], 0};
+    while (sp) {
+        Frame &frame = callStack[sp];
+        int x = frame.u;
+        if (frame.edge) {
+            int e = frame.edge;
+            frame.edge = nxt[e];
+            int v = to[e];
+            if (!dfn[v]) {
+                dfn[v] = low[v] = ++cntd;
+                sta[++top] = v;
+                callStack[++sp] = {v, head[v], x};
+            } else {
+                low[x] = min(low[x], dfn[v]);
             }
         } else {
-            low[u] = min(low[u], dfn[v]);
+            int parent = frame.parent;
+            --sp;
+            if (parent) {
+                low[parent] = min(low[parent], low[x]);
+                if (low[x] >= dfn[parent]) {
+                    // x 子树无法绕回 parent 祖先，弹到 x 构成一个点双。
+                    ++vbccCnt;
+                    vbccSiz[vbccCnt] = 1;
+                    vbccArr[++idx] = parent;
+                    vbccl[vbccCnt] = idx;
+                    int pop;
+                    do {
+                        pop = sta[top--];
+                        ++vbccSiz[vbccCnt];
+                        vbccArr[++idx] = pop;
+                    } while (pop != x);
+                    vbccr[vbccCnt] = idx;
+                }
+            } else {
+                --top; // 根点本身已在各个子点双中记录，不留给下一连通块。
+            }
         }
     }
 }
