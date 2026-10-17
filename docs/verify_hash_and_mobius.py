@@ -28,7 +28,7 @@ def main() -> None:
         mobius = work / "mobius.exe"
         hashing = work / "hash.exe"
         compile_cpp(ROOT / "05_数学数论" / "莫比乌斯反演——N元组最大公约数.cpp", mobius)
-        compile_cpp(ROOT / "03_字符串" / "字符串哈希——子串比较.cpp", hashing)
+        compile_cpp(ROOT / "03_字符串" / "字符串哈希与滑动窗口——等长单词拼接.cpp", hashing)
 
         rng = random.Random(3172)
         for _ in range(100):

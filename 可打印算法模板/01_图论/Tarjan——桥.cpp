@@ -2,6 +2,7 @@
 // 时间：O(n+m)。
 // 空间：O(n+m)。
 // 例题：https://www.luogu.com.cn/problem/P1656
+// 原代码：P1656.cpp；仅统一无向边的输出端点顺序。
 // 题意：找出删除后会使无向图连通块增加的边。
 // 思路：DFS 求 dfn/low；树边满足 low[子] > dfn[父] 即为桥。
 #include<bits/stdc++.h>
@@ -39,7 +40,8 @@ void tarjan(int u,int id){
             tarjan(v,w);
             low[u]=min(low[u],low[v]);
             if(low[v]>dfn[u]){
-                bridges.push_back({u,v});
+                // 输出无向边时统一小点在前，便于最终按端点排序。
+                bridges.push_back({min(u,v),max(u,v)});
             }
         }
         else if(w!=id){

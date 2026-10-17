@@ -38,11 +38,13 @@ SPEC = r"""
 02_树上问题/点分治/P6329.cpp|O((n+q)log² n)|O(n log n)|点分树支持树上动态修改与距离查询
 02_树上问题/虚树/CF613D.cpp|预处理 O(n log n)，单次 O(k log n)|O(n log n)|虚树压缩少量关键点的树上询问
 03_字符串/AC自动机/P5357.cpp|O(字符总数×字符集大小)|O(节点数×字符集大小)|AC 自动机同时匹配多个模式串
+03_字符串/AC自动机/P2414.cpp|建 Trie/AC O(26N)，编辑与询问 O((N+Q)log N)|O(26N+Q)|AC 自动机 fail 树统计打印文本中的模式串出现次数
 03_字符串/Manacher/P5496.cpp|O(n×字符集大小)|O(n×字符集大小)|回文自动机维护不同回文子串
 03_字符串/后缀数组 后缀自动机/P3804.cpp|O(n×字符集大小)|O(n×字符集大小)|后缀自动机处理子串出现次数等问题
 03_字符串/后缀数组 后缀自动机/P3809.cpp|O(n log n)|O(n)|后缀数组求字典序与后缀排名
 03_字符串/KMP/P5829.cpp|O(n+q log n)|O(n log n)|失配树处理前后缀关系询问
 03_字符串/哈希/哈希——算法模板.cpp|O(n+L)，n 为文本长、L 为单词总长|O(n+L)|查找由给定等长单词各用一次、连续拼接而成的所有子串起点
+03_字符串/哈希/CF1746F.cpp|离散化 O((n+q)log(n+q))，T 轮检验 O(T(n+q)log n)|O(n+q)|随机权重集合哈希判断区间各值频次能否被 k 整除
 04_数据结构/并查集/P3402.cpp|O((n+q)log n)|O((n+q)log n)|可持久化并查集支持历史版本查询
 04_数据结构/并查集/P8779.cpp|O((n+q)α(n))|O(n)|带权并查集维护相对关系
 04_数据结构/线段树/P3919.cpp|O((n+q)log n)|O((n+q)log n)|可持久化线段树支持历史版本单点修改
@@ -136,6 +138,8 @@ def main() -> None:
         category = rel.split("/", 1)[0]
         if category == "模板":
             category = "02_树上问题" if rel.startswith("模板/基环树/") else "01_图论"
+        if rel == "03_字符串/哈希/CF1746F.cpp":
+            category = "05_数学数论"
         if source_root == EXTERNAL:
             category = {
                 "KD树": "04_数据结构", "LCT": "02_树上问题",

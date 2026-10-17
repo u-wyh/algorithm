@@ -23,6 +23,7 @@ int dep[MAXN];
 int siz[MAXN];
 int son[MAXN];
 int top[MAXN];
+int workOrder[MAXN], workParent[MAXN], workCount;
 
 bool vis[MAXN];
 // 只需要记录自己的点分树上的父亲节点即可
@@ -47,21 +48,30 @@ void addEdge(int u, int v) {
 }
 
 void dfs1(int u, int f) {
+    // 原树可能是 10 万点长链，先求父亲在前的顺序，再倒序统计子树大小。
+    workCount = 1;
+    workOrder[0] = u;
     fa[u] = f;
     dep[u] = dep[f] + 1;
-    siz[u] = 1;
-    for (int e = head[u], v; e; e = nxt[e]) {
-        v = to[e];
-        if (v != f) {
-            dfs1(v, u);
+    for (int i = 0; i < workCount; ++i) {
+        int x = workOrder[i];
+        for (int e = head[x]; e; e = nxt[e]) {
+            int v = to[e];
+            if (v != fa[x]) {
+                fa[v] = x;
+                dep[v] = dep[x] + 1;
+                workOrder[workCount++] = v;
+            }
         }
     }
-    for (int ei = head[u], v; ei; ei = nxt[ei]) {
-        v = to[ei];
-        if (v != f) {
-            siz[u] += siz[v];
-            if (son[u] == 0 || siz[son[u]] < siz[v]) {
-                son[u] = v;
+    for (int i = workCount - 1; i >= 0; --i) {
+        int x = workOrder[i];
+        siz[x] = 1;
+        for (int e = head[x]; e; e = nxt[e]) {
+            int v = to[e];
+            if (v != fa[x]) {
+                siz[x] += siz[v];
+                if (son[x] == 0 || siz[son[x]] < siz[v]) son[x] = v;
             }
         }
     }
@@ -69,15 +79,10 @@ void dfs1(int u, int f) {
 
 void dfs2(int u, int t) {
     top[u] = t;
-    if (son[u] == 0) {
-        return;
-    }
-    dfs2(son[u], t);
-    for (int e = head[u], v; e; e = nxt[e]) {
-        v = to[e];
-        if (v != fa[u] && v != son[u]) {
-            dfs2(v, v);
-        }
+    // workOrder 中父节点总在子节点之前，可以直接继承重链链顶。
+    for (int i = 1; i < workCount; ++i) {
+        int v = workOrder[i], p = fa[v];
+        top[v] = (v == son[p] ? top[p] : v);
     }
 }
 
@@ -97,12 +102,25 @@ int getDist(int x, int y) {
 }
 
 void getSize(int u, int fa) {
-    siz[u] = 1;
-    for (int e = head[u]; e; e = nxt[e]) {
-        int v = to[e];
-        if (v != fa && !vis[v]) {
-            getSize(v, u);
-            siz[u] += siz[v];
+    int count = 1;
+    workOrder[0] = u;
+    workParent[u] = fa;
+    for (int i = 0; i < count; ++i) {
+        int x = workOrder[i];
+        for (int e = head[x]; e; e = nxt[e]) {
+            int v = to[e];
+            if (v != workParent[x] && !vis[v]) {
+                workParent[v] = x;
+                workOrder[count++] = v;
+            }
+        }
+    }
+    for (int i = count - 1; i >= 0; --i) {
+        int x = workOrder[i];
+        siz[x] = 1;
+        for (int e = head[x]; e; e = nxt[e]) {
+            int v = to[e];
+            if (v != workParent[x] && !vis[v]) siz[x] += siz[v];
         }
     }
 }

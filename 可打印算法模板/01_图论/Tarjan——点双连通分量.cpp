@@ -1,7 +1,9 @@
 // 用途：Tarjan 求无向图的点双连通分量。
 // 时间：O(n+m)。
 // 空间：O(n+m)。
+// 注意：原 P8435.cpp 递归版在 50 万点长链有爆栈风险，因此 DFS 用定长显式栈。
 // 例题：https://www.luogu.com.cn/problem/P8435
+// 原代码：P8435.cpp。
 // 题意：划分无向图的点双连通分量。
 // 思路：DFS 求 dfn/low，遇到 low[子] ≥ dfn[父] 时弹出边栈构成分量。
 #include <bits/stdc++.h>

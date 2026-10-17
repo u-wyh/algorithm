@@ -4,6 +4,8 @@
 // 例题：https://www.luogu.com.cn/problem/P5091
 // 题意：指数是十进制大整数，计算 a^b mod m。
 // 思路：先求 φ(m)，读入大指数并根据扩展欧拉定理缩减指数。
+// 降幂公式：a^b mod m = a^(b mod φ(m)+φ(m)) mod m（b≥φ(m)）；若 b<φ(m)，直接用 b。
+// 这样写不要求 gcd(a,m)=1；只有互质时才能无条件直接把指数对 φ(m) 取模。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

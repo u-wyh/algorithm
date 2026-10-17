@@ -1,6 +1,7 @@
 // 用途：离线处理边的添加、删除和两点是否连通的查询。
 // 时间：O((n+q)log q log n)。
-// 空间：O((n+q)log q)。
+// 空间：O(n²+q log q)，邻接端点的上次出现时间用 n×n 数组记录。
+// 注意：可撤销并查集不能路径压缩；任务只存加边操作编号，避免复制端点。
 // 例题：https://loj.ac/p/121
 // 题意：边可增删，多次询问两点当前是否连通。
 // 思路：边的生存期挂在线段树节点，DFS 时合并并查集，回溯时撤销。
@@ -10,8 +11,8 @@ using namespace std;
 const int MAXN = 5001;
 // 操作数量最大值
 const int MAXM = 500001;
-// 任务数量最大值
-const int MAXT = 5000001;
+// 一条边的生存区间最多挂 O(log m) 个节点，总任务上界按 m log m 开。
+const int MAXT = MAXM * 20;
 
 int n, m;
 
@@ -32,17 +33,15 @@ int opsize = 0;
 // 线段树每个区间拥有哪些任务的列表，链式前向星表示
 int head[MAXM << 2];
 int nxt[MAXT];
-int tox[MAXT];
-int toy[MAXT];//注意 因为每个节点上面挂的是一条线 所以是 x和y
+int taskOp[MAXT]; // 原加边操作编号；端点从 u/v 数组读取。
 int cnt = 0;
 
 // ans[i]为第i条操作的答案，只有查询操作才有答案
 bool ans[MAXM];
 
-void addEdge(int i, int x, int y) {
+void addEdge(int i, int edgeOp) {
     nxt[++cnt] = head[i];
-    tox[cnt] = x;
-    toy[cnt] = y;
+    taskOp[cnt] = edgeOp;
     head[i] = cnt;
 }
 
@@ -76,17 +75,17 @@ void undo() {
     siz[fx] -= siz[fy];
 }
 
-//将jobl~jobr这个线段树的区间上所有点挂上[jobx,joby] 表示jobx和joby两个点在此区间内存在一条连线
-void add(int jobl, int jobr, int jobx, int joby, int l, int r, int i) {
+// 把加边操作挂到边存在的时间区间 [jobl, jobr]。
+void add(int jobl, int jobr, int edgeOp, int l, int r, int i) {
     if (jobl <= l && r <= jobr) {
-        addEdge(i, jobx, joby);
+        addEdge(i, edgeOp);
     } else {
         int mid = (l + r) >> 1;
         if (jobl <= mid) {
-            add(jobl, jobr, jobx, joby, l, mid, i << 1);
+            add(jobl, jobr, edgeOp, l, mid, i << 1);
         }
         if (jobr > mid) {
-            add(jobl, jobr, jobx, joby, mid + 1, r, i << 1 | 1);
+            add(jobl, jobr, edgeOp, mid + 1, r, i << 1 | 1);
         }
     }
 }
@@ -95,8 +94,8 @@ void add(int jobl, int jobr, int jobx, int joby, int l, int r, int i) {
 void dfs(int l, int r, int i) {
     int unionCnt = 0;//记录这个节点上进行了多少次合并操作  方便最后的撤销操作
     for (int ei = head[i], x, y, fx, fy; ei > 0; ei = nxt[ei]) {
-        x = tox[ei];
-        y = toy[ei];
+        x = u[taskOp[ei]];
+        y = v[taskOp[ei]];
         fx = find(x);
         fy = find(y);
         if (fx != fy) {
@@ -134,7 +133,7 @@ void prepare() {
             last[x][y] = i;
         } else if (t == 1) {
             //如果是删除边  那么就是意味着在 last~i-1 这个时间段内 x和y存在边的关系
-            add(last[x][y], i - 1, x, y, 1, m, 1);
+            add(last[x][y], i - 1, last[x][y], 1, m, 1);
             last[x][y] = 0;
         }
     }
@@ -142,7 +141,7 @@ void prepare() {
         for (int y = x + 1; y <= n; y++) {
             //表示直到最后还没有被删除的边  说明他们从最后一个加入开始一直生效到最后
             if (last[x][y] != 0) {
-                add(last[x][y], m, x, y, 1, m, 1);
+                add(last[x][y], m, last[x][y], 1, m, 1);
             }
         }
     }
