@@ -11,7 +11,7 @@ ROOT = Path(r"D:\algorithm")
 PRINT = ROOT / "可打印算法模板"
 OLD = Path(r"C:\Users\wyh15\Documents\code\C++\打印的模板")
 TEMP = ROOT / "tmp" / "pdfs" / "selected_booklet_work"
-DESTINATION = ROOT / "output" / "pdf" / "已选算法模板——合订打印.pdf"
+DESTINATION = ROOT / "算法模板合订打印.pdf"
 
 # 每项是（首页左侧所属系列、右上角算法名、原样排版的 .cpp）。
 SELECTED = [
