@@ -6,15 +6,15 @@ from tempfile import TemporaryDirectory
 import heapq
 import subprocess
 
-ROOT = Path(r"D:\algorithm\可打印算法模板")
+ROOT = Path(__file__).resolve().parents[1] / "可打印算法模板"
 RNG = Random(74073)
 SOURCES = {
-    "cactus": ROOT / "01_图论/圆方树——仙人掌两点最短路.cpp",
-    "segment_graph": ROOT / "01_图论/线段树优化建图——区间连边最短路.cpp",
-    "cycle_tree": ROOT / "02_树上问题/基环树——无环定向方案数.cpp",
-    "edge_divide": ROOT / "02_树上问题/边分治——路径长度乘最小点权.cpp",
-    "tree_of_tree": ROOT / "04_数据结构/树套树——动态区间排名与第k小.cpp",
-    "dynamic_kd": ROOT / "04_数据结构/动态KD树——插点与矩形求和.cpp",
+    "cactus": ROOT / "01_图论/仙人掌树——圆方树模板.cpp",
+    "segment_graph": ROOT / "01_图论/线段树优化建图——模板.cpp",
+    "cycle_tree": ROOT / "02_树上问题/基环树——模板.cpp",
+    "edge_divide": ROOT / "02_树上问题/边分治——模板.cpp",
+    "tree_of_tree": ROOT / "04_数据结构/树套树——树状数组套线段树.cpp",
+    "dynamic_kd": ROOT / "04_数据结构/动态KD树——替罪羊树模板.cpp",
     "nearest_kd": ROOT / "04_数据结构/KD树——平面最近点对.cpp",
 }
 

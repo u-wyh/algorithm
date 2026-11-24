@@ -8,6 +8,6 @@
 
 ## OJ 编号文件
 
-- [AT_ABC210F.cpp](<AT_ABC210F.cpp>)、[P3825.cpp](<P3825.cpp>)、[P4782.cpp](<P4782.cpp>)、[P6965.cpp](<P6965.cpp>)
+- [2sat——前后缀优化建图.cpp](<2sat——前后缀优化建图.cpp>)、[2sat——特殊展开.cpp](<2sat——特殊展开.cpp>)、[2sat——模板.cpp](<2sat——模板.cpp>)、[2sat——trie优化建图.cpp](<2sat——trie优化建图.cpp>)
 
 返回[上级导航](../README.md)；查看[全量练习清单](../../../docs/全量算法练习清单.md)。

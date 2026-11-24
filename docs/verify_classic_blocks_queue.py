@@ -5,7 +5,7 @@ from random import Random
 from tempfile import TemporaryDirectory
 import subprocess
 
-ROOT = Path(r"D:\algorithm\可打印算法模板")
+ROOT = Path(__file__).resolve().parents[1] / "可打印算法模板"
 SOURCES = {
     "sum": ROOT / "08_离线分治/分块——区间加与区间求和.cpp",
     "count": ROOT / "08_离线分治/分块——区间加与阈值计数.cpp",

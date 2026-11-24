@@ -7,9 +7,9 @@ import json
 import re
 import subprocess
 
-REPO = Path(r"D:\algorithm\templates")
+REPO = Path(__file__).resolve().parents[1] / "templates"
 PRINT = Path(r"C:\Users\wyh15\Documents\code\C++\打印的模板")
-OUTPUT = Path(r"D:\algorithm\docs\模板源文件审计.json")
+OUTPUT = Path(__file__).resolve().parents[1] / "docs" / "模板源文件审计.json"
 
 
 def inspect(path: Path) -> dict:

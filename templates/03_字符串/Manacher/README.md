@@ -8,6 +8,6 @@
 
 ## OJ 编号文件
 
-- [P1659.cpp](<P1659.cpp>)、[P3279.cpp](<P3279.cpp>)、[P3501.cpp](<P3501.cpp>)、[P3649.cpp](<P3649.cpp>)、[P3805.cpp](<P3805.cpp>)、[P4287.cpp](<P4287.cpp>)、[P4555.cpp](<P4555.cpp>)、[P5496.cpp](<P5496.cpp>)
+- [Manacher算法——前k乘积.cpp](<Manacher算法——前k乘积.cpp>)、[Manacher算法——反演.cpp](<Manacher算法——反演.cpp>)、[Manacher算法——异或运算.cpp](<Manacher算法——异或运算.cpp>)、[回文自动机——fail指针.cpp](<回文自动机——fail指针.cpp>)、[Manacher算法——模板.cpp](<Manacher算法——模板.cpp>)、[Manacher算法——回文串数量.cpp](<Manacher算法——回文串数量.cpp>)、[Manacher算法——双回文子串.cpp](<Manacher算法——双回文子串.cpp>)、[回文自动机——模板.cpp](<回文自动机——模板.cpp>)
 
 返回[上级导航](../README.md)；查看[全量练习清单](../../../docs/全量算法练习清单.md)。

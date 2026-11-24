@@ -8,7 +8,7 @@
 
 ## OJ 编号文件
 
-- [P10581.cpp](<P10581.cpp>)、[P2375.cpp](<P2375.cpp>)、[P3375.cpp](<P3375.cpp>)、[P3375_2.cpp](<P3375_2.cpp>)、[P3375_3.cpp](<P3375_3.cpp>)、[P4391.cpp](<P4391.cpp>)、[P4824.cpp](<P4824.cpp>)、[P5829.cpp](<P5829.cpp>)
-- [P5829_2.cpp](<P5829_2.cpp>)
+- [KMP算法——矩阵加速.cpp](<KMP算法——矩阵加速.cpp>)、[失配树——应用.cpp](<失配树——应用.cpp>)、[KMP算法——1based.cpp](<KMP算法——1based.cpp>)、[KMP算法——next数组优化.cpp](<KMP算法——next数组优化.cpp>)、[KMP算法——模板.cpp](<KMP算法——模板.cpp>)、[KMP算法——最短循环节.cpp](<KMP算法——最短循环节.cpp>)、[KMP算法——删除s2.cpp](<KMP算法——删除s2.cpp>)、[失配树——1based模板.cpp](<失配树——1based模板.cpp>)
+- [失配树——模板.cpp](<失配树——模板.cpp>)
 
 返回[上级导航](../README.md)；查看[全量练习清单](../../../docs/全量算法练习清单.md)。

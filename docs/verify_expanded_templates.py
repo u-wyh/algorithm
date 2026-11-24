@@ -8,21 +8,21 @@ import itertools
 import heapq
 import subprocess
 
-ROOT = Path(r"D:\algorithm\可打印算法模板")
+ROOT = Path(__file__).resolve().parents[1] / "可打印算法模板"
 RNG = Random(20261012)
 SOURCES = {
-    "ac": ROOT / "03_字符串/AC自动机——多模式串匹配.cpp",
-    "sa": ROOT / "03_字符串/后缀数组——后缀排序与排名.cpp",
-    "ntt": ROOT / "05_数学数论/NTT——多项式卷积.cpp",
-    "contour": ROOT / "06_动态规划/轮廓线DP——网格不相邻选格方案.cpp",
-    "mask": ROOT / "06_动态规划/状压DP——CanIWin先手必胜.cpp",
+    "ac": ROOT / "03_字符串/AC自动机——模板.cpp",
+    "sa": ROOT / "03_字符串/后缀数组——模板.cpp",
+    "ntt": ROOT / "05_数学数论/NTT——模板.cpp",
+    "contour": ROOT / "06_动态规划/轮廓线dp——模板.cpp",
+    "mask": ROOT / "06_动态规划/状压dp——模板.cpp",
     "zeroone": ROOT / "06_动态规划/01背包.cpp",
     "complete": ROOT / "06_动态规划/完全背包.cpp",
     "dsu": ROOT / "04_数据结构/并查集——路径压缩按大小合并.cpp",
-    "kruskal": ROOT / "01_图论/Kruskal——最小生成树.cpp",
-    "floyd": ROOT / "01_图论/Floyd——指定路线最短总路程.cpp",
-    "zeroone_bfs": ROOT / "01_图论/0-1 BFS——网格最少清障.cpp",
-    "monotone_stack": ROOT / "07_搜索与贪心/单调栈——两侧首个严格更小位置.cpp",
+    "kruskal": ROOT / "01_图论/生成树——最小生成树k算法.cpp",
+    "floyd": ROOT / "01_图论/floyd算法——模板.cpp",
+    "zeroone_bfs": ROOT / "01_图论/01bfs——模板.cpp",
+    "monotone_stack": ROOT / "07_搜索与贪心/单调栈——模板.cpp",
 }
 
 

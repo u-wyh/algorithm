@@ -1,6 +1,7 @@
 """全目录复查时的定向回归：Tarjan、线性基、区间建图、数论边界。"""
 from collections import deque
 from pathlib import Path
+import csv
 import heapq
 import math
 import random
@@ -39,11 +40,14 @@ def components(output):
 
 
 def test_tarjan(td):
-    for name in ("Tarjan——边双连通分量", "Tarjan——点双连通分量"):
-        rel = f"可打印算法模板/01_图论/{name}.cpp"
+    with (BASE / "docs" / "打印模板文件名对照.tsv").open(encoding="utf-8", newline="") as file:
+        previous = {row["现用原名"]: row["上次改名后的文件"]
+                    for row in csv.DictReader(file, delimiter="\t")}
+    for name in ("边双——模板", "点双——模板"):
         current = PRINT / "01_图论" / (name + ".cpp")
+        rel = previous[current.relative_to(BASE).as_posix()]
         old_source = Path(td) / "old.cpp"
-        p = subprocess.run(["git", "show", f"HEAD:{rel}"], cwd=BASE,
+        p = subprocess.run(["git", "show", f"3f5ebc0:{rel}"], cwd=BASE,
                            capture_output=True)
         assert p.returncode == 0, p.stderr[:200]
         old_source.write_bytes(p.stdout)
@@ -63,7 +67,7 @@ def test_tarjan(td):
 
 
 def test_basis(td):
-    name = "线性基——图路径最大异或和"
+    name = "线性基——向量模板4"
     exe = Path(td) / "basis.exe"
     compile_cpp(PRINT / "05_数学数论" / (name + ".cpp"), exe)
     for _ in range(300):
@@ -98,7 +102,7 @@ def test_basis(td):
 
 def test_interval_graph(td):
     exe = Path(td) / "interval.exe"
-    compile_cpp(PRINT / "01_图论" / "线段树优化建图——区间连边最短路.cpp", exe)
+    compile_cpp(PRINT / "01_图论" / "线段树优化建图——模板.cpp", exe)
     for _ in range(220):
         n = R.randint(1, 8)
         q = R.randint(1, 20)
@@ -136,7 +140,7 @@ def test_interval_graph(td):
 
 def test_euler(td):
     exe = Path(td) / "euler.exe"
-    compile_cpp(PRINT / "05_数学数论" / "扩展欧拉定理——大指数模幂.cpp", exe)
+    compile_cpp(PRINT / "05_数学数论" / "扩展欧拉定理——模板.cpp", exe)
     for _ in range(200):
         a, mod = R.randint(0, 10**9), R.randint(1, 10**6)
         exponent = int("".join(str(R.randrange(10)) for _ in range(R.randint(1, 60))))
@@ -147,7 +151,7 @@ def test_euler(td):
 
 def test_bitset(td):
     exe = Path(td) / "bitset.exe"
-    compile_cpp(PRINT / "04_数据结构" / "位图——布尔值域集合.cpp", exe)
+    compile_cpp(PRINT / "04_数据结构" / "位图——模板.cpp", exe)
     for _ in range(160):
         n = R.choice((33, 64, 100, 1000000))
         present, ops, want = set(), [], []
@@ -202,7 +206,7 @@ def test_segment_mul_add(td):
 
 
 def test_inverse(td):
-    original = PRINT / "05_数学数论" / "逆元——整数与阶乘逆元预处理.cpp"
+    original = PRINT / "05_数学数论" / "逆元——模板.cpp"
     source = Path(td) / "inverse_harness.cpp"
     source.write_text(f'''#define main template_main
 #include "{original.as_posix()}"
@@ -229,7 +233,7 @@ int main() {{
 
 def test_coin_change(td):
     exe = Path(td) / "coins.exe"
-    compile_cpp(PRINT / "06_动态规划" / "多重背包——限量硬币最少张数及选取数量.cpp", exe)
+    compile_cpp(PRINT / "06_动态规划" / "多重背包——单调队列优化.cpp", exe)
     for _ in range(220):
         n, amount = R.randint(1, 6), R.randint(0, 35)
         value = [R.randint(1, 12) for _ in range(n)]
@@ -258,7 +262,7 @@ def test_coin_change(td):
 
 def test_lucas(td):
     exe = Path(td) / "lucas.exe"
-    compile_cpp(PRINT / "05_数学数论" / "Lucas定理——求C(n+m,m)模质数.cpp", exe)
+    compile_cpp(PRINT / "05_数学数论" / "卢卡斯定理——模板.cpp", exe)
     cases = [(R.randint(0, 100), R.randint(0, 100), R.choice((2, 3, 5, 7, 101)))
              for _ in range(220)]
     data = f"{len(cases)}\n" + "".join(f"{n} {m} {p}\n" for n, m, p in cases)
@@ -270,7 +274,7 @@ def test_lucas(td):
 
 def test_subset_count(td):
     exe = Path(td) / "subset.exe"
-    compile_cpp(PRINT / "07_搜索与贪心" / "折半搜索——限重子集计数.cpp", exe)
+    compile_cpp(PRINT / "07_搜索与贪心" / "搜索——双向广搜模板.cpp", exe)
     for _ in range(100):
         n = R.randint(1, 16)
         arr = [R.randint(0, 20) for _ in range(n)]
@@ -285,7 +289,7 @@ def test_subset_count(td):
 
 def test_lct_edge(td):
     exe = Path(td) / "lctedge.exe"
-    compile_cpp(PRINT / "02_树上问题" / "LCT——删边后最小生成树瓶颈查询.cpp", exe)
+    compile_cpp(PRINT / "02_树上问题" / "LCT——边权模板.cpp", exe)
     for _ in range(140):
         n = R.randint(2, 8)
         edges = [(i, R.randrange(1, i), R.randint(1, 30)) for i in range(2, n+1)]

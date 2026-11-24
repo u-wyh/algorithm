@@ -1,9 +1,8 @@
 """把打印副本的开头注释改为具体问题；只保留确有必要的注意。"""
 
 from pathlib import Path
-from rename_print_templates import NAME_MAP
 
-ROOT = Path(r"D:\algorithm\可打印算法模板")
+ROOT = Path(__file__).resolve().parents[1] / "可打印算法模板"
 GENERIC = "// 注意：按具体题目核对输入输出与数组上限。"
 
 # 文件名 -> 代码实际解决的问题。原文件和正文注释不改。
@@ -65,10 +64,6 @@ NOTES = {
     "逆元——模板.cpp": "模数须为素数且 1≤n<mod、n≤300000；main 只演示预处理，不输出答案",
 }
 
-PURPOSE = {NAME_MAP.get(name, name): purpose for name, purpose in PURPOSE.items()}
-NOTES = {NAME_MAP.get(name, name): note for name, note in NOTES.items()}
-
-
 def main() -> None:
     seen = set()
     removed = 0
@@ -82,11 +77,11 @@ def main() -> None:
             assert lines[0].startswith("// 用途："), path
             lines[0] = f"// 用途：{PURPOSE[path.name]}。"
             seen.add(path.name)
-        if path.name == NAME_MAP["01bfs——模板.cpp"]:
+        if path.name == "01bfs——模板.cpp":
             lines[1] = "// 时间：O(行数×列数)。"
-        if path.name == NAME_MAP["搜索——双向广搜模板.cpp"]:
+        if path.name == "搜索——双向广搜模板.cpp":
             lines[1] = "// 时间：O(n×2^(n/2))，包括排序。"
-        if path.name == NAME_MAP["反悔贪心——模板.cpp"]:
+        if path.name == "反悔贪心——模板.cpp":
             lines[1] = "// 时间：O(S log S)，S 为处理的单位数。"
             lines[2] = "// 空间：O(S)。"
         if path.name in NOTES:

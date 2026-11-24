@@ -7,7 +7,7 @@ from collections import deque
 import random
 import subprocess
 
-ROOT = Path(r"D:\algorithm\可打印算法模板")
+ROOT = Path(__file__).resolve().parents[1] / "可打印算法模板"
 SOURCES = {
     "bipartite": ROOT / "01_图论/二分图染色——判定与输出两侧.cpp",
     "km": ROOT / "01_图论/KM算法——最大权完美匹配.cpp",

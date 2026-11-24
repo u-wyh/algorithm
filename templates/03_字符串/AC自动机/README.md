@@ -8,6 +8,6 @@
 
 ## OJ 编号文件
 
-- [P2414.cpp](<P2414.cpp>)、[P2444.cpp](<P2444.cpp>)、[P3082.cpp](<P3082.cpp>)、[P3311.cpp](<P3311.cpp>)、[P5319.cpp](<P5319.cpp>)、[P5357.cpp](<P5357.cpp>)、[P5840.cpp](<P5840.cpp>)、[P8451.cpp](<P8451.cpp>)
+- [AC自动机——fail树.cpp](<AC自动机——fail树.cpp>)、[AC自动机——完备状态.cpp](<AC自动机——完备状态.cpp>)、[AC自动机——应用.cpp](<AC自动机——应用.cpp>)、[AC自动机——警报标记.cpp](<AC自动机——警报标记.cpp>)、[AC自动机——01分数规划.cpp](<AC自动机——01分数规划.cpp>)、[AC自动机——模板.cpp](<AC自动机——模板.cpp>)、[AC自动机——fail树上差分.cpp](<AC自动机——fail树上差分.cpp>)、[AC自动机——出现统计.cpp](<AC自动机——出现统计.cpp>)
 
 返回[上级导航](../README.md)；查看[全量练习清单](../../../docs/全量算法练习清单.md)。

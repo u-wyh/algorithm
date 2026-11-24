@@ -15,15 +15,15 @@
 | 文件 | 类型 | 内容与知识点 | 原题 |
 | --- | --- | --- | --- |
 | [可持久化左偏树模板-随机对拍.cpp](可持久化左偏树模板-随机对拍.cpp) | 模板 | 节点复制、保留历史版本、随机对拍 | — |
-| [P3377.cpp](P3377.cpp) | 基础题 | 小根堆合并、删除堆顶、并查集定位堆根 | [洛谷 P3377](https://www.luogu.com.cn/problem/P3377) |
-| [P1456.cpp](P1456.cpp) | 练习题 | 大根堆合并、堆顶修改 | [洛谷 P1456](https://www.luogu.com.cn/problem/P1456) |
-| [P1552.cpp](P1552.cpp) | 练习题 | 树上合并、大根堆、预算贪心 | [洛谷 P1552](https://www.luogu.com.cn/problem/P1552) |
-| [P3261.cpp](P3261.cpp) | 进阶题 | 树上合并、批量加乘懒标记 | [洛谷 P3261](https://www.luogu.com.cn/problem/P3261) |
-| [P3273.cpp](P3273.cpp) | 进阶题 | 集合修改、启发式合并、全局最大值 | [洛谷 P3273](https://www.luogu.com.cn/problem/P3273) |
-| [P4331.cpp](P4331.cpp) | 进阶题 | 单调栈分段、中位数、绝对值最小化 | [洛谷 P4331](https://www.luogu.com.cn/problem/P4331) |
-| [P4971.cpp](P4971.cpp) | 进阶题 | 删除指定节点、合并堆、堆顶修改 | [洛谷 P4971](https://www.luogu.com.cn/problem/P4971) |
-| [P2409.cpp](P2409.cpp) | 进阶题 | 可持久化左偏树、前 k 小方案 | [洛谷 P2409](https://www.luogu.com.cn/problem/P2409) |
-| [P2483.cpp](P2483.cpp) | 综合题 | 可持久化左偏树、最短路、前 k 小路径 | [洛谷 P2483](https://www.luogu.com.cn/problem/P2483) |
+| [P3377-可并堆1.cpp](P3377-%E5%8F%AF%E5%B9%B6%E5%A0%861.cpp) | 基础题 | 小根堆合并、删除堆顶、并查集定位堆根 | [洛谷 P3377](https://www.luogu.com.cn/problem/P3377) |
+| [P1456-Monkey King.cpp](P1456-Monkey%20King.cpp) | 练习题 | 大根堆合并、堆顶修改 | [洛谷 P1456](https://www.luogu.com.cn/problem/P1456) |
+| [P1552-派遣.cpp](P1552-%E6%B4%BE%E9%81%A3.cpp) | 练习题 | 树上合并、大根堆、预算贪心 | [洛谷 P1552](https://www.luogu.com.cn/problem/P1552) |
+| [P3261-城池攻占.cpp](P3261-%E5%9F%8E%E6%B1%A0%E6%94%BB%E5%8D%A0.cpp) | 进阶题 | 树上合并、批量加乘懒标记 | [洛谷 P3261](https://www.luogu.com.cn/problem/P3261) |
+| [P3273-棘手的操作.cpp](P3273-%E6%A3%98%E6%89%8B%E7%9A%84%E6%93%8D%E4%BD%9C.cpp) | 进阶题 | 集合修改、启发式合并、全局最大值 | [洛谷 P3273](https://www.luogu.com.cn/problem/P3273) |
+| [P4331-Sequence.cpp](P4331-Sequence.cpp) | 进阶题 | 单调栈分段、中位数、绝对值最小化 | [洛谷 P4331](https://www.luogu.com.cn/problem/P4331) |
+| [P4971-断罪者.cpp](P4971-%E6%96%AD%E7%BD%AA%E8%80%85.cpp) | 进阶题 | 删除指定节点、合并堆、堆顶修改 | [洛谷 P4971](https://www.luogu.com.cn/problem/P4971) |
+| [P2409-Y的积木.cpp](P2409-Y%E7%9A%84%E7%A7%AF%E6%9C%A8.cpp) | 进阶题 | 可持久化左偏树、前 k 小方案 | [洛谷 P2409](https://www.luogu.com.cn/problem/P2409) |
+| [P2483-魔法猪学院.cpp](P2483-%E9%AD%94%E6%B3%95%E7%8C%AA%E5%AD%A6%E9%99%A2.cpp) | 综合题 | 可持久化左偏树、最短路、前 k 小路径 | [洛谷 P2483](https://www.luogu.com.cn/problem/P2483) |
 
 ## 推荐学习顺序
 

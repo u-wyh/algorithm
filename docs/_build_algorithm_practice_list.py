@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import collections
+import csv
 import re
 from pathlib import Path
 from urllib.parse import quote, urlparse, parse_qs
@@ -14,6 +15,9 @@ TEMPLATES = ROOT / "templates"
 ARCHIVE = ROOT / "洛谷" / "code"
 CODE_EXTS = {".cpp", ".c", ".py"}
 URL_RE = re.compile(rb"https?://[^\s\x00-\x20<>\"']+")
+with (ROOT / "docs" / "原模板文件名对照.tsv").open(encoding="utf-8", newline="") as file:
+    PREVIOUS_FILENAMES = {row["现用原名"]: Path(row["上次改名后的文件"]).name
+                          for row in csv.DictReader(file, delimiter="\t")}
 COMMENT_ID_RE = re.compile(rb"(?<![A-Za-z0-9])P(\d{3,6})(?![A-Za-z0-9])", re.I)
 SOURCE_REVIEW_EXCEPTIONS = {
     "templates/01_图论/tarjan/tarjan——边双缩点模板.cpp": "P18867 链接未能核实，且文件说明缺少与该题号一致的证据；保留原名。",
@@ -196,7 +200,7 @@ def identify(path: Path) -> tuple[tuple[str, str] | None, str | None]:
     if found:
         problem = next(iter(found))
         # A clear OJ number in the filename must agree with the source link.
-        m = re.match(r"^(P\d+|CF\d+[A-Z]\d?|HDU\d+|UOJ\d+|LOJ\d+)", path.stem, re.I)
+        m = re.match(r"^(P\d+|CF\d+[A-Z]\d?|HDU\d+|UOJ\d+|LOJ\d+)", Path(PREVIOUS_FILENAMES.get(rel, path.name)).stem, re.I)
         if m and m[1].upper() != problem:
             return None, f"文件名 {m[1]} 与原题链接 {problem} 冲突。"
         return (problem, found[problem][0]), None
@@ -283,7 +287,7 @@ def main() -> None:
             topic += "（综合）"
         item = groups[(top, topic)].setdefault(problem, {"source": source, "files": []})
         item["files"].append(path)
-        if not re.fullmatch(re.escape(problem) + r"(?:_[2-9]\d*)?", path.stem, re.I):
+        if path.relative_to(ROOT).as_posix() not in PREVIOUS_FILENAMES and not re.fullmatch(re.escape(problem) + r"(?:_[2-9]\d*)?", path.stem, re.I):
             if problem.startswith("LC_"):
                 reason = "原题 slug 已确认，但数字题号未核实；不以英文题名改名。"
             elif problem.startswith("NC_PRACTICE_"):

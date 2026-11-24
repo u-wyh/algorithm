@@ -1,12 +1,11 @@
-"""按代码功能整理打印模板文件名，并保留旧打印名对照。"""
+"""恢复打印模板的原文件名，并保留上次改名的对照。"""
 
 from pathlib import Path
-import csv
 
-ROOT = Path(r"D:\algorithm\可打印算法模板")
-MANIFEST = Path(r"D:\algorithm\docs\打印模板文件名对照.tsv")
+REPO = Path(__file__).resolve().parents[1]
+ROOT = REPO / "可打印算法模板"
 
-# 旧打印相对路径 | 新打印相对路径。命名规则：算法名——具体问题或操作.cpp。
+# 原打印相对路径 | 上次改名后的相对路径。
 PAIRS = r"""
 01_图论/01bfs——模板.cpp|01_图论/0-1 BFS——网格最少清障.cpp
 01_图论/边双——模板.cpp|01_图论/Tarjan——边双连通分量.cpp
@@ -95,37 +94,29 @@ PAIRS = r"""
 """
 
 RENAMES = dict(tuple(line.split("|", 1)) for line in PAIRS.strip().splitlines())
-NAME_MAP = {Path(old).name: Path(new).name for old, new in RENAMES.items()}
+RESTORED_PATHS = {
+    previous: Path(previous).with_name(Path(old).name)
+    for old, previous in RENAMES.items()
+}
 
 
-def new_path(path: Path) -> Path:
-    rel = path.relative_to(ROOT).as_posix()
-    return ROOT / RENAMES.get(rel, rel)
+def restored_path(path: Path) -> Path:
+    relative = path.relative_to(ROOT).as_posix()
+    previous = RENAMES.get(relative, relative)
+    return ROOT / RESTORED_PATHS.get(previous, Path(relative))
 
 
 def main() -> None:
-    old_paths = [ROOT / old for old in RENAMES]
-    new_paths = [ROOT / new for new in RENAMES.values()]
-    assert len(RENAMES) == len(new_paths) == len(set(new_paths))
-    assert len(NAME_MAP) == len(RENAMES), "旧文件名跨目录重复，须用相对路径映射"
-    for old, new in zip(old_paths, new_paths):
-        assert old.is_file() != new.is_file(), (old, new)
-        assert old.resolve().is_relative_to(ROOT.resolve())
-        assert new.resolve().is_relative_to(ROOT.resolve())
-    rows = []
-    for old, new in zip(old_paths, new_paths):
-        current = old if old.is_file() else new
-        purpose = current.read_text(encoding="utf-8").splitlines()[0].removeprefix("// 用途：")
-        rows.append((str(old), str(new), purpose))
-    for old, new in zip(old_paths, new_paths):
-        if old.is_file():
-            new.parent.mkdir(parents=True, exist_ok=True)
-            old.rename(new)
-    with MANIFEST.open("w", encoding="utf-8", newline="") as file:
-        writer = csv.writer(file, delimiter="\t")
-        writer.writerow(("旧打印文件", "现打印文件", "解决的问题"))
-        writer.writerows(rows)
-    print(f"renamed={len(rows)} total_cpp={len(list(ROOT.rglob('*.cpp')))}")
+    pending = []
+    for previous_name, restored_name in RESTORED_PATHS.items():
+        previous, restored = ROOT / previous_name, ROOT / restored_name
+        if previous.is_file() and not restored.exists():
+            pending.append((previous, restored))
+        elif not restored.is_file() or previous.exists():
+            raise RuntimeError(f"无法确认文件位置：{previous}、{restored}")
+    for previous, restored in pending:
+        previous.rename(restored)
+    print(f"renamed={len(pending)} total_cpp={len(list(ROOT.rglob('*.cpp')))}")
 
 
 if __name__ == "__main__":

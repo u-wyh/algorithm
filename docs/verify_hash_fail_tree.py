@@ -24,7 +24,7 @@ def run(exe, data, timeout=15):
 
 def test_fail_tree(td):
     exe = Path(td) / "failtree.exe"
-    compile_cpp(ROOT / "03_字符串" / "AC自动机Fail树——打印文本中的模式串出现次数.cpp", exe)
+    compile_cpp(ROOT / "03_字符串" / "AC自动机——fail树.cpp", exe)
     for _ in range(200):
         current, words, operations = "", [], []
         for _ in range(R.randint(2, 45)):
@@ -63,7 +63,7 @@ def test_fail_tree(td):
 
 def test_random_hash(td):
     exe = Path(td) / "randomhash.exe"
-    compile_cpp(ROOT / "05_数学数论" / "随机权重集合哈希——区间频次整除判定.cpp", exe)
+    compile_cpp(ROOT / "05_数学数论" / "随机化——k倍问题.cpp", exe)
     for _ in range(150):
         n, q = R.randint(1, 10), R.randint(1, 35)
         initial = [R.randint(-3, 5) for _ in range(n)]

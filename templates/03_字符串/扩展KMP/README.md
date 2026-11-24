@@ -8,6 +8,6 @@
 
 ## OJ 编号文件
 
-- [CF126B.cpp](<CF126B.cpp>)、[CF432D.cpp](<CF432D.cpp>)、[P5410.cpp](<P5410.cpp>)、[P8112.cpp](<P8112.cpp>)、[UVA455.cpp](<UVA455.cpp>)
+- [扩展KMP(Z算法)——应用.cpp](<扩展KMP(Z算法)——应用.cpp>)、[扩展KMP(Z算法)——循环节个数.cpp](<扩展KMP(Z算法)——循环节个数.cpp>)、[扩展KMP(Z算法)——模板.cpp](<扩展KMP(Z算法)——模板.cpp>)、[扩展KMP(Z算法)——e数组应用.cpp](<扩展KMP(Z算法)——e数组应用.cpp>)、[扩展KMP(Z算法)——循环节.cpp](<扩展KMP(Z算法)——循环节.cpp>)
 
 返回[上级导航](../README.md)；查看[全量练习清单](../../../docs/全量算法练习清单.md)。

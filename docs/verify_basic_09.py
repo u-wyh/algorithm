@@ -21,8 +21,8 @@ def main() -> None:
     with TemporaryDirectory() as temp:
         diff = Path(temp) / "diff.exe"
         pref = Path(temp) / "prefix.exe"
-        compile_cpp(ROOT / "二维差分——矩形加值.cpp", diff)
-        compile_cpp(ROOT / "二维前缀和——静态矩形求和.cpp", pref)
+        compile_cpp(ROOT / "差分——二维模板.cpp", diff)
+        compile_cpp(ROOT / "前缀和——二维前缀和.cpp", pref)
 
         for case in range(200):
             n = rng.randint(1, 10)

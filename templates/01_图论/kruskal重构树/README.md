@@ -4,6 +4,6 @@
 
 ## OJ 编号文件
 
-- [AT_AGC002D.cpp](<AT_AGC002D.cpp>)、[CF1416D.cpp](<CF1416D.cpp>)、[CF1706E.cpp](<CF1706E.cpp>)、[P2245.cpp](<P2245.cpp>)、[P3665.cpp](<P3665.cpp>)、[P4768.cpp](<P4768.cpp>)、[P7834.cpp](<P7834.cpp>)、[P9638.cpp](<P9638.cpp>)
+- [kruskal重构树——到达z个不同点.cpp](<kruskal重构树——到达z个不同点.cpp>)、[kruskal重构树——线段树.cpp](<kruskal重构树——线段树.cpp>)、[kruskal重构树——dfn序st表.cpp](<kruskal重构树——dfn序st表.cpp>)、[kruskal重构树——模板.cpp](<kruskal重构树——模板.cpp>)、[kruskal重构树——最小生成树.cpp](<kruskal重构树——最小生成树.cpp>)、[kruskal重构树——结合dijkstra.cpp](<kruskal重构树——结合dijkstra.cpp>)、[kruskal重构树——可持久化线段树.cpp](<kruskal重构树——可持久化线段树.cpp>)、[kruskal重构树——最大树.cpp](<kruskal重构树——最大树.cpp>)
 
 返回[上级导航](../README.md)；查看[全量练习清单](../../../docs/全量算法练习清单.md)。

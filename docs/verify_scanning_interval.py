@@ -5,7 +5,7 @@ from tempfile import TemporaryDirectory
 import random
 import subprocess
 
-SOURCE = Path(r"D:\algorithm\可打印算法模板\09_基础技巧\扫描线——查询点的最短覆盖区间.cpp")
+SOURCE = Path(__file__).resolve().parents[1] / "可打印算法模板" / "09_基础技巧" / "扫描线——区间长度.cpp"
 
 
 def main() -> None:

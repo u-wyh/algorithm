@@ -41,7 +41,7 @@ def test_beats(td):
                 want.append(max(cur[l-1:r]) if op == 1 else sum(cur[l-1:r]))
         cases.append((f"{n} {q}\n" + " ".join(map(str, a)) + "\n" + "\n".join(ops) + "\n", want))
     cases.append(("100000 1\n" + "1000000000 " * 100000 + "\n2 1 100000\n", [10**14]))
-    compile_run("线段树Beats——区间取min与求和", td, cases)
+    compile_run("线段树——吉如一线段树", td, cases)
 
 
 def test_bit2d(td):
@@ -63,7 +63,7 @@ def test_bit2d(td):
                 want.append(sum(cur[x][y] for x in range(x1, x2+1) for y in range(y1, y2+1)))
         case = f"{n} {m}\n" + "\n".join(" ".join(map(str, row)) for row in a)
         cases.append((case + f"\n{q}\n" + "\n".join(ops) + "\n", want))
-    compile_run("二维树状数组——单点赋值与矩形求和", td, cases)
+    compile_run("树状数组——二维数组", td, cases)
 
 
 def test_persistent_fhq(td):
@@ -110,7 +110,7 @@ def test_persistent_fhq(td):
             versions.append(new)
             ops.append(f"{v} {op} {x}")
         cases.append((f"{len(ops)}\n" + "\n".join(ops) + "\n", want))
-    compile_run("可持久化FHQ_Treap——历史版本有序集合", td, cases)
+    compile_run("FHQ treap——可持久化平衡树", td, cases)
 
 
 def test_seg_split(td):
@@ -154,7 +154,7 @@ def test_seg_split(td):
                 ops.append(f"4 {x} {k}")
         data = f"{n} {len(ops)}\n" + " ".join(map(str, initial)) + "\n" + "\n".join(ops) + "\n"
         cases.append((data, want))
-    compile_run("线段树分裂——权值集合拆分合并", td, cases)
+    compile_run("线段树分裂——模板", td, cases)
 
 
 def test_dynamic_kd(td):
@@ -174,7 +174,7 @@ def test_dynamic_kd(td):
                 last = sum(v for x, y, v in points if x1 <= x <= x2 and y1 <= y <= y2)
                 want.append(last)
         cases.append(("25\n" + "\n".join(ops) + "\n3\n", want))
-    compile_run("动态KD树——插点与矩形求和", td, cases)
+    compile_run("动态KD树——替罪羊树模板", td, cases)
 
 
 if __name__ == "__main__":

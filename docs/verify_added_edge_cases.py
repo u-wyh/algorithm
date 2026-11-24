@@ -6,7 +6,7 @@ from tempfile import TemporaryDirectory
 from itertools import combinations
 import subprocess
 
-ROOT = Path(r"D:\algorithm\可打印算法模板")
+ROOT = Path(__file__).resolve().parents[1] / "可打印算法模板"
 RNG = Random(851031)
 
 
@@ -27,7 +27,7 @@ def main() -> None:
     tests = 0
     with TemporaryDirectory() as directory:
         temp = Path(directory)
-        high = ROOT / "05_数学数论/高精度——非负整数四则运算.cpp"
+        high = ROOT / "05_数学数论/高精度——模板.cpp"
         high_harness = temp / "high.cpp"
         high_harness.write_text(
             '#define main old_main\n#include "' + high.as_posix() + '"\n#undef main\n'
@@ -44,7 +44,7 @@ def main() -> None:
             assert got == [str(a + b), str(a * b), str(a // b)]
             tests += 1
 
-        bit = ROOT / "04_数据结构/二维树状数组——单点赋值与矩形求和.cpp"
+        bit = ROOT / "04_数据结构/树状数组——二维数组.cpp"
         bit_harness = temp / "bit.cpp"
         bit_harness.write_text(
             '#define main old_main\n#include "' + bit.as_posix() + '"\n#undef main\n'
@@ -74,7 +74,7 @@ def main() -> None:
             tests += 1
 
         sat_exe = temp / "sat.exe"
-        build(ROOT / "01_图论/2-SAT——可满足性判定.cpp", sat_exe)
+        build(ROOT / "01_图论/twosat——模板.cpp", sat_exe)
         for _ in range(45):
             n = RNG.randint(1, 6)
             clauses = [(RNG.randrange(n), RNG.randrange(n), RNG.randrange(2), RNG.randrange(2)) for _ in range(RNG.randint(0, 15))]
@@ -85,7 +85,7 @@ def main() -> None:
             tests += 1
 
         fraction_exe = temp / "fraction.exe"
-        build(ROOT / "05_数学数论/01分数规划——删k项最大化比值.cpp", fraction_exe)
+        build(ROOT / "05_数学数论/01分数规划——模板.cpp", fraction_exe)
         for _ in range(300):
             n = RNG.randint(1, 7)
             take = RNG.randint(1, n)

@@ -6,7 +6,7 @@ from tempfile import TemporaryDirectory
 import random
 import subprocess
 
-SOURCE = Path(__file__).resolve().parents[1] / "可打印算法模板" / "09_基础技巧" / "带权二分——恰选k条特殊边最小生成树.cpp"
+SOURCE = Path(__file__).resolve().parents[1] / "可打印算法模板" / "09_基础技巧" / "带权二分——模板.cpp"
 
 
 def exact_answers(n: int, edges: list[tuple[int, int, int, int]]) -> dict[int, int]:

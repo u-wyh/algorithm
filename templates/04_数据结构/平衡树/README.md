@@ -8,8 +8,8 @@
 
 ## OJ 编号文件
 
-- [AT_AGC028B.cpp](<AT_AGC028B.cpp>)、[CF1748E.cpp](<CF1748E.cpp>)、[P1377.cpp](<P1377.cpp>)、[P1486.cpp](<P1486.cpp>)、[P1801.cpp](<P1801.cpp>)、[P2042.cpp](<P2042.cpp>)、[P2596.cpp](<P2596.cpp>)、[P3369.cpp](<P3369.cpp>)
-- [P3369_2.cpp](<P3369_2.cpp>)、[P3369_3.cpp](<P3369_3.cpp>)、[P3369_4.cpp](<P3369_4.cpp>)、[P3369_5.cpp](<P3369_5.cpp>)、[P3369_6.cpp](<P3369_6.cpp>)、[P3369_7.cpp](<P3369_7.cpp>)、[P3391.cpp](<P3391.cpp>)、[P3391_2.cpp](<P3391_2.cpp>)
-- [P3835.cpp](<P3835.cpp>)、[P4008.cpp](<P4008.cpp>)、[P5055.cpp](<P5055.cpp>)、[P5854.cpp](<P5854.cpp>)、[P6136.cpp](<P6136.cpp>)、[P6136_2.cpp](<P6136_2.cpp>)、[P6453.cpp](<P6453.cpp>)
+- [笛卡尔树——期望.cpp](<笛卡尔树——期望.cpp>)、[笛卡尔树——方案计数.cpp](<笛卡尔树——方案计数.cpp>)、[笛卡尔树——树的序.cpp](<笛卡尔树——树的序.cpp>)、[splay树——全局变量辅助.cpp](<splay树——全局变量辅助.cpp>)、[有序表——使用.cpp](<有序表——使用.cpp>)、[splay树——线段树.cpp](<splay树——线段树.cpp>)、[splay树——区间移动.cpp](<splay树——区间移动.cpp>)、[AVL树——模板.cpp](<AVL树——模板.cpp>)
+- [FHQ treap——词频不压缩版.cpp](<FHQ treap——词频不压缩版.cpp>)、[FHQ treap——词频压缩版.cpp](<FHQ treap——词频压缩版.cpp>)、[Treap树——模板.cpp](<Treap树——模板.cpp>)、[splay树——模板.cpp](<splay树——模板.cpp>)、[有序表——替罪羊树.cpp](<有序表——替罪羊树.cpp>)、[有序表——跳表.cpp](<有序表——跳表.cpp>)、[FHQ treap——区间翻转.cpp](<FHQ treap——区间翻转.cpp>)、[splay树——区间翻转.cpp](<splay树——区间翻转.cpp>)
+- [FHQ treap——可持久化平衡树.cpp](<FHQ treap——可持久化平衡树.cpp>)、[FHQ treap——区间移动.cpp](<FHQ treap——区间移动.cpp>)、[FHQ treap——可持久化线段树.cpp](<FHQ treap——可持久化线段树.cpp>)、[笛卡尔树——模板.cpp](<笛卡尔树——模板.cpp>)、[FHQ treap——有序表.cpp](<FHQ treap——有序表.cpp>)、[splay树——有序表.cpp](<splay树——有序表.cpp>)、[笛卡尔树——表格填数.cpp](<笛卡尔树——表格填数.cpp>)
 
 返回[上级导航](../README.md)；查看[全量练习清单](../../../docs/全量算法练习清单.md)。

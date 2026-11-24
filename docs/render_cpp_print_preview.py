@@ -9,7 +9,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
 
 
-ROOT = Path(r"D:\algorithm")
+ROOT = Path(__file__).resolve().parents[1]
 SOURCE_DIR = ROOT / "可打印算法模板" / "01_图论"
 OUTPUT_DIR = ROOT / "output" / "pdf"
 FONT_DIR = Path(r"C:\Windows\Fonts")
