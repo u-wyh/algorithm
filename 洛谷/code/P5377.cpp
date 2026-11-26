@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5377
+// 题意：在一个圆形蛋糕圆周上选 n 个不重合的点并两两用线段相连。
+// 多组询问（至多 20 行），每次给定 n，输出蛋糕最多能被分成多少块。
+// 数据范围：至多 20 行输入，保证 0 <= n <= 64。
 #include<bits/stdc++.h>
 using namespace std;
 

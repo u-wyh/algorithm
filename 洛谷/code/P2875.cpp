@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2875
+// 题意：词典有 W 个单词（长度 <= 25），给定长度为 L 的字符串。
+// 求最少删除多少个字符，使剩余字符串成为词典中若干单词的拼接。
+// 输出最少删除字符数。
+// 数据范围：1 <= W <= 600，2 <= L <= 300，仅含小写字母。
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,13 @@
 // https://www.luogu.com.cn/problem/P9760
+// 题意：给定 n 点 m 边的无向连通简单图及数组 a_1..a_n。
+// Marin 任选起点 v_0，Luka 初始在 a_{v_0}。
+// 每回合 Marin 先移到相邻房间 u，随后 Luka 沿任意路径（单回合可经过任意多房间）移动到 a_u。
+// 若两者处于同一房间（或 Luka 移动途中经过 Marin 所在房间，参见样例 2）则游戏结束。
+// 对每个起点 v_0 ∈ [1, n] 求 Marin 最少需要的回合数（Marin 最小化，Luka 最大化）；
+// 无法在有限回合结束输出 -1。
+// 题意：第一行输入 n, m，第二行输入 a_1..a_n，后 m 行输入边 (x_i, y_i)；输出一行 n 个整数。
+// 数据范围：1 <= n <= 2 * 10^5，n-1 <= m <= min(5 * 10^5, n * (n-1) / 2)
+// 1 <= a_i, x_i, y_i <= n，x_i != y_i。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1937
+// 题意：给定 N 个畜栏的容量和 M 头牛的申请。满足一头牛的申请就要在它指定的闭区间内每个畜栏都腾出一个名额。求在每栏容量内最多能满足几头牛。
+// 数据范围：1 ≤ N,M,C_i ≤ 10^5，1 ≤ A_i ≤ B_i ≤ N。
+
 //P1937
 #include<bits/stdc++.h>
 using namespace std;

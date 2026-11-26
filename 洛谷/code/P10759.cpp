@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P10759
+// 题意：起始有 s 元，共 N 个工作。
+// 做第 i 个工作会增加 x[i] 元，x[i] 可以为负。
+// 若 p[i] 非零，必须先做前置工作 p[i]。
+// 可跳过部分工作，但任何时候余额不能为负，求最大净利润。
+// 数据范围：1 ≤ N ≤ 3 × 10^5，0 ≤ s ≤ 10^18，-10^9 ≤ x[i] ≤ 10^9，0 ≤ p[i] < i。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

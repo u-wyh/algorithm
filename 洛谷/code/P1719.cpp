@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1719
+// 题意：给定 n 行 n 列的整数矩阵，选一个非空的连续子矩形，求其中所有元素的和最大是多少。
+// 数据范围：1 ≤ n ≤ 120，矩阵元素在 [−127,127]。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN=130;

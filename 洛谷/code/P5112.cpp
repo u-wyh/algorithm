@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5112
+// 题意：给定长为 n、字符集为 {f,z,o,u,t,s,y} 的字符串及整数 k，m 次询问区间 [l, r] 内有多少对起始位置不同的后缀
+// 其最长公共前缀长度 >= k。
+// 数据范围：1 <= l <= r <= n <= 3*10^6，1 <= k <= n <= 3*10^6，1 <= m <= 10^5
+// 1 <= n^2*m <= 10^15。
 #include<bits/stdc++.h>
 using namespace std;
 const int BASE = 13131;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4183
+// 题意：给一棵 N 个点的树，度数为 1 的叶子都是出口；
+// Bessie 从某点出发试图到达出口，同时农民从部分出口出发，双方速度相同（同点或同边相遇即被抓，先到出口即逃脱）；
+// 对每个起点，求抓住她所需的最少农民数。
+// 数据范围：2 <= N <= 7e4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 7e4+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6189
+// 题意：将正整数 n 拆分为若干正整数之和 x_1 + x_2 + ... + x_k = n 且满足 x_i <= x_{i-1}（无序整数拆分）
+// 求不同拆分方案数（模 p）。
+// 数据范围：1 <= n <= 10^5，1 <= p < 2^30。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

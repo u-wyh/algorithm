@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P4088
+// 题意：第一行输入弹弓数 N 和牛粪堆数 M；
+// 接下来 N 行每行三个整数 x_i, y_i, t_i，表示可用耗时 t_i 将牛粪从 x_i 射到 y_i；
+// 最后 M 行每行两个整数 a_j, b_j，表示需将第 j 堆牛粪从 a_j 搬到 b_j。
+// 拖拉机载运距离 d 耗时 d（空车移动不耗时），每堆牛粪最多使用一次弹弓。
+// 输出 M 行，每行输出搬运对应牛粪堆的最少时间。
+// 数据范围：1 <= N, M <= 10^5，0 <= x_i, y_i, t_i <= 10^9（a_j, b_j 为数轴坐标，未单独注明上界）。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

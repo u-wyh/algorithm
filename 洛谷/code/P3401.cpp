@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3401
+// 题意：输入点数 n、操作数 q，以及 n-1 条带非负边权的树边 (u, v, w)。
+// 支持两类操作：1 u v 求 u 到 v 路径上所有子路径的边权异或和之和；2 u v w 将边 (u, v) 的边权改为 w。
+// 对每个 1 操作输出一行答案。
+// 数据范围：n, q <= 3*10^4，所有边权不超过 1023。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e4+5;

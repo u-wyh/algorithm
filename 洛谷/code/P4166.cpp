@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4166
+// 题意：平面上有 N 个点，从中任选 4 个点围成一个多边形，求能围出的最大面积（保留 3 位小数）。
+// 数据范围：5 <= N <= 2000，0 <= |x|, |y| <= 100000。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

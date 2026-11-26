@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P5656
+// 题意：T 组询问，求解不定方程 ax + by = c 的整数解情况（无整数解输出 -1；
+// 有整数解无正整数解输出最小正整数 x 和最小正整数 y；
+// 有正整数解输出解数、x 最小值、y 最小值、x 最大值、y 最大值）。
+// 输入 T 及各组 a, b, c；对应输出 T 行答案。
+// 数据范围：1 <= T <= 2*10^5，1 <= a, b, c <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

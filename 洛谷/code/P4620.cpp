@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P4620
+// 题意：T 组数据，n 种物品初始各有 a_i 个、增购单价为 b_i（不可丢弃）
+// 求花费最少点券增加购买使得对所有满足 x >= 2^k（且下标合法）的整数 x
+// a_x + a_{\lfloor x/2 \rfloor} + ... + a_{\lfloor x/2^k \rfloor} 均为 m 的倍数。
+// 数据范围：1 <= T <= 10，1 <= k <= 10 且 2^k <= n <= 10^7，m <= 200
+// 1 <= p <= min(n, 100000)，10000 <= SA, SB, SC <= 1000000
+// 1 <= A, B, a_i, b_i <= 10^7。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e7+5;

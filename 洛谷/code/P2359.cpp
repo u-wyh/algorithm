@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2359
+// 题意：若一个数的所有连续三位数字都是大于 100 的素数，则称其为三素数数。
+// 给定整数 n，求 n 位三素数数的个数。
+// 输出结果对 10^9+9 取模。
+// 数据范围：3 <= n <= 10^4。
 #include<cstdio>
 #include<algorithm>
 #include<cstring>

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2616
+// 题意：数轴 [0,E] 上有 N 家商店（可同坐标），第 i 家在 X_i，售价 C_i/吨，库存 F_i 吨。
+// 载 X 吨走 D 公里花费 D*X 元，从 0 走到 E 需买到 K 吨饲料，求最小总花费。
+// 输出最小总花费。
+// 数据范围：1 <= K, N <= 100，1 <= E <= 350，0 < X_i < E，1 <= F_i <= 100，1 <= C_i <= 10^6。
 #include<stdio.h>
 #include<stdlib.h>
 

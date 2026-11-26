@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2841
+// 题意：给定正整数 A，求最小的正整数 B，使得 A*B 的十进制表示只含数字 0 和 1。
+// 一行输出 B 和 A*B，空格隔开。
+// 数据范围：0 < A < 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

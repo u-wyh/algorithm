@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2234
+// 题意：给定 n 天的营业额 a_i，第 1 天波动值为 a_1，第 i 天为 min{|a_j - a_i| | j < i}。
+// 求所有天最小波动值的总和。
+// 输出总和。
+// 数据范围：n <= 32767，|a_i| <= 10^6，保证结果 < 2^31。
 #include <bits/stdc++.h>
 #define int long long
 using namespace std;

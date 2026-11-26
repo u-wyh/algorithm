@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2420
+// 题意：给定 N 个节点的带权树，共 M 次询问。
+// 每次询问两点 u, v 之间路径上所有边权的异或和。
+// 每组询问输出一行结果。
+// 数据范围：1 <= N, M <= 100000，边权在 int 范围内。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

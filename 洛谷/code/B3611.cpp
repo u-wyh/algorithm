@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B3611
+// 题意：给 n 个点的有向图，用 n × n 的 0/1 矩阵记录每条直接边。输出另一个矩阵，若 i 可以沿边到达 j，则对应位置为 1，否则为 0。
+// 数据范围：1 ≤ n ≤ 100，输入矩阵对角线为 0。
+
 #include<bits/stdc++.h>
 using namespace std;
 

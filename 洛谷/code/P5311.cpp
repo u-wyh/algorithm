@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5311
+// 题意：给定一棵 n 个点、每个点有颜色的树，共 m 次独立询问 l, r, x。
+// 每次询问只保留编号在 [l, r] 内的节点时，节点 x 所在连通块内共有多少种不同颜色。
+// 数据范围：所有出现过的数在 [1, 10^5] 之间，保证每次询问 l <= x <= r。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

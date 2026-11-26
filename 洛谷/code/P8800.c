@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P8800
+// 题意：输入正整数 n, m，第 i 种卡牌现有数量 a_1..a_n，以及第 i 种卡牌最多手写补充的上限 b_1..b_n；
+// 共有 m 张空白牌可任意写成各牌种（每张最多写 b_i 张），每套牌需要 1..n 各 1 张，输出最多能凑出多少套牌。
+// 数据范围：1 <= n <= 2*10^5，a_i, b_i <= n，m <= n^2（a_i, b_i 为正整数）。
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>

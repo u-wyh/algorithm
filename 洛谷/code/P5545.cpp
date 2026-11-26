@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5545
+// 题意：x 轴上方有 D 个敌人，下方有 S 个发射源和 T 个激光塔，若存在两塔相连的线段与某发射源到某敌人的线段相交则可发起超级射线
+// 求合法四元组 {T_i, T_j, S_k, D_l} 数量。
+// 输入 D, S, T 及三类点的坐标；输出合法方案总数。
+// 数据范围：1 <= D, S, T <= 800，dy_i > 0，sy_i, ty_i < 0，坐标绝对值不超过 10^9，无重点及三点共线。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

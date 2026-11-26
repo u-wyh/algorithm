@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3459
+// 题意：输入村庄数 n（1..n，1 号为 Bitburg）和 n-1 条构成一棵树的泥土路（保证每个点到 1 号点路径上节点编号递减）
+// 再输入询问数 m 及按时间顺序发生的 n+m-1 个事件。
+// 事件 A a b 表示将 (a, b) 间的泥土路改造成高速公路，事件 W a 查询当前从 1 号点到 a 号点路径上仍为泥土路的边数。
+// 对每次 W 查询输出一行一个整数，表示经过的泥土路数量。
+// 数据范围：1 <= n, m <= 250000，1 <= a < b <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 250005;

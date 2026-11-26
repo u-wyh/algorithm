@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P11294
+// 题意：
+// 给定一棵 N 个城市、N-1 条无权双向公路的树。
+// 允许拆除一条公路，再新建另一条公路（保持图连通 / 城市间距离定义不变）。
+// 输出新建公路后任意两城市之间最远距离的最大可能值。
+// 数据范围：
+// 2 <= N <= 300000
+// 1 <= u, v <= N
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

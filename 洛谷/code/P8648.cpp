@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P8648
+// 题意：输入整数 n 和 n 个矩形的对角顶点坐标 (x_1, y_1, x_2, y_2)，求这些矩形并集覆盖的总面积并输出一个整数。
+// 数据范围：1 <= n < 10000，0 <= x_1, y_1, x_2, y_2 <= 10000。
 #include <bits/stdc++.h>
 #define ll long long
 using namespace std;

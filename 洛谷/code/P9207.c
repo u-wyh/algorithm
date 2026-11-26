@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P9207
+// 题意：计算器使用 k 位有符号整型，范围 [-2^{k-1}, 2^{k-1})。
+// 按伪代码从 sum=0 开始依次执行 sum <- sum + a_i，若某次加法结果超出范围则溢出卡死。
+// 可任意重排给定 n 个数 a_i 的顺序，求不溢出前提下最多能把多少个数累加进 sum（即能计算出的最大项数）。
+// 数据范围：1 <= n <= 500，1 < k <= 8，-2^{k-1} <= a_i < 2^{k-1}。
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

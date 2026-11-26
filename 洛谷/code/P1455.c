@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1455
+// 题意：给 n 件商品的价格和价值，并给一些必须搭配购买的双向关系。选一件就要同时买下跟它直接或间接搭配的所有商品。求总价不超过预算 w 时的最大总价值。
+// 数据范围：1 ≤ n,w,c[i],d[i] ≤ 10000，0 ≤ m ≤ 5000。
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h> // 用于isalnum

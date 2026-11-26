@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2812
+// 题意：n 所学校 m 条单向线路。问 1：最少选多少所学校作为起点使所有学校都能收到软件。
+// 问 2：最少新增多少条单向线路使从任意一所学校出发都能到达所有学校。
+// 输出两行，分别对应问 1 和问 2 的答案。
+// 数据范围：1 <= n <= 10^4，1 <= m <= 5*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

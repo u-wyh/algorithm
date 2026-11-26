@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4085
+// 题意：第一行输入干草捆数 N 和最低风味和要求 M；接下来 N 行每行输入第 i 个干草捆的风味 F_i 和辣度 S_i。
+// 选择一段连续区间 [l, r]，使区间内 F_i 之和至少为 M，并最小化区间内 S_i 的最大值。
+// 输出满足要求的最小辣度（保证有解）。
+// 数据范围：1 <= N <= 10^5，1 <= F_i, S_i <= 10^9，1 <= M <= 10^18。
 #include<bits/stdc++.h>
 using namespace std;
 int n;

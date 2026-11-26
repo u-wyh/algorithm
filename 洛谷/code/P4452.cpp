@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4452
+// 题意：有 K 架相同飞机从 0 号基地出发并在 T 时刻前返回，已知各机场间空载飞行的时间矩阵 t 和费用矩阵 f
+// 以及 M 个带起止机场、起降时刻和利润的包机请求，求最大总净收益。
+// 数据范围：1 <= N, M <= 200，1 <= K <= 10，1 <= T <= 3000，1 <= t_{i,j} <= 200
+// f_{i,j} <= 2*10^3，0 <= a, b < N，0 <= s <= t <= T，0 <= c <= 10000。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long  // 使用 long long 类型

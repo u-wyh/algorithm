@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2391
+// 题意：n 个位置初始为 0，进行 m 次区间染色。
+// 第 i 次将 ((i*p+q) mod n)+1 到 ((i*q+p) mod n)+1（含端点）染成颜色 i。
+// 输出最终每个位置的颜色（未染色为 0）。
+// 数据范围：1 <= n <= 10^6，1 <= m <= 10^7，1 <= m*p+q, m*q+p <= 2*10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

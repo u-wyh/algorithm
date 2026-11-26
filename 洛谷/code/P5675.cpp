@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5675
+// 题意：有 N 堆石子，你选出若干堆石子做 Nim 游戏并指定 Alice 第一次必须从其中哪一堆取（只要包含该堆且选法或指定堆不同即算不同方案）
+// 求让 Alice 必败的方案数。
+// 输入 N 及每堆石子数；输出方案数模 10^9+7。
+// 数据范围：1 <= N <= 200，每堆石子数量 <= 200。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

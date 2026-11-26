@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P1576
+// 题意：有 n 个人，给若干条双向转账关系，每经过一条关系会扣掉当前金额的 z%。
+// 选一条从 A 到 B 的转账路线，让 B 到账 100 元，输出 A 最少要付的金额，保留八位小数。
+// 数据范围：1 ≤ n ≤ 2000，m ≤ 10^5，答案不超过 10000。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2005;

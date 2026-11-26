@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2675
+// 题意：N 层倒三角，第 1 层为 1~N 的排列，第 2 层起每个数为左上与右上之和。
+// 求第 N 层（最后一层）单个数字的最大值。
+// 输出最大值对 10007 取模的结果。
+// 数据范围：0 <= N <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

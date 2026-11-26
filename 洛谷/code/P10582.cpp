@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P10582
+// 题意：在 n×n 的全 0 矩阵上，两人各操作 n 次。
+// 小蓝先手，每次把两格设为 1。
+// 小乔第 i 次可把一个 i×i 的方块清零。
+// 小蓝想让全程出现过的 1 的最大个数尽量大，小乔想让它尽量小。
+// 输出双方最优时的这个峰值。
+// 数据范围：1 ≤ T ≤ 10^5，1 ≤ n ≤ 10^9。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

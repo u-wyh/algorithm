@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10490
+// 题意：给 n 个互不相同的高度，按顺序分给若干套系统。每套收到的一列高度必须严格递增或严格递减，求覆盖全部高度最少需要几套。
+// 数据范围：多组数据，每组 1 ≤ n ≤ 50，同组高度互异。
+
 #include<bits/stdc++.h>
 using namespace std;
 

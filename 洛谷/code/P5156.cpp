@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P5156
+// 题意：给 1..N 的排列，定义一个子集合法当且仅当按子集编号升序循环指令让这些奶牛归位最终能把全队排好序；求最小合法子集的大小及其中字典序第 K 小的子集。
+// 数据范围：1 <= N <= 10^5，1 <= K <= 10^18，保证存在至少 K 个最小子集。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

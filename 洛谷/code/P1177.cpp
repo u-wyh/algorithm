@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1177
+// 题意：读入 n 个整数 a[i]，按从小到大的顺序输出，数字之间用空格隔开。
+// 数据范围：1 ≤ n ≤ 10^5，1 ≤ a[i] ≤ 10^9。
+
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5349
+// 题意：给定 m 次多项式 f(n) 的系数 a_0..a_m，以及一个 (0, 1) 内的有理数对 998244353 取模后的值 r。
+// 求无穷级数 sum_{n=0}^∞ f(n) * r^n 对 998244353 取模的结果。
+// 数据范围：m <= 10^5，a_i in [0, 998244353)，保证 a_m != 0。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

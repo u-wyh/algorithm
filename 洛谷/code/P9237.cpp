@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P9237
+// 题意：给定 n * m 网格棋盘，每个格子为数字 0~9 或 '_'（下划线）。
+// 需要将每个格子染成黑（1）或白（0），使得每个带数字 x 的格子及其八连通相邻格子（共最多 9 格）中恰好有 x 个黑格。
+// 题目保证有唯一解。
+// 题意：第一行输入 n, m，接下来 n 行每行 m 个字符；输出 n 行每行 m 个 0/1 字符表示方案。
+// 数据范围：1 <= n, m <= 10。
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;

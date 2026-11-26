@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1355
+// 题意：给三角形的三个顶点和一个待判定点。点在严格内部输出 1，严格外部输出 2，在边上但不在顶点输出 3，恰好为顶点输出 4。
+// 数据范围：坐标为整数，各横纵坐标均在 [0,100]。
+
 #include<bits/stdc++.h>
 using namespace std;
 

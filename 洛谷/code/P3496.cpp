@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3496
+// 题意：输入城镇数 n（1..n）和双向道路数 m，以及 m 条道路连接关系。
+// 要求给每个城镇标记为 K（裁缝行会）、S（缝纫行会）或 N（无行会），使得任意城镇要么自身是 K，要么与至少一个 K 相邻；对 S 同理。
+// 若无合法方案输出 NIE；否则第一行输出 TAK，随后 n 行输出每个城镇的字母 K、S 或 N。
+// 数据范围：1 <= n <= 200000，0 <= m <= 500000。
 #include<cstdio>
 using namespace std;
 const int MAXN=200010,MAXM=1000010;//注意边数要乘2

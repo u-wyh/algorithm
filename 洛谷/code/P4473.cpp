@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4473
+// 题意：在 N*M 网格上，站在 (i, j) 花费 A_{i,j} 可跳到曼哈顿距离不超过 B_{i,j} 的任意格子
+// 求 X, Y, Z 三人聚到其中一人位置所需的最小总费用（费用相同时优先选 X，其次 Y）。
+// 数据范围：1 <= N, M <= 150，0 <= B_{i,j} <= 10^9，0 <= A_{i,j} <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 155;

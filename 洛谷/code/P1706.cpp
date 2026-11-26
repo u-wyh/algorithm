@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1706
+// 题意：给定 n，按字典序输出 1 到 n 的全部排列，每行一个排列，每个数占 5 个字符宽。
+// 数据范围：1 ≤ n ≤ 9。
+
 #include<cstdio>
 #include<iostream>
 #include<algorithm>

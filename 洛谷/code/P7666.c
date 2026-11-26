@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7666
+// 题意：N 位客人依次在 [T_i, T_i+1] 来访（区间不重叠），期间炉子必须开启；
+// 初始关闭，最多用 K 根火柴点亮 K 次（可随时关闭），求炉子最小总开启时间。
+// 数据范围：1 <= N <= 10^5，1 <= K <= N，1 <= T_i <= 10^9，T_i < T_{i+1}。
 #include<stdio.h>
 #include<stdlib.h>
 

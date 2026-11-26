@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P9862
+// 题意：多组数据（共 n 组）。
+// 有 A, B, C, D 四种粒子，Patrick 先手、Roland 后手轮流操作
+// 每次需按五种固定配方之一消耗粒子：AABDD、ABCD、CCD、BBB、AD。
+// 无法操作者输。
+// 给定各粒子初始数量，判断谁有必胜策略。
+// 题意：第一行输入 n，接下来 n 行每行 4 个整数表示 A, B, C, D 数量；每组输出 Roland 或 Patrick。
+// 数据范围：1 <= n < 100，0 <= A, B, C, D <= 30。
 #include<bits/stdc++.h>
 using namespace std;
 

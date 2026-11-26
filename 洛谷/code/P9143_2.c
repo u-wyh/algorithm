@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P9143
+// 题意：给定 [1, n] 内每个整数 i 的数量 a_i，总数为 S = sum a_i。
+// 定义序列众数 maj 为出现次数最多的数（并列取最大者）。
+// 将这 S 个数重排为 b_1..b_S，最大化 sum_{i=1}^S maj(b_1..b_i) 并输出该最大值。
+// 数据范围：1 <= n <= 10^5，1 <= a_i <= 10^5。
 #include <stdio.h>
 
 #define N 100005

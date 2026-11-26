@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3362
+// 题意：输入 n、指数 d 和询问数 Q，定义 f(i) 为 i 的所有正约数 k 的 k^d 之和。
+// 接下来 Q 行每行输入区间 [L_i, R_i]。
+// 对每个询问输出 sum_{i=L_i}^{R_i} f(i) 对 10^9+7 取模的结果。
+// 数据范围：n <= 10^7，d <= 10^18，Q <= 5*10^4，1 <= L_i <= R_i <= n。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

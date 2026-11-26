@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3530
+// 题意：输入选手数 n，第一类关系数 m_1 和第二类关系数 m_2，每条关系给出两个选手编号。
+// 要求所有选手的整型成绩 t_i 满足：对 m_1 个数对 (a_i, b_i) 有 t_{a_i} = t_{b_i} - 1；
+// 对 m_2 个数对 (c_i, d_i) 有 t_{c_i} <= t_{d_i}。
+// 若无解输出 NIE；否则输出所有选手最多能出现多少种不同的成绩值。
+// 数据范围：2 <= n <= 600，1 <= m_1 + m_2 <= 10^5，a_i != b_i，c_i != d_i。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 605;

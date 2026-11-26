@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5666
+// 题意：多组数据，给定一棵 n 个点的树，求单独删去每一条边后，分裂出的两个子树的重心编号之和的总和。
+// 输入 T 及每组树的点数 n 和 n-1 条边；每组输出一行总和。
+// 数据范围：1 <= T <= 5，n <= 299995，1 <= u_i, v_i <= n。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

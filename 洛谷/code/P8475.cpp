@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P8475
+// 题意：输入 n, k_1, k_2, thres
+// 用题面给出的 xorShift128Plus 生成器生成长为 n 的序列 A（a[i] = next() % thres）。
+// 任选自然数 k 及 <1..n> 的长为 2k 的子序列 P，对所有 i=1..k 交换 A_{P_{2i-1}} 与 A_{P_{2i}}
+// 使新序列 A' 字典序最小。
+// 输出 (sum_{i=1}^n i * A'_i) mod 2^64。
+// 数据范围：100% 数据满足 1 <= n <= 10^7，2 <= thres <= 10^9
+// 0 <= k_1, k_2 < 2^64（时限 0.5s）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

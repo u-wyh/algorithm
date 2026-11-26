@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4802
+// 题意：给定 n 点（0~n-1）m 条有向带权边（无重边自环，保证 0 可达 n-1），求从 0 到 n-1 不重复经过城市的最长路径长度。
+// 数据范围：2 <= n <= 18，1 <= m <= n^2 - n，0 <= s, d <= n-1 (s != d)，1 <= l <= 10000。
 #include <iostream>
 #include <cstdio>
 #include <vector>

@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4163
+// 题意：多组询问，每组给一个只含数字 0~9 的字符串 s 和正整数 d，求 s 有多少种不同的排列（允许前导 0）能被 d 整除。
+// 数据范围：1 <= T <= 15，|s| <= 10，1 <= d <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 

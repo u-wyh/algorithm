@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2442
+// 题意：n 个班级，第 i 个班有 b_i 人且每人分数均为 a_i，共 q 次区间 [u,v] 询问。
+// 1：平均数（保留两位小数向下取整）；2：众数（多个取最小）；3：极差。
+// 对每次询问输出一行结果。
+// 数据范围：1 <= n = q <= 2*10^5，1 <= a_i, b_i <= 100。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

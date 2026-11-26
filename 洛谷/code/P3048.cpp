@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3048
+// 题意：输入正整数 N 和 K。
+// 考虑所有首位为 '1' 且二进制表示中恰好包含 K 个 '1' 的正整数，将它们按数值严格递增排序。
+// 求出排在第 N 位的那个二进制数。
+// 输出一行一个二进制数（不含前导零），表示第 N 个编号。
+// 数据范围：对于 100% 的数据，1 <= N <= 10^7，1 <= K <= 10。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

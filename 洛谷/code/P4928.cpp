@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4928
+// 题意：有 n 件衣服（各自颜色值 x_i、穿后需清洗天数 y_i）和 m 天天气 z_j，每天穿一件未在清洗中的衣服获得 x_i * z_j 舒适度
+// 求 m 天最大总舒适度，若必定某天无衣可穿输出 "gcd loves her clothes!”。
+// 数据范围：n <= 4 且 n != 1，m <= 2000，y_i <= 6，max(y) < m，|z_i| <= 10^8。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e3+5;

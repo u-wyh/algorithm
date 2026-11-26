@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3386
+// 题意：给一个二分图，左边 n 个点，右边 m 个点，一共有 e 条边。
+// 每条边 (u, v) 连接左边的 u 和右边的 v。两边分别从 1 编号，输入可能有重边。
+// 选尽量多的边，使任意两条选中的边都不共享端点，输出选中的边数。
+// 数据范围：1 ≤ n, m ≤ 500，1 ≤ e ≤ 5 × 10^4，1 ≤ u ≤ n，1 ≤ v ≤ m。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

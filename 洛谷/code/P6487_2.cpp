@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6487
+// 题意：n 枚石子两人轮流取，先手第一次可取任意多个，之后每次至少取 1 个、至多取上一次对方所取数量的 2 倍，取走最后一块者胜。
+// 求先手为保证获胜第一次最少取几颗石子。
+// 数据范围：2 <= n <= 10^15。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

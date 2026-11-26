@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4513
+// 题意：维护一个长度为 n 的整数序列，支持 m 次操作：单点修改数值，以及查询区间 [a, b]（若 a > b 需先交换）内的最大连续子段和。
+// 数据范围：1 <= n <= 5*10^5，1 <= m <= 10^5，所有点权绝对值不超过 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

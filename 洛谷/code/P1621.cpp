@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1621
+// 题意：区间 [a,b] 内每个整数起初各成一组。如果两个数有同一个不小于 p 的质因数，就把它们所在的组并在一起。不断合并到不能再合，输出剩余的组数。
+// 数据范围：1 ≤ a ≤ b ≤ 10^5，2 ≤ p ≤ b。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2714
+// 题意：多组数据，每组给定 n 个正整数 a_i。
+// 统计满足 i < j < k < l 且 gcd(a_i, a_j, a_k, a_l) = 1 的四元组个数。
+// 每组输出一行整数。
+// 数据范围：数据组数 <= 100，4 <= n <= 10000，1 <= a_i <= 10000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

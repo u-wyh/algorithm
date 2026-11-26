@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2470
+// 题意：给定长度为 n 的小写字符串，可用 M（标记开始）和 R（重复上个 M 后的解压串）进行压缩。
+// 求压缩后字符串的最短长度。
+// 输出最短长度。
+// 数据范围：1 <= n <= 50。
 #include <iostream>
 #include <cstring>
 #include <algorithm>

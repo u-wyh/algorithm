@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2448
+// 题意：初始序列 S_i = i (i = 1, 2, ...)，进行 k 次操作，每次交换 S_{x_i} 与 S_{y_i}。
+// 求最终序列中的逆序对（x < y 且 S_x > S_y）个数。
+// 输出逆序对个数。
+// 数据范围：k <= 10^5，x_i, y_i <= 2^31-1。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

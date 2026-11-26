@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5357
+// 题意：给定 n 个小写英文字母模式串 T_1..T_n（不保证互不相同）和一个文本串 S。
+// 分别输出每个模式串 T_i 在文本串 S 中出现的次数。
+// 数据范围：1 <= n <= 2*10^5，T_1..T_n 长度总和 <= 2*10^5，|S| <= 2*10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1775
+// 题意：把排成一行的 N 堆石子合为一堆。每次只能合并相邻两堆，费用等于两堆质量之和，求最小总费用。
+// 数据范围：N ≤ 300，每堆质量 m_i ≤ 1000。
+
 #include <stdio.h>
 #include <limits.h>
 

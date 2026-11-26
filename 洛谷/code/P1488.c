@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1488
+// 题意：给一个已被对角线划成三角形的凸多边形，第一个输入的三角形是黑色。
+// 两人轮流沿已有对角线切下一个三角形，切下黑色三角形者胜。
+// 假设双方最优，先手能赢输出 JMcat Win，否则输出 PZ Win。
+// 数据范围：4 ≤ n ≤ 50000，顶点编号 0 到 n-1，共给 n-2 个三角形。
+
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>

@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P2073
+// 题意：花束初始为空。
+// 操作 1 加入给定美丽值和价格的花，已有同价花则跳过。
+// 操作 2 删最贵的花，操作 3 删最便宜的花，花束为空时忽略删除。
+// 读到 -1 后输出美丽值之和与价格之和。
+// 数据范围：操作数 ≤ 10^5，1 ≤ W,C ≤ 10^6。
+
 #include <bits/stdc++.h>
 #define int long long
 using namespace std;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5536
+// 题意：在一棵 n 个节点的无权树中选出 k 个连通的核心城市，使得所有非核心城市到核心城市集合的最大距离最小，求这个最小最大距离。
+// 输入 n, k 及树的边；输出最小最大距离。
+// 数据范围：1 <= k < n <= 10^5。
 #include<iostream>
 #include<cstring>
 #include<cmath>

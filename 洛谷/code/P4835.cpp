@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4835
+// 题意：有 n 名学生第一年各自选了 3 位老师中的一位，且每名学生对其他 n-1 名学生有印象好坏排名，第二年每名学生必须换一位不同的老师
+// 求最小的非负整数 T 使得同一老师下的学生彼此印象都在前 T 好以内。
+// 数据范围：n <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e3+5;

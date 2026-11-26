@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1102
+// 题意：给 N 个数和差值 C。统计有多少对下标对应的数 A、B 满足 A-B=C。位置不同的相同数分别计数。
+// 数据范围：1 ≤ N ≤ 2 × 10^5，0 ≤ a[i] < 2^30，1 ≤ C < 2^30。
+
 #include<bits/stdc++.h>
 using namespace std;
 

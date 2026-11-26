@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2167
+// 题意：T 组数据，每组给出 N 个等长字符串（含小写字母和 ?）。
+// 求与其中恰好 K 个串匹配的小写字母串的个数，答案对 1000003 取模。
+// 每组输出一行答案。
+// 数据范围：1 <= T <= 5，1 <= N <= 15，1 <= |S_i| <= 50。
 #include<bits/stdc++.h>
 using namespace std;
 const int MOD = 1000003;

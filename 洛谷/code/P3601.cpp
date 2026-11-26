@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3601
+// 题意：输入两个正整数 l 和 r。
+// 定义 qiandao(x) 为 1 到 x 中与 x 不互质的整数个数，求 sum_{i=l..r} qiandao(i) 对 666623333 取模的值。
+// 输出一行一个整数表示答案。
+// 数据范围：1 <= l <= r <= 10^12，r - l <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

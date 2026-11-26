@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P9331
+// 题意：有 N 个国家 1..N，在国家 i 可获得覆盖区间 [L_i, R_i]（L_i <= i <= R_i）的护照。
+// 你初始无护照，可重复“获取当前所在国家的护照”或“用已有护照进入覆盖范围内的某国家”。
+// 给定 Q 个可能的初始居住国家 X_1..X_Q，对每个 X_j 求环游全部 N 个国家所需的最少护照种数，若不可能输出 -1。
+// 题意：输入 N，后 N 行 L_i, R_i，再输入 Q 和 Q 行 X_j；输出 Q 行答案。
+// 数据范围：2 <= N <= 2 * 10^5，1 <= L_i <= i <= R_i <= N，1 <= Q <= N
+// 1 <= X_1 < X_2 < ... < X_Q <= N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

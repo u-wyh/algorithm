@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4906
+// 题意：有 N 个初始全开的闹钟开关，每个开关有直接关联的其他开关，操作第 i 个开关时它自己及其直接和间接关联的开关会全部翻转
+// 求关闭所有开关的最少操作次数（无解输出 Change an alarm clock,please!）。
+// 数据范围：1 <= N <= 20，0 <= M <= N-1，允许自环和重边。
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3225
+// 题意：多组数据（以 0 结束），每组输入隧道数 N 以及 N 条无向边 (S, T)（构成连通无向图）。
+// 需要在若干节点设置救援出口，使得无论图中哪一个节点坍塌，其余所有节点都能至少到达一个救援出口。
+// 每组数据输出一行 "Case i: ans cnt"，分别为最少救援出口数及最少出口数的设置方案总数。
+// 数据范围：N <= 500，节点最大编号 m 满足 1 <= m <= 10^3，答案小于 2^64。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6832
+// 题意：给定一个由小写字母组成的字符串 S，求 S 中出现次数最多的非空子串的出现次数。
+// 数据范围：0 < |S| <= 10^7，字符属于 [a, z]。
 #include<stdio.h>
 #include<string.h>
 #define Max 10000005

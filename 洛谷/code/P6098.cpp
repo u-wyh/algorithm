@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6098
+// 题意：给定 N 个点的树（点权 e_i），支持 Q 次操作：1 i v 将 e_i 改为 v；2 i j 查询 i 到 j 简单路径上所有点权的异或和。
+// 数据范围：2 <= N <= 10^5，1 <= Q <= 10^5，0 <= e_i <= 10^9。
 //P2146
 #include<bits/stdc++.h>
 using namespace std;

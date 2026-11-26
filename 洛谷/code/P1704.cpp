@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1704
+// 题意：给定 N 天每天能做的题数 c_i 和 K 个必须做题的日期。
+// 按日期选尽可能多的天，必须包含指定日期，且所选日期的做题数严格递增。
+// 无解输出 impossible。
+// 数据范围：1 ≤ N ≤ 5×10^5，1 ≤ K ≤ N/2，1 ≤ p_i ≤ N，日期互异且未必有序，1 ≤ c_i ≤ 10^9。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

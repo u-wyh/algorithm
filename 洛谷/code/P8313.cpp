@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P8313
+// 题意：给定长为 n 的序列 a_1..a_n
+// 求有多少对 (l, r) (1 <= l <= r <= n) 使得区间 [l, r] 内存在严格出现次数超过区间长度一半的数（即绝对众数）。
+// 数据范围：100% 数据满足 1 <= l <= r <= n <= 2*10^5，1 <= a_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

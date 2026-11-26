@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6121
+// 题意：给定 N 点 M 边的无向图，按给定顺序依次关闭每个谷仓及其相连的边
+// 输出初始状态及每次关闭后（前 N - 1 次关闭后）剩余开着的谷仓是否全连通（YES/NO）。
+// 数据范围：1 <= N, M <= 2 * 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

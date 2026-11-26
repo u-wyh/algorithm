@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P6326
+// 题意：T 组数据，每组给定 n 点的树，第 i 点商店售卖喜爱度 w_i、价格 c_i、库存 d_i 的物品，预算 m 元。
+// 要求购买过物品的商店在树上构成一个连通块，求最大总喜爱度。
+// 数据范围：1 <= T <= 5，1 <= n <= 500，1 <= m <= 4000，0 <= w_i <= 4000，1 <= c_i <= m
+// 1 <= d_i <= 2500。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

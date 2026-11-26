@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4876
+// 题意：二维平面上有 n 块草地，坐标 (x_i, y_i) 上有 g_i 单位牧草，选一个起点位置，最大化到起点曼哈顿距离不超过 k 的所有草地的牧草总量。
+// 数据范围：1 <= n <= 10^5，0 <= x_i, y_i <= 10^6，1 <= g_i <= 10^4，1 <= k <= 2 * 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

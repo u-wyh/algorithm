@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5335
+// 题意：共 n 个事件（编号 1..n）：1 S 插入名字 S（可重）；2 S 删除一个名字 S；3 S a b c 进行一次查询。
+// 查询最早在哪个事件后以 S 为前缀的名字数严格超过 (a*|ANS|+b) mod c（ANS 为上次答案，初始 0，无则输出 -1）。
+// 数据范围：n <= 10^5，|S| <= 60，所有字符串只含前 10 个小写字母。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

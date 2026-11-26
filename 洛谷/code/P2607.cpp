@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2607
+// 题意：n 名骑士各有战斗力和唯一最厌恶的骑士，两者不能同时出征。
+// 求选出没有矛盾的骑士集合的最大战斗力总和。
+// 输出最大总和。
+// 数据范围：1 <= n <= 10^6，战斗力 <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

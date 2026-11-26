@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P6309
+// 题意：数轴上有 n 座房屋（坐标 x_i、居民数 v_i）
+// 支持 m 次操作：1 l r 查询在 [l,r] 范围内房屋中选址建避难所 z 使 sum v_i*|x_i - z| 最小的最小代价；
+// 2 a b c 将第 a 座房屋坐标改为 b、居民数改为 c。
+// 数据范围：1 <= n, m <= 3*10^5，1 <= a <= n，-10^9 <= l <= r <= 10^9
+// -10^9 <= x_i, b <= 10^9，0 <= v_i, c <= 10^3。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

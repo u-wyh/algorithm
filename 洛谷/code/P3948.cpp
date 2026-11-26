@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P3948
+// 题意：维护初始全为 0、长度为 n 的数组
+// 先执行 opt 次操作：A L R X（区间加 X）或 Q L R（查询 [L, R] 中满足 min <= (T * i mod mod) <= max 的下标 i 数量
+// 负数取模按 C++ 向 0 取整）；
+// 之后无修改，再回答 Final 次区间查询 [L, R]。
+// 数据范围：n <= 80000，opt <= 10^7，Final <= 10^7，opt 中的 Q 操作不超过 1000 次
+// n, opt, mod, min, max, X 均在 int 范围内。
 #include<bits/stdc++.h>
 #define ll long long
 using namespace std;

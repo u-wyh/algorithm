@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P9745
+// 题意：给定 n 个点的树，点 i 权值为 x_i。
+// 对 n-1 条边共有 2^{n-1} 种删边方案，每种方案权值定义为所有连通块的点权异或和的乘积。
+// 求所有 2^{n-1} 种方案的权值之和对 998244353 取模的值。
+// 题意：第一行输入 n，第二行输入 x_1..x_n，第三行输入 f_2..f_n（表示 i 与 f_i 有边）；输出一行一个整数。
+// 数据范围：1 <= n <= 5 * 10^5，0 <= x_i <= 10^18，1 <= f_i < i。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

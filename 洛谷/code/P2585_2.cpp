@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2585
+// 题意：以字符串形式给出二叉树（0/1/2 表示子节点数），用红、绿、蓝染色。
+// 要求父子节点颜色不同，且同一节点的两子节点颜色也不同。
+// 输出最多和最少有多少个节点染成绿色。
+// 数据范围：1 <= |s| <= 5*10^5。
 #include<iostream>
 #include<cstdio>
 #include<cstring>

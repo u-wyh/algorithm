@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2584
+// 题意：n 个请求：+Name Score 上传/更新得分（同分先上传者优先）。
+// ?Name 查询玩家排名；?Index 输出从第 Index 名开始的最多 10 名玩家名字。
+// 对每个查询输出一行结果。
+// 数据范围：n >= 10，Name <= 10 位大写字母，Score <= 10 位正整数，输入文件 <= 2MB。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 250005;

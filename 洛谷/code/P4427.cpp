@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4427
+// 题意：一棵以 1 为根（根深度为 0）的 n 个节点的树，m 次询问路径 i 到 j 上所有节点深度的 k 次方之和（每次 k 可不同
+// 对 998244353 取模）。
+// 数据范围：1 <= n, m <= 300000，1 <= k <= 50。
 #include <cstdio>
 #include <algorithm>
 using namespace std;

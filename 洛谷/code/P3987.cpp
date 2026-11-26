@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3987
+// 题意：第一行输入序列长度 n 和操作数 m，第二行输入 n 个非负整数 a_i。
+// 接下来 m 行每行执行两种操作之一：1 l r x 将区间 [l, r] 内所有 x 的倍数除以 x；2 l r 查询区间 [l, r] 内元素之和。
+// 对每次查询输出一行答案。
+// 数据范围：1 <= n, m <= 10^5，0 <= a_i <= 5 * 10^5，1 <= x <= 5 * 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

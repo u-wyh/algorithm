@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5200
+// 题意：给 1..N 的排列，每次只能命令排头奶牛向后移动 c 步（1 <= c <= N-1）
+// 求排成升序 1..N 的最少操作次数 K 及每步移动步数序列 c_1..c_K。
+// 数据范围：1 <= N <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100005;

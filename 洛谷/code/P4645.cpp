@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4645
+// 题意：给一张 n 个点 m 条有向边的图（可能有重边），求从 1 号点到 2 号点的不同路径数，无穷多输出 inf，否则对 10^9 取模。
+// 数据范围：1 <= n <= 5*10^4，1 <= m <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

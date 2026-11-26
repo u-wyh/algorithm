@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2199
+// 题意：N*M 迷宫（O 空地，X 墙），人每秒上下左右走一步，能沿八方向直线看到不被墙遮挡的奖杯。
+// 多组询问（以 0 0 0 0 结束），求到达能看到奖杯位置的最短时间，不可达输出 Poor Harry。
+// 每组输出一行答案。
+// 数据范围：N*M <= 16384，询问对数 <= 512。
 #include<bits/stdc++.h>
 using namespace std;
 

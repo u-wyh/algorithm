@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P4256
+// 题意：维护一个长度为 n 的正整数序列，支持 q 次操作：L x y p 求区间 [x, y] 的 lcm mod p；
+// G x y p 求区间 gcd mod p；
+// C x y c 把区间统一修改为 c；
+// S x y p 求区间公因数个数 mod p。
+// 数据范围：1 <= n, q <= 3e5，任何时刻序列元素都在 [1, 100] 内，取模后答案不超过 int。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

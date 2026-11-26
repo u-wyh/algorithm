@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/B4156
+// 题意：有 N 架飞船，每架先从地球到火星，用时 U(i)，再从火星到天王星，用时 V(i)。
+// 每段航线同一时刻各只能容纳一架飞船，飞船可在火星等候。
+// 求所有飞船抵达的最早时刻。
+// 数据范围：1 ≤ N ≤ 25000，1 ≤ U(i), V(i) ≤ 50000。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 25005;

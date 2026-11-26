@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P10767
+// 题意：有 2^n 名选手参加淘汰赛，每场比赛预先指定由更强者或更弱者晋级，选手在签表中的位置可选。
+// 每问给选手排名 a 和轮次 b，判断能否安排签表使其进入该轮，冠军视为进入第 n+1 轮。
+// 数据范围：1 ≤ 2^n,m ≤ 10^6，1 ≤ a ≤ 2^n，1 ≤ b ≤ n+1。
+
 #include <bits/stdc++.h>
 using namespace std;
 

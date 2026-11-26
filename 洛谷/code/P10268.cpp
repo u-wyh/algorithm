@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P10268
+// 题意：有 n 张卡，选两张不同的卡。
+// 若它们兼容，得分是两卡能力值的乘积，否则是 0。
+// 每问只启用编号 l 到 r 的兼容关系，兼容可沿关系链传递。
+// 求均匀随机选两张时的期望得分，对 10^9+7 取模。
+// 数据范围：1 ≤ n,q ≤ 10^5，1 ≤ m ≤ 2n，1 ≤ a[i] ≤ 10^9，1 ≤ l ≤ r ≤ m，关系端点在 [1,n]。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

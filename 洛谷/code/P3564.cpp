@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3564
+// 题意：输入水果总数 n，以及由字符 'j'（苹果）和 'p'（橙子）组成的长度为 n 的字符串。
+// 找一个最长的连续子串，使得无论从左往右还是从右往左逐个取出，任意时刻已取出的 'p' 的个数都不小于 'j' 的个数。
+// 输出该最长子串的长度（可能为 0）。
+// 数据范围：1 <= n <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P7181
+// 题意：在 [0, xmax] x [0, ymax] 内给定 n 个边平行于坐标轴的矩形，A=(0,0)
+// 在折线 CE 与 DE 上选一点 B（其中 C(xmax,0), D(0,ymax), E(xmax,ymax)）
+// 使线段 AB 相交（含顶点相交）的矩形数最多，输出最多数及 B 坐标。
+// 数据范围：1 <= n <= 10^4，0 <= xmax, ymax <= 10^9，矩形顶点为非负整数坐标。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

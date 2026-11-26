@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10988
+// 题意：给 N×N 高度网格，从左上到右下。
+// 可以向下或向右走一格，也可以在同一行向左或向右一次跨过若干格，但跨过的高度须沿移动方向逐格严格下降。
+// 每次移动耗时 1 秒，求最少用时。
+// 数据范围：1 ≤ N ≤ 1000，0 ≤ H[i][j] ≤ 100。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

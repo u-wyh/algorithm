@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P12736
+// 题意：给定若干区间相等约束，求长度为 n 的序列最多可用多少种不同颜色。
+// 输入：首行 n, m，后 m 行每行三个整数 a_i, b_i, l_i。
+// 规则：要求区间 [a_i, a_i+l_i-1] 与 [b_i, b_i+l_i-1] 对应位置同色。
+// 输出：输出一个正整数，表示序列最多可包含的不同颜色种数。
+// 数据范围：2 <= n <= 5*10^5，1 <= m <= 5*10^5。
+// 数据范围：1 <= a_i, b_i <= n-l_i+1，a_i != b_i，l_i >= 1。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

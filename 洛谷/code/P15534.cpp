@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P15534
+// 题意：树上每点有两类货物 (a_u, b_u)，多次问携 x 走 u->v 后持有的货物。
+// 输入：首行 n, Q，后两行分别给 a_i, b_i，再 n-1 行树边，Q 行询问 (u, v, x)。
+// 规则：沿 u 到 v 最短路经每点（含端点），若售当前货则换成另一种否则不变。
+// 输出：输出 Q 行，表示每次旅行结束时手里持有的货物种类。
+// 数据范围：2 <= n <= 10^6，1 <= Q <= 10^6，1 <= a_i, b_i, x <= n，a_i != b_i。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

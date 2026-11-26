@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10487
+// 题意：在 n×m 迷宫里，M 每秒最多走三格，G 每秒最多走一格，两人都只能上下左右走且不能穿墙。
+// 每秒先让两只鬼扩张两个格距，鬼的范围不受墙阻挡。
+// 求两人在避开所有鬼的前提下最早何时相遇，无解输出 -1。
+// 数据范围：输入 T 组，1 < n,m < 800，每张图恰有一个 M、一个 G 和两个 Z。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 805;

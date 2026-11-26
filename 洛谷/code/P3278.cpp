@@ -1,4 +1,12 @@
 // https://www.luogu.com.cn/problem/P3278
+// 题意：维护无穷多项式 f(x)=sum a_i x^i（初始全 0），支持 n 次操作：
+// mul L R v（[L,R] 次项系数乘 v）、add L R v（[L,R] 次项系数加 v）。
+// mulx L R（[L,R] 次项乘 x）、query v（输出 f(v) mod 20130426，不改多项式）。
+// 逐行输出每个 query 的结果。
+// 数据范围：
+// N <= 10^5（操作数 n）
+// 0 <= L <= R <= 10^5（次项范围）
+// 0 <= v <= 10^9（参数值，query 操作不超过 10 次）
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

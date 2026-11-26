@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1450
+// 题意：有四种面值固定的硬币。每次购物给出四种硬币各自可用的上限 d 和目标金额 s。统计从各类硬币选若干枚，正好付出 s 的不同数量组合。
+// 数据范围：1 ≤ c[i],d[i],s ≤ 10^5，1 ≤ n ≤ 1000 次购物。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

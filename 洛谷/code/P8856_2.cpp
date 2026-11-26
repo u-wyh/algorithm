@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8856
+// 题意：输入站点数 C（1 号开往 C 号）、列车总座位数 S 和依次处理的订票请求数 R
+// 每个请求 (O, D, N) 要求在区间 [O, D) 的每一站都留有至少 N 个空座；
+// 按顺序若可满足则占用座位并输出 T，否则不修改并输出 N。
+// 数据范围：1 <= C, S, R <= 60000（未单独标注 O, D, N 的范围）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 60005;

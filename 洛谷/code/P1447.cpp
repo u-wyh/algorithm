@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1447
+// 题意：植物位于所有整数坐标 (x,y)，其中 x 从 1 到 n、y 从 1 到 m。
+// 对每株植物，数它到原点的线段内部还有几株，若有 k 株则损失 2k+1。
+// 输出每株损失之和。
+// 数据范围：1 ≤ n,m ≤ 10^5。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

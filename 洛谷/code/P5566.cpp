@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5566
+// 题意：给定结点数 N（不计前端空结点），求所有含 N 个内结点的合法红黑树中，红色内结点个数的最小值和最大值。
+// 输入正整数 N；分两行输出最小和最大红色内结点个数。
+// 数据范围：N <= 5000。
 #include <bits/stdc++.h>
 int n, ans, k;
 int main()

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5906
+// 题意：给定长为 n 的序列和 m 次区间询问 [l, r]，求每次询问区间内相同数值元素之间的最大下标差（若区间内无相同元素则输出 0）。
+// 输入 n、序列 a、m 及各询问区间；输出 m 行答案。
+// 数据范围：1 <= n, m <= 2*10^5，1 <= a_i <= 2*10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

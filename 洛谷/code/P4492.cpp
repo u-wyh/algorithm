@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4492
+// 题意：二叉树初始有根结点，之后每天等概率随机选一个未长出子结点的分支长出新结点
+// 求第 N 天共 N 个结点时所有点对距离之和的期望 E 乘以 N! 后对 P 取模的结果。
+// 数据范围：N <= 2000，P <= 10^9 + 7。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

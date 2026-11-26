@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P7118
+// 题意：每个 Galgame 为以 1 为根的二叉树（左儿子为 A 场景，右儿子为 B 场景，0 表示空场景）。
+// 按「可达场景数更多 -> A 场景更有趣 -> B 场景更有趣」的规则定义场景偏序；
+// 给定一款 n 场景的 Galgame，求所有本质不同且不如它有趣的 Galgame 数量，对 998244353 取模。
+// 数据范围：1 <= n <= 10^6，0 <= a_i, b_i <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MOD = 998244353;

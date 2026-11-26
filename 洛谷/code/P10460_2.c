@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10460
+// 题意：每组给 N 个等差序列，参数 (S,E,D) 表示从 S 起每次加 D，保留不超过 E 的项。
+// 保证最多只有一个位置出现奇数次。
+// 若有就输出该位置和出现次数，否则输出 There's no weakness.。
+// 数据范围：1 ≤ T ≤ 5，N ≤ 2 × 10^5，S ≤ E，三个参数均在 [0,2^31-1]，序列总项数不超过 10^8。
+
 #include <stdio.h>
 
 typedef struct {

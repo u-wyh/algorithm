@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1298
+// 题意：给正小数 R，找一个与它的绝对差最小的最简分数。
+// 限制分子在 [0,M]、分母在 [1,N]。
+// 有并列最优就输出 TOO MANY，否则输出分子/分母，整数的分母写 1。
+// 数据范围：1 ≤ M,N ≤ 10^7，R 的整数部分一位，小数部分最多十位。
+
 #include <iostream>
 #include <cmath>
 #include <set>

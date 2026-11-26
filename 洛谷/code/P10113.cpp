@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10113
+// 题意：有 N 名员工，0 号是老板，其他员工给出直接上司 f[i]。每次给一组合作人员，找能管理所有参与者的员工中编号最大的。本人、直接上司和间接上司都算能管理。
+// 数据范围：3 ≤ N ≤ 10^5，Q ≤ 100，2 ≤ m ≤ min(N, 10^4)，参与者编号合法且互不相同。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

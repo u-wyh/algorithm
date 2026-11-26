@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1300
+// 题意：给城市网格、起点和初始车头方向，求到终点的最少费用。直走免费，左转花 1，右转花 5。只有前、左、右都不能走时才可掉头，花 10。
+// 数据范围：4 ≤ h,w ≤ 30，最外一圈是障碍，起终点唯一且保证能到。
+
 //P1300
 #include<bits/stdc++.h>
 using namespace std;

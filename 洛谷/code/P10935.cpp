@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10935
+// 题意：给 N 颗恒星，每颗亮度是至少为 1 的整数。
+// M 条条件中，T 为 1、2、3、4、5 分别表示 A 与 B 的亮度关系是等于、小于、大于等于、大于、小于等于。
+// 求最小亮度总和，无解输出 -1。
+// 数据范围：1 ≤ N,M ≤ 10^5。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

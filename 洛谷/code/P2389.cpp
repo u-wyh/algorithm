@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2389
+// 题意：有 n 个数 a_i（可正可负），从中选出不超过 k 段连续子段。
+// 求选出元素总和的最大值。
+// 输出最大总和。
+// 数据范围：n <= 500，k <= n，-1000 <= a_i <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

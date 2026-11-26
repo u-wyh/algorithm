@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5355
+// 题意：给定长为 n 的正整数序列 a 和 m 次询问，每次给定 opt, l, r, x，询问区间 [l, r] 中能否选出两个数（可同一位置）。
+// opt=1..4 分别对应两数差为 x、和为 x、乘积为 x、商为 x（整除无余数），可以输出 yuno，否则输出 yumi。
+// 数据范围：所有输入的数在 [0, 10^5] 内，序列元素在 [1, 10^5] 内。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+1;

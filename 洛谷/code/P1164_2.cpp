@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1164
+// 题意：有 N 种菜，每种只有一份，价格是 a[i]，手上正好有 M 元。统计选择若干菜使总价等于 M 的不同选法。即使价格相同，菜品不同也分别计数。
+// 数据范围：1 ≤ N ≤ 100，1 ≤ M ≤ 10000，1 ≤ a[i] ≤ 1000，答案在 [0,2^31-1]。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e3+5;

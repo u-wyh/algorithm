@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4973
+// 题意：定义「X-* 进制」字符串 s 的值为 prod_{i=0}^{n-1} (X^i * (ASCII(s_i) - 48))，共有 Q 次询问
+// 每次给定 X_i 和字符串 s_i（字符 ASCII > 48），求其十进制表示的数字位数。
+// 数据范围：1 <= Q <= 100，1 <= X_i = |s_i| - 1 <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 

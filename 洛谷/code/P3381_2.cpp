@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3381
+// 题意：输入点数 n、边数 m、源点 s、汇点 t，以及 m 条有向边 (u_i, v_i, 容量 w_i, 单位费用 c_i)。
+// 求该有向网络的最大流，以及达到最大流时的最小总费用。
+// 输出两个整数，依次为最大流和最小费用。
+// 数据范围：1 <= n <= 5*10^3，1 <= m <= 5*10^4，1 <= s, t <= n，u_i != v_i
+// 0 <= w_i, c_i <= 10^3，答案 <= 2^31-1。
 #include <iostream>
 #include <vector>
 #include <queue>

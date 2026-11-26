@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7700
+// 题意：n 个星球，第 i 个含燃料 a_i、首次前往耗费 b_i（重复到访无新燃料）；
+// 从星球 P 出发并可任意次访问其他星球（中途剩余燃料须非负），求最大可搜集燃料量及在此前提下最多访问的不同星球数。
+// 数据范围：1 <= P <= n <= 10^5，a_i, b_i <= 10^5。
 #include<stdio.h>
 #include<stdlib.h>
 #include<limits.h>

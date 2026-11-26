@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5195
+// 题意：W 列 H 行网格图含空地(0)、障碍(1)、起点(2)、骑士(3)、灌木(4)，每次四连通移动耗 1 天，取到任意一株灌木前不能经过 3
+// 求从 2 到某处 4 再到 3 的最少天数。
+// 数据范围：1 <= W, H <= 1000，输入保证有解。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

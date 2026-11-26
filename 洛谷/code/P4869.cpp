@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4869
+// 题意：给定长为 n 的正整数序列 A，将 A 的全部 2^n 个子集异或和从小到大排序成序列 B（下标从 1 开始）
+// 求给定数 Q 在 B 中第一次出现时的下标模 10086。
+// 数据范围：1 <= N <= 10^5，其余输入数均不超过 10^9，保证 Q 在 B 中出现。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2717
+// 题意：给定长度为 n 的正整数序列 a_i，求平均值不小于 k 的非空连续子序列个数。
+// 输出满足条件的子序列个数。
+// 数据范围：1 <= n <= 10^5，1 <= a_i, k <= 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

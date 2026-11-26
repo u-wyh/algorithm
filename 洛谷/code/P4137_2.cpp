@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4137
+// 题意：第一行输入数组长度 n 和询问数 m，第二行输入非负整数数列 a_1..a_n，接下来 m 行每行输入区间 [l, r]。
+// 每次询问区间 [l, r] 内最小的未出现过的自然数（mex，从 0 开始）。
+// 输出 m 行，每行一个整数表示每个询问的答案。
+// 数据范围：1 <= n, m <= 2*10^5，1 <= l <= r <= n，0 <= a_i <= 2*10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

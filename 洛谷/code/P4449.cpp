@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4449
+// 题意：给定全局常数 k 和 T 组询问 (n, m)
+// 每组求 sum_{i=1}^n sum_{j=1}^m gcd(i, j)^k 对 10^9 + 7 取模的结果。
+// 数据范围：1 <= T <= 2 * 10^3，1 <= n, m, k <= 5 * 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

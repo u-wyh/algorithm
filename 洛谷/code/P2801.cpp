@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P2801
+// 题意：输入人数 N、操作数 Q，初始 N 个人的身高（不超过 1000 的正整数），以及 Q 条操作（M 或 A）。
+// M L R W 表示将闭区间 [L, R] 内所有人的身高加上 W；A L R C 表示询问闭区间 [L, R] 内身高大于等于 C 的人数。
+// 依次处理所有修改与询问。
+// 对每条 A 询问输出一行一个整数，表示满足身高大于等于 C 的人数。
+// 数据范围：对于 100% 的数据，N <= 10^6，Q <= 3000，1 <= W <= 1000，1 <= C <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5677
+// 题意：给定 n 个互不相同的整数 a_i，若 |a_x - a_y| 在所有 i!=x 中最小则称 (x, y) 为好的配对；
+// m 次询问区间 [l, r] 内好的配对数 Ans_i。
+// 输入 n, m、序列 a 及 m 个区间；输出 sum_{i=1}^m (Ans_i * i)。
+// 数据范围：1 <= n, m <= 3*10^5，1 <= a_i <= 10^9（互异），1 <= l <= r <= n。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

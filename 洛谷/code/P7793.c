@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P7793
+// 题意：3 个人每人对 n 道题有各自难度估计 d_{i,j}，需将 1..n 划分为 3 个非空连续段分别分配给 3 人，使总估计难度之和最小。
+// 数据范围：3 <= n <= 1.5*10^5，1 <= d_{i,j} <= 5。
 #include<stdio.h>
 #include<limits.h>
 

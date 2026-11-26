@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3803
+// 题意：第一行输入两个多项式次数 n, m，随后两行分别从低次到高次输入 F(x) 的 n+1 个系数和 G(x) 的 m+1 个系数。
+// 计算多项式乘积 F(x) * G(x)。
+// 一行输出 n+m+1 个整数，从低次到高次表示乘积多项式的系数。
+// 数据范围：对于 100% 的数据，0 <= n, m <= 10^6，输入系数均为 0 到 9 的整数。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

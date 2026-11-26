@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P9129
+// 题意：给定长为 N 的数字序列 a_i (1..9) 和区间 [A, B]。
+// Q 次询问区间 [l_i, r_i]，按从左到右顺序对每张纸片选择放到栈顶、栈底或不放，最后从顶到底读出一个整数。
+// 求 3^{r_i-l_i+1} 种方案中结果在 [A, B] 内的方案数，对 10^9+7 取模。
+// 数据范围：1 <= N <= 300，1 <= a_i <= 9，1 <= A <= B < 10^18，1 <= Q <= 5*10^4
+// 1 <= l_i <= r_i <= N。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

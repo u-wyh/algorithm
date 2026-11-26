@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4828
+// 题意：给定长为 n 的序列 a，每次操作把每个 a_i 变为 a_i + a_{(i mod n)+1}
+// 有 Q 次询问第 x 次操作后位置 y 的元素值（对 998244353 取模）。
+// 数据范围：1 <= n <= 10^6，1 <= a_i <= 10^9，1 <= x <= 2000，1 <= Q <= 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10576
+// 题意：求所有满足 n 加 10120300500、n 减 10120300500 都是完全平方数的整数 n 之和。
+// 数据范围：差值常数固定为 10120300500；填空题，只提交一个整数。
+
 #include<bits/stdc++.h>
 using namespace std;
 

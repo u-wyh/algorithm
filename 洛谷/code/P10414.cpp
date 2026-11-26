@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10414
+// 题意：求指数塔 2^(3^(4^(…^2023))) 对 2023 的余数。指数从右往左结合，只提交一个整数。
+// 数据范围：固定底数从 2 到 2023，模数为 2023。
+
 #include<bits/stdc++.h>
 using namespace std;
 

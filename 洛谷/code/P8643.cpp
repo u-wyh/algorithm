@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8643
+// 题意：输入 n, m, k 和 n 个仅含 A, G, C, T 的非空 DNA 字符串（下标从 1 开始，长度可不同）；
+// 统计满足 1 <= i_1 < i_2 < ... < i_m <= n 且各串从 p_1, ..., p_m 起长为 k 的子串完全相等的 2m 元组 (i_1, p_1, ..., i_m, p_m) 数量（任一位置不同视为不同）
+// 输出对 10^9+7 取模的结果。
+// 数据范围：n <= 5，m <= 5，1 <= k <= L <= 10^5（L 为所有字符串总长）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MOD = 1e9+7;

@@ -1,4 +1,12 @@
 // https://www.luogu.com.cn/problem/P7846
+// 题意：给定一棵 n 个点的树，每条边 (u_j, v_j, t_j) 的边权 t_j ∈ {0, 1, 2}。
+// 为每个点分配正整数点权 w_i ∈ [1, R]，要求：t_j = 0 时 w_{u_j} != w_{v_j}；
+// t_j = 1 时无限制；
+// t_j = 2 时 w_{u_j} = w_{v_j}。
+// 第一行输入 n, R，接下来 n-1 行每行 u_j, v_j, t_j。
+// 输出一行两个整数，分别表示满足要求的本质不同序列 w 的个数（对 10^9 + 7 取模）以及所有合法序列中 ∑w_i 的最小值；
+// 若无合法序列，两个数均输出 0。
+// 数据范围：1 <= n <= 10^5，1 <= R <= 100，t_j ∈ {0, 1, 2}。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

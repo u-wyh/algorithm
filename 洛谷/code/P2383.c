@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2383
+// 题意：n 组数据，每组给出 m 根木棒的长度 a_i。
+// 判断能否用完所有木棒拼成一个正方形。
+// 每组输出 yes 或 no。
+// 数据范围：1 <= n <= 10，4 <= m <= 20，1 <= a_i <= 2000。
 #include<stdio.h>
 #include<stdbool.h>
 #define Max 1000

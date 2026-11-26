@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4139
+// 题意：第一行输入数据组数 T，接下来 T 行每行输入一个正整数 p。
+// 定义 a_0 = 1, a_n = 2^{a_{n-1}}，求 b_n = a_n mod p 在充分大后收敛到的稳定值。
+// 输出 T 行，每行一个正整数表示答案。
+// 数据范围：T <= 10^3，p <= 10^7。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

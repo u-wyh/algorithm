@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1358
+// 题意：有 n 张互不相同的牌。给 m 个人分别发 a[i] 张，同一个人手里的牌不分顺序。求不同发牌方案数，对 10007 取模。
+// 数据范围：1 ≤ n ≤ 10000，1 ≤ m ≤ 100，0 ≤ a[i] ≤ 100。
+
 #include <stdio.h>
 
 #define MOD 10007

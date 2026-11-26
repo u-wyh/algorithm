@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1986
+// 题意：从排成一列的 n 人中选一些人发麦克风。给定 m 条区间要求，每条规定 [a_i,b_i] 内至少要有 c_i 人拿到麦克风。求最少要发多少支。
+// 数据范围：1 ≤ n ≤ 30000，1 ≤ m ≤ 5000，1 ≤ a_i < b_i ≤ n，1 ≤ c_i ≤ b_i−a_i+1。
+
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5651
+// 题意：给定 n 点 m 边的简单无向连通图（无重边自环，无非零异或环），定义路径权值为边权异或和，Q 次询问 x 到 y 的最短简单路径权值。
+// 输入 n, m, Q、边及 Q 次询问 (x, y)；输出 Q 行表示每次询问的最短路径权值。
+// 数据范围：1 <= n, Q <= 10^5，1 <= m <= 2n，0 <= v < 2^30。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

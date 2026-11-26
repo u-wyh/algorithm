@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10658
+// 题意：有 n 个地点，初始没有跑道，每个点有若干刷卡机。
+// 操作 1 A B 加一条跑道，操作 2 A B 把 A 的刷卡机数改为 B。
+// 操作 3 A B 可给所有跑道定向，求从 A 到 B 能刷的最大总次数，每台机器最多刷一次，不可达输出 -1。
+// 数据范围：1 ≤ n ≤ 150000，1 ≤ m ≤ 5n，地点编号在 [1,n]，任意地点的刷卡机数不超过 10^4。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 150005;

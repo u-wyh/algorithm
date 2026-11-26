@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3871
+// 题意：给定一个初始长度为 N 的整数序列，依次执行 M 次操作：
+// 1. add a：在序列末尾添加一个整数 a；
+// 2. mid：输出当前序列的中位数（若当前序列长度为偶数，取排序后中间两个数中较小的那个）。
+// 数据范围：1 <= N <= 100000，0 <= M <= 10000，序列中整数的绝对值不超过 10^9，序列中的数可能有重复。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

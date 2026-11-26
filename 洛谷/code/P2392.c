@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2392
+// 题意：4 科分别有 s_1..s_4 道题，给出每题耗时，必须按科复习。
+// 每科内可同时做至多 2 道不同的题，求完成所有 4 科的最短时间。
+// 输出最短总时间。
+// 数据范围：1 <= s_1, s_2, s_3, s_4 <= 20，每题耗时 in [1, 60]。
 #include<stdio.h>
 
 int s[4],a[21],nowtime,maxtime,sum,ans,maxdeep;

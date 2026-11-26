@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P5048
+// 题意：给长为 n 的序列 a，m 次强制在线询问（左右端点均异或上次答案 lastans），每次求区间 [l, r] 内众数的出现次数。
+// 数据范围：1 <= n, m, a_i <= 5*10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

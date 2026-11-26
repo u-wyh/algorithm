@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10095
+// 题意：每组给一个整数 n，求把它写成若干个大于 1 的斐波那契数相乘的方案数。相同因子的不同排列算同一种。
+// 数据范围：1 ≤ t ≤ 50，2 ≤ n ≤ 10^18。
+
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;

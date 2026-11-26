@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B3737
+// 题意：输入起始年份 x 和结束年份 y。统计这段年份里有多少年的 11 月 11 日是星期六或星期日，首尾两年都计入。
+// 数据范围：1900 ≤ x ≤ y ≤ 3000。
+
 #include<stdio.h>
 
 int main()

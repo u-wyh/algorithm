@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4416
+// 题意：平面上有 N 个边不接触且不相交（仅嵌套或相离）的矩形床单和 M 次坐标唯一的带颜色彩弹射击，击中最上层矩形后会向包含该点的下层矩形渗色
+// 求最终每张床单上的不同颜色数量。
+// 数据范围：1 <= N, M <= 80000
+// 矩形坐标 A_i, B_i, C_i, D_i 及射击坐标 X_j, Y_j、颜色 K_j 均在 [1, 10^9] 内。
 #include<bits/stdc++.h>
 #define N 200005
 using namespace std;

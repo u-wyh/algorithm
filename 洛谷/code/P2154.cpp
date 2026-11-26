@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2154
+// 题意：N*M 矩形网格（坐标 0..N, 0..M）上有 W 棵常青树。
+// 某格点的虔诚度为以它为中心、正上下左右各有恰好 k 棵常青树的十字架数。
+// 求所有空墓地虔诚度总和，输出对 2^31 取模的结果。
+// 数据范围：1 <= N, M <= 10^9，1 <= W <= 10^5，1 <= k <= 10。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

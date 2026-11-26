@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1263
+// 题意：给一个含空地、陷阱和墙的网格，在空地放尽量多的守卫，一格至多一个。同一行或列的两个守卫之间必须有墙，陷阱不挡视线。输出最大人数和任意一组坐标。
+// 数据范围：1 ≤ m,n ≤ 200，0 是空地，1 是陷阱，2 是墙。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 205;

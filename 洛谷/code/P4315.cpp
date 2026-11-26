@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P4315
+// 题意：给一棵 N 个点的无向带权树（权值在边上），支持以 Stop 结尾的若干操作：Change k w 把第 k 条边改为 w；
+// Cover u v w 把 u 到 v 路径上的边全改为 w；
+// Add u v w 把 u 到 v 路径上的边全加 w；
+// Max u v 查询 u 到 v 路径上边权最大值。
+// 数据范围：1 <= N <= 1e5，操作与询问总数 <= 1e5，任意时刻所有边权都不超过 1e9。
 //P4315
 #include<bits/stdc++.h>
 using namespace std;

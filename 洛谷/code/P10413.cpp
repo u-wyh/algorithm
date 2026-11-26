@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10413
+// 题意：圆周上有 2023 个编号点，可以挑一些点对连线。问有多少种连线方案，使线段在圆内互不交叉。只提交方案数对 2023 取模的结果。
+// 数据范围：点数固定为 2023，模数为 2023。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int n=2023,mod=2023;

@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P8026
+// 题意：有 d 张均包含 n 个点的无向图，初始均无任何边。
+// 进行 m 次操作，每次给出 (a, b, k)，在第 k 张图的点 a 与点 b 间添加一条无向边。
+// 每次操作后输出有序点对 (u, v)（1 <= u, v <= n）的个数，使得 u 和 v 在所有 d 张图中都连通。
+// 第一行输入 d, n, m，接下来 m 行每行 a, b, k。
+// 输出 m 行每行一个整数。
+// 数据范围：1 <= d <= 200，1 <= n <= 5*10^3，1 <= m <= 10^6，1 <= a, b <= n，1 <= k <= d。
 #include<bits/stdc++.h>
 using namespace std;
 const int BASE = 499;

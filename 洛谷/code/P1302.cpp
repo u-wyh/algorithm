@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1302
+// 题意：给 n 个内部互不重叠的正方形，求从原点能看到多少个。某正方形可见，指它的边界上能找到不同两点 A、B，使原点与这两点形成的三角形内部没有碰到其他正方形。
+// 数据范围：1 ≤ n ≤ 1000，左下角坐标 X,Y 和边长 L 都在 [1,10000]。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

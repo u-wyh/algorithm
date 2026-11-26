@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4340
+// 题意：给长度为 n 的序列 a，在每对相邻数之间可填 +、-、* 三种符号共 3^(n-1) 种表达式；
+// 支持 Q 次单点永久修改 a_t = v，每次修改后输出所有表达式求值的总和对 1e9+7 取模的结果。
+// 数据范围：n, Q <= 1e5，0 <= a_j, v_i <= 1e4。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4786
+// 题意：给定长为 N 仅含 C、T 的字符串和 Q 次区间询问 [L, R]，求在子串 S[L..R] 中至少删几个字符能使每个前缀和后缀的 C 均不少于 T。
+// 数据范围：1 <= N, Q <= 5*10^5。
 #include <iostream>
 #include <string>
 #include <algorithm>

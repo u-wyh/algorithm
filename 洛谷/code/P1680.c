@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1680
+// 题意：把 N 人分成 M 组，第 i 组人数必须严格大于 C_i。只按每组人数区分方案，求方案数模 10^9+7。
+// 数据范围：1 ≤ N,M ≤ 10^6，1 ≤ C_i ≤ 1000，保证有解。
+
 #include<stdio.h>
 
 #define MOD 1000000000+7

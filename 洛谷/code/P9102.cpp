@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P9102
+// 题意：有 n 袋糖，第 i 袋有 a_i 颗糖。
+// 求有多少个非空袋子子集 S，使得对于任意整数 y in [1, sum_{i in S} a_i]，都能从 S 中选出若干整袋使其糖果总数恰好为 y。
+// 答案对 10^9+7 取模。
+// 数据范围：1 <= n <= 5000，1 <= a_i <= 5000。
 #include<cstdio>
 #include<algorithm>
 using namespace std;

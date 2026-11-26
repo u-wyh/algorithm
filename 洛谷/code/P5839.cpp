@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5839
+// 题意：给定长为 N、字符集为前 M 个小写字母的串 S 及字符单点修改代价矩阵 a_{ij}（允许中转多次修改）
+// 求将 S 改为由若干长度至少为 K 的同字符连续段拼接而成的最小总代价。
+// 输入 N, M, K、串 S 及代价矩阵 a；输出最小总天数。
+// 数据范围：1 <= M <= 26，1 <= K <= N <= 10^5，0 <= a_{ij} <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

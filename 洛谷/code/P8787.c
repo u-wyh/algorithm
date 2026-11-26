@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8787
+// 题意：输入 n 和 n 棵竹子的初始高度 h_1..h_n；
+// 每次可对连续一段高度相同的竹子使用一次魔法，使它们的高度同时变为 floor(sqrt(floor(H/2)+1))；
+// 输出将所有竹子高度都变为 1 所需的最少魔法次数。
+// 数据范围：1 <= n <= 2*10^5，1 <= h_i <= 10^18。
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

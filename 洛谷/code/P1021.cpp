@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1021
+// 题意：每个信封最多贴 N 张邮票，要选 K 种正整数面值，每种可重复使用。让从 1 起可连续凑出的邮资上限 S 尽量大，输出升序面值和 MAX=S。
+// 数据范围：N 和 K 为正整数，N+K ≤ 15。
+
 #include<iostream>
 #include<cstring>//头文件
 using namespace std;

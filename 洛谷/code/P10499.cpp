@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10499
+// 题意：给 N 个开关的初始与目标状态，以及联动关系 I,J。
+// 操作 I 时，I 和与它联动的 J 都翻转。
+// 每个开关至多操作一次，统计能达到目标的操作集合数，无解输出 Oh,it's impossible~!!。
+// 数据范围：1 ≤ K ≤ 10 组，1 ≤ N < 29，状态均为 0 或 1。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5395
+// 题意：给定正整数 n，求对所有 i in [0, n] 的第二类斯特林数 S(n, i)（将 n 个不同元素划入 i 个相同非空集合的方案数）。
+// 按顺序输出所有结果对 167772161 取模的值。
+// 数据范围：1 <= n <= 2*10^5。
 
 #include<bits/stdc++.h>
 using namespace std;

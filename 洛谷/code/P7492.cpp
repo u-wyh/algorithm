@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P7492
+// 题意：维护长为 n 的序列 a，m 次操作：查询 [l, r] 的最大连续子段和；或将 [l, r] 内每个数按位或上 k（负数按 32 位补码运算）。
+// 数据范围：n, m <= 10^5，-2^30 <= a_i, k < 2^30，1 <= l <= r <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

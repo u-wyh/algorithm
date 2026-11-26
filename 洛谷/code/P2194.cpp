@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2194
+// 题意：n 个点（点权 w_i）m 条有向边，每次可任选起点走回路并覆盖回路上所有点，花费为起点点权。
+// 求覆盖所有点的最小总花费，以及最小花费时的方案数（模 10^9+7）。
+// 输出最小花费和方案数。
+// 数据范围：1 <= n <= 10^5，1 <= m <= 3*10^5，0 <= w_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

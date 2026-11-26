@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P7597
+// 题意：交互题。
+// 以 1 为根的 n 个节点有根树，可询问两点距离（? 1 u v）或某点子树大小及无序点集（? 2 u），要求交互库输出总整数个数不超过 40000
+// 还原所有点父节点。
+// 数据范围：2 <= n <= 5000，1 <= u, v <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e3+5;

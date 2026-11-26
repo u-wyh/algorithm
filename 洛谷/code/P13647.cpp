@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P13467
+// 题意：统计 N*M 的 0/1 网格中全 0 且面积至少为 K 的子矩形个数。
+// 输入：首行 N, M, K，后 N 行每行 M 个 0/1 整数（1 表示有洞）。
+// 规则：沿网格线裁剪矩形，不能含 1 且格子总数 >= K。
+// 输出：输出一行一个整数，表示合法子矩形总方案数。
+// 数据范围：1 <= N, M <= 2000，1 <= K <= N*M，s_{xy} in {0, 1}。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

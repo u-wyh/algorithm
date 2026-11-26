@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5641
+// 题意：定义序列 [l, r] 的 1 阶子段和为区间和，k 阶子段和（k>=2）为所有子区间 [i, j] 的 k-1 阶子段和之和；
+// 求序列 a 每个前缀 [1, i] 的 k 阶子段和。
+// 输入 n, k 及正整数序列 a；输出 n 个数分别表示前缀 1..n 的 k 阶子段和模 998244353。
+// 数据范围：1 <= n <= 10^5，1 <= k <= 998244353，1 <= a_i <= 998244353。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

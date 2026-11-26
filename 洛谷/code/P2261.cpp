@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2261
+// 题意：给定正整数 n 和 k，求 sum_{i=1..n} (k mod i)。
+// 输出计算结果。
+// 数据范围：1 <= n, k <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

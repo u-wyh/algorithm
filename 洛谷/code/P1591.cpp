@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1591
+// 题意：每组给正整数 n 和一个十进制数码 a，统计 n! 的十进制写法里 a 出现了多少次。
+// 数据范围：t ≤ 10，1 ≤ n ≤ 1000，a 是 0 到 9 的一个数码。
+
 #include <iostream>
 #include <vector>
 #include <string>

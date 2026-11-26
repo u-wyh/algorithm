@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7119
+// 题意：n 枚硬币初始给定正反面（H/T），游戏每步统计反面朝上的硬币数 k 并翻转第 k 枚直到全为正面；
+// 现有 m 次区间翻转修改，输出初始及每次修改后游戏结束所需步数（若永不停止输出 never）。
+// 数据范围：1 <= n, m <= 10^6，1 <= l_i <= r_i <= n。
 //P7119
 #include<bits/stdc++.h>
 using namespace std;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2218
+// 题意：平面上有 N 个点 (X_i, Y_i)，用 3 个边长为 L 且边平行坐标轴的正方形覆盖所有点（含边界）。
+// 求最小的 L 值。
+// 输出最小的 L。
+// 数据范围：N <= 20000，-10^9 <= X_i, Y_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 20005;

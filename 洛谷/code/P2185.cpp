@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2185
+// 题意：多组数据，每组给定 N 个点 M 条边的连通无向图（以 0 0 结束）。
+// 求图的最远两点距离（直径）乘以 100 的结果。
+// 每组输出一行答案。
+// 数据范围：1 <= N <= 1000，1 <= M <= 25000，1 <= A, B <= N。
 #include<stdio.h>
 #include<cstring>
 #include<queue>

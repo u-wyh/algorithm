@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4886
+// 题意：给定 n 个点的带权树和 m 组点对 (u_i, v_i)，选定一个中心点 c
+// 最小化所有点对中 dist(c, u_i) + dist(c, v_i) 的最大值。
+// 数据范围：1 <= n, m <= 10^5，1 <= w_i <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

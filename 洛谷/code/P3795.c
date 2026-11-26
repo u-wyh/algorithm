@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3795
+// 题意：输入一个正整数 k（输入格式中记为 x）。
+// 设集合 N = M = {1, 2, ..., k}，求满足 f(f(x)) = x 的 N 到 M 的不同映射 f 的个数。
+// 输出答案对 14233333 取余的结果。
+// 数据范围：1 <= k <= 10^7；注意本题内存限制为 20MB。
 #include <stdio.h>
 
 typedef long long ll;

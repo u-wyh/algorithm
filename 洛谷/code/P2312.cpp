@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2312
+// 题意：给定 n 次多项式系数 a_0..a_n，求方程 a_0 + a_1*x + ... + a_n*x^n = 0 在 [1,m] 内的整数解。
+// 第一行输出解的个数，之后按从小到大每行输出一个解。
+// 数据范围：0 < n <= 100，|a_i| <= 10^10000，a_n != 0，m < 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

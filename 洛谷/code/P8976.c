@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8976
+// 题意：T 组数据，每组给定偶数 n 和整数 a, b，构造长为 n 的 1..n 排列 p
+// 使得前一半之和 sum_{i=1}^{n/2} p_i >= a 且后一半之和 sum_{i=n/2+1}^{n} p_i >= b。
+// 无解输出 -1，多解输出任意一组。
+// 数据范围：1 <= T <= 10，2 <= n, sum n <= 10^5，n 为偶数，0 <= a, b <= n(n+1)/2。
 #include <stdio.h>
 
 #define int long long

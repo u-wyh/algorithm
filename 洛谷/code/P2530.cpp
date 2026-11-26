@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2530
+// 题意：按顺序处理 n 个成品（A/B/C 三种），手中最多拿 10 个。
+// 每次可将手中某一种类的成品全部装箱并从队列补满 10 个，求最少装箱次数。
+// 输出最少装箱次数。
+// 数据范围：1 <= n <= 100。
 #include <bits/stdc++.h>
 using namespace std;
 

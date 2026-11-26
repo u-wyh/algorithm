@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5343
+// 题意：将长度为 n 的序列划分为若干连续块，PinkRabbit 允许 PR 种块长、NaCly_Fish 允许 NF 种块长（各自列表中可能有重复）。
+// 只能使用两人都允许的块长进行划分，求不同分块方案数对 10^9+7 取模。
+// 数据范围：1 <= n <= 10^18，1 <= PR, NF, x <= 100（x 为最大块长）。
 #include <iostream>
 #include <vector>
 #include <map>

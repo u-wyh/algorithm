@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3645
+// 题意：输入摩天楼数量 N（编号 0..N-1）与 doge 数量 M，以及每只 doge 的初始位置 B_i 和跳跃能力 P_i。
+// 位于 b 的 doge 每次可跳到 b - P_i 或 b + P_i（须在 [0, N-1] 内），且在同一座楼时可将消息传给该楼上的其他 doge。
+// 输出将消息从 0 号 doge 传递到 1 号 doge 所需的最少总跳跃步数，若无法到达输出 -1。
+// 数据范围：1 <= N <= 30000，1 <= P_i <= 30000，2 <= M <= 30000，0 <= B_i < N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e4+5;

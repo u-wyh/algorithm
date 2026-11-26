@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3177
+// 题意：输入树节点数 n、需染成黑色的点数 k，以及 n-1 条带权无向边 (u, v, w)。
+// 选择恰好 k 个点染成黑色、其余 n-k 个点染成白色，收益定义为所有黑点两两间路径距离之和加上所有白点两两间路径距离之和。
+// 输出能获得的最大收益值。
+// 数据范围：0 <= k <= n <= 2000，1 <= w <= 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

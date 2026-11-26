@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1057
+// 题意：n 人坐成一圈，每次把球传给左邻或右邻。球从指定同学手里出发，求恰好传 m 次后回到该同学手里的不同接球顺序数。
+// 数据范围：3 ≤ n ≤ 30，1 ≤ m ≤ 30。
+
 #include<stdio.h>
 
 int main()

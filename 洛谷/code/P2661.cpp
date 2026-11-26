@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2661
+// 题意：n 个同学各有固定传递对象 T_i (T_i != i)，每轮所有人同时将所知生日告诉对象。
+// 当有人从别人口中得知自己生日时游戏结束，求游戏进行的轮数。
+// 输出轮数。
+// 数据范围：n <= 2*10^5。
 //P2661
 #include<cstdio>
 #include<algorithm>//用到min

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2164
+// 题意：n 个点 m 条无向边（连通），给出每天从 i 到 j 的客流量 C_{i,j}。
+// 居民选择经过边数最少的路径，若有多种则等概率随机选一种。
+// 输出每条边每天的期望客流量（保留一位小数，绝对误差 <= 0.1）。
+// 数据范围：2 <= n <= 300，n-1 <= m <= n(n-1)/2，0 <= C_{i,j} <= 100，C_{i,i} = 0。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 305;

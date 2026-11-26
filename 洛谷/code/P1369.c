@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1369
+// 题意：给平面上 n 个点，找一个边与坐标轴平行的矩形，让其四条边合起来经过尽量多的点。只统计边界，输出最多点数。
+// 数据范围：1 ≤ n ≤ 300，横纵坐标均在 [1,100]。
+
 #include<stdio.h>
 #include<stdlib.h>
 

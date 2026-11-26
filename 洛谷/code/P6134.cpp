@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6134
+// 题意：给定 N 点 M 边的有向无环图（无重边），求在保持原图任意两点可达性不变的前提下，最多能删掉多少条边。
+// 数据范围：1 <= N <= 3 * 10^4，0 <= M <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e4+5;

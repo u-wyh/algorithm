@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1715
+// 题意：从平面上 N 棵树中任取三棵组成一个三角形。对 v=0 到 N−3，分别输出内部恰有 v 棵树的三角形数量，顶点上的树不计。
+// 数据范围：3 ≤ N ≤ 300，坐标为 [0,10^6] 内的整数，任意三点不共线。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

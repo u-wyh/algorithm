@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3194
+// 题意：输入直线数量 N，以及 N 条互不重合直线 y = A_i x + B_i 的参数 A_i 和 B_i。
+// 若从 y = +∞ 处垂直向下看时能看到某条直线的至少一段非退化子线段（即存在某个开区间 x 上该直线严格高于其他所有直线），则称该直线可见。
+// 按编号从小到大输出所有可见直线的编号，空格分隔且末尾需有一个空格。
+// 数据范围：0 < N <= 50000，|A_i|, |B_i| <= 500000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

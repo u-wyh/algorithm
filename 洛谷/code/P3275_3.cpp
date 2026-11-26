@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P3275
+// 题意：给 N 个小朋友分糖果，每人至少分到 1 颗，需满足 K 条不等关系。
+// X=1: A=B；X=2: A<B；X=3: A>=B；X=4: A>B；X=5: A<=B。
+// 输出最少需要的总糖果数；若无解输出 -1。
+// 数据范围：
+// 1 <= N, K <= 10^5（人数与条件数）
+// 1 <= X <= 5（关系类型）
+// 1 <= A, B <= N（小朋友编号）
 #include<bits/stdc++.h>
 using namespace std;
 

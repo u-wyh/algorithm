@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2604
+// 题意：n 点 m 边有向图，每条边有容量 c 和扩容费用 w（每扩 1 容量费用）。
+// 求不扩容时 1 到 n 的最大流，以及将最大流增加 k 所需的最小扩容费用。
+// 一行输出两个整数。
+// 数据范围：1 <= n <= 10^3，1 <= m <= 5*10^3，1 <= k <= 10，1 <= c, w <= 100。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e3+5;

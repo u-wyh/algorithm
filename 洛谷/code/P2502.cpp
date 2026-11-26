@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2502
+// 题意：n 点 m 边无向图（可能有重边），每条边限速 v_i，给定起点 s 和终点 t。
+// 求一条从 s 到 t 的路径，使路径上最大边权与最小边权之比最小。
+// 输出最小比值（整数或既约分数），不可达输出 IMPOSSIBLE。
+// 数据范围：1 <= n <= 500，1 <= m <= 5*10^3，1 <= v < 3*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

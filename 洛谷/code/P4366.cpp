@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4366
+// 题意：N 个城市间任意两城 i, j 可花费 (i xor j) * C 通行，另有 M 条带权单向快捷通道，求从 A 到 B 的最短耗时。
+// 数据范围：N <= 10^5，M <= 5 * 10^5，1 <= C <= 100，1 <= F_i, T_i <= N，1 <= V_i <= 100。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

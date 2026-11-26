@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10315
+// 题意：给 n 个方碑的初始状态和目标状态，状态是 0 到 m-1。
+// 打某个方碑一次，会让它和它联动的所有方碑各加 1 并对 m 取模。
+// 输出使所有方碑达到目标的任意一组攻击次数，无解输出 niuza。
+// 数据范围：1 ≤ n ≤ 100，m 是不超过 10^9 的素数，每次攻击联动 0 到 n-1 个不同的其他方碑，输出的各次数在 [0,m-1]。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

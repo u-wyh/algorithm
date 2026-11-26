@@ -1,4 +1,12 @@
 // https://www.luogu.com.cn/problem/P3690
+// 题意：输入点数 n、操作数 m，各点初始权值 a_1..a_n，以及 m 次动态树操作（op x y）。
+// 0 为求 x 到 y 路径点权异或和（保证连通）；
+// 1 为若 x, y 不连通则连边 (x, y)；
+// 2 为若边 (x, y) 存在则删边；
+// 3 为将点 x 权值改为 y。
+// 对每个 0 号操作输出一行一个整数表示路径异或和。
+// 数据范围：1 <= n <= 10^5，1 <= m <= 3*10^5，1 <= a_i <= 10^9
+// 1 <= x, y <= n（op=3 时 1 <= y <= 10^9）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

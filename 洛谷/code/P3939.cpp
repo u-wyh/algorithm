@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3939
+// 题意：长度为 n 的序列第 i 个元素颜色为 a_i。依次执行 m 个操作：
+// 1. 1 l_j r_j c_j：查询区间 [l_j, r_j] 内颜色为 c_j 的兔子数量；
+// 2. 2 x_j：交换第 x_j 和第 x_j + 1 只兔子的位置。
+// 数据范围：n <= 3 * 10^5，1 操作次数 <= 3 * 10^5，2 操作次数 <= 3 * 10^5
+// 1 <= a_i, c_j <= 3 * 10^5，1 <= l_j < r_j <= n，1 <= x_j < n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

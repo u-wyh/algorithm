@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5170
+// 题意：t 组数据，每组给定 n, a, b, c
+// 分别求 sum_{i=0}^n floor((ai+b)/c)、sum_{i=0}^n floor((ai+b)/c)^2、sum_{i=0}^n i*floor((ai+b)/c) 对 998244353 取模的结果。
+// 数据范围：1 <= t <= 10^5，0 <= n, a, b, c <= 10^9，c != 0。
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2567
+// 题意：只含数字 6 和 8 的数为幸运号码，幸运号码的倍数为近似幸运号码。
+// 给定正整数 a, b，求闭区间 [a,b] 内近似幸运号码的个数。
+// 输出个数。
+// 数据范围：1 <= a <= b <= 10^10。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

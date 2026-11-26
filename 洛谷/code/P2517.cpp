@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2517
+// 题意：n 个月，第 i 月需求 U_i、订货单价 d_i，存贮费 m/件/月，仓库容量 S。
+// 第 1 月初及第 n 月底库存均为 0，求满足所有月需求的最低总成本。
+// 输出最低成本。
+// 数据范围：0 <= n <= 50，0 <= m <= 10，0 <= S, U_i <= 10000，0 <= d_i <= 100。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long  

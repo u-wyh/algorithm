@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5012
+// 题意：给长为 N 的序列 Num 和 T 组强制在线询问（解码得区间 [l, r]），每次选一个数 x 标记所有 <= x 的元素
+// 要求连续标记段数在 [l, r] 内且使（各段长度平方和）/ x 最大，输出对应的原始平方和与 x（多解取 x 最大，无解输出 -1 -1）。
+// 数据范围：1 <= N <= 10^6，1 <= T <= 10^3，1 <= Num_i <= 10^6，其余输入数字均在 int 范围内。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

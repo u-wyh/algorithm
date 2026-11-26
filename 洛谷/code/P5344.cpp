@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5344
+// 题意：n 个点初始无边的森林，共 m 次操作：操作 2 给 u, v 连权为 w 的无向边（已连通则忽略）。
+// 操作 1 建单向传送门，从 u1->v1 路径上任一点可花 w 到达 u2->v2 路径上任一点（不连通则忽略）；
+// 求最后从 s 到各点的最小花费（不可达输出 -1）。
+// 数据范围：1 <= n <= 50000，1 <= m <= 10^6，1 <= u, v <= n，1 <= w <= 100。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

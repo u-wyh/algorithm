@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3398
+// 题意：输入树节点数 n、询问数 q，以及 n-1 条树边。
+// 每次询问给出四个点 a、b、c、d，判断从 a 到 b 的最短路径与从 c 到 d 的最短路径是否存在至少一个公共节点。
+// 对每个询问输出一行 'Y' 或 'N'。
+// 数据范围：1 <= n, q <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100005;

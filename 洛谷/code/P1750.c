@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1750
+// 题意：给定 n 个元素和容量为 c 的栈，只能按输入顺序压栈，可以在栈非空时弹栈。输出可得到的字典序最小的完整出栈序列。
+// 数据范围：1 ≤ c ≤ n ≤ 10000，元素值在 [1,2×10^9]。
+
 #include <stdio.h>
 #include <stdbool.h>
 

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1429
+// 题意：给平面上 n 个点，找两个不同点，使欧氏距离尽量小。只输出最小距离，精确到小数点后四位。
+// 数据范围：2 ≤ n ≤ 200000，横纵坐标均为 [0,10^9] 内的整数。
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

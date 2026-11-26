@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2149
+// 题意：给定 n 个点 m 条边的无向图（边权 w），以及两对点 (x_1,y_1) 和 (x_2,y_2)。
+// 求两对点各自最短路的最长公共路径长度（公共路径行走方向可以不同）。
+// 输出最长公共路径长度。
+// 数据范围：1 <= n <= 1500，1 <= m <= 3*10^5，1 <= w <= 10^4，无重边和自环。
 #include<cstdio>
 #include<cstring>
 #include<algorithm>

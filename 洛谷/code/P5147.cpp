@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5147
+// 题意：定义随机递归 work(x)：x=1 返回 0，否则等概率选 y in [1, x] 并返回 work(y)+1；
+// 输入正整数 n，求 work(n) 返回值的数学期望（保留 5 位小数）。
+// 数据范围：1 <= n < 2^31。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

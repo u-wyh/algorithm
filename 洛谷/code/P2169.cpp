@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2169
+// 题意：给定 n 个点 m 条边的有向图（边权 w）。
+// 若两点间存在双向路径则传输时间为 0。
+// 求从 1 到 n 的最短传输时间。
+// 数据范围：1 <= n <= 2*10^5，1 <= m <= 10^6，保证答案在 int 范围内。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

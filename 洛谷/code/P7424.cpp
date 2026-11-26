@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P7424
+// 题意：n 块平行于 x 轴的木板（左端点 x1、右端点 x2、耐久 s），按顺序沿 y 轴方向发射 m 颗位于 x 的子弹（会贯穿所有覆盖 x 的未碎木板
+// 某木板被贯穿 s 次后碎掉）；
+// 求每颗子弹射出后碎掉的木板数。
+// 数据范围：1 <= n, m <= 2*10^5，1 <= x_1 <= x_2 <= 2*10^5，1 <= s <= 2*10^5
+// 1 <= x <= 2*10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

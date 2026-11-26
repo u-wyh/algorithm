@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3465
+// 题意：输入无向图的点数 n 和边数 m，以及 m 条无向边 (a, b)。
+// 将每条无向边定向或保留部分为有向边，判断是否能使仅考虑有向边时每个点的入度恰好都为 1。
+// 若无解输出 NIE；否则第一行输出 TAK，第 i+1 行输出指向节点 i 的那条有向边的起点编号。
+// 数据范围：1 <= n <= 100000，1 <= m <= 200000，无重边与自环。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

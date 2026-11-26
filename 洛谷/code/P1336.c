@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1336
+// 题意：要完成 n 篇论文，有 m 种课题。第 i 种写 x 篇的总耗时为 A[i]×x^B[i]，同一课题可写多篇，也可不写。求恰好写完 n 篇的最少总耗时。
+// 数据范围：1 ≤ n ≤ 200，1 ≤ m ≤ 20，1 ≤ A[i] ≤ 100，1 ≤ B[i] ≤ 5。
+
 #include<stdio.h>
 #include<math.h>
 #include<limits.h>

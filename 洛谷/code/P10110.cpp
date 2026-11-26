@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10110
+// 题意：有 N 种商品和 M 条单向交换关系。
+// 把商品 x 换成 y 要付 v[y]-v[x]+1 元。
+// 给初始商品 a 和目标商品 b，求总花费最小值，无法到达输出 No solution。
+// 数据范围：N ≤ 10^5，M ≤ 2 × 10^5，1 ≤ v[i] ≤ 10^9，编号在 [0, N-1]，a ≠ b，每次交换的两种商品不同。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

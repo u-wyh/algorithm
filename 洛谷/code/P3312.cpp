@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3312
+// 题意：多组询问，第一行输入 Q，每组给出 n、m、a。
+// n×m 数表第 i 行第 j 列的值为能同时整除 i 和 j 的所有自然数之和，求数表中不超过 a 的数之和。
+// 对每组询问输出答案对 2^31 取模的结果。
+// 数据范围：1 <= Q <= 2*10^4，1 <= n, m <= 10^5，|a| <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

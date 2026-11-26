@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8178
+// 题意：T 组数据，每组给定 k 以及长 k 序列 a, b 和质数序列 p，递推定义 f_n = a_n * f_{n-1} + b_n (n >= 1)。
+// 判断是否存在非负整数 f_0 使得对所有 1 <= i <= k 都有 p_i 整除 f_i，输出 Yes 或 No。
+// 数据范围：100% 数据满足 1 <= T <= 10，1 <= k <= 10^3，0 <= a_i, b_i <= 10^9
+// 2 <= p_i <= 10^9 且 p_i 为质数。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

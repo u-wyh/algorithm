@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2123
+// 题意：T 组数据，每组有 n 位大臣，第 i 位左手正整数 a_i、右手正整数 b_i。
+// 奖金 c_1 = a_1 + b_1，c_i = max(c_{i-1}, sum_{j=1..i} a_j) + b_i（2 <= i <= n）。
+// 可重排大臣顺序（允许不改），求获得奖金最多的大臣所获奖金的最小值。
+// 数据范围：T <= 10，1 <= n <= 2 * 10^4，1 <= a_i, b_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 25005;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2205
+// 题意：数轴上从 0 开始进行 N 次左右移动并粉刷经过区间。
+// 求至少被粉刷了 K 层的区域总长度。
+// 输出总长度。
+// 数据范围：1 <= N <= 10^5，最远距起点 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 

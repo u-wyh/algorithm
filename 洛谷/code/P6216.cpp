@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6216
+// 题意：给定长为 n 的小写串 s1 和长为 m 的小写串 s2，对 s1 所有长度为奇数的回文子串 [l,r]，累加 s2 在 [l,r] 中出现的次数
+// 答案对 2^32 取模。
+// 数据范围：1 <= n, m <= 3*10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e6+5;

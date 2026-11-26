@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2658
+// 题意：M*N 网格每格有海拔，部分格子为路标。
+// 求最小的难度系数 D，使所有路标间存在四连通路径且路径上相邻格海拔差 <= D。
+// 输出最小难度系数 D。
+// 数据范围：1 <= M, N <= 500，海拔在 [0, 10^9] 之间。
 #include<cstdio>
 #include<cstring>
 #define id(i,j) ~-i*m+j//即每个点的编号，相当于(i-1)*m+j

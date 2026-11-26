@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5670
+// 题意：维护长为 n 的序列，支持区间加 x，以及查询区间 [l, r] 所有元素异或和的二进制后 m 位的值。
+// 输入 n, m, q、初始序列及 q 次操作；对每次查询输出一行非负整数。
+// 数据范围：1 <= n, q <= 10^5，1 <= m <= 10，0 <= a_i, x < 2^m。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

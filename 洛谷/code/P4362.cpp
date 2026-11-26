@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4362
+// 题意：把一棵 N 个节点（最大果子为 1 号）的带权树分成 M 个非空组给 M 个头吃，大头必须吃恰好 K 个且包含 1 号节点
+// 同一头吃下树枝两端则产生该边权值 c 的难受值，求最小总难受值（无解输出 -1）。
+// 数据范围：1 <= N <= 300，2 <= M <= N，1 <= K <= N，1 <= a, b <= N，0 <= c <= 10^5。
 #include<iostream>
 #include<cstdio>
 #include<cstring>

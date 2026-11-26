@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B3903
+// 题意：给 n 个 2 的整数次幂和上限 x。重新排列这 n 个元素，使任意相邻两项之和都不超过 x。按原下标区分元素，求可行排列数，对 10^9+7 取模。
+// 数据范围：2 ≤ n ≤ 10^5，1 ≤ a[i] ≤ 2^60，1 ≤ x < 2^63。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

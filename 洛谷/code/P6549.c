@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6549
+// 题意：给定 1~n 的一个排列，每次只能将一本书抽出并放到序列最顶部，求将序列排成 (1, 2, ..., n) 所需的最少移动次数。
+// 数据范围：1 <= n <= 3*10^5。
 #include<stdio.h>
 
 int main()

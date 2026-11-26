@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3552
+// 题意：输入二进制位数 n 和禁用串个数 k，两个 n 位 01 串 x, y（均不在禁用串中），以及 k 个禁用的 n 位 01 串。
+// 任意两个合法（非禁用）的 n 位 01 串若恰有一位不同则有直接道路相连，判断能否从 x 走到 y。
+// 可行输出 TAK，否则输出 NIE。
+// 数据范围：1 <= n <= 60，0 <= k <= 10^6，k <= 2^n - 1，n*k <= 5*10^6。
 #include <bits/stdc++.h>
 using namespace std;
 

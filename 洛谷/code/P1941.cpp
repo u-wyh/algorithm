@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P1941
+// 题意：小鸟从最左边任意整数高度出发，每秒向右一格。
+// 点按则按次数累加上升且封顶于 m，不按则下降。
+// 高度必须为正，经过管道时必须严格在开口内。
+// 能通关则输出 1 和最少点按次数，否则输出 0 和最多通过的管道数。
+// 数据范围：5 ≤ n ≤ 10000，5 ≤ m ≤ 1000，0 ≤ k < n，0 < x,y < m，0 < p < n，0 ≤ l < h ≤ m
+// l+1 < h，管道位置互异。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int NA = INT_MAX;

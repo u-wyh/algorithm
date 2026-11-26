@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4669
+// 题意：N 个人开会，k 人一轮需 k*P+V 分钟（1 人耗时为 0），可并行分小组开会再由各组代表继续递归/开会选出最终方案，求最少总时间。
+// 数据范围：1 <= N <= 10^15，1 <= P, V <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,12 @@
 // https://www.luogu.com.cn/problem/P9641
+// 题意：多组数据（共 T 组）。
+// 给定 n * m 网格，每格有方向字符（u/d/l/r）和步长 a_{i,j}。
+// 任选起点并标记，之后不断按当前格方向移动 a_{i,j} 步到达新格并标记；
+// 若目标格越界或已标记则结束。
+// 判断是否存在起点能恰好标记全部 n * m 个格子各一次。
+// 题意：第一行输入 T，每组输入 n, m、n 行方向字符矩阵、n 行整数矩阵 a_{i,j}；输出 Yes 或 No。
+// 数据范围：1 <= n * m <= 10^5，1 <= a_{i,j} <= max(n, m)
+// sum(n * m) <= 10^6（未显式给出 T 上界，受 sum(n * m) 限制）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

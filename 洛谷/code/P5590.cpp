@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5590
+// 题意：给定 n 点 m 边的有向图，需给每条边赋一个 1~9 的整数边权，使得从 1 到 n 的所有有限边序列路径（允许重复经过点边）总长度全部相等。
+// 输入 n, m 及有向边；若无解或不存在 1 到 n 的路径输出 -1，否则输出原顺序的每条边及所赋权值。
+// 数据范围：n <= 1000，m <= 2000，无重边无自环。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2575
+// 题意：T 组数据，每组有 n 行 20 列的棋盘，每行有 m 个棋子。
+// 双方轮流将某棋子向右移到最近的空位（不能移则输），判断先手是否必胜。
+// 每组输出 YES 或 NO。
+// 数据范围：T <= 100，n <= 1000，m <= 20，1 <= p_j <= 20。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = (1<<20)+5;

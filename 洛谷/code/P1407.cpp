@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1407
+// 题意：给 n 对现有伴侣和 m 对旧关系。
+// 对每对现有伴侣，禁止这两人继续配对，判断剩下的现有关系和旧关系能否让所有人仍配成 n 对。
+// 能则这一对输出 Unsafe，否则输出 Safe。
+// 数据范围：1 ≤ n ≤ 4000，0 ≤ m ≤ 20000，每人姓名不同，由至多 8 个大小写英文字母组成。
+
 //P1407
 #include<bits/stdc++.h>
 using namespace std;

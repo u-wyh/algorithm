@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4752
+// 题意：多组数据，A 由 N 个正整数相乘，B 由 M 个正整数相乘（保证 b 中每个数出现次数不超过 a 中次数），判断 A/B 是否为质数。
+// 数据范围：1 <= T <= 10，1 <= N <= 10^5，sum N <= 10^5，0 <= M <= N，1 <= a_i, b_i <= 10^12。
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5633
+// 题意：给定 n 点 m 边的带权无向图和指定点 s、整数 k，求满足 s 的度数恰好为 k 的最小生成树权值和。
+// 输入 n, m, s, k 及 m 条边；输出最小生成树总边权，无解输出 Impossible。
+// 数据范围：1 <= s <= n <= 5*10^4，1 <= m <= 5*10^5，1 <= k <= 100，0 <= w <= 3*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

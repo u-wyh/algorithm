@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2292
+// 题意：给定包含 n 个单词的字典，随后有 m 段文章。
+// 对每段文章，求能被字典中单词拼接理解的最长前缀长度。
+// 每段文章输出一行最长前缀长度。
+// 数据范围：1 <= n <= 20，1 <= m <= 50，单词长 <= 20，文章长 <= 2*10^6，均只含小写字母。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 405;

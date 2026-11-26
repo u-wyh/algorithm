@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2622
+// 题意：n 盏灯（初始全开），m 个按钮，每个按钮对每盏灯有 1(开则关)/-1(关则开)/0(无影响) 效果。
+// 求使所有灯全部关闭的最少按按钮次数，无解输出 -1。
+// 数据范围：1 <= n <= 10，1 <= m <= 100。
 #include<bits/stdc++.h>
 #define il inline
 #define ll long long

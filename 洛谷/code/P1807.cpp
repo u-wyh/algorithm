@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1807
+// 题意：给定 n 个点和 m 条带权有向边，图中没有环。求从 1 到 n 的路径中边权和最大是多少，若不可达输出 -1。
+// 数据范围：1 ≤ n ≤ 1500，0 ≤ m ≤ 5×10^4，1 ≤ u,v ≤ n，−10^5 ≤ w ≤ 10^5。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1501;

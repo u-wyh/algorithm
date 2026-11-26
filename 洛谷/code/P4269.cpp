@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4269
+// 题意：有 N 块地砖排成一排，第 i 块积雪深 f_i（首尾 f_1=f_N=0）；
+// 有 B 双靴子，第 i 双耐雪深度 s_i、最大步长 d_i（只能踩积雪 <= s_i 的地砖，每步前进 <= d_i）
+// 判断每双靴子能否从 1 号走到 N 号地砖。
+// 数据范围：1 <= N, B <= 1e5，0 <= f_i, s_i <= 1e9，1 <= d_i <= N-1。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2876
+// 题意：P 个问题须按顺序解决（可同月做多个），每月收入 M（不结余）。
+// 解第 i 题需在当月初付 B_i、下月初付 A_i（均用上月收入支付），求解决并付清所有问题的最少月数。
+// 输出最少月数。
+// 数据范围：1 <= P <= 300，1 <= M <= 1000，1 <= B_i, A_i <= M。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 305;

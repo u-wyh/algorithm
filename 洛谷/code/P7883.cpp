@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P7883
+// 题意：给定二维平面上 n 个互不相同的整点 p_i = (x_i, y_i)，求距离最近的两个点的欧氏距离的平方 D^2。
+// 第一行输入 n，接下来 n 行每行 x_i, y_i。
+// 输出一行一个整数 D^2。
+// 数据范围：2 <= n <= 4*10^5，-10^7 <= x_i, y_i <= 10^7，保证无重合点。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

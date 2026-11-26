@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6348
+// 题意：n 个点，m 次批量连边：每次给定 (a,b),(c,d)，对所有 a <= x <= b 且 c <= y <= d 的 (x,y) 连无向边。
+// 求从首都 P 到每个点的最短路边数（保证可达）。
+// 数据范围：1 <= n <= 5*10^5，1 <= m <= 10^5，1 <= a <= b <= n，1 <= c <= d <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

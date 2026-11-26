@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2367
+// 题意：n 名学生各有初始成绩，共 p 次操作，每次给闭区间 [x,y] 的学生加 z 分。
+// 求所有操作完成后全班的最低分。
+// 输出最低分。
+// 数据范围：n <= 5*10^6，p <= n，初始成绩 <= 100，z <= 100。
 #include<bits/stdc++.h>
 using namespace std;
 

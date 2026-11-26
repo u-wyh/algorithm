@@ -1,4 +1,12 @@
 // https://www.luogu.com.cn/problem/P12003
+// 题意：
+// 给定 n 个休息点的树，第 i 个点权值为 a_i。
+// 对每个素数 p，若 p | a_i 则表示 p 公司参与建设该点，经过该点须与这些公司搞好关系。
+// 共 q 次询问路线 (u, v)，求从 u 走到 v 路径上总共需与多少家不同公司搞好关系。
+// 输出 q 行，每行对应一次询问的答案。
+// 数据范围：
+// 1 <= n, q <= 3 * 10^5
+// 1 <= a_i <= 10^8
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

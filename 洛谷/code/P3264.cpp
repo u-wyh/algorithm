@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P3264
+// 题意：输入情报站数 n、可建通道数 m、重要情报站数 p。
+// 接下来 m 行给出无向边 (u_i, v_i) 及建边费用 w_i；最后 p 行给出重要情报站所属频道 c_i 与编号 d_i。
+// 选择若干通道修建，使任意同一频道的重要情报站彼此连通，求最小总费用。
+// 输出最小总费用。
+// 数据范围：1 <= c_i <= p <= 10，1 <= u_i, v_i, d_i <= n <= 1000，0 <= m <= 3000
+// 0 <= w_i <= 2*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e3+5;

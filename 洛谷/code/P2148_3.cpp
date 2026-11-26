@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2148
+// 题意：T 组数据，每组有 N 堆石子（N 为偶数），第 2k-1 与 2k 堆为一组。
+// 每次任选一堆移走，并将同组另一堆分成两堆（均 > 0），无法操作（全为 1）者输。
+// 判断先手是否必胜，每组输出 YES 或 NO。
+// 数据范围：1 <= T <= 20，1 <= N <= 2*10^4，1 <= S_i <= 2*10^9。
 #include<bits/stdc++.h>
 using namespace std;
 

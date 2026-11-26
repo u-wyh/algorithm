@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1410
+// 题意：给一个长度为偶数的序列，判断能否把所有元素分到两个等长子序列。两边都保持原下标顺序，并且各自严格递增。有解输出 Yes!，否则输出 No!。
+// 数据范围：每个测试点至多 50 行，N 为偶数且不超过 2000，输入数值在 [0,10^9]。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2005;

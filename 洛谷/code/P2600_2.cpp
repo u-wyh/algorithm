@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2600
+// 题意：一维轮廓折线 (x_1,y_1)..(x_n,y_n) (x_1 < ... < x_n)。
+// 在 [x_1, x_n] 建瞭望塔，使塔顶能看到轮廓上任意位置，求塔的最小高度。
+// 输出最小高度，精确到小数点后三位。
+// 数据范围：n <= 300，坐标绝对值 <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

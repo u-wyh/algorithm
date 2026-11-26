@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2285
+// 题意：n*n 网格上在不同时刻 t_i（不降）于 (x_i, y_i) 出现 m 只鼹鼠。
+// 机器人初始位置任选，每时刻可上下左右移动一格或不动，求最多能打死多少只鼹鼠。
+// 输出最大数量。
+// 数据范围：1 <= n <= 10^3，1 <= m <= 10^4，1 <= t <= 2.5*10^7。
 #include <bits/stdc++.h>
 using namespace std;
 const int M = 1e4+5;

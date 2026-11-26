@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P3570
+// 题意：输入房子数 n、颜色种数 k，序列 c_1..c_n，两个序列的长度 m, l
+// 以及互异颜色序列 x_1..x_m 和 y_1..y_l（保证 x_m = y_l）。
+// Bitie 从某起点房子向右、Bytie 从某起点房子向左（两起点颜色相同且不计入抢劫序列）分别按顺序 x_1..x_m 和 y_1..y_l 抢劫对应颜色的房子并在同一点相遇
+// 且每人对每种颜色至多抢一次。
+// 第一行输出可能的相遇房子总数，第二行升序输出所有可能的相遇房子编号。
+// 数据范围：3 <= n <= 10^6，1 <= k <= n，1 <= m, l <= n，m + l <= n - 1
+// 1 <= c_i, x_i, y_i <= k。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e6+5;

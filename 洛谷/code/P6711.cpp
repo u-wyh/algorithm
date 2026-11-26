@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6711
+// 题意：给定一个凸包按逆时针（或依次）相邻点之间的 N 条边长 a_1..a_N
+// 严格按逆时针方向输出一组满足 |x_i|, |y_i| <= 10^7 的凸包顶点坐标，无解输出 NO SOLUTION。
+// 数据范围：3 <= N <= 1000，1 <= a_i <= 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

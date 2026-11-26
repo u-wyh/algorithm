@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P7561
+// 题意：平面上有 n 个互不相同的点 (x_i, y_i)，任意两点间修路花费曼哈顿距离 |x_a-x_b|+|y_a-y_b|；
+// 在所有 n(n-1)/2 条无向路中，按从小到大输出最便宜的 k 条的花费。
+// 数据范围：2 <= n <= 2.5*10^5，1 <= k <= min(2.5*10^5, n(n-1)/2)
+// -10^9 <= x_i, y_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

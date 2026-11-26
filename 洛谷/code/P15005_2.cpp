@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P15005
+// 题意：动态删边与减少点权，求两点所在连通块点权和之和 >= z 的最晚时刻。
+// 输入：首行 n, m, d, s，次行点权 a_i，后 m 行边，d 行事件，s 行询问。
+// 规则：事件 1 删边；事件 2 点 w 权减 k；点幸福值为所在连通块点权之和。
+// 输出：对每个询问 (x, y, z)，输出幸福值和 >= z 的最后天数（0..d 或 -1）。
+// 数据范围：1 <= n, m, d, s <= 2*10^5，1 <= a_i, k_i, z_i <= 10^9。
+// 数据范围：无重边，任意时刻各点点权至少为 1。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5058
+// 题意：给一张 n 点无向图（边以 0 0 结束）和两个中心点 a, b，求必须经过才能从 a 到达 b 的中间点中编号最小的点（不含 a, b）
+// 不存在则输出 No solution。
+// 数据范围：1 <= n <= 2*10^5，边数不超过 5*10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

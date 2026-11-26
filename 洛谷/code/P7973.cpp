@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P7973
+// 题意：给定 N 个点的无向图，点 i 有权值 A_i 和价值 B_i。
+// 两点 x, y 之间有边当且仅当 (A_x xor A_y) > max(A_x, A_y)。
+// 依次对 i = 1..N 求点 i 所在连通块内所有点的价值 B 之和。
+// 第一行输入 N，第二行输入 N 个 A_i，第三行输入 N 个 B_i。
+// 输出 N 行每行一个整数。
+// 数据范围：1 <= N <= 10^5，1 <= A_i <= 2^{30} - 1，1 <= B_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

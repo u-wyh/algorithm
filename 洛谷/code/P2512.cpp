@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2512
+// 题意：n 个小朋友围成一圈，每人有 a_i 个糖果，每次可向左右传递 1 个糖果（代价 1）。
+// 求使所有人糖果数相等的最小总代价。
+// 输出最小代价。
+// 数据范围：1 <= n <= 10^6，1 <= a_i <= 1.5*10^9，sum(a_i) 是 n 的倍数。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

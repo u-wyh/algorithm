@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4666
+// 题意：维护长为 N 的数组，支持 M 次操作：把 >= h 的元素中最小的 c 个（不足则全部）加 1；以及查询值在 [min, max] 内的元素个数。
+// 数据范围：1 <= N, M <= 10^5，初始 a_i 在 [1, N]，1 <= c <= N，0 <= h <= 10^9
+// 1 <= min <= max <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B3647
+// 题意：给 n 个点、m 条边的带权无向连通图，可能有重边。输出 n 行 n 列，第 i 行第 j 列是 i 到 j 的最短距离。
+// 数据范围：n ≤ 100，m ≤ 4500，边权 w 为整数且 1 ≤ w ≤ 1000。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

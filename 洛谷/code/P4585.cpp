@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4585
+// 题意：n 个商店各有永久特殊商品，支持按天顺序进行的两种操作：某商店新进标价为 v 的商品；
+// 查询当天编号在 [l, r] 内的商店中最近 d 天进的商品及特殊商品里 val xor x 的最大值。
+// 数据范围：所有输入整数均在 [0, 10^5] 范围内。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

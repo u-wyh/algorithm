@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6072
+// 题意：给定 n 个点的带边权无根树，选出两条没有公共点的简单路径（单点路径异或和为 0），使两条路径的边权异或和之和最大。
+// 数据范围：2 <= n <= 3 * 10^4，1 <= x, y <= n，0 <= w <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e4+5;

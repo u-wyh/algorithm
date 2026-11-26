@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2520
+// 题意：t 组数据，每组给定向量 (a,b) 和目标 (x,y)。
+// 可任意次使用 (+-a, +-b) 和 (+-b, +-a) 共 8 种向量，判断能否拼出 (x,y)。
+// 每组输出 Y 或 N。
+// 数据范围：t <= 50000，-2*10^9 <= a, b, x, y <= 2*10^9。
 #include <iostream>
 #include <cstdlib>
 #include <algorithm>

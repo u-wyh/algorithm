@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2639
+// 题意：背包容量 H，有 N 捆干草各自重 S_i（01 背包）。
+// 求在总重不超过 H 的前提下最多能装多少公斤干草。
+// 输出最大重量。
+// 数据范围：5 <= H <= 45000，1 <= N <= 500，1 <= S_i <= H。
 #include<stdio.h>
 
 int max(int a,int b)

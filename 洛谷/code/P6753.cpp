@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P6753
+// 题意：给定 N 个节点的有根树（每点至多放一个球），支持 Q 次操作：1) 向根节点放 num 个球（球会沿空位向下滚落
+// 有多个空位儿子时选子树内最小编号最小的儿子），输出最后一个球落点；
+// 2) 撤走 num 节点的球（上方球会依次滚落补位），输出滚落的球数。
+// 数据范围：1 <= N, Q <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

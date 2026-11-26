@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P3931
+// 题意：给定一棵 n 个节点、根为 root 的带边权无根树（输入含 n-1 条无向边及代价 c）。
+// 删除若干条边使所有叶子节点都与根节点 root 不连通，求最小删除代价之和。
+// 数据范围：2 <= n <= 100000，边权 c 为不大于 10^6 的正整数。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

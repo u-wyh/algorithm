@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1653
+// 题意：给 L 行 W 列的高度图，可从一格滑向上下左右高度不比当前高的格子。新增一台缆车可让任意两个指定格双向通行。求让任意两格互相可达所需的最少缆车数。
+// 数据范围：1 ≤ W,L ≤ 500，0 ≤ H ≤ 9999。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

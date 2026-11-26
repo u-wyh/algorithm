@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2153
+// 题意：给定 N 个点 M 条单向边的图，每天从 1 走到 N。
+// 一个周期内每天路线不能经过除 1 和 N 外的同一节点（1->N 边至多走一次）。
+// 求周期天数尽量长的前提下总路程尽量短，输出最长天数和最短总路程。
+// 数据范围：2 <= N <= 200，1 <= M <= 2*10^4，1 <= c <= 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long  

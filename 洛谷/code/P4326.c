@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4326
+// 题意：给出半径 R，分别输出欧几里得几何下圆的面积（pi * R^2）和曼哈顿距离（出租车几何）下圆的面积（2 * R^2），绝对误差不超过 0.0001。
+// 数据范围：R <= 10000。
 #include<stdio.h>
 #include<math.h>
 

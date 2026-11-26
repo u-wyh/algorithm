@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10059
+// 题意：给长为 n 的数组，选 k 个起点不同、长度同为 L 的连续子数组，可以重叠。
+// 每段极差是最大值减最小值，先让这 k 段的最小极差 X 尽量大，再在此前提下让 L 尽量小。
+// 输出 X 和 L。
+// 数据范围：1 ≤ T ≤ 10，1 ≤ k ≤ n ≤ 10^5，1 ≤ L ≤ n-k+1，-10^9 ≤ a[i] ≤ 10^9。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100005;

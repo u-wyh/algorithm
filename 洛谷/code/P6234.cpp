@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6234
+// 题意：m 行 n 列网格有权值 a_{i,j} 及 k 个特殊格子 (r_i,c_i)。
+// 需放置 k 个不重叠且不越界的 T 形四格拼板（4 种旋转方向），使每个拼板的中心（底边三格中间）恰好在特殊格子上，求覆盖格权值和最大值，无方案输出 No。
+// 数据范围：1 <= k <= nm <= 10^6，a_{i,j} in [0, 10^3]，r_i in [0, m)，c_i in [0, n)。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

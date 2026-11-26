@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1910
+// 题意：从 N 名候选人中选若干人。选第 i 人获得 A_i 收益，消耗 B_i 和 C_i 两种资源。总消耗分别不能超过 M 和 X，求最大总收益。
+// 数据范围：1 ≤ N ≤ 100，1 ≤ M,X ≤ 1000。
+
 #include<stdio.h>
 #define N 101
 #define M 1001

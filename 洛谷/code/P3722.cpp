@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P3722
+// 题意：输入灵魂数 n、询问数 m、贡献值 p_1 和 p_2，以及 1 到 n 的排列 k_1..k_n，再输入 m 个区间询问 [a, b]。
+// 对点对 (i, j)（i < j）：若不存在 i < s < j 使 k_s > k_i 或 k_s > k_j，贡献 p_1；
+// 否则若区间 (i, j) 内最大值为 c 且满足 k_i < c < k_j 或 k_j < c < k_i，贡献 p_2；
+// 其余贡献 0。
+// 对每个询问输出一行，表示满足 a <= i < j <= b 的所有点对贡献之和。
+// 数据范围：1 <= n, m <= 200000，1 <= p_1, p_2 <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

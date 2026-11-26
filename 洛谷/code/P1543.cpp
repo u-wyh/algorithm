@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1543
+// 题意：每个同学 i 监视另一名同学 a[i]。选一些人去搬东西，要求每个被选者至少有一名监视自己的人没有被选。无人监视的同学不能选，输出最多能选几人。
+// 数据范围：1 ≤ n ≤ 10^6，1 ≤ a[i] ≤ n，a[i] ≠ i。
+
 #include <bits/stdc++.h>
 using namespace std;
 const int MAXN = 1000005;

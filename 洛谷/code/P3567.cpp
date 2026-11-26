@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3567
+// 题意：输入包裹数 n、询问数 m，序列 a_1..a_n，以及 m 个区间询问 [l, r]。
+// 对每个询问，判断是否存在一个数在区间 [l, r] 中出现次数严格大于区间长度的一半。
+// 输出 m 行，存在则输出该数，否则输出 0。
+// 数据范围：1 <= n, m <= 5*10^5，1 <= a_i <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

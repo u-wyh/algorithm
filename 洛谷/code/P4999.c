@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4999
+// 题意：T 组询问，每组给区间 [L, R]，求该区间内所有整数的各位数字之和的总和，对 10^9 + 7 取模。
+// 数据范围：1 <= T <= 20，1 <= L <= R <= 10^18。
 #include <stdio.h>
 #include <stdlib.h>
 #define mod 1000000007

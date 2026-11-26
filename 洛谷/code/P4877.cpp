@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4877
+// 题意：N 头奶牛一一对应参加按顺序进行的 N 项比赛，第 i 头牛参加第 j 项得 S_{i,j} 分；
+// 另有 B 个奖励，第 K_i 项比赛结束时若当前总分 >= P_i 则额外得 A_i 分（同刻奖励可任意顺序结算），求最大总分。
+// 数据范围：1 <= N, B <= 20，1 <= K_i <= N，1 <= P_i <= 4 * 10^4，1 <= A_i <= 10^3
+// 1 <= S_{i,j} <= 10^3。
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4781
+// 题意：给定 n 个横坐标互异的点 (x_i, y_i)，求过这 n 点的次数 <= n-1 的多项式在 k 处的取值对 998244353 取模。
+// 数据范围：1 <= n <= 2*10^3，1 <= x_i, y_i, k < 998244353，x_i 两两不同。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

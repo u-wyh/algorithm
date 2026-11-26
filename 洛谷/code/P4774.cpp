@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P4774
+// 题意：多组数据，按序打 n 条血量 a_i、回血 p_i 的龙；
+// 每次选攻击 <= a_i 的最大剑（无则选最小）砍固定 x 次，之后龙每次回 p_i 直到非负，需血量恰好为 0 击杀并换奖励剑
+// 求最小 x（无解输出 -1）。
+// 数据范围：T <= 5，1 <= n, m <= 10^5，1 <= a_i <= 10^12，所有 p_i 的最小公倍数 <= 10^12
+// 所有武器攻击力 <= 10^6。
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

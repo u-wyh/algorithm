@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4359
+// 题意：若大于 1 的整数 M 质因数分解共 k 项且最大质因子为 a_k，满足 a_k^k <= N 且 a_k < 128 则称其为 N-伪光滑数
+// 给定 N 和 K 求从大到小第 K 大的 N-伪光滑数。
+// 数据范围：2 <= N <= 10^18，1 <= K <= 8 * 10^5，保证至少有 K 个满足要求的数。
 #include <iostream>
 #include <vector>
 #include <queue>

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1379
+// 题意：在 3×3 棋盘上有 0 到 8 各一次，0 表示空格。每步把空格和上下左右的一枚棋子交换。从给定初始局面到目标 123804765，求最少步数。
+// 数据范围：输入恰好 9 个数字，保证能到达目标。
+
 #include<bits/stdc++.h>
 using namespace std;
 

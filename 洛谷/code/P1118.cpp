@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1118
+// 题意：第一排是 1 到 N 的一个排列。从下一排开始，每项是上一排相邻两项的和，反复直到只剩一个数。已知最后的数，构造第一排，若有多解输出字典序最小者。
+// 数据范围：1 ≤ N ≤ 12，1 ≤ 最终和 ≤ 12345。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 13

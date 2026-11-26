@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2574
+// 题意：给定长度为 n 的 01 串，共 m 次操作。
+// 0 l r：将闭区间 [l,r] 的 01 全部翻转；1 l r：询问闭区间 [l,r] 内 1 的个数。
+// 对每个 1 操作输出一行整数。
+// 数据范围：2 <= n, m <= 2*10^5，1 <= l <= r <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 200005;

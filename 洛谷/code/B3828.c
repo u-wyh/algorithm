@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B3828
+// 题意：给区间 [L, R]。找出其中既是完全平方数、各位数字之和又是质数的数，输出它们的乘积对 998244353 取模。找不到就输出 0。
+// 数据范围：1 ≤ L ≤ R ≤ 10^12。
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <math.h>

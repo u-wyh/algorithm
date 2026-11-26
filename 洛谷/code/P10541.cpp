@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P10541
+// 题意：有 n 项技术和 m 种产品。
+// 技术可以买，也可以在取得所有前置技术后研发，两种方式成本不同。
+// 产品只有在前置技术具备时才能推出并获得收益。
+// 求产品总收益减技术总成本的最大值。
+// 数据范围：2 ≤ n ≤ 100，1 ≤ m ≤ 100，1 ≤ p ≤ nm，1 ≤ q ≤ n(n-1)/2，数值均为不超过 10^9 的非负整数
+// 技术依赖无环。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

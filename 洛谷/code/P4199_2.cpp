@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4199
+// 题意：给一个只含 a 和 b 的字符串 s（长 n），求满足以下条件的非空子序列个数（对 1e9+7 取模）：1) 字符构成回文；
+// 2) 所选下标在原串中关于某条对称轴对称；
+// 3) 所选下标不能是连续的一整段。
+// 数据范围：n <= 100000。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1558
+// 题意：长度 L 的色板开始全是 1 号色。C A B C 把闭区间内的颜色全部设为 C，P A B 统计闭区间内出现多少种颜色。若 A 大于 B，先交换两个端点。
+// 数据范围：1 ≤ L,O ≤ 10^5，1 ≤ T ≤ 30，区间端点在 [1,L]，颜色编号在 [1,T]。
+
 #include <bits/stdc++.h>
 #define ll(x) ((x)<<1)
 #define rr(x) ((x)<<1|1)

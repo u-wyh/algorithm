@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P9340
+// 题意：给定 N 个岛屿和 N-1 座双向桥构成的树，以及 M 个观光景点，第 j 个景点在岛屿 C_j。
+// Q 次询问，第 k 位旅行者任选起点岛屿出发、在树上移动并最终从任意岛屿离开，要求参观景点 L_k..R_k，求其至少访问一次的岛屿数量的最小值。
+// 题意：第一行输入 N, M, Q，后 N-1 行输入树边 (A_i, B_i)，再一行输入 C_1..C_M，再 Q 行输入 L_k, R_k；
+// 输出 Q 行答案。
+// 数据范围：1 <= N, M, Q <= 10^5，1 <= A_i, B_i, C_j <= N，1 <= L_k <= R_k <= M，图连通。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10391
+// 题意：给 n 个点组成的树，每个点有一种零食 c[i]。每次输入起点 s 和终点 t，统计它们之间唯一路径上出现了几种不同零食，起点和终点也算。
+// 数据范围：1 ≤ n,q ≤ 10^5，1 ≤ c[i] ≤ 20，边和询问的端点编号均在 [1,n]。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100001;

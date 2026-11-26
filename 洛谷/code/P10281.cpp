@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10281、
+// 题意：给 N 个区间 [l[i],r[i]]，每个区间还有一个阈值 k[i]。对每个 i，统计其他区间与它的交集长度至少为 k[i] 的个数，每个区间输出一行。
+// 数据范围：2 ≤ N ≤ 2 × 10^5，0 < l[i] < r[i] ≤ 10^9，0 < k[i] ≤ r[i]-l[i]。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

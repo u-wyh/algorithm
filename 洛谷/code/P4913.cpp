@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4913
+// 题意：给定一棵 n 个结点的二叉树（根为 1）及每个结点的左右子节点编号，求这棵二叉树的最大深度（根节点为第 1 层）。
+// 数据范围：n <= 10^6。
 #include<iostream>
 using namespace std;
 

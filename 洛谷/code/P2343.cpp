@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2343
+// 题意：初始有 m 个数 v_i，共 q 次操作。
+// 1 n：查询当前从大到小第 n 大的数；2 n：插入整数 n。
+// 对每个 1 操作输出一行查询结果。
+// 数据范围：m <= 10^5，q <= 3*10^4，插入操作 <= 10^4 次，0 <= v_i < 2^31。
 #include <bits/stdc++.h>
 
 using namespace std;

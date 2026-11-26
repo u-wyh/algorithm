@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2767
+// 题意：求包含 n 个无标号节点的有根 m 叉树的个数（子树从左到右有序）。
+// 输出方案数对 10007 取模的结果。
+// 数据范围：n, m <= 127。
 #include<bits/stdc++.h>
 using namespace std;
 const int MOD = 1e4+7;

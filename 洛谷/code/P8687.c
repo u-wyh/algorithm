@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P8687
+// 题意：输入 N, M, K 和 N 行每行 K 个口味编号 T_1..T_K（代表每包糖果含有的口味），输出集齐 1..M 所有口味最少需买多少包；
+// 无法集齐输出 -1。
+// 数据范围：1 <= N <= 100，1 <= M <= 20，1 <= K <= 20，1 <= T_i <= M。
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>

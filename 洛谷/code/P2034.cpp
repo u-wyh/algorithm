@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2034
+// 题意：从 n 个非负整数中选一些数，不能有超过 k 个连续位置都被选中，求所选数的最大总和。
+// 数据范围：1 ≤ k ≤ n ≤ 10^5，0 ≤ a_i ≤ 10^9。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

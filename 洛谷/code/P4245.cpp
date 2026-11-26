@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4245
+// 题意：给定两个多项式 F(x)（n 次）和 G(x)（m 次）的各项系数以及模数 p（不保证为 NTT 模数）
+// 求卷积 F(x) * G(x) 各项系数对 p 取模后的结果。
+// 数据范围：1 <= n, m <= 1e5，0 <= a_i, b_i <= 1e9，2 <= p <= 1e9+9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

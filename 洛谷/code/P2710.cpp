@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2710
+// 题意：维护一个数列，支持 M 次操作：INSERT/DELETE/REVERSE/MAKE-SAME/GET-SUM/GET/MAX-SUM。
+// 对每次 GET-SUM、GET 和 MAX-SUM（非空最大连续子段和）输出一行结果。
+// 数据范围：1 <= N <= 2*10^5，1 <= M <= 2*10^4，任意时刻长度 <= 2*10^5，数字 in [-1000, 1000]
+// 结果 <= 2^30。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

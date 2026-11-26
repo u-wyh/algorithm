@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4762
+// 题意：多组数据，从空串出发每次可在首/尾加一个字符，或将当前串复制翻转接在首或尾，求生成给定目标串的最少操作次数。
+// 数据范围：多组数据（题面未标 T 上界），串仅含 A/C/G/T 且长度不超过 100000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

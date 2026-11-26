@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P8883
+// 题意：T 组询问，每组输入正整数 n，输出 1..n 中能被大于 1 的完全平方数整除的整数个数（允许答案与标准答案的绝对误差不超过 2*10^4）。
+// 数据范围：1 <= n <= 10^18，1 <= T <= 10^4（保证 n 在范围内随机生成）。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

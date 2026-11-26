@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1855
+// 题意：有 n 个愿望，每个需要一定金钱和时间。选一些愿望，使总金钱不超过 M、总时间不超过 T，求最多能满足几个愿望。
+// 数据范围：1 ≤ n ≤ 100，0 ≤ M,T ≤ 200。
+
 #include<stdio.h>
 
 int max(int a,int b)

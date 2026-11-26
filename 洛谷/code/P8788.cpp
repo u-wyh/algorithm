@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P8788
+// 题意：结果填空题，输入大写字母 `'A'` 或 `'B'` 输出对应试题答案。
+// 试题 A：28 个孩子对应 28 把钥匙，随机分配有 28! 种方案，求恰有 14 个孩子分到自己钥匙的方案数；
+// 试题 B：在字母 `abcdefghijklnopqr`（a..r 去掉 m 共 17 个字母）构成的环形全排列序列中（首尾相邻
+// 每次可移至前一个或后一个排列）
+// 求从排列 `aejcldbhpiogfqnkr` 到 `ncfjboqiealhkrpgd`（原文在 h 与 k 间多一空格）的最少转移次数。
+// 数据范围：仅两道固定填空题（A、B）。
 #include<bits/stdc++.h>
 using namespace std;
 

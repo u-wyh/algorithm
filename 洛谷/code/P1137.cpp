@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1137
+// 题意：有 N 座城市，每条关系 (x,y) 表示两地有路且 x 在 y 西边。
+// 只能沿路向东走，可以任选起点。
+// 对每个终点 i，输出以 i 结束的路线最多能经过几个城市。
+// 数据范围：1 ≤ N ≤ 10^5，1 ≤ M ≤ 2 × 10^5。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100005;

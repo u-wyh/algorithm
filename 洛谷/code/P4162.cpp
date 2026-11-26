@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4162
+// 题意：给一个 N*M 的 01 网格（0 是空地，1 是障碍），上下左右相邻的空地互通，最多移走 T 块障碍物后
+// 求所有互相可达的空地格子中心之间的最大欧几里德距离（保留 6 位小数）。
+// 数据范围：1 <= N, M <= 30，0 <= T <= 30，保证移走后至少有一个空地格子。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1000;

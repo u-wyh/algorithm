@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1131
+// 题意：给一棵带权树和信号源 S。信号沿边传播，到达节点后立即继续向外传。一次可把一条边的传播时间加 1，求让从 S 出发的信号同时到达所有终止节点的最少操作数。
+// 数据范围：1 ≤ N ≤ 500000，1 ≤ t[e] ≤ 10^6。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

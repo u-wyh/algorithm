@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1521
+// 题意：在 1 到 N 的所有排列中，统计恰有 K 个逆序对的排列个数。逆序对是左侧元素大于右侧元素的一对下标。输出计数对 10000 取模。
+// 数据范围：N ≤ 100，0 ≤ K ≤ N(N-1)/2。
+
 #include <stdio.h>
 
 #define MAX_N 5000

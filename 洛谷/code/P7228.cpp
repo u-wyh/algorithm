@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7228
+// 题意：给定一棵 N 个点的无向树，为每条边定向，使得有向图中的最长有向路径长度最小，输出任意一种定向方案（1 表示 a_i -> b_i
+// 0 表示 b_i -> a_i）。
+// 数据范围：2 <= N <= 10^5，1 <= a_i, b_i <= N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

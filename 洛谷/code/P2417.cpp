@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2417
+// 题意：T 组数据，每组有 m 个教室和 n 个学生，给出每个教室可上课的学生列表。
+// 每个学生至多在一个教室上课，判断能否使每个教室至少有一名学生。
+// 每组输出 YES 或 NO。
+// 数据范围：T <= 10，n, m <= 2*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e4+5;

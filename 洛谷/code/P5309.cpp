@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5309
+// 题意：维护长为 n 的序列 A，支持 m 次操作：1 x y z 给所有下标为 y + k*x (k>=0) 的位置加上 z（保证 y <= x）。
+// 2 l r 查询区间 [l, r] 元素之和对 10^9+7 取模的结果。
+// 数据范围：1 <= n, m <= 2*10^5，1 <= y <= x <= n，1 <= l <= r <= n，0 <= A_i, z <= 10^9+7。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P11233
+// 题意：把数组中每个数染成红或蓝。对每个位置，只看它左边最近的同色位置。如果两处数值相同，就加当前数值，否则加 0。求所有染法中的最大得分。
+// 数据范围：1 ≤ T ≤ 10，2 ≤ n ≤ 2 × 10^5，1 ≤ A[i] ≤ 10^6。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

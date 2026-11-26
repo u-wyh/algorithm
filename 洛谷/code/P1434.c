@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1434
+// 题意：给一个整数高度网格，可以任选起点，每次只能滑到上下左右相邻且高度严格更低的格子。输出最长合法路径经过的格子数。
+// 数据范围：1 ≤ R,C ≤ 100，0 ≤ h ≤ 10000。
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

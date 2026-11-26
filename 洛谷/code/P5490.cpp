@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5490
+// 题意：给定 n 个边平行于坐标轴的矩形（由左下和右上坐标给出），求这些矩形并集覆盖的总面积。
+// 输入 n 及每个矩形的 x1, y1, x2, y2；输出总面积。
+// 数据范围：1 <= n <= 10^5，0 <= x1 < x2 <= 10^9，0 <= y1 < y2 <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

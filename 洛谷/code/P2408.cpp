@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2408
+// 题意：给定长度为 n 的小写英文字母字符串，求其本质不同的非空子串个数。
+// 输出不同子串个数。
+// 数据范围：1 <= n <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

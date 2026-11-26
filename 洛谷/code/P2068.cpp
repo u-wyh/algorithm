@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2068
+// 题意：长度为 n 的序列初始全为 0。x a b 给第 a 项加 b，y a b 查询闭区间 [a,b] 的和。按顺序输出查询结果。
+// 数据范围：0 ≤ n ≤ 10^5，修改和查询各至多 10^5 次，修改量在 [1,10^9]，下标在 [1,n]。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100001;

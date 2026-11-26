@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P9121
+// 题意：前 T 天内，每天晚餐若有干草 Bessie 会吃掉 1 捆；
+// 第 d_i 天早晨会送来 b_i 捆干草。
+// 计算 Bessie 在前 T 天共吃掉的干草捆数。
+// 数据范围：1 <= N <= 10^5，1 <= T <= 10^14，1 <= d_1 < d_2 < ... < d_N <= T
+// 1 <= b_i <= 10^9。
 #include <stdio.h>
 #include <stdlib.h>
 

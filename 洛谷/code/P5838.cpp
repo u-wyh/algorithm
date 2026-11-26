@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5838
+// 题意：与上题类似，树上每点奶牛品种为 1..N 的整数 T_i，M 个朋友各有树上路径 (A_i, B_i) 和偏好品种 C_i
+// 判断每条路径上是否出现过品种 C_i。
+// 输入 N, M、品种序列 T、树边及 M 个询问；输出长为 M 的 01 串。
+// 数据范围：1 <= N, M <= 10^5，1 <= T_i, C_i <= N。
 #include<bits/stdc++.h>
 using namespace std;
 const int N = 1e5 + 10,M = N*2;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P9607
+// 题意：给定长度为 N 的正整数序列 a_1..a_N，定义 G(i, j) = gcd(a_i..a_j)，M(i, j) = max(a_i..a_j)
+// 求 sum_{1 <= i <= j <= N} G(i, j) * M(i, j) 对 1000000007 取模的值。
+// 题意：第一行输入 N，第二行输入 a_1..a_N；输出一个整数。
+// 数据范围：1 <= N <= 2 * 10^5，1 <= a_i <= 10^9。
 #include <bits/stdc++.h>
 using namespace std;
 

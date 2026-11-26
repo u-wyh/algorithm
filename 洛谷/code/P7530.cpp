@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7530
+// 题意：给定长为 N 的品种序列 b，选出至少 3 头的连续区间 [l, r]，并指定区间内 3 头奶牛作领队（两端点必为领队）
+// 要求 3 名领队彼此及与队内其余成员品种均不同，求合法选法数。
+// 数据范围：1 <= N <= 2*10^5，1 <= b_i <= N。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

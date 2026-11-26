@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4188
+// 题意：有 N 个救生员，每人覆盖一段连续时间 [start, end]（贡献为 end - start），现在必须解雇其中 1 名救生员
+// 求剩余 N-1 名救生员覆盖时间并集总长度的最大值。
+// 数据范围：1 <= N <= 1e5，起止时间在 [0, 1e9] 内，所有结束时间互不相同。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

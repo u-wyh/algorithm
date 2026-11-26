@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3950
+// 题意：给定一棵 n 个节点的树，依次处理 m 个事件：
+// 1. C p q：相邻两点 p, q 之间的道路封锁（按发生顺序编号为 1, 2, ...）；
+// 2. U x：第 x 次发生的封锁结束，恢复通行；
+// 3. Q p q：查询 p 与 q 当前是否连通，输出 Yes 或 No。
+// 数据范围：1 <= n, m <= 3 * 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1036
+// 题意：给 n 个整数，按下标选恰好 k 个，统计元素和为素数的选法数。
+// 数据范围：1 ≤ n ≤ 20，k<n，1 ≤ x[i] ≤ 5 × 10^6。
+
 #include<stdio.h>
 #include<stdbool.h>
 #include<stdlib.h>

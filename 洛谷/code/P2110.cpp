@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2110
+// 题意：给定两个整数 L 和 R，求闭区间 [L,R] 内满足十进制最高位与最低位相等的整数个数。
+// 输出满足条件的整数个数。
+// 数据范围：1 <= L <= R <= 10^18。
 #include<bits/stdc++.h>
 using namespace std;
 

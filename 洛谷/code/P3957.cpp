@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3957
+// 题意：直线上起点右侧有 n 个格子，第 i 个格子在位置 x_i（递增给出），分数为 s_i。
+// 机器人初始每次只能向右跳固定距离 d，花费 g 金币可使每次向右跳跃距离范围为 [max(1, d - g), d + g]。
+// 随时可结束游戏，求获得总分至少为 k 所需花费的最少金币数 g，不可能则输出 -1。
+// 数据范围：1 <= n <= 5 * 10^5，1 <= d <= 2 * 10^3，1 <= x_i, k <= 10^9，|s_i| < 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

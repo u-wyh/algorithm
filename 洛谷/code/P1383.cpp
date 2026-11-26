@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1383
+// 题意：文章为空开始。T x 在末尾追加小写字母 x；U x 把文章恢复到最近 x 次修改之前，撤销本身也算修改；Q x 输出现在的第 x 个字母，查询不算修改。
+// 数据范围：n ≤ 10^5，输入的每条命令均合法。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

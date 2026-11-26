@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1050
+// 题意：给 n 和 k，观察 n 的各个正整数次幂的末尾 k 位，不够 k 位时前面补 0。
+// 求从第 1 次幂起就成立的最短循环长度 L，也就是对每个正整数 a，第 a 和 a+L 次幂末尾都相同。
+// 无解输出 -1。
+// 数据范围：1 ≤ n < 10^100，1 ≤ k ≤ 100。
+
 #include<bits/stdc++.h>
 using namespace std;
 

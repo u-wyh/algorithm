@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P9048
+// 题意：将长 n 的小写字母串 s 每个字符转为 8 位 ASCII 二进制串并拼接成 8n 长度的 01 串，打乱后得到 t'。
+// 根据 t' 还原任意一个合法的小写字母串 s，无解输出 NIE。
+// 数据范围：1 <= n <= 10^5。
 #include<stdio.h>
 
 int main()

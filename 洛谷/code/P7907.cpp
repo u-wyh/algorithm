@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P7907
+// 题意：给定长为 n 的正整数序列 a，有 q 次询问，每次给定区间 [l, r]
+// 求 [l, r] 的最短子区间 [l', r']（l <= l' <= r' <= r）的长度 r' - l' + 1
+// 使得所有在 [l, r] 中出现过的数都在 [l', r'] 中出现。
+// 第一行输入 n，第二行 n 个整数 a_i，第三行 q，接下来 q 行每行 l, r。
+// 输出 q 行每行一个整数。
+// 数据范围：1 <= n, q <= 2*10^6，1 <= a_i <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e6+5;

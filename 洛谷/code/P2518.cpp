@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2518
+// 题意：给定正整数 n，可删去任意个 0（或不删）并将剩余数字任意重排（无前导 0）。
+// 求能组成多少个不同的严格小于 n 的正整数。
+// 输出方案数。
+// 数据范围：n 的位数 <= 50，答案 <= 2^63-1。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e3+5;

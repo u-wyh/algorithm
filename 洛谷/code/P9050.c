@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P9050
+// 题意：n 条鱼质量为 a_i。
+// 若 a_x > a_y 则 x 可吃掉 y 并使质量变为 a_x + a_y。
+// 可任选吃鱼顺序直到只剩一条鱼。
+// 对每条鱼判断其能否作为最终唯一剩下的鱼（能输出 T，不能输出 N；
+// 若无法只剩一条鱼则全为 N）。
+// 数据范围：1 <= n <= 5*10^5，1 <= a_i <= 10^9。
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>

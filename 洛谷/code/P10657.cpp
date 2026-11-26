@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10657
+// 题意：给 n 个点和 m 条初始无向边，再按顺序加 p 条边。
+// 每加一条边，问两端之间是否已有两条互不共边的路径。
+// 若有，输出两端所在的边双连通分量大小，否则输出 No。
+// 数据范围：1 ≤ n,m,p ≤ 2 × 10^5，点从 1 到 n 编号。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN =  2e5+5;

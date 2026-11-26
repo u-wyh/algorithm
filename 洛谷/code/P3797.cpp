@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3797
+// 题意：第一行输入木棒段数 n 和操作数 m；初始木棒形状为 (XXXX...XXXX)（首尾为 ( 和 )，中间 n-2 段为 X）。
+// 接下来 m 行操作：1 x C 将第 x 段替换为 C（C 为 X、(、) 之一）；2 l r 查询闭区间 [l, r] 内完整木棒的数量。
+// 完整木棒定义为左右两端分别为 ( 和 )，且中间要么无段要么全为 X。
+// 对每个操作 2，输出一行一个整数表示答案。
+// 数据范围：对于 100% 的数据，2 <= n, m <= 2 * 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

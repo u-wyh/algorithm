@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P4099
+// 题意：第一行输入数据组数 T；
+// 每组第一行输入关卡数 n（0..n-1），接下来 n-1 行每行形如 i < j 或 i > j，表示第 i 关必须在第 j 关前或后完成。
+// 忽略方向后这些限制构成一棵连通树。求满足所有先后限制的拓扑排序（攻克顺序）方案数。
+// 每组输出一行整数，对 10^9 + 7 取模。
+// 数据范围：T <= 5，1 <= n <= 1000，0 <= i, j <= n-1 且 i != j。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

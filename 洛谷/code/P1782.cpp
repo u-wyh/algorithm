@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P1782
+// 题意：背包容量为 C。
+// 有 n 种普通货，各有体积 V_i、价值 W_i、数量 D_i。
+// 还有 m 件奇货，给第 i 件分配 x 体积时价值为 a_i·x²+b_i·x+c_i，可不选。
+// 求容量限制内的最大总价值。
+// 数据范围：1 ≤ n,C ≤ 10^4，1 ≤ m ≤ 5，1 ≤ V_i,W_i,D_i ≤ 1000
+// −1000 ≤ a_i,b_i,c_i ≤ 1000。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

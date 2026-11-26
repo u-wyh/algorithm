@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2151
+// 题意：给定 N 个点 M 条边的无向图（边长均为 1，可能有重边，无自环）。
+// 求从 A 到 B 长度为 t 且不能立刻沿刚走来的路走回的路径数。
+// 输出方案数对 45989 取模的结果。
+// 数据范围：N <= 50，M <= 60，t <= 2^30，0 <= A, B < N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MOD = 45989;

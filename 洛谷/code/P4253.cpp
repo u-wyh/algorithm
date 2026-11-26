@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4253
+// 题意：给一棵 n 个点的完全二叉树（边连接 (i+1)/2 与 i+1），点和边都有权值；
+// 点亮第一个灯泡免费，之后每点亮一个新点 v 花费为上一个点亮的点 u 到 v 的树上距离乘以 a_v；
+// 要求时刻连通且点亮一个点后必须先点亮其子树全部节点才能去点亮其他节点，求点亮所有灯泡的最小总花费。
+// 数据范围：1 <= n <= 2e5，1 <= a_i, b_i <= 1e5。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

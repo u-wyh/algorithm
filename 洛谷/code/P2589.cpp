@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2589
+// 题意：n 个圆台形碗，已知高 h、下底半径 r_1、上底半径 r_2 (r_1 < r_2)。
+// 求一种叠放顺序使总高度尽量小。
+// 输出最小高度（四舍五入取整）。
+// 数据范围：n <= 9，所有输入数绝对值 <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 15;

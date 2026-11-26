@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1852
+// 题意：数轴上有三枚相同棋子。一步可让一枚棋子跳过恰好一枚棋子，跳到支点另一侧的对称位置。求能否到达给定的三点集合，能则输出 YES 和最少步数，否则输出 NO。
+// 数据范围：六个输入坐标的绝对值均不超过 10^9，初始和目标的三个位置各自互不相同。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

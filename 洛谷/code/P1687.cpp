@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1687
+// 题意：按菜单给定的顺序选取恰好 K 个充电项目，可以跳过项目。每天用时最多 119，求最少充电天数。无法完成时输出 You can't do it.。
+// 数据范围：1 ≤ K ≤ N ≤ 3000，N 是项目数。
+
 #include<bits/stdc++.h>
 using namespace std;
 

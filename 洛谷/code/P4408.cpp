@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4408
+// 题意：N 个点的带权树上有两点 A, B 和起点 C，先从 C 走到距离更近的那点（未找到再去另一点）
+// 在未知 A, B, C 具体位置的情况下求最坏情况下的最长总耗时。
+// 数据范围：3 <= N <= 2 * 10^5，1 <= U_i, V_i <= N，0 <= T_i <= 10^9（树边数 M = N-1）。
 //两次dfs
 #include<bits/stdc++.h>
 using namespace std;

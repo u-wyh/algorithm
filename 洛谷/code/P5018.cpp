@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P5018
+// 题意：给一棵 n 个点以 1 为根的带点权二叉树，找一棵节点数最多的子树（某点及其全部后代），满足所有节点左右子树交换后结构与对应点权均与原子树相同。
+// 数据范围：1 <= n <= 10^6，正整数点权 v_i <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

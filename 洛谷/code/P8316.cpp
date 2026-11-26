@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8316
+// 题意：若大于 1 的整数 m 的不去重质因数分解有 k 项，其最大质因子为 a_k，且满足 a_k^k <= n 与 a_k <= 397
+// 则称 m 为 n-伪光滑数。
+// 给定 n, k，求第 k 大的 n-伪光滑数（注：题面同时用 k 记项数与名次）。
+// 数据范围：100% 数据满足 1 < n <= 10^11，k >= 1，保证至少有 k 个满足要求的数。
 #include <iostream>
 #include <vector>
 #include <queue>

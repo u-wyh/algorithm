@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2772
+// 题意：平面上 n 个互异整点，若不存在另一点 (x,y) 满足 x >= a 且 y >= b，则 (a,b) 为极大点。
+// 按 x 坐标从小到大输出所有极大点，格式为 (x1,y1),(x2,y2),...。
+// 数据范围：1 <= n <= 5*10^5，0 <= x, y <= 10^5。
 #include<stdio.h>
 #include<stdlib.h>
 

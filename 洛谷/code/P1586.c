@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1586
+// 题意：每次给 n，统计它能写成至多四个正整数平方之和的不同方案。底数可以重复，交换各项的顺序仍是同一个方案。
+// 数据范围：1 ≤ t ≤ 100，1 ≤ n ≤ 32768。
+
 #include<stdio.h>
 
 int main()

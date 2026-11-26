@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1903
+// 题意：给定 N 支笔的初始颜色和 M 次操作。Q L R 查询闭区间内不同颜色数，R P C 把第 P 支笔改成颜色 C。逐行输出每次查询的结果。
+// 数据范围：1 ≤ N,M ≤ 133333，输入整数在 [1,10^6]，操作下标在 [1,N]。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 150005;

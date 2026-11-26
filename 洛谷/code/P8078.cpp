@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P8078
+// 题意：给定长为 n 的排列 a_1..a_n，有 m 次询问，每次查询区间 [l, r] 内的所有数按值从小到大排序后
+// 相邻两数在原序列中下标位置的差的绝对值之和（区间长度为 1 时答案为 0）。
+// 第一行输入 n, m，第二行输入 n 个整数 a_i，接下来 m 行每行 l, r。
+// 输出 m 行每行一个整数。
+// 数据范围：1 <= n, m <= 5*10^5，1 <= a_i <= n 且互不相同，1 <= l <= r <= n，所有数值为整数。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

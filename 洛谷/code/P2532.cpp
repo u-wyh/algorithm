@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2532
+// 题意：用 N 个空心四方钢材搭建总高 N 尺的阶梯（每步高 1 尺宽 1 尺，空心面不朝上）。
+// 求合法搭建方案数（高精度）。
+// 输出方案数。
+// 数据范围：1 <= N <= 500。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

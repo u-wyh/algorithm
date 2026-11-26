@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P7947
+// 题意：给定两个正整数 n, k，构造一个正整数数列 a_1..a_m（1 <= m <= 1000，1 <= a_i <= 1000）
+// 使所有元素之积为 n 且所有元素之和为 k；
+// 不存在则输出 -1，有多种解输出任意一种（Special Judge）。
+// 输入一行 n, k。
+// 无解输出 -1，否则第一行输出 m，第二行输出 m 个正整数。
+// 数据范围：1 <= n, k <= 100。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

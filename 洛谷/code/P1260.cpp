@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P1260
+// 题意：工程有 n 个任务（起始时间 T_1..T_n 为非负整数）和 m 条形如 T_i - T_j <= b 的约束。
+// 题意：求一组满足所有不等式且至少有一个 T_i 为 0 的非负整数解（SPJ）。
+// 输入：第一行输入 n, m，接下来 m 行每行输入 i, j, b 对应 T_i - T_j <= b。
+// 输出：有解则输出 n 行表示 T_1..T_n；无解输出 NO SOLUTION。
+// 数据范围：5 <= n <= 1000，5 <= m <= 5000。
+// 数据范围：b 为开区间 (-100, 100) 内的整数。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

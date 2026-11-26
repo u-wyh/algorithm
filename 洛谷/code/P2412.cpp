@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2412
+// 题意：给定 N 个单词（含大小写），共 M 次询问区间 [x,y]。
+// 求区间内忽略大小写后字典序最大的单词（相同时取靠后的），原样输出。
+// 每组询问输出一行单词。
+// 数据范围：N <= 5*10^4，M <= 3*10^5，单词长度 <= 15。
 #include<bits/stdc++.h>
 using namespace std;
 

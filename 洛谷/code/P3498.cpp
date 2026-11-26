@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3498
+// 题意：输入珠子总数 n，以及按顺序排列的珠子颜色序列 a_1..a_n。
+// 选定正整数 k，将序列按每 k 个一组切成 floor(n/k) 段（末尾不足 k 个丢弃），两条项链若正着相同或反转后相同视作同一种项链。
+// 第一行输出最大不同项链数及达到该最大值的 k 的个数，第二行输出所有最优的 k 值（顺序任意）。
+// 数据范围：1 <= n <= 2*10^5，1 <= a_i <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6835
+// 题意：1..n 号台阶初始各有有向边 i -> i+1，另加入 m 条返祖边 u_i -> v_i（u_i >= v_i），每步等概率选取当前点一条出边走
+// 求从 1 号台阶走到 n+1 号台阶的总步数期望 E(delta) 对 998244353 取模。
+// 数据范围：id in {1,2,3,4,5}，0 < n, m <= 10^6，1 <= v_i <= u_i <= n。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

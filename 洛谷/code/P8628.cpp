@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8628
+// 题意：输入整数 n 和 n*n 的字符方阵（空格分隔，含 A, B, +, -），从 A 出发每次上下左右走一格到 B
+// 要求中间经过的格子必须 + 与 - 交替出现（A、B 无能量特征），输出最少移动步数；
+// 无方案输出 -1。
+// 数据范围：4 <= n < 100。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

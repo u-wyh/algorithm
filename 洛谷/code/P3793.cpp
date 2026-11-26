@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P3793
+// 题意：输入 n, m, s，并按题面给出的 GenHelper 随机数生成器规则：先 srand(s)
+// 再调用 n 次 read() 生成序列 a_1..a_n
+// 再生成 m 次区间最大值询问 l = read()%n+1, r = read()%n+1（若 l > r 则交换）。
+// 对每次询问求区间 [l, r] 内的最大值。
+// 输出一个 unsigned long long 类型整数，表示所有 m 次询问答案之和。
+// 数据范围：最高测试点 n, m = 2*10^7（a_i 由 read() 生成，范围在 [0, 2^30-1]）。
 #include<bits/stdc++.h>
 using namespace std;
 

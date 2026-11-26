@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1528
+// 题意：给 n 块蛋糕和 m 个人每人要吃的大小。可以无损切蛋糕，但不能把不同蛋糕拼起来，每人如果得到蛋糕只能得到一块足够大的。求最多能满足多少人。
+// 数据范围：1 ≤ n ≤ 50，1 ≤ m ≤ 1024。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 55;

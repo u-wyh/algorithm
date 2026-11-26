@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5789
+// 题意：N 个点 M 条双向边的城市图，机器人第 0 秒在 1 号点，每秒可原地停留、走到相邻点或自爆（自爆后不动），求经过 t 秒后的行为方案总数。
+// 输入 N, M、M 条边及时间 t；输出总方案数模 2017。
+// 数据范围：N, M <= 100，t <= 10^9。
 //P5789
 #include<bits/stdc++.h>
 using namespace std;

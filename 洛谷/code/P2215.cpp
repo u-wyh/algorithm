@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2215
+// 题意：给定长度为 N 的序列，M 次询问长度为 L 的严格上升子序列。
+// 求下标序列字典序最小的那个，不存在输出 Impossible。
+// 每组询问输出一行序列或 Impossible。
+// 数据范围：N <= 10000，M <= 1000，保证数据随机。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

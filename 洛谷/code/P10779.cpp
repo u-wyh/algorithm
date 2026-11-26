@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10779
+// 题意：给简单无向图，每条边都恰好属于一个简单环。挑尽量多的点，使任意两个被挑中的点之间都没有边，输出最多能挑多少个。
+// 数据范围：1 ≤ n ≤ 50000，1 ≤ m ≤ 60000。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6568
+// 题意：n 个无限大水壶初始水量 A_i，可进行不超过 k 次操作将 x 号水壶的水全倒入 x+1 号水壶（1 <= x <= n-1）
+// 最后任选一个水壶喝掉所有水，求最多能喝到的水量。
+// 数据范围：1 <= n <= 10^6，0 <= k <= n-1，0 <= A_i <= 10^3。
 #include<stdio.h>
 
 int max(int a,int b){

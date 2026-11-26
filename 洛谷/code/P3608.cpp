@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3608
+// 题意：输入奶牛数 N，以及一排从左到右各头奶牛互不相同的身高 h_1..h_N。
+// 设第 i 头奶牛左边比它高的牛有 L_i 头、右边比它高的牛有 R_i 头
+// 若 max(L_i, R_i) > 2 * min(L_i, R_i) 则称第 i 头奶牛不平衡。
+// 输出不平衡的奶牛总数。
+// 数据范围：1 <= N <= 10^5，0 <= h_i <= 10^9，所有 h_i 互不相同。
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2115
+// 题意：有 N 台排成一行的挤奶机，第 i 台产奶 M_i 单位。
+// 需移除一段连续的挤奶机 [i,j]（2 <= i <= j <= N-1，至少移除 1 台且不能移除首尾）。
+// 求剩余机器平均产奶量的最小值，四舍五入保留三位小数。
+// 数据范围：3 <= N <= 100000，1 <= M_i <= 10000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

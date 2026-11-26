@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3160
+// 题意：输入行数 n、列数 m，以及一个 n 行 m 列的字符矩阵（'X' 表示局部极小值，'.' 表示非局部极小值）。
+// 将 1 到 n*m 这 n*m 个整数各填一次放入矩阵，要求格子的值比它所有八连通相邻格子都小当且仅当该位置为 'X'。
+// 输出满足条件的不同矩阵总方案数对 12345678 取模的结果。
+// 数据范围：1 <= n <= 4，1 <= m <= 7。
 #include <iostream>
 #include <cstring>
 #include <algorithm>

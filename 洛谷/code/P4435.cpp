@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4435
+// 题意：维护长为 N 的正整数序列，支持 Q 次操作：单点修改序列值，或查询区间 [L, R] 内有多少个连续子数组满足所有元素的最大公约数 > 1。
+// 数据范围：1 <= N, Q <= 10^5，1 <= A_i, V <= 10^9，1 <= X <= N，1 <= L <= R <= N。
 #include <bits/stdc++.h>
 using namespace std;
 

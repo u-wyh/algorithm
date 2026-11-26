@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P16522
+// 题意：给定 n 条直线 y = k_i*x + b_i，多次查询过指定点 (x, y) 的直线条数。
+// 输入：首行 n，后 n 行给 (k_i, b_i)，再 Q 及 Q 行询问点 (x, y)。
+// 规则：统计有多少条直线满足 y = k_i*x + b_i。
+// 输出：共 Q 行，依次输出每次询问经过该点的直线数量。
+// 数据范围：1 <= n, Q <= 2*10^5，|x|, |y|, |k_i|, |b_i| <= 2*10^4（时限 3.0s）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 405;

@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1231
+// 题意：有 N1 本书、N2 本练习册和 N3 本答案，给出 M1 条书和练习册的配对关系、M2 条书和答案的配对关系。
+// 每套选一本书和各一本能与它配对的练习册与答案，每份材料最多用一次。
+// 输出最多能组成几套。
+// 数据范围：1 ≤ N1, N2, N3 ≤ 10^4，1 ≤ M1, M2 ≤ 20000。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4357
+// 题意：给出平面上 N 个整点坐标，求欧几里得距离第 K 远的点对的距离的平方。
+// 数据范围：N <= 100000，1 <= K <= 100，K <= N(N-1)/2，0 <= X, Y < 2^31。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

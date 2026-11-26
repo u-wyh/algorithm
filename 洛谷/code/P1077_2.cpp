@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1077
+// 题意：依编号顺序摆放 n 种花，同种挨在一起。第 i 种可用 0 到 a[i] 盆，要求恰好摆 m 盆。求各品种数量分配的方案数，对 1000007 取模。
+// 数据范围：1 ≤ n,m ≤ 100，0 ≤ a[i] ≤ 100。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MOD = 1e6+7;

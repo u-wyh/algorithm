@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2015
+// 题意：给定以 1 为根的二叉树，每条边有若干苹果。剪枝后恰留 Q 条仍和根相连的边，求能留下的最大苹果数。
+// 数据范围：1 ≤ Q < N ≤ 100，每条边的苹果数 ≤ 3×10^4。
+
 #include<bits/stdc++.h>
 #define ll long long
 #define gc getchar

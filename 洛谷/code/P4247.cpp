@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4247
+// 题意：维护一个长度为 n 的序列，支持 Q 次操作：I a b c 把区间 [a, b] 全部加 c；
+// R a b 把区间 [a, b] 全部取相反数；
+// Q a b c 询问从区间 [a, b] 中任选 c 个数相乘的所有方案之和对 19940417 取模的值。
+// 数据范围：n, q <= 50000，初始元素绝对值 <= 1e9，|c| <= 1e9，询问中 1 <= c <= min(b-a+1, 20)。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

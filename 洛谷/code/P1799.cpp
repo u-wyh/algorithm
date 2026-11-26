@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1799
+// 题意：给定长度为 n 的正整数序列，删去任意一些数，保留其余数的相对顺序并从 1 重新编号。求数值等于新下标的元素最多有几个。
+// 数据范围：n ≤ 1000，A_i 为正整数。
+
 #include<bits/stdc++.h>
 using namespace std;
 

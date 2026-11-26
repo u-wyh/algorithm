@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2350
+// 题意：test 组数据，每组以质因数分解形式给出正整数 N = prod(p_i^{q_i})。
+// 求最小的 x 使得 phi^x(N) = 1（phi 为欧拉函数）。
+// 每组输出一行整数 x。
+// 数据范围：test <= 50，1 <= p_i <= 10^5，1 <= q_i <= 10^9，m <= 2000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

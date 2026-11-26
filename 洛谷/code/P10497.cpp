@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10497
+// 题意：n 头牛的编号是 1 到 n，各出现一次。对队列中除第一位外的每个位置，给出它前面编号比它小的牛数。恢复从前到后的编号，每行输出一头牛。
+// 数据范围：2 ≤ n ≤ 8000，第 i 位的计数在 [0,i-1] 内。
+
 #include<bits/stdc++.h>
 using namespace std;
 int n,a[10001],s,st[10001];

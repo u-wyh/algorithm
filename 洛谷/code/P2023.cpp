@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2023
+// 题意：给定 n 个数和模数 p，进行 m 次操作。操作 1 将闭区间内每项乘 c，操作 2 将每项加 c，操作 3 查询区间和对 p 取模的值。逐行输出查询结果。
+// 数据范围：n,m ≤ 10^5，题面给出 0 ≤ p,a_i,c ≤ 10^9，1 ≤ t ≤ g ≤ n。
+
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long

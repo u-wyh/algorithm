@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6046
+// 题意：n 个强度互不相同的容器排成一列，进行 n - 1 轮操作，每轮等概率随机选两个位置相邻的存活容器决斗，较弱者被击倒移出。
+// 求每个容器存活轮数的期望（对 998244353 取模）。
+// 数据范围：1 <= n <= 50，1 <= a_i <= n 且两两不同。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

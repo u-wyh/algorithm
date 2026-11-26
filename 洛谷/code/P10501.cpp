@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10501
+// 题意：给一块 W×H 的方格纸。两人轮流选一块现有纸片，沿格线横切或竖切为两块。谁切出一块只含一格的纸片谁赢。双方最优时，先手能赢输出 WIN，否则输出 LOSE。
+// 数据范围：多组输入，2 ≤ W,H ≤ 200。
+
 #include<bits/stdc++.h>
 using namespace std;
 

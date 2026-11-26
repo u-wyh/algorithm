@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1730
+// 题意：给定 N 点 M 边的带权有向无环图，回答 Q 次询问。
+// 每次给两个点 X、Y，输出从 X 到 Y 的路径中最小边权平均值，保留 3 位小数。
+// 没有路径则输出 OMG!。
+// 数据范围：1 ≤ N ≤ 50，1 ≤ M ≤ 1000，1 ≤ W ≤ 10^5，1 ≤ Q ≤ 10^5。
+
 #include<bits/stdc++.h>
 using namespace std;
 

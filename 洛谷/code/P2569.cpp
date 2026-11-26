@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2569
+// 题意：未来 T 天股票买入价 AP_i、卖出价 BP_i，单次最多买 AS_i、卖 BS_i。
+// 任意两次交易至少间隔 W 天，任何时刻持股数不超过 MaxP，初始无股。
+// 求 T 天后最多赚多少钱。
+// 数据范围：0 <= W < T <= 2000，1 <= MaxP <= 2000，1 <= BP_i <= AP_i <= 1000。
 #include <cstdio>
 #include <cstring>
 #define Min(x , y) ((x) < (y) ? (x) : (y))

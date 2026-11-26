@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6035
+// 题意：给定长为 n 的序列 B（b_i 表示排列 A 中位置 i 右侧比 a_i 小的元素个数，若 b_i = -1 表示该位置污损）
+// 求符合条件的 1..n 排列 A 的方案数（模 10^9 + 7）及字典序最小的合法排列 A（若方案数为 0 则不输出排列）。
+// 数据范围：0 < n <= 10^6，-1 <= b_i <= n。
 //P6035
 #include<bits/stdc++.h>
 using namespace std;

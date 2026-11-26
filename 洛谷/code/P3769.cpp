@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3769
+// 题意：输入四维点个数 n，以及 n 个四维点坐标 (a_i, b_i, c_i, d_i)。
+// 任选起点和经过顺序（不要求按输入顺序，每个点至多经过一次），求满足四维坐标均单调不降的最长路径点数。
+// 输出最长路径包含的点数。
+// 数据范围：1 <= n <= 5*10^4，max(|a_i|, |b_i|, |c_i|, |d_i|) <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

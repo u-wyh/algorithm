@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8906
+// 题意：初始为 N 点 N^2 条边的带权有向完全图（含 N 个自环），边 (i, j) 权值为 w_{i,j}。
+// 依次移除全部 N^2 条边，每次移除后输出从 1 到 N 恰好经过 K 条边（可重复经过点或边）的最短路径权值和；
+// 若不存在则输出 -1。
+// 数据范围：1 <= N <= 300，2 <= K <= 8，1 <= w_{i,j} <= 10^8，共 N^2 次互不重复的删边。
 #include <iostream>
 #include <queue>
 #include <vector>

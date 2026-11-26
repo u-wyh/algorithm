@@ -1,4 +1,6 @@
 //https://www.luogu.com.cn/problem/P6091
+// 题意：T 组询问，每组给定 n, d，求 n 的所有原根个数 c，以及从小到大第 d, 2d, ..., floor(c/d)*d 个原根。
+// 数据范围：1 <= T <= 10，2 <= n <= 10^6，1 <= d <= 200，保证输出总个数 <= 10^5。
 #include <iostream>
 #include <vector>
 #include <algorithm>

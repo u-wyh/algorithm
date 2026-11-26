@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4289
+// 题意：给一个 4*4 的 01 网格表示玩具初始位置和另一个 4*4 网格表示目标位置，每次可以把一个玩具上下左右移动一格到空位上
+// 求从初始状态变到目标状态的最少移动步数。
+// 数据范围：固定 4*4 网格。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1<<16;

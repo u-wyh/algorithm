@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P3588
+// 题意：输入序列长度 n、已知元素数 s、区间信息数 m，接下来 s 组 (p_i, d_i)（p_i 递增）表示 a_{p_i} = d_i；
+// 再输入 m 条信息，每条给出 l_i, r_i, k_i 及 k_i 个位置 x_1..x_{k_i}
+// 表示 [l_i, r_i] 内这 k_i 个位置的值均严格大于区间内其余位置的值。
+// 构造一个各项均在 [1, 10^9] 内的正整数序列 a。
+// 若无解输出 NIE；否则第一行输出 TAK，第二行输出 n 个正整数。
+// 数据范围：1 <= s <= n <= 10^5，1 <= m <= 2*10^5，1 <= l_i < r_i <= n
+// 1 <= k_i <= r_i - l_i，sum(k_i) <= 3*10^5，1 <= a_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P9678
+// 题意：给定 n 个节点的带边权无根树 T，dist(i, j) 为树上两点距离。
+// 共 q 次询问，每次给定 l, r，求 min_{l <= i < j <= r} dist(i, j)；
+// 若不存在满足条件的 i < j（即 l = r），输出 -1。
+// 题意：第一行输入 n，后 n-1 行输入 (a_i, b_i, w_i)，再输入 q 及 q 行 (l, r)；输出 q 行整数。
+// 数据范围：1 <= n <= 2 * 10^5，1 <= a_i, b_i <= n，1 <= w_i <= 10^9，1 <= q <= 10^6
+// 1 <= l <= r <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

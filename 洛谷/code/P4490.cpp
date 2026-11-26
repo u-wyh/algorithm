@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4490
+// 题意：三维空间中高度 h 处有 n 个水平喷头从 (x_i, y_i, h) 平抛喷水，落到地面 (x'_i, y'_i, 0)（重力加速度 g
+// 空中任意点至多被三个喷头喷到），求在某个水平高度放置能拦截全部水流的凸多边形滤水层的最小面积。
+// 数据范围：1 <= n <= 100，0 < h <= 10000.0，0 < g <= 100.0
+// 0 <= x_i, y_i, x'_i, y'_i <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

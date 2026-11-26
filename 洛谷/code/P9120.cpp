@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P9120
+// 题意：T 组数据（同一测试点 k 相同），密码锁有 n 个拨圈，每圈有 k 格，第 j 圈第 i 格为 a_{i,j}。
+// 可对每圈拨动任意次，每次使该圈第 i 格移到第 (i mod k)+1 格。
+// 定义第 i 行松散度 c(i) = max_j a_{i,j} - min_j a_{i,j}，锁的松散度 C = max_{1<=i<=k} c(i)。
+// 求 C 的最小值。
+// 数据范围：T >= 1，1 <= k <= 4，1 <= a_{i,j} <= 3*10^4；
+// k <= 3 时 n <= 5*10^4, sum n <= 1.5*10^5；
+// k = 4 时 n <= 10^4, sum n <= 3*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 

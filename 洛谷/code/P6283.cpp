@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6283
+// 题意：平面上有 N 个自旋为 (x_i, y_i) 的粒子，若 x_i <= x_j 且 y_i <= y_j 则两粒子可相互作用并使其中一个消失。
+// 求任意次相互作用后剩余粒子的最小数量。
+// 数据范围：1 <= N <= 10^5，-10^9 <= x_i, y_i <= 10^9，各粒子自旋互不相同。
 #include<bits/stdc++.h>
 using namespace std;
 const int maxn=100100;

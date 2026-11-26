@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1759
+// 题意：给定重量上限 m、阻力上限 v 和 n 件工具。
+// 每件工具有重量、阻力和可支撑时间，选一批使两项开销均不超上限，且总时间最大。
+// 输出最大时间及所选编号，并列时优先让前面的编号更小。
+// 数据范围：1 ≤ m,v ≤ 200，1 ≤ n ≤ 100，保证有方案。
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

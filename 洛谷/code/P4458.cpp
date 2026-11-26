@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4458
+// 题意：维护一条 n 个点的带权链，支持两种操作：1 将路径 u 到 v 上所有点权加 d；
+// 2 查询链上所有节点数在 [l, r] 内的无向简单路径的节点权值和之和（对 10^9+7 取模）。
+// 数据范围：n <= 200000，m <= 500000，操作 1 次数 m' <= 100000，0 <= a_i, d < 10^9+7
+// 1 <= u, v <= n，l <= r <= n。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

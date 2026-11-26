@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P9196
+// 题意：给定 N 个由 A, G, U, C 组成的字符串（可重复）和 M 组查询 (P_j, Q_j)
+// 每次查询有多少个库中字符串同时以 P_j 为前缀且以 Q_j 为后缀。
+// 数据范围：1 <= N, M <= 10^5，1 <= |S_i|, |P_j|, |Q_j| <= 10^5
+// 1 <= sum |S_i|, sum |P_j|, sum |Q_j| <= 2*10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3370
+// 题意：输入字符串个数 N，以及 N 个包含数字和大小写字母的字符串（大小写敏感）。
+// 统计这 N 个字符串中互不相同的字符串共有多少个。
+// 输出不同的字符串个数。
+// 数据范围：N <= 10000，单串长度 M_i 约 1000、最大 M_max <= 1500。
 #include<bits/stdc++.h>
 using namespace std;
 

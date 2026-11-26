@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P11190
+// 题意：给长为 n 的小写字符串，把所有下标划给若干组，各组按原下标顺序组成子序列。要求每组得到的字符串都不是回文，输出最多组的划分和各组下标，或按题目格式报告无解。
+// 数据范围：1 ≤ q ≤ 10，1 ≤ n ≤ 10^5，下标在 [1,n]，每个下标用且只用一次。
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;

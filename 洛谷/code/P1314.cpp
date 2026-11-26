@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P1314
+// 题意：有 n 个矿石，每个给出重量 w[i] 和价值 v[i]。另给 m 个区间 [l, r] 和目标值 s。
+// 为所有区间选同一个重量门槛 W。每个区间只看重量至少为 W 的矿石。
+// 区间得分是这些矿石的个数乘以它们的价值之和。把各区间得分加起来得到总分 y。
+// 输出能做到的最小 |s - y|。
+// 数据范围：1 ≤ n, m ≤ 2 × 10^5，1 ≤ w[i], v[i] ≤ 10^6，1 ≤ s ≤ 10^12，1 ≤ l ≤ r ≤ n。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define MAXN 200010

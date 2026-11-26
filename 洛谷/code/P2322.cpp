@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2322
+// 题意：给定 n 个大写字母串，求包含所有串作为子串的最短字符串 T。
+// 若有多解输出字典序最小的。
+// 数据范围：n <= 12，每个字符串长度 <= 50。
 #include<bits/stdc++.h>
 using namespace std;
 #define MN 605

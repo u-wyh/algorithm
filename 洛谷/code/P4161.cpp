@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4161
+// 题意：给一个正整数 N，对 1 到 N 的任意一个一一映射（置换），从排列 1,2,...,N 开始不断按该映射变换
+// 直到再次变回 1,2,...,N 停止，求所有映射产生的不同总排数有多少种可能。
+// 数据范围：1 <= N <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

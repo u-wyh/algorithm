@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2613
+// 题意：给定两个大整数 a 和 b，求同余方程 bx = a (mod 19260817) 的最小非负整数解。
+// 若无解输出 Angry!。
+// 数据范围：0 <= a <= 10^10001，1 <= b <= 10^10001，a, b 不同时为 19260817 的倍数。
 #include <cstdio>
 #include <cmath>
 using namespace std;

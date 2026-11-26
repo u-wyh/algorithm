@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P3003
+// 题意：输入无向连通图边数 C、牧场数 P、起点 PB、两个终点 PA_1 与 PA_2，以及 C 条双向牛道 (P1_i, P2_i, D_i)。
+// 奶牛从牧场 PB 出发，按任意先后顺序访问牧场 PA_1 和 PA_2 送完两个苹果。
+// 求她必须行走的最小总距离。
+// 输出一行一个整数，表示最短总距离。
+// 数据范围：对于 100% 的数据，1 <= C <= 2*10^5，1 <= P <= 10^5
+// 1 <= P1_i, P2_i, PB, PA_1, PA_2 <= P，所有边权 D_i 总和不超过 2*10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3563
+// 题意：输入城镇数 n 以及连接它们的 n-1 条双向道路（构成一棵树）。
+// 将每条道路都定向为单向边，求定向后仍能从一点到达另一点的有序城镇对 (u, v)（u != v）个数的最小值和最大值。
+// 输出一行两个整数，分别为最小和最大可达城镇对数。
+// 数据范围：1 <= n <= 250000，1 <= a, b <= n。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4216
+// 题意：给一棵 n 个点的有根树（P_i=0 为根），初始所有点危险值为 0
+// 共 Q 天每天一个操作：k=2 指派点 T_i 从当天起每天危险值加 1（当天为 0，次日为 1，依此类推）；
+// k=1 询问从 X_i 到 Y_i 路径上的总点数以及危险值严格大于 C_i 的点数。
+// 数据范围：n <= 2e5，Q <= 2e5，0 <= P_i, C_i <= n，1 <= T_i, X_i, Y_i <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

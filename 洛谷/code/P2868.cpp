@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2868
+// 题意：L 个景点（乐趣值 F_i）和 P 条单向边（耗时 T_i）。
+// 求一个至少包含两个景点的环，使环上乐趣值之和与总耗时之比最大。
+// 输出最大比值（保留两位小数，不四舍五入），无解输出 0。
+// 数据范围：2 <= L <= 1000，2 <= P <= 5000，1 <= F_i, T_i <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const double sml = 1e-6;

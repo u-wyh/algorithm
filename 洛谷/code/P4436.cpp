@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4436
+// 题意：n 个房间排成一列，其中 m 扇相邻门上了锁（x 与 x+1 间的门钥匙在房间 y，x 不重复）
+// 回答 p 次从 S_i 房间出发能否到达 T_i 房间（YES/NO）。
+// 数据范围：1 <= n, p <= 10^6，0 <= m < n，1 <= x, y, S_i, T_i < n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

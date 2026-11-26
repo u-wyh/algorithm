@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3144
+// 题意：输入谷仓数 N、双向路数 M，M 条边 (u, v)，以及依次要关闭的 N 个谷仓编号排列。
+// 每关闭一个谷仓，其相连的所有道路随之失效。
+// 求初始状态以及每次关闭后（共 N 个时刻，最后一个关闭后不用查），剩余未关闭的谷仓是否全部连通。
+// 输出 N 行，每行 YES 或 NO。
+// 数据范围：1 <= N, M <= 3000，1 <= u, v <= N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3005;

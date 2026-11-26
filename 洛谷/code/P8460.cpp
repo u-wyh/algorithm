@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P8460
+// 题意：在 n*n 网格上初始有 m 个黑点，共 k 次操作每次使点 (x, y) 黑白反转。
+// 每次操作结束后判断网格中是否存在一个以黑点作为顶点且所有边均平行于网格线的多边形，输出 Yes 或 No。
+// 数据范围：100% 数据满足 m <= n <= 10^5，k <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6626
+// 题意：T 组数据，每组给定一棵 n 个点的树和 m 次独立询问 (x, k)：第 0 天 x 收到消息，此后每天每个已收到消息的人会传给所有直接相连的人
+// 求第 k 天新收到消息的人数。
+// 数据范围：1 <= T <= 5，1 <= n, m <= 10^5，1 <= x <= n，0 <= k < n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

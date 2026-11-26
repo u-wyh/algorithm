@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4390
+// 题意：在 w * w 的初始全零二维平面上动态支持单点加正整数 a 和矩形区域求和查询（遇到命令 3 结束）。
+// 数据范围：1 <= w <= 2 * 10^6，1 <= x, y <= w，0 < a <= 10000，加操作不超过 160000 次
+// 查询操作不超过 10000 次。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

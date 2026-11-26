@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2364
+// 题意：给出三个仅含小写字母的字符串，求它们的最长公共子序列。
+// 输出任意一个满足条件的最长公共子序列（Special Judge）。
+// 数据范围：每个字符串长度 <= 100。
 #include <stdio.h>
 #include <string.h>
 

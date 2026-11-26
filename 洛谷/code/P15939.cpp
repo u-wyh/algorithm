@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P15939
+// 题意：游程编码的甜辣团子串，多次问区间分成若干口使每口甜-辣>=K的最多次数。
+// 输入：首行 N, Q, K，次行段长 A_1..A_N，后 Q 行计划 (L_j, R_j)。
+// 规则：奇数段甜偶数段辣；吃第 L_j..R_j 段对应团子，顺序分段使尽量多口满足甜-辣>=K。
+// 输出：输出 Q 行，表示每个计划最多能感到的满足次数。
+// 数据范围：1 <= N, Q <= 5*10^5，1 <= K <= 10^14，1 <= A_i <= 10^9，1 <= L_j <= R_j <= N。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

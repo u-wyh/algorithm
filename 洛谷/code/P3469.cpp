@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3469
+// 题意：输入无向连通图的点数 n（1..n）和边数 m，以及 m 条无向边 (a, b)。
+// 对每个点 i，求删去与点 i 相连的所有边（不删点 i 本身）后，图中有多少个有序点对 (x, y)（x != y）互不连通。
+// 输出 n 行，第 i 行表示删去点 i 关联边后的不连通有序点对数量。
+// 数据范围：1 <= n <= 10^5，1 <= m <= 5*10^5，初始图连通且无重边。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

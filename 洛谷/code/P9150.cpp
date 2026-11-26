@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P9150
+// 题意：T 组数据，给定 n 点 m 边的无重边无自环有向图，点 i 内有 k_i 号点的钥匙（k_i 为排列）。
+// 只有拥有某点钥匙才能进入该点，进入即永久获得该点内的钥匙。
+// 对每个起点 i（初始拿着 i 号点钥匙并在点 i），分别输出能到达的点数，以及能到达且能返回起点 i 的点数。
+// 数据范围：1 <= T <= 2*10^4，n >= 3，m >= 0，sum n <= 1.5*10^6，sum m <= 3*10^6
+// 1 <= x, y <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1500005;

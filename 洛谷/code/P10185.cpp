@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10185
+// 题意：有 n 种珠子，颜色 i 有 a[i] 颗，每颗珠子都可单独区分。
+// 选中若干珠子，颜色 i 选了 c 颗且 c 大于 0 时贡献 v[i] 的 c 次方。
+// 对所有选法的总美丽度求和，答案对 10^9+7 取模。
+// 数据范围：1 ≤ n ≤ 2 × 10^5，1 ≤ a[i], v[i] ≤ 10^9。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

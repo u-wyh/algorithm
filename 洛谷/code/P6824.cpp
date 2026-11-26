@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6824
+// 题意：给定长为 n 的正整数序列 a 和整数 k，选择一个非负整数 x 使得满足 (a_i xor x) <= k 的 i 个数尽量多，求这个最大值。
+// 数据范围：1 <= n, k, a_i <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 

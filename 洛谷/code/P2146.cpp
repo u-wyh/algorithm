@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2146
+// 题意：有 n 个软件包（0 到 n-1），除 0 号外每个依赖且仅依赖一个软件包，无环。
+// install x：安装 x 及其所有未安装的依赖；uninstall x：卸载 x 及其所有已安装的被依赖包。
+// 输出每次操作实际改变安装状态的软件包个数。
+// 数据范围：n <= 100000，q <= 100000。
 //P2146
 #include<bits/stdc++.h>
 using namespace std;

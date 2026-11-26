@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2602
+// 题意：给定正整数 a 和 b，统计闭区间 [a,b] 内所有整数中 0~9 每个数码出现的次数。
+// 一行输出 10 个整数。
+// 数据范围：1 <= a <= b <= 10^12。
 #include <stdio.h>
 #include <stdlib.h>
 

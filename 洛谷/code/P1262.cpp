@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1262
+// 题意：有 n 个人，部分人可支付给定费用收买，给出能互相揭发的有向关系。
+// 控制一人后，也可沿其揭发关系继续控制其他人。
+// 若能控制全部，输出 YES 和最低费用，否则输出 NO 和无法控制者中最小编号。
+// 数据范围：n ≤ 3000，1 ≤ p ≤ n，1 ≤ r ≤ 8000，单人收买费用不超过 20000。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

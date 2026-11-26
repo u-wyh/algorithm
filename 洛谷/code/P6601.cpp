@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P6601
+// 题意：圆轨道上有 2n 个孔（1..2n），每个孔 i 与 i+n 相连。
+// 两小球同时从 1 号孔出发，每秒以 1-p 概率走到下一孔 (i mod 2n + 1)
+// 以 p 概率先瞬移至对面后再走一步到 ((i+n) mod 2n + 1)（0 时刻初始也可能瞬移）。
+// 等概率选二元组 (i, j) (1<=i<=2n, 0<=j<=t)，求 j 时刻两球同时停在 i 孔的概率对 10^9+7 取模。
+// 数据范围：2 <= n <= 500，0 <= p <= 10^9+6，0 <= t <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

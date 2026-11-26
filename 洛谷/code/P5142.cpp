@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P5142
+// 题意：维护长为 n 的序列 b，支持 m 次操作：单点修改 b_x = y，以及查询区间 [x, y] 内元素的方差（模 10^9+7 意义下以有理数取模输出）。
+// 数据范围：1 <= n, m <= 10^5，0 <= b_i, y <= 10^9，1 <= x <= y <= n。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

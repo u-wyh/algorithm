@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10719
+// 题意：给 n 行 m 列的 01 网格，1 表示黑格。找一个包含至少 k 个黑格的矩形，使矩形面积尽可能小。输出最小面积，找不到输出 0。
+// 数据范围：1 ≤ n,m ≤ 100，1 ≤ k ≤ n×m。
+
 #include<iostream>
 using namespace std;
 bool a[114][514];// 存储输入

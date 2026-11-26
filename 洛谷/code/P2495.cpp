@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2495
+// 题意：n 个点的带权树（根为 1），共 m 次独立询问。
+// 每次给出 k_i 个关键点（不含 1），求切断 1 到所有关键点路径的最小边权和。
+// 每次询问输出一行最小边权和。
+// 数据范围：2 <= n <= 2.5*10^5，1 <= m <= 5*10^5，sum(k_i) <= 5*10^5，1 <= w <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

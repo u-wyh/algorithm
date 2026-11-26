@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2078
+// 题意：给定两家公司内部的朋友关系，朋友关系可传递，小明 1 和小红 −1 也是朋友。每人最多配对一次，求通过他们能认识的人最多能配成几对异性情侣，包含他们自己。
+// 数据范围：1 ≤ N,M ≤ 10^4，1 ≤ P,Q ≤ 2×10^4，公司员工编号分别使用正数和负数。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define Max 10005

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2163
+// 题意：平面上有 n 棵树（坐标可重合），共 m 次询问。
+// 每次询问左下角 (a,b)、右上角 (c,d) 的矩形内（含边界）有多少棵树。
+// 输出每次询问的答案。
+// 数据范围：0 <= n <= 5*10^5，1 <= m <= 5*10^5，0 <= x, y, a, b, c, d <= 10^7。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

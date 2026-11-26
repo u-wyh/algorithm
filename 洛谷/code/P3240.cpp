@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3240
+// 题意：输入图片总数 N、记忆中的判断条数 M，以及 M 条形如 x<y 或 x=y 的主观比较（每个 y 至多在右侧出现一次）。
+// 统计所有用 '<' 和 '=' 连接这 N 张图片的严格偏序序列 x_1 R_1 x_2 ... x_N 中不与 M 条已知判断冲突的方案数
+// 相等集合内部交换顺序视作同一序列。
+// 输出合法质量序列总数对 10^9+7 取模的结果。
+// 数据范围：N <= 100，0 <= M <= N。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

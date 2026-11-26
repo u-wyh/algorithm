@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4184
+// 题意：在 N*N 网格（坐标 0 到 N-1，每行每列恰有一个喷头）上，位于 (i, j) 的喷头会给满足 x>=i, y>=j 的点浇水
+// 给满足 x<=i, y<=j 的点施肥；
+// 求能选出多少个整点矩形，使得矩形内所有点都能同时被浇水和施肥（对 1e9+7 取模）。
+// 数据范围：1 <= N <= 1e5。
 #include <iostream>
 #include <algorithm>
 using namespace std;

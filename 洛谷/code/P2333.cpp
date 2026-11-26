@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2333
+// 题意：给定 n 个顶点的凸多边形（(0,0) 在严格内部），以 (0,0) 为圆心作半径 r 的圆。
+// 求圆与凸多边形交的面积至少为 S 时的最小半径 r。
+// 输出最小半径 r，保留两位小数。
+// 数据范围：3 <= n <= 50。
 #include<bits/stdc++.h>
 using namespace std;
 #define ld long double

@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P8764
+// 题意：输入两个整数 N 和 K，输出 1 到 N 中二进制表示恰好有 K 个 1 的整数个数。
+// 数据范围：1 <= N <= 10^18，1 <= K <= 50。
 #include <stdio.h>
 
 typedef long long ll;

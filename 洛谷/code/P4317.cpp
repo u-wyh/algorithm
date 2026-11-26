@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4317
+// 题意：设 sum(i) 为正整数 i 的二进制表示中 1 的个数，给定正整数 N
+// 求 sum(1) * sum(2) * ... * sum(N) 对 10000007 取模的结果。
+// 数据范围：1 <= N <= 1e15。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

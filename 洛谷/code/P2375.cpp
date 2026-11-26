@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2375
+// 题意：n 组数据，每组给定长度为 L 的小写字符串 S。
+// 设 num[i] 为 S[1..i] 中既是前缀又是后缀且前后缀不重叠的子串数量。
+// 每组输出 prod_{i=1..L} (num[i] + 1) 对 10^9+7 取模的结果。
+// 数据范围：n <= 5，L <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

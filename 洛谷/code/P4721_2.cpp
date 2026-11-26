@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4721
+// 题意：给定序列 g[1..n-1]，已知 f[0] = 1 且 f[i] = sum_{j=1..i} f[i-j] * g[j]
+// 求 f[0..n-1] 对 998244353 取模的值。
+// 数据范围：2 <= n <= 10^5，0 <= g_i < 998244353。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2820
+// 题意：给定 n 点 k 边的带权无向图，删去部分边使图无环且保持原连通性。
+// 求被删去边的权值总和的最大值。
+// 输出最大删去边权和。
+// 数据范围：1 <= n <= 100，1 <= f(i,j) <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

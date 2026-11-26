@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1833
+// 题意：给定开始和结束时间及 n 棵树。
+// 赏第 i 棵树一次耗时 T_i，得到 C_i 美学值，最多赏 P_i 次，P_i=0 表示不限次数。
+// 求在总时间以内能得到的最大美学值。
+// 数据范围：n ≤ 10000，时间同一天，间隔至多 1000 分钟。1 ≤ T_i ≤ 150，1 ≤ C_i ≤ 200，0 ≤ P_i ≤ 100。
+
 #include<stdio.h>
 
 typedef struct time

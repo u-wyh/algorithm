@@ -1,4 +1,14 @@
 // https://www.luogu.com.cn/problem/P6434
+// 题意：
+// 给定 n, k, l, r 以及 n 个甜品的美味值 a_i。
+// 选出 k 种甜品，要求它们能按某种顺序排列，使得第 i 个满足 l * prev <= curr <= r * prev。
+// 方案只计 k 种甜品的组合集合（不计排列顺序）。
+// 输出两行：合法方案总数 mod (10^9 + 7)，以及最大美味值之和 mod (10^9 + 7)（无解均输出 0）。
+// 数据范围：
+// k <= 10
+// k <= n <= 2 * 10^6
+// 1 <= l <= r <= 10
+// 1 <= a_i <= 10^9（90% 数据 a_i 随机生成）
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

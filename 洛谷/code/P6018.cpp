@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P6018
+// 题意：给定一棵 n 个节点的树，初始点 i 权值为 a_i，支持 m 次操作：1) 与 x 距离为 1 的所有点权值 +1；
+// 2) 点 x 权值减去 v（保证非负）；
+// 3) 查询与 x 距离为 1 的所有点权值的异或和。
+// 数据范围：1 <= n, m <= 5 * 10^5，0 <= a_i <= 10^5，1 <= x <= n，opt in {1, 2, 3}
+// 任意时刻各点权值非负。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

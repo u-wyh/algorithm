@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4388
+// 题意：用稻草人摆出 R * C 矩形网格，从左上角向右下角射箭穿透毁坏对角线经过格子的稻草人，给定每次毁坏数 N
+// 求有多少种本质不同的矩形摆放方案（R * C 与 C * R 等价）。
+// 数据范围：1 <= N <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

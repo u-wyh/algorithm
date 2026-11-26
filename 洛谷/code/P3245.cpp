@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3245
+// 题意：输入素数 p、数字串 S（长度 n，允许前导 0）、询问数 m，以及 m 个区间询问 [fr, to]。
+// 对每个询问区间，统计 S[fr..to] 的所有非空连续子串中有多少个对应的十进制整数是 p 的倍数（0 也是 p 的倍数）。
+// 输出 m 行，依次为每次询问满足条件的子串个数。
+// 数据范围：1 <= n, m <= 2*10^5，2 <= p <= 10^9 且 p 为素数。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

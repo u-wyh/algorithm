@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P3157
+// 题意：给出 1~n 的一个排列，按顺序依次删除其中 m 个元素。
+// 在每次删除元素之前，统计并输出当前剩余序列的逆序对个数。
+// 共输出 m 行结果。
+// 数据范围：
+// 1 <= n <= 10^5（排列长度）
+// 1 <= m <= 50000（删除次数）
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

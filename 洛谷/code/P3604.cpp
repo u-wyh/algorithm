@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3604
+// 题意：输入字符串长度 n、询问次数 m、长为 n 的小写字母串，以及 m 个区间 [l, r]。
+// 若一个子串中的字符重排后能构成回文串，则称该子串合法；对每次询问统计区间 [l, r] 内有多少个非空连续子区间是合法的。
+// 输出 m 行，每行一个整数表示对应询问的合法子区间个数。
+// 数据范围：n, m <= 60000，字符集为小写字母 a~z。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 6e4+5;

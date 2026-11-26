@@ -1,4 +1,9 @@
+// https://www.luogu.com.cn/problem/P3350
 #include<bits/stdc++.h>
+// 题意：输入网格行数 n、列数 m，接下来 n 行每行 m-1 个横向边权 r(i,j)，再 n-1 行每行 m 个纵向边权 c(i,j)，道路均为双向。
+// 接着输入 q 个询问，每次给出两个路口 (x_1, y_1) 和 (x_2, y_2)。
+// 对每个询问输出两点间的最短路径时间。
+// 数据范围：n*m <= 2*10^4，q <= 10^5，1 <= r(i,j), c(i,j) <= 10^4。
 using namespace std;
 #define int long long
 const int MAXN = 2e4+5;

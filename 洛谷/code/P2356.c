@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2356
+// 题意：n*n 矩阵，0 表示空地，非 0 表示该格敌人的分值。
+// 选一个空地站立，消灭同行和同列的所有敌人，求最多得分。
+// 若没有空地，输出 Bad Game!。
+// 数据范围：1 <= n <= 1000，空地数 < 10000，每格敌人数 <= 1000。
 #include<stdio.h>
 
 int max(int a,int b)

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3535
+// 题意：输入点数 n、边数 m、限制阈值 k，以及 m 条无向边 (u, v)（无重边）。
+// 删除最少数量的边，使得编号在 1~k 内的所有点都不处于任何简单环上。
+// 输出最少删边数 cnt，以及接下来 cnt 行每行输出被删边的两个端点（小的在前，大的在后）。
+// 数据范围：1 <= n <= 10^6，0 <= m <= 2*10^6，1 <= k <= n，1 <= u < v <= n。
 #include <algorithm>
 #include <iostream>
 #include <cstring>

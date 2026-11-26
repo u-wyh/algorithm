@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3806
+// 题意：第一行输入树点数 n 和询问数 m，接下来 n-1 行每行输入 u, v, w 表示一条边权为 w 的无向树边。
+// 随后 m 行每行输入一个整数 k，询问树上是否存在距离恰好为 k 的点对。
+// 每次询问输出一行字符串：存在输出 AYE，否则输出 NAY。
+// 数据范围：对于 100% 的数据，1 <= n <= 10^4，1 <= m <= 100，1 <= k <= 10^7，1 <= u, v <= n
+// 1 <= w <= 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

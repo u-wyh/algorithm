@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4121
+// 题意：第一行输入棋盘边长 n，接下来 n 行输入 n*n 的 0/1 初始颜色（0 白 1 黑）；
+// 下一行输入操作数 m，之后 m 行每行输入坐标 (x, y) 将该格黑白翻转（四连通同色格构成一个连通块）。
+// 输出 m 行，每行两个整数 b, w 分别表示当前黑色和白色连通块个数。
+// 数据范围：1 <= n <= 200，1 <= m <= 10^4，1 <= x, y <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 205;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10318
+// 题意：n 个水槽围成一圈，容量为 a[i]，开始都装满。每秒同时把每个水槽的水全倒到下一个水槽，装不下的部分溢出。输出从第 1 秒到第 n 秒，每秒结束后的总水量。
+// 数据范围：1 ≤ n ≤ 10^5，1 ≤ a[i] ≤ 10^9。
+
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

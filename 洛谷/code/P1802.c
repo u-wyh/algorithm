@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1802
+// 题意：有 n 个游戏对手和 x 个道具。
+// 对第 i 人花至少 use_i 个道具可获胜并得到 win_i 经验，否则得到 lose_i 经验。
+// 安排道具使总经验最大，输出其五倍。
+// 数据范围：0 ≤ n,x ≤ 1000，0 < lose_i ≤ win_i ≤ 10^6，0 ≤ use_i ≤ 1000。
+
 #include<stdio.h>
 #include<limits.h>
 

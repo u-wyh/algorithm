@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3523
+// 题意：输入树上房间数 n、可点燃导火索的房间数 m，每个房间是否有炸药 d_i（0 或 1），以及 n-1 条连接两房间的走廊。
+// 同时在 m 个房间点燃导火索，火焰每单位时间沿一条走廊传播到相邻房间并引爆到达房间的炸药。
+// 输出所有炸药全部引爆所需的最短时间。
+// 数据范围：1 <= m <= n <= 3*10^5，d_i in {0, 1}，1 <= a < b <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

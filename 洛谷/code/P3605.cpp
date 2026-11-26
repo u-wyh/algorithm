@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3605
+// 题意：输入奶牛数量 n，每头奶牛互不相同的能力指数 p_1..p_n，以及 2..n 号奶牛在公司树（1 号为根）中的父节点编号。
+// 若奶牛 i 是奶牛 j 的祖先，则 j 是 i 的下属；对每头奶牛 i 统计其下属中满足 p_j > p_i 的人数。
+// 输出 n 行，第 i 行表示第 i 头奶牛满足条件的下属数量。
+// 数据范围：1 <= n <= 10^5，1 <= p_i <= 10^9，且所有 p_i 互不相同。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

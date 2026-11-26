@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1385
+// 题意：给小写字母串。
+// 一步选相邻两个字母，在字母表中把一个提高一档、另一个降低一档，不能超出 a 到 z。
+// 允许做任意步，求可达且与原串不同的字符串数，对 10^9+7 取模。
+// 数据范围：T ≤ 10000，每个串的长度在 [1,100]。
+
 #include <iostream>
 #define MOD 1000000007
 using namespace std;

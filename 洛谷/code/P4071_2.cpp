@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4071
+// 题意：多组询问，第一行输入测试数据组数 T，之后每行输入两个整数 n 和 m。
+// 求有多少种 1 到 n 的排列 a，使得恰好有 m 个位置 i 满足 a_i = i。
+// 每组输出一行整数，答案对 10^9 + 7 取模。
+// 数据范围：1 <= T <= 5*10^5，1 <= n <= 10^6，0 <= m <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

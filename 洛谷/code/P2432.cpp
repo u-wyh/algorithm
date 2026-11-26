@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2432
+// 题意：给定长度为 L 的小写字符串和包含 W 个单词的词典。
+// 求最少从原串中剔除多少个字母，使剩余串能由词典中的单词拼接而成。
+// 输出最少剔除字母数。
+// 数据范围：1 <= W <= 600，2 <= L <= 300，单词长度 <= 25。
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

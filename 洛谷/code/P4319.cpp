@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P4319
+// 题意：初始给一棵 N 个点的树，之后有 M 条带权无向边各自只存在于第 l 天到第 r 天；
+// 第 1 到第 32766 天每天都从点 1 出发遍历全图所有城市，同一条边反复走只扣一次权值 w
+// 求每一天遍历所有城市所需消耗的最小边权和加 1（即出发时 L 值至少为多少）。
+// 数据范围：1 <= N <= 50000，总天数 rm <= 32766（完整版 32766），M <= 3*rm，1 <= l <= r <= rm
+// 1 <= w <= 1e9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

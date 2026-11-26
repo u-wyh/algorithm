@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2865
+// 题意：N 个路口 R 条无向边（边权 D），求从 1 到 N 的严格次短路长度。
+// 允许重复经过同一条边或同一个点。
+// 输出严格次短路长度。
+// 数据范围：1 <= N <= 5000，1 <= R <= 10^5，1 <= D <= 5000。
 //P2865
 #include<bits/stdc++.h>
 using namespace std;

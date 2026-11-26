@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3627
+// 题意：输入路口数 N、单向道路数 M，各条有向边，各路口 ATM 机金额 a_i，起点市中心 S、酒吧数 P 及这 P 个酒吧编号。
+// 从 S 出发沿有向道路走到任意一个酒吧结束，可多次经过同一路口或道路，但每个路口的钱最多抢一次。
+// 输出能抢劫到的最大现金总数。
+// 数据范围：N, M <= 5*10^5，0 <= a_i <= 4000，保证 S 至少能到达一个酒吧。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

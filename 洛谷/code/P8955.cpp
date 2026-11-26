@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P8955
+// 题意：给定长为 N 的序列 a 和常数 P（初始 P >= max{a_i}），进行 Q 次操作，每次给定 l_i, r_i, v_i
+// 将区间 [l_i, r_i] 内每个 a_j 赋值为 a_j | v_i。
+// 对每个位置 i 输出在哪次操作后 a_i 首次严格大于 P，若始终 <= P 则输出 -1。
+// 数据范围：1 <= N, Q <= 10^6，1 <= l_i <= r_i <= N，1 <= a_i, v_i, P <= 10^9
+// 初始 P >= max{a_i}。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

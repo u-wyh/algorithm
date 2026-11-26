@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P2797
+// 题意：输入正整数 n，以及 n 个整数 x_1..x_n。
+// 从这 n 个数中选出若干个数构成一个非空子集，使得这些数的平均数减去中位数的值最大。
+// 计算这个差值的最大可能值。
+// 输出一个精确到两位小数的实数，表示最大魔法差值。
+// 数据范围：对于 100% 的数据，n <= 10^5（正整数），0 <= x_i <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

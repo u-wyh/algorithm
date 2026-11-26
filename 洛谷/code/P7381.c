@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P7381
+// 题意：N 支球队每队 M 张照片，第 i 队已有 P_i 张；
+// 当某队集齐 x 张时得 B_x 分（B 单调不降）。
+// 最多再获得 K 张照片（不超过总缺口），求最大总得分。
+// 数据范围：1 <= N, M <= 500，1 <= K <= min(N*M, 500)，0 <= P_i <= M，0 <= B_i <= 10^5。
 #include<stdio.h>
 #include<limits.h>
 

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3870
+// 题意：第一行输入灯数 n 和操作数 m，初始时 1..n 号灯全为关闭状态。
+// 接下来 m 行输入 c, a, b：若 c = 0 则将区间 [a, b] 内所有灯的开关状态取反；若 c = 1 则查询区间 [a, b] 内亮着的灯的数量。
+// 对每个 c = 1 的操作输出一行一个整数。
+// 数据范围：对于全部测试点，2 <= n <= 10^5，1 <= m <= 10^5，1 <= a, b <= n，c in {0, 1}。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100001;

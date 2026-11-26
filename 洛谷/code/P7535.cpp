@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P7535
+// 题意：N 张面额为 c_i 的钞票，两人各选若干张使总面额相等且尽量大，剩余钞票赌博翻倍后再平分，求每人最终分得的总金额。
+// 数据范围：1 <= N <= 500，c_i >= 1，sum c_i <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

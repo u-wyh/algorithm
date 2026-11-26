@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6732
+// 题意：T 组数据，每组给出平面直角坐标系上两个相离正方形（未必与坐标轴平行）各 4 个顶点的坐标
+// 求任意一条严格将两正方形分隔到两侧（与正方形无公共点）的直线 ax + by = c。
+// 数据范围：1 <= T <= 10000，输入坐标绝对值不超过 10^3 且小数点后最多 3 位。
 #include<bits/stdc++.h>
 using namespace std;
 const long double eps = 1e-12L;

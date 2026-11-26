@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4943
+// 题意：给定 n 点 m 边的无向带权图，有 k 个小室只有哈利能进、罗恩不能进，两人均从 1 号点出发分别（或由哈利一人）前往目标点 x 和 y
+// 求到达两个目标小室的最短总耗时（两人到达时间的最大值最小）。
+// 数据范围：n <= 50000，m <= 100000，a, b, k <= n，c <= 1000，保证罗恩可在密室 1。
 #include<bits/stdc++.h>
 using namespace std;
 int n,m,p,k=0,k1,u,v,w,x,y,lsg,b[1000000],vis[1000000];

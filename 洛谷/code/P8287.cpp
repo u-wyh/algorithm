@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8287
+// 题意：给定 n 点 m 边无向连通简单图，初始有 k 个点为 1，每秒所有与 1 相邻的点也变成 1。
+// 求最少经过多少秒后，所有标记为 1 的点及其间的边能构成至少一个简单环；
+// 若始终无法构成则输出 Poor D!。
+// 数据范围：n <= 10^6，m <= 2*10^6，k <= 10^4，无重边自环且图连通。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

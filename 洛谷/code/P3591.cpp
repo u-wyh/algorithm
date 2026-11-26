@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3591
+// 题意：输入树节点数 n，各点点权 a_i，n-1 条无向边（边长均为 1），一个 1..n 的排列 b_i，以及 n-1 个步长 c_i。
+// 第 i 次行走从 b_i 出发沿最短路径走到 b_{i+1}，每次往前跳 c_i 条边（保证路径总边数是 c_i 的倍数），累计经过的所有点（含起终点）的权值和。
+// 依次输出 n-1 行，表示每次行走经过的点权之和。
+// 数据范围：2 <= n <= 50000，1 <= a_i <= 10000，1 <= u, v, b_i <= n，1 <= c_i < n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

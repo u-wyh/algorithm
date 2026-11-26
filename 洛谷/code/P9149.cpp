@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P9149
+// 题意：T 组数据，给定长为 n, m 的序列 A, B（元素在 [1, W]）和整数 d。
+// 从 [1, W] 中任选 d 个互不相同的整数，将 A 中出现的这些数全部删去（不删 B 中元素）
+// 记此时 B 作为连续子串在 A 中的出现次数为该方案权值。
+// 求所有 C(W, d) 种方案的权值和，对 10^9+7 取模。
+// 数据范围：1 <= T <= 5，1 <= n, m, W <= 10^6，1 <= d, A_i, B_j <= W。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

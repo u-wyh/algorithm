@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3345
+// 题意：输入点数 n、操作数 Q，以及带正边权 c 的树，初始各点军队数 d_u = 0。
+// 每次操作 u e 使点 u 的军队数增加 e（e 可正可负，保证任意时刻各地军队数非负）。
+// 每次操作后选择一个空地放补给站使 sum_v d_v * dist(u, v) 最小，输出该最小花费。
+// 数据范围：1 <= n, Q <= 10^5，1 <= c <= 10^3，0 <= |e| <= 10^3，且树上每个点的度数不超过 20。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

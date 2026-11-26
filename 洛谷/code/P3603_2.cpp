@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3603
+// 题意：输入树点数 n、询问数 m、加密标记 f，n 个点权，n-1 条树边；之后 m 次询问，每次给出链数 a 及 a 条树链 (x_k, y_k)。
+// 若 f=1，输入中的 2a 个端点均需异或上一次询问两个答案之和 lastans（首次为 0）；
+// 每次询问求这 a 条树链的并集中不同点权的种类数与点权集合的 mex（最小未出现的非负整数）。
+// 输出 m 行，每行两个整数，分别为不同点权种数与 mex。
+// 数据范围：设所有询问的 a 之和为 q，n, q <= 10^5，点权 <= 3*10^4（非负整数）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

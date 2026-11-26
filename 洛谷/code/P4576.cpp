@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4576
+// 题意：n*n 棋盘上白子先走每次四方向走 1 格，黑子后走每次四方向走 1 或 2 格，走到对方所在格即吃子获胜，双方绝顶聪明（赢者求快、输者拖延）
+// 判胜负并求总步数（无必胜输出 DRAW）。
+// 数据范围：2 <= n <= 20。
 #include<bits/stdc++.h>
 using namespace std;
 const int INF = 1e9;

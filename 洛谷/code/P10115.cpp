@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10115
+// 题意：给长为 n 的括号串和数列 a，把整个串切成若干连续非空段。若一段 [l,r] 自己是合法括号串，得分是 a[r]-a[l]，否则得 0 分。输出最大总分。
+// 数据范围：n ≤ 3 × 10^6，1 ≤ a[i] ≤ 10^9。
+
 #include<bits/stdc++.h>
 #define int long long
 using namespace std;

@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P1505
+// 题意：给一棵边上有权值的树。
+// C i w 将按输入顺序编号的第 i 条边改为 w；
+// N u v 将 u 到 v 的路径上各边取相反数；
+// SUM、MAX、MIN u v 分别输出该路径的边权和、最大与最小值。
+// 数据范围：1 ≤ n,m ≤ 2 × 10^5，点编号为 0 到 n-1，任意时刻边权在 [-1000,1000]。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

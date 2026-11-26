@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6069
+// 题意：给定长为 n 的整数序列 a，每次可将某个元素改为任意实数，求至少修改多少个元素能使序列方差不超过 m / n（输入给出 m）。
+// 数据范围：1 <= n <= 2 * 10^5，1 <= m <= 10^18，0 <= |a_i| <= 10^6。
 #include <stdio.h>
 #include <stdlib.h>
 

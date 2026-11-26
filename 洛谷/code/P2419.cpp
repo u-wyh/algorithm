@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2419
+// 题意：N 头奶牛进行 M 轮两两对决（胜负不矛盾），求最终排名能唯一确定的奶牛数。
+// 输出确定的奶牛数目。
+// 数据范围：1 <= N <= 100，1 <= M <= 4500。
 #include<bits/stdc++.h>
 using namespace std;
 

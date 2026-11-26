@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3475
+// 题意：输入无向图的点数 n（偶数）和边数 m，以及 m 条无向边 (a, b)。
+// 将 n 个点划分为大小均为 n/2 的两个不相交集合，使得两个端点分别在不同集合中的边数最少。
+// 输出一行 n/2 个升序排列的整数，表示其中一个集合包含的节点编号。
+// 数据范围：1 <= n <= 26（n 为偶数），1 <= a, b <= n，无重边。
 #include <iostream>
 #include <cstdio>
 using namespace std;

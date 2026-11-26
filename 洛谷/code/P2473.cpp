@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2473
+// 题意：共 k 轮，每轮等概率随机出现 n 种宝物之一，可吃或不吃。
+// 第 i 种宝物分值 p_i（可负），需先吃过其前提集合 s_i 中的所有宝物才能吃它。
+// 求最优策略下的期望总分，保留六位小数。
+// 数据范围：1 <= k <= 100，1 <= n <= 15，-10^6 <= p_i <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

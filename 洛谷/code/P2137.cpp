@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P2137
+// 题意：维护一棵初始有 n 个节点的有根树（根为 1），点权为 w_i，共 m 次强制在线操作。
+// 0 u x：询问以 u 为根的子树中严格大于 x 的点权个数。
+// 1 u x：将点 u 的权值改为 x。
+// 2 u x：新增编号为当前节点数+1的节点，父节点为 u，权值为 x。
+// 输入的 u 和 x 需异或上次询问答案 last（初始为 0），输出每次 0 操作的答案。
+// 数据范围：1 <= n, m <= 30000，1 <= u <= n，0 <= w_i, x < 2^31。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e4+5;

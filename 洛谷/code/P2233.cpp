@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2233
+// 题意：8 个站 A~H 围成环，每次只能走到相邻站。
+// 从 A 出发走 n 步到达 E（一旦到达 E 即停止），求方案数。
+// 输出方案数对 1000 取模的结果。
+// 数据范围：4 <= n <= 10^7。
 //P2233
 #include<bits/stdc++.h>
 using namespace std;

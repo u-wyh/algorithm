@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P5149
+// 题意：给定 n 个互不相同的名字序列（每名仅含大小写字母且长度 <= 5）和打乱后的排列，求原序列中在左而打乱后在右的老师对数（逆序对数）。
+// 数据范围：1 <= n <= 10^5，名字大小写敏感且长度不超过 5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

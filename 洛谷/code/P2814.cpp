@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2814
+// 题意：按 #father、+son 给出父子关系，?name 查询某人的最早祖先，$ 结束。
+// 对每次查询输出 本人名字 祖先名字。
+// 数据范围：名字为 6 个字符且互异，父子关系 <= 10^3 组，总人数 <= 5*10^4，不超过 30 代。
 #include<bits/stdc++.h>
 using namespace std;
 map<string,string>p;

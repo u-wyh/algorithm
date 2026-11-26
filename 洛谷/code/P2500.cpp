@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2500
+// 题意：n 点 m 边带权无向图（无自环），初始全在集合 A，共 q 次操作。
+// MoveA/B/C x：将点 x 移到对应集合；AskXY：询问两端分别在 X, Y 集合的最小边权。
+// 对每次询问输出最小边权，不存在输出 No Found!。
+// 数据范围：n <= 10^5，m <= 5*10^5，q <= 10^5，任意两点间至多 3 条不相交路径，边权 <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int INF = 1e9+7;

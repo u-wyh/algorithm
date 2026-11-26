@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2216
+// 题意：在 a*b 非负整数矩阵中找出一个 n*n 正方形区域。
+// 求该区域内最大值与最小值之差的最小值。
+// 输出最小差值。
+// 数据范围：2 <= a, b <= 1000，n <= min(a, b, 100)，矩阵元素 <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 

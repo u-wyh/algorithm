@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4577
+// 题意：给定一棵 n 个点的有根树，每个点有权值 w_i，求最大的点集使得点集中若 v_i 是 v_j 的子孙则必有 w_i >= w_j。
+// 数据范围：1 <= n <= 2*10^5，0 < w_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

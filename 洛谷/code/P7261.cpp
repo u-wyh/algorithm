@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7261
+// 题意：长为 n 的颜色序列（颜色 1..c），m 次询问区间 [a, b] 内是否存在出现次数严格大于区间长度一半的颜色，若存在输出 yes 和该颜色
+// 否则输出 no。
+// 数据范围：1 <= m <= 10^4，3 <= n <= 3*10^5，1 <= c <= 10^4，1 <= a <= b <= n。
 //P7261
 #include<bits/stdc++.h>
 using namespace std;

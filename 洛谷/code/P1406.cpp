@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1406
+// 题意：给 n² 个整数，把它们全部填进 n×n 的方格，让每行、每列和两条主对角线的和都一样。先输出这个和，再输出填法。多解时按逐行展开后的数字序列取字典序最小者。
+// 数据范围：1 ≤ n ≤ 4，-10^8 ≤ a[i] ≤ 10^8，保证有解。
+
 #include<bits/stdc++.h>
 using namespace std;
 int n,i,a[6][6],b[30],vis[30],sum;//vis数组用于标记

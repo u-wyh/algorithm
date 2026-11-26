@@ -1,4 +1,8 @@
+// https://www.luogu.com.cn/problem/P4451
 #include<bits/stdc++.h>
+// 题意：求正整数 n 的所有有序正整数拆分 (a_1+...+a_m=n) 的权值 F_{a_1}...F_{a_m} 之和对 10^9+7 取模的结果（F 为斐波那契数列
+// F_0=0, F_1=1）。
+// 数据范围：1 <= n <= 10^{10000}。
 using namespace std;
 #define int long long
 const int MOD = 1e9+7;

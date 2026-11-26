@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4567
+// 题意：实现一个维护光标与文本的编辑器，支持光标定位、前移、后移、在光标后插入字符串、删除光标后 n 个字符、反转光标后 n 个字符以及输出光标后一个字符。
+// 数据范围：Move <= 5*10^4 次，Insert/Delete/Rotate 总计 <= 6*10^3 次，Get <= 2*10^4 次
+// Prev/Next 总计 <= 2*10^4 次，插入总字符数 <= 2^21。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = (1<<21)+1e4;

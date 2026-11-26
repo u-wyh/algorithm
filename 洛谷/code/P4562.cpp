@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4562
+// 题意：编号为 l 到 r 的办公室，检查 i 号办公室时其所有倍数编号都会开始工作
+// 对所有检查顺序排列 p 定义 t(p) 为使全部办公室都开始工作的最少检查次数，求所有排列 t(p) 之和模 10^9+7。
+// 数据范围：1 <= l <= r <= 10^7。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

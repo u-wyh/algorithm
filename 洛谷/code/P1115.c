@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1115
+// 题意：给 n 个整数，选一个非空的连续子段，使其元素和最大。输出这个最大和。
+// 数据范围：1 ≤ n ≤ 2 × 10^5，-10000 ≤ a[i] ≤ 10000。
+
 #include<stdio.h>
 
 int main()

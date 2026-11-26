@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2869
+// 题意：N 头牛，第 i 头要求草价格 >= A_i 且绿色度 >= B_i；商店有 M 种草（价格 C_j，绿色度 D_j）。
+// 每头牛必须选不同的草，求满足所有牛的最小总花费，无解输出 -1。
+// 数据范围：1 <= N, M <= 10^5，1 <= A_i, B_i, C_j, D_j <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define inf 1e18+10

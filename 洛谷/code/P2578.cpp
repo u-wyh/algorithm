@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2578
+// 题意：3*3 拼盘含 0~8，可外围 8 格顺时针挪 1 位，或中间一行向右循环移 1 位。
+// 求变成 012/345/678 的最少操作次数 S 及每步状态（Special Judge）。
+// 不可达输出 UNSOLVABLE；否则输出 S 及 S+1 个状态。
+// 数据范围：固定 3*3 棋盘。
 #include<bits/stdc++.h>
 
 bool hsh[100000000];

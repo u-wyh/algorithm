@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P6329
+// 题意：n 点带点权的树（边距离 1），在线加密处理 m 次操作：0 x k 查询与 x 距离 <= k 的所有城市点权和；
+// 1 x y 将 x 点权修改为 y（x,y,k 均需异或上一次输出）。
+// 数据范围：1 <= n, m <= 10^5，1 <= u, v, x <= n，1 <= value_i, y <= 10^4
+// 0 <= k <= n-1。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

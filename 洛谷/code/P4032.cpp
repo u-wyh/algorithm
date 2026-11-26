@@ -1,4 +1,13 @@
 // https://www.luogu.com.cn/problem/P4032
+// 题意：第一行输入数据组数 T；
+// 每组输入食物种类数 n，n 种食物煮熟所需时间 s_i，以及事件数 Q；
+// 接下来 Q 行按时间戳 t 严格递增依次给出操作（op = 0 id 下锅；
+// op = 1 Yazid 取走编号最小的熟食；
+// op = 2 id YJQQQAQ 寻找食物 id，有熟的则取走一个，仅有未熟的则询问最接近熟的那份还需多久，没有则愤怒；
+// op = 3 l r 查询编号在 [l, r] 内的熟食数量）。
+// 对每个 op != 0 的操作按题目规定输出一行结果。
+// 数据范围：对于所有数据，T <= 4，n <= 100000，Q <= 500000，1 <= s_i <= 10^8，1 <= t <= 10^9
+// op in {0, 1, 2, 3}，1 <= id <= n，1 <= l <= r <= n。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

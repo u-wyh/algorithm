@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4306
+// 题意：给一个 N 个点的有向图邻接矩阵，求有多少个有序点对 (u, v) 满足从 u 出发能到达 v（含自己到达自己）。
+// 数据范围：1 <= N <= 2000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2005;

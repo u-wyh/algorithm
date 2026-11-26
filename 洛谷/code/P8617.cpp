@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P8617
+// 题意：输入一行字符串 S，找出其中至少出现两次的最长子串 T，输出 T 的长度。
+// 数据范围：|S| <= 500000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P10624
+// 题意：给一个顶点按逆时针排列的简单多边形，以及以原点为圆心的上半圆。求多边形落在半圆内的面积，绝对误差不超过 0.001。
+// 数据范围：3 ≤ n ≤ 100，1 ≤ r ≤ 1000，-1500 ≤ x[i] ≤ 1500，0 ≤ y[i] ≤ 1500，顶点不落在圆周上
+// 多边形无自交或自接触。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define ld long double

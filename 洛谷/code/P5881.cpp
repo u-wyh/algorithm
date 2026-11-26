@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P5881
+// 题意：有 n 种试剂（属性 a_i, b_i），m 次给定参照量 x_i，要求把试剂分成尽量多组使不同组间任意两点 a 的最大公约平方数 <= x_i^2
+// 且各组内 b_i 最大质因子指数之和最大。
+// 输入 n, m、序列 a、序列 b 及 m 个 x；输出 m 行，每行输出最大组数和最高得分。
+// 数据范围：1 <= n, m <= 2*10^5，2 <= a_i <= 4*10^4，2 <= b_i <= 2*10^7
+// 2 <= x <= 3*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e7+5;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3507
+// 题意：输入牌数 n，以及每张牌上的正整数 k_1..k_n。
+// Alice 先手与 Bob 轮流取牌，每次至少取 1 张，该轮得分等于本次所取牌中数字的最小值，直到取完；双方均最大化自己与对手的分差。
+// 输出一个整数，表示双方最佳策略下 Alice 得分减去 Bob 得分的结果。
+// 数据范围：1 <= n <= 10^6，1 <= k_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

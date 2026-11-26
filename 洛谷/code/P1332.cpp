@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1332
+// 题意：给 n×m 的网格和 a 个初始标记点。每小时标记会向上下左右相邻格扩展一层。给 b 个查询坐标，按顺序输出每个格子首次被标记的时刻，源点为 0。
+// 数据范围：1 ≤ n,m ≤ 500，1 ≤ a,b ≤ 10^5。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 501;

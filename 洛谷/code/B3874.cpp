@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B3874
+// 题意：给出 N 名学生进入教室的顺序，学号是 0 到 N-1。每人进门时，和已经在教室里且学号比自己小的人各握一次手，求总次数。
+// 数据范围：2 ≤ N ≤ 3 × 10^5，入场顺序恰好包含每个学号一次。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

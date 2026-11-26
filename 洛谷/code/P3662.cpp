@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3662
+// 题意：输入信号灯总数 N、目标连续正常长度 K、损坏数量 B，以及 B 个损坏信号灯的编号。
+// 需修复尽量少的损坏信号灯，使得 1..N 中至少存在一段连续 K 个信号灯全部正常工作。
+// 输出最少需要修复的信号灯数量。
+// 数据范围：1 <= N <= 100000，1 <= B, K <= N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

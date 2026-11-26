@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P8889
+// 题意：输入序列 a_1..a_n 和 m 个互不相同的整数 b_1..b_m；
+// 将 a 中所有等于 b 中任一元素的项删除并在该处切开，统计最终剩余的非空连续片段个数并输出。
+// 数据范围：1 <= n, m <= 5*10^5，-10^18 <= a_i, b_i <= 10^18，b 中元素两两不同。
 #include <stdio.h>
 #include <stdlib.h>
 

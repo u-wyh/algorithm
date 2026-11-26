@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1742
+// 题意：给定 N 个平面点，找出覆盖所有点的最小圆，先输出半径，再输出圆心坐标。
+// 数据范围：1 ≤ N ≤ 10^5，坐标绝对值 ≤ 10^4，最多两位小数，判题误差容许 10^−9。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

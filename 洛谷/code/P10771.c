@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10771
+// 题意：有 n 个学生，第 i 人物理成绩为 A[i]、生物成绩为 B[i]。恰好选 a 人参加物理、b 人参加生物，每人只参加一项。求所选对应成绩的最大总和。
+// 数据范围：1 ≤ n ≤ 10^5，0 ≤ a,b ≤ n，a+b=n，0 ≤ A[i],B[i] ≤ 10^4。
+
 #include<stdio.h>
 #include<stdlib.h>
 

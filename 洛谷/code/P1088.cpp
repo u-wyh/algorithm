@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1088
+// 题意：把 1 到 N 的所有排列按字典序排列。给当前排列和 M，求在它之后第 M 个排列，输出其中的 N 个数。
+// 数据范围：1 ≤ N ≤ 10000，1 ≤ M ≤ 100，保证答案仍在排列范围内。
+
 #include<cstdio>
 #include<iostream>
 #include<algorithm>

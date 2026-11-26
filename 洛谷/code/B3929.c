@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B3929
+// 题意：给门槛 a 和 N 个询问 x。如果 x 是某个不小于 a 的完全平方数的倍数，输出 lucky。否则输出不小于 x 的最小这种数。
+// 数据范围：1 ≤ a ≤ 10^6，1 ≤ N ≤ 2 × 10^5，1 ≤ x ≤ 1000001。
+
 #include <stdio.h>
 #include <math.h>
 

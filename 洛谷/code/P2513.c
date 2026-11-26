@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2513
+// 题意：求 1~n 的排列中逆序对数恰好为 k 的排列个数。
+// 输出方案数对 10000 取模的结果。
+// 数据范围：n <= 1000，k <= 1000。
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

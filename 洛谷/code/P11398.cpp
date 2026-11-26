@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P11398
+// 题意：给 n 个数对 (a[i],b[i])。
+// 前 i 个数对让每个 b[j] 出现 a[j] 次，把出现次数最多且最大的数乘 a[i]，作为下标 i 的权。
+// 操作 1 x y 将 a[x] 加上 y，操作 2 q 问最短的非空后缀，使其中各下标权异或为 q。
+// 数据范围：3 ≤ n,m ≤ 3 × 10^5，1 ≤ b[i] ≤ n，1 ≤ a[i] ≤ L ≤ 10^9，y 非负。
+// 查询保证有解，全部答案之和不超过 5 × 10^7。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

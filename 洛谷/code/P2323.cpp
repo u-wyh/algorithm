@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2323
+// 题意：n 个点 m-1 条备选边，每条边修一级花费 c_1、修二级花费 c_2（c_2 <= c_1）。
+// 选 n-1 条边建生成树，要求至少有 k 条一级公路，使最大单边花费尽量小。
+// 输出最小的最大花费及所选边的编号与等级（Special Judge）。
+// 数据范围：1 <= n <= 10000，0 <= k <= n-1，n <= m <= 20000，1 <= c_2 <= c_1 <= 30000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

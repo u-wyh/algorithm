@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2837
+// 题意：N 头牛排成一排，各有编号 1 或 2。
+// 求最少修改多少头牛的编号，使所有 1 在前、所有 2 在后（允许全 1 或全 2）。
+// 输出最少修改次数。
+// 数据范围：1 <= N <= 3*10^4。
 #include<stdio.h>
 
 int min(int a,int b)

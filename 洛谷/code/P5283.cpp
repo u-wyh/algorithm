@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5283
+// 题意：给定长为 n 的非负整数序列 a，从中选出 k 个不同的区间 [l, r]（1 <= l <= r <= n）。
+// 每个区间的美味度为其元素异或和，求选出的 k 个区间美味度之和的最大值。
+// 数据范围：1 <= n <= 5*10^5，1 <= k <= min(n(n-1)/2, 2*10^5)，0 <= a_i <= 4294967295。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

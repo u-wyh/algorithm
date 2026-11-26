@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2376
+// 题意：有 N 种硬币，每种面额 V（均能整除所有更大的面额）有 B 个。
+// 每周至少需要支付 C，求最多能支付多少个星期。
+// 输出最多星期数。
+// 数据范围：1 <= N <= 20，1 <= C, V <= 10^8，1 <= B <= 10^6。
 #include <stdio.h>
 #include <stdlib.h>
 

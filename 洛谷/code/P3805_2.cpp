@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3805
+// 题意：输入一行仅由小写英文字母组成的字符串 S（长度为 n）。
+// 求 S 中最长回文子串的长度。
+// 输出一个整数表示答案。
+// 数据范围：1 <= n <= 1.1 * 10^7。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 11000000+5;

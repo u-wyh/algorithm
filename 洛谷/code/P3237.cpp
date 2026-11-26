@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3237
+// 题意：输入树节点数 N（以 1 为根）、各节点初始正整数点权 A_1..A_N，以及 N-1 条树边。
+// 要求一个好方案 w，使每个非叶节点 u 的所有子节点 w_v 均相等且 ∑w_v = w_u，允许将任意点权修改为任意正实数。
+// 输出最少需要修改点权的节点个数。
+// 数据范围：N < 500000，A_j < 10^8。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

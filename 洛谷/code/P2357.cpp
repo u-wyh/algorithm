@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P2357
+// 题意：有 n 个墓碑（1 号为主墓碑），初始各有风水值，共 f 次操作。
+// 1 l r k：区间 [l,r] 加 k；2 k / 3 k：主墓碑加/减 k。
+// 4 l r：查询 [l,r] 区间和；5：查询主墓碑的值。
+// 对每次 4、5 操作输出一行结果。
+// 数据范围：1 <= n, f <= 2*10^5，答案不超过 64 位整数。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 200005;

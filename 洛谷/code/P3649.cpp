@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3649
+// 题意：输入一个非空小写字母字符串 s。
+// 定义子串的存在值为该子串在 s 中出现的次数乘以它的长度。
+// 输出 s 中所有回文子串的最大存在值。
+// 数据范围：1 <= |s| <= 3*10^5，仅包含小写字母 a~z。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

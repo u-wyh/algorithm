@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1094
+// 题意：有 n 件不同价格的纪念品，把全部纪念品分组。每组只有一件或两件，组内价格和不超过 w。输出最少组数。
+// 数据范围：1 ≤ n ≤ 30000，80 ≤ w ≤ 200，5 ≤ P[i] ≤ w。
+
 #include<stdio.h>
 #include<stdlib.h>
 

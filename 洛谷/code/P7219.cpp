@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P7219
+// 题意：N x N 网格中第 i 列底部 1..A_i 行为障碍，另有 M 颗位于 (X_i, Y_i)（Y_i > A_{X_i}）的星星
+// 删去第 i 颗代价 C_i；
+// 求使网格中不存在不含障碍且至少含 2 颗星星的子矩形的最小总代价。
+// 数据范围：1 <= N, M <= 2*10^5，1 <= A_i, X_i, Y_i <= N，1 <= C_i <= 10^9
+// A_{X_i} < Y_i，无重合星星。
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2170
+// 题意：从 n 名学生中选学霸，目标人数为 m，有 k 对人所在连通块必须全选或全不选。
+// 求最接近 m 的合法选出人数；若差值相等，选较小的一个。
+// 输出选出的人数。
+// 数据范围：1 <= n <= 2*10^4，0 <= m <= n，0 <= k <= 2*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e4+5;

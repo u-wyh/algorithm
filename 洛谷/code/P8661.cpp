@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P8661
+// 题意：输入 N, D, K 和 N 条记录 (ts, id)；
+// 若某 id 在某个左闭右开时间区间 [T, T+D) 内出现至少 K 次，则按 id 从小到大逐行输出所有满足条件的 id。
+// 数据范围：1 <= K <= N <= 10^5，0 <= id, ts <= 10^5（题面未单独标注 D 的上界）。
 #include<bits/stdc++.h>
 using namespace std;
 

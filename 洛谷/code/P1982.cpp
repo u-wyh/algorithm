@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1982
+// 题意：第 i 个小朋友的特征值等于前 i 个数的最大非空连续子段和。
+// 首人的分数就是特征值，其余人的分数是此前所有人的分数加各自特征值所得的最大值。
+// 取全体最高分，保留符号并将绝对值对 p 取模。
+// 数据范围：1 ≤ n ≤ 10^6，1 ≤ p ≤ 10^9，每个输入数的绝对值不超过 10^9。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

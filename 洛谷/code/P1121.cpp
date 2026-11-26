@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1121
+// 题意：给一个首尾相接的整数序列，在环上选两段连续、非空且互不重叠的区间。求两段元素和相加的最大值。
+// 数据范围：2 ≤ n ≤ 2 × 10^5，-10000 ≤ a[i] ≤ 10000。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

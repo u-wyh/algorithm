@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4784
+// 题意：给定 n 点 m 边的无向带权图和其中 k 个主要城市，选择部分边翻修使这 k 个城市互相连通，求最小总成本。
+// 数据范围：2 <= k <= 5，n <= 10^5，1 <= m <= 2*10^5，1 <= c <= 10^9，n >= k。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

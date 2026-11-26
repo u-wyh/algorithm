@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5122
+// 题意：给一张 N 点 M 边的正权无向连通图，所有点要前往点 N，有 K 个干草捆在若干点上各有美味值 y_i；
+// 对 1..N-1 每个点判断是否存在路径前往某干草捆进食后再到 N，使总长不超过原最短路 + y_i。
+// 数据范围：2 <= N <= 5*10^4，1 <= M <= 10^5，1 <= K <= N，1 <= t_i <= 10^4
+// 1 <= y_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2611
+// 题意：R*C 网格上有 N 个不同的随机资源点 (x_i, y_i)。
+// 求至少包含一个资源点的子矩形个数。
+// 输出子矩形个数。
+// 数据范围：1 <= R, C <= 4*10^4，1 <= N <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

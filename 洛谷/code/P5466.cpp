@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5466
+// 题意：给定由 '0'、'1'、'?' 组成的字符串 s，把每个 '?' 替换为 '0' 或 '1'
+// 判断每个长度 len 能否成为合法 border（记 f(len) 为 1 或 0）。
+// 输入字符串 s；输出所有 (f(len) * len^2)（len=1..|s|）的按位异或和。
+// 数据范围：|s| <= 5*10^5，字符仅含 '0'、'1'、'?'。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

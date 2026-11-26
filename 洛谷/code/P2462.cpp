@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2462
+// 题意：给定 n 个小写英文单词（EOF 结束），找最长的词语接龙。
+// 后一个单词需包含前一个单词的所有字母（频次不减）且长度恰好多 1。
+// 第一行输出最大长度 ans，接下来 ans 行输出接龙单词（Special Judge）。
+// 数据范围：1 <= n <= 10000，单词长度 <= 100。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

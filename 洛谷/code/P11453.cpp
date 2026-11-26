@@ -1,4 +1,13 @@
 // https://www.luogu.com.cn/problem/P11453
+// 题意：
+// 多测（T 组）。每组数轴上有 N 棵树位于 x_i，另有 K 个限制区间 [l_i, r_i]。
+// 每个限制要求区间 [l_i, r_i] 内始终至少保留 t_i 棵树（初始状态保证满足）。
+// 对每个测试用例输出一行，表示最多可以砍伐的树的数量。
+// 数据范围：
+// 1 <= T <= 10
+// 1 <= N, K <= 10^5
+// sum N <= 3 * 10^5，sum K <= 3 * 10^5
+// -10^9 <= x_i, l_i, r_i <= 10^9
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1196
+// 题意：有 30000 艘战舰，开始时各自成列。
+// M i j 把 i 所在整列接到 j 所在列的尾部，列内顺序保持原样。
+// C i j 查询同列时两舰之间的战舰数，不同列输出 -1。
+// 数据范围：1 ≤ T ≤ 5 × 10^5，1 ≤ i, j ≤ 30000，i ≠ j，合并前两舰分属不同列。
+
 #include<bits/stdc++.h>
 using namespace std;
 

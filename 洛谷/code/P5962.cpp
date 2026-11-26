@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5962
+// 题意：给定 n*n 黑白棋盘每行黑格（船）的列区间描述，四连通的黑格块算作一艘船、格数为吨位，统计每种吨位各有多少艘船。
+// 输入 n 及每行的列区间（逗号分隔、分号结尾）；按吨位降序输出（吨位 数量）。
+// 数据范围：1 <= n < 3*10^4，船舶总数和每艘船的吨位均不超过 10^3。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e4+5;

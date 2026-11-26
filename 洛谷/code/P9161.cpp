@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P9161
+// 题意：给定一棵 n 个点的无向树形态，共有 m 棵有标号的同构树，(i, j) 表示第 i 棵树第 j 个点。
+// 给每个点赋 0/1 权值 a(i, j)，要求每条边 (u, v) 在每棵树中满足 a(i, u) + a(i, v) <= 1
+// 且对每个节点编号 j 满足 sum_{i=1}^m a(i, j) <= 1。
+// 求赋值方案数，对 10^9+7 取模。
+// 数据范围：1 <= n <= 10^6，1 <= m <= 10^9。
 #include<bits/stdc++.h>
 #define mod 1000000007//模数
 using namespace std;

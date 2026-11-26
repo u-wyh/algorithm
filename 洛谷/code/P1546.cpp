@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1546
+// 题意：给 N 个农场两两之间的铺线长度，任选一些连接，使所有农场通过线路连通。输出所需光纤总长度的最小值。
+// 数据范围：3 ≤ N ≤ 100，任意两点距离不超过 10^5，距离矩阵对角线为 0。
+
 #include<bits/stdc++.h>
 using namespace std;
 

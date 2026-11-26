@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2208
+// 题意：N*M 网格（. 空地，# 实心，C 起点，D 终点），人受重力下落，有支撑时可左右移动或翻转重力。
+// 求从 C 到达 D 的最少翻转重力次数，不可达输出 -1。
+// 输出最少次数或 -1。
+// 数据范围：1 <= N, M <= 500。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

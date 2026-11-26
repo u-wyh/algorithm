@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5397
+// 题意：给定长为 n 的序列 a，共 m 次强制在线（x, y 异或上次答案，Ikaros 或首次用 0）操作：1 x y 把序列中所有值 x 变成 y。
+// 2 x y 找满足 a_i=x 且 a_j=y 的最小 |i-j| 并输出，不存在则输出 Ikaros（共 50 组数据，保证 n=m）。
+// 数据范围：所有数在 [1, 10^5] 内，每次操作的值不超过 n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXV = 1e5+5;

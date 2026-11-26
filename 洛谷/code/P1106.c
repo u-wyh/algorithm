@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1106
+// 题意：给十进制整数 n，删掉恰好 k 位，剩余数字的顺序保持不变。求能得到的最小非负整数，输出时去掉前导零。
+// 数据范围：1 ≤ k < n 的位数 ≤ 250。
+
 #include<stdio.h>
 #include<string.h>
 

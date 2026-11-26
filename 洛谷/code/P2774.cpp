@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2774
+// 题意：给定 m 行 n 列的方格图，每个方格有一个正整数 a_{i,j}（先输入 m 再输入 n）。
+// 从方格中取数，要求任意两个取出的数所在方格没有公共边。
+// 输出能取出的数的最大总和。
+// 数据范围：1 <= n, m <= 100，1 <= a_{i,j} <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2857
+// 题意：N 头牛分配到 B 个有容量限制的牛棚，每头牛给出对牛棚的偏好排名。
+// 求一种分配方案，使所有牛所分牛棚排名的极差（最高与最低之差+1）最小。
+// 输出最小排名区间大小。
+// 数据范围：1 <= N <= 1000，1 <= B <= 20。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

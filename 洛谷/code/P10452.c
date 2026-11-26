@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10452
+// 题意：数轴上 n 家商店的坐标为 A[i]。选一个位置建仓库，让仓库到所有商店的距离总和最小。只输出最小总距离。
+// 数据范围：1 ≤ n ≤ 10^5，0 ≤ A[i] ≤ 40000。
+
 #include<stdio.h>
 #include<stdlib.h>
 

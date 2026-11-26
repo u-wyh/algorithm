@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4824
+// 题意：给定小写字母串 S 和 T，不断删除当前 S 中第一个出现的子串 T（删除后拼接可能产生新 T）直到不再出现，输出最终的 S。
+// 数据范围：|S| <= 10^6，|T| <= |S|，均由小写字母组成且结果非空。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

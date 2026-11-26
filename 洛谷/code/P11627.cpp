@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P11627
+// 题意：
+// 给定 n 个节点的树，选一个必经点 t，并将 n-1 条边权设为 1 到 n-1 的排列。
+// 定义 dist(u,v) 为经过 t 且可重复过点边的 u 到 v 最短路径长，得分为所有 1<=u,v<=n 的 dist(u,v) 之和。
+// 输出三行：最大得分 mod 998244353；取最大得分时最小的 t；在此基础上按输入序字典序最小的边权。
+// 数据范围：
+// 1 <= n <= 10^5
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

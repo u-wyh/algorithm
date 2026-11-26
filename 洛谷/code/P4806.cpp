@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4806
+// 题意：N 点 M 边连通无向图，前 N-1 条边为初始生成树；最多选一条边权减 D（下限 0），每天可删一树边加一非树边，求达成最小总权值方案的最少天数。
+// 数据范围：1 <= N <= 100000，N-1 <= M <= 200000，0 <= D <= 10^9，1 <= C_i <= 10^9（无重边自环）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

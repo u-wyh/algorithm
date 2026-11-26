@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4171
+// 题意：多组数据，有 n 种材料，每种只能做成满式或汉式两种之一；
+// 共有 m 位评审，每位评审有两个喜好（如 m1 和 h2），只要满足其中至少一个即可通过该评审
+// 判断是否存在一种方案通过所有评审（输出 GOOD 或 BAD）。
+// 数据范围：1 <= K <= 50，n <= 100，m <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 205;

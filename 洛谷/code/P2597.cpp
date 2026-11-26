@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2597
+// 题意：DAG 食物网（n 个点，y->x 表示 x 吃 y），无入边为生产者。
+// 若某消费者所有食物灭绝则跟着灭绝，求每个生物灭绝会连带灭绝的生物数。
+// 输出 n 行，每行一个整数。
+// 数据范围：1 <= n <= 65534，输入文件 <= 1MB，无环。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 70000;

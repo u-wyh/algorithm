@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P10903
+// 题意：n 种商品的库存起初都是 0，第 i 条操作给编号 L 到 R 的库存各加 1。
+// 对每个 i 分别考虑只跳过第 i 条、执行其他所有操作，输出最终仍为 0 的商品数。
+// 数据范围：1 ≤ n,m ≤ 3 × 10^5，1 ≤ L ≤ R ≤ n。
+
 #include<bits/stdc++.h>
 using namespace std;
 

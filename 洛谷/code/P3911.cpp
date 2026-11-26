@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P3911
+// 题意：给定长度为 N 的正整数序列 A_1..A_N，求 sum_{i=1}^N sum_{j=1}^N lcm(A_i, A_j) 的值。
+// 数据范围：1 <= N <= 5 * 10^4，1 <= A_i <= 5 * 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

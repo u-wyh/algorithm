@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10194
+// 题意：N 头奶牛围成一圈，第 i 头的桶容量为 a[i]，起初装满。
+// 每分钟每头把全部牛奶倒给下一头，所有传递同时发生，超出容量的部分倒掉。
+// 依次输出每分钟结束后剩余的总量，共 N 行。
+// 数据范围：1 ≤ N ≤ 5 × 10^5，1 ≤ a[i] ≤ 10^9。
+
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

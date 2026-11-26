@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P11266
+// 题意：初始集合 S[i] 只有下标 i，a[i] 是该元素的值。
+// 0 x y 从 S[x] 删除 y，1 x 输出集合里的最小值，2 x y 将 S[y] 并入 S[x] 并清空
+// 3 x y z 把 S[x] 内元素 y 的值减小到 z。
+// 数据范围：1 ≤ n,m ≤ 10^6，初始 1 ≤ a[i] ≤ 2 × 10^9，操作中元素绝对值至多 10^15，单次调低至多 5 × 10^8。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5482
+// 题意：维护一个初始为空的一元不等式组，支持添加不等式 ax + b > c、删除第 i 条添加的不等式（可能重复删）、查询 x = k 时成立的不等式数量。
+// 输入操作数 n 及各条 Add/Del/Query 操作；对每个 Query 输出成立的不等式个数。
+// 数据范围：1 <= n <= 10^5，a, b, c in [-10^8, 10^8]，k in [-10^6, 10^6]。
 #include <bits/stdc++.h>
 using namespace std;
 const int N=1e6+10,M=1e5+10;

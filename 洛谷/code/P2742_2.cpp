@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2742
+// 题意：给定平面上 n 个点坐标 (x_i, y_i)，求围住所有点的最小凸包周长。
+// 输出周长，四舍五入保留两位小数。
+// 数据范围：3 <= n <= 10^5，-10^6 <= x_i, y_i <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

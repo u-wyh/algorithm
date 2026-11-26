@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P7335
+// 题意：给定 n, k 和随机序列 a_1..a_n，选出 k 个互不相交的连续区间，最大化这 k 个区间的异或和之和。
+// 数据范围：1 <= k <= n <= 3000，0 <= a_i <= 10^9，保证数据随机。
 #include<bits/stdc++.h>
 #define N 3005
 using namespace std;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1771
+// 题意：给定 k 和 x，先令 g=x^x mod 1000，再求有多少个有序的 k 元正整数数组之和恰好等于 g。
+// 数据范围：2 ≤ k ≤ 100，1 ≤ x ≤ 2^31−1，保证 k ≤ g。
+
 #include<bits/stdc++.h>
 using namespace std;
 

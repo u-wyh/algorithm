@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6205
+// 题意：商场有价格为 1, 2, ..., K 元的 K 种工具（每种无限），手里有 N 元必须恰好花完，求不同的无序购买方案数（需高精度）。
+// 数据范围：1 <= K <= 100，1 <= N <= 1000。
 #include <stdio.h>
 #include <string.h>
 

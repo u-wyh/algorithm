@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10641
+// 题意：给一棵有根树，每个点有一个正权值。选 k 条从根到叶子的路径，经过多条所选路径的点也只计一次，求并集的最大点权和。
+// 数据范围：1 ≤ n ≤ 2 × 10^5，1 ≤ w[i] ≤ 2^31-1，输入边按父亲到孩子给出。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

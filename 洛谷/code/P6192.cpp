@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6192
+// 题意：给定 n 点 m 边的带权无向连通图 G（可能有重边和自环）以及包含 k 个点的集合 S，求包含 S 中所有点的连通子图 G' 的最小边权和（最小斯坦纳树）。
+// 数据范围：1 <= n <= 100，1 <= m <= 500，1 <= k <= 10，1 <= u, v <= n，1 <= w <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

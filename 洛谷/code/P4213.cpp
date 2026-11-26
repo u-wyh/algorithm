@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4213
+// 题意：多组数据，每组给一个正整数 n，求欧拉函数前缀和 sum_{i=1}^{n} phi(i) 和莫比乌斯函数前缀和 sum_{i=1}^{n} mu(i)。
+// 数据范围：1 <= T <= 10，1 <= n < 2^31。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

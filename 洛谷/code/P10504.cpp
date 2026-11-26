@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10504
+// 题意：有 N 项挑战，第 i 项成功概率为 p[i]%。
+// 初始容量 K，成功时 a[i] 非负就增加该容量，a[i] 为 -1 就得到一个占一格的碎片。
+// 求至少成功 L 项且最终能带走所有所得碎片的概率，保留六位小数。
+// 数据范围：0 ≤ N ≤ 200，0 ≤ L ≤ N，0 ≤ K ≤ 2000，-1 ≤ a[i] ≤ 1000，0 ≤ p[i] ≤ 100。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int N=205;

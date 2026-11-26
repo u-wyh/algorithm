@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4703
+// 题意：在边长 l 的正方形 [0, l]^2 内有 n 个半径为 l/n 的信号屏蔽器
+// 求正方形内任一不被任何屏蔽器覆盖的点（距各圆心 >= l/n + 10^-6），无解输出 GG。
+// 数据范围：1 <= n <= 10，1 <= l <= 10^5，0 <= x_i, y_i <= l。
 #include<bits/stdc++.h>
 using namespace std;
 const double eps = 1e-5;

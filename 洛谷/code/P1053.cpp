@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1053
+// 题意：n 人原本按编号 1 到 n 围坐，每人指定两个希望挨着的人。可任选若干人循环交换座位，代价等于参与人数。求满足所有相邻要求的最小总代价，无解输出 -1。
+// 数据范围：3 ≤ n ≤ 50000，每人给出两个不同的同学编号。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

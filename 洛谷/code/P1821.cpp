@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1821
+// 题意：给定 n 个农场、m 条有向道路，派对在 x 号农场。每头牛去派对和回家分别走最短路，求所有牛的往返距离中的最大值。
+// 数据范围：1 ≤ x ≤ n ≤ 1000，1 ≤ m ≤ 10^5，1 ≤ u,v ≤ n，1 ≤ w ≤ 100，所有农场都与 x 双向可达。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1001;

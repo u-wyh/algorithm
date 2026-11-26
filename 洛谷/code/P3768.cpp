@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3768
+// 题意：输入整数 p 和 n。
+// 计算 sum_{i=1..n} sum_{j=1..n} (i * j * gcd(i, j)) mod p 的值。
+// 输出一行一个整数表示答案。
+// 数据范围：1 <= n <= 10^10（测试点分级最高到 10^10），5*10^8 <= p <= 1.1*10^9 且 p 为质数。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

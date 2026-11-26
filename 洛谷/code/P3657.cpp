@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3657
+// 题意：输入品种数 N，以及道路左侧排列 a_1..a_N 和右侧排列 b_1..b_N（均为 1..N 的排列）。
+// 若左侧某品种 a 与右侧某品种 b 满足 |a - b| <= 4，则可在两者之间画一条人行道；要求所有人行道互不相交且每个牧场至多连一条。
+// 输出最多能画的人行道数量。
+// 数据范围：1 <= N <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

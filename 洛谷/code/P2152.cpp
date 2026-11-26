@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2152
+// 题意：给定两个正整数 a 和 b，求它们的最大公约数。
+// 输出最大公约数。
+// 数据范围：0 < a, b <= 10^10000。
 #include<cstdio>
 #include<cstring>
 using namespace std;

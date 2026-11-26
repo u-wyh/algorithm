@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3400
+// 题意：输入矩阵行数 n、列数 m，以及 n×m 的 0/1 矩阵（0 表示破坏，1 表示完好）。
+// 统计内部完全不含 0（全部由完好格子组成）的子矩阵总数。
+// 输出一个正整数表示子矩阵个数。
+// 数据范围：n, m <= 3000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3005;

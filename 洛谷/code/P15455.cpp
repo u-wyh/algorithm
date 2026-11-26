@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P15455
+// 题意：边权互异连通图上以各点为起点做 Prim 算法，求某点被加入的步数之和。
+// 输入：首行 N, M, Q，后 M 行边 (A_j, B_j, C_j)，再 Q 行询问点 X_k。
+// 规则：从首都 s 起做 Prim 扩张 N-1 次，D_{s,i} 为 i 被连通的步数（D_{s,s}=0）。
+// 输出：输出 Q 行，分别表示 sum_{s=1..N} D_{s, X_k}。
+// 数据范围：2 <= N <= 3*10^5，1 <= M <= 6*10^5，1 <= Q <= N。
+// 数据范围：1 <= C_j <= 10^9 且互异，X_k 互异，图连通。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

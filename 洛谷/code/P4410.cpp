@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4410
+// 题意：给定 n 点 m 边的带点权无向图（由若干个岛屿成环构成，岛内任意两点有唯一公共朋友，相邻岛代表互为朋友），求最大点权独立集。
+// 数据范围：4 <= n <= 100000，1 <= m <= 200000，-1000 <= A_i <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

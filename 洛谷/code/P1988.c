@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1988
+// 题意：给定正整数 N，求最小正整数 M，使乘积 N×M 的十进制表示只含 0 和 1。无解输出 No Solution。
+// 数据范围：1 ≤ N ≤ 10^5。
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

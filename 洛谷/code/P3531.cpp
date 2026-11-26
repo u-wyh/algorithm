@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3531
+// 题意：输入字符串长度 n，以及两个长度为 n 的大写字母串 a 和 b（保证 a 可重排为 b）。
+// 每次可以交换串 a 中相邻的两个字符。
+// 输出将 a 变成 b 所需的最少交换次数。
+// 数据范围：1 <= n <= 10^6，a, b 仅含大写字母。
 //P3531
 #include <bits/stdc++.h>
 using namespace std;

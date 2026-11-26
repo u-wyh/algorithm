@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7456
+// 题意：给定目标串 s（仅小写字母）和 L 个小写字母单词 a_i，每个单词可使用无限次，拼接时允许重叠（重叠部分须相同）
+// 求拼出 s 最少需使用多少次单词（无法拼出输出 -1）。
+// 数据范围：1 <= L, |s|, sum |a_i| <= 3*10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

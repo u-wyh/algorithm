@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P7054
+// 题意：给定一个 n 点 m 边的有向无环图，最多添加 k 条有向边使其仍无环，且图的字典序最小拓扑序尽可能大；输出最优拓扑序及加边方案。
+// 数据范围：1 <= n <= 10^5，0 <= m, k <= 10^5，1 <= u_i, v_i <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

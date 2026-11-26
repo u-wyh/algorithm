@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P1717
+// 题意：从 1 号鱼塘出发，只能往右走，总时间 H 小时。
+// 经过相邻鱼塘耗时 5t_i 分钟。
+// 在第 i 个鱼塘每钓 5 分钟收获一次，首次收获 f_i，此后每次减 d_i，最低为 0。
+// 求最多能钓多少鱼。
+// 数据范围：2 ≤ n ≤ 25，1 ≤ H ≤ 16，1 ≤ f_i ≤ 200，0 ≤ d_i ≤ 20，1 ≤ t_i ≤ 20。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 30;

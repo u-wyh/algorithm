@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P5049
+// 题意：给一个 n 点 m 边的连通无向简单图（树或基环树），选起点按 DFS 规则遍历所有点（可去未访问邻点或沿首次入边回退），求首次到达各点组成的字典序最小序列。
+// 数据范围：1 <= n <= 5*10^5，且 m = n-1 或 m = n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

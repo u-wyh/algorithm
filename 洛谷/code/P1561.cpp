@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P1561
+// 题意：有 N 个对象，每个先用时 U[i] 上山，再用时 D[i] 下山。
+// 任何时刻上山段、下山段各最多一人，两段可以同时有人。
+// 可在山顶等待，两个阶段的顺序都可以安排。
+// 求全部完成所需的最短时间。
+// 数据范围：1 ≤ N ≤ 25000，1 ≤ U[i],D[i] ≤ 50000。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 25005;

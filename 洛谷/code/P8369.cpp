@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8369
+// 题意：给定三种颜色条纹长度 c, z, n（每种无限个）及 m 个长为 p 的 1*p 棋盘。
+// 两人轮流选一种条纹对齐方格覆盖到棋盘上（不可越界或与已有条纹重叠），无法操作者负。
+// 对每个棋盘判断先手必胜输出 1，否则输出 2。
+// 数据范围：100% 数据满足 1 <= c, z, n, m, p <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e3+5;

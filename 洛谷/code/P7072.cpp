@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7072
+// 题意：逐一评出 n 个选手的成绩（0~600 的整数），若已评出 p 人，计划获奖人数为 max(1, floor(p * w%))（同分并列均可获奖）；
+// 每次评出后输出即时获奖分数线。
+// 数据范围：1 <= n <= 10^5，1 <= w <= 99，每名选手成绩为不超过 600 的非负整数。
 #include<bits/stdc++.h>
 using namespace std;
 

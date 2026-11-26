@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2515
+// 题意：N 个软件各有空间 W_i、价值 V_i 和唯一依赖 D_i（0 表示无依赖），磁盘容量 M。
+// 只有依赖软件也安装时该软件才能正常工作，求能正常工作的软件最大价值和。
+// 输出最大价值和。
+// 数据范围：0 <= N <= 100，0 <= M <= 500，0 <= W_i <= M，0 <= V_i <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10600
+// 题意：一个合法括号串有 n 对括号。
+// 左括号和右括号分别从左到右编号，match[i] 是第 i 个左括号配对的右括号编号。
+// 给 m 条 match[a]<match[b] 的约束，求可能的合法括号串数量，对 998244353 取模。
+// 数据范围：1 ≤ T ≤ 5，1 ≤ n ≤ 300，1 ≤ a,b ≤ n。
+
 #include<bits/stdc++.h>
 #define int long long
 using namespace std;

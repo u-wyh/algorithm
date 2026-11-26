@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4375
+// 题意：给定长度为 N 的数组 A，模拟每轮先输出 "moo"、再从前到后相邻冒泡一遍、再从后到前相邻冒泡一遍的双向冒泡排序，求 "moo" 的输出次数。
+// 数据范围：1 <= N <= 100000，0 <= A[i] <= 10^9（元素可重复）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100005;

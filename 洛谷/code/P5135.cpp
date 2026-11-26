@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5135
+// 题意：T 组询问，求在 N 行 M 列网格中每列恰涂黑 1 个格子的方案数（模 10^9+7），其中 opt=1 要求从左到右行号严格递增
+// opt=0 要求从左到右行号单调不降。
+// 数据范围：T <= 50，N <= 10^18，M <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2583
+// 题意：多组数据（0 结束），N 个车站 1~N，两站间列车耗时 t_i。
+// 时刻 0 从 1 出发，时刻 T 需在 N 碰头，给出 1 站和 N 站的发车时刻表。
+// 求在车站的最小总等待时间，不可达输出 impossible。
+// 数据范围：2 <= N <= 50，0 <= T <= 2000，0 < t_i < 70，1 <= M_1, M_2 <= 50。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 55;

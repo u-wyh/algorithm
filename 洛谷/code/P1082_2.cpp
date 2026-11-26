@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1082
+// 题意：输入 a 和 b，求最小正整数 x，使 a×x 除以 b 恰好余 1。
+// 数据范围：2 ≤ a,b ≤ 2 × 10^9，保证有解。
+
 // 扩展欧几里得 exgcd 解 ax + by = gcd(a,b)，常用于：
 // 1) 求模逆元：ax ≡ 1 (mod m) 等价于 ax + my = 1，当 gcd(a,m)=1 时 x 即 a^{-1} mod m；
 // 2) 解线性同余：ax ≡ b (mod m)，先判断 gcd(a,m)|b，再求特解与通解；

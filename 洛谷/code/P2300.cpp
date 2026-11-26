@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2300
+// 题意：给定长度为 n 的正整数序列 p，每次可将某数合并到相邻数上（值相加，长度减 1）。
+// 求将序列合并为从左到右单调不减的最少合并次数。
+// 输出最少合并次数。
+// 数据范围：0 < n <= 2*10^5，0 < p_i <= 2147483647，p 随机生成。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

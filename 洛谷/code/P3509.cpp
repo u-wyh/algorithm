@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3509
+// 题意：输入石头数量 n、参数 k、跳跃次数 m，以及每块石头距源头的严格递增位置 p_1 < p_2 < ... < p_n。
+// 青蛙每次跳向距离当前石头第 k 近的石头（若并列第 k 近则跳往更靠近源头即坐标更小的那块）。
+// 输出一行 n 个整数，表示青蛙从第 1..n 块石头出发跳跃 m 次后各自停留的石头编号。
+// 数据范围：1 <= k < n <= 10^6，1 <= m <= 10^18，1 <= p_1 < ... < p_n <= 10^18。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

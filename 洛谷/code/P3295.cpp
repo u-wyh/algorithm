@@ -1,4 +1,14 @@
 // https://www.luogu.com.cn/problem/P3295
+// 题意：
+// 给定整数 n 和 m，以及 m 组等长区间限制 (l1, r1, l2, r2)。
+// 考虑长度为 n 的十进制大数 S_1 S_2 ... S_n（S_1 为最高位，不能为 0）。
+// 每组限制要求子串 S[l1..r1] 与 S[l2..r2] 完全相同。
+// 输出满足所有限制的大数个数，对 10^9 + 7 取模。
+// 数据范围：
+// 1 <= n <= 10^5
+// 1 <= m <= 10^5
+// 1 <= l_{i1}, r_{i1}, l_{i2}, r_{i2} <= n
+// r_{i1} - l_{i1} = r_{i2} - l_{i2}
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10454
+// 题意：每组给两个 n×n 的滑块局面，0 是空格。每次可把空格和上下左右相邻的数字交换。判断两个局面能否互相到达，可以就输出 TAK，否则输出 NIE。
+// 数据范围：1 ≤ n < 500，n 为奇数，每个局面恰好包含 0 到 n²-1 各一次。
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

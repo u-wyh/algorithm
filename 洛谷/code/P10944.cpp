@@ -1,4 +1,12 @@
 // https://www.luogu.com.cn/problem/P10944
+// 题意：
+// 给定 T 组测试数据，每组为一个 n 个房间、m 条单向走廊的有向图。
+// 判断是否对任意两个房间 x, y，都满足 x 可达 y 或者 y 可达 x。
+// 输出 T 行，满足条件输出 Yes，否则输出 No。
+// 数据范围：
+// 1 <= T <= 3
+// 1 <= n <= 1000
+// 1 <= m <= 5999
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e3+5;

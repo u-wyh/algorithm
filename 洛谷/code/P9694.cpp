@@ -1,4 +1,13 @@
 // https://www.luogu.com.cn/problem/P9694
+// 题意：多组数据（共 T 组）。
+// 给定 n 个小写字符串 w_1..w_n 和整数 k。
+// 选出 k 个下标不同的字符串集合 S，定义 v(S) = max_{i, j ∈ S, i != j} lcp(w_i, w_j)（按字典序取最大
+// 空串最小）。
+// 选择 S 以最小化 v(S) 的字典序，输出该最优的 v(S)；
+// 若为空串输出 EMPTY。
+// 题意：第一行输入 T，每组输入 n, k 及 n 个字符串 w_i；每组输出一行字符串或 EMPTY。
+// 数据范围：2 <= n <= 10^6，2 <= k <= n，1 <= |w_i| <= 10^6
+// sum(|w_i|) <= 10^6（未显式给出 T 上界，受 sum(|w_i|) 限制）。
 #include <bits/stdc++.h>
 using namespace std;
 #define maxn 1000005

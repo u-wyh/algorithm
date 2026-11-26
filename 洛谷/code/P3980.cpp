@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3980
+// 题意：第一行输入天数 n 和志愿者种类数 m；
+// 第二行输入 n 个非负整数 a_i 表示第 i 天至少需要的志愿者数；
+// 接下来 m 行每行输入 s_i, t_i, c_i，表示第 i 类志愿者可从第 s_i 天工作到第 t_i 天、每人费用 c_i 元（每类人数无限）。
+// 求满足每天人数需求的最小总招募费用。
+// 数据范围：1 <= n <= 1000，1 <= m <= 10000，题目中其余涉及的数据均不超过 2^31 - 1。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

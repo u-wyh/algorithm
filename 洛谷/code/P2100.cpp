@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2100
+// 题意：给定正整数 n，求满足 |p_i - i| <= 1 的 1~n 排列 {p_n} 的个数。
+// 输出结果对 10^8 取模后的值，不输出前导零。
+// 数据范围：1 <= n <= 10^1000。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

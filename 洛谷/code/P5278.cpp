@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5278
+// 题意：维护长为 n 的序列，支持 m 次强制在线（参数异或此前输出 Yes 的个数）操作：1 x y 单点修改 a_x = y。
+// 2 l r k 询问区间 [l, r] 内的数从小到大排序后能否组成公差为 k 的等差数列（单个数也算），输出 Yes 或 No。
+// 数据范围：1 <= n, m <= 3*10^5，0 <= a_i, y, k <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

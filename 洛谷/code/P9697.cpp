@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P9697
+// 题意：多组数据（共 T 组）。
+// 长度 n 的序列初始全为 0，有 m 个操作：第 i 个操作将第 l_i 个元素改为 x_i，第 r_i 个元素改为 y_i。
+// 求一个 1..m 的排列作为操作执行顺序，最大化所有操作执行后序列元素之和。
+// 题意：第一行输入 T，每组输入 n, m 及 m 行 (l_i, x_i, r_i, y_i)；
+// 每组第一行输出最大元素和，第二行输出执行顺序排列（任一合法最优解）。
+// 数据范围：2 <= n, m <= 5 * 10^5，1 <= l_i < r_i <= n，1 <= x_i, y_i <= 2
+// sum(n), sum(m) <= 5 * 10^5（未显式给出 T 上界，受 sum(n), sum(m) 限制）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

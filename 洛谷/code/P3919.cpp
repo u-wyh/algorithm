@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3919
+// 题意：维护一个长度为 N 的数组（初始为版本 0），依次进行 M 次操作，每次操作基于某个历史版本 v 生成新版本（编号为当前操作序号）：
+// 1. v 1 p c：在版本 v 的基础上将 a_p 修改为 c；
+// 2. v 2 p：查询版本 v 中的 a_p 并生成与版本 v 完全相同的新版本。
+// 数据范围：1 <= N, M <= 10^6，1 <= p <= N，对第 x 次操作有 0 <= v < x，-10^9 <= a_i, c <= 10^9。
 #include <bits/stdc++.h>
 using namespace std;
 

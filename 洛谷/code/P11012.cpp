@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P11012
+// 题意：给 n 幅画的颜料编号，选一个连续区间。每对不同颜料贡献两者在区间里出现次数的较小值。要求所有颜料对的贡献和至少为 k，输出最短区间长度，无解输出 -1。
+// 数据范围：1 ≤ n,a[i] ≤ 2 × 10^6，1 ≤ k ≤ 10^15。
+
 #include<bits/stdc++.h>
 #define ll long long
 using namespace std;

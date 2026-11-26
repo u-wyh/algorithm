@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1357
+// 题意：把环上的 n 个有编号位置各设为 C 或 P，首尾相邻。要求每一段环上连续 m 个位置内，C 的个数都不超过 k。求合法安排数，对 10^9+7 取模。
+// 数据范围：2 ≤ n ≤ 10^15，2 ≤ m ≤ min(n,5)，1 ≤ k<m。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

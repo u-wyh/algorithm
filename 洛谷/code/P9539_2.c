@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P9539
+// 题意：给定长度为 n 的小写字母串 s 及整数 l, r。
+// 构造一个长度为 n 的小写字母串 t，使得满足 s_i = t_i 的位置数量在 [l, r] 之间
+// 且 t 的字典序尽可能小（保证 0 <= l <= r <= n，恒有解）。
+// 题意：第一行输入 n, l, r，第二行输入字符串 s；输出一行一个字符串 t。
+// 数据范围：1 <= n <= 10^6，0 <= l <= r <= n。
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>

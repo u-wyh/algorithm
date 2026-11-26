@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P4108
+// 题意：第一行输入正整数 n，第二行输入数列 a_0..a_{n-1}，第三行输入操作数 q
+// 之后 q 行每次为 MODIFY id x（将 a_{id} 改为 x）或 QUERY x。
+// 查询最小的整数 p（0 <= p < n），使得 gcd(a_0..a_p) * xor(a_0..a_p) = x。
+// 对每个 QUERY 输出一行整数 p，不存在则输出 no。
+// 数据范围：n <= 10^5，q <= 10000，1 <= a_i <= 10^9，查询中 x <= 10^18
+// 修改中 0 <= id < n、1 <= x <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

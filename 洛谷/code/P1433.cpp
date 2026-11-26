@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1433
+// 题意：老鼠从原点出发，要访问所有奶酪坐标，终点任选且不用返回。两点之间按直线距离走，求最短总路程，保留两位小数。
+// 数据范围：1 ≤ n ≤ 15，坐标绝对值不超过 200，最多三位小数。
+
 #include<bits/stdc++.h>
 using namespace std;
 

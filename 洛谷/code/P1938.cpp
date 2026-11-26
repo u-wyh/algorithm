@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1938
+// 题意：从城市 S 出发，起点和每次到达一座城市都可挣 D 元。可以走免费单向道路或付费单向航线，也可以随时停下。求扣除路费后的最大收入，收入无上限时输出 -1。
+// 数据范围：1 ≤ D ≤ 1000，1 ≤ P ≤ 150，2 ≤ C ≤ 220，1 ≤ F ≤ 350，城市编号在 [1,C]，机票价在 [1,50000]。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 250;

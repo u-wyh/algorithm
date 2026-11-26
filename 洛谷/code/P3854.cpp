@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3854
+// 题意：第一行输入城市数 N 和无向边数 M，接下来 M 行输入可直接通讯的城市对 (C_i, D_i)（原图连通且无重边）。
+// 随后输入策略数 Q，接下来 Q 行每行输入 S_i, T_i, M_i（互不相等），询问删除节点 M_i 后 S_i 与 T_i 是否变得不连通。
+// 输出 Q 行，若变得不连通（策略可行）输出 yes，否则输出 no。
+// 数据范围：对于 100% 的数据，1 <= N <= 20000，1 <= M <= 100000，1 <= Q <= 100000
+// 1 <= C_i, D_i, S_i, T_i, M_i <= N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e4+5;

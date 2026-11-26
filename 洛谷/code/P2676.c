@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2676
+// 题意：N 头奶牛各有身高 H_i，书架高度为 B。
+// 选出尽量少的奶牛，使其身高之和不小于 B。
+// 输出最少奶牛数目。
+// 数据范围：1 <= N <= 20000，1 <= H_i <= 10000，1 <= B <= S < 2*10^9+7。
 #include<stdio.h>
 #include<stdlib.h>
 

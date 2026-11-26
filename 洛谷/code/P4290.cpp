@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4290
+// 题意：初始从 W, I, N, G 中选一个字母，按给出的双字母替换规则不断将任意单个字母替换成两个字母，给定长度为 L 的最终字符串
+// 按 W, I, N, G 顺序输出所有可能作为初始字母的字符（都不可行输出 The name is wrong!）。
+// 数据范围：L <= 200，W, I, N, G <= 16。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 205;

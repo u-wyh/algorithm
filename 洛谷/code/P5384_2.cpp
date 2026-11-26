@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5384
+// 题意：给定一棵以 1 为根的 N 个节点的树，以及 Q 次询问 (u, k)。
+// 每次输出与 u 具有相同 k 级祖先的节点个数（不包含 u 本身，若 u 不存在 k 级祖先则输出 0）。
+// 数据范围：N <= 10^6，Q <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

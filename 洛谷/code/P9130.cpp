@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P9130
+// 题意：Bessie 每天晚餐若谷仓有干草就吃 1 捆，第 d_i 天早晨会收到 b_i 捆干草。
+// 初始无干草，处理 U 次更新：将第 d 天早晨到达的干草数设为 b。
+// 每次更新后输出 Bessie 有干草吃的「所有天数编号之和」，对 10^9+7 取模。
+// 数据范围：1 <= U <= 10^5，1 <= d_i <= 10^14，0 <= b_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

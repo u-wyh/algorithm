@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3834
+// 题意：第一行输入序列长度 n 和询问数 m，第二行输入 n 个整数 a_1..a_n。
+// 接下来 m 行每行输入 l, r, k，查询闭区间 [l, r] 内第 k 小的元素值。
+// 对每次询问输出一行一个整数表示答案。
+// 数据范围：对于所有数据，1 <= n, m <= 2 * 10^5，0 <= a_i <= 10^9，1 <= l <= r <= n
+// 1 <= k <= r - l + 1。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

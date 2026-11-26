@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1459
+// 题意：给一个只由 1、2、3 组成的序列，一次可交换任意两个位置，求排成非降序的最少交换次数。
+// 数据范围：1 ≤ n ≤ 1000，每项在 [1,3]。
+
 #include<stdio.h>
 #include<stdlib.h>
 

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5549
+// 题意：平面上有 n 颗位置互异的星星，求一个圆能覆盖至少 m 颗星星（含边界）所需的最小半径 r。
+// 输入 n, m 及各星坐标；输出最小半径，绝对或相对误差不超过 10^-6 即正确。
+// 数据范围：2 <= m <= n <= 2000，|x|, |y| <= 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

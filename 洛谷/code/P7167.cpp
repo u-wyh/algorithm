@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P7167
+// 题意：N 个圆盘自上而下编号 1~N，直径 D_i、容量 C_i；
+// 水溢出后会往下流到下方首个直径严格更大的圆盘（否则流入水池 0）。
+// Q 次独立询问向第 R_i 个圆盘倒入 V_i 的水最终停在何处。
+// 数据范围：2 <= N <= 10^5，1 <= Q <= 2*10^5，1 <= C_i <= 1000，1 <= D_i, V_i <= 10^9
+// 1 <= R_i <= N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100010;

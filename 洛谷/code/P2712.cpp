@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2712
+// 题意：n 个摄像头各自位于位置 x 并监视 m 个位置 y。
+// 仅当摄像头所在位置不被其他存活摄像头监视时才能被砸毁。
+// 若能砸毁所有摄像头输出 YES，否则输出剩余无法砸毁的摄像头数量。
+// 数据范围：1 <= n <= 100，0 <= m <= 100，0 <= x, y <= 500。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

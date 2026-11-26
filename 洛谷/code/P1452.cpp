@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1452
+// 题意：给平面上 n 个互不重合的点。找出欧氏距离最大的一对，输出这个最大距离的平方。
+// 数据范围：2 ≤ n ≤ 50000，横纵坐标均为绝对值不超过 10000 的整数。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

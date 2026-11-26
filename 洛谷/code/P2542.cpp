@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2542
+// 题意：n 个点 m 条无向边（无重边，任意时刻连通），若干次操作（-1 结束）。
+// 0 u v：删除边 (u,v)；1 u v：询问 u 到 v 路径上必须经过的边（桥）数目。
+// 对每个 1 操作输出一行整数。
+// 数据范围：1 <= n <= 3*10^4，1 <= m <= 10^5，操作总次数 <= 4*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e4+5;

@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6225
+// 题意：维护长为 n 的非负整数序列 a，支持 q 次操作：单点修改 a[i] = j；查询区间内所有连续子区间异或和的异或和。
+// 数据范围：1 <= n, q <= 2*10^5，0 <= a_i <= 10^9。
 #include<iostream>
 #include<cstdio>
 #include<algorithm>

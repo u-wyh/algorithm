@@ -1,4 +1,12 @@
 // https://www.luogu.com.cn/problem/P3273
+// 题意：N 个点初始互不连通，各自有权值 a_i，支持 Q 次以下 7 种操作：
+// U x y（合并 x,y 连通块）、A1 x v（单点加 v）、A2 x v（连通块加 v）、A3 v（全局加 v）。
+// F1 x（查单点值）、F2 x（查连通块最大值）、F3（查全局最大值）。
+// 逐行输出所有查询操作的结果。
+// 数据范围：
+// 1 <= N <= 3*10^5（点数）
+// 1 <= Q <= 3*10^5（操作数）
+// -1000 <= v, a_1..a_N <= 1000（初始权值与增量，保证输入合法）
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5007
+// 题意：给定以 1 为根的 n 个节点的树，定义「毒瘤集」为集合中任意两点不存在祖先-后代关系的点集；
+// 当 T=0 时每点价值为 1，T=1 时点 i 价值为 i，求所有毒瘤集的价值之和的总和对 100,000,007 取模。
+// 数据范围：n <= 10^6，T ∈ {0, 1}。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,14 @@
 // https://www.luogu.com.cn/problem/P3727
+// 题意：输入测试组数 T，每组输入树点数 n、n-1 条树边、各点初始稳定值 w_1..w_n 及博弈规则 k（k=2 或 3 时还输入参数 s）。
+// 艾登先从树上任选一条链并拆下其上节点，随后双方轮流对稳定值 > 0 的节点操作（dedsec 先手，操作后不能 < 0
+// 不能操作者败）：k=1 每次可减任意正整数；
+// k=2 每次可减 s 的非负整数幂；
+// k=3 每次可减 >= s 的整数；
+// k=4 每次可减任意正整数或将 >= 2 的点裂为两个正整数之和相同的点；
+// k=5 双方均不能操作。
+// 对每组数据输出一行：若存在链使艾登必胜则输出 Mutalisk ride face how to lose?
+// 否则输出 The commentary cannot go on!。
+// 数据范围：T <= 5，n <= 3*10^4，w_i <= 10^9，输入均为正整数。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e4+5;

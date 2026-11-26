@@ -1,4 +1,13 @@
 // https://www.luogu.com.cn/problem/P4074
+// 题意：第一行输入游览点数 n、糖果种类数 m 和操作数 q；
+// 第二行输入 m 个美味指数 V_1..V_m；
+// 第三行输入 n 个非递增的新奇指数 W_1..W_n。
+// 接下来 n-1 行输入树的无向边 (A_i, B_i)，第 n+3 行输入各点初始糖果种类 C_1..C_n；
+// 随后 q 行操作：0 x y 将点 x 的糖果改为 y；
+// 1 x y 询问从 x 到 y 唯一路径上第 i 次品尝某类糖果 j 累加 V_j * W_i 的总愉悦指数。
+// 对每个 Type = 1 的询问输出一行正整数。
+// 数据范围：1 <= n, m, q <= 100000，1 <= V_i, W_i <= 10^6（W 非递增），1 <= A_i, B_i <= n
+// 1 <= C_i <= m，1 <= x <= n，修改时 1 <= y <= m、询问时 1 <= y <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

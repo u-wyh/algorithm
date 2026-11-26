@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4169
+// 题意：二维平面上初始有 n 个点，接下来有 m 次操作，操作 1 加入一个新点 (x, y)
+// 操作 2 询问当前已存在点中离 (x, y) 最近的曼哈顿距离 |Ax-Bx|+|Ay-By|。
+// 数据范围：1 <= n, m <= 3e5，0 <= x_i, y_i <= 1e6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

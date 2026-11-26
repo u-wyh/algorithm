@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1359
+// 题意：n 个出租站沿江从上游到下游编号。从 i 租船到下游 j 还船的价格为 r[i][j]，途中可在任意站换船。求从 1 号站到 n 号站的最低总租金。
+// 数据范围：1 ≤ n ≤ 200，计算过程中所有数值至多 10^6。
+
 #include<stdio.h>
 #include<limits.h>
 

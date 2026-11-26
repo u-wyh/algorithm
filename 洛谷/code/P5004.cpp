@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5004
+// 题意：有 N 个排成一行的格子，从 1 号格左边无限远跳到 N 号格右侧外，每次从当前格子跳到目标格子中间必须至少空出 M 格（也可直接跳出终点）
+// 求经过格子集合不同的合法方案数模 10^9 + 7。
+// 数据范围：1 <= N <= 10^18，M <= 15（测试点中 M 为 1, 2, 3, 5, 10, 15）。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

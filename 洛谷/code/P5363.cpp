@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5363
+// 题意：1*n 棋盘上放有 m 枚位于不同格子的金币，Alice 与 Bob 轮流将一枚金币向左移动至少一格（不能出界或越过其他金币），不能操作者输。
+// 求能保证先手 Alice 必胜的初始状态数对 10^9+9 取模的结果。
+// 数据范围：1 <= n <= 150000，1 <= m <= 50。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

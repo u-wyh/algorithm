@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P9875
+// 题意：多组数据（共 T 组）。
+// 二维平面上有起点 A、终点 B 以及两堵线段墙 CD 和 EF（可能退化为点，A, B 不在墙上，保证可达）。
+// 机器人不能碰到墙（含端点），求从 A 到 B 所需的最少转弯（改变方向）次数。
+// 题意：第一行输入 T
+// 每组四行依次输入 (x_A, y_A)、(x_B, y_B)、(x_C, y_C, x_D, y_D)、(x_E, y_E, x_F, y_F)；
+// 每组输出一行一个整数。
+// 数据范围：1 <= T <= 10^5，所有坐标值在 [-10^9, 10^9] 内。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

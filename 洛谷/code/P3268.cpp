@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3268
+// 题意：输入圆的数量 N，以及每个圆的圆心与半径 (x, y, r)，保证任意两圆无交点（只相离或包含）。
+// 统计平面上被奇数个圆覆盖区域的面积之和（异或面积并）。
+// 输出异或面积并除以 π 后的整数值。
+// 数据范围：1 <= N <= 2*10^5，|x_i|, |y_i| <= 10^8，0 < r <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

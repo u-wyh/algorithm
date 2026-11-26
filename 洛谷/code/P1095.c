@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1095
+// 题意：初始有 M 点魔法，出口在 S 米外，最多有 T 秒。
+// 每秒可跑 17 米、花 10 点魔法闪烁 60 米，或留在原地恢复 4 点魔法。
+// 若能逃出，输出 Yes 和最短时间，否则输出 No 和 T 秒内最远距离。
+// 数据范围：0 ≤ M ≤ 1000，1 ≤ S ≤ 10^8，1 ≤ T ≤ 300000。
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>

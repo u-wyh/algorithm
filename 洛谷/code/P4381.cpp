@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4381
+// 题意：N 个岛屿各有 1 座连向另一岛的双向桥（共 N 座带权桥）且岛间有渡船，每岛至多访问一次，仅当当前所有桥和已乘渡船都无法连通两岛时才可乘渡船
+// 求能走过的桥长度之和的最大值。
+// 数据范围：2 <= N <= 10^6，1 <= L_i <= 10^8。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

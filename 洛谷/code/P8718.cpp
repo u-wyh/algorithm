@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P8718
+// 题意：第一行输入 x_A, y_A, x_B, y_B, L
+// 第二行输入三角形三个顶点坐标 (x_1, y_1), (x_2, y_2), (x_3, y_3)；
+// 求三角形与满足到 (x_A, y_A) 和 (x_B, y_B) 距离之和 <= L 的区域（椭圆）相交的面积
+// 四舍五入保留 2 位小数输出（误差不超过 0.01 即得分）。
+// 数据范围：(x_A, y_A) != (x_B, y_B)，所有坐标在 [-1000, 1000] 内，0 < L <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const double eps = 1e-10;

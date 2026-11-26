@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4389
+// 题意：n 种体积为 v_i 的商品（每种无限件），给定 m，对每个 s in [1, m] 求恰好装满体积 s 的方案数（对 998244353 取模）。
+// 数据范围：1 <= n, m <= 10^5，1 <= v_i <= m。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

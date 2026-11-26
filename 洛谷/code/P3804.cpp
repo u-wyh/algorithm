@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3804
+// 题意：输入一行仅包含小写字母的字符串 S。
+// 找出 S 的所有出现次数不为 1 的子串，计算「出现次数 * 子串长度」的最大值；若不存在这样的子串则输出 0。
+// 输出一个整数表示答案。
+// 数据范围：对于 100% 的数据，1 <= |S| <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e6+5;

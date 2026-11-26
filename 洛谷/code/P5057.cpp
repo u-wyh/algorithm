@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P5057
+// 题意：维护长为 n 的初始全 0 数组，支持 m 次操作：将区间 [L, R] 内 0/1 反转，或单点查询下标 i 的当前值。
+// 数据范围：1 <= n <= 10^5，1 <= m <= 5*10^5，L <= R。
 #include <bits/stdc++.h>
 using namespace std;
 

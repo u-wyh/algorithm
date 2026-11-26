@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1069
+// 题意：有 N 种候选细胞，只选一种并从 1 个开始。
+// 选第 i 种后，每秒数量乘 S[i]。
+// 试管数是 m1 的 m2 次方，求最早何时能把全部细胞整除均分到这些试管，做不到输出 -1。
+// 数据范围：1 ≤ N,m2 ≤ 10000，1 ≤ m1 ≤ 30000，1 ≤ S[i] ≤ 2 × 10^9。
+
 #include<bits/stdc++.h>
 using namespace std;
 

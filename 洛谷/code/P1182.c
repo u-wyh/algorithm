@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1182
+// 题意：给 N 个数，把数组切成恰好 M 个连续非空段。对每种切法找出段和最大的那一段，求这个最大段和能降到多少。
+// 数据范围：1 ≤ M ≤ N ≤ 10^5，0 ≤ A[i] < 10^8，答案不超过 10^9。
+
 #include<stdio.h>
 #include<limits.h>
 

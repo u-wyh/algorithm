@@ -1,4 +1,12 @@
 // https://www.luogu.com.cn/problem/P10604
+// 题意：
+// 给定 n 个结点（根为 1）的带边权树和整数 k。
+// 对每个结点，考虑它到树中其他点的距离。
+// 输出共 n 行，第 i 行表示从结点 i 出发的第 k 小距离。
+// 数据范围：
+// 1 <= n <= 15000
+// 1 <= k <= 5000
+// 1 <= w <= 10（边权）
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e4+5;

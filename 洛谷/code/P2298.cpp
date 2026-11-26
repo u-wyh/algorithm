@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2298
+// 题意：n*m 网格（m 起点，d 终点，# 障碍，. 空地），每步上下左右移动一格。
+// 求从起点到终点的最少步数，无解输出 No Way!。
+// 数据范围：3 <= n, m <= 2000。
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 2005

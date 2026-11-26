@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4134
+// 题意：输入一行两个整数 a 和 b，集合为闭区间 [a, b] 内的全部整数。
+// 若两数 x > y 满足 x^2 - y^2 = z^2（z 为正整数）且 gcd(y, z) = 1，则可同时消除 x, y 并获得 x + y 分。
+// 输出两个整数：最多可消除的数对数，以及在消除对数最多的前提下能得到的最大总分。
+// 数据范围：1 <= a, b <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

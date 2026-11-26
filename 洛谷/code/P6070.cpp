@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P6070
+// 题意：给定 n x n 矩阵（初始有 m 个非零位置 (x, y, z)，其余为 0），每次操作可将任意 k x k 连续子矩阵全加 1 或全减 1
+// 求将矩阵全变为 0 的最少操作次数（无解输出 -1）。
+// 数据范围：1 <= n <= 5 * 10^3，1 <= m <= min(n^2, 5 * 10^5)，1 <= k <= min(n, 10^3)
+// 1 <= x, y <= n（互不重复），1 <= |z| <= 10^9（有解时答案 <= 2^63 - 1）。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

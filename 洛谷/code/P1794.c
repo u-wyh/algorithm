@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1794
+// 题意：给定体积上限 V、重量上限 G 以及 N 件装备的火力、体积和重量。每件最多选一次，在两项总开销均不超限时求最大总火力。
+// 数据范围：1 ≤ V,G,N ≤ 500，1 ≤ T_i,V_i,G_i ≤ 10^9。
+
 #include<stdio.h>
 
 int max(int a,int b)

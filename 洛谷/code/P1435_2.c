@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1435
+// 题意：输入一个区分大小写的字符串。
+// 每次可在任意位置插入一个字符，使其最终变成回文串。
+// 输出变成回文串所需插入的最少字符数。
+// 数据范围：
+// 0 < l <= 1000（字符串长度）
 #include <stdio.h>
 #include <string.h>
 #include <limits.h> // 用于INT_MAX

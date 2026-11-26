@@ -1,4 +1,13 @@
 // https://www.luogu.com.cn/problem/P7453
+// 题意：维护长为 n 的三元组序列 (A_i, B_i, C_i)，支持 m 次区间操作（均对 998244353 取模）：
+// 操作 1 l r：区间 [l, r] 内令 A_i += B_i。
+// 操作 2 l r：区间 [l, r] 内令 B_i += C_i。
+// 操作 3 l r：区间 [l, r] 内令 C_i += A_i。
+// 操作 4 l r v：区间 [l, r] 内令 A_i += v。
+// 操作 5 l r v：区间 [l, r] 内令 B_i *= v。
+// 操作 6 l r v：区间 [l, r] 内令 C_i = v。
+// 操作 7 l r：查询区间 [l, r] 内 A_i, B_i, C_i 各自之和并输出。
+// 数据范围：1 <= n, m <= 2.5*10^5，0 <= A_i, B_i, C_i, v < 998244353。
 #include <bits/stdc++.h>
 #define mod 998244353
 #define N 250005

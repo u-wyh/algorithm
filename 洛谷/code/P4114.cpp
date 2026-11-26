@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P4114
+// 题意：第一行输入点数 n，接下来 n-1 行输入树边 (u, v) 及权值 w；
+// 随后若干行操作：CHANGE x t 将第 x 条边权改为 t；
+// QUERY a b 查询 a 到 b 路径最大边权（a=b 时输出 0）；
+// DONE 结束输入。
+// 对每个 QUERY 输出一行结果。
+// 数据范围：1 <= n <= 10^5，1 <= u, v, a, b <= n，1 <= x < n，1 <= w, t <= 2^31 - 1
+// 操作次数不大于 3*10^5。
 //P4114
 #include<bits/stdc++.h>
 using namespace std;

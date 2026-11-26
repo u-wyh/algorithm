@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5025
+// 题意：直线上有 n 个炸弹，坐标 x_i 严格递增、爆炸半径 r_i，引爆 i 会连锁引爆所有满足 |x_j - x_i| <= r_i 的炸弹 j；
+// 求 sum_{i=1}^n (i * 先引爆 i 能引爆的炸弹总数) 模 10^9+7。
+// 数据范围：1 <= n <= 500000，-10^18 <= x_i <= 10^18，0 <= r_i <= 2*10^18。
 #include <bits/stdc++.h>
 using namespace std;
 

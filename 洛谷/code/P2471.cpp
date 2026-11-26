@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2471
+// 题意：已知 n 个年份的降雨量（按年份升序），共 m 次询问 Y X (Y < X)。
+// 判断 X 年是否为自 Y 年以来降雨量最多的（r_X <= r_Y 且中间年份均 < r_X）。
+// 对每次询问输出 true、false 或 maybe。
+// 数据范围：1 <= n <= 50000，1 <= m <= 10000，|y_i|, |X|, |Y| <= 10^9，1 <= r_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100005;

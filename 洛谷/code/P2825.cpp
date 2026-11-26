@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2825
+// 题意：n*m 网格（* 空地可放炸弹且穿透，x 软石头不可放但穿透，# 硬石头不可放且阻挡）。
+// 炸弹攻击所在行和列，求最多能放置多少个互不炸到的炸弹。
+// 输出最多炸弹数。
+// 数据范围：1 <= n, m <= 50。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 55;

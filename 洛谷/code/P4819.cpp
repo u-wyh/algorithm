@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4819
+// 题意：N 人中等概率藏有 1 名杀手，给定 M 条单向认识关系，查平民可知其认识所有人的身份、查杀手则失败，求最优策略下安全找出杀手的最大概率（保留 6 位小数）。
+// 数据范围：1 <= N <= 10^5，0 <= M <= 3*10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

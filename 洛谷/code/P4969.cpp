@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4969
+// 题意：给定长为 n 的题目难度数组 hard 和阈值 Talent
+// 支持 m 次操作：单点 hard_i = max(hard_i - d, 1)、单点 hard_i = hard_i * d、单点 hard_i = d
+// 以及查询区间 [a, b]（不保证 a <= b）内 hard <= Talent 的题目个数乘以 600。
+// 数据范围：0 <= n, m <= 5 * 10^5，所有输入在 [0, 2^31 - 1] 内，运算中间结果可能超出 [0, 2^63 - 1]。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

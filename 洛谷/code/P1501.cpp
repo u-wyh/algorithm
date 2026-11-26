@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P1501
+// 题意：维护一棵树，点权初始全是 1。
+// + u v c 给路径上的点权全加 c，星号操作全乘 c，减号操作删一条边再加一条新边，斜线操作查询路径点权总和并对 51061 取模。
+// 数据范围：1 ≤ n,q ≤ 10^5，0 ≤ c ≤ 10000，每次换边后保证仍是一棵树。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

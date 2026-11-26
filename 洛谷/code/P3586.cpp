@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3586
+// 题意：初始有长度为 n 的全 0 序列，输入 n 和操作数 m，以及 m 个操作。
+// U k a 将第 k 个数改为 a；Z c s 询问能否独立地进行 s 次「选 c 个正数各减 1」的操作。
+// 对每个 Z 询问输出一行 TAK 或 NIE。
+// 数据范围：1 <= n, m <= 10^6，1 <= k, c <= n，0 <= a <= 10^9，1 <= s <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

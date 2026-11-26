@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5494
+// 题意：维护若干可重集（初始只有 1 号可重集含 1..n 的若干个），支持区间值分裂到新集合、合并清空、批量插入、区间计数和查询第 k 小。
+// 输入 n, m、初始计数及 m 次操作；依次输出每个查询（opt=3, 4）的答案（第 k 小不存在输出 -1）。
+// 数据范围：1 <= n, k <= 2*10^5，1 <= x, y, q <= m <= 2*10^5，a_i <= m。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

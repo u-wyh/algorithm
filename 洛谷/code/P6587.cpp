@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6587
+// 题意：维护长为 n 的序列 a，强制在线进行 m 次操作：1 x y v 将所有满足 i ≡ y (mod 2^x) 的 a_i 加 v；
+// 2 x y 询问满足 i ≡ y (mod 2^x) 的所有 a_i 之和。
+// 数据范围：1 <= n, m <= 2*10^5，0 <= a_i, y, v, op' < 10^7，0 <= x <= 20，0 <= y < 2^x。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e6+5;

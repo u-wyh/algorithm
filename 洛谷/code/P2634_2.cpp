@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2634
+// 题意：n 个点的带权树，两人各自随机选一个点（可重复）。
+// 若两点间路径边权和为 3 的倍数则获胜，求获胜概率。
+// 输出最简分数 a/b（概率为 1 输出 1/1）。
+// 数据范围：n <= 2*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e4+5;

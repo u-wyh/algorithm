@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10488
+// 题意：给 1 到 n 的一个排列。每次可抽出一段连续的书，再保持这段的内部顺序插到别处。求排成 1 到 n 的最少操作次数，至少 5 次就输出 5 or more。
+// 数据范围：1 ≤ T ≤ 3，1 ≤ n ≤ 15。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 17;

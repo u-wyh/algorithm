@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4404
+// 题意：初始为空、容量为 M 的缓存依次处理 N 个主存块访问请求，缓存满且未命中时可任选一块换出，求最少的 Cache 缺失次数。
+// 数据范围：1 <= M <= N <= 10^5，主存块编号为不超过 10^9 的正整数。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

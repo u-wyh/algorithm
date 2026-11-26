@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P9823
+// 题意：给定 n, k，求有多少个 1..n 的排列 a_1..a_n 满足：对所有 k < i <= n
+// 均有 a_i > min{a_{i-k}, ..., a_{i-1}}。
+// 结果对 998244353 取模。
+// 题意：一行输入 n, k；输出一行一个整数。
+// 数据范围：1 <= k <= 10^7，1 <= n <= 10^7。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

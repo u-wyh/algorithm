@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4124
+// 题意：输入一行两个 11 位正整数 L 和 R。
+// 统计区间 [L, R] 内同时满足以下两个条件的 11 位手机号数量：出现至少 3 个相邻相同数字；且不同时包含数字 8 和 4。
+// 输出一行一个整数表示数量。
+// 数据范围：10^10 <= L <= R < 10^11。
 #include<bits/stdc++.h>
 using namespace std;
 

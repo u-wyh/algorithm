@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4168
+// 题意：给一个长度为 n 的序列 a，共 m 次在线询问（通过上次答案解密区间端点），求每次给定区间 [l, r] 内出现次数最多的数
+// 若次数相同则输出编号最小的那个。
+// 数据范围：1 <= n <= 40000，1 <= m <= 50000，1 <= a_i <= 1e9，1 <= l_0, r_0 <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 4e4+5;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2272
+// 题意：给定 N 个点 M 条边的有向图（无重边），若子图任意两点 u, v 满足 u->v 或 v->u 则称半连通。
+// 求最大半连通导出子图的点数 K，以及不同最大半连通子图的个数 C。
+// 第一行输出 K，第二行输出 C mod X。
+// 数据范围：N <= 10^5，M <= 10^6，X <= 10^8。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

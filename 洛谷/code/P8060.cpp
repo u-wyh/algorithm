@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P8060
+// 题意：给定长为 n 的严格递增正整数集合 A = {a_1, ..., a_n}。
+// 定义 A' 为所有可表示为 A 中若干元素（可重复，0 个元素之和为 0）之和的非负整数集合。
+// 给出 k 个询问 b_1..b_k，判断每个 b_i 是否属于 A'。
+// 输入 n 及 n 行 a_i，再输入 k 及 k 行 b_i。
+// 输出 k 行，属于输出 TAK，否则输出 NIE。
+// 数据范围：1 <= n <= 5*10^3，1 <= k <= 10^4，1 <= a_1 < a_2 < ... < a_n <= 5*10^4
+// 0 <= b_i <= 10^9。
 #include<bits/stdc++.h>
 #define int long long //记得开long long
 using namespace std;

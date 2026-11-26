@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P1363
+// 题意：给一个无限平铺的迷宫，由同一张 N×M 地图重复组成。
+// 从 S 出发可上下左右走，点号和 S 可走，井号为墙。
+// 判断能否走到离起点任意远的地方。
+// 每组输出 Yes 或 No。
+// 数据范围：1 ≤ N,M ≤ 1500，每个测试点至多 10 组。
+
 #include<iostream>
 #include<cstdio>
 #include<cstring>

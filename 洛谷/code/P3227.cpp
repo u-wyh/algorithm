@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3227
+// 题意：输入长方体点阵尺寸 P, Q, R、光滑度限制 D，以及每个点 (x, y, z) 的非负不和谐值 v(x, y, z)。
+// 需为每个平面坐标 (x, y) 选择一个切割高度 f(x, y) ∈ [1, R]，使得四相邻位置切割高度差的绝对值均 <= D。
+// 输出所有合法切面中总不和谐值 ∑v(x, y, f(x, y)) 的最小值。
+// 数据范围：1 <= P, Q, R <= 40，0 <= D <= R，0 <= v(x, y, z) <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 45;

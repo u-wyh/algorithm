@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4082
+// 题意：第一行输入谷仓行数 N、列数 M 和询问数 Q；接下来 N 行字符网格表示谷仓（'.' 空地，'#' 干草，'A' Bessie 起点，'B' 木箱起点）。
+// Bessie 只能走空地且不能与木箱重合，往木箱方向移动可将其沿该方向推动一格（前提是木箱前方不是干草或越界）；接下来 Q 行询问坐标 (R, C)。
+// 输出 Q 行，每行输出 YES 或 NO 表示 Bessie 能否把木箱推到 (R, C)。
+// 数据范围：1 <= N, M <= 1500，1 <= Q <= 50000。
 #include <bits/stdc++.h>
 
 using namespace std;

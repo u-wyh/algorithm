@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4544
+// 题意：从 X=0 走到 X=E 的数轴上有 N 家商店（位置 X_i，库存 F_i，单价 C_i），车上载重 X 吨每走 1 公里花费 X^2 元
+// 求买够 K 吨饲料并运到终点的最小总花费。
+// 数据范围：1 <= K <= 10000，1 <= E <= 500，1 <= N <= 500，0 < X_i < E
+// 1 <= F_i <= 10000，1 <= C_i <= 10^7。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

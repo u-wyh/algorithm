@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5076
+// 题意：维护初始为空的互异整数集合
+// 支持 q 次操作：查 x 排名、查第 x 小、查 x 前驱（无则 -2147483647）、查 x 后继（无则 2147483647）、插入不在集合中的 x。
+// 数据范围：q <= 10^4，所有数绝对值在 10^9 以内。
 #include<bits/stdc++.h>
 using namespace std;
 #define MAXN 100010

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P3906
+// 题意：给定一个 n 个点 m 条边的无向连通简单图（边权均为 1）以及 k 个点对 (v, u)。
+// 对每对 (v, u)，按编号升序输出所有位于 v 到 u 的至少一条最短路径上的顶点集合 I(v, u)。
+// 数据范围：1 <= n <= 40，1 <= m, k <= n(n-1)/2。
 #include<bits/stdc++.h>
 using namespace std;
 

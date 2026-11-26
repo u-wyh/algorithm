@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10535
+// 题意：有 n 类、共 2n 种接口，只有 i 和 n+i 能相扣。
+// 给 m 种可重复购买的双向线，每种给两端接口和价格。
+// 求把接口 S 和 T 的电器连通的最低费用，无解输出 I have no idea how to solve it.。
+// 数据范围：1 ≤ n,m ≤ 10^5，接口编号在 [1,2n]，1 ≤ w[i] ≤ 10^9。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

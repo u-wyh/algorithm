@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P2087
+// 题意：有 n 个人和 m 个房间，初始所有人都在 1 号房间，共 q 次操作。
+// C i j：让第 i 个人去房间 j。
+// W l r：让闭区间 [l,r] 的房间做实验，获得房间内人数的点数。
+// 若这整群人（同一个人员集合，不限房间）此前已一起做过实验，则本次不增加点数。
+// 按顺序输出每次 W 操作获得的点数。
+// 数据范围：n, m, q <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

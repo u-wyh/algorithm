@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P8806
+// 题意：输入 n 和 n 块砖的重量与价值 (w_i, v_i)；
+// 从中选出若干块从下到上叠成一座塔，要求每块砖上方所有砖块的总重量不超过它自身的价值 v_i，输出能叠出的最大砖块总价值。
+// 数据范围：1 <= n <= 1000，1 <= w_i <= 20，1 <= v_i <= 20000。
 #include<bits/stdc++.h>
 using namespace std;
 

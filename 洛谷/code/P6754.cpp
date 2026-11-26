@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6754
+// 题意：若十进制数字串存在长度大于 1 的回文子串则称为回文串，否则称为非回文串；给定 a, b，求区间 [a, b] 内非回文数的个数。
+// 数据范围：0 <= a <= b <= 10^18。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

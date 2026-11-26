@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3354
+// 题意：输入村庄数 n（编号 1..n，根 0 号为已有大伐木场的下游终点）和可新建伐木场数 k。
+// 依次输入 1..n 号村的木料产量 w_i、下游父亲 v_i、到 v_i 的距离 d_i。
+// 选定 k 个村子建伐木场，木料顺流在碰到的首个伐木场处理，运费为产量×距离，输出最小总运费。
+// 数据范围：2 <= n <= 100，1 <= k <= min(n, 50)，0 <= v_i <= n，0 <= w_i <= 10^4
+// 1 <= d_i <= 10^4，全部木料流到 0 的总运费 <= 2*10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P9460
+// 题意：给定长度为 n 的序列 a。
+// 可以进行 k 次修改操作，每次把序列 b（初始为 a）的任意一个元素改为任意整数。
+// 序列的众数定义为出现次数最大的所有整数（可多个并列）。
+// 求有多少个不同的整数有可能成为修改后序列 b 的众数；
+// 若无穷多输出 pigstd。
+// 题意：第一行输入 n, k，第二行输入 a_1..a_n；输出一个整数或 pigstd。
+// 数据范围：1 <= n <= 10^6，0 <= k <= n，1 <= a_i <= n。
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

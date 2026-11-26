@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P4135
+// 题意：强制在线。
+// 第一行输入长度 n、值域上界 c 和询问数 m；
+// 第二行输入数列 a_1..a_n；
+// 接下来 m 行每行输入加密的 L, R（由上一问答案 ans 解密得 [l, r]）。
+// 每次询问区间 [l, r] 中出现正偶数次的数的种类数。
+// 输出 m 行，每行一个整数表示答案。
+// 数据范围：1 <= n, c, m <= 10^5，1 <= a_i <= c，1 <= l, r <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

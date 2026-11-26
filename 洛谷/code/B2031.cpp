@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B2031
+// 题意：给三角形的三个顶点坐标 (x1, y1)、(x2, y2)、(x3, y3)，输出三角形面积，保留两位小数。
+// 数据范围：每个坐标的绝对值不超过 100，最多一位小数。
+
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P16826
+// 题意：树上动态把某方向的连通子树（灾区）拍平连向根 v，并查询点最远距离。
+// 输入：首行 n，后 n-1 行带权边 (a, b, l)，再 q 及 q 行事件。
+// 规则：op=1 灾区为从 u 经 v 可达之点，删灾区内部边并将除 v 外点直连 v（权为原到 v 距）。
+// 规则：op=2 查询当前图中点 s 到其他点简单路径长度的最大值。
+// 输出：对每次 op=2 输出一行整数表示最长距离。
+// 数据范围：1 <= n, q <= 5*10^5，1 <= a, b, u, v, s <= n，u != v，0 <= l < 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

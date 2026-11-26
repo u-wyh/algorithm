@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3747
+// 题意：输入数组长度 n、操作数 m、模数 p、底数 c，初始数组 a_1..a_n，以及 m 个操作。
+// 操作 0 l r：将区间 [l, r] 内每个 a_i 替换为 c^(a_i)；操作 1 l r：查询区间 [l, r] 元素之和模 p 的值。
+// 对每个 1 操作输出一行答案（mod p）。
+// 数据范围：1 <= n, m <= 5*10^4，1 <= p <= 10^8，0 < c < p，0 <= a_i < p。
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

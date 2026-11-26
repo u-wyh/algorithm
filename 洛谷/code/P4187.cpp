@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4187
+// 题意：有 M 种颜色、长度为 K 的图章，每次可把长为 N 的画布中一段长为 K 的连续区间染成同色（后染覆盖先染），要求最终整个画布都被染满
+// 求共有多少种不同的最终状态（对 1e9+7 取模）。
+// 数据范围：N, M, K <= 1e6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

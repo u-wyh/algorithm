@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3224
+// 题意：输入岛屿数 n、初始桥数 m、各岛屿互异的重要度排名 p_1..p_n，以及 q 次操作。
+// 操作 'B x y' 表示在岛 x 与 y 之间修桥合并连通块；
+// 操作 'Q x k' 表示查询当前与 x 连通的所有岛屿中重要度第 k 小的岛屿编号（不存在输出 -1）。
+// 对每个 'Q' 操作输出一行答案岛屿编号。
+// 数据范围：1 <= m <= n <= 10^5，1 <= q <= 3*10^5，p 为 1..n 的排列。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

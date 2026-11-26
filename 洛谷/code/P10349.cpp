@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10349
+// 题意：有 n 只蚂蚁，第 i 只位于数轴坐标 i。它们同时按初始方向以单位速度出发，两只相撞就各自掉头。按编号输出每只蚂蚁最终的碰撞次数。
+// 数据范围：1 ≤ n ≤ 3 × 10^5，方向串长为 n，L 表示左、P 表示右。
+
 #include<iostream>
 using namespace std;
 int n,lans,rans,l[300001],r[300001];

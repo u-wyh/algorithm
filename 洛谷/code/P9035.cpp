@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P9035
+// 题意：T 组数据，求长度为 n 的正整数序列 a 的个数
+// 满足 0 < a_1 <= a_2 <= ... <= a_n <= k 且对任意 i != j 有 a_i + a_j <= k + 1
+// 答案对 10^9+7 取模。
+// 数据范围：1 <= T <= 2*10^5，1 <= n, k <= 10^7。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

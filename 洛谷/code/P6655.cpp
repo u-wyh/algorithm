@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6655
+// 题意：一棵 n 个节点、根为 1 的树，点 i 权值为 h_i，节点 i(>=2) 的父亲可在 [l_i, r_i] 内任取；
+// 若 1 为制高点，且父节点为制高点并满足 h_v >= h_u 时子节点 v 也为制高点，求所有可能树形态下制高点总数之和对 998244353 取模。
+// 数据范围：n <= 10^5，h_i 为 int 范围内的非负整数（0 <= h_i <= 2^31 - 1），1 <= l_i <= r_i < i。
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;

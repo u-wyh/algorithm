@@ -1,4 +1,12 @@
 // https://www.luogu.com.cn/problem/P1608
+// 题意：输入 N 个点、E 条单向边（可能有重边，无自环），每条边权为 C。
+// 求从 1 号点到 N 号点的最短路径花费，以及经过点序列不同的最短路条数。
+// 输出最短花费与方案总数；若无法到达输出 No answer。
+// 数据范围：
+// 1 <= N <= 2000（点数）
+// 0 <= E <= N*(N-1)（边数，1 <= I, J <= N 且 I != J）
+// 1 <= C <= 10（边权）
+// 最短路总数不超过 2^30
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2005;

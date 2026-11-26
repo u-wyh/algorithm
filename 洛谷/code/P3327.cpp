@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3327
+// 题意：多组询问，第一行输入组数 T，每组给出两个整数 n、m。
+// 设 d(x) 为 x 的约数个数，求 sum_{i=1..n} sum_{j=1..m} d(i*j)。
+// 对每组输出一行答案。
+// 数据范围：1 <= T, n, m <= 50000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

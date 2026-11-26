@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5667
+// 题意：给定不超过 n 次的多项式在 0, 1, ..., n 处的点值 f(0)..f(n) 和正整数 m
+// 求该多项式在 m, m+1, ..., m+n 处的点值对 998244353 取模。
+// 输入 n, m 及 n+1 个点值；输出一行 n+1 个整数表示结果。
+// 数据范围：1 <= n <= 160000，n < m <= 10^8，0 <= f(i) < 998244353。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

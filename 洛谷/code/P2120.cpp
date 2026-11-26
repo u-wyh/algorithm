@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P2120
+// 题意：有 n 个工厂从山顶(1)到山脚(n)分布，第 i 个工厂距山顶 x_i，有成品 p_i 件，建仓费用 c_i。
+// 没建仓的工厂产品只能运往编号更大的仓库，每件每单位距离运费为 1。
+// 求建仓与运输总费用的最小值。
+// 数据范围：1 <= n <= 10^6，0 <= x_i, p_i, c_i < 2^31，x_i < x_{i+1}。
+// 保证 ans + sum(p_i * x_i) < 2^63。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 55;

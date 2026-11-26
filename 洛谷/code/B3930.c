@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B3930
+// 题意：有 N 种食材，每种给出美味度 a[i]。挑两个不同的编号，输出它们的美味度按位与的最大值。
+// 数据范围：N ≤ 10^6，0 ≤ a[i] ≤ 2147483647。
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h> // 为了使用INT_MAX

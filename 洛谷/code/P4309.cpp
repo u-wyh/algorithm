@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4309
+// 题意：序列初始为空，依次把数字 1 到 N 插入序列，第 k 步把数字 k 插入到下标 X_k 之后（0 <= X_k <= k-1）
+// 求每次插入后当前序列的最长上升子序列（LIS）长度。
+// 数据范围：N <= 1e5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

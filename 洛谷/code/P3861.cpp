@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3861
+// 题意：第一行输入数据组数 T，接下来 T 行每行输入一个整数 n。
+// 求将 n 分解为若干个互不相同且不小于 2 的正整数乘积的方案数（不计乘数顺序）。
+// 每组输出一行整数，结果模 998244353。
+// 数据范围：对于 100% 的数据，1 <= T <= 5，2 <= n <= 10^12。
 #include<bits/stdc++.h>
 using namespace std;
 const int MOD = 998244353;

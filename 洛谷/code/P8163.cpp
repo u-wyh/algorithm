@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P8163
+// 题意：直线铁轨上有 N 个站（1..N），M 条列车线路各从 A_j 开往 B_j（沿途每站停靠），但只允许在线路起点起前 K 站内（含起点）上车
+// 即 A_j<B_j 时可在 [A_j, min(A_j+K-1, B_j-1)] 上车
+// A_j>B_j 时可在 [max(A_j-K+1, B_j+1), A_j] 上车。
+// Q 次询问从 S_k 到 T_k 的最少乘车次数，无法到达输出 -1。
+// 数据范围：100% 数据满足 2 <= N <= 10^5，1 <= K <= N-1，1 <= M <= 2*10^5，1 <= Q <= 5*10^4
+// 1 <= A_j, B_j, S_k, T_k <= N，A_j != B_j，S_k != T_k，线路和询问各自互不相同。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

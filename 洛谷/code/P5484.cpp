@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5484
+// 题意：给定长度为 n 的串 S 和长度为 m 的串 T（字符为 A/C/G/T，A-T、C-G 配对）
+// 求往 T 的任意位置补足碱基使其与 S 等长且完全配对的方案数。
+// 输入 n, m 及串 S, T；输出合法补全方案数。
+// 数据范围：n <= 2000，m <= n，字符仅含 A, C, G, T。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

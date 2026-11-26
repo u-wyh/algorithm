@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6092
+// 题意：N 天内收到 M 个任务（第 i 个任务在第 S_i 天到达，第 N-D 天后无任务），每台机器每天只能做 1 个任务，每个任务最多推迟 D 天完成
+// 求完成全部任务至少需要多少台机器。
+// 数据范围：1 <= N <= 10^5，0 <= D < N，1 <= M < 10^6。
 #include<stdio.h>
 #include<limits.h>
 #include<stdlib.h>

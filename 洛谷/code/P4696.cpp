@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4696
+// 题意：给定 1~n 排列 p 和长为 m 且元素互异的序列 h，找出 h 中所有长为 n 且从小到大排序后原下标顺序等于 p 的子串起始位置。
+// 数据范围：2 <= n <= m <= 10^6，1 <= h_i <= 10^9（互不相同），1 <= p_i <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

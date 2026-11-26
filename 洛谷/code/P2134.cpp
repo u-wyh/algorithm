@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2134
+// 题意：共有 n 天假期，连续 x 天旅游花费 p*x*x 元，连续 x 天不旅游花费 q*x 元。
+// 求度过这 n 天假期的最少花费。
+// 输出最少花费。
+// 数据范围：1 <= n <= 2*10^5，1 <= p <= q <= 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P7777
+// 题意：T 组数据，共 n 堆石子（1..n），每次可花 i*p 取第 i 堆或花 |i-j|*q 取第 i, j 两堆，求取完所有石子的最小总代价。
+// 数据范围：1 <= T <= 10^6，1 <= n <= 10^9，0 <= p, q <= 100。
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

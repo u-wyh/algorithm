@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P3220
+// 题意：输入数字个数 N、二进制位数上限 K、区间 [L, R]，以及 N 个非负整数 A_1..A_N。
+// 在 K 位无符号二进制按位 NAND（与非
+// 真值表 0 NAND 0=1, 0 NAND 1=1, 1 NAND 0=1, 1 NAND 1=0）运算及括号下
+// 每个 A_i 可使用任意次（也可直接取原值），统计在 [L, R] 内能构造出的不同整数个数。
+// 输出满足条件的不同整数个数。
+// 数据范围：K <= 60，N <= 1000，0 <= A_i <= 2^K - 1，0 <= L <= R <= 10^18。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

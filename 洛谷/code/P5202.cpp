@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5202
+// 题意：给定长为 n、只含字符 H 和 G 的字符串，将其划分为若干个长度在 [1, k] 之间的连续区间。
+// 求划分后满足「G 的数量不少于 H 的数量」的区间的最小可能个数。
+// 数据范围：1 <= k <= n <= 3*10^5，字符串长度为 n 且只含 H 和 G。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

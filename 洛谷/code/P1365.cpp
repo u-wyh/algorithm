@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1365
+// 题意：给一串点击结果，o 是成功，x 是失败，每个问号独立等概率变为 o 或 x。每段极大的连续成功长度为 a，就得 a² 分。求总分期望，四舍五入保留四位小数。
+// 数据范围：n ≤ 3 × 10^5，字符串只由 o、x 和问号组成。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

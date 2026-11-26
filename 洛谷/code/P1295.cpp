@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P1295
+// 题意：给定长度为 n 的正整数序列 h，将其划分为若干连续段。
+// 题意：要求每段内元素之和均不超过 m，最小化各段最大值之和。
+// 输入：第一行输入 n, m，接下来 n 行每行输入一个整数 h_i。
+// 输出：一行输出一个整数表示各段最大值的最小总和。
+// 数据范围：1 <= n <= 10^5，1 <= h_i <= 10^9。
+// 数据范围：max(h_i) <= m <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2590
+// 题意：n 个节点的树，点权 w_i，共 q 次操作。
+// CHANGE u t：改点 u 权值为 t；QMAX u v / QSUM u v：查 u 到 v 路径最大点权/点权和。
+// 对每次查询输出一行整数。
+// 数据范围：1 <= n <= 3*10^4，0 <= q <= 2*10^5，-3*10^4 <= w <= 3*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

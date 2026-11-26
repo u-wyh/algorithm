@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3346
+// 题意：输入树点数 n、颜色数 c，各点颜色（0 到 c-1）以及 n-1 条树边。
+// 任意选定有序点对 (A, B)（A、B 可相同），从 A 到 B 简单路径上的颜色顺次组成一个字符串。
+// 求所有路径能形成多少种不同的颜色序列。
+// 数据范围：1 <= n <= 10^5，1 <= c <= 10，度数为 1 的空地（叶子）不超过 20 个。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2341
+// 题意：有 N 头牛和 M 条单向喜欢关系 A->B（具有传递性和自反性）。
+// 求被所有牛都喜欢的明星奶牛数量。
+// 输出明星奶牛数量。
+// 数据范围：1 <= N <= 10^4，1 <= M <= 5*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

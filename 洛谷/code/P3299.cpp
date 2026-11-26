@@ -1,4 +1,13 @@
 // https://www.luogu.com.cn/problem/P3299
+// 题意：
+// 共有 n 关，给定关数 n、僵尸间距 d，及每关参数 A_i, X_i。
+// 第 i 关队列共有 i 只僵尸，第 1 只血量 A_i 距房 X_i，其余依次隔 d 米排后。
+// 所有僵尸速度为 1m/s 同时前进，植物仅攻击最前活僵尸（子弹飞行耗时为 0）。
+// 每关需选最小攻击力 y_i 使没有任何僵尸能到达房子。
+// 输出 n 关最小攻击力之和，四舍五入到个位整数。
+// 数据范围：
+// 1 <= n <= 10^5
+// 1 <= d, X_i, A_i <= 10^{12}
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

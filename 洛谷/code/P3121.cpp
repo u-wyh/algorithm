@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3121
+// 题意：输入原字符串 s、敏感词数量 n，以及 n 个敏感词 t_1..t_n（互不为子串）。
+// 每次找到 s 中起始位置最靠前的敏感词将其删除（删除后左右拼接可能产生新的敏感词），重复直到不含任何敏感词。
+// 求最终剩余的字符串 s。
+// 输出一行表示处理完成后的字符串 s。
+// 数据范围：1 <= |s|, sum(|t_i|), n <= 10^5，全为小写字母，结果非空。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1774
+// 题意：给定 n 个整数，每次只能交换相邻两项。求把序列排成非降序所需的最少交换次数。
+// 数据范围：1 ≤ n ≤ 5×10^5，元素在 [−2^31,2^31)。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

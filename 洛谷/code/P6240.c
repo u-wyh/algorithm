@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P6240
+// 题意：n 个商店排成一列，第 i 个商店出售热量为 h_i、美味度为 w_i 的小吃（每个商店最多吃一次）。
+// m 次询问在区间 [l_i, r_i] 内选取总热量不超过 t_i 的最大美味度和。
+// 数据范围：1 <= n <= 4*10^4，1 <= m <= 2*10^5，1 <= l_i <= r_i <= n
+// 1 <= h_i, t_i <= 200，1 <= w_i <= 10^7。
 #include<stdio.h>
 
 int max(int a,int b)

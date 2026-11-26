@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4374
+// 题意：一棵 N 个点（原有边权均为 1）的树加上 M 条带权额外无向边，对每条原有树边求其被阻断后能重新连通整棵树的最短额外边长度（不存在输出 -1）。
+// 数据范围：2 <= N <= 50000，1 <= M <= 50000，额外边权为不超过 10^9 的正整数，任意两点间至多一条边。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

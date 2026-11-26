@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2303
+// 题意：给定整数 n，求 sum_{i=1..n} gcd(i, n)。
+// 输出计算结果。
+// 数据范围：1 <= n < 2^32。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

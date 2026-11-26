@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P3884
+// 题意：给出一棵以 1 为根、共 n 个节点的二叉树（输入 n-1 条父子边 u -> v）以及两个节点 x, y。
+// 求该二叉树的深度、宽度（同一层最多节点数）以及从 x 到 y 的距离（最短有向路径上向根节点走的边数的两倍加上向叶节点走的边数）。
+// 数据范围：1 <= u, v, x, y <= n <= 100。
 #include<bits/stdc++.h>
 using namespace std;
 

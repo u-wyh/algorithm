@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5546
+// 题意：给定 n 个仅由小写字母组成的单词，求它们的最长公共子串的长度。
+// 输入 n 及 n 个字符串；输出最长公共子串长度。
+// 数据范围：1 <= n <= 5，每个单词长度在 1 到 2000 之间。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

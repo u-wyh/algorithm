@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P15049
+// 题意：支持加边、回滚历史版本、查询连通块内第 k 小顶点编号。
+// 输入：首行 n, q, g，后 q 行操作：1 v k、2 v u 或 3 x。
+// 规则：1 查 v 所在块第 k 小编号（无则 -1）；2 连边；3 回退到第 x 次操作后。
+// 输出：对每个 1 类操作输出一行查询结果。
+// 数据范围：1 <= n, q <= 5*10^5，0 <= g <= 9。
+// 数据范围：1 <= v, u, k <= n，0 <= x < i（i 为当前操作编号）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

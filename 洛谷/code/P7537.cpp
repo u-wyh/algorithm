@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7537
+// 题意：定义两串 A, B 押韵当且仅当最长公共后缀长度 >= max(|A|, |B|) - 1；
+// 给定 N 个互不相同的小写字母串，求最长字符串序列长度使相邻两串押韵。
+// 数据范围：1 <= N <= 5*10^5，所有字符串总长度不超过 3*10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

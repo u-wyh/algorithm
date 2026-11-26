@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P12065
+// 题意：二维平面动态维护点集，每次查询离某点最近的 P 个点距离。
+// 输入：首行给 N, Q, K, P，接着 N 个初始点，再给 Q 次操作。
+// 规则：两点距离定义为 (|X1-X2|^K + |Y1-Y2|^K)^(1/K)。
+// 规则：A X Y 加入点 (X, Y)；Q X Y 查询离 (X, Y) 最近的 P 个点。
+// 输出：每次 Q 询问输出升序排列的 P 个距离，精确到小数点后 4 位。
+// 数据范围：N <= 10^5，Q <= 20000（查询次数不超过 5000）。
+// 数据范围：K in {1, 2}，P in {1, 3}，0 <= X_i, Y_i <= 10^7。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

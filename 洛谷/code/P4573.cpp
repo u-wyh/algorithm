@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4573
+// 题意：给定一个没有初始数字、仅在每个 3*3 宫内给出全部 12 对相邻格大小关系（<, >, ^, v）的 9*9 不等号数独，求唯一合法的填数方案。
+// 数据范围：固定为 9*9 数独网格（输入 15 行符号，保证有唯一解）。
 #include<cstdio>
 #include<queue>
 #include<iostream>

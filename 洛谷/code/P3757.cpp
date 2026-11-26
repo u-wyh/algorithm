@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P3757
+// 题意：输入按键数 n 和一个长为 n-1、仅含 '<' 和 '>' 的字符串。
+// 用 1..n 的排列 h_1..h_n 表示按键高度
+// 字符串第 i-1 位（i=2..n）分别约束 h_{floor(i/2)} < h_i 或 h_{floor(i/2)} > h_i
+// 求满足所有高度关系的排列总数。
+// 输出方案数对 10^9+7 取模的结果。
+// 数据范围：由说明/提示图片（5095.png）知 100% 数据满足 n <= 100。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

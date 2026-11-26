@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2279
+// 题意：给定一棵 n 个节点的树，每个消防局可覆盖距离不超过 2 的所有节点。
+// 求覆盖整棵树至少需要设立多少个消防局。
+// 输出最少消防局数。
+// 数据范围：1 <= n <= 1000。
 #include <iostream>
 #include <algorithm>
 using namespace std;

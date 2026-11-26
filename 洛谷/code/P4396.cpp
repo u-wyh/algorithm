@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4396
+// 题意：给定长度为 n 的正整数序列和 m 次询问 (l, r, a, b)，每次统计区间 [l, r] 中值在 [a, b] 内的元素个数以及出现过的不同数值个数。
+// 数据范围：n, m <= 100000，读入数字均为 [1, 10^5] 内的正整数。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8082
+// 题意：给定无前导 0 的 N 位正整数，从中删除恰好 K 位数字（其余数字保持原有相对顺序），求剩下的 N - K 位数的最大值。
+// 第一行输入 N, K，第二行输入该 N 位数。
+// 输出一行表示最大结果。
+// 数据范围：1 <= K < N <= 5*10^5。
 #include <stdio.h>
 #include <stdlib.h>
 

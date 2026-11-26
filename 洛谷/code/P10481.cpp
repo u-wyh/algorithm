@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10481
+// 题意：给一个 9×9 数独，0 表示空格。把空格填成 1 到 9，使每行、每列和每个 3×3 宫都恰好包含九个数字各一次。输出任意一个合法解。
+// 数据范围：棋盘固定为 9×9，输入每格是 0 至 9 的整数。
+
 #include<bits/stdc++.h>
 using namespace std;
 struct dlx{

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3656
+// 题意：输入品种数 N，以及马路两侧各自长为 N 的品种排列（均为 1..N 的排列）。
+// 同品种田地之间连线形成过马路路径；现在允许对马路任意一侧的排列进行任意步数的循环移位。
+// 输出循环移位后能得到的最少交叉品种对数。
+// 数据范围：1 <= N <= 100000。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

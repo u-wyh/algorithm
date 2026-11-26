@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1596
+// 题意：给田地地图，W 是水，点号是陆地。两个水格若上下、左右或斜角相邻就连通。数出所有水格组成的连通块数。
+// 数据范围：1 ≤ N,M ≤ 100，每行恰有 M 个地图字符。
+
 #include<stdio.h>
 #define Max 105
 

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7828
+// 题意：长为 n 的序列 a（元素 1..k），定义目标排列（初始 1..k）下的排序代价为按目标排列顺序用最少相邻交换将 a 排序的次数；
+// q 次交换目标排列中相邻位置 b 和 b+1，每次输出当前排序代价。
+// 数据范围：1 <= n, k <= 10^5，1 <= q <= 10^6，1 <= a_i <= k，1 <= b < k。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

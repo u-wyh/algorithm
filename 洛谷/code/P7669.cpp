@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P7669
+// 题意：N 点 M 边无向正权连通图，可任选一条 S 到 T 的最短路买作免费通勤路线，随后需从 U 走到 V（免费边费 0，其余费 C_i）
+// 求 U 到 V 的最小花费。
+// 数据范围：2 <= N <= 10^5，1 <= M <= 2*10^5，1 <= C_i <= 10^9，1 <= S, T, U, V <= N
+// 无重边（1 <= A_i <= B_i <= N）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

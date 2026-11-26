@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4196
+// 题意：逆时针给出 n 个凸多边形的顶点坐标，求它们交集部分的面积（保留 3 位小数）。
+// 数据范围：2 <= n <= 10，3 <= m_i <= 50，每维坐标为 [-1000, 1000] 内的整数。
 #include<bits/stdc++.h>
 using namespace std;
 const double eps = 1e-9;

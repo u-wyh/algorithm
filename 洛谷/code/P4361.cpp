@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4361
+// 题意：平面上有 1 个定向激光发射装置（起点与方向）和 n 条互不相交的激光偏转线段
+// 光线击中线段（不平行且含端点）按出射角 beta = (a/b)*alpha 偏转（beta > pi/2 时可能偏转到另一面）
+// 求依次照射到的偏转装置编号（最多前 10 次，未偏转输出 NONE）。
+// 数据范围：n <= 100，所有坐标及 a, b 的绝对值 <= 1000，a, b 非零，方向向量非零，线段无交点且起点不在任何线段上。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

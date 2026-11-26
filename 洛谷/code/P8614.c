@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P8614
+// 题意：求长度为 n、各项之和为 s、且相邻后项总是比前项增加 a 或减少 b 的整数数列种类数，结果对 100000007 取模。
+// 数据范围：100% 数据满足 1 <= n <= 1000，-10^9 <= s <= 10^9，1 <= a, b <= 10^6。
 #include <stdio.h>
 #define mod 100000007
 typedef long long ll;

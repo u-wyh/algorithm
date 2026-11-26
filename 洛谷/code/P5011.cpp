@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5011
+// 题意：用 k 种动作等概率组成长为 N 的序列，第 i 种动作基础威力为 a[i]，若紧接着出现下一种动作（k 后接 1）会额外加上两者威力之和
+// 求整套动作期望威力模 19491001。
+// 数据范围：1 <= N <= 10^(10^6)，1 <= k <= 10^6，1 <= a[i] <= 10^7。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

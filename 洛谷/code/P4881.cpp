@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4881
+// 题意：T 组询问，每组给整数 n，求 sum_{i=1}^n (i * s[i] * [i mod 2]) mod (10^9 + 7)
+// 其中 s[i] 为长度为 i 的小写字母回文串总数。
+// 数据范围：1 <= T <= 5 * 10^5，1 <= n <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

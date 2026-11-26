@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3590
+// 题意：输入字符串长度 n，以及一个长度为 n、仅包含字符 B、C、S 的字符串。
+// 选出最长的连续子串，要求该子串要么只包含一种字符，要么包含的任意两种出现过的字符数量互不相同。
+// 输出满足条件的最长连续子串长度。
+// 数据范围：1 <= n <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

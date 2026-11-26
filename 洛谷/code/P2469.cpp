@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2469
+// 题意：N 个点 M 条无向边（边权 w_i），从外部出发访问每个点恰好一次。
+// 可花费 A_i 直接跳到点 i，或沿边从编号小的点飞往编号大的点（花费 w_i）。
+// 求访问完所有点的最小总耗时。
+// 数据范围：N <= 800，M <= 1.5*10^4，权值在 [1, 10^6]，无重边自环。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 805;

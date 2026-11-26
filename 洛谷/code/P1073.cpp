@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P1073
+// 题意：从城市 1 出发最终到 n。
+// 途中可以至多买一次水晶球并在之后卖一次，也可以不交易。
+// 允许重过城市，求最大利润。
+// 道路 (x,y,z) 在 z=1 时只允许 x 到 y，z=2 时可双向。
+// 数据范围：1 ≤ n ≤ 10^5，1 ≤ m ≤ 5 × 10^5，1 ≤ x,y ≤ n，z 为 1 或 2，各地价格不超过 100。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

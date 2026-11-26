@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1120
+// 题意：给 n 段小木棍。它们由若干根等长木棍切成，现在要把每一段都用上，拼回若干根相同长度的木棍。求原木棍的最短可能长度。
+// 数据范围：1 ≤ n ≤ 65，1 ≤ a[i] ≤ 50。
+
 #include<bits/stdc++.h>
 using namespace std;
 

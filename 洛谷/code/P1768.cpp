@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1768
+// 题意：给定 N 个景点和 M 条单向路线，每条有趣味值 V_i 和票价 P_i。
+// 找一条不重复使用路线的回路，使总趣味值除以总票价最大。
+// 输出比值并保留一位小数，无回路输出 -1。
+// 数据范围：1 ≤ N ≤ 7000，1 ≤ M ≤ 20000，1 ≤ V_i,P_i ≤ 1000，答案不超过 200，允许平行边。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 7005;

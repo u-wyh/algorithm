@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4397
+// 题意：共 k 组数据，每组给定整数 S，求出所有正约数之和恰好等于 S 的正整数并升序输出（先输出个数 m，m=0 时只输出 0）。
+// 数据范围：k <= 100，S <= 2 * 10^9。
 #include <iostream>
 #include <cstdio>
 #include <cstring>

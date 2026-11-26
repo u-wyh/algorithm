@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7312
+// 题意：N 个矩形按顺序放到屋顶上（左下角 (X_i, Y_i)，长宽 A_i, B_i，边平行坐标轴），后放的会覆盖先放的；
+// 判断每个矩形最终是否完全未被后续矩形覆盖（完全暴露输出 DA，否则 NE）。
+// 数据范围：1 <= N <= 10^5，0 <= X_i, Y_i <= 10^9，1 <= A_i, B_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

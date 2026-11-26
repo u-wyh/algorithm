@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5676
+// 题意：T 组数据，有 N 个游戏（有趣度 w_i、玩后兴奋度变为 e_i），初始兴奋度为 1，只有 w_i 是当前兴奋度整数倍时才能玩，求有多少个游戏可能被玩两次。
+// 输入 T 及每组的 N、序列 w、序列 e；每组输出可能玩两次的游戏数量。
+// 数据范围：1 <= T <= 10，1 <= N <= 100000，1 <= w_i, e_i <= 100000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+1;

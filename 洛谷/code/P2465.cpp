@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2465
+// 题意：n 个节点的树（根为 1），建 p 个分部（可同点），第 i 点建第 j 个分部花费 a_{i,j}。
+// 分部管辖其到根路径上的所有点，另有 t 条组合收益/损失（指定分部同时管辖某点时触发）。
+// 求最大总收益。
+// 数据范围：1 <= p <= 12，1 <= n <= 100，1 <= t <= 2^p，|v|, a_{i,j} <= 10^8。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

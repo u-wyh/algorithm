@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4147
+// 题意：给一个 N 行 M 列的字符矩阵，每个格子是 R 或 F，求全由 F 组成的最大矩形面积 S，并输出 3 * S。
+// 数据范围：1 <= N, M <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3303
+// 题意：输入正整数 N 和采集次数 K，初始在 [1..N]×[1..N] 每个整点各有一块金子。
+// 位于 (i, j) 的金子会移动到 (f(i), f(j))，其中 f(x) 为 x 各位数字之积；落到 [1..N] 范围外的金子被移除。
+// 选择最多 K 个坐标采集，每次取走该坐标全部金子，求最多能采集到的金子总数对 10^9+7 取模。
+// 输出一个整数表示答案。
+// 数据范围：N <= 10^12，K <= min(N^2, 10^5)。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

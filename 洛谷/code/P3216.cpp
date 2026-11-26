@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3216
+// 题意：输入两个正整数 n 和 m。
+// 将 1 到 n 的所有正整数按十进制顺序直接拼接成一个大整数 Concatenate(n)。
+// 输出 Concatenate(n) 对 m 取模的结果。
+// 数据范围：1 <= n <= 10^18，1 <= m <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int unsigned long long

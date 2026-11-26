@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2727
+// 题意：所有长度为 N 的二进制串（允许前导零）中，选出至多有 L 个 1 的串并按数值升序排列。
+// 输出第 i 个二进制串。
+// 数据范围：1 <= N <= 31，0 <= L <= N，保证第 i 个串存在。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

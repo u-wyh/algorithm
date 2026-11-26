@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P8646
+// 题意：输入整数 N 和 N 个正整数 A_1..A_N（每种有无限个），输出有多少个正整数不能由这些数非负整数线性组合凑出；若凑不出的数目有无限多个，输出 INF。
+// 数据范围：1 <= N <= 100，1 <= A_i <= 100。
 #include <stdio.h>
 
 int read() {

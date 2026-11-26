@@ -1,4 +1,12 @@
 // https://www.luogu.com.cn/problem/P10686
+// 题意：
+// 多组测试数据。每组有 N 名小朋友（0..N-1）玩 M 轮猜拳，给出胜负平关系（>, =, <）。
+// 其中恰有 1 名裁判可出任意手势，其余人分属 3 组（可空）且各自只能固定出石头、剪子或布。
+// 唯一确定裁判输出 Player x can be determined to be the judge after y lines（y 为最少轮数）。
+// 若可能裁判多于 1 人输出 Can not determine；若仅有一名裁判也无法成立输出 Impossible。
+// 数据范围：
+// 1 <= N <= 500
+// 0 <= M <= 2000
 #include<bits/stdc++.h>//万能头
 using namespace std;
 const int N=5e6+10;

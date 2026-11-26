@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5505
+// 题意：有 m 种特产（数量已知），分给 n 个同学，要求每个同学至少分到 1 个特产，求总分配方案数对 10^9+7 取模的结果。
+// 输入 n, m 及每种特产的数量；输出总方案数模 10^9+7。
+// 数据范围：1 <= n, m <= 1000，每种特产数量不超过 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

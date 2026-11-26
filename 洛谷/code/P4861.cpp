@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4861
+// 题意：给定 M 和 K，屏幕初始为 1，每按一次按钮乘以 K
+// 求最少按多少次按钮后该数在 M 进制下的个位数再次变为 1（即 K^x ≡ 1 mod M 且 x >= 1）
+// 无解输出 Let's go Blue Jays!。
+// 数据范围：2 <= M, K <= 2 * 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

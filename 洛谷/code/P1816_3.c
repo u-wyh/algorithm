@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1816
+// 题意：给定 m 笔账的金额和 n 次询问。每次给出账目编号 a、b，求闭区间 [a,b] 内的最小金额。所有答案用空格隔开。
+// 数据范围：1 ≤ m,n ≤ 10^5，0 ≤ x_i ≤ 10^5，1 ≤ a ≤ b ≤ m。
+
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1453
+// 题意：给一个连通的单圈无向图，点 i 的人流量为 p[i]。相邻点不能同时开店，每个选中点的利润是 p[i]×k。求最大总利润，保留一位小数。
+// 数据范围：1 ≤ n ≤ 10^5，图有 n 条边，点编号为 [0,n-1]，1 ≤ p[i] ≤ 10000，0 ≤ k ≤ 10000 且至多六位小数。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P7984
+// 题意：有 1..N 共 N 个检查点，K 张票：第 i 张票可在检查点 c_i 花费 p_i 购得
+// 购买后即可进入（且之后随时可回到）区间 [a_i, b_i] 内的所有检查点。
+// 对每个 i = 1..N，若最初仅能进入检查点 i（需先买票才能到达其他检查点），求同时获得进入检查点 1 和 N 的权限所需的最小总价；
+// 无法做到输出 -1。
+// 第一行输入 N, K，接下来 K 行每行 c_i, p_i, a_i, b_i。
+// 输出 N 行每行一个整数。
+// 数据范围：1 <= N, K <= 10^5，1 <= c_i <= N，1 <= p_i <= 10^9，1 <= a_i <= b_i <= N。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

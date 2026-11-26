@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7629
+// 题意：给定 1~N 的排列，每轮将其划分为最少个极长递减子串（slope），将所有长度 > 1 的 slope 反转，直至整体递增；
+// 已知首轮划分每个 slope 长度均为偶数，求总共调用反转操作的次数。
+// 数据范围：2 <= N <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int N=100005;

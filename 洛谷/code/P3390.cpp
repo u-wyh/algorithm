@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3390
+// 题意：输入矩阵阶数 n、幂次 k，以及 n×n 整数矩阵 A。
+// 计算矩阵的 k 次幂 A^k。
+// 输出 n 行 n 列的矩阵，每个元素对 10^9+7 取模。
+// 数据范围：1 <= n <= 100，0 <= k <= 10^12，|A_{i,j}| <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

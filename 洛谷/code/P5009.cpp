@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5009
+// 题意：维护长为 n 的三元组序列 (v_i, a_i, b_i)，每过 1 时刻每个位置的 v_i 自动增加 a_i * b_i；
+// 按严格递增时刻 t 进行 m 次操作，支持区间加 a/b/v 以及查询时刻 t 区间 [x, y] 的 v 之和（模 10^8+7，输出非负余数）。
+// 数据范围：1 <= n <= 2*10^5+5，1 <= m <= n，1 <= x <= y <= n，t 为正且严格升序
+// 所有输入数在 32 位有符号整型范围内。
 #include <bits/stdc++.h>
 using namespace std;
 

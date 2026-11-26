@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B3624
+// 题意：有 n 份食物，第 i 份能量是 w[i]。选若干份，使总能量落在 [l, r] 内，输出可选的方案数。
+// 数据范围：1 ≤ n ≤ 40，20 ≤ w[i] ≤ 100，1 ≤ l ≤ r ≤ 300。
+
 #include<bits/stdc++.h>
 using namespace std;
 

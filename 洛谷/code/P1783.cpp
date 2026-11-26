@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1783
+// 题意：在横坐标 0 到 N 的带状区域内给出 M 个信号塔，每座塔覆盖相同半径的圆。求能封住所有从海滩通往内地的连续路径的最小半径，保留两位小数。
+// 数据范围：1 ≤ N ≤ 1000，1 ≤ M ≤ 800，0 ≤ X_i ≤ N，0 ≤ Y_i ≤ 10^5。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXM = 805;

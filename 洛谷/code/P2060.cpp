@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2060
+// 题意：给定起点和终点，在无限棋盘上每步按马走日，一个坐标变化 1、另一个变化 2，正负方向任选。求到终点所需的最少步数。
+// 数据范围：四个输入坐标都在 [1,10^7]，移动途中允许经过负坐标。
+
 #include<bits/stdc++.h>
 using namespace std;
 

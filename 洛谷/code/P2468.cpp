@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P2468
+// 题意：R*C 矩阵每格有书页数 P_{i,j}，共 M 次询问。
+// 每次询问在子矩形 (x1,y1)-(x2,y2) 中至少选多少本书，使总页数 >= H_i。
+// 输出最少本数，无法达到输出 Poor QLW。
+// 数据范围：50% R, C <= 200, M <= 2*10^5；
+// 另 50% R = 1, C <= 5*10^5, M <= 2*10^4；
+// 1 <= P_{i,j} <= 1000，H_i <= 2*10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 205;

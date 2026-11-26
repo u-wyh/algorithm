@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P4031
+// 题意：第一行输入数据组数 T，每组输入 6 个整数 i, l, r, k, p, m。
+// 广义斐波那契数列满足 a_n = a_{n-1} + a_{n-2} (n >= 3)，已知 a_1 = i
+// 求有多少个区间 [l, r] 中的整数 a_2 满足 a_k mod p = m。
+// 输出 T 行，每行一个整数表示该组答案。
+// 数据范围：对于所有数据，T = 10，0 <= i <= 10^{18}，0 <= l <= r <= 10^{18}，3 <= k <= 10^{18}
+// 1 <= p <= 10^9，0 <= m < p。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2563
+// 题意：多组数据（EOF 结束），每组给定自然数 n。
+// 求 n 可以写成多少种本质不同的质数和表达式（顺序无关）。
+// 每组输出一行方案数。
+// 数据范围：2 <= n <= 200。
 #include <stdio.h>
 #include <string.h>
 #include <math.h>

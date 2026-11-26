@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1141
+// 题意：给一个 n × n 的 01 迷宫。
+// 从一个格子出发，每步可走到上下左右相邻且数字不同的格子。
+// 给 m 次询问，每次输入起点 (i, j)，输出能到达的不同格子数，起点也算。
+// 数据范围：1 ≤ n ≤ 1000，1 ≤ m ≤ 10^5，1 ≤ i, j ≤ n。
+
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2853
+// 题意：K 头牛分别在 N 个牧场之一，牧场间有 M 条单向边。
+// 求有多少个牧场是所有 K 头牛都能到达的。
+// 输出满足条件的牧场数。
+// 数据范围：1 <= K <= 100，1 <= N <= 1000，1 <= M <= 10000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

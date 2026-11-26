@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1744
+// 题意：给定 n 家店的平面坐标和 m 条双向通路，每条通路长度是两端店铺间的直线距离。求从 s 到 t 的最短路，保留两位小数。
+// 数据范围：2 ≤ n ≤ 100，1 ≤ m ≤ 1000，店铺编号在 [1,n]，坐标为 [−10000,10000] 内的整数。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 101;

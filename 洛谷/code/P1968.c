@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1968
+// 题意：从 100 美元开始，给定 N 天的双向汇率，第 i 天 100 美元可与 A_i 马克互换。
+// 选择何时换汇，最后一天结束前全部换回美元。
+// 输出能得到的最大美元金额，保留两位小数。
+// 数据范围：1 ≤ N ≤ 100，1 ≤ A_i ≤ 1000，允许 0.05 美元的误差。
+
 #include<stdio.h>
 
 double max(double a,double b)

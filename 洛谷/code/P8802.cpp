@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8802
+// 题意：输入 N 个城市、M 条带权双向边 (u, v, c) 以及到达每个城市 i 需额外隔离的时间 C_i（起点 1 和终点 N 不计隔离时间）；
+// 输出从城市 1 到城市 N 的最短总耗时。
+// 数据范围：1 <= N <= 1000，1 <= M <= 10000，1 <= C_i <= 200，1 <= u, v <= N
+// 1 <= c <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

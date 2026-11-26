@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2461
+// 题意：数列满足 a_i = b_i (i <= k)，a_i = sum_{j=1..k} c_j * a_{i-j} (i > k)。
+// 给定 m <= n，求 sum_{i=m..n} a_i 对 p 取模的结果。
+// 输出取模后的和。
+// 数据范围：1 <= k <= 15，1 <= m <= n <= 10^18，0 <= b_i, c_i <= 10^9，p <= 10^8。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

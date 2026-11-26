@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7527
+// 题意：给定长为 N 的品种序列 b，选出包含至少 2 头奶牛的连续区间 [l, r]，以最左、最右两头奶牛为领队，要求两领队均与队内其余成员及彼此品种不同
+// 求合法区间数。
+// 数据范围：1 <= N <= 2*10^5，1 <= b_i <= N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

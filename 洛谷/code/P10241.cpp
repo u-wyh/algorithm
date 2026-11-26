@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10241
+// 题意：给一棵树，每个节点有一个西瓜甜度。任选一天行程的起点和终点，走两点间的唯一路径。可按经过顺序吃其中一些西瓜，要求每个都比刚吃的更甜。输出最多能吃几个。
+// 数据范围：2 ≤ n ≤ 10^5，1 ≤ a[i] ≤ 10^9，边的端点编号在 [1,n]。
+
 #include <bits/stdc++.h>
 #define X first
 #define Y second

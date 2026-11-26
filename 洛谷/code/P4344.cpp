@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P4344
+// 题意：维护长为 n 的初始全 1 的 01 序列，支持 m 次操作：0 l r 将 [l, r] 全设为 0；
+// 1 l0 r0 l1 r1 数出 [l0, r0] 中 1 的个数 cnt 并把 [l0, r0] 全设为 0
+// 再从左到右把 [l1, r1] 中的 0 尽量填成 1（最多填 cnt 个，多余丢弃）；
+// 2 l r 询问 [l, r] 内最长连续 0 的长度。
+// 数据范围：n, m <= 200000。
 //线段树  P4344
 #include <iostream>
 #include <vector>

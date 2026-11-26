@@ -1,4 +1,12 @@
 // https://www.luogu.com.cn/problem/P8024
+// 题意：给定长为 n 的整数序列 h_1..h_n，依次处理 q 个操作：1 l r c 表示区间 [l, r] 所有值加 c（值可变为负数）；
+// 2 l r h 表示区间 [l, r] 所有值对 h 取 min；
+// 3 l r h 表示往区间 [l, r] 每个位置新种一棵高 h 的树（即查询最大高度时等价于区间对 h 取 max）；
+// 4 l r 查询区间 [l, r] 的最大值。
+// 第一行输入 n, q，第二行输入 n 个整数 h_i，接下来 q 行每行一个操作。
+// 对每个操作 4 输出一行一个整数。
+// 数据范围：1 <= n, q <= 5*10^5，1 <= h_i <= 10^9，1 <= l <= r <= n，0 <= |c| <= 500
+// 1 <= h <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

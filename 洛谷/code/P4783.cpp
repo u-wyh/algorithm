@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4783
+// 题意：求给定 N*N 矩阵在模 10^9+7 意义下的逆矩阵，不可逆输出 No Solution。
+// 数据范围：N <= 400，0 <= a_{i,j} < 10^9+7。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

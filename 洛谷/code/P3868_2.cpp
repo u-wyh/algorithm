@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3868
+// 题意：第一行输入组数 k，第二行输入 k 个整数 a_1..a_k，第三行输入 k 个两两互素的正整数 b_1..b_k。
+// 求最小的非负整数 n（n in N），满足对所有 i in [1, k] 均有 b_i | (n - a_i)。
+// 输出一行一个整数表示答案 n。
+// 数据范围：对于 100% 的数据，1 <= k <= 10，|a_i| <= 10^9，1 <= b_i <= 6 * 10^3
+// prod_{i=1}^k b_i <= 10^18。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

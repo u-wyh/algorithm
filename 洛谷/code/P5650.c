@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5650
+// 题意：给定一个非空 01 串 S，找出它的非空连续子串 T，使得 T 中 '0' 的个数减去 '1' 的个数最大。
+// 输入 01 串 S；输出这个最大差值。
+// 数据范围：1 <= |S| <= 10^5。
 #include<stdio.h>
 #include<string.h>
 

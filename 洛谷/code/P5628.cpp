@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5628
+// 题意：给定一棵 n 个点的树，某条边的重要性定义为删去后无法互通的点对数；
+// 若未知某点发生施工且关闭距其距离不超过 k 的所有点及相连边，求被影响道路的重要度总和最大值。
+// 输入 n, k 及树边；输出最大受影响道路重要度之和。
+// 数据范围：n <= 30000，0 <= k <= 200。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e4+5;

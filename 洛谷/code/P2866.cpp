@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2866
+// 题意：N 头牛站成一排面向右（第 N 头在最前），第 i 头身高 h_i。
+// 每头牛能看到前面连续严格比它矮的牛，求所有牛能看到的牛数量总和。
+// 输出总数。
+// 数据范围：1 <= N <= 8*10^4，1 <= h_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 

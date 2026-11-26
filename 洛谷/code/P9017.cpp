@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P9017
+// 题意：T 组询问，每组给定长 N 的 01 串 a, b。
+// 每次操作先翻转 b 中某一位，再对 b 中所有为 1 的位置翻转 a 的对应位，最后将 b 循环右移 1 位。
+// 求使 a 全变为 0 的最少操作次数。
+// 数据范围：1 <= T <= 2*10^5，2 <= N <= 20。
 #include <iostream>
 using namespace std;
 string s,t;

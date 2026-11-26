@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3730
+// 题意：输入人数 N 和询问数 M，每个人持有一种股票 a_1..a_N，再输入 M 个区间询问 (l, r, k)。
+// 定义一种股票在区间中的热度为区间内持有该股票的人数，求区间 [l, r] 中所有出现过的股票里热度第 k 小的热度值。
+// 对每个询问输出一行：若区间内股票种类数 < k 则输出 -1，否则输出第 k 小的热度值。
+// 数据范围：1 <= N, M <= 10^5，1 <= a_i <= 10^9，1 <= l <= r <= N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2004
+// 题意：给定 N 行 M 列的地块价值，找一个 C×C 的正方形使其价值和最大。输出左上角的行列坐标，保证最优位置唯一。
+// 数据范围：1 ≤ N,M ≤ 1000，1 ≤ C ≤ min(N,M)，地块价值绝对值 ≤ 32767。
+
 #include<bits/stdc++.h>
 using namespace std;
 

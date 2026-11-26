@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P12845
+// 题意：数轴上 n 枚炸弹有各自左右引爆范围，求全部引爆最少主动引爆数。
+// 输入：首行 n，后 n 行每行三个整数 p_i, l_i, r_i。
+// 规则：第 i 枚位于 p_i，爆炸会引爆 [p_i-l_i, p_i+r_i] 内所有炸弹（连锁）。
+// 输出：输出至少需要主动引爆的炸弹数量。
+// 数据范围：1 <= n <= 2*10^5，0 <= p_i, l_i, r_i <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

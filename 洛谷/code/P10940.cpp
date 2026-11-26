@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10940
+// 题意：两家公司各有 N、M 人，T 条关系记录跨公司的两人认识。
+// 每人至多跳一次，只能和认识的人配对。
+// 找出所有一旦强制使用就会降低最大配对数的关系，先输出条数，再按输入编号升序输出。
+// 数据范围：1 ≤ N,M ≤ 10000，1 ≤ T ≤ 10^5，1 ≤ x ≤ N，1 ≤ y ≤ M。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXV = 2e4+5;

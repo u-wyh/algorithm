@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P1130
+// 题意：申请有 N 个步骤、M 个小组。
+// 给出每组做每步所需天数。
+// 第一步任选组，之后每一步可以留在当前组，或换到下一组，第 M 组的下一组是第 1 组。
+// 求做完所有步骤的最少耗时。
+// 数据范围：1 ≤ N,M ≤ 2000，每项耗时在 [0,100000]。
+
 #include <stdio.h>
 #include <limits.h> // 用于INT_MAX
 #include <string.h> // 用于memset，但在这个例子中其实不需要

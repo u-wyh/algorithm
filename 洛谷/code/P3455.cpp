@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3455
+// 题意：输入询问组数 n，接下来 n 行每行给出三个整数 a, b, d。
+// 对每组询问，求满足 1 <= x <= a、1 <= y <= b 且 gcd(x, y) = d 的有序整数对 (x, y) 的数量。
+// 输出 n 行，每行一个整数表示对应询问的答案。
+// 数据范围：1 <= n <= 5*10^4，1 <= d <= a, b <= 5*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

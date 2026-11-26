@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5221
+// 题意：给定正整数 N，计算二重连乘积 prod_{i=1}^N prod_{j=1}^N (lcm(i, j) / gcd(i, j))。
+// 输出该乘积对 104857601 取模的结果。
+// 数据范围：1 <= N <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5318
+// 题意：给定一个 n 点 m 边的有向图，从 1 号点出发分别做 DFS 和 BFS 遍历。
+// 若有多个后继节点可选，优先访问编号更小的节点，输出两行遍历序。
+// 数据范围：1 <= n <= 10^5，1 <= m <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 

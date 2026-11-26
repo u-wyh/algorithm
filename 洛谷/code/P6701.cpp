@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6701
+// 题意：给定 n 条大写字母分裂规则 A_1 -> A_2 A_3 与 k 个 Genotype 字符串
+// 对每个串判断能否由仅含大写字母 'S' 的串通过分裂规则得到，若可以则输出所需初始 'S' 串的最小长度，否则输出 NIE。
+// 数据范围：1 <= n, k <= 2000，Genotype 长度最大为 100。
 #include<bits/stdc++.h>
 using namespace std;
 const int INF = 1e9;

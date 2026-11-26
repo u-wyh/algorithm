@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3587
+// 题意：输入环形项链长度 n、颜色种数 k，以及按顺序排列的每颗珠子颜色（1~k 每种至少出现一次）。
+// 切两刀把项链分成两条链，要求每种颜色的珠子只出现在其中一条链中。
+// 输出合法方案数，以及切出的两段长度之差绝对值的最小值。
+// 数据范围：2 <= k <= n <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

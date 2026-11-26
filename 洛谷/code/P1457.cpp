@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1457
+// 题意：城堡由 n 行 m 列格子组成，格子的数字用 1、2、4、8 分别表示西、北、东、南有墙。
+// 输出房间数、原最大面积、拆一墙后的最大面积及拆墙位置。
+// 最优墙并列时按西优先、南优先、同格北墙优先选择，位置输出行列和 N 或 E。
+// 数据范围：1 ≤ n,m ≤ 50，首行先给列数 m 再给行数 n，外围有墙。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 55;

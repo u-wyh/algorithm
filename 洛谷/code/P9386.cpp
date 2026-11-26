@@ -1,4 +1,13 @@
 // https://www.luogu.com.cn/problem/P9386
+// 题意：多组数据（共 T 组）。
+// 给定 n 个知识点构成以 1 为根的外向树（边 u -> v 表示 u 依赖 v）。
+// 部分点已定非负整数难度 a_i（a_i = -1 表示未定）。
+// 合法方案要求所有点难度非负，且对每个有出边的点 x，设 max_x 为其直接依赖点难度的最大值
+// 若恰依赖 1 个难度为 max_x 的点则 x 难度必须为 max_x，否则必须为 max_x + 1。
+// 判断是否存在合法填数方案。
+// 题意：第一行输入 T，每组输入 n、a_1..a_n 和 n-1 条边 (u, v)；每组输出 Reasonable 或 Unreasonable。
+// 数据范围：1 <= T <= 10^5，2 <= n <= 10^5，sum(n) <= 2 * 10^5，-1 <= a_i <= 10^9
+// 1 <= u, v <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

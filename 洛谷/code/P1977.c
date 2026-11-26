@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P1977
+// 题意：N 人要在截止时间 S 前打车。
+// 第 i 辆车在 T_i 时到，有 Z_i 个空位，上车人数不超过空位。
+// 用一辆车付 D 元，上车的每个人还要计入其等待时间。
+// 求所有人都上车的最小总花费，无解输出 impossible。
+// 数据范围：N,K,D,S ≤ 100，1 ≤ Z_i ≤ 4，1 ≤ T_i ≤ S，车辆按到达时间非降序输入。
+
 #include<stdio.h>
 #include<limits.h>
 

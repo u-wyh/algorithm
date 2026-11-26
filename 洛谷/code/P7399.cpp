@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P7399
+// 题意：初始长为 n 的全 0 数组，每次操作可将区间 [l, r] 加上正整数 x，要求任意两次操作的区间要么不交要么包含；求变为目标数组 a 的最少操作次数。
+// 数据范围：1 <= n <= 10^5，0 <= a_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 

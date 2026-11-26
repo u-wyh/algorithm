@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5217
+// 题意：维护一个初始长度为 n 的小写字母字符串，支持 m 次操作：在位置 x 后插入字符 c、删除第 x 个字符、翻转区间 [x, y]。
+// 还支持查询初始串第 x 个字符当前所在位置（不存在输出 0）、查询当前第 x 个字符、查询区间 [x, y] 内不同字母种类数。
+// 数据范围：1 <= n, m <= 10^5，涉及字母均为小写英文字母。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

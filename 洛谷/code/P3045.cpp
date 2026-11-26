@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3045
+// 题意：输入奶牛数 N、优惠券数 K、总预算 M，以及每头牛的原价 P_i 和用券后价格 C_i。
+// 每头奶牛最多使用一张优惠券将购买价从 P_i 降为 C_i，在总花费不超过 M 的前提下尽可能多买奶牛。
+// 计算最多能买到的奶牛数量。
+// 输出一行一个整数，表示最多购买的奶牛数。
+// 数据范围：对于 100% 的数据，1 <= K <= N <= 5*10^4，1 <= C_i <= P_i <= 10^9，1 <= M <= 10^14。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

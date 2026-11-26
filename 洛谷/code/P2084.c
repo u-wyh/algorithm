@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2084
+// 题意：给定进制 M 和一个 M 进制正整数 N。
+// 将 N 按十进制形式展开为多项式相加式子（系数*M^权值）。
+// 系数为 0 的项省略，非零项之间用 + 连接。
+// 数据范围：1 < M < 10，N 的位数不超过 1000。
 #include<stdio.h>
 #include<string.h>
 

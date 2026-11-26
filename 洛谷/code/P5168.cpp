@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5168
+// 题意：给 n 点 m 边连通无向图，每点有宝石种类，每边有需要 >= t 血量才可通过的怪物；
+// q 次操作支持单点改宝石种类（opt=1）、查 x 到 y 所需最小血量（opt=2）、查从 x 出发以血量 y 能走到的点中共多少种不同宝石（opt=3）。
+// 数据范围：1 <= n <= 100000，m <= 300000，q <= 200000，其余数字 <= int max，查询区间随机生成。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

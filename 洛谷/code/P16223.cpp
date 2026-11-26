@@ -1,4 +1,10 @@
+// https://www.luogu.com.cn/problem/P16223
 
+// 题意：多组数据，每组求平面 N 个整点中欧几里得距离最远的一对点下标。
+// 输入：首行 T，每组给 N 及 N 个点坐标 (x_i, y_i)（0-based）。
+// 规则：找一对不同下标 (i, j) 使 dist(p_i, p_j) 达到全局最大值。
+// 输出：每组输出一行两个整数 i 和 j（任意一组最优解均可）。
+// 数据范围：1 <= T <= 10^5，2 <= N <= 5*10^5，sum N <= 5*10^5，|x_i|, |y_i| <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN=5e5+5;

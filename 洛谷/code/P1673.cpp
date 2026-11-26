@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1673
+// 题意：按顺序经过 N 颗行星，每颗行星可把货物 A_i 换成 B_i，也可以跳过这次交易。
+// 从货物 1 出发，求换到 K 最少经手几种货物，起点和终点也计入。
+// 换不到输出 -1。
+// 数据范围：1 ≤ N ≤ 5×10^4，1 ≤ K ≤ 1000，货物编号在 [1,K]。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

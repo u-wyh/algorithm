@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3318
+// 题意：输入集合 S 大小 Total_S、集合 T 大小 Total_T 及各自串长 N、M（N+M 为偶数），以及两集合的小写字母串。
+// 若拼接串 S_i + T_j 可平分为等长前后两半 U + V 且 V 可由 U 循环旋转得到，则称其满足双旋转性。
+// 求满足双旋转性的有序对 <i, j> 数量并输出。
+// 数据范围：2 <= N * Total_S + M * Total_T <= 4*10^6。
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

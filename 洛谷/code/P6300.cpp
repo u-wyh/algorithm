@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6300
+// 题意：原有多根等长木棍各被砍成两段（每段长 <= m）并遗失部分段，现给出剩余 n 根木棍长度 a_i，求能拼接出的相同长度木棍的最大个数
+// 以及达到最大个数时木棍的最小可能长度。
+// 数据范围：2 <= n, m <= 10^5，1 <= a_i <= m。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

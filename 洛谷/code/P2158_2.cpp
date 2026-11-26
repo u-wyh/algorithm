@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2158
+// 题意：N*N 方阵，站在左下角 (0,0) 向方阵内看，求能看到的学生人数。
+// 输出能看到的学生人数。
+// 数据范围：1 <= N <= 40000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 4e4+5;

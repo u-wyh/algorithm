@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P6707
+// 题意：维护一个初始长为 n 的非负整数序列 f，支持 Q 次操作：1) 区间 [A, B] 赋值为 X；
+// 2) 区间 [A, B] 中第 A+k 位加上 (k+1)*X；
+// 3) 在第 C 位前插入数值 X；
+// 4) 查询区间 [A, B] 元素和。
+// 数据范围：设当前数列长为 t，1 <= n, Q <= 10^5，初始 0 <= f_i <= 10^5，1 <= X <= 100
+// 1 <= A <= B <= t，1 <= C <= t + 1。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

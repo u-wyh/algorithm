@@ -1,4 +1,14 @@
 // https://www.luogu.com.cn/problem/P6435
+// 题意：
+// 给定一行五个非负整数 n, a, b, c, p。
+// 初始数列为 1, 2, ..., n；每轮将相邻两项替换为 a * 左 + b * 右 + c。
+// 重复操作直到数列只剩一项。
+// 输出最终唯一项对 p 取模的结果。
+// 数据范围：
+// 1 <= n <= 10^{18}
+// 1 <= p <= 10^{14}（80% 数据 p 为质数）
+// 1 <= a, b <= 10^9
+// 0 <= c <= 10^9
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P5091
+// 题意：给定正整数 a, m, b，求 a^b mod m 的值。
+// 数据范围：1 <= a <= 10^9，1 <= b <= 10^20000000，1 <= m <= 10^8。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

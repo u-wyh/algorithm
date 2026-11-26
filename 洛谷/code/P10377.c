@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10377
+// 题意：从一排牛棚中保留连续一段，安排 n 头牛各占一间。第 i 头牛左侧 a[i] 间和右侧 b[i] 间内都不能有其他牛。求至少要保留多少间才有可行安排。
+// 数据范围：共有 10^9 间牛棚，1 ≤ n ≤ 9，1 ≤ a[i],b[i] ≤ 1000。
+
 #include <stdio.h>
 #include <limits.h>
 

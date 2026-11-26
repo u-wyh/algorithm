@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P6592
+// 题意：n 点 m 边有向图，第 i 条边 (u_i -> v_i) 亲密程度为 i。
+// k 次计划（w=1 时需异或历史可行计划数解密），问能否从 x_i 出发只走亲密程度在 [l_i, r_i] 内且严格单调递减的边走到 1 号点。
+// 数据范围：1 <= n <= 10^5，1 <= m <= 2*10^5，0 <= k <= 2*10^5，w in {0, 1}
+// 1 <= u_i, v_i <= n，解密后 1 <= x <= n，1 <= l_i, r_i <= m。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

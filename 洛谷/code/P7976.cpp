@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P7976
+// 题意：定义 F(x) = ((x + 1) mod 3) - 1。
+// 多组询问，每次给定 n，求 ∑_{l=0}^n ∑_{r=l}^n F(C_r^l) 对 1732073999 取模的结果（其中 C_r^l 为组合数）。
+// 第一行输入 t, maxn（询问组数与询问的最大可能值），接下来 t 行每行一个正整数 n。
+// 输出 t 行每行一个整数。
+// 数据范围：1 <= t <= 3*10^4，1 <= n <= maxn <= 2*10^{16}。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

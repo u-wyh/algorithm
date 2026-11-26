@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2481
+// 题意：求各位数字均在 1~9 且从左到右单调不降、能被 P 整除的 N 位整数个数。
+// 输出方案数对 999911659 取模的结果。
+// 数据范围：1 <= N <= 10^18，1 <= P <= 500。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

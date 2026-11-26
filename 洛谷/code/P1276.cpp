@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1276
+// 题意：位置 0 到 L 起初各有一棵成树。
+// 操作 0 A B 清空闭区间内所有树和树苗，操作 1 C D 只在闭区间的空位补种树苗。
+// 先输出最后剩下的树苗数，再输出过程中种下又被砍掉的树苗总数。
+// 数据范围：1 ≤ L ≤ 10000，1 ≤ N ≤ 100，操作范围在 [0,L]。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

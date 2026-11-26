@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4329
+// 题意：有 N 个人和 N 项任务，给出每人完成每项任务的成功百分比概率，求一一配对完成所有任务的最大成功总概率（各任务概率乘积，以百分比输出
+// 误差 <= 1e-6）。
+// 数据范围：1 <= N <= 20，输入百分比为 0 到 100 的整数。
 #include<bits/stdc++.h>
 using namespace std;
 

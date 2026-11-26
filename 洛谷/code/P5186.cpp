@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5186
+// 题意：N 块宽 1 高 h_i 的木板排成一行，每次用宽 X 的滚筒从底往上刷连续 X 块木板至其中最低高度；
+// 求必须手涂的最小剩余面积，以及在此前提下最少的滚筒刷次数。
+// 数据范围：1 <= N <= 10^6，1 <= X <= 10^5，1 <= h_i <= 10^6。
 #include<bits/stdc++.h>
 #define int long long
 using namespace std;

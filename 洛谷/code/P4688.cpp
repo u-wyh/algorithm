@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4688
+// 题意：给定长为 n 的序列和 m 次独立询问，每次给出三个区间，将三个区间共同出现的元素按出现次数一一对应删去，求剩余元素总数。
+// 数据范围：1 <= n, m <= 10^5，1 <= a_i <= 10^9，1 <= l1 <= r1 <= n（l2,r2 与 l3,r3 同理）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

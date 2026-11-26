@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P11659
+// 题意：
+// 给定长为 n 的整数序列 a，共有 m 次询问，每次给定区间 [l, r]。
+// 求满足 l <= x < y < z <= r 且 a_x : a_y : a_z = 4 : 2 : 3 的三元组 (x, y, z) 个数。
+// 每次询问输出一行一个整数。
+// 数据范围：
+// 1 <= n, m, a_i <= 2 * 10^5
+// 1 <= l <= r <= n
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

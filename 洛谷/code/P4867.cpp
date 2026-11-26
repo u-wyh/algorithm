@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4867
+// 题意：给定长为 n 的正整数序列 s，有 m 次询问 l, r, a, b，求区间 [l, r] 内权值落在 [a, b] 中的不同权值种类数。
+// 数据范围：1 <= n <= 10^5，1 <= m <= 10^6，1 <= s_i <= n，1 <= l <= r <= n
+// 1 <= a <= b <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

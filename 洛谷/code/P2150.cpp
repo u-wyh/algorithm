@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2150
+// 题意：有 n-1 种寿司，美味度为 2 到 n。
+// 两人各自选一些寿司（可不选），要求两人所选寿司的美味度两两互质。
+// 求合法方案数，输出对 p 取模的结果。
+// 数据范围：2 <= n <= 500，0 < p <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

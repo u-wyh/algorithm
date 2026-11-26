@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3825
+// 题意：第一行输入场数 n 和 x 型地图数量 d，第二行输入长度为 n 的地图串 S（仅含 a, b, c 和恰好 d 个 x），第三行输入规则数 m
+// 随后 m 行输入四元组 (i, h_i, j, h_j)。
+// 地图 a/b/c 分别不能使用赛车 A/B/C，地图 x 可用所有赛车；每条规则要求若第 i 场用 h_i，则第 j 场必须用 h_j。
+// 输出满足所有条件的任意长度为 n 的大写字母串（A/B/C）；无解输出 -1。
+// 数据范围：对于 100% 的数据，n <= 5 * 10^4，0 <= d <= 8，m <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

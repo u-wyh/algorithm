@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2568
+// 题意：给定正整数 n，求满足 1 <= x, y <= n 且 gcd(x,y) 为素数的数对 (x,y) 个数。
+// 输出数对个数。
+// 数据范围：1 <= n <= 10^7。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e7+5;

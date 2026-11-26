@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6475
+// 题意：建造 2n 座高度在 [1, m] 内的整数高楼，要求前 n 座高度不降、后 n 座高度不升，且第 x 座与第 y 座高度相等
+// 求方案数对 998244353 取模。
+// 数据范围：1 <= x < y <= 2n，1 <= n, m <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

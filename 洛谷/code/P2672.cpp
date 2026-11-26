@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2672
+// 题意：死胡同中有 N 家住户，第 i 家距入口 S_i（不降），推销疲劳 A_i，每走 1 米疲劳 1。
+// 对 X = 1..N，求向 X 家推销并返回入口最多能积累的疲劳值。
+// 输出 N 行，第 X 行对应 X 家的答案。
+// 数据范围：1 <= N <= 10^5，0 <= S_i < 10^8，1 <= A_i < 1000。
 #include<iostream>
 #include<cstdio>
 #include<cmath>

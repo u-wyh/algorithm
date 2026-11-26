@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2260
+// 题意：给定整数 n 和 m，求 sum_{i=1..n} sum_{j=1..m, i!=j} (n mod i) * (m mod j)。
+// 输出结果对 19940417 取模后的值。
+// 数据范围：1 <= n, m <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

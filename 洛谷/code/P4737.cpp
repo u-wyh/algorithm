@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4737
+// 题意：第一象限有 n 头水牛，随后 m 个殖民者依次在坐标互异的位置插柱并向左、向下修栅栏直到碰坐标轴或已有栅栏，求每人刚到来时圈到的水牛数。
+// 数据范围：1 <= n, m <= 3*10^5，1 <= x, y <= 10^9，水牛坐标互不相同，所有柱子 x' 互异、y' 互异。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

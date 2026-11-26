@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P7402
+// 题意：长为 n 的数组 a，q 次区间加修改；每次修改后将数组划分为若干连续区间（区间权值为区间 max - min），求划分权值和的最大可能值。
+// 数据范围：1 <= n, q <= 2*10^5，-10^8 <= a_i, x <= 10^8，1 <= l <= r <= n。
 #include<iostream>
 #include<cmath>
 #define int long long//记得开long long

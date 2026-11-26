@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P11319
+// 题意：给一列 n 个互不相同的正整数。把这些数的所有排列按字典序编号，第一名编号为 1。输出给定排列的名次对 10^9+7 取模。
+// 数据范围：1 ≤ n ≤ 3 × 10^5，1 ≤ P[i] ≤ 10^9，各项互异。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

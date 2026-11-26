@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2704
+// 题意：N*M 网格（H 山地不可放，P 平原可放），炮兵攻击范围为上下左右各两格（不受地形影响）。
+// 求在炮兵互不攻击的前提下最多能摆放多少支部队。
+// 输出最多部队数。
+// 数据范围：1 <= N <= 100，1 <= M <= 10。
 #include<iostream>
 using namespace std;
 

@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1948
+// 题意：在 n 根电线杆和 p 条可用连线中选一条从 1 到 n 的路径。
+// 最多免付 k 条线，费用等于其余线中最长的长度，全部免费时费用为 0。
+// 求最小费用，不连通输出 -1。
+// 数据范围：1 ≤ n ≤ 1000，1 ≤ p ≤ 10^4，1 ≤ k ≤ p，1 ≤ l_i ≤ 10^6，同一对端点至多出现一次。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

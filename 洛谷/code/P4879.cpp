@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4879
+// 题意：共 5 * 10^5 座城市，初始前 n 座各有颜值 a_i 的妹子
+// 支持 m 次操作：第 x 城妹子颜值减 y、第 x 城新增颜值为 y 的妹子（覆盖原妹子）、删除第 x 个有妹子的城市的妹子、查询当前所有妹子颜值总和。
+// 数据范围：1 <= n, m <= 10^5，|a_i|, |y| <= 10^9。
 #include<iostream>
 #include<cstdio>
 using namespace std;

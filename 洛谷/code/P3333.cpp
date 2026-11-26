@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3333
+// 题意：输入 4 行由空格分隔单词组成的文本，第 1 行为待修改作品 T，后三行分别为短句 A、B、C。
+// 从 T 中删去尽量少的单词，使其成为「A * B * C」的形式（* 代表 0 个或多个单词，A、B、C 各自内部单词须连续匹配）。
+// 输出最少删去的单词数。
+// 数据范围：1 <= |T|, |A|, |B|, |C| <= 50000（单词数），每个单词长度不超过 5、出现次数不超过 500，保证有解。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

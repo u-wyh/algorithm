@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2294
+// 题意：w 组数据，每组有 n 个月和 m 条记录，每条记录表示闭区间 [s,t] 的总收入为 v。
+// 判断每组记录之间是否存在矛盾。
+// 每组输出 true（不矛盾）或 false（矛盾）。
+// 数据范围：w < 100，n < 100，m < 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

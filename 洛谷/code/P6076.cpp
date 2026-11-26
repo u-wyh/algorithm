@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6076
+// 题意：用 c 种颜色给 n x m 棋盘染色（每格可不染或染一种颜色），要求每行至少一格被染、每列至少一格被染、且每种颜色至少出现一次
+// 求方案数（模 10^9 + 7）。
+// 数据范围：1 <= n, m, c <= 400。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

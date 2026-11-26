@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P8805
+// 题意：输入 n 个节点和 n-1 条无向边构成的树，再输入 m 个询问 (u_i, v_i)；
+// 每个节点的通行延迟等于它的度数 d（路径端点也计入一次，若 u_i = v_i 则只计一次延迟），输出从 u_i 到 v_i 的最短总延迟时间。
+// 数据范围：1 <= n, m <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

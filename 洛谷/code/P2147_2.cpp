@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2147
+// 题意：维护 n 个洞穴的动态连通性，任意时刻任意两点间至多一条路径，共 m 条指令。
+// Connect u v：连接 u 和 v；Destroy u v：断开 u 和 v；Query u v：询问 u 和 v 是否连通。
+// 对每个 Query 输出 Yes 或 No。
+// 数据范围：1 <= n <= 10^4，1 <= m <= 2*10^5，1 <= u, v <= n，指令均合法。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

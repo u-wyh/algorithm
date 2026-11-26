@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2213
+// 题意：N*N 网格每格有青草 G(r,c)，从任一格出发最多走 K 步（上下左右相邻移动）。
+// 求最多能吃到的青草总量。
+// 输出最大总量。
+// 数据范围：1 <= N <= 400，0 <= G(r,c) <= 1000，0 <= K <= 2*N。
 #include<cstdio>
 #include<algorithm>
 #define maxn 2005

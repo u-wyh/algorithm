@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P7245
+// 题意：n x n 初始全 0 矩阵，给定递增序列 x_1..x_m 与 y_1..y_m（0 <= x_1,y_1 且 x_m,y_m <= n）。
+// 共 k 次操作，每次随机选 1 <= i_1 < i_2 <= m 和 1 <= j_1 < j_2 <= m
+// 将子矩阵 [x_{i_1}+1..x_{i_2}] x [y_{j_1}+1..y_{j_2}] 异或 1；
+// 求 k 次后矩阵元素和的期望，对 998244353 取模。
+// 数据范围：1 <= n <= 10^9，2 <= m <= min(n+1, 10^3)，1 <= k <= 10^6，x_i 与 y_i 严格递增。
 #include <iostream>
 #include <cstdio>
 #include <queue>

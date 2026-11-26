@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2541
+// 题意：建造 K 头各不相同的机器人，每头有 N 个位置，第 i 个位置有 M_i 种组件（成本 P_{i,j}）。
+// 求建造 K 头不同机器人的最小总成本。
+// 输出最小总成本。
+// 数据范围：1 <= K, N <= 10^5，1 <= M_i <= 10，1 <= P_{i,j} <= 10^8。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

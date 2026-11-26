@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P6000
+// 题意：给定长为 n 的小写字母串 s，构造一个字典序最小（'(' < ')'）的合法括号序列与 s 匹配（长度相等
+// 且每对匹配的左右括号位置 i, j 满足 s_i = s_j）；
+// 无解输出 -1。
+// 数据范围：2 <= n <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

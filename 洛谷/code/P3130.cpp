@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P3130
+// 题意：输入田地数 N、操作数 Q，初始每块田地的干草堆数，以及 Q 条指令。
+// 指令 P A B C 给区间 [A, B] 每块田增加 C 堆干草；M A B 查区间最小值；S A B 查区间总和。
+// 对每条 M 和 S 指令输出一行结果。
+// 按顺序输出每个查询的答案。
+// 数据范围：1 <= N <= 2*10^5，1 <= Q <= 10^5，初始每块田堆数 <= 10^5，1 <= C <= 10^5
+// 1 <= A <= B <= N。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

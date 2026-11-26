@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8867
+// 题意：输入 n 点 m 边的无向连通图（无重边自环）；
+// 选出至少 1 个城市建军营，再选出若干条边看守，要求即使任意一条未被看守的边被切断，所有建有军营的城市仍彼此连通；
+// 输出合法方案总数对 10^9+7 取模的结果。
+// 数据范围：1 <= n <= 5*10^5，n-1 <= m <= 10^6，1 <= u_i, v_i <= n，u_i != v_i。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

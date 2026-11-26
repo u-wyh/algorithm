@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5026
+// 题意：长为 m 的直线初始水位全为 0
+// 进行 n 次操作 (v, x)：按题面给定的分段等差增减规则叠加改变 x-3v+1 到 x+3v-1 区间的水位（在 x 处降 2v、x±2v 处升 2v、x±v 处不变）
+// 求最终 1..m 每个位置的水位。
+// 数据范围：n <= 10^6，1 <= x <= m <= 10^6，1 <= v <= 10000。
 #include<bits/stdc++.h>
 using namespace std;
 

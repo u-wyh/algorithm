@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B3629
+// 题意：每吃一根冰棍会得到一根木棒，三根木棒可以再换一根冰棍。要吃到 n 根，求最开始至少买多少根。
+// 数据范围：1 ≤ n ≤ 10^8。
+
 #include<stdio.h>
 
 int check(int n){

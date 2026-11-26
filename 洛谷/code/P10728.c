@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10728
+// 题意：第 i 把剑的攻击和防御分别是 a[i]、b[i]。如果另一把剑的两项都不低于它，它就没用。输出有用的剑的数量。
+// 数据范围：1 ≤ n ≤ 10^5，1 ≤ a[i],b[i] ≤ 10^9，两把剑不能两项都相同。
+
 #include<stdio.h>
 #include<stdlib.h>
 #define Max 100000+5

@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P10799
+// 题意：给一棵带点权的树。
+// 操作 1 x y k 将 x 到 y 路径上的所有点权异或 k。
+// 操作 2 x y 问路径上能否选三个不同点，点权能组成非退化三角形。
+// 路径含两端，按顺序输出 1 或 0，不加分隔符。
+// 数据范围：1 ≤ x,y ≤ n ≤ 10^5，1 ≤ q ≤ 10^5，1 ≤ a[i],k ≤ 2^31-1，任何时刻点权均非零。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

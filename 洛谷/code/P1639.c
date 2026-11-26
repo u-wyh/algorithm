@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1639
+// 题意：要在数轴上从 a 运到 b，有一个连接 x、y 的双向传送门，使用它没有距离成本，也可以不使用。求需要用车运输的最短总距离。
+// 数据范围：a,b,x,y 均为 [0,100] 内的整数，不要求互不相同。
+
 #include<stdio.h>
 #include<math.h>
 

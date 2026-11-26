@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4606
+// 题意：T 组数据，给定 n 点 m 边的无向连通图及 q 次询问，每次给出点集 S
+// 求有多少个不在 S 中的点满足删去该点及其连边后 S 内至少有两个点不再连通。
+// 数据范围：1 <= T <= 10，2 <= n <= 10^5，n - 1 <= m <= 2*10^5，1 <= q <= 10^5
+// 每组数据 sum |S| <= 2*10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

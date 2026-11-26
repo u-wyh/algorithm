@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2422
+// 题意：给定长度为 N 的正整数序列 A，区间 [i,j] 的舒适度为 min(A_k) * sum(A_k)。
+// 求所有非空连续区间的最大舒适度。
+// 输出最大舒适度。
+// 数据范围：1 <= N <= 10^5，1 <= A_i <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 

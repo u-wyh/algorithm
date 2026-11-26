@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1691
+// 题意：给出 n 条互不相交的水平油藏线段。从地面沿一条直线钻井，碰到线段就收取整段长度，碰到端点也算。求能取得的最大总长度。
+// 数据范围：1 ≤ n ≤ 2000，端点横坐标绝对值 ≤ 10^6，1 ≤ y ≤ 10^6。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

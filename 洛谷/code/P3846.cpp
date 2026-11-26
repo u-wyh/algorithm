@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3846
+// 题意：输入一行三个整数 p, b, n，其中 p 为质数。
+// 求最小的非负整数 l，使得 b^l ≡ n (mod p)。
+// 输出一行最小的 l；若无解输出 no solution。
+// 数据范围：对于所有测试点，2 <= b < p < 2^31，p 为质数，1 <= n < p。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

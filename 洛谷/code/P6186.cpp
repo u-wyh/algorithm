@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6186
+// 题意：给定 1..n 的排列 p 和 m 次操作：1 x 交换 p[x] 和 p[x+1]；
+// 2 k 查询当前排列经过 k 轮冒泡排序后的逆序对数（不实际修改当前排列）。
+// 数据范围：2 <= n, m <= 2 * 10^5，t_i in {1, 2}，1 <= x < n，0 <= k < 2^31。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

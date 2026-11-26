@@ -1,3 +1,12 @@
+// https://www.luogu.com.cn/problem/P3061
+// 题意：给定 N 条二维线段构成的围栏和 C 头牛的坐标。
+// 线段仅在端点相交，且每条线段两端各接触另外两条线段。
+// 牛的坐标互不相同且不在任何围栏上。
+// 两头牛不碰围栏能互相到达即属同一社区，求最大社区的牛数。
+// 输入：第一行输入 N 和 C，后 N 行输入围栏端点 x1, y1, x2, y2，再 C 行输入牛坐标 x, y。
+// 输出：输出最大社区包含的牛的数量。
+// 数据范围：1 <= N, C <= 1000，坐标为 [0, 10^6] 内的整数。
+// 原题：https://usaco.org/index.php?cpid=208&page=viewproblem2
 #include <bits/stdc++.h>
 using namespace std;
 

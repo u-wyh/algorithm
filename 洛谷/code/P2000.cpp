@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P2000
+// 题意：把 n 颗石头按金木水火土的用量组成阵法。
+// 召唤 kkksc03 时，金、火用量分别是 6、4 的倍数，木、水、土分别至多 9、5、7。
+// 召唤 lzn 时，金、水、火分别是 2、8、10 的倍数，木、土分别至多 1、3。
+// 求两种召唤方法的阵法总数。
+// 数据范围：10^99999 ≤ n < 10^100000，即输入有 100000 位。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

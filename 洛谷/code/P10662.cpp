@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P10662
+// 题意：给一棵有根树，每点有一些石子。
+// 子树游戏中每步从一个非根点向父亲搬 1 到 m 颗，不能动的人输。
+// 操作 1 v 问以 v 为根的子树中先手是否必胜，操作 2 x y 把 x 的石子数设为 y
+// 操作 3 u v x 给 u 加编号为 v 且有 x 颗石子的孩子。
+// 输出 Yes 或 No。
+// 数据范围：1 ≤ n,t ≤ 50000，任意时刻节点数和编号均不超过 10^5，其他数据在 int 范围内。操作参数按此前 Yes 次数异或解码。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

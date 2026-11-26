@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2299
+// 题意：给定 n 个点 m 条无向边（边权 c_i），求 1 到 n 的最短路。
+// 输出最短路长度。
+// 数据范围：1 <= n <= 2500，1 <= m <= 2*10^5，1 <= c_i <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2500;

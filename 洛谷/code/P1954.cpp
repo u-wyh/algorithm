@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P1954
+// 题意：给定 n 架飞机，每架的起飞名次不得超过 k_i，另有 m 条约束要求某架飞机早于另一架起飞。
+// 先输出任意一个可行顺序，再分别输出每架飞机在所有可行顺序中能达到的最早名次。
+// 数据范围：n ≤ 2000，m ≤ 10000，约束中的飞机编号在 [1,n]，保证有可行顺序。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e3+5;

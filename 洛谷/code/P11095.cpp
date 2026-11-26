@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P11095
+// 题意：给 n 个城市、m 条双向道路，每条有视频时长 t。
+// 对每个终点 k，从 1 去 k 的路线可重过城市，但不可重走道路。
+// 路线代价是经过道路的最短视频时长加最长视频时长，求每个终点的最小代价。
+// 数据范围：n,m 不超过 300000，0 ≤ t ≤ 10^9，图连通，允许重边，边的两端不同。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1827
+// 题意：输入同一棵二叉树的中序遍历和前序遍历，输出它的后序遍历。
+// 数据范围：节点由互不相同的字母标记，最多 26 个节点。
+
 #include<bits/stdc++.h>
 using namespace std;
 

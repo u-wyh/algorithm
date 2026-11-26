@@ -1,4 +1,13 @@
 // https://www.luogu.com.cn/problem/P3286
+// 题意：
+// 给定一行三个整数 L, R, K。
+// 位置 i 处的人面前第 j 堆石子数量等于 i 写成 K 进制后的第 j 位数字。
+// 需把位置在 [L, R] 内的每个人的石子各自合并成一堆。
+// 每次将某人某堆的若干石子移到另一堆，代价为石子数乘移动距离。
+// 输出所有人合并石子的最小总代价。
+// 数据范围：
+// 1 <= L <= R <= 10^15
+// 2 <= K <= 20
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

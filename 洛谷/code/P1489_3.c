@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1489
+// 题意：给 n 个数，把全部数分进两组，组大小相差至多 1。求使两组元素和尽量接近的一种分法，按从小到大的顺序输出两组的和。
+// 数据范围：1 ≤ n ≤ 200，1 ≤ a[i] ≤ 40。
+
 #include<stdio.h>
 #include<stdlib.h>
 

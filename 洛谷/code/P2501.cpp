@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2501
+// 题意：给定长度为 n 的整数序列 a，需将其修改为严格单调递增的整数序列。
+// 第一行输出最少需要改变的元素个数。
+// 第二行输出在改变个数最少的前提下，各元素改变绝对值之和的最小值。
+// 数据范围：1 <= n <= 3.5*10^4，1 <= a_i <= 10^5，a_i 随机生成。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 35005;

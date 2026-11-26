@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5584
+// 题意：给定长为 n 的水晶价值序列 d，每次只能摧毁当前序列中下标为 2^x（1-indexed）的水晶，之后后面元素前移
+// 求摧毁所有价值为 w 的水晶的最少次数及一种摧毁方案。
+// 输入 n, w 及序列 d；输出最少次数 m，以及每次被摧毁水晶的初始下标。
+// 数据范围：1 <= n <= 3*10^6，1 <= d_i <= 40000，w 的个数不超过 1.5*10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e6+5;

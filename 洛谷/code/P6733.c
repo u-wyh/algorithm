@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P6733
+// 题意：n 杯水第 i 杯体积为 a_i、温度为 c_i
+// 混合任意两杯水 (a_i, c_i) 与 (a_j, c_j) 得到温度 (a_i*c_i + a_j*c_j) / (a_i + a_j)
+// 求所有两两混合结果中第 k 高的温度值（绝对/相对误差 <= 10^-2）。
+// 数据范围：1 <= n <= 10^5，1 <= k <= n*(n-1)/2，1 <= a_i, c_i <= 10^9。
 #include <stdio.h>
 #include <stdlib.h>
 

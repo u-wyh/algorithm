@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6413
+// 题意：给定 n 个点 m 条边的带正权有向图，求每条边被任意两点间所有最短路径经过的总次数（两点有多条最短路时每条均计算），对 10^9+7 取模。
+// 数据范围：1 <= n <= 1.5*10^3，1 <= m <= 5*10^3，1 <= d <= 10^4，边端点互异（1 <= a, b <= n）。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

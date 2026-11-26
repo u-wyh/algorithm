@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4927
+// 题意：给定长为 n 的序列建成区间和线段树，从根向下每次以 sum_l / sum_cur 概率进左子树、否则进右子树直到叶子并累加经过节点权值；
+// 支持 m 次操作：区间 [l, r] 加 v 并实时更新线段树节点和，以及查询游历权值和的期望（模 998244353）。
+// 数据范围：1 <= n, m <= 10^5，1 <= a_i, v <= 10^9，1 <= l <= r <= n。
 #include<iostream>
 #include<cstdio>
 #include<cstdlib>

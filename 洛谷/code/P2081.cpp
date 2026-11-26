@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2081
+// 题意：给定带权无向简单连通图，等概率选一个起点。每一步等概率走向一个未访问的邻点，无处可走时停止。求经过的边权之和的期望，保留五位小数。
+// 数据范围：n ≤ 10^5，m 为 n−1 或 n。若有环，环上至多 20 个点。1 ≤ W_i ≤ 100，允许绝对误差 0.01。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

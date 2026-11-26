@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1375
+// 题意：有 2n 只猫围成一圈，给每只猫找一只伙伴，用绳连接同一对。不同绳子不能交叉，统计按位置区分的配对方案数，并对 10^9+7 取模。
+// 数据范围：1 ≤ n ≤ 10^5。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MOD = 1e9+7;

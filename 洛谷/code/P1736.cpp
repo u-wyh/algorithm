@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1736
+// 题意：给定 n 行 m 列的 01 矩阵。找一个最大的正方形，要求其中一条对角线全是 1，其余位置全是 0，两种对角线方向都可以。输出能吃到的鱼数，也就是边长。
+// 数据范围：1 ≤ n,m ≤ 2500。
+
 #include <bits/stdc++.h>
 using namespace std;
 

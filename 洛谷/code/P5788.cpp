@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5788
+// 题意：给定长为 n 的整数序列 a，对每个位置 i 求出它之后第一个严格大于 a_i 的元素下标（不存在则记为 0）。
+// 输入 n 及序列 a；输出 n 个整数表示每个位置的答案。
+// 数据范围：1 <= n <= 3*10^6，1 <= a_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1454
+// 题意：给一幅网格图，井号表示发光，减号表示不发光。把曼哈顿距离不超过 2 的两个发光格相连，关系可传递。输出发光格组成的图案数。
+// 数据范围：1 ≤ n,m ≤ 100。
+
 
 #include<iostream>
 using namespace std;

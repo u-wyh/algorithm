@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2325
+// 题意：将 N 个城市的树划分为若干省，每省大小在 [B, 3B] 之间，每省选一个省会（可在省外）。
+// 要求省内任意城市到省会路径上的城市（除省会外）均属于该省。
+// 无解输出 0；否则输出省数 K、各城市所属省编号及 K 个省会编号（Special Judge）。
+// 数据范围：1 <= B <= N <= 10^3。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e3+5;

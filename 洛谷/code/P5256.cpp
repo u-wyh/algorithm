@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5256
+// 题意：多组询问，每组给完整代码串 S 和片段串 T，其中小写字母 a~z 表示变量、大写字母 A~Z 表示关键字或常量。
+// 若将变量 a~z 做一一对应重命名后 T 与 S 的某子串完全一致则算匹配，求 T 在 S 中的可重叠出现次数。
+// 数据范围：Q <= 3，|T| <= 10^5，|S| <= 10^6，仅含 a~z 与 A~Z。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4477
+// 题意：给定长为 N 的数组 A、长为 M 的数组 B 和常数 Z，有 Q 次询问，每次取 B 的区间 [L_i, R_i] 作为右部点集，A 作为左部点集
+// 两部点满足 A_i + C_j <= Z 时连边，求二分图最大匹配数。
+// 数据范围：N <= 152501，M, Q <= 52501，1 <= A_i, B_i, Z <= 10^9，1 <= L_i <= R_i <= M。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 152505;

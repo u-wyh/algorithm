@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2472
+// 题意：r*c 网格有高度 h_{i,j} 的石柱，部分石柱上有蜥蜴。
+// 蜥蜴每次可跳至多距离 d（或跳出边界），离开时原柱高度减 1（为 0 消失），不能同柱。
+// 求无法逃离边界外的蜥蜴数目的最小值。
+// 数据范围：1 <= r, c <= 20，1 <= d <= 4，1 <= h <= 3。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 25;

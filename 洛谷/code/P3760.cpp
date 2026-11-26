@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3760
+// 题意：输入序列长度 n，以及 n 个非负整数 a_1..a_n。
+// 计算该序列所有连续非空子串和的按位异或值。
+// 输出该异或结果。
+// 数据范围：1 <= n <= 10^5，sum(a_i) <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

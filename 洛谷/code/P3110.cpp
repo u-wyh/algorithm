@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3110
+// 题意：输入能量参数 B, E, P、节点数 n、无向边数 m，以及 m 条无向边 (x, y)。
+// Bessie 从 1 出发每走一条边耗 B，Elsie 从 2 出发每走一条边耗 E；若在同一点相遇，可选择背着一起走每条边共耗 P。
+// 两人最终都要到达节点 n，求两人能量消耗总和的最小值。
+// 输出一个整数表示最小总能量花费。
+// 数据范围：1 <= B, E, P, n, m <= 4*10^4，保证图连通。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 4e4+5;

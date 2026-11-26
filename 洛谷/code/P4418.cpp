@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4418
+// 题意：平面上有 n 条线段表示战壕（可重叠或共享端点），安排 3 名警卫在战壕上，使两两之间连线完全被战壕覆盖且该线段上不含第三名警卫，求放置方案数。
+// 数据范围：1 <= n <= 20，端点坐标为不超过 1000 的正整数。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

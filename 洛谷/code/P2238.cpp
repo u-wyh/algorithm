@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2238
+// 题意：H*W 网格（1~9 为价格，. 为未开张），从 (1,1) 只往东或南走到 (H,W)。
+// 到达摊位若开张且未买过则买下，且其上下左右 r 个未买开张摊位中需买 r-1 个（不重复买）。
+// 求最少花费的钱数。
+// 数据范围：3 <= H, W <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e3+5;

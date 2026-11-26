@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2874
+// 题意：平面上 n 个两两曼哈顿距离 >= 2 的整点。
+// 求到这 n 个点曼哈顿距离之和的最小值 D，以及不与给定点重合的最优整点个数 C。
+// 一行输出 D 和 C。
+// 数据范围：2 <= n <= 10^4，-10^4 <= x_i, y_i <= 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e4+5;

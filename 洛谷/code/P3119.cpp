@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3119
+// 题意：输入草场数 N、单向路数 M，以及 M 条有向边 (X, Y)。
+// 贝西从 1 号草场出发并最终返回 1 号草场，途中最多可以逆向走 1 条有向边（至多 1 次）。
+// 求整趟旅程最多能访问多少个不同的草场（重复访问只计一次）。
+// 输出一个整数表示最多能访问的不同草场数。
+// 数据范围：1 <= N, M <= 10^5，无重边，每条边两端点不同。
 //https://www.cnblogs.com/jiangtaizhe001/p/14872758.html
 #include<bits/stdc++.h>
 using namespace std;

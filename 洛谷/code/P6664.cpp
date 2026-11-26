@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P6664
+// 题意：n 个点、m 次操作的动态无向图：find 新增一条给定温度 t（互不相同）与长度 l 的边，change 修改某条已知边的长度 l
+// move 查询两点间路径中边温度升序序列字典序最大（前缀更优、空串最大）的路径总长度，不连通输出 -1。
+// 数据范围：1 <= n <= 100000，1 <= m <= 300000，0 <= id < m，0 <= u, v < n（u != v）
+// 0 <= t <= 10^9，0 <= l <= 10000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 4e5+5;

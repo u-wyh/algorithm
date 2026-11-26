@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1370
+// 题意：给整数数组 a。
+// 对每个非空连续区间 [l,r]，统计该区间按原顺序抽取能得到多少种不同的值序列，空序列也算，相同值序列去重。
+// 把所有区间的计数相加，对 998244353 取模。
+// 数据范围：1 ≤ n ≤ 10^5，a[i] 的绝对值不超过 10^9。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

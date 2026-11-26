@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1685
+// 题意：给定 n 点 m 边的有向无环图，要把 s 到 t_0 的所有路径各走一遍，平行边视为不同的路。
+// 两次游览之间要花 t_1 时间坐船回起点，最后一次结束后直接离开。
+// 求总耗时模 10000。
+// 数据范围：2 ≤ n ≤ 10^4，1 ≤ m ≤ 5×10^4，1 ≤ s,t_0 ≤ n，t_0,t_1 ≤ 10^4，保证 s 到 t_0 可达。
+
 #include<bits/stdc++.h>
 #define ll long long
 #define R register

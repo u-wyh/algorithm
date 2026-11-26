@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3349
+// 题意：输入点数 n、边数 m，给出无向简单图（m 条边）以及一棵 n 个点的树（n-1 条边）。
+// 将树的 n 个点一一对应到原图的 n 个点上，要求树中每条边对应的两点在原图中也有边相连。
+// 输出合法一一对应的方案总数（无解输出 0）。
+// 数据范围：n <= 17，m <= n(n-1)/2。
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

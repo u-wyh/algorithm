@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5306
+// 题意：给定一棵 n 个点的带边权无根树，每个城市 i 有油量 a_i；货车初始油量为 0，走 1 距离耗 1 油，到城市可加不超过 a_i 的油（油箱无限）。
+// 求能从城市 u 沿简单路径到达城市 v 的有序点对 (u, v)（u != v）总数。
+// 数据范围：1 <= n <= 10^5，1 <= u, v <= n，1 <= w, a_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5563
+// 题意：有 n 棵相同的带边权 n 点树，第 i 棵树的第 i 个点上有一颗宝石，宝石每滑过一条边就关闭该边并累加边权对 mod 取模
+// 求每颗宝石最终能存下的最大魔力值。
+// 输入 n, mod 及 n-1 条带权无向边；输出 n 行分别表示第 i 颗宝石的最大魔力值。
+// 数据范围：n <= 100000，mod in {2, 32, 65536}，0 <= w < mod。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

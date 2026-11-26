@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2625
+// 题意：给定 n 条移动或转向指令（right/left/forward/backward X）。
+// 重排指令顺序，使最终位置到起点的欧几里得距离最大。
+// 输出最大距离，四舍五入保留 6 位小数。
+// 数据范围：1 <= n <= 50，角度 in [1, 719]，距离 in [1, 1000]。
 #include<stdio.h>
 #include<string.h>
 

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4616
+// 题意：1 到 n 号城市初始不连通，第 i 天在所有满足 gcd(a, b) = m - i + 1 的城市 a, b 间修一条路，共修 m 天
+// q 次询问两个城市最早第几天连通。
+// 数据范围：1 <= n, q <= 10^5，1 <= m <= n。
 #include<cstdio>
 #include<cstring>
 #include<cctype>

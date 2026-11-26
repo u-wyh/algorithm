@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2707
+// 题意：n 个景点，第 i 个景点票价为整数 x 时游览人数为 max(a_i - b_i*x, 0)。
+// 要求所有景点门票总价之和不超过 k，求最大总收益。
+// 输出最大总收益。
+// 数据范围：1 <= n, k, a_i, b_i <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

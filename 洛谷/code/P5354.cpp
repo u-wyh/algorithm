@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5354
+// 题意：给定一棵 n 个点的树，每个点有一个位运算（&, |, ^）和权值，共 m 次操作：2 x y z 将点 x 的运算和权值改为 y, z。
+// 1 x y z 查询从 [0, z] 中选初始值 v 依次经过 x 到 y 路径各点位运算后能得到的最大结果。
+// 数据范围：0 <= n, m <= 10^5，0 <= k <= 64（所有权值及 z 小于 2^k）。
 #include<bits/stdc++.h>
 using namespace std;
 #define ull unsigned long long

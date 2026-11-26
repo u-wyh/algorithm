@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5203
+// 题意：给定 n 点 m 边的无向图，前 n-1 条边组成一棵生成树（常规小路），其余边为非常规小路。
+// 求图中恰好包含两条非常规小路的简单环个数（包含边集相同视为同一个环）。
+// 数据范围：1 <= n <= 2*10^5，1 <= m <= 2*10^5，m >= n-1，1 <= a_i, b_i <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3395
+// 题意：多组测试数据，第一行输入组数 T，每组输入棋盘大小 n 及 2n-2 个路障坐标 (x, y)。
+// B 君从 (1, 1) 出发每秒上下左右移动一格，第 i 秒结束后第 i 个路障落地，求能否走到 (n, n)。
+// 对每组数据输出 Yes 或 No。
+// 数据范围：T <= 10，n <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2656
+// 题意：N 个点 M 条单向边，每条边有初始蘑菇数和恢复系数（每次采完新长 floor(原数*系数)）。
+// 从 S 出发沿边行走，求最多能采到的蘑菇总数。
+// 输出最多蘑菇数（不超过 2^31-1）。
+// 数据范围：1 <= N <= 8*10^4，1 <= M <= 2*10^5，0 <= 恢复系数 <= 0.8（最多一位小数）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 8e4+5;

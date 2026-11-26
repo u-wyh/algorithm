@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1825
+// 题意：在迷宫中从 @ 走到出口 =，每次走上下左右一格耗时 1，不能过墙。踩到大写字母时必须瞬移到同字母的另一端，传送不耗时，落地后先走一步才能再传送。求最短时间。
+// 数据范围：2 ≤ N,M ≤ 300，滑梯由 A 到 Z 的字母成对标记。
+
 #include<iostream>
 #include<queue>
 using namespace std;

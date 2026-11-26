@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P6533
+// 题意：n 个顾客买画，每人至多买 a_i 张彩色画或 b_i 张黑白画（至少买一幅，且只能单独买彩色或黑白其中一种）。
+// q 次修改某位顾客 p_i 的 (a_{p_i}, b_{p_i})，每次修改后求至少有 c 个人买彩色画的方案数对 10^4+7 取模。
+// 数据范围：1 <= n, q <= 10^5，1 <= c <= 20，1 <= a_i, b_i, a_{p_i}, b_{p_i} <= 10^9
+// 1 <= p_i <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

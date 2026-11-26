@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3449
+// 题意：输入回文串数量 n，以及 n 个互不相同的回文串（每行给出长度 a_i 和字符串本身）。
+// 将这 n 个串任意两两拼接（允许自己拼自己，ab 与 ba 视作不同组合共 n^2 个新串），统计其中仍是回文串的个数。
+// 输出一个整数，表示满足条件的新回文串数量。
+// 数据范围：n >= 2，串仅含小写字母且两两不同，所有回文串总长度不超过 2*10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

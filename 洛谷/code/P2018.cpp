@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P2018
+// 题意：给定 N 人的上下级关系，先花 1 单位时间告诉一个人消息。
+// 之后每单位时间，每个已知消息的人可告诉一名直属上级或下属。
+// 输出传遍所有人的最短时间及所有最优起点，起点按编号递增。
+// 数据范围：N ≤ 1000，人员编号在 [1,N]，1 号没有上级。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1001;

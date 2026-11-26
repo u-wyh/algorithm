@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4170
+// 题意：有一条长为 n 的无色木板，每次可以把连续一段涂成某种颜色（后涂覆盖先涂），给一个长度为 n 的大写字母目标串，求最少需要涂色多少次。
+// 数据范围：1 <= n <= 50。
 #include <stdio.h>
 #include <string.h>
 #include <limits.h> // 用于初始化dp数组为最大值

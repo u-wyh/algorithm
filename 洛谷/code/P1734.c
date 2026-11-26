@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1734
+// 题意：选若干互不相同的正整数，使它们的和不超过 S。每个数的收益是它的所有真约数之和，求最大总收益。
+// 数据范围：1 ≤ S ≤ 1000。
+
 #include<stdio.h>
 
 int max(int a,int b)

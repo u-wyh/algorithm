@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2464
+// 题意：长度为 N 的序列（初始值 A_i），共 M 次操作。
+// C A P：将第 A 个位置的值改为 P；Q A B K：查询闭区间 [A,B] 内值为 K 的个数。
+// 对每个 Q 操作输出一行整数。
+// 数据范围：1 <= N, M <= 10^5，数值为不超过 2^31-1 的正整数。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

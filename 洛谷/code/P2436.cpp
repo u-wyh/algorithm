@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2436
+// 题意：T 组数据，表由 A 位神犇与 B 位蒟蒻间隔循环构成（1..A 神犇，A+1..A+B 蒟蒻...）。
+// 给定 N 名神犇和 M 名蒟蒻的编号，求满足条件的 A, B（优先 A 最小，其次 B 最小）。
+// 每组输出 A B，无解输出 NO。
+// 数据范围：1 <= T <= 10，1 <= N, M <= 1000，编号 <= 10*(N+M)。
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 1005

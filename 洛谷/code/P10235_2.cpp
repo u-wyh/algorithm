@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10235
+// 题意：给 n 个音符的难度 a，把序列完整切成最多 k 个连续非空段。每段的代价是内部逆序对数，求各段最大代价能降到多少。
+// 数据范围：T 为正整数，1 ≤ k ≤ n ≤ 10^5，-10^9 ≤ a[i] ≤ 10^9，同一测试点所有 n 之和不超过 10^5。
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

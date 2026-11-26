@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P10795
+// 题意：给一棵树，每个点有 t 和 v 两个属性。
+// 对每个有序点对 (i,j)，在路径上找 t 最小的点 x。
+// 若 v[j] ≤ v[x] ≤ v[i] 就贡献 x 的编号，否则贡献 0。
+// 输出所有点对的贡献和，包含 i=j。
+// 数据范围：1 ≤ n ≤ 10^5，1 ≤ t[i],v[i] ≤ 10^9，所有 t[i] 互不相同。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

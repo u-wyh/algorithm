@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6771
+// 题意：有 N 种方块，第 i 种高 h_i、共 c_i 个，且该种任何部分所处高度不能超过 a_i，求能堆出的太空电梯最大高度。
+// 数据范围：1 <= N <= 400，1 <= h_i <= 100，1 <= c_i <= 10，1 <= a_i <= 4*10^4。
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>

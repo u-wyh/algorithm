@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P10111
+// 题意：有 N 轮，已知对手每轮出的牌 c[i]。
+// 牌 1 赢 0、2 赢 1、0 赢 2，第 i 轮赢、平、输分别得 2a[i]、a[i]、0 分。
+// 若一共换牌 t 次，再扣前 t 个 b 的和。
+// 求最高净得分。
+// 数据范围：1 ≤ N ≤ 1000，0 ≤ a[i], b[i] ≤ 10^6，c[i] 只能是 0、1、2。
+
 #include <stdio.h>
 #include <stdlib.h>
 

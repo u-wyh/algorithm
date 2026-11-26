@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2396
+// 题意：有 n 张卡片（数字 a_i），每次选一张向前走 a_i 步并丢弃，用完卡片获胜。
+// 若途中停在 m 个厄运数字之一（含终点）则失败。
+// 输出获胜的方案数对 10^9+7 取模的结果。
+// 数据范围：n <= 24，0 <= m <= 2，1 <= a_i, b_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MOD = 1e9+7;

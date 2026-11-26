@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P12491
+// 题意：树上每个点有双权值 a_i, b_i，求满足约束的好路径的最小 b 和。
+// 输入：首行 n, V，后 n 行每行 a_i, b_i，再 n-1 行描述树边。
+// 规则：若简单路径上 (min a) * (sum b) >= V，则称其为好路径。
+// 输出：输出所有好路径中路径 sum b 的最小值（保证有解）。
+// 数据范围：1 <= n <= 2*10^5，1 <= V <= 10^18，1 <= a_i, b_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

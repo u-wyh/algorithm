@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4868
+// 题意：给定长为 N 的序列 a，维护 M 次操作：单点修改 a_i 的值，以及查询前前缀和 SS_i = sum_{k=1}^i sum_{j=1}^k a_j。
+// 数据范围：1 <= N, M <= 10^5，任意时刻 0 <= a_i <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

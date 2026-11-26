@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P11306
+// 题意：给根为 1 的二叉树，每次把点 x 的权值改成 v。
+// 每改一次，统计有多少个节点的完整子树是二叉搜索树。
+// 要求每个根的左子树点权都不大于根，右子树都不小于根，且两侧也递归满足。
+// 数据范围：1 ≤ n,m ≤ 2 × 10^5，0 ≤ a[i],v ≤ 10^9，儿子编号为 0 表示不存在。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

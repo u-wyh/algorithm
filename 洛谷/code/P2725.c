@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2725
+// 题意：有 n 种面值 a_i 的邮票（数量无限），最多贴 k 张。
+// 求最大的正整数 m，使 1~m 都能用不超过 k 张邮票组合出来（不存在输出 0）。
+// 数据范围：1 <= k <= 200，1 <= n <= 50，1 <= a_i <= 10^4。
 #include<stdio.h>
 #include<limits.h>
 

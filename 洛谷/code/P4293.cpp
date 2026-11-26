@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P4293
+// 题意：有 n 个粒子各有质量 m_i 和结合系数 c_i，粒子 a 的 N 极连粒子 b 的 S 极产生能量 m_a*m_b*(c_a - c_b)；
+// 第一问求选哪两个粒子直接相连能量最大；
+// 第二问求选 k（2 <= k <= n）个不同粒子连成一圈（p_i 的 N 极连 p_{i+1} 的 S 极
+// p_k 连 p_1）能得到的最大总能量及方案（误差 <= 1e-5）。
+// 数据范围：n <= 50000，0 < m_i, c_i < 1e5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

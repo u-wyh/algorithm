@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4915
+// 题意：初始有 n 本含等级 a_i 与知识值 w_i 的书
+// 支持 m 次操作：查询等级在区间 [x, y] 内（均等随机）能阅读到的满足 a_i <= 等级 的书的知识总和期望（保留 4 位小数）
+// 以及新加入一本等级 x、知识值 y 的书。
+// 数据范围：1 <= n, m <= 10^5，其余输入数在 32 位有符号整数内，运算中数值在 [-2^63, 2^63-1] 内。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

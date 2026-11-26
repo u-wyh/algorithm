@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5974
+// 题意：给定平面上 N 个整点坐标，求能覆盖其中至少 K 个点的圆的最小半径及圆心坐标（SPJ 要求半径误差 <= 10^-4
+// 且以输出圆心、R+0.0002 为半径的圆至少覆盖 K 个点）。
+// 数据范围：2 <= K <= N <= 500，0 <= X, Y <= 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

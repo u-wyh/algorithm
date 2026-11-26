@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4271
+// 题意：维护一个初始为空的森林，支持 q 次操作：B p 新建一个节点并连向 p（若 p=-1 则不连边）；
+// Q k 询问点 k 所在连通块（树）中距离 k 最远的点的边数距离。
+// 数据范围：1 <= q <= 1e5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

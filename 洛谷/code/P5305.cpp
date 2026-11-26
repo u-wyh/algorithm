@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5305
+// 题意：给定一棵 n 个点以 1 为根的有根树（根深度为 1）和常数 k。
+// 共 Q 次询问，每次给定 x, y，求 sum_{i=1}^x depth(lca(i, y))^k 对 998244353 取模的值。
+// 数据范围：1 <= n <= 5*10^4，1 <= Q <= 5*10^4，1 <= k <= 10^9，1 <= x, y <= n。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

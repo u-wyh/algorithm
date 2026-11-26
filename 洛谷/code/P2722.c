@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2722
+// 题意：总时间 m，有 n 类题目（每类可选无限次），第 i 类得分 p_i、耗时 t_i。
+// 求规定时间内能获得的最大总分。
+// 输出最大总分。
+// 数据范围：1 <= n, m <= 10^4，1 <= p_i, t_i <= 10^4。
 #include<stdio.h>
 
 int max(int a,int b)

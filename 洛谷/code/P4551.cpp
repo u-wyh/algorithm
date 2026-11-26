@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4551
+// 题意：给定一棵 n 个点的带权无根树，求树上任意两点之间唯一路径上所有边权异或和的最大值。
+// 数据范围：1 <= n <= 10^5，0 < u, v <= n，0 <= w < 2^{31}。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100005;

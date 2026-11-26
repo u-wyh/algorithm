@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1858
+// 题意：K 个人各有容量 V 的背包。给定 N 种物品的体积和价值，每人同种最多选一件，必须恰好装满，且任意两人的物品集合不同。求所有背包的最大总价值。
+// 数据范围：K ≤ 50，V ≤ 5000，N ≤ 200。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 205;

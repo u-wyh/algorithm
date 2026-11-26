@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1699
+// 题意：给定农场地图，从湖 L 到着火的牛棚 B 找一条上下左右相连的路径，绕开岩石 R。求路径中最少要占用几个空格，湖和牛棚两格不计。
+// 数据范围：地图固定为 10×10，B、L、R 各出现一次，B 和 L 不相邻。
+
 #include<bits/stdc++.h>
 
 using namespace std;

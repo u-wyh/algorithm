@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5446
+// 题意：定义翻转操作为将串前 |R|-1 个字符倒序接到串尾；对初始串 R 做若干次翻转后，给定其最终串的某非空前缀 S。
+// 多组数据（T 组），每组从小到大输出所有不超过 |S| 的初始串 R 的可能长度。
+// 数据范围：|S| <= 10^6，单测试点 sum |S| <= 5*10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e6+55;

@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P5673
+// 题意：给定 n 个商品的种类 p_i 和价值 v_i 以及参数 k；
+// m 次询问区间 [l, r]，从右往左看，若某一种类累计出现达到 k 次则该种类（含第 k 个）之后的均失效，求有效礼物价值和。
+// 输入 n, m, k、序列 p、序列 v 及 m 个询问区间；输出 m 行答案。
+// 数据范围：1 <= n <= 10^6，1 <= m <= 5*10^5，2 <= k <= n，1 <= p_i <= n
+// 1 <= v_i <= 2000，1 <= l <= r <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

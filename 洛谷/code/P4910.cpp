@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4910
+// 题意：T 组询问，每组给环长 n，用木属性和金属性珠子穿成长度为 n 的环形手环（按编号区分位置），要求任意相邻两颗珠子中至少有一颗是金属性
+// 求方案数模 10^9 + 7。
+// 数据范围：1 <= T <= 10，1 <= n <= 10^18。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

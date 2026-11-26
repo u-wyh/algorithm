@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8606
+// 题意：输入一行 N 个递增整数表示站在台阶上的小和尚位置（台阶从 1 编号，最后一人位置即为总台阶数）。
+// 两人轮流选一个小和尚向上走任意多级（不能越过或落在前面小和尚同一台阶，不能向下走），无法移动者负。
+// 求先手必胜的第一步 A B（将 A 位置和尚移到 B），多解输出 A 最小者，无解输出 -1。
+// 数据范围：N < 100，台阶总数 < 1000。
 // https://www.luogu.com.cn/problem/P8606
 #include<bits/stdc++.h>
 using namespace std;

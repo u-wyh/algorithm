@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4588
+// 题意：t 组数据，初始 x = 1，支持 Q 次操作：将 x 乘以 m 并输出 x mod M，或者将 x 除以之前某次乘法操作乘过的数并输出 x mod M。
+// 数据范围：1 <= Q <= 10^5，t <= 5，1 < M <= 10^9，0 < m <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 

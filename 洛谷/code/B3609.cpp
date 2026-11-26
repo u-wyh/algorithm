@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B3609
+// 题意：给 n 个点、m 条边的有向图，可能有重边和自环。把互相可达的点分成一组。先输出组数，再按每组最小编号从小到大输出，每组内也按编号升序。
+// 数据范围：1 ≤ n ≤ 10^4，1 ≤ m ≤ 10^5。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

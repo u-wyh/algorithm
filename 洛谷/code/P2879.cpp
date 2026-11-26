@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2879
+// 题意：N 头牛排成一排，已知最高牛位置 I 和身高 H，以及 R 条 A 能看到 B 的关系。
+// A 能看到 B 表示 B 身高 >= A，且 A, B 之间所有牛身高严格小于 A。
+// 输出 N 行，每行表示每头牛的最大可能身高。
+// 数据范围：1 <= N <= 10000，1 <= H <= 10^6，0 <= R <= 10000。
 #include<bits/stdc++.h>
 
 using namespace std;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5556
+// 题意：给定一棵 n 个点带点权 v_i 的树，支持路径点权全部异或 z，以及查询路径 (x, y) 上点集是否存在两个不相等但异或和相同的子集（含空集）。
+// 输入 n, q、初始点权、树边及各次 Update/Query 操作；对每个 Query 输出 YES 或 NO。
+// 数据范围：1 <= n, q <= 10^5，0 <= v_i, z < 2^30。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

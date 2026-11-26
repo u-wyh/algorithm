@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4219
+// 题意：初始有 N 个孤立点，共 Q 次操作：A x y 在 x 和 y 之间连一条边（保证之前不连通）；
+// Q x y 询问当前树上经过边 (x, y) 的简单路径数量（保证该边存在）。
+// 数据范围：1 <= N, Q <= 1e5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

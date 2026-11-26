@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3946
+// 题意：n 个地点、m 条无向边（边长 w_i），走路速度 1 m/s。初始时刻地点 i 积雪高度为 h_i，每秒钟积雪增加 q 毫米。
+// 若到达地点 i（不含起点 s 和终点 t）时当地积雪高度 > l_i 则会被困。求在 g 秒内从 s 走到 t 的最短用时，若超时或被困则输出指定字符串。
+// 数据范围：n <= 100000，m <= 500000，1 <= s, t <= n，0 <= g, q <= 10^9
+// 0 <= w_i <= l_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

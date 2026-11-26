@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2257
+// 题意：T 组询问，每组给定 N, M，求 1 <= x <= N, 1 <= y <= M 且 gcd(x,y) 为质数的 (x,y) 对数。
+// 每组输出一行答案。
+// 数据范围：T = 10^4，1 <= N, M <= 10^7。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

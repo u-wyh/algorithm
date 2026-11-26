@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6177
+// 题意：给定 n 个点的树（点权 val_i），在线回答 m 次询问 (u', v)（u = u' xor lastans），求 u 到 v 路径上不同点权的个数。
+// 数据范围：1 <= u, v <= n <= 4 * 10^4，1 <= m <= 10^5，0 <= u', val_i < 2^31。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 4e4+5;

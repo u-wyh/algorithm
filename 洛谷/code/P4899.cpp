@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4899
+// 题意：给定 N 点（0..N-1）M 边的连通无向简单图和 Q 次询问 S_i, E_i, L_i, R_i，初始人形只能走 >= L_i 的点
+// 变狼形后只能走 <= R_i 的点，中途需在某个 [L_i, R_i] 内的点变身一次，问能否从 S_i 走到 E_i。
+// 数据范围：2 <= N <= 200,000，N-1 <= M <= 400,000，1 <= Q <= 200,000
+// 0 <= L_i <= S_i <= N-1，0 <= E_i <= R_i <= N-1，S_i != E_i，L_i <= R_i。
 #include <iostream>
 #include <vector>
 #include <algorithm>

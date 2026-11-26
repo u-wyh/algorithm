@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P13661
+// 题意：边序列每次截取子段 [S, T]，求其中所有无环连续子区间 [U, V] 个数。
+// 输入：首行 N, M，后 M 行给无向边 (A, B)，再 Q 及 Q 行询问 [S, T]。
+// 规则：保留编号在 [S, T] 的边，统计满足 S<=U<=V<=T 且边 [U..V] 无环的对数。
+// 输出：每次询问输出一行整数，表示可行子区间 [U, V] 的数量。
+// 数据范围：1 <= N, M, Q <= 10^5，1 <= A < B <= N，1 <= S <= T <= M。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

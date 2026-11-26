@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10415
+// 题意：给一个 W × H 的矩形，把它无剩余地分成相同大小的正方形，正方形边长必须是至少 2 的整数。输出最多能分成多少个，无解输出 0。
+// 数据范围：1 ≤ W,H ≤ 10^9。
+
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5557
+// 题意：有 n 个城市，每个城市有唯一后继城市 a_i，给出 m 次查询，求从 S_i 出发走 t_1^{t_2} 步后到达的城市编号。
+// 输入 n、后继序列 a、查询数 m 及每次询问的 S_i, t_1, t_2；每行输出一个目标城市编号。
+// 数据范围：1 <= n <= 400000，m <= 300000，t_1, t_2 <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

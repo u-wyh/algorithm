@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2028
+// 题意：把 n 个互不相同的苹果分进 k 个不区分顺序的篮子，每个篮子都不能为空。输出分法数对 p 取模的值。
+// 数据范围：n ≤ 10000，k ≤ 1000，n ≥ k，输出值可用 64 位整数表示。
+
 #include<stdio.h>
 
 int main()

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P9649
+// 题意：多组数据（共 T 组）。给定 n 个整数区间 [l_i, r_i]，从每个区间中各选一个整数，最大化这 n 个整数按位与（AND）的结果。
+// 题意：第一行输入 T，每组输入 n 及 n 行 (l_i, r_i)；每组输出一行一个整数。
+// 数据范围：1 <= n <= 10^5，0 <= l_i <= r_i <= 10^9，sum(n) <= 10^6（未显式给出 T 上界
+// 受 sum(n) 限制）。
 #include <stdio.h>
 #include <ctype.h>
 

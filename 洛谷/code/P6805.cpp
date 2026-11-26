@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P6805
+// 题意：给定 N 个点的原树及 Q 次独立改造，每次向原树指定节点共添加 D_i 个新叶子；
+// 清理规则为每次选两个未选过的叶子覆盖其路径上的边（费用为边数），求覆盖改造后整棵树所有边的最小总费用，不能完全清理输出 -1。
+// 数据范围：3 <= N <= 10^5，1 <= Q <= 10^5，sum D_i <= 10^5，1 <= u, v <= N
+// 1 <= a_j <= N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

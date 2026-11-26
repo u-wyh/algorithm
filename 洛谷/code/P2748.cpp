@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2748
+// 题意：N 个花坛初始有 A_i 单位泥土，目标变为 B_i 单位。
+// 买 1 单位花费 X，移走花费 Y，从 i 运到 j 花费 Z*|i-j|，求最小总开销。
+// 输出最小总开销。
+// 数据范围：1 <= N <= 10^5，0 <= A_i, B_i <= 10，0 <= X, Y <= 10^8，0 <= Z <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

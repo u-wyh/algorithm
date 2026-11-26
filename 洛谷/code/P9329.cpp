@@ -1,4 +1,12 @@
 // https://www.luogu.com.cn/problem/P9329
+// 题意：给定 n 个城市、n-1 条双向道路构成的树。
+// 有 m 个检查站，第 j 个位于第 p_j 条边上，每次通过需支付 1 金币或 c_j 银币。
+// 有 q 名公民，第 k 人持有 x_k 金币和 y_k 银币，从 s_k 前往 t_k。
+// 题意：第一行输入 N, M, Q，后 N-1 行输入树边 (A_i, B_i)，再 M 行输入 (P_j, C_j)
+// 再 Q 行输入 (S_k, T_k, X_k, Y_k)；
+// 输出 Q 行，能到达则输出最多可保留的金币数，否则输出 -1。
+// 数据范围：2 <= N <= 10^5，1 <= M, Q <= 10^5，1 <= A_i, B_i, S_k, T_k <= N，S_k != T_k
+// 1 <= P_j <= N-1，1 <= C_j <= 10^9，0 <= X_k <= 10^9，0 <= Y_k <= 10^18。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

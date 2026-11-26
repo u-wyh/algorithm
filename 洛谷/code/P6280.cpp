@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6280
+// 题意：求所有正整数 K 的和（对质数 M 取模），使得存在至少一个长为 N 的排列，按其置换重复操作恰好 K 步后恢复初始顺序。
+// 数据范围：1 <= N <= 10^4，10^8 <= M <= 10^9+7 且 M 为质数。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

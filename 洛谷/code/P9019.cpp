@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P9019
+// 题意：给定 N 台拖拉机的区间 [l_i, r_i]（由长 2N 的 L/R 序列按顺序给出，且 l_1<...<l_N
+// r_1<...<r_N）及每台是否特殊。
+// 区间相交则相邻，保证 1 与 N 连通。
+// Q 次询问 a, b (a < b)，输出 a 到 b 的最短路长度（转移次数）以及至少被一条 a 到 b 的最短路经过的特殊拖拉机数量。
+// 数据范围：2 <= N <= 2*10^5，1 <= Q <= 2*10^5，1 <= a < b <= N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

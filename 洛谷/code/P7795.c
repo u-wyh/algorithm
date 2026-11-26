@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P7795
+// 题意：给定长为 n 的正整数序列 a，求长度至少为 k 的连续子序列的最大平均值（相对误差不超过 10^-3）。
+// 数据范围：1 <= k <= n <= 3*10^5，1 <= a_i <= 10^6。
 #include<stdio.h>
 #include<stdbool.h>
 #define MAX 300000+5

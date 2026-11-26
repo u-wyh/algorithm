@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P8360
+// 题意：给定长为 n 的序列，初始每个位置有数值 a_i 和颜色 c_i（共 C 种）。
+// q 次操作：1 l r x y 将 [l, r] 内颜色为 x 的位置改为颜色 y；
+// 2 l r x v 将 [l, r] 内颜色为 x 的位置数值加 v；
+// 3 l r 输出 [l, r] 的数值之和。
+// 数据范围：100% 数据满足 1 <= n, q <= 2.5*10^5，1 <= a_i, v <= 10^8
+// 1 <= c_i, x, y <= C（题面总述未单列 C 上限，测试点表最大至 C <= 2.5*10^5）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 250005;

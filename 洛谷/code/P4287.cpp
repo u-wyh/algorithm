@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4287
+// 题意：定义「双倍回文」为形如 w w^R w w^R 的字符串（即长度是 4 的倍数，且自身、前半部分、后半部分都是回文串）
+// 求给定小写字母串的最长双倍回文子串长度（不存在输出 0）。
+// 数据范围：1 <= N <= 500000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

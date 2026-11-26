@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2510
+// 题意：平面上有 n 个圆盘依次落下，后落下的盖住前面的。
+// 求最终可见的圆弧总长度（封闭区域周长）。
+// 输出总长度，保留三位小数。
+// 数据范围：n <= 1000。
 #include <iostream>
 #include <vector>
 #include <algorithm>

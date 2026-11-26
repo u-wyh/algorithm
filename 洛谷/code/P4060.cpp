@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P4060
+// 题意：第一行输入原始非负整数序列长度 n 和剩余已知元素个数 m，接下来 m 行每行输入已知元素的下标 i 和数值 a_i。
+// 序列 b 为 a 的异或前缀和（b_1 = a_1，b_i = b_{i-1} xor a_i (i >= 2)）；
+// 未知位置可取任意非负整数（可超过已知 a_i 上界），求所有可能 a 序列对应的 b 序列总和 sum_{i=1}^n b_i 的最小值。
+// 输出可能的最小总和。
+// 数据范围：对于全部测试点，1 <= n <= 10^9，0 <= m <= min{n, 10^5}，已知 0 <= a_i <= 10^9
+// 保证所有输入下标 i 互不相同且 1 <= i <= n（未知 a_i 可超过已知 a_i 的范围）。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

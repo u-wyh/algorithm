@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4305
+// 题意：多组数据，每组给 n 个整数，去掉重复数字，只保留每个数第一次出现的位置并按原序输出。
+// 数据范围：1 <= T <= 50，1 <= n <= 5e4，数值在 32 位有符号整数范围内。
 #include<bits/stdc++.h>
 
 #define For(i,a,b) for(int i=(a);i<=(b);++i)

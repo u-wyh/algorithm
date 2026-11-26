@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B3626
+// 题意：机器人从 1 号格出发，目标是 n 号格。在 x 时可以跳到 x-1、x+1 或 2x，所有落点都要在 1 到 n 内。输出最少跳跃次数。
+// 数据范围：1 ≤ n ≤ 10^6。
+
 #include<bits/stdc++.h>
 
 using namespace std;

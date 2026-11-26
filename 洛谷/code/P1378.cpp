@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1378
+// 题意：给长方形和内部 N 个不同点，决定放油滴的顺序。
+// 每次在一个点放油滴，等到它扩张并碰到边界或已放的油滴才放下一滴。
+// 求全部放完后未被油覆盖的最小面积，四舍五入到整数。
+// 数据范围：1 ≤ N ≤ 6，边框角点和内部点的坐标均在 [-1000,1000]。
+
 #include<iostream>
 #include<algorithm>
 #include<cstdio>

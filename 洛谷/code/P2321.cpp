@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2321
+// 题意：给出 k 个咒语机（各含 n 个元件和 m 个输出元，每元件有 0/1 转移）。
+// 若 j 能产生 i 的所有咒语源，则 j 是 i 的升级，求最长升级序列长度。
+// 输出最长序列长度。
+// 数据范围：1 <= k <= 50，1 <= n, m <= 50。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 55;

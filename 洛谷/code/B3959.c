@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B3959
+// 题意：有 n 套题单，第 i 套含 a[i] 道题。第 k 天要从一套还没用过的题单做 k 道，之后弃用这套。输出最多能连续坚持几天。
+// 数据范围：1 ≤ n ≤ 10^6，1 ≤ a[i] ≤ 10^9。
+
 #include <stdio.h>
 #include <stdlib.h>
 

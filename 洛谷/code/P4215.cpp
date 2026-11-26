@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4215
+// 题意：有 n 个盒子第 i 个装有 a_i 个气球，m 个熊孩子每人指定一个区间 [l_i, r_i]；
+// 进行 Q 次强制在线操作（输入 x 通过上次答案加密），每次从第 x 个盒子拿出并踩爆 1 个气球，某区间所有气球都被踩爆时对应孩子就一直高兴
+// 求每次操作后高兴的孩子数。
+// 数据范围：1 <= n, m, Q <= 1e5，1 <= a_i <= 1e5，1 <= x' <= 1e9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

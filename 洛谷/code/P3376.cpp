@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3376
+// 题意：给一张有向网络，有 n 个点、m 条边，s 是源点，t 是汇点。
+// 每条边 (u, v, w) 表示从 u 到 v 最多可以送 w 单位的流量。
+// 除 s 和 t 外，每个点的总流入量要等于总流出量。输出从 s 最多能送多少流量到 t。
+// 数据范围：1 ≤ n ≤ 200，1 ≤ m ≤ 5000，0 ≤ w < 2^31。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

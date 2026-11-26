@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1857
+// 题意：两人轮流从一堆石子中取走质数个石子，不能取的人输。胜方尽快结束，败方尽量拖延。每组求先手必胜时的总回合数，先手必败输出 -1。
+// 数据范围：测试组数 N ≤ 10，每堆石子不超过 20000。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 20005;

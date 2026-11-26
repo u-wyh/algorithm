@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P11122
+// 题意：给 h 行 w 列的非负整数表格，可以删任意行或列。
+// 要求剩下元素总和恰好是 s，无解输出 NO。
+// 有解输出 YES、操作数，再输出每步的类型和原始行列编号，1 删行、2 删列。
+// 数据范围：1 ≤ h,w ≤ 15，0 ≤ A[i][j] ≤ 10^9，1 ≤ s ≤ 10^18。
+
 #include <bits/stdc++.h>
 using namespace std;
 

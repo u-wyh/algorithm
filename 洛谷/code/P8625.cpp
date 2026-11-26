@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P8625
+// 题意：输入整数 n、n 个节点权值和 n-1 条边组成的树，在树中选出一个连通点集 S（允许为空集，空集和为 0），输出 S 中节点权值和的最大值。
+// 数据范围：0 < n <= 10^5，每个节点权值的绝对值 <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100005;

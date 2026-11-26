@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2654
+// 题意：有 n 只原核生物各有初始重量，共进行 k 次实验。
+// 每次取重量最小的 m 个按给定顺序排成环，相邻两只融合（耗能为两只重量之和）。
+// 每次实验剩余 1 只放回培养皿，求 k 次实验的最小总耗能。
+// 数据范围：1 < n <= 1000，1 <= m <= 10，1 <= k <= 100，结果不超过 2^31。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

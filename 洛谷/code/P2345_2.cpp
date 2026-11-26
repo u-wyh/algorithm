@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2345
+// 题意：n 头奶牛位于不同坐标 x_i，听力为 v_i。
+// 每对奶牛 (i,j) 交流产生音量 max(v_i, v_j) * |x_i - x_j|。
+// 求所有奶牛对产生的音量总和。
+// 数据范围：1 <= n <= 2*10^4，1 <= v_i, x_i <= 2*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN =20005;

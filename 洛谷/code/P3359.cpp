@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3359
+// 题意：输入点数 n，n-1 条带权树边 (a_i, b_i, z_i)，以及删掉这 n-1 条边的顺序排列。
+// 每删去一条边后，统计当前森林中有多少条路径满足路径上所有边权异或和为 0。
+// 输出 n 行，依次为删去第 0 到第 n-1 条边后边权异或和为 0 的路径数。
+// 数据范围：n <= 10^5，0 <= z_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

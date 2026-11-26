@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6224
+// 题意：二维平面初始有 N 个点，支持 Q 次操作：向点集添加一个点；查询给定点到点集中所有点的最小曼哈顿距离；查询最大曼哈顿距离。
+// 数据范围：1 <= N, Q <= 10^5，点坐标为不超过 10^9 的非负整数。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

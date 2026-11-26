@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3306
+// 题意：多组测试数据，第一行输入组数 T，每组给出 p、a、b、x_1、t。
+// 每天读的页码按 x_{i+1} ≡ a * x_i + b (mod p) 生成。
+// 对每组数据输出最早读到第 t 页的天数（第 1 天读 x_1），若永远读不到输出 -1。
+// 数据范围：1 <= T <= 50，2 <= p <= 10^9 且 p 为质数，0 <= a, b, x_1, t < p。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

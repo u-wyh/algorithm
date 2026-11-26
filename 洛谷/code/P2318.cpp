@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2318
+// 题意：模拟容量为 n 页的内存，处理 m 次页面访问请求 P_i。
+// 命中则访问次数+1；未命中且有空页则直接装入；否则替换访问次数最少（并列取最早进入）的页。
+// 输出总命中次数。
+// 数据范围：n <= 10^4，m <= 10^6，P_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

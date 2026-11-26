@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5157
+// 题意：给一棵 N 个点的树和 M 条有向先序限制 (a_i, b_i)（a_i 必须先于 b_i 离开）
+// 每次只能让当前剩余图中度数 <= 1 的点离开（剩最后 1 点时除外），判断每个点能否成为最后一个离开的点。
+// 数据范围：1 <= N, M <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

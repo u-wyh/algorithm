@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4909
+// 题意：由 N 个端点 (i, H_i) 构成的折线山脉，要在起点 1、终点 N 及若干中间端点建支柱拉缆绳
+// 要求每段缆绳水平跨度不超过 K 且线段不低于中间任何山脉端点的高度，求最少支柱总数。
+// 数据范围：2 <= N <= 5000，1 <= K <= N-1，0 <= H_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5005;

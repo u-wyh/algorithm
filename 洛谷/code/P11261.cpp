@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P11261
+// 题意：给 n 格直方图和面积下限 p。统计四角坐标都是整数、底边在 x 轴上、整个矩形都在直方图内，且面积至少为 p 的矩形数，允许贴边。
+// 数据范围：1 ≤ n ≤ 10^5，1 ≤ p ≤ 10^14，1 ≤ h[i] ≤ 10^9。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

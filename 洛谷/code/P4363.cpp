@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4363
+// 题意：在 n 行 m 列棋盘上黑先白后轮流落子，某格可落子当且仅当其上方和左侧格均已落子，每格有黑分 a_{i,j} 和白分 b_{i,j}
+// 求双方均以最大化己方减对方得分差为目标时的最终分差。
+// 数据范围：1 <= n, m <= 10，0 <= a_{i,j}, b_{i,j} <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

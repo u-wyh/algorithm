@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P11209
+// 题意：给长度为 n 的数组 a,b。
+// 每问给 k'，用 k=k' 异或上一答案乘在线标志 T 解出 k，再统计有多少位置满足 a[i] 异或 k 后不大于 b[i]。
+// 第一次的上一答案按 0。
+// 数据范围：1 ≤ n,m ≤ 5 × 10^5，0 ≤ a[i],b[i],k < 2^30，T 为 0 或 1。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

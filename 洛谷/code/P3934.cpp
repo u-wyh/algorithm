@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3934
+// 题意：维护长为 n 的正整数序列，支持 m 次操作：
+// 1. 1 l r x：区间 [l, r] 每个数加上 x；
+// 2. 2 l r p：查询幂塔 a[l]^{a[l+1]^{a[l+2]^{...^{a[r]}}}} mod p 的值。
+// 数据范围：n, m <= 5 * 10^5，序列初始每个数在 [1, 2 * 10^9] 内，每次加上的数在 [0, 2 * 10^9] 内
+// p <= 2 * 10^7，共 10 组数据。
 #include <iostream>
 #include <vector>
 #include <functional>

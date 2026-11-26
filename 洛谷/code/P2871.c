@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2871
+// 题意：N 件物品（重量 W_i，价值 D_i），背包容量 M（01 背包）。
+// 求背包能装下的最大总价值。
+// 输出最大总价值。
+// 数据范围：1 <= N <= 3402，1 <= M <= 12880，1 <= W_i <= 400，1 <= D_i <= 100。
 #include<stdio.h>
 
 int max(int a,int b)

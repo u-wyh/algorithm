@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7821
+// 题意：T 组数据，A、B 两队赛 n 场（胜 a 分、负 b 分、平 c 分），已知 A 总进球 d、B 总进球 e（每场比分非负整数）
+// 求 A 队最大可能得分与最小可能得分。
+// 数据范围：1 <= T <= 10^5，1 <= n <= 10^9，0 <= d, e <= 10^9，0 <= b <= c <= a <= 10^9。
 #include <stdio.h>
 #include <stdlib.h>
 

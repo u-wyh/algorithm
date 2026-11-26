@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P12847
+// 题意：已知 G_1=2, G_2=3, G_i=G_{i-1}*G_{i-2}，求 G 的前 n 项积。
+// 输入：一行一个正整数 n。
+// 规则：按递推式定义乘积型斐波那契数列，求 prod_{i=1..n} G_i。
+// 输出：输出答案对 998244353 取模的结果。
+// 数据范围：1 <= n <= 10^18。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

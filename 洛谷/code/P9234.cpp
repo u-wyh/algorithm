@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P9234
+// 题意：有 n 个瓜，第 i 个重量为 A_i，每个瓜最多劈一刀变成等重的两份（每份重 A_i / 2）。
+// 求选出总重量恰好为 m 的瓜（或半瓜）所需的最少劈瓜数；
+// 若无法凑出总重 m 则输出 -1。
+// 题意：第一行输入 n, m，第二行输入 A_1..A_n；输出一行一个整数。
+// 数据范围：1 <= n <= 30，1 <= A_i <= 10^9，1 <= m <= 10^9。
 #include <iostream>
 #include <algorithm>
 #include <unordered_map>

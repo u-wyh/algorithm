@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5509
+// 题意：n*k 方阵中有 n*k 个士兵（(x,y) 编号 i=x*k+y，(0,0) 必派遣，其余可选），每个未派遣的士兵使方案权值乘以 x/(i-x)
+// 求所有派遣方案权值和模 1145141。
+// 输入 t 及 t 组 (n, k)；每组输出模 1145141 的结果，若分母不互质无逆元则输出 -1。
+// 数据范围：1 <= t <= 100000，1 <= n <= 10^9，2 <= k <= 10^9，1145141 是质数。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

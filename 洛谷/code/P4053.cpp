@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4053
+// 题意：第一行输入受损建筑数 N，接下来 N 行每行输入修理第 i 个建筑所需时间 T_1 和其报废截止时间 T_2。
+// 只有一个修理工人，每次只能修一个建筑且不能中断，必须在 T_2 秒内修完才算抢修成功。
+// 输出最多可抢修成功的建筑数量 S。
+// 数据范围：对于 100% 的数据，1 <= N < 150000，1 <= T_1 < T_2 < 2^{31}。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

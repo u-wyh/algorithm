@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4211
+// 题意：给一棵 n 个点的有根树（编号 0 到 n-1，根为 0），点深度为到根距离加 1；
+// 共 m 次询问，每次给 l, r, z，求 sum_{i=l}^{r} dep[LCA(i, z)] 对 201314 取模的值。
+// 数据范围：1 <= n, m <= 50000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

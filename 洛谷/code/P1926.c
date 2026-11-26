@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1926
+// 题意：有 n 道想刷的题和 m 项作业，完成任一项都要花时间，作业还能得分。总时间不超过 r，作业分至少达到 k。求最多能刷几道题。
+// 数据范围：n,m ≤ 10，k ≤ 50，r ≤ 150，保证能及格。
+
 #include<stdio.h>
 
 int max(int a,int b)

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5635
+// 题意：两人轮流操作数 x, y（mod p），奇数轮 x = (x+y) mod p，偶数轮 y = (x+y) mod p，先变成 0 者胜，永不到 0 则平局。
+// 输入 T, p 及 T 组初始 (x, y)；每组输出 1（cbw 胜）、2（zhouwc 胜）或 error（平局）。
+// 数据范围：1 <= T <= 200，1 <= x, y, p <= 10000。
 #include<bits/stdc++.h>
 using namespace std;
 

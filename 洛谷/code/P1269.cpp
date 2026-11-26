@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1269
+// 题意：1 号服务器沿一棵树发出初始强度的信号，每经过一条边就减去该边的衰减量。
+// 在某点装放大器，可将到达的正强度信号恢复为初始强度。
+// 让所有节点收到信号，求最少放大器数，无解输出 No solution.。
+// 数据范围：节点数不超过 20000，节点编号在 [1,n]，信号强度和每条边的衰减量由输入给出。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 20005;

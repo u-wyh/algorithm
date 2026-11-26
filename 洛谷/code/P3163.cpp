@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P3163
+// 题意：多组测试数据，每组输入岛屿数 N、Alice 的起终点 a1,a2 及往返次数 an、Bob 的起终点 b1,b2 及往返次数 bn
+// 以及 N*N 的邻接矩阵（'O' 为最多通行 2 次的危桥，'N' 为不限次数的普通桥，'X' 为无桥）。
+// 桥为双向且每次只供一人通行，要求 Alice 在 a1 与 a2 间往返 an 次（一次往返包含去和回）且 Bob 在 b1 与 b2 间往返 bn 次
+// 同时每座危桥总通行次数不超过 2 次。
+// 每组数据输出一行，"Yes" 表示两人都能完成愿望，否则输出 "No"。
+// 数据范围：4 <= N <= 50，0 <= a1,a2,b1,b2 <= N-1，1 <= an,bn <= 50。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 55;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2813
+// 题意：敌方有 M 个防御系统（防御力），己方有 N 个攻击系统（攻击力）。
+// 攻击力严格大于防御力可破坏该防御系统；全破坏后剩余攻击全部打在敌方本体。
+// 求对敌方本体造成的最大伤害。
+// 数据范围：1 <= N, M <= 10^5。
 #include<stdio.h>
 
 int cmp(const void *a,const void *b)

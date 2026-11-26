@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4667
+// 题意：N*M 网格每个格子有 \ 或 / 方向的导线，每次可旋转一格 90 度改变方向，求连通左上角到右下角的最少旋转次数（不可达输出 NO SOLUTION）。
+// 数据范围：1 <= N, M <= 500。
 //p4667
 #include<bits/stdc++.h>
 using namespace std;

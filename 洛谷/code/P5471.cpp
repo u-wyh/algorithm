@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5471
+// 题意：w*h 网格上有 n 座城市（1 号为首都）和 m 个弹跳装置
+// 位于 p_i 号城市的装置可花时间 t_i 跳到矩形 [L_i, R_i] x [D_i, U_i] 内任意城市。
+// 输入 n, m, w, h、城市坐标及各弹跳装置参数；输出从 1 号城市到达 2..n 号城市的最小时间。
+// 数据范围：1 <= n <= 70000，1 <= m <= 150000，1 <= w, h <= n，1 <= t_i <= 10000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 7e4+5;

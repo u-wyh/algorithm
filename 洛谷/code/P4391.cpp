@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4391
+// 题意：已知长度为 L 的字符串 S 是某个原串 S' 不断自我循环连接后的子串，求 S' 的最小可能长度。
+// 数据范围：1 <= L <= 10^6，S 由小写字母组成。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

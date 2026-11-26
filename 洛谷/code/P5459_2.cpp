@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5459
+// 题意：给定长度为 N 的整数序列 a，求有多少个连续非空子序列，使得元素之和在 [L, R] 之间。
+// 输入 N, L, R 和序列 a；输出满足条件的子序列方案数。
+// 数据范围：1 <= N <= 10^5，|a_i| <= 10^5，0 <= L, R <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 500001;

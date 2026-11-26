@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10722
+// 题意：给一棵根为 1 的二叉树和各点初始颜色。每次给节点 x，把以 x 为根的整棵子树黑白互换。完成全部 q 次操作后，按点编号输出颜色串，白色是 0、黑色是 1。
+// 数据范围：1 ≤ n,q ≤ 10^5，1 ≤ x ≤ n。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

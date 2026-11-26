@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3165
+// 题意：输入物品数量 n，以及 n 个物品各自的高度 P_1..P_n。
+// 排序机械臂第 i 次操作会找到当前第 i 低物品的位置 P_i（高度相同时保持初始相对顺序），然后将区间 [i, P_i] 内的物品顺序翻转。
+// 输出 n 个整数，依次表示每次操作前第 i 低的物品当时所在的位置下标（从 1 开始）。
+// 数据范围：N <= 100000，P_i <= 10^7（正整数）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

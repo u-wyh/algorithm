@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3546
+// 题意：输入字符串长度 n，以及长度为 n 的小写字母串 t。
+// 若一串能把某个后缀移到开头得到另一串则称两串循环相同，求最大的 L（L <= n/2）使得 t 的长为 L 的前缀与长为 L 的后缀循环相同。
+// 输出最大的 L。
+// 数据范围：1 <= n <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P7717
+// 题意：统计长为 n、元素在 [0, k] 的非负整数序列 a 的个数，要求满足 m 组限制 a_{x_i} xor a_{y_i} = z_i
+// 答案对 10^9+7 取模。
+// 数据范围：1 <= n <= 5*10^5，0 <= m <= 5*10^5，0 <= z_i < 2^30，1 <= k < 2^30
+// 1 <= x_i, y_i <= n (x_i < y_i)。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

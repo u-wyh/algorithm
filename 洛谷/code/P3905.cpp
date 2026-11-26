@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3905
+// 题意：n 个城市间原有 m 条无向道路（无重边，第 t 条长 k），战后有 d 条道路被破坏。
+// 给定起点 A 和终点 B，修复被破坏的道路需要花费等于其长度的代价，未破坏道路可直接通行。
+// 求使 A 与 B 连通所需修复道路总长度的最小值。
+// 数据范围：2 < n <= 100，n - 1 <= m <= n(n-1)/2，1 <= i, j <= n，i != j，0 < k <= 100
+// 1 <= d <= m。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 101;

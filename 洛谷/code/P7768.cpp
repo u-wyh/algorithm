@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7768
+// 题意：以 1 为根的 n 点点权树（根深度 1，点权 a_i），m 次询问给定 x, h
+// 求 x 子树内深度不超过 dep_x + h 的所有节点点权的异或和除以 1000 的值（保留 3 位小数）。
+// 数据范围：1 <= n, m <= 10^6，1 <= a_i <= 10^9，1 <= x <= n，0 <= h <= n。
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

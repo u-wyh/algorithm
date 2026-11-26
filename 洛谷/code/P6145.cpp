@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6145
+// 题意：在 M 天内进行 N 次挤奶，第 i 次不早于第 S_i 天，且有 C 条约束 (a, b, x) 要求第 b 次比第 a 次至少晚 x 天；
+// 保证有解且均不超过第 M 天，求每次挤奶的最早日期。
+// 数据范围：1 <= N, C <= 10^5，2 <= M <= 10^9，1 <= S_i, x <= M。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100005;

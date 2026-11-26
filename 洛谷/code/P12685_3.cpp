@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P12685
+// 题意：维护序列单点两两交换操作，求初始及每次交换后的逆序对数。
+// 输入：首行 n，次行序列 h_1..h_n，第三行 m，后 m 行每次交换 (a_i, b_i)。
+// 规则：依次交换位置 a_i 与 b_i 上的数（修改持久化）。
+// 输出：共 m+1 行，依次输出未操作前及每次操作结束后的序列逆序对数。
+// 数据范围：1 <= n, m <= 2*10^5，1 <= h_i <= 10^9，a_i != b_i。
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

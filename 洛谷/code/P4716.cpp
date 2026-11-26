@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4716
+// 题意：给定 n 个点 m 条有向带权边，求以 r 为根的最小树形图的边权总和，不存在输出 -1。
+// 数据范围：1 <= u, v <= n <= 100，1 <= m <= 10^4，1 <= w <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

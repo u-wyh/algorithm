@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2173
+// 题意：维护 n 点 m 边的无向图（点权 v_i，边有颜色），任意点同色边 <= 2 且无同色环。
+// 0 x y：改点 x 权值为 y；1 u v w：改边 (u,v) 颜色为 w（需合法性判断）。
+// 2 c u v：查询颜色 c 构成的子图中 u 到 v 路径上的最大点权（不连通输出 -1）。
+// 数据范围：n <= 10^4，m <= 10^5，C <= 10，k <= 10^5，无重边和自环。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

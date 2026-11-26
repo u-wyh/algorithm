@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P7708
+// 题意：初始长为 n 的序列 A 和长为 m 的操作序列 B（1: 单点赋值，2: 交换两点，3: 单点查询）；
+// q 次独立测试每次从初始 A 起执行 B[l..r]，输出期间所有操作 3 的结果之和对 2^32 取模。
+// 数据范围：1 <= n, m, q <= 2*10^5，1 <= a_i, k <= 10^9，1 <= x, y <= n (x != y)
+// 1 <= l <= r <= m。
 #include <bits/stdc++.h>
 using namespace std;
 

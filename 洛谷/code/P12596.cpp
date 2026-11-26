@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P12596
+// 题意：给定凸包和其内部一点 P，连 PA, PB 分割凸包求最小面积差。
+// 输入：首行 n，后 n 行逆时针给凸包顶点坐标，最后一行给点 P 坐标。
+// 规则：选凸包两不同顶点 A, B 并连接 PA, PB，将凸包分成两部分。
+// 输出：输出两部分面积差的绝对值的最小值乘以 2（保证为整数）。
+// 数据范围：3 <= n <= 10^5，所有坐标为 [0, 10^9] 内整数，P 在凸包内。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

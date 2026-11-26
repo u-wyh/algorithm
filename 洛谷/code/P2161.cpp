@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2161
+// 题意：维护数轴上线段集合 S，共 n 次操作。
+// A l r：删去 S 中所有与 [l,r] 相交的线段，加入 [l,r]，并输出删除个数。
+// B：输出 S 中的线段数量。
+// 数据范围：1 <= n <= 2*10^5，1 <= l <= r <= 10^5。
 #include<cstdio>
 #include<iostream>
 #include<algorithm>

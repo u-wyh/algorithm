@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P2013
+// 题意：给定 N 座灯塔的名称和坐标，再给船的航向以及两座灯塔相对于航向的方位角。
+// 角度从正北或当前航向顺时针量起。
+// 求船的坐标，保留两位小数，无法确定时输出 NO ANSWER。
+// 数据范围：1 ≤ N ≤ 30，灯塔名由不超过 20 个字母组成。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 35;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5424
+// 题意：N 组蛇排成一行依次有 a_1..a_N 条，需按顺序用捕网整组捕捉；用大小 s >= a_i 的网捕第 i 组会浪费 s - a_i 的空间。
+// 可任选初始捕网大小并最多修改 K 次大小，求总浪费空间的最小值。
+// 数据范围：1 <= N <= 400，1 <= K < N，0 <= a_i <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 405;

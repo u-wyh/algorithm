@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P10734
+// 题意：给 N 个未知正负电性的粒子，异性相吸、同性相斥。
+// A a b 告知相吸，R a b 告知相斥，Q a b 根据已知信息问两者关系，分别输出 A、R 或无法确定时的问号。
+// 数据范围：1 ≤ N,Q ≤ 10^5，1 ≤ a,b ≤ N，a ≠ b，所有信息保证相容。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

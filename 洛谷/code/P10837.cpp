@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10837
+// 题意：第 i 朵花在 t[i] 到 t[i]+m-1 这些整数时刻开放。可以至多改一朵花的种植时刻，改成任意正整数。求恰好有一朵花开放的时刻数的最大值。
+// 数据范围：1 ≤ n ≤ 2 × 10^5，1 ≤ m,t[i] ≤ 10^9。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

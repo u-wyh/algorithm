@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P4049
+// 题意：第一行输入原材料种数 m 和用户需求合金种数 n；
+// 接下来 m 行输入每种原材料的铁铝锡比重 a_i, b_i, c_i，再接下来 n 行输入每种需求合金的比重 d_i, e_i, f_i。
+// 将所购原材料按非负比例熔合，要求能同时配出全部 n 种需求合金，求最少需订购的原材料种类数。
+// 输出最少原材料种数；若无解输出 -1。
+// 数据范围：对于全部测试点，1 <= m, n <= 500
+// 0 <= a_i, b_i, c_i, d_i, e_i, f_i <= 1 且 a_i + b_i + c_i = 1, d_i + e_i + f_i = 1
+// 小数点后最多 6 位。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

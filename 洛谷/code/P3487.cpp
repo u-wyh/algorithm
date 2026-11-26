@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P3487
+// 题意：输入目标子序列长度 k，以及长度未知（以单独 0 结尾，或按原交互库生成）的正整数序列 a_1..a_n。
+// 在序列 a 中选出一个长度为 k 的子序列 a_{b_1}, ..., a_{b_k}（1 <= b_1 < ... < b_k <= n）
+// 使其字典序最大。
+// 输出 k 行，每行一个整数表示所选子序列的第 i 个元素；
+// 注：洛谷评测需按提示粘贴交互封装代码并通过 inicjuj()/wczytaj()/wypisz() 读写。
+// 数据范围：1 <= n <= 1.5*10^7，1 <= k <= min(n, 10^6)，1 <= a_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXK = 1e6+5;

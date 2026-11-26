@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4873
+// 题意：有 N 头奶牛按初始位置递增站在无限长跑道上，各以恒定速度跑 T 分钟，同一赛道内的任意两头奶牛任意时刻不能处于同一位置（不能追上或超越）
+// 求最少需要多少条赛道。
+// 数据范围：1 <= N <= 10^5，1 <= T, v_i <= 10^9，0 <= x_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4407
+// 题意：给定 N 个互不相同的字典单词和 M 个查询串，对每个查询串，若其在字典中输出 -1
+// 否则输出字典中有多少个单词与它的编辑距离（删/添/改 1 字符）恰好为 1。
+// 数据范围：N, M <= 10^4，字符串长度在 1..20 之间且均由小写字母构成（查询串可重复）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

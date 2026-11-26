@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3246
+// 题意：输入序列长度 n、询问数 q、序列 a_1..a_n，以及 q 个区间询问 [l, r]。
+// 对每个询问，计算区间 [l, r] 内所有连续子序列 a[s..t]（l <= s <= t <= r）各自最小值的总和。
+// 输出 q 行，依次为每次询问的最小值之和。
+// 数据范围：1 <= n, q <= 100000，|a_i| <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int INF = 1e9+1;

@@ -1,4 +1,13 @@
 // https://www.luogu.com.cn/problem/P11888
+// 题意：
+// 共 t 组询问，每组给定正整数 n 和 m。
+// 记斐波那契数列 f_1 = f_2 = 1，f_i = f_{i-1} + f_{i-2}。
+// 求所有满足 1 <= a_1, ..., a_n <= m 的元组对应的 lcm(f_{a_1}, ..., f_{a_n}) 之乘积。
+// 每组输出一行答案，对 37426667 取模。
+// 数据范围：
+// 1 <= t <= 300
+// 1 <= n <= 2 * 10^{17}
+// 1 <= m <= 2 * 10^7
 #include<bits/stdc++.h>
 #define int long long
 using namespace std;

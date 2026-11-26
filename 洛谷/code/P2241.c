@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2241
+// 题意：给定 n*m 的方格棋盘，统计其中包含的正方形和长方形（不含正方形）个数。
+// 输出正方形个数和长方形个数。
+// 数据范围：1 <= n, m <= 5000。
 #include<stdio.h>
 
 int main()

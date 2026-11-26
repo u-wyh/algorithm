@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2762
+// 题意：m 个实验（收益 p_j，需若干仪器）和 n 种仪器（配置费 c_k）。
+// 求净收益（总收益减总费用）最大的方案，输出实验编号、仪器编号和净收益（SPJ）。
+// 数据范围：1 <= n, m <= 50，1 <= c, p < 2^31。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

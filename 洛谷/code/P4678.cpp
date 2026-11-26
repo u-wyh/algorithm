@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4678
+// 题意：多组询问，对所有 1~n 排列对 (P1, P2)，统计满足两串区间 [l, r] 离散化同构且 P1[l..r] 逆序对数不超过 E 的区间总个数
+// 对 10^9+7 取模。
+// 数据范围：T <= 10^4，n <= 500，E <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

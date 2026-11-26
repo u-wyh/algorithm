@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P8436
+// 题意：给定 n 点 m 边的无向图（可能有重边和自环），求所有边双连通分量的个数及每个分量包含的结点（分量及结点顺序任意）。
+// 数据范围：100% 数据满足 1 <= n <= 5*10^5，1 <= m <= 2*10^6。
 #include <bits/stdc++.h>
 using namespace std;
 #define MAXN 500001

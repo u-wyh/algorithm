@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1083
+// 题意：第 i 天有 r[i] 间教室。
+// 按输入顺序接订单，订单 (d,s,t) 要求从 s 到 t 的每一天都给 d 间。
+// 找到第一份有一天教室不够的订单，有则先输出 -1 再输出订单编号，全能满足就输出 0。
+// 数据范围：1 ≤ n,m ≤ 10^6，0 ≤ r[i],d ≤ 10^9，1 ≤ s ≤ t ≤ n。
+
 #include <stdio.h>
 #include <string.h>
 

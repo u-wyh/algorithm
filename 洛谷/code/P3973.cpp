@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3973
+// 题意：第一行输入整数 n，接下来 n 行输入 n * n 非负整数矩阵 B，再下一行输入 1 * n 非负整数矩阵 C。
+// 构造一个长度为 n 的 01 行向量 A，使得标量 D = (A * B - C) * A^T 最大。
+// 输出最大的 D。
+// 数据范围：对于 100% 的数据，1 <= n <= 500，B 和 C 中每个数均为不超过 1000 的非负整数。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

@@ -1,4 +1,7 @@
 # https://www.luogu.com.cn/problem/P2155
+# 题意：T 组询问，每组给定 N, M，求 [1, N!] 中与 M! 互质的数的个数。
+# 每组输出答案对质数 R 取模的结果。
+# 数据范围：1 <= M <= N <= 10^7，1 <= T <= 10^4，2 <= R <= 10^9+10。
 import sys
 
 def main():

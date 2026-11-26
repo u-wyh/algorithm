@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2766
+// 题意：给定长度为 n 的正整数序列，求最长不下降子序列长度 s。
+// 再求每个元素至多用一次时最多能取出多少个长 s 的序列，以及 x_1, x_n 可重复使用时的最多个数。
+// 输出 3 行分别对应 3 问答案。
+// 数据范围：1 <= n <= 500。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

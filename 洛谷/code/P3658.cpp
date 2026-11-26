@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3658
+// 题意：输入品种数 N 和阈值 K，以及道路两侧各自长为 N 的品种排列（均为 1..N 的排列）。
+// 相等数值之间连线，若两条连线在道路中相交且它们对应的品种编号差的绝对值严格大于 K，则称其为不友好的交叉品种对。
+// 输出不友好的交叉品种对总数。
+// 数据范围：1 <= N <= 100000，0 <= K < N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

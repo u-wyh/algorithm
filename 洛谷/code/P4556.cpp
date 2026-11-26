@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4556
+// 题意：给定一棵 n 个点的树和 m 次发放操作，每次给路径 (x, y) 上每个点发放一袋 z 型救济粮
+// 求全部发放后每个点数量最多的救济粮种类（并列取编号最小，无粮输出 0）。
+// 数据范围：1 <= n, m <= 10^5，1 <= a, b, x, y <= n，1 <= z <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

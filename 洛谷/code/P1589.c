@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1589
+// 题意：有 n 段泥路和任意多块长度为 L 的木板。可自行安排每块木板的位置，求把所有泥路全部覆盖至少需要多少块。
+// 数据范围：n,L ≤ 10000，区间端点满足 s ≤ e ≤ 10^9。
+
 #include<stdio.h>
 #include<stdlib.h>
 

@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P7859
+// 题意：有 N 种原材料（编号 1..N）和 M 对冲突关系 (x_i, y_i)。
+// 选出一个原材料子集（可以为空集），要求其中不能同时包含任意一对冲突的原材料。
+// 第一行输入 N, M，接下来 M 行每行 x_i, y_i。
+// 输出一行一个整数表示合法方案数。
+// 数据范围：1 <= N <= 20，0 <= M <= 400，1 <= x_i, y_i <= N，x_i != y_i。
 #include <stdio.h>
 #include <stdbool.h>
 

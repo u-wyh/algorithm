@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4825
+// 题意：R*C 网格每格填有 1~K 的整数，从左上角每次跳到严格右下方且数字不同的格子，求到达右下角的不同路径数对 10^9+7 取模。
+// 数据范围：2 <= R, C <= 100，1 <= K <= R*C。
 #include<bits/stdc++.h>
 #define int long long
 const int mod = 1e9 + 7;

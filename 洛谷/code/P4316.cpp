@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4316
+// 题意：给一张 n 点 m 边的有向无环图，起点为 1 终点为 n（保证 1 可达所有点且所有点可达 n，无重边自环）；
+// 在每个点等概率随机选一条出边走，求从 1 走到 n 经过的路径总长度期望（保留 2 位小数）。
+// 数据范围：1 <= n <= 1e5，1 <= m <= 2n，0 <= w <= 1e9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

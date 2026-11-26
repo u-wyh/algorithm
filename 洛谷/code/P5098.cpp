@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P5098
+// 题意：给定平面上 N 个整点坐标，求任意两点间曼哈顿距离 |x_1-x_2| + |y_1-y_2| 的最大值。
+// 数据范围：1 <= N <= 50000，-10^6 <= x, y <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3263
+// 题意：输入三个非负整数 b、d、n。
+// 设 p = 7528443412579576937，计算 floor(((b + sqrt(d)) / 2)^n) mod p。
+// 输出该结果。
+// 数据范围：0 < b^2 <= d < (b+1)^2 <= 10^18，n <= 10^18，b ≡ 1 (mod 2)，d ≡ 1 (mod 4)。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

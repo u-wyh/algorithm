@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3960
+// 题意：第一行输入方阵行数 n、列数 m 和离队事件数 q；初始第 i 行第 j 列学生编号为 (i-1)*m + j。
+// 接下来 q 行每行输入 (x, y)，表示第 x 行第 y 列的学生离队并输出其编号；
+// 随后该行所有同学向左看齐填补空位（第 x 行 y+1..m 左移，空位到 (x, m)），再第 m 列 x+1..n 上移，最后该学生回到 (n, m)。
+// 按事件顺序每行输出离队学生的编号。
+// 数据范围：对于 100% 的数据，1 <= n, m, q <= 3 * 10^5，1 <= x <= n，1 <= y <= m。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

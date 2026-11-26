@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5815
+// 题意：有 n 种普通牌各 c_i 张和 m 张 joker；
+// 一套牌可由每种普通牌各 1 张，或 1 张 joker 配 n-1 种普通牌各 1 张组成，求最多能凑出多少套牌。
+// 输入 n, m 及各 c_i；输出最多套牌数。
+// 数据范围：2 <= n <= 50，0 <= m, c_i <= 5*10^8。
 #include<stdio.h>
 #include<stdbool.h>
 

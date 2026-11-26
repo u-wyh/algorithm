@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P6554
+// 题意：给定 n 个节点带点权 val_i 的树，可选择任意节点 u 作为起点，电流等概率沿简单路径流向某个叶子（除 u 外度数为 1 的点）
+// 得分为路径点权和。
+// 求所有起点中期望得分的最大值（允许 10^-2 误差）。
+// 数据范围：2 < n <= 5*10^5，|val_i| <= 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1516
+// 题意：两只青蛙从环长 L 的数轴上 x、y 处出发，每次同时沿同方向分别跳 m、n 长度。求第一次落到同一点所需的跳跃次数，永远遇不到则输出 Impossible。
+// 数据范围：1 ≤ x,y,m,n ≤ 2 × 10^9，x≠y，1 ≤ L ≤ 2.1 × 10^9。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

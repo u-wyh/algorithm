@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5290
+// 题意：给定一棵以 1 为根的 n 个点有根树，第 i 个点权值为 M_i，将其划分成若干个点集。
+// 要求同一集合内任意两点不存在祖先—后代关系，总代价为各集合点权最大值之和，求最小总代价。
+// 数据范围：1 <= n <= 2*10^5，1 <= M_i <= 10^9，父节点编号 f_i < i。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

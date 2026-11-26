@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4364
+// 题意：将给定的 n 个难度值重新排列为 d_1..d_n
+// 满足每个 i 都有 d_i >= d_{floor(i/k)}（floor(i/k)=0 时无限制）
+// 求字典序最大（依次优先 d_1, d_2, ... 最大）的序列。
+// 数据范围：1 <= n <= 500000，1 < k <= 10^9（小数），1 <= d_i <= 10^9（可能有重复值）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

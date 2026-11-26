@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3744
+// 题意：输入顶点数 N，以及按顺时针顺序给出、构成严格凸多边形的 N 个顶点坐标 (x_i, y_i)。
+// 将每个顶点最多移动 D 个单位距离，求能使该凸多边形不再是凸多边形的最小实数 D。
+// 输出最小 D 值，绝对或相对误差不超过 10^-4。
+// 数据范围：4 <= N <= 1000，-10^9 <= x_i, y_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e3+5;

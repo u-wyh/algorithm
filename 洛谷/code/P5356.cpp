@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5356
+// 题意：维护长为 n 的序列 a，支持 m 次操作：1 l r k 查询区间 [l, r] 的第 k 小值（无解输出 -1）。
+// 2 l r k 将区间 [l, r] 内所有元素加上 k。
+// 数据范围：1 <= l <= r <= n <= 10^5，1 <= m <= 10^5，-2*10^4 <= a_i, k <= 2*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

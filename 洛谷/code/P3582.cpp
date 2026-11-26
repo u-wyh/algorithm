@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3582
+// 题意：输入天数 n、电影部数 m，每天放映的电影编号 f_1..f_n，以及每部电影的好看值 w_1..w_m。
+// 选择一个连续区间 [l, r]，观看其中每天的电影，仅出现一次的电影可获得其好看值（观看多次则该电影不计分）。
+// 输出能获得的最大好看值总和。
+// 数据范围：1 <= m <= n <= 10^6，1 <= f_i <= m，1 <= w_i <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

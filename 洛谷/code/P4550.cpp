@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4550
+// 题意：共有 n 种邮票，每次等概率随机买到其中一种，第 k 次购买花费 k 元，求集齐全部 n 种邮票所需总花费的期望（保留两位小数）。
+// 数据范围：n <= 10000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

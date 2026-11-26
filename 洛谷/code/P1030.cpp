@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1030
+// 题意：给同一棵二叉树的中序遍历串和后序遍历串，输出它的先序遍历串。
+// 数据范围：节点数不超过 8，每个节点用互不相同的大写字母表示。
+
 #include<bits/stdc++.h>
 using namespace std;
 

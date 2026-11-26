@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P2921
+// 题意：输入隔间数 N，以及每个隔间 i 指向的下一个隔间编号 next_i。
+// 第 i 头牛从 i 号隔间出发，不断沿着当前隔间的 next 指针走到下一个隔间，直到即将回到自己已经访问过的隔间时停止。
+// 计算每头牛在停止前访问过的隔间总数（包含起点）。
+// 输出共 N 行，第 i 行一个整数表示第 i 头牛要前往的隔间数。
+// 数据范围：对于 100% 的数据，1 <= N <= 10^5，1 <= next_i <= N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

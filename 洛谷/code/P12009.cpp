@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P12009
+// 题意：给定 n 个长度为 m 的 01 串，以及 q 次操作。
+// 输入：先给 n, m, q 与合并后的长 n*m 的 01 串，再给 q 行操作。
+// 规则：初始集合 S 为空，op=1 往 S 中插入区间 (l, r)。
+// 规则：一次变换可选 S 中某 (l, r)，将串的 [l, r] 位按位取反。
+// 输出：op=2 询问第 x 串能否经任意次变换化为第 y 串，能输出 Masuko 否则 Haru。
+// 数据范围：1 <= q, n, m <= 5*10^6，且 n*m <= 10^7。
+// 数据范围：1 <= l <= r <= m，1 <= x, y <= n，op in {1, 2}。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

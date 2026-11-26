@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2846
+// 题意：N 盏灯初始全关，共 M 次操作。
+// 0 S E：翻转闭区间 [S,E] 的灯状态；1 S E：查询闭区间 [S,E] 内开着的灯数。
+// 对每次 1 操作输出一行整数。
+// 数据范围：2 <= N <= 10^5，M <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100005;

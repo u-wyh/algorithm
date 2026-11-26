@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4234
+// 题意：给一个 n 点 m 边的连通无向图（可能有自环），求一棵生成树使树上最大边权与最小边权的差值最小，输出该最小差值。
+// 数据范围：1 <= n <= 5e4，1 <= m <= 2e5，1 <= u, v <= n，1 <= w <= 1e4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

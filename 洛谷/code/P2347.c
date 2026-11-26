@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2347
+// 题意：给出 1g、2g、3g、5g、10g、20g 砝码的各自数量。
+// 求用这些砝码能称出的不同正整数重量个数。
+// 按 Total=N 格式输出。
+// 数据范围：所有砝码总重 <= 1000。
 #include<stdio.h>
 
 int main()

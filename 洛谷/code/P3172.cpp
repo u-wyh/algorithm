@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3172
+// 题意：输入四个正整数 N, K, L, H。
+// 从闭区间 [L, H] 中可重复地选取 N 个整数（共 (H-L+1)^N 种有序选法），统计这 N 个数的最大公约数恰好等于 K 的方案数。
+// 输出方案数对 10^9+7 取模的结果。
+// 数据范围：1 <= N, K <= 10^9，1 <= L <= H <= 10^9，H - L <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

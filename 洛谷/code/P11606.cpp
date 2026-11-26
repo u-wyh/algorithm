@@ -1,4 +1,12 @@
 // https://www.luogu.com.cn/problem/P11606
+// 题意：
+// 构造一棵 n 个节点的有根树，满足 m 条不重复的限制 (x, y, c)。
+// c = T 表示 y 必须是 x 的祖先；c = N 表示 y 必须不是 x 的祖先（x != y）。
+// 若无解输出 NIE；否则输出 n 行，第 i 行表示 i 号点的父亲（根的父亲为 0）。
+// 数据范围：
+// 1 <= n <= 10^3
+// 0 <= m <= min(n(n-1), 10^4)
+// 1 <= x, y <= n
 #include<bits/stdc++.h>
 using namespace std;
 

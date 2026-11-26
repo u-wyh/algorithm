@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2056
+// 题意：给定一棵 N 点树，每个点起初关灯。C i 切换 i 号点的灯，G 查询关灯点两两之间的最大距离。只有一个关灯点时输出 0，全部开灯时输出 -1。
+// 数据范围：N ≤ 10^5，Q ≤ 5×10^5。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

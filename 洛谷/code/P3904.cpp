@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P3904
+// 题意：输入小猪数量 n 和房间数量 m，求将 n 只不同的小猪分配到 m 个相同的房间中且没有房间空闲的方案数（即第二类斯特林数 S(n, m)）。
+// 数据范围：1 <= n, m <= 50（答案可能很大，需高精度）。
 #include<bits/stdc++.h>
 using namespace std;
 

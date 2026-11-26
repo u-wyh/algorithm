@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B4016
+// 题意：给一棵 n 个点的无权树，后续 n-1 行给出边。输出树上最长简单路径的长度，按边数计算。
+// 数据范围：1 ≤ n ≤ 10^5。
+
 //两次dfs
 #include<bits/stdc++.h>
 using namespace std;

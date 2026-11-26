@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2770
+// 题意：n 个城市（从西向东给出）和 v 条航线，从最西端向东飞到最东端再向西飞回起点。
+// 除起点外每个城市至多访问一次，输出最多途经城市数及路线（无解输出 No Solution!，SPJ）。
+// 数据范围：1 <= n < 100，1 <= v <= n(n-1)/2，城市名长度 <= 15。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

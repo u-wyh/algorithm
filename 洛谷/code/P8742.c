@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P8742
+// 题意：输入 N 和 N 个砝码重量 W_1..W_N，天平两边均可放砝码，输出一共可以称出多少种不同的正整数重量。
+// 数据范围：1 <= N <= 100，N 个砝码总重 <= 10^5。
 #include<stdio.h>
 #include<math.h>
 

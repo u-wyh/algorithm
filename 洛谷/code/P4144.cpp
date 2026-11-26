@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4144
+// 题意：第一行输入三个整数 n, b, p，第二行输入长度为 n 的初始序列 dirty_1..dirty_n。
+// 设 x = max_{1<=l<=r<=n} ((dirty_l & ... & dirty_r) + (dirty_l | ... | dirty_r))。
+// 输出 (x + 233)^b mod p。
+// 数据范围：1 <= n, p <= 10^5，0 <= b, dirty_i <= 10^7。
 #include<bits/stdc++.h>
 using namespace std;
 

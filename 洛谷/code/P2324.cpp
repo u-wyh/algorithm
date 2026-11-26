@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2324
+// 题意：T 组 5*5 棋盘，含 12 白骑士(0)、12 黑骑士(1)和一个空位(*)，骑士按日字跳到空位。
+// 求变成目标棋盘的最少步数，超过 15 步输出 -1。
+// 每组输出一行答案。
+// 数据范围：T <= 10。
 //P2324
 #include<bits/stdc++.h>
 using namespace std;

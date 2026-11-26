@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2487
+// 题意：n 枚导弹各有高度 h_i 和速度 v_i，拦截序列需满足高度和速度均不增。
+// 求最多能拦截多少枚导弹，以及在所有最长拦截方案等概率随机时每枚导弹被拦截的概率。
+// 第一行输出最多拦截数，第二行输出 n 个实数（误差 <= 10^-4）。
+// 数据范围：1 <= n <= 5*10^4，1 <= h_i, v_i <= 10^9，总方案数不超过 double 范围。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P7929
+// 题意：给定一个 n 个点 n 条边的无向图（基环树），对部分点染色，要求图中每个点都恰好有 1 个与其相邻的点（不含其自身）被染色。
+// 求最少需要染色的点数，无解输出 -1。
+// 第一行输入 n，接下来 n 行每行 u_i, v_i 表示无向边。
+// 输出一行一个整数。
+// 数据范围：3 <= n <= 10^5，1 <= u_i, v_i <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

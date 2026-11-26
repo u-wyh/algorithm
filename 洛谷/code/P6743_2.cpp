@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6743
+// 题意：给定 N 点 M 边的连通无向图（无重边且保证有解），找出若干个边不重复的简单环（不重复经过点），使得这些环覆盖图中所有的点和边。
+// 数据范围：3 <= N, M <= 5*10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5522
+// 题意：维护 m 个长度为 n 的 '0'/'1'/'?' 串，支持单串修改
+// 以及查询区间 [l, r] 内所有串有多少个公共的匹配 '0'/'1' 串（'?' 可匹配 0 或 1）。
+// 输入 n, m, q、初始串及操作；输出所有查询结果（opt=0）的按位异或和。
+// 数据范围：1 <= m <= 10^5 + 7，0 <= q <= 10^6 + 7，1 <= n <= 30，输入字符串总长不超过 5*10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

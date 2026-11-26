@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P9584
+// 题意：给定 n 点 n-1 边的树，第 i 条边费用为 c_i，cost(x, y) 为树上简单路径边权和（cost(x, x) = 0）。
+// 新增点 n+1，q 次独立询问：若在 k_i 与 n+1 间连一条费用为 w_i 的双向边
+// 求 sum_{i=1}^{n+1} sum_{j=1}^{n+1} cost(i, j) 对 998244353 取模的值。
+// 题意：第一行输入 n, q，后 n-1 行输入 (u_i, v_i, c_i)，后 q 行输入 (k_i, w_i)；输出 q 行结果。
+// 数据范围：2 <= n <= 2 * 10^5，1 <= q <= 2 * 10^5，1 <= u_i, v_i, k_i <= n
+// 1 <= c_i, w_i <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

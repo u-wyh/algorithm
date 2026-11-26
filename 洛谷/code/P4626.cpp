@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4626
+// 题意：给定正整数 n，求能被 1 到 n 内所有整数整除的最小正整数（即 lcm(1..n)）对 100000007 取模的结果。
+// 数据范围：n <= 10^8。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e8+5;

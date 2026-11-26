@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1153
+// 题意：平面上给若干点。选一个起点，用线段依次访问每个点恰好一次并回到起点，所得多边形不能自交。求不同简单多边形的数量，从不同点起步或反向走同一多边形只算一次。
+// 数据范围：至多 10 个点，坐标为整数，任意三点不共线，输入以原点结束。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 15;

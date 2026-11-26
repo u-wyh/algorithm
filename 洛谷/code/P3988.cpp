@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3988
+// 题意：第一行输入牌数 N（牌库自顶向下初始为 1, 2, ..., N），接下来 N 行每行输入一个整数 R_i。
+// 共进行 N 次发牌：第 i 次发牌前连续销牌 R_i 次（每次将牌库顶的牌移至牌库底），然后将牌库顶的牌发给玩家并移出牌库。
+// 输出 N 行，第 i 行表示玩家收到的第 i 张牌的编号。
+// 数据范围：对于 100% 的数据，N <= 7 * 10^5，0 <= R_i < N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 7e5+5;

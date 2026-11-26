@@ -1,4 +1,14 @@
 // https://www.luogu.com.cn/problem/P11852
+// 题意：
+// 给定 n 点 m 边无向连通简单图，边 (a_i, b_i) 长度为 l_i。
+// q 次询问起点 u_i 到终点 v_i，需找两条边互不重复（点可重复）的路径。
+// 输出使两条路径所用最长边尽量小的最小值；若不存在两条边不重复路径则输出 -1。
+// 数据范围：
+// 2 <= n <= 1000
+// n - 1 <= m <= n * (n - 1) / 2
+// 1 <= a_i, b_i, u_i, v_i <= n（a_i != b_i, u_i != v_i）
+// 1 <= l_i <= 10^9
+// 1 <= q <= 5 * 10^5
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e3+5;

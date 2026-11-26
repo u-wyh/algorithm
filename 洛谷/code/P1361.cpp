@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P1361
+// 题意：每种作物恰好种一棵，可放 A 地得 a[i]，或放 B 地得 b[i]。
+// 每个组合若其中所有作物都放在 A，则加 c1；
+// 全放 B 则加 c2。
+// 求基本收益加组合收益的最大总和。
+// 数据范围：1 ≤ k[i]<n ≤ 1000，1 ≤ m ≤ 1000，所有收益在 [0,1000]。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

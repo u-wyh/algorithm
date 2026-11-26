@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P1343
+// 题意：给 n 个点的有向图，x 名学生从 1 去 n。
+// 边容量限制同一批能同时通过的人数。
+// 批次先后出发，同一批同时出发并到达。
+// 输出每批最多能走的人数和送完 x 人至少要几批，走不通输出 Orz Ni Jinan Saint Cow!。
+// 数据范围：2 ≤ n ≤ 200，1 ≤ m ≤ 2000，1 ≤ x < 2^31，1 ≤ a,b ≤ n，0 ≤ c ≤ x。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

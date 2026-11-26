@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3364
+// 题意：输入英雄数量 n，每个英雄有等级 l、力量 s、智力 w、攻击力 a。
+// 选出若干英雄按等级从低到高排序，要求任意相邻两位英雄中，低等级者攻击力 <= 高等级者力量，且高等级者攻击力 >= 低等级者智力。
+// 输出最多能选出的英雄个数。
+// 数据范围：n <= 10^5，l, s, w, a <= 10^8，所有英雄的 l 互不相同。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

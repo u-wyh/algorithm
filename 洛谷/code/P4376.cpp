@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4376
+// 题意：有 1..N 号奶牛和 M 条按优先级顺序给出的先后关系序列限制，求能同时满足前 X 条限制的最大 X 值，并输出满足这前 X 条限制的字典序最小排列。
+// 数据范围：1 <= N <= 10^5，1 <= M <= 50000，所有观察序列总长度之和 <= 200000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

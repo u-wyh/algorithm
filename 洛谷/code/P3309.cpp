@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3309
+// 题意：输入操作数 N 和数据类别字符 s；
+// 若 s 不为 'E'，所有读入整数均异或 (lastans & 0x7fffffff) 解密（初始 lastans = 0）。
+// 维护初始为空的向量集合，支持：A x y 加入向量 (x, y)；Q x y l r 查询第 l 到第 r 个加入的向量与 (x, y) 点积的最大值。
+// 对每个 Q 操作输出一行最大点积整数。
+// 数据范围：1 <= N <= 4*10^5，|x|, |y| <= 10^8，1 <= l <= r <= t（t 为当前已加入向量数）。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

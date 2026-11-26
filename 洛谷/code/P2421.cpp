@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2421
+// 题意：m 个山洞围成环，n 个野人初始在 C_i，每年顺时针走 P_i 步，寿命 L_i 年。
+// 求最少的山洞数 M，使得任意两个野人在有生之年不会同时处于同一山洞。
+// 输出正整数 M。
+// 数据范围：1 <= N <= 15，1 <= C_i, P_i <= 100，0 <= L_i <= 10^6，保证有解且 M <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3367
+// 题意：输入元素数 N 和操作数 M，维护 1..N 的并查集。
+// 每次操作输入 Z_i、X_i、Y_i：Z_i=1 时合并 X_i 和 Y_i 所在集合，Z_i=2 时查询二者是否同集。
+// 对每个 Z_i=2 的操作输出一行 'Y' 或 'N'。
+// 数据范围：1 <= N <= 2*10^5，1 <= M <= 10^6，1 <= X_i, Y_i <= N，Z_i ∈ {1, 2}。
 #include<stdio.h>
 #include<stdbool.h>
 #include<stdlib.h>

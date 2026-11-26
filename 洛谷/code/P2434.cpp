@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2434
+// 题意：给定 n 个闭区间 [a_i, b_i]，求它们的并集。
+// 将并集表示为最少个数的不相交闭区间，按升序每行输出一个区间。
+// 数据范围：3 <= n <= 50000，1 <= a_i <= b_i <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 

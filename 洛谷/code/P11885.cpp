@@ -1,4 +1,13 @@
 // https://www.luogu.com.cn/problem/P11885
+// 题意：
+// 有 1..n 共 n 个岛，给定 v_1..v_{n-1} 满足 i < v_i <= n。
+// 在岛 i (i < n) 时可跳至 i+1 或 v_i；对任意 i < j < n 满足 v_i <= j 或 v_j <= v_i。
+// 给定步数上限 k，对每个 i = 1..n 计算从 i 出发至多跳 k 步能到达的不同岛数（含自身）。
+// 输出一行 n 个正整数。
+// 数据范围：
+// 1 <= n <= 3 * 10^5
+// 1 <= k < n
+// i < v_i <= n
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

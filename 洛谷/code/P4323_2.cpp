@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4323
+// 题意：给一棵 N 个点的树 A 和一棵 N+1 个点的树 B，已知树 B 是由树 A 加上一个叶子并打乱节点编号得到的
+// 求树 B 中可能是那个多余叶子的最小节点编号。
+// 数据范围：1 <= N <= 1e5。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

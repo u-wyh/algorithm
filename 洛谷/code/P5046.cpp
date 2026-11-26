@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P5046
+// 题意：给长为 n 的排列，m 次强制在线询问（左右端点均异或上次答案 lastans），每次求区间逆序对数。
+// 数据范围：1 <= n, m <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P13078
+// 题意：给定无向简单连通图和一棵生成树 R，求使 R 为唯一 MST 的字典序最小边权。
+// 输入：首行 N, E，后 E 行给各边端点，末行给构成生成树 R 的 N-1 条边号。
+// 规则：为 1..E 号边分配 1..E 的排列权值 W，使图唯一的 MST 恰好是 R。
+// 输出：输出 E 个整数，表示字典序最小的合法排列 W。
+// 数据范围：1 <= N, E <= 3*10^5，1 <= A_i != B_i <= N，1 <= R_i <= E。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

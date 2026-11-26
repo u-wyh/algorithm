@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6208
+// 题意：给定 r 行 c 列金币矩阵，从 (1,1) 出发到 (r,c)
+// 每次只能从 (x,y) 移动到 (x-1,y+1)、(x,y+1) 或 (x+1,y+1)，求路径上能拿到的最大金币总数。
+// 数据范围：1 <= r, c <= 100，1 <= t <= 25。
 #include<stdio.h>
 
 int max(int a,int b)

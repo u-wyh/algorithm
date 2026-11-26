@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P9212
+// 题意：给定长度为 n 的正整数序列 a_1..a_n 和 q 次询问，第 i 次询问给定 l_i, r_i, x_i, y_i, m_i
+// 求满足 (a_j + x_i) mod m_i < (a_j + y_i) mod m_i 的下标 j ∈ [l_i, r_i] 的个数。
+// 题意：第一行输入 n, q，第二行输入序列 a，接下来 q 行每行输入 l_i, r_i, x_i, y_i, m_i；输出共 q 行，每行一个整数。
+// 数据范围：1 <= n <= 10^5，1 <= q <= 5 * 10^5，1 <= a_i, x_i, y_i, m_i <= 10^5
+// 1 <= l_i <= r_i <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

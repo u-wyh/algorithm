@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10287
+// 题意：给 n 个点、m 条边的有向无环图，第 i 个点权是 A[i]。任选一条有向路径，沿途按顺序挑若干点，让所选点权不下降。输出最多能选多少个点。
+// 数据范围：1 ≤ n,m ≤ 10^5，1 ≤ A[i] ≤ 10。
+
 #include <queue>
 #include <cstdio>
 #include <vector>

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4280
+// 题意：给一个长为 N 的序列，每个数要么在 [1, K] 之间，要么是 -1（被隐藏）；
+// 需要把所有 -1 填成 [1, K] 中的整数，使得整个序列的逆序对数量最少，输出最少逆序对个数。
+// 数据范围：1 <= N <= 10000，1 <= K <= 100。
 #include <cstdio>
 #include <cstring>
 #include <iostream>

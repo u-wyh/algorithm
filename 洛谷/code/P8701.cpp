@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8701
+// 题意：输入 L, N（初始 1..L 位置奇特值均为 0）和 N 条操作：C p x 将位置 p 的奇特值改为 x；
+// Q a b 查询区间 [a, b] 中第 8 大的奇特值并输出（找不到第 8 大则输出 0）。
+// 数据范围：1 <= L <= 10^5，1 <= N <= 10^5，1 <= p <= L，1 <= a <= b <= L
+// 所有奇特值为不超过 10^9 的非负整数。
 #include <bits/stdc++.h>
 using namespace std;
 

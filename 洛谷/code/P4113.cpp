@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P4113
+// 题意：第一行输入花朵数 n、颜色数 c、行程数 m；第二行输入每朵花的颜色 x_1..x_n；接下来 m 行每行输入区间 [l, r]。
+// 统计区间 [l, r] 中出现次数至少为 2 次的不同颜色有多少种。
+// 输出 m 行，每行一个整数表示对应行程的答案。
+// 数据范围：Subtask 1 保证 1 <= n, c, m <= 3*10^5；
+// Subtask 2 保证 1 <= n, c, m <= 2*10^6；
+// 1 <= x_i <= c，1 <= l <= r <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e6+5;

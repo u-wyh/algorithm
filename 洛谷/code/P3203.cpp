@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3203
+// 题意：输入弹力装置数量 n（编号 0 到 n-1）、各装置初始弹力系数 k_i，以及操作数 m 和 m 次操作。
+// 绵羊落到第 j 个装置会跳到 j + k_j，若下标 >= n 则被弹飞；操作 1 查询从 j 出发需弹几次被弹飞，操作 2 将装置 j 的系数修改为 k。
+// 对每次查询操作输出一行弹飞所需步数。
+// 数据范围：1 <= n <= 2*10^5，1 <= m <= 10^5，弹力系数均为正整数。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

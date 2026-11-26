@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2516
+// 题意：给定两个以 . 结尾的大写字母序列。
+// 第一行输出它们的最长公共子序列长度。
+// 第二行输出最长公共子序列的个数对 10^8 取模的结果。
+// 数据范围：每个序列大写字母个数 <= 5000。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

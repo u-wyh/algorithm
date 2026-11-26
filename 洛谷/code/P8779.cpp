@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P8779
+// 题意：输入 N, M, Q、M 个区间部分和条件 (l_i, r_i, S_i)（即 A_{l_i}+...+A_{r_i} = S_i
+// 保证无矛盾）以及 Q 个区间和询问 (l, r)；
+// 对每个询问输出区间 [l, r] 的元素和，若无法唯一确定则输出 UNKNOWN。
+// 数据范围：1 <= N, M, Q <= 10^5，-10^12 <= S_i <= 10^12，1 <= l_i <= r_i <= N
+// 1 <= l <= r <= N。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

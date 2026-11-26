@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1333
+// 题意：给若干木棍，每根两端各有一种颜色。每根都可以掉头，判断能否把所有木棍排成一条线，使相接的两端颜色相同。输出 Possible 或 Impossible。
+// 数据范围：木棍至多 250000 根，颜色名由小写字母组成，长度不超过 10，读到 EOF。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 250005;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1535
+// 题意：给一个有树障碍的草地网格和起终点。每秒必须沿上下左右移动一格，不能停、出界或踩树。统计恰好第 T 秒到达终点的路径数，中间可以重复经过格子。
+// 数据范围：2 ≤ N,M ≤ 100，1 ≤ T ≤ 15，点号可走，星号是树。
+
 #include<bits/stdc++.h>
 using namespace std;
 

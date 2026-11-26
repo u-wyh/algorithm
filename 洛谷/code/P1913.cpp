@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1913
+// 题意：给定 n 行 m 列的方向网格。每个格子都作为一个起点，按 u、d、l、r 指定的方向走，走到 o 算成功，走出边界或一直循环都不算。求成功的起点数。
+// 数据范围：1 ≤ n,m ≤ 1000，地图只含 u、d、l、r、o。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define MAX 1005

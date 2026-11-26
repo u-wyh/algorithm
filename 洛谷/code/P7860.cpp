@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P7860
+// 题意：平面上有 N 根棍子，第 i 根两端点坐标为 (x1_i, y1_i) 和 (x2_i, y2_i)。
+// 依次将所有棍子以相同速度沿竖直向下（负 y 方向，朝向 x 轴边缘）平移移出，移动过程中不能与尚未移走的棍子发生碰撞。
+// 第一行输入 N，接下来 N 行每行四个整数 x1_i, y1_i, x2_i, y2_i。
+// 输出一行 N 个整数，表示一种合法的棍子编号移动顺序（Special Judge）。
+// 数据范围：1 <= N <= 5000，0 <= x1, y1, x2, y2 <= 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5005;

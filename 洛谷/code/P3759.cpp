@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3759
+// 题意：输入书本数 n 和天数 m，接着 n 本书的目标位置 a_i 与页数 v_i（a_i 构成 1..n 的排列）
+// 再输入 m 天的交换位置 (x_j, y_j)。
+// 每天将当前第 x_j 个与第 y_j 个位置上的书交换；一对处于乱序（逆序对）的两本书会产生两书页数之和的厌烦度。
+// 输出 m 行，第 i 行表示前 i 天不整理时第 i 天的总厌烦度对 10^9+7 取模的结果。
+// 数据范围：1 <= a_i, x_j, y_j <= n <= 5*10^4，1 <= m <= 5*10^4，1 <= v_i <= 10^5。
 #include <bits/stdc++.h>
 using namespace std;
 const int MOD = 1e9+7;

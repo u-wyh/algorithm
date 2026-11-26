@@ -1,4 +1,13 @@
 // https://www.luogu.com.cn/problem/P3281
+// 题意：
+// 给定进制 B 和区间 [L, R]（以 B 进制各位数字形式输入）。
+// 输入第一行为 B，第二行为长度 N 与 L 的 N 位，第三行为长度 M 与 R 的 M 位。
+// 对 [L, R] 中每个数看作字符串，列出其所有连续子串对应的 B 进制数值并求和。
+// 若数据中出现 R < L，答案定义为 -ans[R+1, L-1] mod 20130427。
+// 输出结果对 20130427 取模（十进制表示）。
+// 数据范围：
+// 2 <= B <= 10^5
+// 1 <= N, M <= 10^5
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

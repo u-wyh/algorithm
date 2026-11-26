@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4174
+// 题意：有 N 个中转站可选建，建第 i 个站成本为 P_i；
+// 有 M 个用户群，第 i 个用户群需要同时建立 A_i 和 B_i 才能获益 C_i，求最大净获利（总获益减去总建站成本）。
+// 数据范围：N <= 5000，M <= 50000，0 <= P_i, C_i <= 100，1 <= A_i, B_i <= N。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

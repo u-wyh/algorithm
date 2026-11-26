@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1306
+// 题意：斐波那契数列从 F[0]=0、F[1]=1 开始。给 n,m，求 F[n] 和 F[m] 的最大公约数，再对 10^8 取模。
+// 数据范围：1 ≤ n,m ≤ 10^9。
+
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

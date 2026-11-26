@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B3637
+// 题意：给一个长为 n 的序列，按原顺序挑出若干个数，使挑出的数严格递增。输出最多能挑多少个。
+// 数据范围：1 ≤ n ≤ 5000，1 ≤ a[i] ≤ 10^6。
+
 #include<stdio.h>
 
 int main()

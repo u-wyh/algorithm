@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8277
+// 题意：给定 1..N 的排列 p_1..p_N 和长为 N-1 的 U/D 字符串，求最大的 K <= N-1
+// 使得存在 p 的子序列 a_0..a_K 满足对所有 1 <= j <= K，字符串第 j 位为 U 时 a_{j-1} < a_j
+// 为 D 时 a_{j-1} > a_j。
+// 数据范围：2 <= N <= 3*10^5（测试点 13-22 无额外限制）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

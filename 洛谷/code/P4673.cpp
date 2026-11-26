@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4673
+// 题意：N 个城镇间有 M 条单向巴士，第 i 条发车在 [a_i, b_i]、到达在 [c_i, d_i]
+// 0 时刻从 1 出发需保证 T 时刻前（含）到 P 且绝不错过换乘，求最坏总等待时间的最小值（不可达输出 -1）。
+// 数据范围：1 <= P <= N <= 5*10^4，1 <= M <= 10^5，0 <= T <= 10^9
+// 0 <= a_i <= b_i < c_i <= d_i <= 10^9。
 #include <bits/stdc++.h>
 #define MAXN 500010
 using namespace std;

@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P3863
+// 题意：第一行输入序列长度 n 和操作数 q，第二行输入初始序列 a_1..a_n。
+// 第 i 个操作发生在第 i 秒（初始为第 0 秒）：1 l r x 将区间 [l, r] 元素加上 x；
+// 2 p y 查询 a_p 在过去的 0..i-1 秒中有多少秒满足值不小于 y。
+// 对每个操作 2 输出一行一个整数表示答案。
+// 数据范围：对于 100% 的数据，2 <= n, q <= 100000，1 <= l <= r <= n，1 <= p <= n
+// -10^9 <= x, y, a_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

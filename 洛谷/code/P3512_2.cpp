@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3512
+// 题意：输入允许的极差上限 k、序列长度 n，以及长度为 n 的整数序列 a_1..a_n。
+// 找出序列中最长的一段连续子段，使得该子段内最大值与最小值之差不超过 k。
+// 输出一个整数，表示满足条件的最长连续子段长度。
+// 数据范围：0 <= k <= 2*10^9，1 <= n <= 3*10^6，1 <= a_i <= 2*10^9。
 #include<iostream>
 #include<cstdio>
 using namespace std;

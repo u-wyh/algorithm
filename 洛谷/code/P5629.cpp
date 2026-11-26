@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5629
+// 题意：给定数列 a（长 n）、m 个原数 b 和参数 d，一个数能被某原数消灭当且仅当不断除以 d 下取整若干次能变成该原数（原数不消耗）；
+// 多次询问区间 [l, r] 在消灭最多数前提下最少需要多少个原数。
+// 输入 n, m, d, q、数列 a、原数 b 及 q 个询问区间；每行输出一次询问的答案。
+// 数据范围：n <= 5*10^5，m <= 60，2 <= d <= 10，q <= 10^6，0 <= a_i, b_i < 2^63。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

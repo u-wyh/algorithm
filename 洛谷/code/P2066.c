@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2066
+// 题意：把至多 M 台设备分给 N 家公司。给定每家公司分到 1 至 M 台时的利润，求最大总利润并按编号输出分配方案。利润并列时优先让编号小的公司分得更少。
+// 数据范围：N ≤ 10，M ≤ 15。
+
 #include<stdio.h>
 
 int max(int a,int b)

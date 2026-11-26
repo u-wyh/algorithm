@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4773
+// 题意：缸里有 A 条红鲤鱼（WA，+5min）和 B 条绿鲤鱼（AC，加当前时刻），每 5 分钟取一条预测，鱼用完后再盲交必 AC，按顺序做题
+// 求期望总罚时模 998244853。
+// 数据范围：1 <= A <= 10^18，1 <= B <= 10^7（模数为 998244853）。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

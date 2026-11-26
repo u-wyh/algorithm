@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6564
+// 题意：从下往上给定 n 块积木上的数 a_1..a_n，可删除任意块积木使上方积木下落，得到序列 b_1..b_m 的价值为 sum [b_i = i]
+// 求最大价值。
+// 数据范围：1 <= n <= 10^5，1 <= a_i <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

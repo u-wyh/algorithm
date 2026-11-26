@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2858
+// 题意：N 个零食排成一排（价值 v_i），每天只能从队列两端取 1 个卖出。
+// 第 a 天卖出收益为 v_i * a，求卖完所有零食的最大总收益。
+// 输出最大总收益。
+// 数据范围：1 <= N <= 2000，1 <= v_i <= 1000。
 #include <stdio.h>
 #include <stdlib.h>
 

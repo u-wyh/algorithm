@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4653
+// 题意：有 n 组灯泡，每组含 A、B 各一个并有权值，每选一个花 1 代价，最后只点亮 A 类或 B 类中某一类，求最大化的最小可能净收益（保留 4 位小数）。
+// 数据范围：0 <= n <= 10^5，1.0 <= A_i, B_i <= 1000.0（最多四位小数）。
 #include<bits/stdc++.h>
 using namespace std;
 

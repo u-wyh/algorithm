@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6504
+// 题意：给定 r×c 的小写字母矩阵及一个顶点在格点、各边平行坐标轴的 V 边形（顺时针给出顶点），求通过上下左右平移可得到的内部方格字母全部相同的多边形位置数。
+// 数据范围：1 <= r, c <= 500，4 <= V <= 500，0 <= x <= c，0 <= y <= r。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

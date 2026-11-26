@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P7687
+// 题意：N 点 M 边连通无向图，给定提供 A 服务的 K 个点和提供 B 服务的 L 个点；
+// 若断开某边后存在节点无法访问 A 或 B 服务之一，则称该边为关键线路。
+// 求关键线路数量及所有关键边。
+// 数据范围：1 <= N <= 10^5，1 <= M <= 10^6，1 <= K, L <= N，1 <= p, q <= N (p != q)，无重边。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

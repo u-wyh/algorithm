@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3440
+// 题意：输入学校数 n，以及每所学校 i 的旧编号 m_i、可接受的新编号区间 [a_i, b_i] 和改号单位成本 k_i。
+// 需给每所学校分配 [a_i, b_i] 内互不相同的新编号 m'_i，改号代价为 k_i * |m'_i - m_i|。
+// 若无法使所有学校编号互不相同则输出 NIE，否则输出最小总改号成本。
+// 数据范围：1 <= a_i <= m_i <= b_i <= n <= 200，1 <= k_i <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int INF = 1e9;

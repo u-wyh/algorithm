@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4428
+// 题意：维护长为 n 的 01 串
+// 支持 m 次单点翻转操作及区间 [l, r] 询问：统计该区间内有多少个位置不同的连续子串满足重排后（可含前导 0）是 3 的倍数。
+// 数据范围：1 <= n, m <= 100000，1 <= l <= r <= n。
 #include <iostream>
 #include <cstdio>
 #include <cstring>

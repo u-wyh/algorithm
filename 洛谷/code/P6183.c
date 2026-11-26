@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6183
+// 题意：有 n 个初始全空的洞（用 O 表示空、X 表示盖住），每次翻动一个洞的状态；
+// 要求构造共 2^n + 1 行的操作序列，从全 O 出发遍历所有 2^n 种状态各一次后回到全 O。
+// 数据范围：1 <= n <= 15。
 #include <stdio.h>
 
 #define MAX_N 70000

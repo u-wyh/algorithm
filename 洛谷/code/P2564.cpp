@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2564
+// 题意：x 轴上有 N 个彩珠，分为 K 种（同位置可有多个）。
+// 求包含所有 K 种彩珠的最短闭区间长度。
+// 输出最短区间长度。
+// 数据范围：1 <= N <= 10^6，1 <= K <= 60，0 <= 位置 < 2^31。
 #include<bits/stdc++.h>
 using namespace std;
 const int maxn=1000005;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2533
+// 题意：给定平面上 N 个实数坐标点，求覆盖所有点的最小圆。
+// 一行输出圆心坐标 x, y 和半径（保留 2 位小数）。
+// 数据范围：1 <= N <= 10^6，坐标在双精度范围内。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

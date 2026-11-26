@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2053
+// 题意：N 辆车同时到店，给出 M 位技师修各辆车所需的时间。每辆车分给一位技师，并安排每位技师的维修顺序。求从到店到修完的平均时间最小值，保留两位小数。
+// 数据范围：2 ≤ M ≤ 9，1 ≤ N ≤ 60，1 ≤ T_i,j ≤ 1000。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long  

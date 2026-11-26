@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P11661
+// 题意：
+// 给定两个长为 n 的正整数序列 a 和 b。
+// 求满足 1 <= l <= r <= n 且 b_l ≡ b_r (mod max_{l<=i<=r} a_i) 的区间 (l, r) 个数。
+// 输出一个整数表示满足条件的 (l, r) 对数。
+// 数据范围：
+// 1 <= n, a_i, b_i <= 5 * 10^5
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

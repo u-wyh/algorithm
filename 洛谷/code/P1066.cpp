@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1066
+// 题意：统计满足三条条件的整数个数：写成 2^k 进制至少两位，从高位到低位的数字严格递增，改写成二进制后不超过 w 位。输出十进制计数。
+// 数据范围：1 ≤ k ≤ 9，1 ≤ w ≤ 30000。
+
 #include<iostream>
 #include<cstdio>
 #define rint register int

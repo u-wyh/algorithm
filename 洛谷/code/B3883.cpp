@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B3883
+// 题意：给一个正整数 n，统计从 1 到 n 有多少个顺读倒读相同的整数。答案对 20091119 取模。
+// 数据范围：1 ≤ n ≤ 10^100。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

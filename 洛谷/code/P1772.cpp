@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P1772
+// 题意：在 m 个码头和 e 条双向航线中，安排 n 天每天从 1 到 m 的路线。
+// 码头在给定日期区间里停用，相邻两天改路线要额外付 k。
+// 求每天航程与换线费之和的最小值。
+// 数据范围：1 ≤ n ≤ 100，1 ≤ m ≤ 20，1 ≤ k ≤ 500，1 ≤ e ≤ 200，1 ≤ d ≤ 50，1 ≤ 航线长度 ≤ 10。
+// 每天都有可用路线。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

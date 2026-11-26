@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2610
+// 题意：凸 n 边形被三角剖分为 n-2 个三角形。
+// 找一条连接不相邻顶点的线段，使其经过的三角形（至少两个公共点）尽量多。
+// 输出最多经过的三角形数。
+// 数据范围：4 <= n <= 200000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P6327
+// 题意：维护长为 n 的正整数序列 a，支持 m 次操作：1 l r v 将区间 [l,r] 均加上 v；
+// 2 l r 询问区间内所有 sin(a_i) 之和（保留一位小数输出）。
+// 数据范围：1 <= n, m, a_i, v <= 2*10^5，1 <= l <= r <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

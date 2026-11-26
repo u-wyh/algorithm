@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2577
+// 题意：N 个人分两队到两个窗口打饭（打饭时间 A_i，吃饭时间 B_i），打完立刻吃。
+// 求所有人吃完饭的最早时刻。
+// 输出最早时刻。
+// 数据范围：N, A_i, B_i 均为不超过 200 的正整数。
 #include<bits/stdc++.h>
 using namespace std;
 

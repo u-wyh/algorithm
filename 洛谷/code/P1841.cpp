@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1841
+// 题意：给定 n 座城市和 m 条带长度的双向道路。
+// 如果删除某座城市后，另外两座城市之间的最短路变长或不再连通，就称它为重要城市。
+// 按编号升序输出所有重要城市，没有则输出 No important cities.。
+// 数据范围：N ≤ 200，M ≤ N(N−1)/2，道路长度在 [1,10000]，无重边和自环。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 205;

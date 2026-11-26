@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3986
+// 题意：输入一个正整数 k。
+// 对于由正整数首两项 a, b 确定的斐波那契数列 f(0)=a, f(1)=b, f(n)=f(n-1)+f(n-2) (n >= 2)
+// 统计有多少对正整数 (a, b) 使得 k 出现在该数列中且不是前两项（即存在 n >= 2 使 f(n) = k）。
+// 输出答案对 10^9 + 7 取模的结果。
+// 数据范围：1 <= k <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

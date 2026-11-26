@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4474
+// 题意：在 n*m 的带权网格中任选起点于第 0 秒开始行动，每秒先拿走当前格宝石，偶数秒时当前格上下左右四邻格的宝石会消失，每步可原地停留或走四连通一格
+// 求最多能拿到的宝石总价值。
+// 数据范围：1 <= N, M <= 100，1 <= v_{i,j} <= 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

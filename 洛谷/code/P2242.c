@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2242
+// 题意：直线上有 n 个从小到大互异的坑，用 m 段闭区间覆盖所有坑。
+// 求这 m 段区间的最小总长度。
+// 输出最小总长度。
+// 数据范围：2 <= m <= n <= 15000，坐标在长整范围内。
 #include<stdio.h>
 #include<stdlib.h>
 

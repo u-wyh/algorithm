@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1983
+// 题意：给定 n 个车站和 m 趟车的停站序列。一趟车从首站到末站之间，每个未停站的等级都必须低于该车所有停靠站的等级。求所有车站最少要分成多少个等级。
+// 数据范围：1 ≤ n,m ≤ 1000，每趟停靠 2 到 n 站，站号递增，输入保证有解。
+
 #include<iostream>
 #include<cstdio>
 #include<cstring>

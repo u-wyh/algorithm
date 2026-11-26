@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3810
+// 题意：第一行输入元素数 n 和属性上限 k，接下来 n 行每行输入三个属性值 a_i, b_i, c_i。
+// 定义 f(i) 为满足 a_j <= a_i、b_j <= b_i、c_j <= c_i 且 j != i 的元素 j 的数量。
+// 共输出 n 行，第 d+1 行输出满足 f(i) = d 的元素 i 的个数（d 从 0 到 n-1）。
+// 数据范围：对于所有数据，1 <= n <= 10^5，1 <= a_i, b_i, c_i <= k <= 2 * 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

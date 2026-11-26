@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4313
+// 题意：n*m 网格每位同学必须选文科或理科，选文/理分别有基础满意值 art_{i,j} 和 science_{i,j}；
+// 若自己和上下左右相邻的同学全都选文科（或全选理科）还会额外获得 same_art_{i,j}（或 same_science_{i,j}），求最大总满意值。
+// 数据范围：n, m <= 100，读入的所有满意值均 <= 500。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

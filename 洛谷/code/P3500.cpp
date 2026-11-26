@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3500
+// 题意：输入母串长度 n 和母串序列 a_1..a_n，再输入询问数 q，每次询问给出长度 m 和序列 b_1..b_m。
+// 判断每次询问的序列 b 是否是母串 a 的子序列（可不连续但须保持相对顺序）。
+// 输出 q 行，是子序列输出 TAK，否则输出 NIE。
+// 数据范围：1 <= n, m, a_i, b_i <= 1000000，sum(m) <= 1000000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4602
+// 题意：有 n 种果汁（美味度 d_i、单价 p_i、单瓶上限 l_i），m 个小朋友各自要求总价不超过 g_j 且总量不少于 L_j
+// 混合果汁的美味度为所用果汁美味度的最小值，求每人能喝到的最大美味度（无解输出 -1）。
+// 数据范围：1 <= n, m <= 10^5，1 <= d_i, p_i, l_i <= 10^5，1 <= g_j, L_j <= 10^{18}。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

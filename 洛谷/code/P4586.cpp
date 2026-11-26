@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4586
+// 题意：多组数据，给定平面上 n 个点，用两个半径相同的圆覆盖所有点，求所需的最小圆半径（保留两位小数）。
+// 数据范围：n <= 1000，|x_i|, |y_i| <= 10^5，T <= 10。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

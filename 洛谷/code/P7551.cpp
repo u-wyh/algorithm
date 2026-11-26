@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P7551
+// 题意：n 个单词之间有 m 条有向关联 (x, y, t) 表示听到 x 后经 t 毫秒想到 y；
+// 进行 q 轮独立询问，求说出 a_i 后第一次想起 b_i 的最短时间（无法想起输出 Roger）。
+// 数据范围：2 <= n <= 1000，1 <= m <= 1000，1 <= t_i <= 10^9，1 <= q <= 1000
+// 单词长 <= 20 小写字母。
 #include<bits/stdc++.h>
 using namespace std;
 

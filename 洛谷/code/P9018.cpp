@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P9018
+// 题意：数轴上 t=0 时从 x=0 出发，每秒向左(L)或向右(R)移动 1 单位，在 [0, N] 内移动并最终停在 x=0
+// 且经过 i+0.5 (0 <= i < N) 的总次数恰好为 A_i。
+// 求在改变方向次数（L/R 串相邻字符不同的次数）最少的前提下，有多少种不同的移动序列，对 10^9+7 取模。
+// 数据范围：1 <= N <= 10^5，1 <= A_i <= 10^6（A_i 为正整数，各点经过次数合法）。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

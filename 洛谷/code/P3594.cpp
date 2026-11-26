@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3594
+// 题意：输入序列长度 n、和上限 p、覆盖长度上限 d，以及正整数序列 w_1..w_n。
+// 你有一次机会选一段长度不超过 d 的连续子段并将其中所有数清零，之后再选一段连续子段使其元素和不超过 p。
+// 输出修改后能找到的合法连续子段的最大长度。
+// 数据范围：1 <= d <= n <= 2*10^6，0 <= p <= 10^16，1 <= w_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

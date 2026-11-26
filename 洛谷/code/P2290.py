@@ -1,4 +1,7 @@
 # https://www.luogu.com.cn/problem/P2290
+# 题意：给定 n 个节点的树每个节点的度数 d_i，求满足条件的不同的无根树数量。
+# 输出树的棵数。
+# 数据范围：1 <= n <= 150，保证答案不超过 10^17。
 def main():
     n = int(input().strip())
     degs = list(map(int, input().split()))

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2106
+// 题意：给定整数 k，求 k 阶 Sam 数的个数（即相邻两位数字之差不超过 2 的 k 位数）。
+// 输出结果对 10^9+7 取模。
+// 数据范围：1 <= k <= 10^18。
 //P2106
 #include<bits/stdc++.h>
 using namespace std;

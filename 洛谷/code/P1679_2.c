@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P1679
+// 题意：输入一个正整数 m。
+// 将 m 分解为 n 个正整数的四次方之和，输出所需的最小项数 n。
+// 数据范围：
+// m <= 100,000（待分解的整数）
 #include <stdio.h>
 #include <limits.h>
 

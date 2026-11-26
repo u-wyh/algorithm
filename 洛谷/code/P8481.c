@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8481
+// 题意：给定长为 n 的单调递增序列 num[0..n-1] 与 q 次询问 x（保证在序列内），按题面等价二分代码（每步 w in {0,1}
+// mid=(l+r+w)/2，若 num[mid]-w < x 则 l=mid+!w 否则 r=mid-w）
+// 求每次询问在最好情况下循环次数 cnt 的最小值。
+// 数据范围：100% 数据满足 1 <= n <= 2^20，1 <= q <= 100，1 <= num_i <= 10^9。
 #include <stdio.h>
 #include <stdint.h>
 #include <inttypes.h>

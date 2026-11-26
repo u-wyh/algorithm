@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3970
+// 题意：第一行输入序列长度 n，第二行输入 n 个整数。
+// 统计原序列中严格递增且长度至少为 2 的不同子序列个数（值序列相同的上升子序列只计一次）。
+// 输出答案对 10^9 + 7 取模的结果。
+// 数据范围：对于 100% 的数据，n <= 10^5，序列元素绝对值不超过 10^9。
 #include <iostream>
 #include <vector>
 #include <algorithm>

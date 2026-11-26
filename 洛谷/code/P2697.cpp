@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2697
+// 题意：给定由 G 和 R 组成的字符串，求 G 和 R 数目相等的最长连续子串长度。
+// 输出最长子串长度。
+// 数据范围：字符串长度 <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN =1e6+5;

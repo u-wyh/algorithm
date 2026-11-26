@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P12735
+// 题意：统计 1..n 排列中存在分离的长度为 a, b 的两个置换环的方案数。
+// 输入：一行三个整数 n, a, b。
+// 规则：排列中需含长 a 的环 A 和长 b 的环 B，且 max(A) < min(B)。
+// 输出：输出满足要求的排列个数对 998244353 取模的结果。
+// 数据范围：1 <= n <= 10^6，1 <= a, b < a + b <= n。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

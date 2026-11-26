@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4307
+// 题意：有 n 支球队，第 i 队已有 a_i 胜 b_i 负，赛季总支出为 C_i*x^2 + D_i*y^2（x, y 为最终胜负场数
+// D_i <= C_i）；
+// 接下来还有 m 场指定两队对阵的比赛（无平局），合理安排胜负使所有球队总支出最小。
+// 数据范围：2 <= n <= 5000，0 <= m <= 1000，0 <= D_i <= C_i <= 10，0 <= a_i, b_i <= 50。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e3+5;

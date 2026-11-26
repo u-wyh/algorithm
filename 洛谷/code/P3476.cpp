@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3476
+// 题意：输入平面上点的数量 n，以及这 n 个互不相同的整数点坐标 (x_i, y_i)。
+// 计算以这 n 个点中任意三个不同点为顶点的全部 n(n-1)(n-2)/6 个三角形的面积总和（共线退化三角形面积记为 0）。
+// 输出一个实数表示面积之和，保留一位小数（误差不超过 0.1）。
+// 数据范围：3 <= n <= 3000，0 <= x_i, y_i <= 10^4，所有点坐标互异。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

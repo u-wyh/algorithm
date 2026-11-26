@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5937
+// 题意：给定长度为 n 的未知 01 序列，依次给出 m 条关于区间 [l, r] 内 1 的个数奇偶性（odd/even）的回答
+// 求最早到第几条回答时仍存在合法 01 序列（下一条起矛盾）。
+// 输入 n, m 及 m 条回答；输出最多连续不矛盾的回答前缀长度 x。
+// 数据范围：1 <= n <= 10^9，m <= 5*10^3。
 #include<bits/stdc++.h>
 using namespace std;
 

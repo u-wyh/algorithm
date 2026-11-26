@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P14420
+// 题意：给定长 N 序列 X 与 Q 次区间查询，求 max(t * 区间内 t 的出现次数)。
+// 输入：首行 N, Q，次行序列 X_1..X_N，后 Q 行每行区间 [A_j, B_j]。
+// 规则：区间内值 t 的重要度为 t 乘以它在区间内的出现次数。
+// 输出：输出 Q 行，表示每个查询区间内所有值的最大重要度。
+// 数据范围：1 <= N, Q <= 10^5，1 <= X_i <= 10^9，1 <= A_j <= B_j <= N。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

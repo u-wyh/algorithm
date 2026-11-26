@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2403
+// 题意：R*C 网格上有 N 个互不相同的传送点：1 同行任意跳，2 同列任意跳，3 周围 8 格跳。
+// 可任选起点和终点，传送门可无限使用且点可重复经过。
+// 求最多能经过多少个不同的传送点。
+// 数据范围：1 <= N <= 10^5，1 <= R, C <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

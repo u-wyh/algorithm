@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1174
+// 题意：有 n 行 m 列砖和 k 发初始子弹。
+// 每次耗一发打掉任意一列当前最下面的砖，获得砖上的分数，标 Y 的砖还会返还一发子弹。
+// 砖全打掉或子弹用完就结束，求最高总得分。
+// 数据范围：1 ≤ n,m,k ≤ 200，砖的分数在 [1,10000]，奖励标记为 Y 或 N。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 205;

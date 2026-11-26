@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1136
+// 题意：给只含 j 和 z 的字符串。至多交换 K 次，每次可交换任意两处。求最终相邻子串 jz 的最多出现次数。
+// 数据范围：1 ≤ N ≤ 500，1 ≤ K ≤ 100。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int maxn=505,maxk=105;

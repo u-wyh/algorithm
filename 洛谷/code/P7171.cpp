@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P7171
+// 题意：n 行 m 列的网格中 '.' 表示打开、'#' 表示关闭，用横向或纵向的连续胶带覆盖所有 '#' 且每个 '#' 仅被一条胶带覆盖，求最少胶带数。
+// 数据范围：1 <= n <= 1000，1 <= m <= 10。
 #include<iostream>
 using namespace std;
 #define int long long

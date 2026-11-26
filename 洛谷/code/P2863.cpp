@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2863
+// 题意：给定 n 个点 m 条边的有向图，统计点数大于 1 的强连通分量个数。
+// 输出强连通分量个数。
+// 数据范围：2 <= n <= 10^4，2 <= m <= 5*10^4。
 //P2863
 #include<bits/stdc++.h>
 using namespace std;

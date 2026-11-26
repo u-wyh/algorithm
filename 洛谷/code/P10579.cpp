@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10579
+// 题意：给长为 n 的数组 s 和三个数 a,b,c。找连续区间 [L,R]，要求区间和严格大于 a×(b×R-c×L)，输出符合要求的最大区间长度。
+// 数据范围：1 ≤ n ≤ 3 × 10^5，1 ≤ a,b,c ≤ 1000，s[i] 的绝对值不超过 10^9，保证有解。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

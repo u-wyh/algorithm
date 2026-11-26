@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5008
+// 题意：给一张 n 点 m 边的有向图（可能有自环），每个点有点权 w_i；
+// 任意时刻可选一个当前入度不为 0 的点删去（连同其出边）并获得其点权，最多选 k 个点，求最大总点权。
+// 数据范围：1 <= n <= 5*10^5+4，1 <= m <= 2*10^6+4，0 <= w_i <= 10^3，0 <= k <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+10;

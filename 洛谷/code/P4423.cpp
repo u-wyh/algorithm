@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4423
+// 题意：在平面上给定的 N 个整点中，求周长最小的三角形（允许三点共线）的周长，保留 6 位小数输出。
+// 数据范围：3 <= N <= 2 * 10^5，点坐标为整数（题面未给出坐标绝对值上限）。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

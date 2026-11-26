@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2128
+// 题意：有 N 艘战船和 M 条连接两艘战船的铁索，第 i 艘战船价值 V_i。
+// 选出两两之间都有铁索连接的战船集合，求总价值的最大值。
+// 输出最大总价值。
+// 数据范围：N <= 450，M <= 900，V_i <= 6000。
 #include<bits/stdc++.h>
 using namespace std;
 

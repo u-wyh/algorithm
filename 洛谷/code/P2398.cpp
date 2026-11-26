@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2398
+// 题意：给定整数 n，求 sum_{i=1..n} sum_{j=1..n} gcd(i, j)。
+// 输出计算结果。
+// 数据范围：n <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

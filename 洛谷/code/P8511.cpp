@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P8511
+// 题意：给定 n 个节点的树（给出 2..n 号点的父节点且保证 j < i+1），点 i 有权值 a_i。
+// 对每个节点 x，在其子树之外的所有点中任选两个（可以相同）点 i, j，求 a_i xor a_j 的最大值（若子树外无法选出两点则答案为 0）。
+// 数据范围：100% 数据满足 1 <= n <= 5*10^5，0 <= a_i <= 10^18。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

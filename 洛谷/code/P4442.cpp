@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4442
+// 题意：N * M 网格房间四周全是墙，从 'C' 到 'F'，每步可耗时 1 走相邻空地、耗时 0 向某方向墙面发射传送门（同时最多激活 2 个
+// 放新时最早的消失，同位置不能重复建），或耗时 1 通过相邻墙面的传送门传到另一传送门前；
+// 求最少时间（不可达输出 nemoguce）。
+// 数据范围：4 <= N, M <= 500。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

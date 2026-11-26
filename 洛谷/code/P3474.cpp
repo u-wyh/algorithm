@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3474
+// 题意：输入目标金额基准 k、正方形地图边长 n，以及 n*n 格每平方米的价格矩阵。
+// 在地图中找出一个非空子矩形，使其内所有单位正方形价格总和 c 满足 k <= c <= 2k。
+// 若不存在输出 NIE；否则输出左上角和右下角坐标 x1 y1 x2 y2（任一合法解）。
+// 数据范围：1 <= k <= 10^9，1 <= n <= 2000，每格价格为不超过 2*10^9 的非负整数。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

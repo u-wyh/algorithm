@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2522
+// 题意：n 次询问，每次给定 a, b, c, d, k。
+// 求满足 a <= x <= b、c <= y <= d 且 gcd(x,y) = k 的整数对 (x,y) 个数。
+// 每次询问输出一行整数。
+// 数据范围：1 <= n, k <= 5*10^4，1 <= a <= b <= 5*10^4，1 <= c <= d <= 5*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10634
+// 题意：给长为 n 的主序列 A 和长为 m 的模式 B。
+// 若 A 的一段在任意两个位置上的大小、相等关系都和 B 对应位置一致，就算一次匹配。
+// 先输出匹配数，再按升序逐行输出起点。
+// 数据范围：1 ≤ n ≤ 10^5，1 ≤ m ≤ 25000，所有元素在 [1,s]，s ≤ 25。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

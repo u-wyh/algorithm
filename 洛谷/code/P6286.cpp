@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P6286
+// 题意：给定 n 个互不相同的小写单词和目标排位排列 a_i，求一个英文字母表排列作为替换密钥
+// 使所有单词替换后按字典序升序排列时第 i 位恰好为原第 a_i 个单词；
+// 不可行输出 NE，否则输出 DA 及任意可行密钥。
+// 数据范围：2 <= n <= 100，1 <= a_i <= n，单词长度 <= 100。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

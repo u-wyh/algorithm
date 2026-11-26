@@ -1,4 +1,13 @@
 // https://www.luogu.com.cn/problem/P11660
+// 题意：
+// 给定长 n 序列 A 与 m 次强制在线询问（除首次外，l, r, a, b 均要异或上一次答案）。
+// 每次定义 f(x) = floor((x + a) / b) 与 B_i = f(A_i)。
+// 求 sum_{i=l+1}^{r} [B_i = B_{i-1}]，每次询问输出一个整数。
+// 数据范围：
+// 1 <= n, m, A_i <= 10^5
+// 1 <= b <= 500
+// 0 <= a <= 2 * 10^9
+// l < r
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2295
+// 题意：N*M 网格每格有老鼠数 A_{i,j}，从 (1,1) 只向下或向右走到 (N,M)。
+// 路径上曼哈顿距离 <= 1 的格子的老鼠都会被计入害怕值（同一格不重复计）。
+// 求最小总害怕值。
+// 数据范围：1 <= N, M <= 1000，0 <= A_{i,j} <= 100。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e3+5;

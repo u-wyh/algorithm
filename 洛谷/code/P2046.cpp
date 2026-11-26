@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P2046
+// 题意：给定方格路网各条有向道路的流量。
+// 西北角高度固定为 0，东南角固定为 1，其余高度可设定。
+// 每条道路的耗费为流量乘以上升高度，下坡或平路耗费为 0。
+// 求最小总耗费，四舍五入到整数。
+// 数据范围：1 ≤ n ≤ 500，共 (n+1)² 个路口，流量为 [0,10^6] 内的整数。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

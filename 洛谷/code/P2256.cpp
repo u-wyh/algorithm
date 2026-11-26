@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2256
+// 题意：有 N 名选手，给出 M 组同组关系（具有传递性），随后 K 次询问。
+// 每次询问两名选手是否属于同一组。
+// 对每次询问输出 Yes. 或 No.。
+// 数据范围：2 <= N <= 2*10^4，1 <= M, K <= 10^6，名字长度 <= 20。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e4+5;

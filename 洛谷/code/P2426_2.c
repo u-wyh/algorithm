@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2426
+// 题意：N 个不同正整数排成一排，每次可从左端或右端删去连续若干个数。
+// 删去区间 [i,k] 价值为 |x_i - x_k|*(k-i+1)，若只删 1 个数价值为该数本身。
+// 求删完所有数的最大总价值。
+// 数据范围：3 <= N <= 100，1 <= x_i <= 1000。
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1566
+// 题意：给一个互异正整数集合。统计有多少个等式能把一个元素表示为集合内其他元素之和，各加数最多使用一次，调换加数顺序不算新等式。
+// 数据范围：1 ≤ t ≤ 10，1 ≤ m ≤ 30，1 ≤ x[i] ≤ 1000。
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>

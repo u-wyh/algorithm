@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4320
+// 题意：给一张 n 点 m 边的连通无向简单图，有 q 次询问，每次给起点 u 和终点 v
+// 求从 u 到 v 的所有可能路径中一定会经过的点数（含 u 和 v 自身，答案至少为 2）。
+// 数据范围：1 <= n, q <= 5e5，1 <= m <= min(n(n-1)/2, 1e6)。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

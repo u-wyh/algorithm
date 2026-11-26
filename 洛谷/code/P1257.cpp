@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1257
+// 题意：给定平面上 n 个整点坐标，求其中所有点对之间的最小欧几里得距离。
+// 输入：第一行输入 n，接下来 n 行每行输入一个点的坐标 x, y。
+// 输出：一行输出最短距离，四舍五入保留 4 位小数。
+// 数据范围：2 <= n <= 10^4。
+// 数据范围：0 <= x, y <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

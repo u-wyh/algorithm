@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3572
+// 题意：输入树的数量 n、各树高度 d_1..d_n，询问数 q，以及每只鸟的最大单步跨度 k_i。
+// 每只鸟从第 1 棵树走到第 n 棵树，每次从 j 飞到 j+1..j+k_i 中的某棵树；若目标树高度不低于当前树则劳累值加 1，否则不加。
+// 输出 q 行，每行输出第 i 只鸟的最小劳累值。
+// 数据范围：1 <= n <= 10^6，1 <= d_i <= 10^9，1 <= q <= 25，1 <= k_i <= n - 1。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

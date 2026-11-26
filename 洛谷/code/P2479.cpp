@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2479
+// 题意：平面上有 N 个不重合的点，距离为曼哈顿距离。
+// 找一个点，使它到除自身外最远点的距离减去到最近点的距离之差最小。
+// 输出最小距离差。
+// 数据范围：2 <= N <= 10^5，0 <= X_i, Y_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

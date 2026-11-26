@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P7862
+// 题意：二维平面上有 N 个城市，第 i 个城市坐标为 (x_i, y_i) 且人口为 k_i。
+// 选定一个距离阈值 D，将所有欧氏距离 <= D 的城市间连无向边形成连通块。
+// 要求至少存在一个连通块的某个非空子集（可包含整个连通块）的人口总和能被 K 整除，求满足条件的最小 D。
+// 第一行输入 N, K，接下来 N 行每行 x_i, y_i, k_i。
+// 输出一个实数，四舍五入保留 3 位小数。
+// 数据范围：1 <= N <= 5*10^4，1 <= K <= 30，0 <= x_i, y_i, k_i <= 10^8。
 #include<bits/stdc++.h>
 #define int long long
 using namespace std;

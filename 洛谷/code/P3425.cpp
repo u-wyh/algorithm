@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3425
+// 题意：输入玩家数 n（编号 1..n）和比赛场数 m，接下来 m 行每行给出第 i 场对局的两名玩家 (a_i, b_i)。
+// 需为每场比赛指定一名胜者（无平局），使得所有玩家中胜场数最大值 k 尽可能小。
+// 输出第一行为最小的 k，随后 m 行每行输出 1（a_i 胜）或 0（b_i 胜）。
+// 数据范围：1 <= n, m <= 10^4，1 <= a_i, b_i <= n，同一对玩家可多次出现。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

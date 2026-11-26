@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3193
+// 题意：输入准考证位数 N、不吉利数字串长度 M、模数 K，以及一个 M 位的数字串 A_1..A_M（各位在 0..9 之间，允许前导 0）。
+// 统计所有长度恰好为 N 的数字串（各位在 0..9 之间，允许前导 0）中，不包含 A 作为连续子串的方案数。
+// 输出合法准考证号码方案数对 K 取模的结果。
+// 数据范围：N <= 10^9，M <= 20，K <= 10000。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

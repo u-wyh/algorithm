@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P7961
+// 题意：给定整数 n, m, k 与数组 v_0..v_m。
+// 对长为 n、元素均在 [0, m] 内的非负整数序列 {a_i}，其权值为 ∏_{i=1}^n v_{a_i}。
+// 若 S = ∑_{i=1}^n 2^{a_i} 的二进制表示中 1 的个数不超过 k，则该序列合法。
+// 求所有合法序列的权值和对 998244353 取模的结果。
+// 第一行输入 n, m, k，第二行输入 v_0..v_m。
+// 输出一行一个整数。
+// 数据范围：1 <= k <= n <= 30，0 <= m <= 100，1 <= v_i < 998244353。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

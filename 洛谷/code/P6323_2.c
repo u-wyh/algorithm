@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6323
+// 题意：求长度为 n 且逆序对数量恰好为 c 的排列总数，答案对 10^9+7 取模。
+// 数据范围：1 <= n <= 10^3，1 <= c <= 10^4。
 #include <stdio.h>
 
 #define MOD 1000000007

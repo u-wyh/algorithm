@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7775
+// 题意：N x M 字符网格含起点 V、终点 J 和至少一棵树 '+'，可四连通移动且树不阻挡；
+// 路径必须含 J，求从 V 到 J 路径上距最近 '+' 的曼哈顿距离最小值的最大值。
+// 数据范围：1 <= N, M <= 500。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

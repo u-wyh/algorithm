@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3178
+// 题意：输入以 1 为根的树的点数 N、操作数 M、各点初始点权、N-1 条边，以及 M 个操作（op, x, a）。
+// 操作 1 为将节点 x 点权加 a；操作 2 为将以 x 为根的子树所有点权加 a；操作 3 为询问节点 x 到根节点 1 路径上所有点的点权和。
+// 对每个操作 3 输出一行对应的路径点权和。
+// 数据范围：1 <= N, M <= 10^5，所有输入数据的绝对值不超过 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

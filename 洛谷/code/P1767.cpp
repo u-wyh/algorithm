@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1767
+// 题意：给定一张可能每行长度不同的地图，小写字母表示住户，空格和星号表示隔断。把上下左右相通的住户视为一个家族，姓氏可以不同。求家族数。
+// 数据范围：n ≤ 100，每行最多 200 个字符。
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

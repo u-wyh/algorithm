@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P4314
+// 题意：维护长为 T 的序列，支持 E 次操作：P X Y Z 区间加 Z；
+// C X Y Z 区间赋值为 Z；
+// Q X Y 询问区间当前最大值；
+// A X Y 询问区间从开始到现在达到过的历史最大值。
+// 数据范围：1 <= T, E <= 1e5，1 <= X <= Y <= T，-2^31 <= Z < 2^31，必要运算在 32 位有符号整数范围内。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

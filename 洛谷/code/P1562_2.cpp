@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1562
+// 题意：输入 N 及 N*N 棋盘，* 表示可放皇后，. 表示不可放。
+// 放置 N 个皇后，使每行、每列恰有 1 个，每条对角线至多 1 个。
+// 输出合法放置方案的总数。
+// 数据范围：
+// 0 < N <= 14（棋盘大小）
 #include<bits/stdc++.h>
 
 #define xianzhi ~(now|ld|rd|sta[d])

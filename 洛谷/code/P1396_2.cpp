@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1396
+// 题意：给带拥挤度的无向道路图，选一条从 s 到 t 的路线。路线的拥挤程度按经过道路中最大拥挤度算，输出所有路线中该值的最小值。
+// 数据范围：1 ≤ n ≤ 10000，1 ≤ m ≤ 20000，w ≤ 10000，1 ≤ s,t ≤ n，允许重边，保证能到达。
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

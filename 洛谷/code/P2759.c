@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2759
+// 题意：给定正整数 n，求使得 x^x 在十进制下达到或超过 n 位数字的最小正整数 x。
+// 输出最小正整数 x。
+// 数据范围：1 <= n <= 2*10^9。
 #include<stdio.h>
 #include<math.h>
 

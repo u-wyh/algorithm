@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2221
+// 题意：n 个点组成链，边权初始为 0，共 m 次操作。
+// C l r v：将 [l,r] 间所有边权增加 v；Q l r：在 [l,r] 任选两点，求期望花费。
+// 对每次询问输出既约分数（整数 a 输出 a/1）。
+// 数据范围：1 <= n, m <= 10^5，1 <= l <= r <= n，-10^4 <= v <= 10^4，任何时刻边权在 [0, 10^4]。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

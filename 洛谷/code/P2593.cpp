@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2593
+// 题意：牌面数字 1~100，N 次询问每次给出 100 种牌各自张数。
+// 判断手牌能否拆分为若干句话（3 连张或 3/4 张相同）加 1 对相同牌（胡牌）。
+// 每组输出 Yes 或 No。
+// 数据范围：N <= 100，0 <= a_i <= 100。
 #include <stdio.h>
 #include <string.h>
 bool DPC[110][3][3];

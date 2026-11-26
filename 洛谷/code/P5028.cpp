@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P5028
+// 题意：给定 n 个小写字母字符串，对每一对不同字符串 (i, j)（i != j），求它们的最长公共子串长度并按行输出。
+// 数据范围：2 <= n <= 50，所有字符串长度之和不超过 10^6，内存限制 64 MB。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e6+500;

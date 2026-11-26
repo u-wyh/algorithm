@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5063
+// 题意：维护一棵标准中点划分的区间 [1, n] 线段树（叶权初值 0，非叶权值为左右孩子之和）
+// m 次操作：给区间 [l, r] 内所有叶子权值加 a 并更新祖先；
+// 或查询区间被 [l, r] 包含且权值 <= a 的线段树节点个数。
+// 数据范围：1 <= n, m <= 10^5，1 <= l <= r <= n，-10^5 <= a <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

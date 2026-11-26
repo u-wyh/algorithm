@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P8765
+// 题意：输入长度为 n 的括号序列和操作数 m，支持两种操作：1 L R 将区间 [L, R] 内所有括号反转（`(` 变 `)`，`)` 变 `(`）；
+// 2 L 查询以 L 为左端点的最长合法括号子串的右端点 R（不存在则输出 0）。
+// 数据范围：1 <= n <= 10^6，1 <= m <= 2*10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P5192
+// 题意：多组数据，共 n 天、m 位少女，第 x 位少女总共至少拍 G_x 张
+// 第 i 天总拍照数不超过 D_i 且有 C_i 条独立限制 (T, L, R) 表示该次对少女 T 拍照数须在 [L, R] 内；
+// 求满足条件的最大总拍照数，无解输出 -1。
+// 数据范围：数据组数 <= 10，n <= 365，m <= 1000，0 <= G_x <= 10^5，1 <= C_i <= 300
+// 0 <= D_i <= 30000，0 <= T < m，0 <= L <= R <= 100。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

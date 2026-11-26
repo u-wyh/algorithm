@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3167
+// 题意：输入一个含小写字母以及通配符 '*'（匹配 0 个及以上任意字符）和 '?'（匹配恰好 1 个任意字符）的模式串
+// 再输入文件数量 n 及 n 个仅含小写字母的文件名字符串。
+// 依次判断每个文件名能否被该通配符模式串完全匹配。
+// 输出 n 行，匹配成功输出 YES，否则输出 NO。
+// 数据范围：字符串长度不超过 100000，1 <= n <= 100，通配符个数不超过 10。
 #include <bits/stdc++.h>
 using namespace std;
 #define ULL unsigned long long

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4070
+// 题意：第一行输入操作次数 n，第二行输入 n 个整数 x_1..x_n。
+// 初始串 S 为空，第 i 次操作在 S 末尾追加字符 x_i，求每次操作后当前魔咒串 S 中互不相同的非空子串数量。
+// 输出 n 行，第 i 行表示第 i 次操作后的不同非空子串数。
+// 数据范围：对于 100% 的数据，1 <= n <= 10^5，1 <= x_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2836
+// 题意：从起点开车到终点，满油出发，仅当无法到下一站或油量少于一半时才停下加满油。
+// 每次停下额外花 2.00 元买快餐，每次付款四舍五入到分，求最小总花费。
+// 输出最小总花费（元），保留两位小数。
+// 数据范围：加油站数 n <= 51。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 55;

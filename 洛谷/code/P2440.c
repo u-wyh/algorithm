@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2440
+// 题意：有 n 根长度分别为 L_i 的原木，需切割出至少 k 段等长正整数长度 l 的小段。
+// 求 l 的最大值；若无法切出 1cm 的小段，输出 0。
+// 数据范围：1 <= n <= 10^5，1 <= k <= 10^8，1 <= L_i <= 10^8。
 #include<stdio.h>
 
 int check(int x,int *nums,int n){

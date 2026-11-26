@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6591
+// 题意：给定 n 个节点的无根树，找出所有满足「以其为根时，与其直接相连的各节点子树大小都相同」的节点并从小到大输出。
+// 数据范围：1 <= n <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 

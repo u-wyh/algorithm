@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2523
+// 题意：T 组数据，n 个人选 1~n 的编号 a_i，依次尝试坐 a_i, a_i+1, ... 直到位置 n。
+// 其中 m 个人编号已固定为 q_i，求所有人都能坐下的方案数。
+// 每组输出 YES ans（模 M）或 NO。
+// 数据范围：1 <= T <= 10，1 <= n <= 300，0 <= m <= n，2 <= M <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

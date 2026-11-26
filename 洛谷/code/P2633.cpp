@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2633
+// 题意：n 个节点的带权树，共 m 次强制在线询问 u v k。
+// 求 (u xor last) 到 v 路径上第 k 小的点权（last 为上次答案，初始为 0）。
+// 每次询问输出一行正整数。
+// 数据范围：1 <= n, m <= 10^5，点权 in [1, 2^31-1]。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

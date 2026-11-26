@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1111
+// 题意：给 N 个村庄和 M 条双向公路，每条路在时刻 t 修好。只用已修好的路，求整张图最早何时连通，所有路修完仍不连通则输出 -1。
+// 数据范围：1 ≤ N ≤ 1000，1 ≤ M,t ≤ 10^5，端点在 [1,N]。
+
 #include<bits/stdc++.h>
 using namespace std;
 

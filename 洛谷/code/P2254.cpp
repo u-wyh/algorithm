@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2254
+// 题意：N*M 舞厅（. 空地，x 家具），从 (x,y) 出发，共 K 个连续时间段 [s_i,t_i] 向 d_i 方向倾斜。
+// 每时刻可顺方向滑行一格（不撞家具或出界），或施魔法原地不动。
+// 求能滑行的最长距离（格子数）。
+// 数据范围：1 <= N, M <= 200，K <= 200，总时间 T <= 40000。
 #include<cstdio>
 #include<cstring>
 #include<iostream>

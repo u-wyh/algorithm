@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4554
+// 题意：多组数据，在 n*m 的含 '#' 和 '@' 的棋盘上，移动时若目标格与当前格类型相同花费 0 否则花费 1，求从起点到终点的最小花费。
+// 数据范围：1 <= n, m <= 500。
 //P4554
 #include<cstdio>
 #include<iostream>

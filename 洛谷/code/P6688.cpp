@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P6688
+// 题意：维护长为 n 的非负整数序列 a，支持 q 次操作：单点修改 a_x = y
+// 或查询两个等长区间 [l_1, r_1] 与 [l_2, r_2] 升序排序后是否满足所有对应位置差相同整数常数 k（本质相同），输出 YES 或 NO。
+// 数据范围：1 <= n, q <= 10^6，1 <= x <= n，0 <= a_i, y <= 10^6，1 <= l <= r <= n
+// r_1 - l_1 = r_2 - l_2。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

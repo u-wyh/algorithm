@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2751
+// 题意：N 个工件依次经过 A、B 两道工序，各有 M_1、M_2 台平行机器独立工作。
+// 已知每台机器单次耗时，求完成所有 A 工序的最早时间，以及完成所有 A、B 工序的最早时间。
+// 一行输出两个整数。
+// 数据范围：1 <= N <= 1000，1 <= M_1, M_2 <= 30，单台耗时 in [1, 20]。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

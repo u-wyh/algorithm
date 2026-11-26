@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2401
+// 题意：将 1 到 n 排列，相邻两数间根据大小填入 < 或 >。
+// 求恰好有 k 个 < 号的排列个数。
+// 输出方案数对 2015 取模的结果。
+// 数据范围：0 <= k < n <= 1000。
 #include<stdio.h>
 #define mod 2015
 

@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3488
+// 题意：输入鞋码范围上限 n（1..n 号各有 k 双溜冰鞋）、操作数 m、初始每种鞋码双数 k 和允许跨度 d，以及 m 次操作 (r_i, x_i)。
+// r_i 号脚的人可穿 [r_i, r_i + d] 号码的鞋；每次操作表示来了 x_i 个（x_i < 0 表示离开 |x_i| 个）r_i 号脚的人。
+// 输出 m 行，若当前所有人都能分到合适的鞋输出 TAK，否则输出 NIE。
+// 数据范围：1 <= n <= 2*10^5，1 <= m <= 5*10^5，1 <= k <= 10^9，0 <= d < n
+// 1 <= r_i <= n-d，-10^9 <= x_i <= 10^9。
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

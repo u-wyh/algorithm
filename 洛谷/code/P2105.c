@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2105
+// 题意：在 n * m 的棋盘上摆放了 K 个位置互异的皇后。
+// 皇后可攻击同行、同列及两条对角线上的所有格子。
+// 求棋盘上不被任何皇后攻击到的格子总数。
+// 数据范围：1 <= n, m <= 2 * 10^4，1 <= K <= 500。
 #include <stdio.h>
 #include <string.h>
 

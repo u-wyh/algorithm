@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4623
+// 题意：给定平面上 N 个不共线三点构成的三角形，以及 M 条平行于坐标轴的直线 x = c 或 y = c
+// 求每条直线各穿过多少个三角形（穿过指将三角形分成两个面积大于 0 的多边形）。
+// 数据范围：2 <= N, M <= 10^5，0 <= x_1, y_1, x_2, y_2, x_3, y_3 < 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int N=1000010;

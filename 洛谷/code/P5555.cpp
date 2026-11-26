@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5555
+// 题意：给定两个长度分别为 n 和 m 的小写字母字符串，求同时在两串中出现过的最长的不同回文子串的长度，以及达到该最大长度的不同回文子串个数。
+// 输入 n, m 及两个字符串；输出最大长度和个数（保证至少存在一个长度为 1 的公共回文子串）。
+// 数据范围：1 <= n, m <= 260817。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 270000;

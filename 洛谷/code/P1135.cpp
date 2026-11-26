@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1135
+// 题意：第 i 层电梯装有数字 K[i]，在这层按上或下，会移动恰好 K[i] 层，越界时按键无效。求从 A 到 B 最少按几次，无法到达输出 -1。
+// 数据范围：1 ≤ N ≤ 200，1 ≤ A,B ≤ N，0 ≤ K[i] ≤ N。
+
 #include<iostream>
 #include<queue>
 

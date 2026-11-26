@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2054
+// 题意：初始牌面按 1 到 N 排列。每次洗牌把牌均分成前后两半，再从后半开始交替取两半的首张牌，形成新顺序。求洗 M 次后第 L 张牌的牌面。
+// 数据范围：N 为不超过 10^10 的正偶数，0 ≤ M ≤ 10^10，1 ≤ L ≤ N。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

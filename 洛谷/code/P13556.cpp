@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P13556
+// 题意：n*m 网格中 k|(i+j) 的格子画圈，求未画圈格四连通块 >= l 的最小 n+m。
+// 输入：首行 t，后 t 行每行两个整数 k, l。
+// 规则：所有不满足 k | (i+j) 的格子构成若干极大四连通块。
+// 输出：每组输出使连通块数至少为 l 的 n+m 最小值。
+// 数据范围：1 <= t <= 10^5，2 <= k <= 10^9，1 <= l <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

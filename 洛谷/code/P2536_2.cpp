@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2536
+// 题意：给定含 A,C,T,G,*,? 的病毒模版（* 匹配 0 或多字符，? 匹配 1 字符）和 N 个 DNA 串。
+// 统计有多少个 DNA 串不能匹配该病毒模版。
+// 输出非病毒的 DNA 串数量。
+// 数据范围：0 < N < 500，模版长 <= 1000，DNA 串长 <= 500。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 250005;

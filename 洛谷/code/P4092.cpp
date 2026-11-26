@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4092
+// 题意：第一行输入有根树节点数 N（根为 1）和操作次数 Q，接下来 N-1 行输入有向边 u -> v；初始只有节点 1 有标记。
+// 随后 Q 行操作：C num 对节点 num 打标记（可重复打）；Q num 询问 num 最近的有标记祖先（含自身）。
+// 对每个询问操作输出一行一个正整数。
+// 数据范围：1 <= N, Q <= 100000，1 <= u, v <= N。
 //P4092
 #include<bits/stdc++.h>
 using namespace std;

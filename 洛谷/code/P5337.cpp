@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5337
+// 题意：给定正整数 n 和小写字母字符串 s1，求长为 n 的小写字母字符串 s2 的个数。
+// 要求 s1 中任意相邻两个字母不能以相同顺序在 s2 中相邻出现，答案对 10^9+7 取模。
+// 数据范围：1 <= n <= 10^15，|s1| <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4780
+// 题意：给定正整数 n，求最小的正整数 x 满足欧拉函数 phi(x) = n，若 x > 2^31 或无解输出 -1。
+// 数据范围：1 <= n < 2^31。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

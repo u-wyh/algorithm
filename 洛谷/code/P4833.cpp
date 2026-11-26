@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4833
+// 题意：给定 n 点 m 边的无向简单图，将点划分为尽量多的领域并把领域分成两个互补阵营（可有一方为空），要求只有同一领域内部允许缺少连边
+// 不同领域之间任意两点都必须有边，求最多领域数及各领域大小（升序输出）。
+// 数据范围：n <= 10^5，m <= 2 * 10^6，无重边和自环。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

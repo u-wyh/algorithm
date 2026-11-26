@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1168
+// 题意：给 N 个数。对长度为 1、3、5 等的每个前缀，求排序后正中间的数。按照前缀变长的顺序逐行输出。
+// 数据范围：1 ≤ N ≤ 10^5，0 ≤ A[i] ≤ 10^9。
+
 #include <bits/stdc++.h>
 using namespace std;
 int n;

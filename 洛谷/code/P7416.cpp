@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P7416
+// 题意：长为 N 的栅栏需涂上指定颜色（1..N），每次可给连续一段涂色但深色上不能再涂浅色。
+// Q 次独立询问仅将 [a, b] 涂成目标颜色（区间外不涂色）最少需要涂几笔。
+// 数据范围：1 <= N, Q <= 2*10^5，颜色编号 in [1, N]，1 <= a <= b <= N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1387
+// 题意：给一个 01 矩阵，在里面找每个格子都是 1 的最大连续正方形，输出其边长。
+// 数据范围：1 ≤ n,m ≤ 100，保证至少有一个 1。
+
 #include <stdio.h>
 
 #define min(a, b) ((a) < (b) ? (a) : (b))

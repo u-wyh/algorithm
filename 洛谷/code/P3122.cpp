@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P3122
+// 题意：输入初始牛群数 n、操作数 q，以及初始 n 个点的坐标 (x, y)。
+// 操作 1 x y 新加入一个位于 (x, y) 的牛群；
+// 操作 2 A B C 询问当前所有牛群是否都严格位于直线 Ax+By=C 的同一侧（不能有牛在直线上）。
+// 对每个操作 2 输出 YES 或 NO。
+// 每个 2 类询问输出一行 YES 或 NO。
+// 数据范围：1 <= n, q <= 10^5，-10^9 <= x, y, A, B <= 10^9，-10^18 <= C <= 10^18，点互不相同
+// A 与 B 不同时为 0。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

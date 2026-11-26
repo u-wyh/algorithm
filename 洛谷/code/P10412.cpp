@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10412
+// 题意：给长度为 n 的整数数组，可花 p 把一项加 1，花 q 删除一项但不能删空，或花 r 交换两项。
+// 把修改后的数组无限重复，要求能找一个起点，使从那里开始的任意前缀和都非负。
+// 求最小代价。
+// 数据范围：1 ≤ n ≤ 10^5，1 ≤ p,q,r ≤ 10^9，-10^9 ≤ a[i] ≤ 10^9。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

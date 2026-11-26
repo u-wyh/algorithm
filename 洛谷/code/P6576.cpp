@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6576
+// 题意：n×m 矩阵填 '+' 或 '-'，已知 k 个格子的状态，要求任意 2×2 子矩阵内 '+' 和 '-' 数量相等，求方案数对 10^9+7 取模。
+// 数据范围：1 <= n, m <= 10^9，0 <= k <= 10^5，1 <= y_i <= n，1 <= x_i <= m。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

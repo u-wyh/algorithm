@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5696
+// 题意：多组数据，按顺时针给出一个 n 边形房间顶点坐标，判断房间内是否存在一点能直线监视到整个房间内部（多边形核非空）。
+// 输入若干组 n 及 n 个顶点坐标（n=0 结束）；每组按格式输出编号及是否可监视的结果。
+// 数据范围：4 <= n <= 100，-10000 <= x, y <= 10000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

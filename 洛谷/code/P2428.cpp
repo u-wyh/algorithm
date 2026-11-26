@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2428
+// 题意：有 N 名学生，M 次报告其中两人的债务总和（可能有重复或矛盾）。
+// 若有唯一解则按行输出每名学生的债务（保留两位小数），否则输出 IMPOSSIBLE。
+// 数据范围：1 <= N <= 1000，1 <= M <= 10^5，输入数据 <= 2*10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

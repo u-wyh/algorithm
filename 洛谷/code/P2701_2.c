@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2701
+// 题意：n*n 农场中有 t 棵果树，求不包含任何果树的最大正方形边长。
+// 输出最大正方形边长。
+// 数据范围：1 <= n <= 1000，1 <= t <= 10000。
 #include<stdio.h>
 #include<limits.h>
 

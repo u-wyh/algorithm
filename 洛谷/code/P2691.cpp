@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2691
+// 题意：n*n 网格中有 m 个互不相同的起始点。
+// 判断能否为每个点找一条到边界的路径，且 m 条路径互不相交（无公共点）。
+// 输出 YES 或 NO。
+// 数据范围：1 <= n <= 35，1 <= m <= n^2。
 #include <iostream>
 #include <cstring>
 #include <queue>

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4091
+// 题意：输入一个正整数 n，求 f(n) = sum_{i=0..n} sum_{j=0..i} S(i, j) * 2^j * (j!)
+// 其中 S(i, j) 为第二类斯特林数（S(i,i)=1 (i>=0), S(i,0)=0 (i>=1)）。
+// 输出 f(n) 对 998244353 取模的结果。
+// 数据范围：1 <= n <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

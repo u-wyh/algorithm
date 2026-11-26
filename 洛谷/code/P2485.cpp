@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2485
+// 题意：T 组询问（同组 K 相同）：K=1 求 y^z mod p；K=2 求 xy = z (mod p) 最小非负解。
+// K=3 求 y^x = z (mod p) 最小非负整数解；K=2,3 无解输出 Orz, I cannot find x!。
+// 每组输出一行答案。
+// 数据范围：1 <= T <= 10，1 <= y, z, p <= 10^9，p 为质数。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

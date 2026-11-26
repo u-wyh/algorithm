@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P9872
+// 题意：多组数据（共 T 组）。
+// 给定以 1 为根的 n 个节点的树，子节点遍历顺序任意
+// 对每个节点 i ∈ [1, n] 求其在所有可能的 DFS 序中出现位置的最小值与最大值（位置从 1 开始计数）。
+// 题意：第一行输入 T，每组输入 n 及 n-1 行 (x, y)（x 是 y 的父节点）；每组输出 n 行，每行两个整数。
+// 数据范围：1 <= T <= 10^6，1 <= n <= 10^5，sum(n) <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

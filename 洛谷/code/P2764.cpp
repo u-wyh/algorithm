@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2764
+// 题意：给定 n 点 m 边的有向无环图（DAG）。
+// 求顶点不相交的最小路径覆盖方案，输出每条路径及最少路径数（SPJ）。
+// 数据范围：1 <= n <= 150，1 <= m <= 6000。
 // 这道题的大思路是转换成二分图匹配的知识  求最大匹配
 #include<bits/stdc++.h>
 using namespace std;

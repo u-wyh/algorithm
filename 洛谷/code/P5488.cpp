@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5488
+// 题意：给定长度为 n 的序列 a 和参数 k, t，求序列 a 的 k 阶前缀和（t=0）或 k 阶差分（t=1），各项对 1004535809 取模。
+// 输入 n, k, t 及序列 a；输出一行 n 个整数表示结果。
+// 数据范围：1 <= n <= 10^5，0 <= a_i <= 10^9，1 <= k <= 10^2333 且 k != 0 (mod 1004535809)。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

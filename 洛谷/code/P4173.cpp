@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4173
+// 题意：给两个仅含小写字母和通配符 * 的字符串 A（长 m）和 B（长 n），其中 * 可匹配任意单个小写字母
+// 求 A 在 B 中所有可以完全匹配的起始下标（从 1 开始，输出个数与升序位置）。
+// 数据范围：1 <= m <= n <= 3e5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

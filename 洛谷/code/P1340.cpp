@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1340
+// 题意：有 N 片草地，接下来 W 周每周新增一条带长度的双向路。每周可任意选取目前已知的道路。逐周输出把所有草地连通所需的最小道路总长度，无法连通输出 -1。
+// 数据范围：1 ≤ N ≤ 200，1 ≤ W ≤ 6000，路长在 [1,10000]，道路两端不同。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5001;

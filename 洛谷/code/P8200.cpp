@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P8200
+// 题意：给定 n 个点的树，每条边有边权 w_e。
+// m 次询问给定 a, b, k，判断是否存在节点 t 使得路径 (t, a) 与路径 (t, b) 的边权异或和之异或等于 k
+// 输出 Yes 或 No（大小写不敏感）。
+// 数据范围：1 < n <= 5*10^5，1 <= m <= 5*10^5，0 <= w_i, k < 2^64
+// 1 <= a, b <= n 且 a != b。
 #include<bits/stdc++.h>
 using namespace std;
 typedef unsigned long long ull;

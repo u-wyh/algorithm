@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P8818
+// 题意：输入长度分别为 n, m 的数组 A, B 和游戏轮数 q；
+// 定义矩阵 C_{ij} = A_i * B_j；
+// 每轮给定区间 [l_1, r_1] 和 [l_2, r_2]，先手选 x ∈ [l_1, r_1] 想最大化 C_{xy}
+// 后手再选 y ∈ [l_2, r_2] 想最小化 C_{xy}，输出每轮双方最优策略下的得分。
+// 数据范围：1 <= n, m, q <= 10^5，-10^9 <= A_i, B_i <= 10^9，1 <= l_1 <= r_1 <= n
+// 1 <= l_2 <= r_2 <= m。
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

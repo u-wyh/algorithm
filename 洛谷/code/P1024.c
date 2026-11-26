@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1024
+// 题意：输入三次方程 ax^3+bx^2+cx+d=0 的四个实数系数，按从小到大的顺序输出三个实根，每个保留两位小数。
+// 数据范围：三个实根均在 [-100, 100]，任意两个的距离至少为 1。
+
 #include<stdio.h>
 
 double a, b, c, d;

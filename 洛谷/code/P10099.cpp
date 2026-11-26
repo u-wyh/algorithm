@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P10099
+// 题意：
+// 给定长度 n 与升序的 m 个互异正整数集合 A。
+// 要求构造长 n、元素均在 A 中的序列 a，满足对任意 a_i = a_j = x (i < j) 均有 j - i >= x。
+// 输出满足条件的序列个数，对 10^9 + 7 取模。
+// 数据范围：
+// 1 <= n <= 100
+// 1 <= m <= 8（集合 A 元素均在 1 到 8 之间）
 #include<bits/stdc++.h>
 using namespace std;
 const int mod=1e9+7;

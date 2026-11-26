@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P9147
+// 题意：给定长为 n 的正整数序列 a，允许恰好选择一个位置 i 将 a_i 修改为任意整数，求修改后最长严格上升连续子串的最大可能长度。
+// 数据范围：1 <= n <= 10^6，1 <= a_i <= 10^9。
 #include <stdio.h>
 #include <stdlib.h>
 

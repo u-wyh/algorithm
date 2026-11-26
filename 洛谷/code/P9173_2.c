@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P9173
+// 题意：给定两个长度分别为 n 和 m 的 01 数组，将每个 0 替换为正偶数、每个 1 替换为正奇数，要求替换后两个数组均严格单调递增
+// 且所有正整数至多使用一次。
+// 最小化使用的最大数字并输出。
+// 数据范围：0 <= n, m <= 5000。
 #include<stdio.h>
 #include<limits.h>
 #define Max 5005

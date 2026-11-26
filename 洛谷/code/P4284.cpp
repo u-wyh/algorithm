@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4284
+// 题意：给一棵 n 个点的无向树，每条边以 p% 概率通电，每个点以 q_i% 概率自身直接来电，来电后电流可沿通电的边传导
+// 求最终进入充电状态的节点个数的期望（保留 6 位小数）。
+// 数据范围：n <= 5e5，0 <= p, q_i <= 100。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

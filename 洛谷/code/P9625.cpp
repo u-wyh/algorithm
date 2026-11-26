@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P9625
+// 题意：多组数据（共 t 组）。
+// 给定 n 个点 m 条边的连通无向图（可能有重边和自环），构造一棵生成树使每个点的度数都不超过 n / 2（即 floor(n / 2)）。
+// 题意：第一行输入 t，每组输入 n, m 及 m 条边 (u_i, v_i)；可行输出 Yes 及 n-1 行生成树的边，否则输出 No。
+// 数据范围：2 <= n <= 10^5，n-1 <= m <= 2 * 10^5，sum(n) <= 5 * 10^5
+// sum(m) <= 10^6（未显式给出 t 上界，受 sum(n) 限制）。
 #include<bits/stdc++.h>
 using namespace std;
 

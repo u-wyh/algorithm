@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P7172
+// 题意：共 n+1 层的树含 (n+1)(n+2)/2 个点，第 i 层包含节点 i(i-1)/2 + 1 ~ i(i+1)/2
+// 其中节点 a_i 有 2 个孩子、同层其余点各 1 个孩子（按编号顺序分配下层节点）；
+// 回答 q 次（可能在线强制，t in {0,1}）询问求两点的最大公共祖先编号。
+// 数据范围：1 <= n, q <= 2*10^5，t in {0, 1}，i(i-1)/2 < a_i <= i(i+1)/2
+// 节点编号在 [1, (n+1)(n+2)/2]。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

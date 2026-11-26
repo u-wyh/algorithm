@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P8201
+// 题意：给定 n 个点的树，每个点有点权 w_u。
+// m 次询问给定 a, b, k，判断是否存在节点 t 使得路径 (t, a) 与路径 (t, b) 上所有点权（含端点）异或和之异或等于 k
+// 输出 Yes 或 No（大小写不敏感）。
+// 数据范围：1 < n <= 5*10^5，1 <= m <= 5*10^5，0 <= w_i, k <= 10^7
+// 1 <= a, b <= n 且 a != b。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

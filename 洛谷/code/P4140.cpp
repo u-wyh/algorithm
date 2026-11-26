@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P4140
+// 题意：共 100000 个国家银行，初始存款均为 3；第一行输入操作数 x，接下来 x 行每行三个整数 a_i, b_i, c_i。
+// a_i = 0 时求区间 [b_i, c_i] 各银行存款乘积 product 在 [1, product] 中与其互质的整数个数（即欧拉函数 phi(product)）；
+// a_i = 1 时将银行 b_i 的存款改为 c_i（保证只含前 60 个质数的乘积）。
+// 对每个 a_i = 0 的询问输出一行结果，对 19961993 取模。
+// 数据范围：1 <= x <= 10^5，0 <= c_i - b_i <= 10^5，任意时刻单家银行存款 <= 10^6
+// 仅含前 60 个素因子（2..281）。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

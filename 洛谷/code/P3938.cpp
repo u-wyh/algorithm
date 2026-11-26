@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P3938
+// 题意：兔子按斐波那契模型繁衍（每对兔子从出生后第二个月起每月月初生一对新兔子，按出生顺序编号，同月出生则父母编号小的优先编号，1 号兔子为祖先）。
+// 给出 m 组询问 (a_i, b_i)，求编号为 a_i 和 b_i 的两对兔子的最近公共祖先编号。
+// 数据范围：测试点 10 中 m = 300010（各测试点 m 最大为 300010），a_i, b_i <= 10^12。
 #include<bits/stdc++.h>
 using namespace std;
 long long n, a, b;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2307
+// 题意：多组数据（以 -1 -1 结束），每组给出若干无向边（以 0 0 结束）。
+// 判断每组数据中任意两个出现过的房间是否都有且仅有一条简单路径相通（即构成一棵树）。
+// 每组输出 1（是）或 0（否）。
+// 数据范围：房间编号在 [1, 10^5] 内。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

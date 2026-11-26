@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2757
+// 题意：T 组数据，每组给定 1 到 N 的一个排列。
+// 判断排列中是否存在长度至少为 3 的等差子序列。
+// 每组输出 Y 或 N。
+// 数据范围：前 5 点 1 <= N <= 5*10^5, T <= 5；后 21 点 1 <= N <= 10000, T <= 7。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

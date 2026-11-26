@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3358
+// 题意：输入开区间个数 n 和重数上限 k，以及每个开区间的左右端点 (l, r)。
+// 选出部分开区间，使实数轴上任意一点被不超过 k 个选中开区间覆盖，且选中区间长度之和最大。
+// 输出最大长度和。
+// 数据范围：1 <= n <= 500，1 <= k <= 3，1 <= l < r <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

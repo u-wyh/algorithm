@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1091
+// 题意：n 人按原顺序站成一排。让若干人出列，留下的人身高先严格上升再严格下降，最高者可以在两端。求最少需要几人出列。
+// 数据范围：2 ≤ n ≤ 100，130 ≤ 身高 ≤ 230。
+
 #include<stdio.h>
 
 int max(int a,int b)

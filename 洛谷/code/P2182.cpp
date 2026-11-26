@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2182
+// 题意：N 枚硬币，每次同时翻转 M 枚，求恰好 K 次后从初始状态变为目标状态的方案数。
+// 输出方案数对 10^9+7 取模的结果。
+// 数据范围：1 <= N <= 100，0 <= K <= 100，0 <= M <= N。
 #include<bits/stdc++.h>
 using namespace std;
 const int MOD = 1e9+7;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P8664
+// 题意：输入 n, S 和 n 个非负整数 a_1..a_n（保证总和 >= S）；
+// 为每个人确定实数支付额 0 <= b_i <= a_i 且 sum(b_i) = S
+// 最小化标准差 sqrt((1/n)*sum((b_i - S/n)^2))，四舍五入保留 4 位小数输出。
+// 数据范围：n <= 5*10^5，0 <= a_i <= 10^9（由题意 0 <= S <= sum(a_i) <= 5*10^14）。
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

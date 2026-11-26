@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P8707
+// 题意：输入整数 n, m，在 n 行 m 列网格中从 (1, 1) 走到 (n, m)，每次只能向右或向下移动一格，且不能走入行号和列号均为偶数的格子
+// 输出总方案数。
+// 数据范围：1 <= n, m <= 30。
 #include<stdio.h>
 
 int main()

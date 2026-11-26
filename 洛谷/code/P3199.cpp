@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3166
+// 题意：输入两个正整数 M 和 N，表示一个 N*M 的网格（共有 (N+1)*(M+1) 个格点）。
+// 从所有格点中任选三个不共线的点组成三角形。
+// 输出能构成的格点三角形总数量。
+// 数据范围：1 <= N, M <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P8488
+// 题意：n*m 棋盘第 i 行第 j 列写有 a_{i-1, j-1}（0-indexed 记为 a_{i,j}）。
+// 骰子按前、后、左、右、上、下依次写有 w_0..w_5，初始置于 (0,0)
+// 每步可向下一行（Front 方向）或下一列（Right 方向）翻滚一格直到 (n-1, m-1)。
+// 求整个路径上（含起点终点）每次底面数字与所在格数字乘积之和的最大值。
+// 数据范围：100% 数据满足 1 <= n, m <= 10^3，|a_{i,j}| <= 10^3，|w_i| <= 10^3。
 #include<bits/stdc++.h>
 using namespace std;
 const int N=1010;

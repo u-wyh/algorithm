@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P2245
+// 题意：给一张带权无向图，有 n 个点、m 条边。
+// 接下来有 q 次询问，每次给两个点 x 和 y。
+// 从 x 到 y 选一条路，让路上最大的边权尽可能小，输出这个最小值。
+// 如果 x 和 y 不连通，输出 impossible。图里可能有重边和自环。
+// 数据范围：1 ≤ n, q ≤ 10^5，1 ≤ m ≤ 3 × 10^5，边权 w ≤ 10^9。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10449
+// 题意：每组给一个 5×5 的灯阵。按下某一格会反转该格及上下左右相邻格的亮灭状态。输出让所有灯亮起的最少步数，六步内做不到就输出 -1。
+// 数据范围：1 ≤ n ≤ 500 组，每组 25 个灯，状态为 0 或 1。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int N=7;

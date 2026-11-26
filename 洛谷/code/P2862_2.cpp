@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2862
+// 题意：平面上有 N 个整点（可重合），求至少包含 C 个点的正方形的最小边长。
+// 输出最小正方形边长。
+// 数据范围：1 <= C <= N <= 500，1 <= X, Y <= 10000。
 //P2862
 #include<bits/stdc++.h>
 using namespace std;

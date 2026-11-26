@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10866
+// 题意：给一棵树，起初所有点为白色。每次给 u,v，把它们之间的整条路径染黑。每次操作后输出全树最长同色路径的点数，黑色和白色路径都可以。
+// 数据范围：1 ≤ T ≤ 100，1 ≤ n,q ≤ 2 × 10^5，同一测试点的 n 之和、q 之和分别不超过 2 × 10^5。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P8961
+// 题意：给定长为 n 的数组 y 和正整数 m，构造长为 n 的整数数组 x
+// 使每个 x_i 在 __int128 范围内、x_i mod m = y_i（允许 x_i < 0，满足 m | (x_i - y_i)）
+// 且最大化 g = gcd(|x_1|, ..., |x_n|) mod m。
+// 输出最大 g 及一组合法数组 x。
+// 数据范围：1 <= n <= 10^6，2 <= m <= 10^9，0 <= y_i < m。
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long _INT128;

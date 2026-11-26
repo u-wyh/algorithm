@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1732
+// 题意：对每组序列，首项贡献自身的值。其余每项的贡献是它与前面所有元素的绝对差中的最小值。输出所有项的贡献之和。
+// 数据范围：1 ≤ T ≤ 10，1 ≤ n ≤ 10^5，0 ≤ a_i ≤ 65536。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

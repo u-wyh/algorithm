@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2573
+// 题意：n 个景点（高度 h_i）m 条无向边（长 k），只能从高处滑向不高于它的景点。
+// 有时间胶囊可回到之前到过的景点，从 1 号点出发。
+// 输出最多能到达的景点数，以及在此前提下的最短滑行总距离。
+// 数据范围：1 <= n <= 10^5，1 <= m <= 10^6，1 <= h_i, k <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

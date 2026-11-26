@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3631
+// 题意：输入表格行数 n、列数 m、已染色格数 k，以及 k 个已染红（c_i=1）或蓝（c_i=0）的方格坐标 (x_i, y_i)。
+// 给剩余所有方格染成红或蓝色，要求表格中每个 2*2 子正方形都恰好包含奇数个（1 个或 3 个）红色方格。
+// 输出合法染色方案数对 10^9 取模的结果。
+// 数据范围：2 <= n, m <= 10^5，0 <= k <= 10^5，1 <= x_i <= n，1 <= y_i <= m，c_i in {0, 1}。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

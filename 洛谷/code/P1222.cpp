@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P1222
+// 题意：平面上有 n 个等腰直角三角形，第 i 个顶点为 (x_i, y_i)、(x_i+m_i, y_i)、(x_i, y_i+m_i)。
+// 题意：求这 n 个三角形并集所覆盖的总面积。
+// 输入：第一行输入 n，接下来 n 行每行输入三个整数 x_i, y_i, m_i。
+// 输出：输出一个实数表示总面积，精确到小数点后 1 位。
+// 数据范围：1 <= n <= 2000，1 <= m_i <= 1000。
+// 数据范围：-10^7 <= x_i, y_i <= 10^7。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e6+5;

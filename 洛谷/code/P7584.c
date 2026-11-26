@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P7584
+// 题意：N 位选手初始分 B_i，下一回合名次 1..N 分别加 N..1 分，求有多少名选手有机会成为下一回合最高分（允许并列最高）。
+// 数据范围：3 <= N <= 3*10^5，1 <= B_i <= 2*10^6。
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>

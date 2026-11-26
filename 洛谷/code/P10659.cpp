@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P10659
+// 题意：给以 r 为根的树。
+// Increase x y w 给路径上各点加 w，Invert x y 把沿路径的点权按相反顺序重新分配。
+// 这两种修改中 x 是 y 的祖先。
+// Sum、Major、Minor x y 分别查询任意两点路径上的点权和、最大值、最小值。
+// 数据范围：1 ≤ n,m ≤ 50000，1 ≤ w ≤ 1000。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

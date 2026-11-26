@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2446
+// 题意：N 个城市 M 条单向边（可能有重边自环），从 1 出发到 N。
+// 进入某些城市前必须先到达并摧毁其所有前置结界城市。
+// 求到达城市 N 并摧毁它的最短时间。
+// 数据范围：1 <= N <= 3*10^3，1 <= M <= 7*10^4，1 <= w_i <= 10^8，保证有解。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e3+5;

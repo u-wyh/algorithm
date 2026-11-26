@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1039
+// 题意：有 M 名同学，其中恰好 N 人始终撒谎。
+// 给 P 条证词，只使用题面规定的嫌疑人和星期陈述格式。
+// 根据证词判断唯一可能的凶手，候选不止一个输出 Cannot Determine，没有候选输出 Impossible。
+// 数据范围：1 ≤ M ≤ 20，0 ≤ N ≤ M，1 ≤ P ≤ 100，每条证词所在的输入行最多 250 字符。
+
 #include<bits/stdc++.h>
 using namespace std;
 

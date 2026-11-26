@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3209
+// 题意：输入数据组数 T，每组输入无向简单图的点数 N、边数 M、M 条边 (u, v)，以及该图的一个哈密顿回路顶点排列 V_1..V_N。
+// 判断该包含哈密顿回路的无向图是否为平面图（能否画在平面上使任意两条无公共顶点的边不相交）。
+// 输出 T 行，是平面图输出 YES，否则输出 NO。
+// 数据范围：T <= 100，3 <= N <= 200，M <= 10000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 205;

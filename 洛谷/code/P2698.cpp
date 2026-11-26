@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2698
+// 题意：N 滴水在 (x,y) 处以每秒 1 单位下落，在 x 轴放花盆（边沿对齐也算接住）。
+// 求使接到的第一滴与最后一滴水时间差 >= D 的最小花盆宽度 W，无解输出 -1。
+// 数据范围：1 <= N <= 10^5，1 <= D <= 10^6，0 <= x, y <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 

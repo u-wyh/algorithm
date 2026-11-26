@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2296
+// 题意：给定 n 点 m 边的有向图（可能有重边和自环，终点 t 无出边），起点 s、终点 t。
+// 求 s 到 t 的最短路，要求路径上所有点的出边指向的点都直接或间接连通到 t。
+// 输出最短路长度，无解输出 -1。
+// 数据范围：0 < n <= 10^4，0 < m <= 2*10^5，x, s != t。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e4+5;

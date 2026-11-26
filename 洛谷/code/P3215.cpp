@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3215
+// 题意：输入括号串长度 n、操作数 q、初始由 '(' 和 ')' 组成的字符串，以及 q 条操作。
+// 支持四种操作：Replace a b c（区间赋值为 c）、Swap a b（区间翻转）、Invert a b（区间左右括号互换）、Query a b（询问区间至少修改多少位能变成合法括号串）。
+// 对每个 Query 操作输出一行最少修改位数。
+// 数据范围：1 <= n, q <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

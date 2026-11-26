@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4447
+// 题意：将 n 个实力值为 a_i 的队员分成若干组（组数不限），要求每组内实力值互不相同且排序后连续，求人数最少的那组人数的最大值。
+// 数据范围：1 <= n <= 10^5，|a_i| <= 10^9。
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3763
+// 题意：输入数据组数 T，每组给出主 DNA 链 S_0 和基因串 S（仅含字符 A, T, C, G）。
+// 统计 S_0 中有多少个长度等于 |S| 的连续子串，可以通过修改不超过 3 个字母变成 S。
+// 输出 T 行，每行对应一组数据的合法子串个数。
+// 数据范围：0 < T <= 10，S_0 与 S 的长度均不超过 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P6638
+// 题意：给定 n 项常规任务，第 i 项从第 a_i 秒开始每隔 k 秒做一次（耗时忽略），m 次询问给定时间区间 [l_i, r_i]
+// 求区间内共做了多少次常规；
+// 当 type=1 时第 2..m 个询问会结合上一次答案与 mod 加密，需强制在线解密后回答。
+// 数据范围：type in {0,1}，1 <= n, m <= 10^5，0 <= l_i <= r_i <= 10^9，0 <= a_i <= 10^9
+// 1 <= k, mod <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

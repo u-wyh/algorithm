@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3534
+// 题意：输入正整数个数 n、操作次数上限 m，以及序列 x_1..x_n。
+// 最多进行 m 次操作，每次将某个正整数 x_i 减 1，要求操作后至少存在一个位置 k 满足 x_k = 0
+// 并最小化 z = max_{1<=i<=n-1} |x_i - x_{i+1}|。
+// 输出任一组最优解对应的位置 k 和最小值 z。
+// 数据范围：1 <= n <= 10^6，1 <= m <= 10^18，1 <= x_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

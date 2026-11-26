@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P8597
+// 题意：输入两行等长仅含 * 和 o 的字符串分别表示初始态和目标态，每次可同时翻转相邻两个字符，输出变为目标态的最少步数（数据保证有解）。
+// 数据范围：每行字符串长度小于 1000（题面未给出更多数据范围限制）。
 #include<stdio.h>
 #include<string.h>
 #define Max 105

@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4302
+// 题意：可以把连续重复 X 次的子串 S 折叠记为 X(S)（支持嵌套），给定一个大写字母串，求折叠后的最短字符串长度。
+// 数据范围：|S| <= 100，仅由大写字母构成。
 #include<bits/stdc++.h>
 using namespace std;
 const int INF = 1e9;

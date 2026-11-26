@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2112
+// 题意：给定 N 个单词，按原顺序分成 K 行（不计单词间空格）。
+// 求一种排版方式，使每行字母数的方差最小，输出最小方差（保留 1 位小数）。
+// 数据范围：N <= 1000，K <= 100，每个单词长度 <= 20。
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

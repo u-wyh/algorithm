@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1356
+// 题意：给整数序列和 k，在相邻数字之间任放一个加号或减号，首项照原样。若有一种表达式能被 k 整除，输出 Divisible，否则输出 Not divisible。
+// 数据范围：1 ≤ M ≤ 20，1 ≤ n ≤ 10^4，2 ≤ k ≤ 100，a[i] 的绝对值至多 10000。
+
 #include<bits/stdc++.h>
 using namespace std;
 

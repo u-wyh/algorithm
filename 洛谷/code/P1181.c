@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1181
+// 题意：给一列非负整数，把它从头到尾划成若干连续非空段，每段和不超过 M。求最少需要分几段。
+// 数据范围：1 ≤ N ≤ 10^5，1 ≤ M ≤ 10^9，M 大于每一项，序列总和不超过 10^9。
+
 #include<stdio.h>
 #include<stdbool.h>
 

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1791
+// 题意：给定 N 名经理的雇佣成本和两两之间的贡献值。两人都雇佣时增加相应贡献，一人未雇佣时其对已雇佣经理造成相应损失。扣除雇佣费后，求可以得到的最大净利润。
+// 数据范围：N ≤ 1000，E_i,j 与 A_i 均小于 2^31，E_i,j=E_j,i。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2758
+// 题意：给定两个小写字母串 A 和 B。
+// 求通过插入、删除、替换单个字符将 A 变为 B 的最少操作次数。
+// 输出最少操作次数。
+// 数据范围：1 <= |A|, |B| <= 2000。
 #include<stdio.h>
 #include<string.h>
 #include<limits.h>

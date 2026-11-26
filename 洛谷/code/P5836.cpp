@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5836
+// 题意：一棵 N 个农场的树上每点养 G 或 H 种奶牛，M 个朋友各有偏好的品种和树上行走路径 (A_i, B_i)，判断每人沿途能否喝到偏好的牛奶。
+// 输入 N, M、品种串、树边及 M 个询问；输出长为 M 的 01 串（1 表示满意）。
+// 数据范围：1 <= N, M <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 int fa[100010],ans[100010],M,N;

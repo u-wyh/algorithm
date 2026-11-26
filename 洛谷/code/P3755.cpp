@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P3755
+// 题意：输入基站数 n 和查询数 m，接着 n 个互不重合基站的坐标与功率 (x_i, y_i, p_i)
+// 再输入 m 个矩形查询区域 (x_1, y_1, x_2, y_2)。
+// 对每个边平行于坐标轴的闭矩形区域（含边界），计算区域内所有基站的功率总和（无基站则输出 0）。
+// 输出 m 行，对应每次查询的结果。
+// 数据范围：1 <= n, m <= 10^5，-2^31 <= x_i, y_i, p_i, x_1, y_1, x_2, y_2 < 2^31
+// x_1 <= x_2，y_1 <= y_2。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

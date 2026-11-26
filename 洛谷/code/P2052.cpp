@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2052
+// 题意：给定一棵 n 点带权树。每条边的费用是边长乘以删掉该边后两侧点数之差的绝对值。求所有边的费用之和。
+// 数据范围：2 ≤ n ≤ 10^6，1 ≤ a_i,b_i ≤ n，0 ≤ c_i ≤ 10^6。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

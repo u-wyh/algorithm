@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2632
+// 题意：两条线段上分别有 n 个和 m 个点（由参数 t in [0,1] 线性插值给出）。
+// 求这 n+m 个点构成的最小生成树总长度。
+// 输出最小生成树长度，四舍五入保留三位小数。
+// 数据范围：1 <= n, m <= 10^5，坐标绝对值 <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

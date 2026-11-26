@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2606
+// 题意：求 1~n 的排列 p 中满足对所有 i in [2,n] 有 p_i > p_{floor(i/2)} 的排列个数。
+// 输出方案数对质数 m 取模的结果。
+// 数据范围：1 <= n <= 10^6，1 <= m <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

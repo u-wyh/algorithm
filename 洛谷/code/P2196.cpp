@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2196
+// 题意：N 个地窖各有一定地雷，给出编号小到大单向连通关系。
+// 求能挖到最多地雷的路径顺序及最多地雷数。
+// 第一行输出路径顺序，第二行输出最多地雷数。
+// 数据范围：N <= 20，每个地窖地雷不超过 300 个。
 #include<bits/stdc++.h>
 using namespace std;
 

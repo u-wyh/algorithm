@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2619
+// 题意：V 点 E 边无向带权连通图（点从 0 标号），边为白色(0)或黑色(1)。
+// 求恰好包含 need 条白色边的最小生成树权值和（保证有解）。
+// 输出最小权值和。
+// 数据范围：V <= 5*10^4，E <= 10^5，边权 in [1, 100]。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

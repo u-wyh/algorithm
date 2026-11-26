@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10505
+// 题意：有 n 场考试，第 i 场共 b[i] 题，答对 a[i] 题。删去恰好 k 场，使剩下的答对总数除以总题数最大。输出该比值乘 100 并四舍五入后的整数。
+// 数据范围：1 ≤ n ≤ 1000，0 ≤ k < n，0 ≤ a[i] ≤ b[i] ≤ 10^9，输入 0 0 结束。
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>

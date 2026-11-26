@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5266
+// 题意：维护学生姓名到成绩的映射，支持 Q 次操作：1 NAME SCORE 插入或更新成绩输出 OK；2 NAME 查询成绩（无则输出 Not found）。
+// 3 NAME 删除学生（成功输出 Deleted successfully，无则输出 Not found）；4 输出当前学生总数。
+// 数据范围：1 <= Q <= 10^5，姓名长度不超过 20（字母数字、区分大小写），0 < SCORE < 2^31。
 #include<bits/stdc++.h>
 using namespace std;
 

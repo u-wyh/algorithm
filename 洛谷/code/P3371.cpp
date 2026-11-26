@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3371
+// 题意：给一张有向图，有 n 个点、m 条边，出发点为 s。
+// 每条边用 (u, v, w) 表示，可以从 u 走到 v，距离为 w。两点之间可能有多条边。
+// 按点编号输出从 s 到每个点的最短距离。走不到的点输出 2^31 - 1。
+// 数据范围：1 ≤ n ≤ 10^4，1 ≤ m ≤ 5 × 10^5，1 ≤ u, v ≤ n，w ≥ 0，所有边权之和小于 2^31。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 10005;

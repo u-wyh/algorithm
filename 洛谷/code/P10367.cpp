@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10367
+// 题意：给 n 个灯泡的开关状态和 m 个开关，每个开关管一对灯泡。
+// 两个灯在同一状态时，按下对应开关会把它们同时翻转，否则无效。
+// 可按任意次数，求能得到的不同配置数，对 10^9+7 取模。
+// 数据范围：1 ≤ n ≤ 2 × 10^5，0 ≤ m ≤ 4 × 10^5，每个开关的两个端点不同，不重复给同一无序点对。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

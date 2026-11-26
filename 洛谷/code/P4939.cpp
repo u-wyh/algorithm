@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4939
+// 题意：有 N 天和 M 条指令，支持两种操作：在区间 [a, b] 每天增加 1 个事件，以及单点查询第 a 天的事件总数。
+// 数据范围：1 <= a, b <= N <= 10^7，M <= 4 * 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e7+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P11277
+// 题意：构造 n 个正整数，让恰好 k 个下标对 (i,j) 满足 i<j，且两数中较大者能被较小者整除。满分要求每个输出数都不超过 2n-1，任意一个方案都可以。
+// 数据范围：1 ≤ n ≤ 250000，0 ≤ k ≤ n(n-1)/2，保证有解。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

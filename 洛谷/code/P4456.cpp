@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4456
+// 题意：对所有长度为 n 且没有相邻 1 的 01 串，设 0 和 1 的个数分别为 x 和 y
+// 求所有串的 x^a * y^b 之和对质数 m 取模的结果（约定 0^0=1）。
+// 数据范围：1 <= n <= 10^7，0 <= a, b <= 45，10^7 <= m < 10^8。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e6+1;

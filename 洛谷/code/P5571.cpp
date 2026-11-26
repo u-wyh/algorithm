@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5571
+// 题意：平面上有 n 个坐标互异的高塔，任选 3 个高塔组成三角形（允许面积为 0），求第 k 小三角形面积的 2 倍。
+// 输入 n, k 及各高塔坐标；输出第 k 小面积的 2 倍（必为整数）。
+// 数据范围：n <= 800，1 <= k <= C(n, 3)，1 <= x_i, y_i <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

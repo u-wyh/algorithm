@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6139
+// 题意：给定 n 个小写字符串 s_1..s_n，求本质不同的非空子串个数，以及它们的广义后缀自动机（接受所有后缀的最小 DFA）的点数。
+// 数据范围：1 <= n <= 4 * 10^5，1 <= sum |s_i| <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e6+5;

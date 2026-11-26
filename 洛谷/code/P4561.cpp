@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4561
+// 题意：T 组数据，给定长为 n 的序列 x，在其后追加 m 个 [l, r] 内的正整数使新序列随机打乱后有序的概率尽可能小（即期望轮数最多）
+// 输出这个最大期望轮数对 998244353 取模的结果。
+// 数据范围：T <= 10^5，n <= 2*10^5，m <= 10^7，1 <= l <= r <= 10^9，1 <= a_i <= 10^9
+// sum n <= 2*10^6。
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3616
+// 题意：输入巨石数量 N、操作数 M，以及每块巨石的初始海拔 A_1..A_N。
+// 操作 1 B_j 询问水位海拔为 B_j 时有多少个连续露出水面（海拔 >= B_j）的巨石段；操作 2 C_j D_j 将第 C_j 块巨石海拔改为 D_j。
+// 对每个 1 类询问输出一行一个整数表示露出水面的连续段数。
+// 数据范围：1 <= N, M <= 2*10^5，1 <= A_i, B_j, D_j <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

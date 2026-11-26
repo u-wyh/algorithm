@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P9176
+// 题意：体育课共 n 次事件，每次有 a_i 个身高为 v_i 的学生进入体育馆。
+// 每次事件后所有学生按身高升序排列，输出站在正中间的学生的身高（若总人数为偶数，取中间两人中较矮的那个）。
+// 数据范围：1 <= n <= 200000，1 <= v_i, a_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 200005;

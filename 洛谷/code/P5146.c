@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P5146
+// 题意：给定长为 n 的整数序列 A，求满足 1 <= i < j <= n 的 A_j - A_i 的最大值。
+// 数据范围：2 <= n <= 10^6，A_i 在 int 范围内。
 #include<stdio.h>
 #include<limits.h>
 

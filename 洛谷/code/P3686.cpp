@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P3686
+// 题意：输入城市数 n、演出场数 d，巡演城市序列 a_1..a_d（相邻不同且 a_1 = a_d）
+// 以及 m 种机票 (s_i, d_i, t_i, p_i)。
+// t_i='O' 为单程票（s_i -> d_i 一次，票价 p_i）；
+// t_i='R' 为双程票（需先 s_i -> d_i 再 d_i -> s_i，也可只飞去不返回，票价 p_i），每种票不限量。
+// 输出按顺序飞完 a_1 -> a_2 -> ... -> a_d 的最小总机票花费（保证有解）。
+// 数据范围：2 <= n, d <= 3*10^5，3 <= m <= 3*10^5，1 <= p_i <= 10^9，s_i != d_i。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

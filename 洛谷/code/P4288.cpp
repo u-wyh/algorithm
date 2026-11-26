@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4288
+// 题意：平面上有 n 个用户点，增幅仪能把圆沿逆时针旋转 a 度的方向拉长 p 倍成椭圆（保持半短轴方向不变）
+// 求能覆盖所有点的最小椭圆半短轴长度（保留 3 位小数）。
+// 数据范围：n <= 50000，0 <= a < 180，1 <= p <= 100，|x|, |y| <= 2e8。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

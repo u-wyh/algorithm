@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P3455
+// 数据范围：1 <= n <= 5 * 10^4
+// 数据范围：1 <= d <= a, b <= 5 * 10^4
 // P3455 [POI2007] ZAP-Queries
 // 题意：
 // 给定 a,b,d，求有多少对 (x,y) 满足：

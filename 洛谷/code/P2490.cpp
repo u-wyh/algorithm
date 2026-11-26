@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2490
+// 题意：1*n 棋盘上有 k 个黑白交替棋子（最左白最右黑），白右移、黑左移，每次移 1~d 个。
+// 不能跨越或出界，先手移动白棋，无法移动者输。
+// 求使先手必胜的初始布局方案数对 10^9+7 取模的结果。
+// 数据范围：1 <= d <= k <= n <= 10^4，k 为偶数且 k <= 100。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P12598
+// 题意：多次查询区间内恰好出现 x 次的数的种类数 c(x) 与 x 乘积最大值。
+// 输入：首行 n, q，第二行序列 a_1..a_n，后 q 行每次给区间 [l, r]。
+// 规则：在区间 [l, r] 中，统计出现次数等于 x 的不同数值个数 c(x)。
+// 输出：每次询问输出一行整数，表示 max_{x} (x * c(x))。
+// 数据范围：1 <= n, q, a_i <= 2*10^5，1 <= l <= r <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

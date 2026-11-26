@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P6345
+// 题意：给定 n 根宽为 1、高为 h_i 的柱子，可任意重排柱子并用器具夹紧两侧接雨水。按升序输出所有可能接住的雨滴总量（以 r 为单位）。
+// 数据范围：2 <= n <= 500，1 <= h_i <= 50。
 #include <bits/stdc++.h>
 using namespace std;
 

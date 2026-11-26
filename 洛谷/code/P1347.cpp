@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1347
+// 题意：依次给 n 个字母之间的小于关系。
+// 处理每条新关系后，判断是否已经能确定唯一顺序，或前缀关系已经矛盾。
+// 第一次能判定时按题目格式输出关系条数和结果，始终不能判定则输出 Sorted sequence cannot be determined.。
+// 数据范围：2 ≤ n ≤ 26，1 ≤ m ≤ 600，元素用大写字母 A 起顺序表示。
+
 #include<bits/stdc++.h>
 using namespace std;
 

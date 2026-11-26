@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10729
+// 题意：每天买一个大小为 a[i] 的套娃。只有外层大小至少比内层大 2，才能套进去。对每一天，输出用截至当天买到的套娃最多能套多少层。
+// 数据范围：1 ≤ n ≤ 10^5，1 ≤ a[i] ≤ 500000。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

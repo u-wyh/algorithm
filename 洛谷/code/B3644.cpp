@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/B3644
+// 题意：有 n 名家族成员，每人给出一列后代编号，以 0 结束。输出一种人员顺序，使每个人都排在列出的所有后代之前。
+// 数据范围：1 ≤ n ≤ 100。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

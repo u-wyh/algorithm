@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P3899
+// 题意：给定一棵 n 个节点、1 号点为根的有根树。共 q 次询问，每次给定 p 和 k，求满足以下条件的有序三元组 (a, b, c) 的个数：
+// 1. a, b, c 互不相同且 a = p；2. a 和 b 都是 c 的祖先；3. a 与 b 在树上的距离不超过 k。
+// 数据范围：n <= 300000，q <= 300000，1 <= p, k <= n。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

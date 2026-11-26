@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3332
+// 题意：输入可重集个数 n 和操作数 m，初始 1..n 号可重集均为空。
+// 支持两类操作：1 l r c（向 [l, r] 每个集合加入一个 c）、2 l r c（求 [l, r] 集合不去重并集中的第 c 大数）。
+// 对每个 2 操作输出一行整数。
+// 数据范围：1 <= n, m <= 5*10^4，1 <= l, r <= n，1 操作中 |c| <= n
+// 2 操作中 1 <= c < 2^63 且保证第 c 大数存在。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+1;

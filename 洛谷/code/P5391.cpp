@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5391
+// 题意：背包容量为 V，初始物品序列为空，支持 q 次操作：add x y 在末尾加入一种体积 x 价值 y 的无限个物品；erase 删除末尾物品。
+// 每次操作后输出当前序列所有物品在完全背包下的最大价值和。
+// 数据范围：1 <= q, V, x, y <= 2*10^4。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e4+5;

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1103
+// 题意：给 n 本书的高度和宽度，先按高度从低到高摆好，再拿走恰好 k 本。剩下每对相邻书的宽度差取绝对值并求和，输出能做到的最小和。
+// 数据范围：2 ≤ n ≤ 100，1 ≤ k<n，高度、宽度至多 200，所有高度互异。
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<limits.h>

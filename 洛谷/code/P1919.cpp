@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P1919
+// 题意：输入两个十进制正整数 a 和 b，输出它们的精确乘积。
+// 数据范围：1 ≤ a,b ≤ 10^1000000。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

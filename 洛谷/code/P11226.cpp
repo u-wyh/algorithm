@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P11226
+// 题意：给 n 个互不相同的小写队名。
+// 对每个队名，尝试重新排列 26 个字母，使按新字母顺序比较时它的字典序最小。
+// 可行就输出任意一个字母排列，否则输出 nemoguce。
+// 数据范围：1 ≤ n ≤ 25000，全部队名长度之和在 [1,10^6]。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 25005;

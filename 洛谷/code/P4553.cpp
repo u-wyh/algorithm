@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P4553
+// 题意：M 个人从国家 1..N 中沿编号递增的方向坐飞机游历，已知每个国家恰好必须有 V_i 人经过以及任意 i < j 间的机票价（-1 表示无航班）
+// 求让所有人完成旅程的最小总机票费用。
+// 数据范围：1 <= N <= 100，1 <= M <= 79，最少费用小于 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

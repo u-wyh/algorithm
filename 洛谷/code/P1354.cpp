@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1354
+// 题意：在 10×10 的房间里，从 (0,5) 走到 (10,5)。
+// 有若干堵竖直墙，每堵墙给横坐标和两个缺口的上下端点，只能通过缺口穿过墙。
+// 求最短距离，保留两位小数。
+// 数据范围：墙数 n ≤ 20，墙按横坐标递增，各墙的四个缺口端点高度也递增。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 85;

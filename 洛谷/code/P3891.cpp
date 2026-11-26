@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3891
+// 题意：初始拥有 M 点资源，目标达到至少 T 点资源。
+// 共有 N 种苦工，第 i 种建造需花费 A_i 点资源（建造瞬间完成，不耗时），每秒结束后产生 B_i 点资源（离散时间，整秒收获）。
+// 求资源数量达到 T 时的最少时间。
+// 数据范围：N <= 100，M, T <= 1000，A, B <= 2^31，数据保证有解。
 #include <iostream>
 #include <vector>
 #include <cstring>

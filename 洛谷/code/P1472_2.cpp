@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P1474
+// 题意：输入两个整数 n 和 k。
+// 求恰好有 n 个节点、深度为 k 的无标号完满二叉树有多少种。
+// 完满指每个节点儿子数为 0 或 2，根节点深度为 1。
+// 输出方案数对 9901 取模的结果。
+// 数据范围：
+// 3 <= n < 200（节点数）
+// 2 <= k < 100（树的深度）
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

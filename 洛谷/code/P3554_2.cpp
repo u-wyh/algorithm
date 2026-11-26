@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3554
+// 题意：输入树上节点数 n 和 n-1 条树边。
+// 初始 1 号点为黑、其余为白，B 初始在 1 号点；每轮 A 先选至多 k 个点染黑，然后 B 移动到相邻节点，B 踩到白点则 B 胜，全黑则 A 胜。
+// 输出能让 A 必胜的最小 k。
+// 数据范围：1 <= n <= 3*10^5。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

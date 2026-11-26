@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P7831
+// 题意：n 点 m 边有向图，第 i 条边 a_i -> b_i 需当前资产 >= r_i 才可通行，通过后资产 +p_i；
+// 对每个起点求能无限走下去所需的最小初始资产（无解输出 -1）。
+// 数据范围：2 <= n, m <= 2*10^5，1 <= a_i, b_i <= n (a_i != b_i)
+// 0 <= r_i, p_i <= 10^9，无自环可能有重边。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

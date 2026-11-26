@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P3914
+// 题意：给出一棵 N 个节点的树和 M 种颜色（编号 1..M），每个节点 i 有一个允许使用的颜色列表（含 k_i 种颜色）。
+// 求相邻节点颜色不同的合法染色方案总数，对 10^9 + 7 取模。
+// 数据范围：1 <= N <= 5000，1 <= M <= 5000。
 #include<bits/stdc++.h>
 
 using namespace std;

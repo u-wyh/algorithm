@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2685
+// 题意：n 个点 m 条无向边（可能有重边自环），边权 c，保证 1 可达 n。
+// 删去一条边使 1 到 n 的最短路尽量大，求最大最短路 d 及能达到该值的边数 cnt。
+// 一行输出 d 和 cnt。
+// 数据范围：1 <= n <= 10^5，1 <= m <= 2*10^5，1 <= c <= 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

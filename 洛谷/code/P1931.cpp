@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1931
+// 题意：每组给出 n 种货币和 m 条有方向的兑换汇率。
+// 判断是否存在一条兑换路线，回到原货币时金额比起初更多。
+// 按 Case i: Yes 或 Case i: No 输出。
+// 数据范围：1 ≤ n ≤ 30，币名没有空格，n=0 结束输入。
+
 #include <bits/stdc++.h>
 using namespace std;
 int const N=35;

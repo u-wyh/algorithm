@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2488
+// 题意：m 名员工制造 n 类产品（第 i 类需 C_i 件），给出每人能制造的产品矩阵。
+// 每名员工的愤怒值是其制造总件数的分段线性凸函数。
+// 求满足所有订单的最小愤怒值总和。
+// 数据范围：1 <= m, n <= 250，0 <= S_i <= 5，所有数据 <= 10^5。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

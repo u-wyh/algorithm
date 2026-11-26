@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2178
+// 题意：给定长度为 n 的字符串 S，每位置有一杯美味度为 a_i 的酒。
+// 若 S[p..p+r-1] = S[q..q+r-1] (p != q)，则两杯酒 r 相似（0 相似对任意两杯成立）。
+// 对 r = 0..n-1，输出 r 相似的酒对方案数以及两杯美味度乘积的最大值（无则输出 0 0）。
+// 数据范围：n <= 3*10^5，|a_i| <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 6e5+5;

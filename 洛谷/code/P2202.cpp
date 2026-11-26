@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2202
+// 题意：平面上有 N 个边长为 K 的正方形（中心坐标互不重合）。
+// 若无重叠输出 0；恰有一对重叠输出重叠面积；两对及以上重叠输出 -1。
+// 输出一行答案。
+// 数据范围：2 <= N <= 50000，1 <= K <= 10^6（K 为偶数），|x_i|, |y_i| <= 10^6。
 #include<bits/stdc++.h>
 using namespace std;
 const int N=50005;

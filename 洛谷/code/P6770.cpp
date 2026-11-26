@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P6770
+// 题意：F 片草地由 P 条带通行时间 T 的双向路连接（可能有重边），给定 C 只奶牛各自所在草地编号
+// 求在 M 秒内能到达 1 号草地的奶牛数量及升序编号。
+// 数据范围：1 <= M <= 7*10^4，1 <= C <= 100，1 <= P <= 1000，1 <= F <= 500
+// 边权在 1 到 7*10^4 之间。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2505
+// 题意：给定 n 点 m 边的有向图（可能有重边，边权 w）。
+// 对每条边，统计所有有序点对之间的最短路中有多少条经过该边。
+// 输出 m 行，每行一个整数（模 10^9+7）。
+// 数据范围：n <= 1500，m <= 5000，1 <= w <= 10000。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

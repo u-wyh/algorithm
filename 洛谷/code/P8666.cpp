@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P8666
+// 题意：输入 A, B, C, m
+// 第二行按 ((i-1)*B+(j-1))*C+(k-1)+1 顺序给出 A*B*C 个点 (i, j, k) 的生命值 d(i, j, k)
+// 随后 m 轮攻击每行给出 (la_t, ra_t, lb_t, rb_t, lc_t, rc_t, h_t)，对长方体区间内所有点累计加上 h_t 伤害；
+// 当某点累计伤害严格大于 d(i, j, k) 时爆炸（保证一定存在），输出第一艘战舰是在第几轮后爆炸的。
+// 数据范围：1 <= A*B*C <= 10^6，1 <= m <= 10^6
+// 0 <= d(i, j, k), h_t <= 10^9（原文数据约定漏印字母 d，写作 0 <= (i,j,k), h_t <= 10^9）。
 #include<bits/stdc++.h>
 #define N 1000005
 using namespace std;

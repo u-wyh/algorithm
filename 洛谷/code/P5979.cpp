@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5979
+// 题意：将排成一行的 n 个小朋友划分为若干连续区间（组），第 i 个小朋友要求所在组人数在 [c_i, d_i] 内；
+// 求所有人都满意的前提下最多能分成的组数及达到该最大组数的方案数（模 10^9 + 7），无解输出 NIE。
+// 数据范围：1 <= n <= 10^6，1 <= c_i <= d_i <= n。
 #include<bits/stdc++.h>
 using namespace std;
 

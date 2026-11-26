@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10390
+// 题意：给 n 个正整数，求有多少个有序下标四元组 (i,j,k,l)，满足四个下标互不相同，a[i] 整除 a[k]，且 a[j] 整除 a[l]。
+// 数据范围：1 ≤ n ≤ 10^5，1 ≤ a[i] ≤ 10^5。
+
 #include<iostream>
 #define int __int128
 using namespace std;

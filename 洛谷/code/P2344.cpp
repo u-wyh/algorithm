@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P2344
+// 题意：将长度为 N 的序列 a 划分为若干连续子段，使每段元素和均不小于 0。
+// 求合法划分方案数，输出对 10^9+9 取模的结果。
+// 数据范围：1 <= N <= 10^5，-10^4 <= a_i <= 10^4。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

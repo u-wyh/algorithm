@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P1092
+// 题意：给 n 进制的两个加数及它们的和，每位都写成大写字母。
+// 前 n 个字母分别对应 0 到 n-1，且不能重复对应。
+// 让加法成立，按 A、B 等字母顺序输出各自的数字。
+// 数据范围：1 ≤ n ≤ 26，三个字符串长度均为 n，每种字母至少出现一次，保证唯一解。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 30;

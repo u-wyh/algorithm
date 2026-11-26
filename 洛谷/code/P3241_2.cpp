@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P3241
+// 题意：输入点数 n（每个点度数 <= 3）、询问数 Q、年龄上限 A，各点妖怪年龄 x_1..x_n，n-1 条带权树边 (a, b, c)
+// 以及 Q 次询问 (u, a, b)。
+// 每次询问需结合上次答案 ans 算出年龄区间 [L, R]（首行直接 mod A
+// 后续 (a+ans) mod A 与 (b+ans) mod A 取小和大），求年龄在 [L, R] 内的所有节点到 u 的树上距离之和。
+// 对每次询问输出一行对应的距离总和（强制在线）。
+// 数据范围：n <= 1.5*10^5，Q <= 2*10^5，A <= 10^9，0 <= x_i < A，1 <= c <= 1000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

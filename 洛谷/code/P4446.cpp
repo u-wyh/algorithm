@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4446
+// 题意：给定 n 个正整数 x
+// 对每个 x 将三次根式 sqrt[3]{x} 化简为 a * sqrt[3]{b} 的最简形式（即求满足 a^3 * b = x 的最大正整数 a）
+// 并输出 a。
+// 数据范围：1 <= n <= 10000，1 <= x <= 10^18。
 #include<bits/stdc++.h>
 using namespace std;
 

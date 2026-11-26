@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P11018
+// 题意：给根为 1 的树和初始黑白颜色。一步可以翻转一个点到根的整条路径，或翻转以该点为根的整棵子树，两个操作都包含该点。求把全树变黑最少需要多少步。
+// 数据范围：1 ≤ n ≤ 2 × 10^5，白色为 0，黑色为 1。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

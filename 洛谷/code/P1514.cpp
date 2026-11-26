@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P1514
+// 题意：给 N 行 M 列城市的海拔。
+// 第 1 行可建水厂，水可沿上下左右相邻且海拔严格下降的路线传递。
+// 若能让最后一行的全部城市得到水，输出 1 和最少水厂数；
+// 否则输出 0 和最后一行不可能得到水的城市数。
+// 数据范围：满分测试中 N,M 均不超过 500，海拔为正整数。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

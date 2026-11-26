@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2240
+// 题意：有 N 堆金币，第 i 堆重量 m_i、总价值 v_i，背包承重 T。
+// 金币可任意分割且单位价值不变，求最多能装走多少价值的金币。
+// 输出最大总价值，保留两位小数。
+// 数据范围：N <= 100，T <= 1000，1 <= m_i, v_i <= 100。
 #include<stdio.h>
 #include<stdlib.h>
 

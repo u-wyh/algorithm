@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3573
+// 题意：输入有向无环图的点数 n、边数 m，以及 m 条长度为 1 的有向边 (a_i, b_i)。
+// 选择删除一个点 x，使得剩余图中的最长路径长度 y 最小。
+// 输出一行两个整数 x 和 y（有多组解输出任意一组）。
+// 数据范围：2 <= n <= 5*10^5，1 <= m <= 10^6，1 <= a_i, b_i <= n 且 a_i != b_i。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

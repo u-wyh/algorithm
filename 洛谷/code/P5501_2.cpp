@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5501
+// 题意：给定长为 n 的序列 a 和 m 个区间询问 [l, r]，若 a_i 在该区间排第 k 小（并列取最小排名）则贡献 k * a_i
+// 求区间内所有元素的贡献和。
+// 输入 n, m、序列 a 及各询问区间；对每个询问输出一行答案。
+// 数据范围：1 <= n, m <= 500000，1 <= a_i <= 100000，1 <= l <= r <= n。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

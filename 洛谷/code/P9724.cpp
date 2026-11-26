@@ -1,4 +1,11 @@
 // https://www.luogu.com.cn/problem/P9724
+// 题意：给定 n 点 m 边的无向无权连通简单图，Shou 初始在 1，目的地为 n，Pang 初始在 k，攻击范围为 d。
+// 每秒 Shou 先移动到相邻点，随后 Pang 攻击：若当前最短路距离 dis < d，Pang 原地造成 d - dis 点伤害；
+// 若 dis >= d，Pang 瞬移到 Shou 所在点并造成 d 点伤害。
+// 到达 n 后受最后一次攻击结束，求最小总伤害。
+// 题意：第一行输入 n, m, k, d，接下来 m 行输入边 (a, b)；输出一行一个整数。
+// 数据范围：2 <= n <= 10^5，n-1 <= m <= 2 * 10^5，1 <= k <= n，1 <= d <= 2 * 10^5
+// 1 <= a, b <= n，a != b。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

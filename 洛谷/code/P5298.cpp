@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5298
+// 题意：给一棵 n 个点、每个点最多两个子节点的有根树（根为 1），叶子权值互不相同，非叶节点以 p_x 概率取子节点权值较大者、1-p_x 概率取较小者。
+// 设 1 号点权值从小到大有 m 种可能 V_1..V_m，对应概率 D_1..D_m (>0)
+// 求 sum_{i=1}^m i * V_i * D_i^2 对 998244353 取模。
+// 数据范围：1 <= n <= 3*10^5，1 <= w_i <= 10^9，0 < p_i * 10000 < 10000。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

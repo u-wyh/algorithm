@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P10144
+// 题意：给 n 根石柱的高度 h。
+// 对每个区间 [u,v]，可以选一个共用的正实数水位 L。
+// 每根柱可取原高度 h[i] 或镜像高度 2L-h[i]，问能否让选出的高度从左到右严格递增。
+// 统计可行的下标对 (u,v)，只考虑 u<v。
+// 数据范围：2 ≤ n ≤ 5 × 10^5，1 ≤ h[i] ≤ 10^12。
+
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P9497
+// 题意：给定 n * n 的矩阵 a，q 次独立询问，每次给定整数 v。每次询问可以将矩阵的每一行各自任意重排，最大化“该列最大值 >= v”的列数。
+// 题意：第一行输入 n, q，后 n 行输入矩阵 a，再 q 行输入 v；输出 q 行答案。
+// 数据范围：1 <= n <= 10^3，1 <= q <= 5 * 10^5，1 <= a_{i,j}, v <= 10^9。
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>

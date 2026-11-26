@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5385
+// 题意：给定 n 点 m 边的无向图（边排成序列 E_1..E_m，允许重边自环）及强制在线参数 t。
+// 共 q 次询问（t=1 时需异或/模运算解密），每次求只保留第 l 到 r 条边时图中的连通块数量。
+// 数据范围：1 <= |V| <= 10^5，1 <= |E| <= 2*10^5，1 <= q <= 10^5，t in {0, 1}。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

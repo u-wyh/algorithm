@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P5664
+// 题意：有 n 种烹饪方法和 m 种主要食材，第 i 种方法第 j 种食材可做 a_{i,j} 道不同的菜；
+// 选至少 1 道菜使烹饪方法互不相同，且每种食材使用次数不超过总菜数的一半。
+// 输入 n, m 及矩阵 a；输出合法搭配方案数模 998244353。
+// 数据范围：1 <= n <= 100，1 <= m <= 2000，0 <= a_{i,j} < 998244353。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

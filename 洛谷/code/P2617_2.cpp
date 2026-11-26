@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P2617
+// 题意：长度为 n 的序列 a_i，共 m 次操作。
+// Q l r k：查询闭区间 [l,r] 第 k 小的数；C x y：将 a_x 修改为 y。
+// 对每次询问输出一行整数。
+// 数据范围：1 <= n, m <= 10^5，0 <= a_i, y <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

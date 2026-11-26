@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P3556
+// 题意：输入港口数 n、双向水道数 m、询问数 k，m 条水道 (a, b)，以及 k 个询问 (s, t, d)。
+// 对每个询问，判断能否从港口 s 出发，经过恰好 d 条水道（可重复走同一水道）到达港口 t。
+// 对每个询问输出一行 TAK 或 NIE。
+// 数据范围：2 <= n <= 5000，1 <= m <= 5000，1 <= k <= 10^6，1 <= a, b <= n 且 a != b
+// 1 <= s, t <= n，1 <= d <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5005;

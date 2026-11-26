@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P5014
+// 题意：无限大三角图第 r 行有 r 个点按行从左到右编号（顶层为 1），每个点可向同行右邻点或下一行左下、右下两点移动；
+// T 组询问求从 1 号点走到 u_i 号点的方案数模 998244353。
+// 数据范围：1 <= T <= 100，1 <= u_i <= 500000500000。
 #include<bits/stdc++.h>
 #define int long long
 using namespace std;

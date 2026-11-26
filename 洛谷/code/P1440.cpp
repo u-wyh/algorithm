@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P1440
+// 题意：给一个长为 n 的序列。对每个位置 i，取它前面至多 m 个元素，求其中的最小值。
+// 窗口到左端时只取实际存在的元素，不包含 a[i]。第一个位置前面没有数，输出 0。
+// 数据范围：1 ≤ m ≤ n ≤ 2 × 10^6，1 ≤ a[i] ≤ 3 × 10^7。
+
 #include<bits/stdc++.h>
 using namespace std;
 

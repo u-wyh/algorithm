@@ -1,4 +1,10 @@
 // https://www.luogu.com.cn/problem/P4036
+// 题意：第一行输入仅含小写字母的初始字符串，第二行输入操作数 M
+// 接下来 M 行执行三种操作：Q x y 求当前串从第 x 位与第 y 位开始的后缀的最长公共前缀 LCQ(x, y)；
+// R x d 将第 x 个字符改为 d；
+// I x d 在第 x 个字符后（x = 0 为开头）插入字符 d。
+// 对每个询问操作输出一行整数答案。
+// 数据范围：M <= 150000，字符串长度 L 自始至终满足 L <= 100000，询问操作个数不超过 10000，字符均为小写字母。
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

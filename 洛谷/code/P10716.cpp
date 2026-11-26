@@ -1,4 +1,9 @@
 // https://www.luogu.com.cn/problem/P10716
+// 题意：给字符串 S。
+// 每问给 i,k，统计有多少个不同的非空串 A，使 S 的前 i 个字符能写成 k 个 A，中间各夹一个可为空的字符串，开头和结尾都是 A。
+// k 等于 1 时整个前缀就是 A。
+// 数据范围：1 ≤ k ≤ i ≤ n ≤ 2 × 10^5，1 ≤ q ≤ 2 × 10^5，S 只含小写字母。
+
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

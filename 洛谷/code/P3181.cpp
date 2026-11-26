@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3181
+// 题意：输入两行小写字母字符串 s_1（长度 n_1）和 s_2（长度 n_2）。
+// 分别从 s_1 和 s_2 中各选出一个非空连续子串，要求这两个子串内容完全相同（只要位置不同就算不同方案）。
+// 输出满足条件的子串对总数。
+// 数据范围：1 <= n_1, n_2 <= 2*10^5，字符均为小写字母。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 8e5+5;

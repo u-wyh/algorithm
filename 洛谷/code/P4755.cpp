@@ -1,4 +1,6 @@
 // https://www.luogu.com.cn/problem/P4755
+// 题意：给定长为 n 的序列 a，统计满足 a_i * a_j <= max_{k=i..j} a_k 的下标对 (i, j) (i <= j) 的数量。
+// 数据范围：1 <= n <= 10^5，1 <= a_i <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

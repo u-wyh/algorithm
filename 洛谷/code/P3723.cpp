@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P3723
+// 题意：输入装饰物数 n 和亮度上限 m，以及两条环形手环上按逆时针顺序排列的亮度序列 x_1..x_n 和 y_1..y_n。
+// 允许将其中一个手环的所有亮度同时加上同一个非负整数 c，并任意循环旋转其中一条手环使位置对齐（不可翻转）。
+// 求对齐后差异值 sum_{i=1..n} (x_i - y_i)^2 的最小值，输出一个整数。
+// 数据范围：1 <= n <= 50000，1 <= x_i, y_i <= m <= 100（改造后亮度可超过 m）。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

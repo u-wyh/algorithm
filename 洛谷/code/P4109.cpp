@@ -1,4 +1,8 @@
 // https://www.luogu.com.cn/problem/P4109
+// 题意：第一行输入组数 T，之后每行输入两个正整数 L 和 R。
+// 定义价格 p 的荒谬度：去掉 p 末尾所有 0 后记位数为 a，若末位是 5 则为 2a-1，否则为 2a。
+// 对每组数据输出一行，在 [L, R] 中找出荒谬度最低的价格（不唯一时输出最小的）。
+// 数据范围：T <= 100，1 <= L <= R <= 10^9。
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

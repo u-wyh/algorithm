@@ -1,4 +1,7 @@
 // https://www.luogu.com.cn/problem/P10721
+// 题意：给一个小写字符串和 n 个分值。一段连续子串若恰好由 k 个 abc 拼成，可以得 a[k] 分。挑若干互不重叠的计分段，其他字符不计分。输出最大总得分。
+// 数据范围：1 ≤ n ≤ 20，1 ≤ m ≤ 10^5，1 ≤ a[k] ≤ 1000，只有 1 ≤ k ≤ n 可计分。
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
