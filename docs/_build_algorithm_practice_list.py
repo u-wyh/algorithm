@@ -245,10 +245,8 @@ def problem_sort_key(problem: str) -> tuple[str, int, str]:
 def archive_index() -> tuple[dict[str, list[Path]], dict[str, list[Path]]]:
     by_id: dict[str, list[Path]] = collections.defaultdict(list)
     by_url: dict[str, list[Path]] = collections.defaultdict(list)
-    review_path = ARCHIVE / "链接待复核清单.md"
-    review = set(re.findall(r"^\| ([^|]+\.\w+) \|", review_path.read_text(encoding="utf-8"), re.M)) if review_path.exists() else set()
     for path in ARCHIVE.rglob("*"):
-        if not path.is_file() or path.suffix.lower() not in CODE_EXTS or path.name in review:
+        if not path.is_file() or path.suffix.lower() not in CODE_EXTS:
             continue
         data = path.read_bytes()
         if not data.strip():

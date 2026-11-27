@@ -18,6 +18,7 @@ from _build_algorithm_practice_list import ARCHIVE, CODE_EXTS, parse_problem_url
 
 URL = re.compile(r'https?://[^\s<>"、，。；）】]+')
 TAG = re.compile(r"^算法标签\s*[:：]\s*(.+)$")
+IMPLEMENTATION_STATUS = re.compile(r"^实现状态\s*[:：]\s*(.+)$")
 LUOGU = re.compile(r"([PBUT])(\d+)")
 CURRENT_PROBLEM = re.compile(r"^(?:实际对应|原题现址)\s*[:：]")
 PLATFORMS = {
@@ -39,6 +40,36 @@ PLATFORMS = {
     "LIGHTOJ": "LightOJ",
 }
 
+TOPIC_RULES = {
+    "动态规划": (
+        r"动态规划|背包|数位.?dp|\bdp\b|记忆化|状态压缩|递推|滚动数组|"
+        r"最长上升子序列|最长不下降子序列|最长公共子序列|最大子段和"
+    ),
+    "图论": (
+        r"最短路|dijkstra|spfa|floyd|bellman|tarjan|kruskal|prim|最小生成树|拓扑|图论|"
+        r"二分图|圆方树|虚树|树上|树链|最近公共祖先|lca|连通分量|割点|桥|建图|网络流|"
+        r"最大流|费用流|最小割|dinic|欧拉回路|基环树|树的直径|分层图|2-sat|传递闭包|缩点"
+    ),
+    "字符串": r"字典树|trie|字符串|kmp|manacher|回文|ac自动机|后缀|前缀函数|字符串哈希",
+    "数学与数论": (
+        r"数学|数论|整除|素数|质数|筛法|线性筛|欧拉筛|组合|计数|容斥|概率|期望|矩阵|"
+        r"逆元|莫比乌斯|欧拉函数|lucas|快速幂|多项式|fft|ntt|博弈|线性基|高精度|"
+        r"欧几里得|最大公约数|同余|剩余定理|生成函数|卡特兰|高斯消元|bsgs|"
+        r"斐波那契|卢卡斯|试除法|sg函数|分数规划"
+    ),
+    "计算几何": r"几何|凸包|向量|极角|叉积|面积|扫描线|旋转卡壳|半平面交",
+    "数据结构": (
+        r"线段树|树状数组|并查集|平衡树|堆|栈|队列|稀疏表|st表|treap|splay|avl|哈希|"
+        r"分块|启发式合并|数据结构|莫队|笛卡尔树|左偏树|替罪羊树|k[- ]?d.?tree|kd树|"
+        r"lct|动态树|链表|有序集合|懒标记|二叉树|点分树|\bmap\b|\bmultiset\b|\bset\b"
+    ),
+    "搜索与贪心": r"搜索|贪心|枚举|回溯|剪枝|bfs|dfs",
+    "基础技巧": (
+        r"模拟|排序|二分|三分|前缀和|差分|双指针|滑动窗口|位运算|构造|离散化|扫描|"
+        r"倍增|分治|逆序对|分类讨论|离线|bitset|二进制分组|打表|区间合并|随机化|递归|中位数"
+    ),
+}
+
 
 @dataclass
 class Entry:
@@ -49,6 +80,7 @@ class Entry:
     problem: str | None = None
     link: str | None = None
     tags: tuple[str, ...] = ()
+    implementation_status: str | None = None
     review: str | None = None
 
 
@@ -98,6 +130,8 @@ def header_problem(lines: list[str]) -> tuple[str | None, str | None, str | None
     candidates = explicit or set(found)
     if candidates == {"SP8791", "SPOJ_DYNALCA"}:
         candidates = {"SPOJ_DYNALCA"}
+    if candidates == {"SP2878", "SPOJ_KNIGHTS"}:
+        return "SPOJ_KNIGHTS", found["SP2878"][1], None
     if candidates == {"P3513", "LOJ2155"}:
         candidates = {"P3513"}
     if len(candidates) == 1:
@@ -112,9 +146,12 @@ def destination(problem: str, name: str) -> tuple[str, str]:
     match = LUOGU.fullmatch(problem)
     if match:
         prefix, number = match.groups()
-        first = int(number) // 500 * 500
-        bucket = f"{prefix}{first:04d}-{prefix}{first + 499:04d}"
-        return "洛谷", f"洛谷/{bucket}/{name}"
+        number = int(number)
+        large_start = number // 500 * 500
+        small_start = number // 100 * 100
+        large = f"{prefix}{large_start:04d}-{prefix}{large_start + 499:04d}"
+        small = f"{prefix}{small_start:04d}-{prefix}{small_start + 99:04d}"
+        return "洛谷", f"洛谷/{large}/{small}/{name}"
 
     prefix = re.match(r"^[A-Z]+_?", problem)[0]
     platform = PLATFORMS[prefix]
@@ -130,6 +167,7 @@ def scan_archive(archive: Path) -> list[Entry]:
         data = path.read_bytes()
         lines = header_lines(data, path.suffix.lower() == ".py")
         tags = [match[1] for line in lines if (match := TAG.fullmatch(line))]
+        status = next((match[1] for line in lines if (match := IMPLEMENTATION_STATUS.fullmatch(line))), None)
         problem, link, review = header_problem(lines)
         entry = Entry(
             source=path.relative_to(archive).as_posix(),
@@ -137,6 +175,7 @@ def scan_archive(archive: Path) -> list[Entry]:
             problem=problem,
             link=link,
             tags=tuple(dict.fromkeys(tag.strip() for tag in tags[0].split("、") if tag.strip())) if len(tags) == 1 else (),
+            implementation_status=status,
             review=review,
         )
         if problem:
@@ -152,29 +191,9 @@ def scan_archive(archive: Path) -> list[Entry]:
     return plan
 
 
-def write_index(
-    path: Path, archive: Path, plan: list[Entry], *, archived_only: bool = False
-) -> tuple[int, int]:
-    by_tag = defaultdict(lambda: defaultdict(list))
-    problems = set()
-    for entry in plan:
-        if entry.review or (archived_only and entry.source != entry.destination):
-            continue
-        for tag in entry.tags:
-            key = (entry.platform, entry.problem)
-            by_tag[tag][key].append(entry)
-            problems.add(key)
-
-    lines = [
-        "# 按算法标签练习",
-        "",
-        f"共 {len(by_tag)} 个标签，覆盖 {len(problems)} 道题。",
-        "同题的多份实现合并展示。每个标签下仅列出使用该算法的版本。",
-        "本页收录已归档、且有文件头算法标签的实现。" if archived_only else
-        "此预览的源码链接指向文件当前所在的位置。",
-        "",
-    ]
-    for tag, entries in sorted(by_tag.items(), key=lambda item: (-len(item[1]), item[0])):
+def render_tag_groups(path: Path, archive: Path, groups: dict) -> list[str]:
+    lines = []
+    for tag, entries in sorted(groups.items(), key=lambda item: (-len(item[1]), item[0])):
         lines.extend((f"## {tag}（{len(entries)} 题）", ""))
         for (platform, problem), versions in sorted(
             entries.items(), key=lambda item: (item[0][0], problem_sort_key(item[0][1]))
@@ -186,6 +205,53 @@ def write_index(
                 sources.append(f"[{name}]({quote(local, safe='/')})")
             lines.append(f"- {platform} [{problem}](<{versions[0].link}>) · " + "、".join(sources))
         lines.append("")
+    return lines
+
+
+def write_index(
+    path: Path, archive: Path, plan: list[Entry], *, archived_only: bool = False
+) -> tuple[int, int]:
+    by_tag = defaultdict(lambda: defaultdict(list))
+    problems = set()
+    for entry in plan:
+        if entry.review or entry.implementation_status or (archived_only and entry.source != entry.destination):
+            continue
+        for tag in entry.tags:
+            key = (entry.platform, entry.problem)
+            by_tag[tag][key].append(entry)
+            problems.add(key)
+
+    lines = [
+        "# 按算法标签练习",
+        "",
+        f"共 {len(by_tag)} 个标签，覆盖 {len(problems)} 道题。",
+        "同题的多份实现合并展示。每个标签下仅列出使用该算法的版本。",
+        "",
+    ]
+    if archived_only:
+        sections = {topic: {} for topic in (*TOPIC_RULES, "其他技巧")}
+        for tag, entries in by_tag.items():
+            topic = next(
+                (topic for topic, rule in TOPIC_RULES.items() if re.search(rule, tag, re.I)),
+                "其他技巧",
+            )
+            sections[topic][tag] = entries
+        directory = path.with_suffix("")
+        directory.mkdir(exist_ok=True)
+        lines.extend(("| 专题 | 标签数 | 不同题目数 |", "| --- | ---: | ---: |"))
+        for topic, groups in sections.items():
+            if not groups:
+                continue
+            page = directory / f"{topic}.md"
+            relative_page = quote(page.relative_to(path.parent).as_posix(), safe="/")
+            topic_problems = {key for entries in groups.values() for key in entries}
+            lines.append(f"| [{topic}]({relative_page}) | {len(groups)} | {len(topic_problems)} |")
+            page_lines = [f"# {topic}", "", f"[返回算法题单](../{quote(path.name)})", ""]
+            page_lines.extend(render_tag_groups(page, archive, groups))
+            page.write_text("\n".join(page_lines), encoding="utf-8")
+        lines.extend(("", "一道题可以出现在多个专题里，各专题的题目数可以重叠。", ""))
+    else:
+        lines.extend(render_tag_groups(path, archive, by_tag))
     path.write_text("\n".join(lines), encoding="utf-8")
     return len(by_tag), len(problems)
 

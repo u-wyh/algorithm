@@ -238,6 +238,8 @@ def main() -> None:
             item["urls"].append(entry.link)
         if entry.review:
             item["notes"].append(entry.review)
+        if entry.implementation_status:
+            item["notes"].append(f"`{path.name}`：{entry.implementation_status}")
 
     for path in sorted(p for p in TEMPLATES.rglob("*") if p.suffix.lower() in EXTENSIONS):
         identified, _ = old_index.identify(path)

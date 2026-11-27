@@ -20,6 +20,7 @@ Release/
 .vscode/
 .idea/
 .claude/settings.local.json
+/.planning/
 
 # 临时与运行生成文件
 *.bak
