@@ -1,0 +1,42 @@
+// https://www.luogu.com.cn/problem/P1934
+// 题意：给定 n 层封印的坚固值 a_i。
+// 单破第 i 层耗费 a_i×n²。
+// 若连续一段 [i,j] 的两端坚固值之和不超过 t，可以整段打破，
+// 耗费为两端坚固值之和乘以整段坚固值之和。
+// 求全部打破的最小耗费。
+// 数据范围：1 ≤ n ≤ 1000，1 ≤ a_i,t ≤ 20000。
+// 算法标签：动态规划、前缀和
+
+#include<stdio.h>
+#define Max 1005
+
+long long min(long long a,long long  b)
+{
+    return a<b?a:b;
+}
+
+int main()
+{
+    int n,t;
+    scanf("%d %d",&n,&t);
+    long long nums[Max];
+    long long sum[Max];
+    nums[0]=0;
+    sum[0]=0;
+    for(int i=1;i<=n;i++)
+    {
+        scanf("%lld",&nums[i]);
+        sum[i]=sum[i-1]+nums[i];
+    }
+    long long dp[n+1];
+    dp[0]=0;
+    for(int i=1;i<=n;i++)
+    {
+        dp[i]=dp[i-1]+nums[i]*n*n;
+        for(int k=1;k<i;k++)
+            if(nums[k]+nums[i]<=t)
+                dp[i]=min(dp[i],dp[k-1]+(nums[k]+nums[i])*(sum[i]-sum[k-1]));
+    }
+    printf("%lld\n",dp[n]);
+    return 0;
+}

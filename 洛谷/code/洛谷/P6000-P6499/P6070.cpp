@@ -1,0 +1,71 @@
+// https://www.luogu.com.cn/problem/P6070
+// 题意：给定 n x n
+// 矩阵（初始有 m 个非零位置 (x, y, z)，其余为 0），
+// 每次操作可将任意 k x k 连续子矩阵全加 1 或全减 1
+// 求将矩阵全变为 0 的最少操作次数（无解输出 -1）。
+// 数据范围：1 <= n <= 5 * 10^3，
+// 1 <= m <= min(n^2, 5 * 10^5)，
+// 1 <= k <= min(n, 10^3)
+// 1 <= x, y <= n（互不重复），
+// 1 <= |z| <= 10^9（有解时答案 <= 2^63 - 1）。
+// 算法标签：差分、贪心
+#include<bits/stdc++.h>
+using namespace std;
+#define int long long
+const int MAXN = 5e3+5;
+
+int arr[MAXN][MAXN];
+int diff[MAXN][MAXN];
+int n,m,k;
+
+inline int read(){
+    int x=0,f=1;
+    char ch=getchar();
+    while(ch<'0'||ch>'9'){
+        if(ch=='-')
+            f=-1;
+        ch=getchar();
+    }
+    while(ch>='0' && ch<='9')
+        x=x*10+ch-'0',ch=getchar();
+    return x*f;
+}
+
+signed main()
+{
+    n=read(),m=read(),k=read();
+    for(int i=1;i<=m;i++){
+        int u,v,w;
+        u=read(),v=read(),w=read();
+        arr[u][v]=w;
+    }
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            diff[i][j]=arr[i][j]-arr[i][j-1];
+        }
+    }
+    int ans=0;
+    for(int i=1;i<=(n-k+1);i++){
+        for(int j=1;j<=(n-k+1);j++){
+            if(diff[i][j]==0){
+                continue;
+            }
+            ans+=abs(diff[i][j]);
+            int num=diff[i][j];
+            for(int t=i;t<=i+k-1;t++){
+                diff[t][j]-=num;
+                diff[t][j+k]+=num;
+            }
+        }
+    }
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            if(diff[i][j]){
+                cout<<-1<<endl;
+                return 0;
+            }
+        }
+    }
+    cout<<ans<<endl;
+    return 0;
+}

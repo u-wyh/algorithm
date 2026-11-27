@@ -1,0 +1,35 @@
+// https://www.luogu.com.cn/problem/P10719
+// 题意：给 n 行 m 列的 01 网格，1 表示黑格。
+// 找一个包含至少 k 个黑格的矩形，使矩形面积尽可能小。
+// 输出最小面积，找不到输出 0。
+// 数据范围：1 ≤ n,m ≤ 100，1 ≤ k ≤ n×m。
+// 算法标签：枚举、二维前缀和
+
+#include<iostream>
+using namespace std;
+bool a[114][514];// 存储输入
+int b[1919][810];// 存储二维前缀和
+int main(){
+	ios::sync_with_stdio(0);cin.tie(0);
+	int n,m,k;cin>>n>>m>>k;
+	for(int i=1;i<=n;i++){
+		for(int j=1;j<=m;j++){
+			char c;cin>>c;
+			a[i][j]=c-'0';
+			b[i][j]=b[i-1][j]+b[i][j-1]-b[i-1][j-1]+a[i][j];// 利用容斥原理计算出 b[i][j]
+		}
+	}
+	int mn=0xcff0102;// 一个足够大的数
+	for(int x1=0;x1<n;x1++){// 注意这里的范围
+		for(int y1=0;y1<m;y1++){// 注意这里的范围
+			for(int x2=x1;x2<=n;x2++){
+				for(int y2=y1;y2<=m;y2++){
+					int tmp=b[x2][y2]-b[x2][y1]-b[x1][y2]+b[x1][y1];// 左上端点为 (x1+1,y1+1)，右上端点为 (x2+1,y2+1) 的矩形中 1 的数量
+					if(tmp>=k)mn=min(mn,(x2-x1)*(y2-y1));
+				}
+			}
+		}
+	}
+	cout<<((mn==0xcff0102)?0:mn);// 注意判断无解
+	return 0;
+}

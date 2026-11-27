@@ -1,0 +1,60 @@
+// https://www.luogu.com.cn/problem/P2052
+// 题意：给定一棵 n 点带权树。
+// 每条边的费用是边长乘以删掉该边后两侧点数之差的绝对值。求所有边的费用之和。
+// 数据范围：2 ≤ n ≤ 10^6，1 ≤ a_i,b_i ≤ n，
+// 0 ≤ c_i ≤ 10^6。
+// 算法标签：深度优先搜索
+
+#include<bits/stdc++.h>
+using namespace std;
+#define int long long
+
+const int MAXN = 1e6+5;
+
+int n;
+int cnt=1;
+int head[MAXN];
+int Next[MAXN<<1];
+int to[MAXN<<1];
+int fa[MAXN];
+int sz[MAXN<<1];
+int nums[MAXN][3];
+
+void dfs(int u,int f){
+    fa[u]=f;
+    sz[u]=1;
+    for(int i=head[u];i>0;i=Next[i]){
+        int v=to[i];
+        if(v!=f){
+            dfs(v,u);
+            sz[u]+=sz[v];
+        }
+    }
+}
+
+signed main()
+{
+    cin>>n;
+    for(int i=1;i<n;i++){
+        cin>>nums[i][0]>>nums[i][1]>>nums[i][2];
+
+        Next[cnt]=head[nums[i][0]];
+        to[cnt]=nums[i][1];
+        head[nums[i][0]]=cnt++;
+
+        Next[cnt]=head[nums[i][1]];
+        to[cnt]=nums[i][0];
+        head[nums[i][1]]=cnt++;
+    }
+    dfs(1,0);
+    int ans=0;
+    for(int i=1;i<n;i++){
+        if(fa[nums[i][0]]==nums[i][1]){
+            ans+=nums[i][2]*abs(n-2*sz[nums[i][0]]);
+        }
+        else
+            ans+=nums[i][2]*abs(n-2*sz[nums[i][1]]);
+    }
+    cout<<ans;
+    return 0;
+}

@@ -1,0 +1,48 @@
+// https://www.luogu.com.cn/problem/P1510
+// 题意：输入所需最小体积 v、木石数 n、剩余体力 c，及每块木石体积与耗力。
+// 选若干木石，使其体积和 >= v 且耗力总和 <= c。
+// 若能填平，输出最多能剩下的体力；否则输出 Impossible。
+// 数据范围：
+// 0 < n <= 10^4（木石数量）
+// 所有读入的数均在 [0, 10^4] 内（v, n, c 及木石体积和耗力）
+// 保证最终答案不超过 c
+// 算法标签：背包动态规划
+#include<stdio.h>
+
+int max(int a,int b)
+{
+    return a>b?a:b;
+}
+
+int main()
+{
+    int v,n,c;
+    scanf("%d %d %d",&v,&n,&c);
+    int val[n+1],cost[n+1];
+    for(int i=1;i<=n;i++)
+    {
+        scanf("%d %d",&val[i],&cost[i]);
+    }
+    int dp[c+1];
+    for(int i=0;i<=c;i++)
+        dp[i]=0;
+    for(int i=1;i<=n;i++)
+    {
+        for(int j=c;j>=0;j--)
+        {
+            if(j>=cost[i])
+                dp[j]=max(dp[j],dp[j-cost[i]]+val[i]);
+        }
+    }
+    for(int i=0;i<=c;i++)
+    {
+        if(dp[i]>=v)
+        {
+            printf("%d\n",c-i);
+            return 0;
+        }
+    }
+    printf("Impossible\n");
+    return 0;
+}
+

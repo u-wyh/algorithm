@@ -1,0 +1,1122 @@
+[
+  {
+    "source": "AT_ABC302H.cpp",
+    "destination": "AtCoder/AT_ABC302H.cpp",
+    "sha256": "622044cc352835fbaa9931ce20c047ea76a5a9246a6ec3433095afc9a3ee3ec6",
+    "platform": "AtCoder",
+    "link": "https://atcoder.jp/contests/abc302/tasks/abc302_h"
+  },
+  {
+    "source": "AT_ABC302H_2.cpp",
+    "destination": "AtCoder/AT_ABC302H_2.cpp",
+    "sha256": "9b1ee1088c261db6baac410ecfac4c40b9768807ec44fa9c749f2131d3152749",
+    "platform": "AtCoder",
+    "link": "https://atcoder.jp/contests/abc302/tasks/abc302_h"
+  },
+  {
+    "source": "AT_AGC010F.cpp",
+    "destination": "AtCoder/AT_AGC010F.cpp",
+    "sha256": "a810d7194ace29437b48cf292ba9fc7c18c9d1ef5c0a03f77a4a4cf16e5ac376",
+    "platform": "AtCoder",
+    "link": "https://atcoder.jp/contests/agc010/tasks/agc010_f"
+  },
+  {
+    "source": "AT_ARC069D.cpp",
+    "destination": "AtCoder/AT_ARC069D.cpp",
+    "sha256": "c912e557c8bec3ebd228d44a59a413ebf17159bc346ca667f99a044f994d45cb",
+    "platform": "AtCoder",
+    "link": "https://atcoder.jp/contests/arc069/tasks/arc069_d"
+  },
+  {
+    "source": "CF1000F.cpp",
+    "destination": "Codeforces/CF1000F.cpp",
+    "sha256": "e68b079ae0e008fd5bf5d03eae07704244ae730cdc0ad2b1fd14deb97dd29c40",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1000/F"
+  },
+  {
+    "source": "CF1039D.cpp",
+    "destination": "Codeforces/CF1039D.cpp",
+    "sha256": "0aaf14390ba65f2f924547e5b7ea68cb56a20bcc639471b5579f20534f8f613d",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1039/D"
+  },
+  {
+    "source": "CF1045G.cpp",
+    "destination": "Codeforces/CF1045G.cpp",
+    "sha256": "b266e78b3f4c0d80784c22d62cc1acf18ea569546efe17f11f1ee34aa61ea42e",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1045/G"
+  },
+  {
+    "source": "CF1153D.cpp",
+    "destination": "Codeforces/CF1153D.cpp",
+    "sha256": "e991a4f72562c847b4c57c875903cd198d2a93c672e51020a6d84956fdca55b8",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1153/D"
+  },
+  {
+    "source": "CF1175F.cpp",
+    "destination": "Codeforces/CF1175F.cpp",
+    "sha256": "2bda7a918ceb2ce508f9aa2a1cddcec4cf7046754d62c28f005c5706d831fb0e",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1175/F"
+  },
+  {
+    "source": "CF11D.cpp",
+    "destination": "Codeforces/CF11D.cpp",
+    "sha256": "cddb61e11b90c791daf37fdf221dfb3de2d3175a50b2269d0a7fc8097d478abb",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/11/D"
+  },
+  {
+    "source": "CF1204E.cpp",
+    "destination": "Codeforces/CF1204E.cpp",
+    "sha256": "7e6137d3f0a53f42516440cb2d5918375b1c89dc029e7f6821fce548b1fbd803",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1204/E"
+  },
+  {
+    "source": "CF1215F.cpp",
+    "destination": "Codeforces/CF1215F.cpp",
+    "sha256": "de263f677da3933bf39094d94f09db9dd15034028fd78134e2a7fb6dcc65d5c4",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1215/F"
+  },
+  {
+    "source": "CF1253F.cpp",
+    "destination": "Codeforces/CF1253F.cpp",
+    "sha256": "52c8301803ee8a7a3939a40c4a8c44fcbdca33ed371d35635f26ad0754de4fa0",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1253/F"
+  },
+  {
+    "source": "CF1295F.cpp",
+    "destination": "Codeforces/CF1295F.cpp",
+    "sha256": "b14f64a8bbad6c77700031c448900697c6707fcad83bae09b7b627166d144b25",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1295/F"
+  },
+  {
+    "source": "CF1320E.cpp",
+    "destination": "Codeforces/CF1320E.cpp",
+    "sha256": "d7a0a021e4ab047028766e68dc8868a20c7a3065cffc45dd1b8cf3fe612542c7",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1320/E"
+  },
+  {
+    "source": "CF1408G.cpp",
+    "destination": "Codeforces/CF1408G.cpp",
+    "sha256": "08dd023bc0b28dc43268a45766c80c56f7c6baaa9801917760db9d085e56aabd",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1408/G"
+  },
+  {
+    "source": "CF1427E.cpp",
+    "destination": "Codeforces/CF1427E.cpp",
+    "sha256": "90fb8df0b72d84cf7536de94b7c60330a5d4ada9f61bb41100574b4489eae65d",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1427/E"
+  },
+  {
+    "source": "CF1454E.cpp",
+    "destination": "Codeforces/CF1454E.cpp",
+    "sha256": "7a428578139be14c36a80a87eefac7bf3c278164074489e187e183a0be5dedda",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1454/E"
+  },
+  {
+    "source": "CF150E.cpp",
+    "destination": "Codeforces/CF150E.cpp",
+    "sha256": "1f452293a49f629f932625667d0dfc162f4f885dc3328e6f41cbdecdb67bba6e",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/150/E"
+  },
+  {
+    "source": "CF1578L.cpp",
+    "destination": "Codeforces/CF1578L.cpp",
+    "sha256": "5381dc3591aadc0225447b80d3da0c36816ea5d1d442e9eecd370d1a024c4306",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1578/L"
+  },
+  {
+    "source": "CF1585G.cpp",
+    "destination": "Codeforces/CF1585G.cpp",
+    "sha256": "4316a16577389b51c7d59df7b1f1d2883d70a3e6dd8a600ebab7f4e391a20b23",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1585/G"
+  },
+  {
+    "source": "CF1628E.cpp",
+    "destination": "Codeforces/CF1628E.cpp",
+    "sha256": "65d310dd6ee8b000bd0102ab4a9ac264007c0641a0367d3a6c74e6d126b6746f",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1628/E"
+  },
+  {
+    "source": "CF1697F.cpp",
+    "destination": "Codeforces/CF1697F.cpp",
+    "sha256": "2bedafd7eeb0726ad627f16dc08381e5dd2791e15d4dd1ed831fb9cb0d5bf283",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1697/F"
+  },
+  {
+    "source": "CF1706E.cpp",
+    "destination": "Codeforces/CF1706E.cpp",
+    "sha256": "9639df66508bbb08d4ebddff9eb4371911e81480b3370c82d2fa958ea507455b",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1706/E"
+  },
+  {
+    "source": "CF1728E.cpp",
+    "destination": "Codeforces/CF1728E.cpp",
+    "sha256": "dc898cd9fd4a8fe86354c4f88667ec27ec3d834107c8e5ceea45e8a788bc22e6",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1728/E"
+  },
+  {
+    "source": "CF1731E.cpp",
+    "destination": "Codeforces/CF1731E.cpp",
+    "sha256": "06bd1eeafe112bccd0c378712ed3635c2ac125c20ae84a1a8443e1f47c9d2514",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1731/E"
+  },
+  {
+    "source": "CF1771F.cpp",
+    "destination": "Codeforces/CF1771F.cpp",
+    "sha256": "efebeb72e21742ad4c9420562604f343a0da3cf5e72fb8dcb39386c6ee9039ba",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1771/F"
+  },
+  {
+    "source": "CF1794E.cpp",
+    "destination": "Codeforces/CF1794E.cpp",
+    "sha256": "75fd1e55a9417d1c2fee71d85d4bfce42c408c4f88e24dc75ba3bcdce19b21e1",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1794/E"
+  },
+  {
+    "source": "CF1839D.cpp",
+    "destination": "Codeforces/CF1839D.cpp",
+    "sha256": "cc6d82db52157dde4827d77dfa1bc7fa498af8e8811d3abfa37c17ea5b24232d",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1839/D"
+  },
+  {
+    "source": "CF1921F.cpp",
+    "destination": "Codeforces/CF1921F.cpp",
+    "sha256": "7947949447e368dd8f72a53da300494dedd6c9d946baaef219f5c14b8ab30077",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1921/F"
+  },
+  {
+    "source": "CF1932G.cpp",
+    "destination": "Codeforces/CF1932G.cpp",
+    "sha256": "5de0499f0c622c6dd390cb67a67b2656731ff564652b569cbfe4db808617dc26",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1932/G"
+  },
+  {
+    "source": "CF198E.cpp",
+    "destination": "Codeforces/CF198E.cpp",
+    "sha256": "3018150a4d1d7b0960ab296cb551444eb62225ecb9b58a2ff3acf475a091eab9",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/198/E"
+  },
+  {
+    "source": "CF1998E1.cpp",
+    "destination": "Codeforces/CF1998E1.cpp",
+    "sha256": "27515195947f66a3a0b17aa01a7c2abaced6be2978f828ff381ce0c46ad2897e",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1998/E1"
+  },
+  {
+    "source": "CF1998E2.cpp",
+    "destination": "Codeforces/CF1998E2.cpp",
+    "sha256": "04b96783da44d35e5dc586bd3222311bbdecea8b801163e52adec4fe5d6ec4e7",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1998/E2"
+  },
+  {
+    "source": "CF2048F.cpp",
+    "destination": "Codeforces/CF2048F.cpp",
+    "sha256": "6e2595dd188a5ed7133d6a6bb6b5f4c7d69173a0026eb9b7b2d7649b2333e8ea",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/2048/F"
+  },
+  {
+    "source": "CF240F.cpp",
+    "destination": "Codeforces/CF240F.cpp",
+    "sha256": "b2c32c99cf65a8ec087735f94ae530eb4df83654eaccc2254c2d848a2ecf9231",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/240/F"
+  },
+  {
+    "source": "CF241E.cpp",
+    "destination": "Codeforces/CF241E.cpp",
+    "sha256": "2bb4937f73bf1cf226fe52c233deb168e917028e233c033ecb63eb3f6901bd5b",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/241/E"
+  },
+  {
+    "source": "CF246E.cpp",
+    "destination": "Codeforces/CF246E.cpp",
+    "sha256": "8d32e170da74ec5b3faa39dbf02fd0325480b251a6caf75e04a816b236d17310",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/246/E"
+  },
+  {
+    "source": "CF285D.cpp",
+    "destination": "Codeforces/CF285D.cpp",
+    "sha256": "2c7256169b36c29f85a402a80c2b7b82417d960edbef6264c9dc12f152ff8cbc",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/285/D"
+  },
+  {
+    "source": "CF293E.cpp",
+    "destination": "Codeforces/CF293E.cpp",
+    "sha256": "5913934d4e66e3fc6791004c349bbef10a0f8b0294df3bc026789b7f9c1118b4",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/293/E"
+  },
+  {
+    "source": "CF337D.cpp",
+    "destination": "Codeforces/CF337D.cpp",
+    "sha256": "9b02a57524fdb504cf46de3b0da8da5e2789b34cddfdb258ee4a981ea8458ec9",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/337/D"
+  },
+  {
+    "source": "CF343D.cpp",
+    "destination": "Codeforces/CF343D.cpp",
+    "sha256": "8ebf5600127f5753adf1928de21af4654f986500faad1f7728fef9cc9779734e",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/343/D"
+  },
+  {
+    "source": "CF375D.cpp",
+    "destination": "Codeforces/CF375D.cpp",
+    "sha256": "7644c37eadf1a3fede1b48d8574ae4658ab1903ec220db1452bdfcb1fa6e092c",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/375/D"
+  },
+  {
+    "source": "CF383C.cpp",
+    "destination": "Codeforces/CF383C.cpp",
+    "sha256": "da3541c3f31ce54c698d190e6bb47c4eff454fdcfe6a84d8e437e2b8ff9ce257",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/383/C"
+  },
+  {
+    "source": "CF388C.cpp",
+    "destination": "Codeforces/CF388C.cpp",
+    "sha256": "0fbb1ba1d7ccd4f064118a0add3a11ef513b54f358eae6096bf542a46b11c0a0",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/388/C"
+  },
+  {
+    "source": "CF414C.cpp",
+    "destination": "Codeforces/CF414C.cpp",
+    "sha256": "af7f0b49fd2b416eb8ef5f20ebc0c8be33a1101c18fbf32f89234487e8f374f1",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/414/C"
+  },
+  {
+    "source": "CF429D.cpp",
+    "destination": "Codeforces/CF429D.cpp",
+    "sha256": "298374d44cc3ab14d8e3c07c1d51c7070930c403f460ad832d24f599a26eec58",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/429/D"
+  },
+  {
+    "source": "CF438D.cpp",
+    "destination": "Codeforces/CF438D.cpp",
+    "sha256": "ebcf46e8421f2836f8c441790127ab39caa841a0bd7030239958dbb9acc89bd9",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/438/D"
+  },
+  {
+    "source": "CF446C.cpp",
+    "destination": "Codeforces/CF446C.cpp",
+    "sha256": "188864e1607c9a63ca887f9255a8ff969767fc4e4f793a6466488aa1fd0937ca",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/446/C"
+  },
+  {
+    "source": "CF44G.cpp",
+    "destination": "Codeforces/CF44G.cpp",
+    "sha256": "c23da04a21f084fd7c98cff5095b39e7432be0bd543b62548949da5ecea552ea",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/44/G"
+  },
+  {
+    "source": "CF461B.cpp",
+    "destination": "Codeforces/CF461B.cpp",
+    "sha256": "4093c591fa837a3ea526b81b9a613202a3be096a7005ccdcac353d2592c99dab",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/461/B"
+  },
+  {
+    "source": "CF490F.cpp",
+    "destination": "Codeforces/CF490F.cpp",
+    "sha256": "88a7ada16e01ca857e1ae8328c19e284fffc175a0cda8243900a400bb2ea15c3",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/490/F"
+  },
+  {
+    "source": "CF501D.cpp",
+    "destination": "Codeforces/CF501D.cpp",
+    "sha256": "289765d319eeba78865e318bc74f228239065b6f951b86f7603918c6d37e89eb",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/501/D"
+  },
+  {
+    "source": "CF525E.cpp",
+    "destination": "Codeforces/CF525E.cpp",
+    "sha256": "0d712fe9f829ddda1862930df10bb67306dc42f5ca1dff35975964a16fef68cb",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/525/E"
+  },
+  {
+    "source": "CF526F.cpp",
+    "destination": "Codeforces/CF526F.cpp",
+    "sha256": "3fd8c54f24db9f4af25c1b00dfe0acc92bb6e21eb9430a1c700ce88904ca37b4",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/526/F"
+  },
+  {
+    "source": "CF570D.cpp",
+    "destination": "Codeforces/CF570D.cpp",
+    "sha256": "82f4ec1e29063f532e8bdfef4d61252e95a4ffdb8633b9f3402c75a36525eec9",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/570/D"
+  },
+  {
+    "source": "CF571A.cpp",
+    "destination": "Codeforces/CF571A.cpp",
+    "sha256": "97bae2c077028cb822b5af33a4159425bc6354a1742c44927f133cf4661f8d52",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/571/A"
+  },
+  {
+    "source": "CF576C.cpp",
+    "destination": "Codeforces/CF576C.cpp",
+    "sha256": "153b8ccdbe9955ae84caaa881075fb6a4574f0cbf454ed9e175ae4d9f7842f91",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/576/C"
+  },
+  {
+    "source": "CF585D.cpp",
+    "destination": "Codeforces/CF585D.cpp",
+    "sha256": "7c18b5eb7ca7e8a89c3b691dbbaed54f89d1ec1bc98ff4b3af265d431114100e",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/585/D"
+  },
+  {
+    "source": "CF587D.cpp",
+    "destination": "Codeforces/CF587D.cpp",
+    "sha256": "c52f4ec813c30aad97048682236be469d20832f704c4748d46265396ade74fbb",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/587/D"
+  },
+  {
+    "source": "CF600D.cpp",
+    "destination": "Codeforces/CF600D.cpp",
+    "sha256": "5f9f7f27e192f50f64f112abc004b060a6883d09a82d6bf1f36b7f0a6de64517",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/600/D"
+  },
+  {
+    "source": "CF600E.cpp",
+    "destination": "Codeforces/CF600E.cpp",
+    "sha256": "9984e0dfdeafaac97457daec72ff3600f2e5801ddfa01f5ba5d5a7264099636a",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/600/E"
+  },
+  {
+    "source": "CF601E.cpp",
+    "destination": "Codeforces/CF601E.cpp",
+    "sha256": "ede50412f257aa01180a12c99afb8031f485535dc3ccee3f331ad31bb148eec6",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/601/E"
+  },
+  {
+    "source": "CF607B.cpp",
+    "destination": "Codeforces/CF607B.cpp",
+    "sha256": "2df21e61539aaaf39d6374559e598ab4aa914357b7a49be18005c555bfa5d68a",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/607/B"
+  },
+  {
+    "source": "CF613D.cpp",
+    "destination": "Codeforces/CF613D.cpp",
+    "sha256": "a75742f9e23c1016ea53c236e8836297dbf6328d7155ca5afb63a018f39eaa7c",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/613/D"
+  },
+  {
+    "source": "CF617E.cpp",
+    "destination": "Codeforces/CF617E.cpp",
+    "sha256": "aeb4d9aaba789ac7f21bc12c1469cd8061d00886380200f2589637c435be9d50",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/617/E"
+  },
+  {
+    "source": "CF626E.cpp",
+    "destination": "Codeforces/CF626E.cpp",
+    "sha256": "11ff7e65671cbb437b1a6afc0b98fe977984b97420c265a7908acc178ae6bce5",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/626/E"
+  },
+  {
+    "source": "CF679A.cpp",
+    "destination": "Codeforces/CF679A.cpp",
+    "sha256": "49ad06312c9bd8f1c5a2ab3ab1c498492e94f0a189dbc352557f869b917f1c5e",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/679/A"
+  },
+  {
+    "source": "CF710D.cpp",
+    "destination": "Codeforces/CF710D.cpp",
+    "sha256": "dfc94936cec1e22b17584275f136732acc4ae045718c029236f59c580d05d477",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/710/D"
+  },
+  {
+    "source": "CF711D.cpp",
+    "destination": "Codeforces/CF711D.cpp",
+    "sha256": "b9a7a103eab4d034f45efd02133e71faa4f678365fa54fafbd0bc80ff2aa705a",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/711/D"
+  },
+  {
+    "source": "CF741D.cpp",
+    "destination": "Codeforces/CF741D.cpp",
+    "sha256": "e850cf8da1aa1a7423ee1319b053375e514b3d104d6ac15c4f4f3ebf5f712cc7",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/741/D"
+  },
+  {
+    "source": "CF786B.cpp",
+    "destination": "Codeforces/CF786B.cpp",
+    "sha256": "d01c3c992a3337307d6bd4a6f174ce91b439b37f6031890b9e3995d04e115249",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/786/B"
+  },
+  {
+    "source": "CF786C.cpp",
+    "destination": "Codeforces/CF786C.cpp",
+    "sha256": "a9774803a23b83bcfaeab92428884a9c68af8911122fc6f838f8c5f7cde58866",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/786/C"
+  },
+  {
+    "source": "CF794E.cpp",
+    "destination": "Codeforces/CF794E.cpp",
+    "sha256": "566655a69602ab38f4f6c000472fa123a1775e93d84241d1efd73ed571ab4965",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/794/E"
+  },
+  {
+    "source": "CF797E.cpp",
+    "destination": "Codeforces/CF797E.cpp",
+    "sha256": "dac23aff35a0a24005589a7bd6197d0a310ddb920d474b4d2e8f52e9536ddffa",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/797/E"
+  },
+  {
+    "source": "CF817E.cpp",
+    "destination": "Codeforces/CF817E.cpp",
+    "sha256": "2f7f35268bde7277df03d80eced6f2e4e1f999ec07478d918893101d7705ce29",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/817/E"
+  },
+  {
+    "source": "CF835F.cpp",
+    "destination": "Codeforces/CF835F.cpp",
+    "sha256": "6770071d59b30aa4e3135a99592c9dcc290adb0bdcc4fc4af7179209225033e7",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/835/F"
+  },
+  {
+    "source": "CF843B.cpp",
+    "destination": "Codeforces/CF843B.cpp",
+    "sha256": "d7e753699f5a340054f85862fce238c532212c6cc3734995f3a5f2dc0bbc54d2",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/843/B"
+  },
+  {
+    "source": "CF848C.cpp",
+    "destination": "Codeforces/CF848C.cpp",
+    "sha256": "3898321cc90df60edfd948190a8f507217523a23f2da9168d60c259970434de6",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/848/C"
+  },
+  {
+    "source": "CF891C.cpp",
+    "destination": "Codeforces/CF891C.cpp",
+    "sha256": "32671cd6aba0d7226cdab85d3c4183c991befc59c6309dfeb7fb9ac6a252b699",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/891/C"
+  },
+  {
+    "source": "CF906D.cpp",
+    "destination": "Codeforces/CF906D.cpp",
+    "sha256": "83fa205d2237ce9907a60f8aa8ac5dff794dea732e9c3c34bf3a73f0bd3ef850",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/906/D"
+  },
+  {
+    "source": "CF911G.cpp",
+    "destination": "Codeforces/CF911G.cpp",
+    "sha256": "5736fed3a0ea4b469e45385ca8d6e39477055dca2d81c7225477a6a80c85c6e1",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/911/G"
+  },
+  {
+    "source": "CF911G_2.cpp",
+    "destination": "Codeforces/CF911G_2.cpp",
+    "sha256": "a5a067da4c460ae4bf8f9995321893939b38ae1fbaa02f89d818a436a2bfa70c",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/911/G"
+  },
+  {
+    "source": "CF915E.cpp",
+    "destination": "Codeforces/CF915E.cpp",
+    "sha256": "6ba6a4802570e9d70e7facaae3ca98679bc68a6cc661e2751153b784b73d27e0",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/915/E"
+  },
+  {
+    "source": "CF920F.cpp",
+    "destination": "Codeforces/CF920F.cpp",
+    "sha256": "d2183b272af100b4be3e8671635be87c2023574e07b23b0113543bf13cd80af7",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/920/F"
+  },
+  {
+    "source": "CF938D.cpp",
+    "destination": "Codeforces/CF938D.cpp",
+    "sha256": "6a0dd5cb4f21cef2729b6dd33c987afc347ac6aba5208bf65a80987635b4ce43",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/938/D"
+  },
+  {
+    "source": "CF940F.cpp",
+    "destination": "Codeforces/CF940F.cpp",
+    "sha256": "8dcac4919a9133b47142a3234525a7732470345f3e8699c0b32f69ca7a1702c3",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/940/F"
+  },
+  {
+    "source": "CF961F.cpp",
+    "destination": "Codeforces/CF961F.cpp",
+    "sha256": "5aa7a2d9384c0ca12447eb9c432215bbf5bad81a5540f9cdfd7a46bee80b6ae1",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/961/F"
+  },
+  {
+    "source": "CF981E.cpp",
+    "destination": "Codeforces/CF981E.cpp",
+    "sha256": "a738f4d291fc798f305fee86bda3f5722b518938667d3a32fa038c4afea27f14",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/981/E"
+  },
+  {
+    "source": "CF985F.cpp",
+    "destination": "Codeforces/CF985F.cpp",
+    "sha256": "847b0d97801957e08469a839db3946ea00e0005c7b38b3bbf497a9a791bea69d",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/985/F"
+  },
+  {
+    "source": "CFGYM103107A.cpp",
+    "destination": "Codeforces/CFGYM103107A.cpp",
+    "sha256": "01cc0ed08fd54af8c0eae1849c8e14d6e8a34eefff3b1372aa6f5eed9b3c8325",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/gym/103107/problem/A"
+  },
+  {
+    "source": "HDU1506.cpp",
+    "destination": "HDU/HDU1506.cpp",
+    "sha256": "fd7832f00bae7eb2683a73807c90b6d5ef67ee3b81d1a07e78f8ad326a448fba",
+    "platform": "HDU",
+    "link": "https://acm.hdu.edu.cn/showproblem.php?pid=1506"
+  },
+  {
+    "source": "HDU1521.cpp",
+    "destination": "HDU/HDU1521.cpp",
+    "sha256": "5e9d43f4ab4093463401bd7a932c3f48a9bdf7684d9a20439da259f2939fe890",
+    "platform": "HDU",
+    "link": "https://acm.hdu.edu.cn/showproblem.php?pid=1521"
+  },
+  {
+    "source": "HDU1573.cpp",
+    "destination": "HDU/HDU1573.cpp",
+    "sha256": "40a7a5c171e00fb5afcad97d6ffbd77bdb2d5c910a5f2c925a9fe58d6828fb03",
+    "platform": "HDU",
+    "link": "https://acm.hdu.edu.cn/showproblem.php?pid=1573"
+  },
+  {
+    "source": "HDU1823.cpp",
+    "destination": "HDU/HDU1823.cpp",
+    "sha256": "83b33751c77ebf9f08179c72f153a0f279aa26d955f05b1225581b31189a1672",
+    "platform": "HDU",
+    "link": "https://acm.hdu.edu.cn/showproblem.php?pid=1823"
+  },
+  {
+    "source": "HDU2063.cpp",
+    "destination": "HDU/HDU2063.cpp",
+    "sha256": "b984972ca345c179035f2124c2833cb59613376970a6fe11995dea57934c7453",
+    "platform": "HDU",
+    "link": "https://acm.hdu.edu.cn/showproblem.php?pid=2063"
+  },
+  {
+    "source": "HDU3549.cpp",
+    "destination": "HDU/HDU3549.cpp",
+    "sha256": "7a2274025e64554c9cf60795f34d9cf028a8980b0d13f39711afe8d7f438e25d",
+    "platform": "HDU",
+    "link": "https://acm.hdu.edu.cn/showproblem.php?pid=3549"
+  },
+  {
+    "source": "HDU3579.cpp",
+    "destination": "HDU/HDU3579.cpp",
+    "sha256": "365345c309daf2b769bee6bb6d6c6c1e34e169b7093bb4269a95d018f0a591e9",
+    "platform": "HDU",
+    "link": "https://acm.hdu.edu.cn/showproblem.php?pid=3579"
+  },
+  {
+    "source": "LC2050.cpp",
+    "destination": "LeetCode/LC2050.cpp",
+    "sha256": "72e01d4d87df62b7c5fbfc07a4342daeb2689c97875408da1e1aaac6a47f0b95",
+    "platform": "LeetCode",
+    "link": "https://leetcode.cn/problems/parallel-courses-iii/"
+  },
+  {
+    "source": "LC851.cpp",
+    "destination": "LeetCode/LC851.cpp",
+    "sha256": "2c0ef86ba307751bf6b7c06b6b9cb4dc7dfd61e99a826ffc55c946e5d3fd8c60",
+    "platform": "LeetCode",
+    "link": "https://leetcode.cn/problems/loud-and-rich/"
+  },
+  {
+    "source": "LOJ101.cpp",
+    "destination": "LibreOJ/LOJ101.cpp",
+    "sha256": "c811c3549ffdd7ec38f43e9af13d37d6858bd435586d5b3d41ef2e24c750f0e5",
+    "platform": "LibreOJ",
+    "link": "https://loj.ac/p/101"
+  },
+  {
+    "source": "LOJ115.cpp",
+    "destination": "LibreOJ/LOJ115.cpp",
+    "sha256": "3056e3468e0c197c18d88460b82955f8761ab063a07883ba8f9fb6fffe6c50f6",
+    "platform": "LibreOJ",
+    "link": "https://loj.ac/p/115"
+  },
+  {
+    "source": "LOJ116.cpp",
+    "destination": "LibreOJ/LOJ116.cpp",
+    "sha256": "1e0f08334ff0b60b30739a6388dd6f56753198cde8f8774b616880d7e20aee52",
+    "platform": "LibreOJ",
+    "link": "https://loj.ac/p/116"
+  },
+  {
+    "source": "LOJ117.cpp",
+    "destination": "LibreOJ/LOJ117.cpp",
+    "sha256": "eabe8a0d616a59b83672d1686605b44c9260d097f42acbf6b0eca601320deea3",
+    "platform": "LibreOJ",
+    "link": "https://loj.ac/p/117"
+  },
+  {
+    "source": "P10281.cpp",
+    "destination": "洛谷/P10000-P10499/P10281.cpp",
+    "sha256": "0bc295c6f0d9aede18036b8ea910f7cd0d95ed00f15231c27cd314848aa6ed71",
+    "platform": "洛谷",
+    "link": "https://www.luogu.com.cn/problem/P10281"
+  },
+  {
+    "source": "P3513.cpp",
+    "destination": "洛谷/P3500-P3999/P3513.cpp",
+    "sha256": "4df317081646625342d12bcee02f136137b9a6c653342b6475a841e8bf706ff7",
+    "platform": "洛谷",
+    "link": "https://www.luogu.com.cn/problem/P3513"
+  },
+  {
+    "source": "QOJ17412.cpp",
+    "destination": "QOJ/QOJ17412.cpp",
+    "sha256": "1c7d6795fee558ff1a11dc00d46bfe13ebd4ba7b1a98f679f9034abda0e684da",
+    "platform": "QOJ",
+    "link": "https://qoj.ac/problem/17412"
+  },
+  {
+    "source": "qoj22916.cpp",
+    "destination": "QOJ/QOJ22916.cpp",
+    "sha256": "b70ac8f3a8236389ab69d174351cf0d5c5610e72ad7e5a83df3d0e2ccb4c55d4",
+    "platform": "QOJ",
+    "link": "https://qoj.ac/problem/22916/statement/en"
+  },
+  {
+    "source": "SPOJ_DYNALCA.cpp",
+    "destination": "SPOJ/SPOJ_DYNALCA.cpp",
+    "sha256": "bd72033c39245c964c7e78cb601099aff5e490ec6cf312a2fa97e2558d9f4214",
+    "platform": "SPOJ",
+    "link": "https://www.spoj.com/problems/DYNALCA/"
+  },
+  {
+    "source": "SPOJ_DYNALCA_2.cpp",
+    "destination": "SPOJ/SPOJ_DYNALCA_2.cpp",
+    "sha256": "879d77e543a15dbf8d31e0e1ac22a9fda2fe32afd3fa9d5ed70fb4b80e6775ec",
+    "platform": "SPOJ",
+    "link": "https://www.spoj.com/problems/DYNALCA/"
+  },
+  {
+    "source": "SPOJ_GSS3.cpp",
+    "destination": "SPOJ/SPOJ_GSS3.cpp",
+    "sha256": "9be0635e5e9be19419fdc38830732597b3036b98f69cb43e84a580421183c32a",
+    "platform": "SPOJ",
+    "link": "https://www.spoj.com/problems/GSS3/"
+  },
+  {
+    "source": "UOJ87.cpp",
+    "destination": "UOJ/UOJ87.cpp",
+    "sha256": "e3dd7dc663ed6a035733a02d6787aa1cb4f850b41c442b58fa15de28cf2b0f4e",
+    "platform": "UOJ",
+    "link": "https://uoj.ac/problem/87"
+  },
+  {
+    "source": "UVA11526.cpp",
+    "destination": "UVa/UVA11526.cpp",
+    "sha256": "44b7d93788271261542231f9cb3dcb3eb8ebdf85ad28c2b96a0022659bac6575",
+    "platform": "UVa",
+    "link": "https://onlinejudge.org/external/115/11526.pdf"
+  },
+  {
+    "source": "UVA12775.cpp",
+    "destination": "UVa/UVA12775.cpp",
+    "sha256": "2596614308e4e6e46076e00da406d86c10c66b5b9122a07e3c42b033c8e0b2b7",
+    "platform": "UVa",
+    "link": "https://onlinejudge.org/external/127/12775.pdf"
+  },
+  {
+    "source": "UVA1391.cpp",
+    "destination": "UVa/UVA1391.cpp",
+    "sha256": "76c92e259684d8033220d7f561ee2899ad570b67d820920d4a6d8ad9fa29dc26",
+    "platform": "UVa",
+    "link": "https://onlinejudge.org/external/13/1391.pdf"
+  },
+  {
+    "source": "UVA1464.cpp",
+    "destination": "UVa/UVA1464.cpp",
+    "sha256": "0b93c53921d493046544908da99811b93a9fe560f6e42b77381ea869f72249ac",
+    "platform": "UVa",
+    "link": "https://onlinejudge.org/external/14/1464.pdf"
+  },
+  {
+    "source": "UVA378.cpp",
+    "destination": "UVa/UVA378.cpp",
+    "sha256": "f27a4754aa8675cbd6027556ef6ff64b626940c707c70ac8c64ddb9e81b7fc9a",
+    "platform": "UVa",
+    "link": "https://onlinejudge.org/external/3/378.pdf"
+  },
+  {
+    "source": "UVA756.cpp",
+    "destination": "UVa/UVA756.cpp",
+    "sha256": "e077b903748c002977a9dcadb8bd65dadc405d1e1af3ded7560ed0d8bb23e7b9",
+    "platform": "UVa",
+    "link": "https://onlinejudge.org/external/7/756.pdf"
+  },
+  {
+    "source": "线段树——综合应用2.cpp",
+    "destination": "Codeforces/线段树——综合应用2.cpp",
+    "sha256": "675b49a72bae405cc9c6bb9b8d9c375f333d50faec088ddfb351d679e2c3efd3",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/438/D"
+  },
+  {
+    "source": "1245D.cpp",
+    "destination": "Codeforces/CF1245D.cpp",
+    "sha256": "8e9cf461f410cf1f21e1714a95d355bc67b064dc8ab0bef0804781c4f3571485",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1245/D"
+  },
+  {
+    "source": "abc0164.cpp",
+    "destination": "AtCoder/AT_ABC0164.cpp",
+    "sha256": "9b99a12c58ba68123e2fac1a0d6e486297faf21aaaedb3546989ab592d1785f0",
+    "platform": "AtCoder",
+    "link": "https://atcoder.jp/contests/abc016/tasks/abc016_4"
+  },
+  {
+    "source": "abc224c.cpp",
+    "destination": "AtCoder/AT_ABC224C.cpp",
+    "sha256": "b8ed3c0dba377cc1b5fcb13033f4472d658d289affeac02e74e81a373dec3c0d",
+    "platform": "AtCoder",
+    "link": "https://atcoder.jp/contests/abc224/tasks/abc224_c"
+  },
+  {
+    "source": "arc0182.cpp",
+    "destination": "AtCoder/AT_ARC0182.cpp",
+    "sha256": "afd5ed294be06b9d83cdb45bb68b97be2f3d3768da5d386c2d275fceb522d320",
+    "platform": "AtCoder",
+    "link": "https://atcoder.jp/contests/arc018/tasks/arc018_2"
+  },
+  {
+    "source": "at145c.cpp",
+    "destination": "AtCoder/AT_ARC145C.cpp",
+    "sha256": "0c312f5cd8d0f1b4cc5e4cdeb39b2cadcc0fb3e2692fc817cc88f96746fab62b",
+    "platform": "AtCoder",
+    "link": "https://atcoder.jp/contests/arc145/tasks/arc145_c"
+  },
+  {
+    "source": "at2014c.cpp",
+    "destination": "AtCoder/AT_JOISC2014C.cpp",
+    "sha256": "ea9526e819af70f145bffd4a1d4f39d6744faf1643af6588983158652ee506db",
+    "platform": "AtCoder",
+    "link": "https://atcoder.jp/contests/joisc2014/tasks/joisc2014_c"
+  },
+  {
+    "source": "at202309.cpp",
+    "destination": "AtCoder/AT_PAST202309M.cpp",
+    "sha256": "02de593e89a5ff466362366b6d0a77bca08a4d413073c7cc7ecdf9135cacdeba",
+    "platform": "AtCoder",
+    "link": "https://atcoder.jp/contests/past16-open/tasks/past202309_m"
+  },
+  {
+    "source": "at205E.cpp",
+    "destination": "AtCoder/AT_ABC205E.cpp",
+    "sha256": "5a8ca59aa43da59edddf4873f1dae6b322cbf4e2983bd116960383191771e3f3",
+    "platform": "AtCoder",
+    "link": "https://atcoder.jp/contests/abc205/tasks/abc205_e"
+  },
+  {
+    "source": "ATabc308.cpp",
+    "destination": "AtCoder/AT_ABC308G.cpp",
+    "sha256": "6d27233a34d05dacb9289a0e2289565caf6778d9b99489c00e342455bd90d5c6",
+    "platform": "AtCoder",
+    "link": "https://atcoder.jp/contests/abc308/tasks/abc308_g"
+  },
+  {
+    "source": "atarc065.cpp",
+    "destination": "AtCoder/AT_ARC065C.cpp",
+    "sha256": "a401442b132d5b7b57344b7d75b6529c2711ae5280c8f074487e56bbbfc4984a",
+    "platform": "AtCoder",
+    "link": "https://atcoder.jp/contests/arc065/tasks/arc065_c"
+  },
+  {
+    "source": "ATfps24E.cpp",
+    "destination": "AtCoder/AT_FPS24E.cpp",
+    "sha256": "430b9dc38ff81f214a2726d1b22ca12dd115091055048a6f46fe50dd4ccde06d",
+    "platform": "AtCoder",
+    "link": "https://atcoder.jp/contests/fps-24/tasks/fps_24_e"
+  },
+  {
+    "source": "ATfps24F.cpp",
+    "destination": "AtCoder/AT_FPS24F.cpp",
+    "sha256": "2fa8e239bd4a92520f63759d72193f8d196ae5485a1048c0a0d532ffe44237df",
+    "platform": "AtCoder",
+    "link": "https://atcoder.jp/contests/fps-24/tasks/fps_24_f"
+  },
+  {
+    "source": "CCPCd.cpp",
+    "destination": "QOJ/QOJ14550.cpp",
+    "sha256": "ed724ecd1daf0d712876f5b28ce949db993a5c581ae0da1056fff63b4005fc6f",
+    "platform": "QOJ",
+    "link": "https://qoj.ac/problem/14550"
+  },
+  {
+    "source": "CF1335B.cpp",
+    "destination": "Codeforces/CF135B.cpp",
+    "sha256": "26f00692f69fe61e73cc59f012884fa475f07c6fa441d554a7a8128084d229c5",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/135/B"
+  },
+  {
+    "source": "CF1746E.cpp",
+    "destination": "Codeforces/CF1746F.cpp",
+    "sha256": "2d3111b28c76023b7f2c53ff92ede0677873d22a77facb425dd6bd48079a2506",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/1746/F"
+  },
+  {
+    "source": "CF505E.cpp",
+    "destination": "Codeforces/CF507E.cpp",
+    "sha256": "c1246c35353107545e3112b411a0d6e2b4585d8f45d2d0dfc0c82d1e65d48e16",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/507/E"
+  },
+  {
+    "source": "CF631D.cpp",
+    "destination": "Codeforces/CF613D_2.cpp",
+    "sha256": "204ea71b6c18f950bfbcdf6f7be3cd232b3cf6ab0881737b24fee8f4177e14c6",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/problemset/problem/613/D"
+  },
+  {
+    "source": "SP10707.cpp",
+    "destination": "SPOJ/SPOJ_COT2.cpp",
+    "sha256": "a5cf6e25b01bfb12ea0636259fecf3225fffa67b01805476ac0c136bcd880283",
+    "platform": "SPOJ",
+    "link": "https://www.spoj.com/problems/COT2/"
+  },
+  {
+    "source": "SP10707_2.cpp",
+    "destination": "SPOJ/SPOJ_COT2_2.cpp",
+    "sha256": "4d8e8bf0770a38fc9a9f4ef2c3844cd7cc2a6883ed356a83bfda3620ab6db485",
+    "platform": "SPOJ",
+    "link": "https://www.spoj.com/problems/COT2/"
+  },
+  {
+    "source": "SP11470_2.cpp",
+    "destination": "SPOJ/SPOJ_TTM_2.cpp",
+    "sha256": "9d3e2dd1025d4f0cbded09ad5f032c91b60d6682d86490e18769aca12d81c4ba",
+    "platform": "SPOJ",
+    "link": "https://www.spoj.com/problems/TTM/"
+  },
+  {
+    "source": "SP116.cpp",
+    "destination": "SPOJ/SPOJ_INTERVAL.cpp",
+    "sha256": "4682d4928acaa339cbfe8f18c9e103790797e599ae3e16af7f6226856c0f38ce",
+    "platform": "SPOJ",
+    "link": "https://www.spoj.com/problems/INTERVAL/"
+  },
+  {
+    "source": "SP18185.cpp",
+    "destination": "SPOJ/SPOJ_GIVEAWAY.cpp",
+    "sha256": "7820d3e76d8f4d1ca87dee7e9905204fa3de35e2c78d73df6b36092ff29221bd",
+    "platform": "SPOJ",
+    "link": "https://new3.spoj.com/problems/GIVEAWAY/"
+  },
+  {
+    "source": "SP18185_2.cpp",
+    "destination": "SPOJ/SPOJ_GIVEAWAY_2.cpp",
+    "sha256": "f57af9de38c101f03b4c7e3aa1f04ac3014ad0474c0134f8712d1d5027e12e74",
+    "platform": "SPOJ",
+    "link": "https://new3.spoj.com/problems/GIVEAWAY/"
+  },
+  {
+    "source": "SP20644.cpp",
+    "destination": "SPOJ/SPOJ_ZQUERY.cpp",
+    "sha256": "37ebb0cf500414dd2ebb6b9855da9af40ba18da4c4199197aede078c961c0811",
+    "platform": "SPOJ",
+    "link": "https://www.spoj.com/problems/ZQUERY/"
+  },
+  {
+    "source": "SP2713.cpp",
+    "destination": "SPOJ/SPOJ_GSS4.cpp",
+    "sha256": "6387c4f28bf8d38e34de2ae03f2f4a4daa6d43afeff30f9221c3c78dad1e3070",
+    "platform": "SPOJ",
+    "link": "https://www.spoj.com/problems/GSS4/"
+  },
+  {
+    "source": "SP2878.cpp",
+    "destination": "SPOJ/SPOJ_KNIGHTS.cpp",
+    "sha256": "67cbf5880f5d9a059c1c7b47afd7c1e532572d2feb9e8c90ab5dc6b4da4e1d5c",
+    "platform": "SPOJ",
+    "link": "https://br.spoj.com/SPOJ/problems/KNIGHTS/"
+  },
+  {
+    "source": "SP30906.cpp",
+    "destination": "SPOJ/SPOJ_ADAUNIQ.cpp",
+    "sha256": "91ea4b66e255733e1f97ce7a9446bad01f6986f83ec69bbd2778acef69c57bf3",
+    "platform": "SPOJ",
+    "link": "https://www.spoj.com/problems/ADAUNIQ/"
+  },
+  {
+    "source": "SP3267_2.cpp",
+    "destination": "SPOJ/SPOJ_DQUERY_2.cpp",
+    "sha256": "1d21c99a7c1a7a1d7255c3d232f21e9062fa3862f586c6f92383bdbffa519cf2",
+    "platform": "SPOJ",
+    "link": "https://www.spoj.com/problems/DQUERY/"
+  },
+  {
+    "source": "SP4141.cpp",
+    "destination": "SPOJ/SPOJ_ETF.cpp",
+    "sha256": "8e4878a1e52906a17ac2b2967ac3599c95cb9f23c33812022efa6291f2ebc716",
+    "platform": "SPOJ",
+    "link": "https://www.spoj.com/problems/ETF/"
+  },
+  {
+    "source": "SP4141_2.cpp",
+    "destination": "SPOJ/SPOJ_ETF_2.cpp",
+    "sha256": "065c4c09aaac075ebfa7d712519ee4569330e73dcd33b75476fad7fe529cc1ec",
+    "platform": "SPOJ",
+    "link": "https://www.spoj.com/problems/ETF/"
+  },
+  {
+    "source": "T3.cpp",
+    "destination": "Codeforces/CFGYM106072C.cpp",
+    "sha256": "b2187e4e11002f6e5c2088145bd2fbc2576e87ef7177d2fc4240a0ab8b2dfefb",
+    "platform": "Codeforces",
+    "link": "https://codeforces.com/gym/106072/problem/C"
+  },
+  {
+    "source": "洛谷/P1000-P1499/P1472_2.cpp",
+    "destination": "洛谷/P1000-P1499/P1474_2.cpp",
+    "sha256": "a46a418e98ed19ffddecafeeacb25e68d0846883110f5c620f86e8a8f649b2d6",
+    "platform": "洛谷",
+    "link": "https://www.luogu.com.cn/problem/P1474"
+  },
+  {
+    "source": "洛谷/P13000-P13499/P13647.cpp",
+    "destination": "洛谷/P13000-P13499/P13467.cpp",
+    "sha256": "8a03e6b0105ab74c819b3a170cad2400426ff924922dd9ab4934d85ac5591770",
+    "platform": "洛谷",
+    "link": "https://www.luogu.com.cn/problem/P13467"
+  },
+  {
+    "source": "洛谷/P1500-P1999/P1676.c",
+    "destination": "洛谷/P1500-P1999/P1824_2.c",
+    "sha256": "6c86470ed33b324a621259fa4d58e9d6cd2fd95eada4602b2beaa061c5fab8db",
+    "platform": "洛谷",
+    "link": "https://www.luogu.com.cn/problem/P1824"
+  },
+  {
+    "source": "洛谷/P2000-P2499/P225.c",
+    "destination": "洛谷/P2000-P2499/P2255_2.c",
+    "sha256": "d3ed93e936232e2de5da29a2e49985a4e9dd37c5048280136f520d8e52e0e741",
+    "platform": "洛谷",
+    "link": "https://www.luogu.com.cn/problem/P2255"
+  },
+  {
+    "source": "洛谷/P2500-P2999/P2695.cpp",
+    "destination": "洛谷/P2500-P2999/P2691_2.cpp",
+    "sha256": "47f003bf5ab914094e77be32c0877d10da5e998ce2fb80e9e28bd71ad3d2b07b",
+    "platform": "洛谷",
+    "link": "https://www.luogu.com.cn/problem/P2691"
+  },
+  {
+    "source": "洛谷/P3000-P3499/P3135_2.cpp",
+    "destination": "洛谷/P3000-P3499/P3235_2.cpp",
+    "sha256": "077d068ca970b5d42a5fa7672759b4fbd2f339e15bc2ae7f84cc6b880d699cf7",
+    "platform": "洛谷",
+    "link": "https://www.luogu.com.cn/problem/P3235"
+  },
+  {
+    "source": "洛谷/P3000-P3499/P3199.cpp",
+    "destination": "洛谷/P3000-P3499/P3166.cpp",
+    "sha256": "66d609338f4b53e2ac8d4adb426cd3ca73058156a94cd582091d666729bb630e",
+    "platform": "洛谷",
+    "link": "https://www.luogu.com.cn/problem/P3166"
+  },
+  {
+    "source": "洛谷/P5500-P5999/P5296.cpp",
+    "destination": "洛谷/P5500-P5999/P5926.cpp",
+    "sha256": "e539b72a8c2a9850ceff284c65d4e9aceb0ba31519952675d69b0c1bcfda971f",
+    "platform": "洛谷",
+    "link": "https://www.luogu.com.cn/problem/P5926"
+  },
+  {
+    "source": "洛谷/P5500-P5999/P5567.cpp",
+    "destination": "洛谷/P5500-P5999/P5667.cpp",
+    "sha256": "eae309bda04cb14079a2de0816cc7be9aaf534685f99ccd90779b8e88908fdb0",
+    "platform": "洛谷",
+    "link": "https://www.luogu.com.cn/problem/P5667"
+  },
+  {
+    "source": "洛谷/P6000-P6499/P2464_2.cpp",
+    "destination": "洛谷/P6000-P6499/P6136_2.cpp",
+    "sha256": "4b035e26aec1dff9581ec075bc8efda5618855c90719a6ef6fd75104e95f73c0",
+    "platform": "洛谷",
+    "link": "https://www.luogu.com.cn/problem/P6136"
+  }
+]

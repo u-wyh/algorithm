@@ -1,0 +1,46 @@
+// https://www.luogu.com.cn/problem/B3874
+// 题意：给出 N 名学生进入教室的顺序，学号是 0 到 N-1。
+// 每人进门时，和已经在教室里且学号比自己小的人各握一次手，求总次数。
+// 数据范围：2 ≤ N ≤ 3 × 10^5，入场顺序恰好包含每个学号一次。
+// 算法标签：归并排序、逆序对
+
+#include <stdio.h>
+
+#define N 300005
+
+int n;
+int a[N], b[N];
+long long ans = 0;
+
+void merge(int l, int r) {
+    int mid = l + r >> 1;
+    if (l >= r)
+        return;
+    merge(l, mid);
+    merge(mid + 1, r);
+    int i = l, j = mid + 1, k = 0;
+    while (i <= mid && j <= r) {
+        if (a[i] > a[j]) {
+            ans += mid - i + 1;
+            b[++k] = a[j++];
+        } else {
+            b[++k] = a[i++];
+        }
+    }
+    while (i <= mid)
+        b[++k] = a[i++];
+    while (j <= r)
+        b[++k] = a[j++];
+
+    for (int i = l; i <= r; i++)
+        a[i] = b[i - l + 1];
+}
+
+int main() {
+    scanf("%d", &n);
+    for (int i = n; i; i--) // 倒序读入数据
+        scanf("%d", &a[i]);
+    merge(1, n);
+    printf("%lld", ans);
+    return 0;
+}

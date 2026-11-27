@@ -70,10 +70,13 @@ def urls(data: bytes) -> list[str]:
 
 def parse_problem_url(value: str) -> tuple[str, str, int] | None:
     """Return (stable problem ID, source URL, priority); smaller priority wins."""
-    value = value.rstrip("/()") + ("/" if value.endswith("/") else "")
-    parsed = urlparse(value)
-    host = parsed.netloc.lower().removeprefix("www.")
-    path = parsed.path
+    value = value.rstrip(".,;:、，。；）)]")
+    try:
+        parsed = urlparse(value)
+        host = (parsed.hostname or "").lower().removeprefix("www.")
+    except ValueError:
+        return None
+    path = parsed.path.rstrip("/")
     if host == "luogu.com.cn":
         m = re.fullmatch(r"/problem/solution/(P\d+)", path, re.I)
         if m:
@@ -83,7 +86,7 @@ def parse_problem_url(value: str) -> tuple[str, str, int] | None:
         if not m:
             return None
         raw = m[1]
-        if re.fullmatch(r"[PB]\d+", raw, re.I):
+        if re.fullmatch(r"[PBT]\d+", raw, re.I):
             return raw.upper(), value, 1
         if re.fullmatch(r"CF\d+[A-Z]\d?", raw, re.I):
             return raw.upper(), value, 2
@@ -97,16 +100,16 @@ def parse_problem_url(value: str) -> tuple[str, str, int] | None:
             return raw.upper(), value, 2
         return None
     if host == "codeforces.com":
-        m = re.fullmatch(r"/(?:problemset/problem|contest)/(\d+)/(\w+)", path)
+        m = re.fullmatch(r"/(?:problemset/problem/(\d+)|contest/(\d+)(?:/problem)?)/(\w+)", path)
         if m:
-            return "CF" + m[1] + m[2].upper(), value, 0
+            return "CF" + (m[1] or m[2]) + m[3].upper(), value, 0
         m = re.fullmatch(r"/gym/(\d+)/problem/(\w+)", path)
         if m:
             return "CFGYM" + m[1] + m[2].upper(), value, 0
     if host == "atcoder.jp":
-        m = re.fullmatch(r"/contests/([a-z0-9_]+)/tasks/([a-z0-9_]+)", path, re.I)
+        m = re.fullmatch(r"/contests/[a-z0-9_-]+/tasks/([a-z0-9_-]+)", path, re.I)
         if m:
-            return "AT_" + m[2].replace("_", "").upper(), value, 0
+            return "AT_" + m[1].replace("_", "").replace("-", "").upper(), value, 0
     if host == "acm.hdu.edu.cn" and path == "/showproblem.php":
         n = parse_qs(parsed.query).get("pid", [""])[0]
         if n.isdigit():
@@ -123,12 +126,12 @@ def parse_problem_url(value: str) -> tuple[str, str, int] | None:
         m = re.fullmatch(r"/problem/(\d+)", path)
         if m:
             return "UOJ" + m[1], value, 0
-    if host == "spoj.com":
+    if host == "spoj.com" or host.endswith(".spoj.com"):
         m = re.fullmatch(r"/(?:SPOJ/)?problems/([A-Za-z0-9_]+)(?:/.*)?", path)
         if m:
             return "SPOJ_" + m[1].upper(), value, 0
     if host == "onlinejudge.org":
-        m = re.fullmatch(r"/external/\d+/(\d+)\.html", path)
+        m = re.fullmatch(r"/external/\d+/(\d+)\.(?:html|pdf)", path, re.I)
         if m:
             return "UVA" + m[1], value, 0
         internal = parse_qs(parsed.query).get("problem", [""])[0]
@@ -138,10 +141,14 @@ def parse_problem_url(value: str) -> tuple[str, str, int] | None:
     if host == "lightoj.com" and path == "/problem/how-many-points":
         # The official page displays LOJ-1077, distinct from LibreOJ's LOJ.
         return "LIGHTOJ1077", value, 0
-    if host == "leetcode.cn":
-        m = re.fullmatch(r"/problems/([A-Za-z0-9-]+)/?", path)
+    if host in {"leetcode.cn", "leetcode.com"}:
+        m = re.fullmatch(r"/problems/([A-Za-z0-9-]+)(?:/description)?", path)
         if m:
             return "LC_" + m[1].replace("-", "_").upper(), value, 0
+    if host == "qoj.ac":
+        m = re.fullmatch(r"/(?:contest/\d+/)?problem/(\d+)(?:/statement(?:/[a-z-]+)?)?", path, re.I)
+        if m:
+            return "QOJ" + m[1], value, 0
     if host == "ac.nowcoder.com":
         m = re.fullmatch(r"/acm/contest/(\d+)/([A-Za-z0-9]+)", path)
         if m:
@@ -214,7 +221,7 @@ def identify(path: Path) -> tuple[tuple[str, str] | None, str | None]:
 
 def filename_id(name: str) -> str | None:
     stem = Path(name).stem
-    m = re.fullmatch(r"((?:P|B|CFGYM|CF|HDU|POJ|LOJ|UOJ|SPOJ_|AT_|LC)\w+?)(?:_\d+)?", stem, re.I)
+    m = re.fullmatch(r"((?:P|B|CFGYM|CF|HDU|POJ|LOJ|UOJ|QOJ|UVA|SPOJ_|SP|AT_|LC)\w+?)(?:_\d+)?", stem, re.I)
     return m[1].upper() if m else None
 
 
@@ -240,8 +247,8 @@ def archive_index() -> tuple[dict[str, list[Path]], dict[str, list[Path]]]:
     by_url: dict[str, list[Path]] = collections.defaultdict(list)
     review_path = ARCHIVE / "链接待复核清单.md"
     review = set(re.findall(r"^\| ([^|]+\.\w+) \|", review_path.read_text(encoding="utf-8"), re.M)) if review_path.exists() else set()
-    for path in ARCHIVE.iterdir():
-        if path.suffix.lower() not in CODE_EXTS or path.name in review:
+    for path in ARCHIVE.rglob("*"):
+        if not path.is_file() or path.suffix.lower() not in CODE_EXTS or path.name in review:
             continue
         data = path.read_bytes()
         if not data.strip():

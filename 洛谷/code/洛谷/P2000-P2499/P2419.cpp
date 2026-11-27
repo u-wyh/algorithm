@@ -1,0 +1,56 @@
+// https://www.luogu.com.cn/problem/P2419
+// 题意：N 头奶牛进行 M 轮两两对决（胜负不矛盾），
+// 求最终排名能唯一确定的奶牛数。
+// 输出确定的奶牛数目。
+// 数据范围：1 <= N <= 100，1 <= M <= 4500。
+// 算法标签：Floyd、传递闭包
+#include<bits/stdc++.h>
+using namespace std;
+
+int nums[105][105];
+int n,m;
+
+int main()
+{
+    cin>>n>>m;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            nums[i][j]=0;
+        }
+    }
+    for(int i=1;i<=m;i++){
+        int u,v;
+        cin>>u>>v;
+        nums[u][v]=1;
+        nums[v][u]=-1;
+    }
+    for (int bridge = 1; bridge <= n; bridge++) { // 跳板
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (nums[i][bridge] != 0&& nums[bridge][j] != 0&& nums[bridge][j] == nums[i][bridge] ) {
+                    nums[i][j] = nums[i][bridge] ;
+                    nums[j][i] = -nums[i][j];
+                }
+            }
+        }
+    }
+//    for(int i=1;i<=n;i++){
+//        for(int j=1;j<=n;j++){
+//            cout<<nums[i][j]<<' ';
+//        }
+//        cout<<endl;
+//    }
+    int ans=0;
+    for(int i=1;i<=n;i++){
+        int k=1;
+        for(int j=1;j<=n;j++){
+            if(nums[i][j]!=0){
+                k++;
+            }
+        }
+        if(k==n)
+            ans++;
+    }
+    cout<<ans;
+    return 0;
+}

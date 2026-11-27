@@ -1,0 +1,89 @@
+// https://www.luogu.com.cn/problem/P1966
+// 题意：给定两列各 n 根火柴的高度。
+// 每次可以交换同一列中的相邻两根。
+// 先让对应位置的高度差平方和达到最小，再求做到这一点所需的最少交换次数，
+// 答案对 10^8−3 取模。
+// 数据范围：1 ≤ n ≤ 10^5，0 ≤ a_i,b_i < 2^31，
+// 每一列内的高度各不相同。
+// 算法标签：离散化、并查集
+
+#include<bits/stdc++.h>
+using namespace std;
+const int mod = 99999997;
+
+int n;
+int a[100005],b[100005],c[100005],d[100005],A[100005],B[100005];
+int father[100005],Size[100005],Stack[100005];
+
+void build(int n){
+    for(int i=1;i<=n;i++){
+        father[i]=i;
+        Size[i]=1;
+    }
+}
+
+int find(int i){
+    int sz=0;
+    while(i!=father[i]){
+        Stack[sz++]=i;
+        i=father[i];
+    }
+    while(sz>0){
+        father[Stack[--sz]]=i;
+    }
+    return i;
+}
+
+void un(int x,int y){
+    int fx=find(x);
+    int fy=find(y);
+    if(fx!=fy){
+        if(Size[fx]>=Size[fy]){
+            Size[fx]+=Size[fy];
+            father[fy]=fx;
+        }else{
+            Size[fy]+=Size[fx];
+            father[fx]=fy;
+        }
+    }
+}
+
+
+int main()
+{
+    cin>>n;
+    for(int i=1;i<=n;i++){
+        cin>>a[i];
+        A[i]=a[i];
+    }
+    for(int i=1;i<=n;i++){
+        cin>>b[i];
+        B[i]=b[i];
+    }
+    sort(A+1,A+n+1);
+    sort(B+1,B+n+1);
+    for(int i=1;i<=n;i++){
+        c[i]=lower_bound(A+1,A+n+1,a[i])-A;
+        printf("%3d",c[i]);
+    }
+    cout<<endl;
+    for(int i=1;i<=n;i++){
+        d[i]=lower_bound(B+1,B+n+1,b[i])-B;
+        printf("%3d",d[i]);
+    }
+    cout<<endl;
+    build(n);
+    for(int i=1;i<=n;i++){
+        if(c[i]!=d[i]){
+            un(c[i],d[i]);
+        }
+    }
+    int cnt=0;
+    for(int i=1;i<=n;i++){
+        if(Size[c[i]]!=1&&father[c[i]]==c[i]){
+            cnt=(cnt+(Size[c[i]]-1)%mod)%mod;
+        }
+    }
+    cout<<cnt;
+    return 0;
+}

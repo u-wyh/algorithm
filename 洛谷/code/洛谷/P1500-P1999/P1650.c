@@ -1,0 +1,64 @@
+// https://www.luogu.com.cn/problem/P1650
+// 题意：两方各有 n 匹马，每匹马只赛一次。
+// 为每匹田忌的马选一个不同的对手，比对方快赢 200，慢输 200，同速得 0。
+// 求田忌的最高净收益。
+// 数据范围：1 ≤ n ≤ 2000，马速在 [0,100]。
+// 算法标签：贪心、双指针、排序
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#define Max 10000
+
+int tian[Max], king[Max];
+int n, i, j, ii, jj, ans;
+
+// 比较函数，用于qsort
+int cmp(const void *a, const void *b) {
+    return (*(int*)b - *(int*)a);
+}
+
+int main() {
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++) {
+        scanf("%d", &tian[i]);
+    }
+    for (i = 1; i <= n; i++) {
+        scanf("%d", &king[i]);
+    }
+
+    // 使用qsort进行排序
+    qsort(tian + 1, n, sizeof(int), cmp);
+    qsort(king + 1, n, sizeof(int), cmp);
+
+    ans = 0;
+    ii = n;
+    jj = n;
+
+    for (i = 1, j = 1; i <= ii;) {
+        if (tian[i] > king[j]) {
+            ans += 200;
+            i++;
+            j++;
+        } else if (tian[i] < king[j]) {
+            ans -= 200;
+            j++;
+            ii--;
+        } else {
+            if (tian[ii] > king[jj]) {
+                ans += 200;
+                ii--;
+                jj--;
+            } else {
+                if (tian[ii] < king[j]) {
+                    ans -= 200;
+                }
+                ii--;
+                j++;
+            }
+        }
+    }
+
+    printf("%d\n", ans);
+    return 0;
+}

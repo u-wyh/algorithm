@@ -1,0 +1,78 @@
+// https://www.luogu.com.cn/problem/P1529
+// 题意：给字母编号的无向带权图，Z 是谷仓，大写 A 到 Y 表示有牛的牧场，
+// 小写点只用于通行。
+// 每头牛走各自的最短路到 Z，输出唯一最快到的牛的起点字母和最短距离。
+// 数据范围：1 ≤ 道路数 ≤ 10000，路长为 [1,1000] 内的整数，
+// 允许重边和自环，所有牛都能到 Z。
+// 算法标签：最短路、Dijkstra、优先队列
+
+#include<bits/stdc++.h>
+using namespace std;
+const int MAXN = 55;
+const int MAXM = 20005;
+
+auto compare = [](const pair<int, int>& left, const pair<int, int>& right) {
+    return left.second > right.second; // 注意这里是大于，因为我们想要小根堆
+};
+
+priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(compare)> heap(compare);
+int m;
+int dis[MAXN];
+int head[MAXN];
+int Next[MAXM];
+int to[MAXM];
+int weight[MAXM];
+int cnt=1;
+bool vis[MAXN];
+
+int main()
+{
+    cin>>m;
+    for(int i=1;i<=m;i++){
+        char a,b;
+        int u,v,w;
+        cin>>a>>b>>w;
+        u=a-'A'+1;
+        v=b-'A'+1;
+
+        Next[cnt]=head[u];
+        to[cnt]=v;
+        weight[cnt]=w;
+        head[u]=cnt++;
+
+        Next[cnt]=head[v];
+        to[cnt]=u;
+        weight[cnt]=w;
+        head[v]=cnt++;
+    }//这道题建议使用邻接表  有重边
+    for(int i=1;i<=54;i++){
+        dis[i]=1e9;
+    }
+    dis[26]=0;
+    heap.push({26,0});
+    while(!heap.empty()){
+        int u=heap.top().first;
+        heap.pop();
+        if(vis[u]){
+            continue;
+        }
+        vis[u]=true;
+        for(int i=head[u];i>0;i=Next[i]){
+            int v=to[i];
+            int w=weight[i];
+            if(!vis[v]&&w+dis[u]<dis[v]){
+                dis[v]=w+dis[u];
+                heap.push({v,dis[v]});
+            }
+        }
+    }
+    int ans1=1e9,ans2=0;
+    for(int i=1;i<=25;i++){
+        if(ans1>dis[i]){
+            ans2=i;
+            ans1=dis[i];
+        }
+    }
+    printf("%c %d",ans2+'A'-1,dis[ans2]);
+    return 0;
+}

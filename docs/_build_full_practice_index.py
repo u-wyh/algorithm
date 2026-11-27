@@ -26,7 +26,7 @@ CATEGORIES = [
 TOP = {f"{i:02}_" + name: name for i, name in enumerate(CATEGORIES[:9], 1)}
 ID_RE = re.compile(
     r"(?:P\d+|B\d+|CFGYM\d+[A-Z]\d*|CF\d+[A-Z]\d*|HDU\d+|POJ\d+|"
-    r"LOJ\d+|UOJ\d+|UVA\d+|SP\d+|SPOJ_[A-Z0-9_]+|AT_[A-Z0-9_]+|"
+    r"LOJ\d+|UOJ\d+|QOJ\d+|UVA\d+|SP\d+|SPOJ_[A-Z0-9_]+|AT_[A-Z0-9_]+|"
     r"LC\d+|U\d+|NC_\d+_[A-Z0-9]+)", re.I
 )
 CF_CATEGORY = {
@@ -72,8 +72,6 @@ CODE_CLASSIFICATION = {
     "FILE:t5.cpp": ("DFS 判树", "图论"),
     "FILE:t6.cpp": ("拓扑排序、DAG 动态规划", "图论"),
     "FILE:t9.cpp": ("Treap", "数据结构"),
-    "FILE:test6(1).cpp": ("控制台游戏", "其他程序"),
-    "FILE:test6(2).cpp": ("控制台游戏", "其他程序"),
     "FILE:第六章1.cpp": ("树的遍历", "树上问题"),
     "HDU1506": ("单调栈", "数据结构"),
     "HDU1521": ("生成函数", "数学数论"),
@@ -220,32 +218,26 @@ def source_link(problem: str, confirmed: str | None, snapshot: dict) -> str | No
 
 
 def main() -> None:
+    from _preview_practice_archive import scan_archive
+
     old_index = load_old_index()
     snapshot = json.loads(SNAPSHOT.read_text(encoding="utf-8"))
     definitions = snapshot["tag_defs"]
     records = collections.defaultdict(lambda: {"archive": [], "templates": [], "topics": [], "urls": [], "notes": []})
-    archive_paths = sorted(p for p in ARCHIVE.iterdir() if p.suffix.lower() in EXTENSIONS)
+    archive_entries = scan_archive(ARCHIVE)
 
-    for path in archive_paths:
+    for entry in archive_entries:
+        path = ARCHIVE / entry.source
         name_id = file_id(path)
-        identified, issue = old_index.identify(path)
-        linked_id = identified[0] if identified else None
-        if name_id and linked_id and name_id != linked_id and not (
-            name_id.startswith("SPOJ_") and linked_id.startswith("SP")
-        ) and not (name_id.startswith("LC") and linked_id.startswith("LC_")):
-            key = "FILE:" + path.name
-            note = f"文件名 {name_id} 与现有原题链接 {linked_id} 不一致"
-        else:
-            key = name_id or linked_id or "FILE:" + path.name
-            note = issue or ("来源与题号无法确认" if key.startswith("FILE:") else "")
+        key = entry.problem or name_id or "FILE:" + entry.source
+        if name_id and re.fullmatch(r"LC\d+", name_id) and entry.platform == "LeetCode":
+            key = name_id
         item = records[key]
         item["archive"].append(path)
-        if identified:
-            item["urls"].append(identified[1])
-        if note:
-            item["notes"].append(note)
-        if key == "P225":
-            item["notes"].append("官方题库未查到 P225，原文件中的链接待核实")
+        if entry.link:
+            item["urls"].append(entry.link)
+        if entry.review:
+            item["notes"].append(entry.review)
 
     for path in sorted(p for p in TEMPLATES.rglob("*") if p.suffix.lower() in EXTENSIONS):
         identified, _ = old_index.identify(path)
@@ -321,7 +313,7 @@ def main() -> None:
 
     lines = [
         "# 全量算法练习清单", "",
-        f"按当前仓库生成，覆盖 `洛谷/code` 的 **{len(archive_paths)} 份练习代码**，连同 `templates` 中已能确认题号的练习实现，共 **{len(records)} 个题目或待核实文件组**。同题多语言、多版本合并在一行。",
+        f"按当前仓库生成，覆盖 `洛谷/code` 的 **{len(archive_entries)} 份练习代码**，连同 `templates` 中已能确认题号的练习实现，共 **{len(records)} 个题目或待核实文件组**。同题多语言、多版本合并在一行。",
         "",
         "优先按 `templates` 现有专题归类；其余使用[洛谷题目标签](https://www.luogu.com.cn/problem/list)或 [Codeforces 官方标签](https://codeforces.com/apiHelp/methods)。官方标签描述题目可能涉及的知识点，**不证明本仓库这份代码实际使用该解法**。标签快照见[数据文件](练习题官方标签快照.json)，采集日期为 " + snapshot["captured_at"] + "。来源冲突写在备注中；完全没有算法内容的文件列在末尾，未猜测。",
         "",
@@ -363,8 +355,9 @@ def main() -> None:
             lines.append("")
     OUTPUT.write_text("\n".join(lines), encoding="utf-8")
     all_archive = [p for group in grouped.values() for item in group for p in item["archive"]]
-    assert len(all_archive) == len(archive_paths) and set(all_archive) == set(archive_paths)
-    print("archive_files", len(archive_paths))
+    expected_archive = {ARCHIVE / entry.source for entry in archive_entries}
+    assert len(all_archive) == len(expected_archive) and set(all_archive) == expected_archive
+    print("archive_files", len(archive_entries))
     print("problem_or_review_groups", len(records))
     print("categories", {key: len(grouped[key]) for key in CATEGORIES})
     print("evidence", dict(evidence_counts))

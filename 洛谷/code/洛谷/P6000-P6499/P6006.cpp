@@ -1,0 +1,63 @@
+// https://www.luogu.com.cn/problem/P6006
+// 题意：给定长为 N 的整数数组 A 及 Q 次区间询问 [a_i, b_i]
+// 每次询问子数组 A[a_i..b_i] 中
+// 满足 A_i + A_j + A_k = 0 的无序不同下标三元组
+// (i, j, k) 的数量。
+// 数据范围：1 <= N <= 5000，1 <= Q <= 10^5，
+// -10^6 <= A_i <= 10^6，
+// 1 <= a_i <= b_i <= N。
+// 算法标签：区间动态规划、容斥原理、桶计数
+#include<bits/stdc++.h>
+using namespace std;
+const int MAXN = 5005;
+const int MAXM = 2e6+5;
+
+int n,m;
+int nums[MAXN];
+int cnt[MAXM];
+long long f[MAXN][MAXN];
+
+inline int read(){
+    int x=0,f=1;
+    char ch=getchar();
+    while(ch<'0'||ch>'9'){
+        if(ch=='-')
+            f=-1;
+        ch=getchar();
+    }
+    while(ch>='0' && ch<='9')
+        x=x*10+ch-'0',ch=getchar();
+    return x*f;
+}
+
+int main()
+{
+    n=read(),m=read();
+    for(int i=1;i<=n;i++){
+        nums[i]=read();
+    }
+
+    for(int i=1;i<=n;i++){
+        for(int j=i;j<=n;j++){
+            cnt[nums[j]+1000000]=0;
+        }
+        for(int j=i+1;j<=n;j++){
+            if((1000000-nums[i]-nums[j])>=0&&(1000000-nums[i]-nums[j])<=2000000)
+                f[i][j]=cnt[1000000-nums[i]-nums[j]];
+            cnt[1000000+nums[j]]++;
+        }
+    }
+
+    for(int len=3;len<=n;len++){
+        for(int i=1;i<=n-len+1;i++){
+            int j=i+len-1;
+            f[i][j]+=f[i+1][j]+f[i][j-1]-f[i+1][j-1];
+        }
+    }
+    for(int i=1;i<=m;i++){
+        int l,r;
+        l=read(),r=read();
+        printf("%lld\n",f[l][r]);
+    }
+    return 0;
+}
