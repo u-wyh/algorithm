@@ -5,6 +5,7 @@
 // 数据范围：2 < n <= 100，n - 1 <= m <= n(n-1)/2，1 <= i, j <= n，i != j，0 < k <= 100
 // 1 <= d <= m。
 #include<bits/stdc++.h>
+// 算法标签：最短路、Dijkstra
 using namespace std;
 const int MAXN = 101;
 const int MAXM = 10001;

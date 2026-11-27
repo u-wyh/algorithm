@@ -6,6 +6,7 @@
 // Subtask 2 保证 1 <= n, c, m <= 2*10^6；
 // 1 <= x_i <= c，1 <= l <= r <= n。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、离线算法、扫描线
 using namespace std;
 const int MAXN = 2e6+5;
 

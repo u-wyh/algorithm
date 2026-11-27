@@ -11,6 +11,7 @@
 #include<string>
 #include<cstring>
 #include<cstdio>
+// 算法标签：字符串、模拟、map
 using namespace std;
 typedef long long ll;
 ll n,p;

@@ -5,6 +5,7 @@
 // 第一行输入 N, K，接下来 N 行每行 x_i, y_i, k_i。
 // 输出一个实数，四舍五入保留 3 位小数。
 // 数据范围：1 <= N <= 5*10^4，1 <= K <= 30，0 <= x_i, y_i, k_i <= 10^8。
+// 算法标签：二分答案、扫描线、动态规划
 #include<bits/stdc++.h>
 #define int long long
 using namespace std;

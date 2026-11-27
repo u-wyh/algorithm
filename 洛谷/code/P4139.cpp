@@ -4,6 +4,7 @@
 // 输出 T 行，每行一个正整数表示答案。
 // 数据范围：T <= 10^3，p <= 10^7。
 #include<bits/stdc++.h>
+// 算法标签：扩展欧拉定理、欧拉筛、快速幂
 using namespace std;
 #define int long long
 const int MAXN = 1e7+5;

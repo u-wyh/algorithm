@@ -4,6 +4,7 @@
 // 输出满足条件的牧场数。
 // 数据范围：1 <= K <= 100，1 <= N <= 1000，1 <= M <= 10000。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、图论
 using namespace std;
 const int MAXN = 1005;
 const int MAXM = 10005;

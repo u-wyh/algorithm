@@ -4,6 +4,7 @@
 // 求 3^{r_i-l_i+1} 种方案中结果在 [A, B] 内的方案数，对 10^9+7 取模。
 // 数据范围：1 <= N <= 300，1 <= a_i <= 9，1 <= A <= B < 10^18，1 <= Q <= 5*10^4
 // 1 <= l_i <= r_i <= N。
+// 算法标签：数位动态规划、区间动态规划
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

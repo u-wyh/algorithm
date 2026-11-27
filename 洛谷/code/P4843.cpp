@@ -2,6 +2,7 @@
 // 题意：给定一个 n 个点的有向无环图，每次可从任意点出发沿有向边向下滑行并清理经过的边，求最少需要多少次飞行才能清理完所有边。
 // 数据范围：2 <= n <= 100，0 <= m_i < n，无重边且每个点至少连有一条斜坡。
 #include<bits/stdc++.h>
+// 算法标签：上下界网络流、Dinic、最大流
 using namespace std;
 const int MAXN = 105;
 const int MAXV = MAXN+10;

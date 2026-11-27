@@ -3,6 +3,7 @@
 // 求 f[0..n-1] 对 998244353 取模的值。
 // 数据范围：2 <= n <= 10^5，0 <= g_i < 998244353。
 #include<bits/stdc++.h>
+// 算法标签：多项式求逆、NTT
 using namespace std;
 #define int long long
 const int MAXN = 2e5+5;

@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1536
 // 题意：给若干组城镇和已有的双向道路，求至少新增几条道路才使所有城镇互相可达。每组输出一个答案。
 // 数据范围：1 ≤ n < 1000，镇编号 1 到 n，允许重边，单独一行 0 结束输入。
+// 算法标签：并查集
 
 #include<bits/stdc++.h>
 using namespace std;

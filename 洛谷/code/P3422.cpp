@@ -4,6 +4,7 @@
 // 分别判断从 1..n 号空间站出发能否顺利绕圈回到起点，输出 n 行，可行输出 TAK，否则输出 NIE。
 // 数据范围：3 <= n <= 10^6，p_i >= 0，d_i > 0，sum(d_i), sum(p_i) <= 2*10^9。
 #include<bits/stdc++.h>
+// 算法标签：单调队列、前缀和
 using namespace std;
 const int MAXN = 1e6+5;
 

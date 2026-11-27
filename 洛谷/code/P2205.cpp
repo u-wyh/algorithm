@@ -4,6 +4,7 @@
 // 输出总长度。
 // 数据范围：1 <= N <= 10^5，最远距起点 10^9。
 #include<bits/stdc++.h>
+// 算法标签：差分、扫描线、排序
 using namespace std;
 
 struct P{

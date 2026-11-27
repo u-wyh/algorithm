@@ -8,6 +8,7 @@
 // -1000 <= A_i <= 1000（音符美妙度）
 // 1 <= L <= R <= n（和弦长度上下限，保证有解）
 #include<bits/stdc++.h>
+// 算法标签：ST表、优先队列、前缀和
 using namespace std;
 #define int long long
 const int MAXN = 5e5+5;

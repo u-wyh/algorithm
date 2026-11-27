@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= N <= 2500，1 <= M <= 1000，1 <= M_i <= 1000。
 #include<stdio.h>
 #include<limits.h> // 用于INT_MAX
+// 算法标签：动态规划、完全背包、前缀和
 
 #define MAX_N 10010
 

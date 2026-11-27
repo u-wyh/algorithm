@@ -4,6 +4,7 @@
 // RECENTER x 将根换成 x，再从旧根执行 RELEASE。
 // REQUEST x 求当前以 x 为根的子树中，任选起点到当前树根的路径上不同颜色数的平均值。
 // 数据范围：1 ≤ n,m ≤ 10^5，查询答案绝对误差不超过 10^-6。
+// 算法标签：动态树（LCT）、线段树、树上倍增
 
 #include<bits/stdc++.h>
 using namespace std;

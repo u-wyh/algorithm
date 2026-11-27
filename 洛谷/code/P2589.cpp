@@ -4,6 +4,7 @@
 // 输出最小高度（四舍五入取整）。
 // 数据范围：n <= 9，所有输入数绝对值 <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：二分查找、枚举
 using namespace std;
 const int MAXN = 15;
 const double eps = 1e-9;

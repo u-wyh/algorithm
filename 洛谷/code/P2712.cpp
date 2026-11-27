@@ -4,6 +4,7 @@
 // 若能砸毁所有摄像头输出 YES，否则输出剩余无法砸毁的摄像头数量。
 // 数据范围：1 <= n <= 100，0 <= m <= 100，0 <= x, y <= 500。
 #include<bits/stdc++.h>
+// 算法标签：拓扑排序
 using namespace std;
 const int MAXN = 105;
 const int MAXM = 105;

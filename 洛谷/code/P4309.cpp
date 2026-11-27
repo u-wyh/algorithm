@@ -3,6 +3,7 @@
 // 求每次插入后当前序列的最长上升子序列（LIS）长度。
 // 数据范围：N <= 1e5。
 #include<bits/stdc++.h>
+// 算法标签：FHQ-Treap、树状数组、最长上升子序列
 using namespace std;
 const int MAXN = 1e5+5;
 

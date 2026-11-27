@@ -4,6 +4,7 @@
 // 数据范围：1 <= n, m <= 150000，1 <= a_i <= n，0 <= p <= n，p > 0 时 1 <= x <= n
 // p = 0 时 x in {-1, 1}。
 #include <bits/stdc++.h>
+// 算法标签：线段树
 using namespace std;
 
 const int N = 150000 * 3 + 10;

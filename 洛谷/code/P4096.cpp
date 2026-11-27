@@ -5,6 +5,7 @@
 // 输出一行三个整数：编号最小的关键叶节点编号、关键叶节点个数、所有关键叶节点编号的异或和。
 // 数据范围：1 <= n <= 2*10^5，且对 i != 1 其父节点编号小于 i。
 #include<bits/stdc++.h>
+// 算法标签：树形动态规划、深度优先搜索、博弈论
 using namespace std;
 const int MAXN = 2e5+5;
 const int INF = 1e6;

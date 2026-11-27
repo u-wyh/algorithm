@@ -4,6 +4,7 @@
 // 以及新加入一本等级 x、知识值 y 的书。
 // 数据范围：1 <= n, m <= 10^5，其余输入数在 32 位有符号整数内，运算中数值在 [-2^63, 2^63-1] 内。
 #include<bits/stdc++.h>
+// 算法标签：线段树、离散化、前缀和
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

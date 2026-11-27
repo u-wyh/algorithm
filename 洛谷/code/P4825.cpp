@@ -3,6 +3,7 @@
 // 数据范围：2 <= R, C <= 100，1 <= K <= R*C。
 #include<bits/stdc++.h>
 #define int long long
+// 算法标签：动态规划
 const int mod = 1e9 + 7;
 using namespace std;
 int a[105][105], dp[105][105];

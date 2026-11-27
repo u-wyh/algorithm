@@ -5,6 +5,7 @@
 // 数据范围：
 // 0 < N <= 14（棋盘大小）
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、回溯
 using namespace std;
 
 int n;

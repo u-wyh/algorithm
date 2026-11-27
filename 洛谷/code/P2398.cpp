@@ -3,6 +3,7 @@
 // 输出计算结果。
 // 数据范围：n <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：线性筛、欧拉函数、前缀和
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

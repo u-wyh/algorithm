@@ -13,6 +13,7 @@
 // 如下实现是C++的版本，C++版本和java版本逻辑完全一样
 // 提交如下代码，可以通过所有测试用例
 #include<bits/stdc++.h>
+// 算法标签：动态树(LCT)、最小生成树、离线处理
 using namespace std;
 const int MAXN = 2e5+1e3+5;
 

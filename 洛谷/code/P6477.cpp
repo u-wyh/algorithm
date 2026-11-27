@@ -2,6 +2,7 @@
 // 题意：给定长度为 n 的正整数序列 A，定义 f(l, r) 为区间 [l, r] 内不同整数的个数
 // 求 sum_{l=1}^n sum_{r=l}^n (f(l, r))^2 对 10^9+7 取模。
 // 数据范围：1 <= n <= 10^6，1 <= A_i <= 10^9。
+// 算法标签：树状数组、离散化、差分
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

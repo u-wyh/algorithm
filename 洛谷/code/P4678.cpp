@@ -3,6 +3,7 @@
 // 对 10^9+7 取模。
 // 数据范围：T <= 10^4，n <= 500，E <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、组合数学、前缀和
 using namespace std;
 #define int long long
 const int MOD = 1e9+7;

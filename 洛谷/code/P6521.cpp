@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P6521
 // 题意：给定 n 个互不相同的长度为 4 的字符串（字符为 a~z 或 0~9），求有多少对字符串恰好有 D 个对应位置的字符不同。
 // 数据范围：2 <= n <= 5*10^4，1 <= D <= 4。
+// 算法标签：容斥原理、二进制枚举、组合数学
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -4,6 +4,7 @@
 // 数据范围：1 <= N, B <= 20，1 <= K_i <= N，1 <= P_i <= 4 * 10^4，1 <= A_i <= 10^3
 // 1 <= S_{i,j} <= 10^3。
 #include<bits/stdc++.h>
+// 算法标签：状态压缩动态规划、排序
 using namespace std;
 
 struct node{

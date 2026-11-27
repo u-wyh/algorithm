@@ -4,6 +4,7 @@
 // 输出 m 行，每行一个整数表示对应询问的合法子区间个数。
 // 数据范围：n, m <= 60000，字符集为小写字母 a~z。
 #include<bits/stdc++.h>
+// 算法标签：莫队算法、前缀和、离散化
 using namespace std;
 const int MAXN = 6e4+5;
 const int MAXB = 305;

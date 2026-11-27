@@ -4,6 +4,7 @@
 // Q 次独立询问向第 R_i 个圆盘倒入 V_i 的水最终停在何处。
 // 数据范围：2 <= N <= 10^5，1 <= Q <= 2*10^5，1 <= C_i <= 1000，1 <= D_i, V_i <= 10^9
 // 1 <= R_i <= N。
+// 算法标签：倍增、ST表、二分查找
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100010;

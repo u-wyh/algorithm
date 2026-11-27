@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1831
 // 题意：给定闭区间 [x,y]。一个数如果能选某一位为支点，使左右两侧各位数字乘以到支点距离所得的和相等，就是杠杆数。求区间内杠杆数的个数。
 // 数据范围：1 ≤ x ≤ y ≤ 10^18。
+// 算法标签：数位动态规划、记忆化搜索
 
 #include<bits/stdc++.h>
 using namespace std;

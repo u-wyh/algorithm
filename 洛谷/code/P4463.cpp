@@ -2,6 +2,7 @@
 // 题意：统计所有长度为 n、元素互不相同且均属于 [1, k] 的正整数序列的元素乘积之和，对素数 p 取模。
 // 数据范围：k <= 10^9，n <= 500，p <= 10^9，p 为素数且 n + 1 < k < p。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、最短路
 using namespace std;
 const int MAXN = 100005;
 const int MAXM = 200005;

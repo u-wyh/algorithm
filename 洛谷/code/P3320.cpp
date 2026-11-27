@@ -4,6 +4,7 @@
 // 输出 M 行，每行一个整数（若当前有宝物村庄数不超过 1 则输出 0）。
 // 数据范围：1 <= N <= 100000，1 <= M <= 100000，1 <= z <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：最近公共祖先、DFS序、有序集合
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXH = 21;

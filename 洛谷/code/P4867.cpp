@@ -3,6 +3,7 @@
 // 数据范围：1 <= n <= 10^5，1 <= m <= 10^6，1 <= s_i <= n，1 <= l <= r <= n
 // 1 <= a <= b <= n。
 #include<bits/stdc++.h>
+// 算法标签：莫队算法、分块
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 1e6+5;

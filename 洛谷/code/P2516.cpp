@@ -4,6 +4,7 @@
 // 第二行输出最长公共子序列的个数对 10^8 取模的结果。
 // 数据范围：每个序列大写字母个数 <= 5000。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、滚动数组、容斥原理
 using namespace std;
 #define int long long
 const int MOD = 1e8;

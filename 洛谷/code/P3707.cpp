@@ -1,12 +1,14 @@
 // https://www.luogu.com.cn/problem/P3707
 // 题意：输入观测数据组数 n 和操作次数 m，以及初始序列 x_1..x_n 和 y_1..y_n。
-// 支持三种操作：1 L R 用最小二乘直线 y=ax+b 拟合区间 [L, R] 数据并求斜率 a = sum((x_i-x_bar)(y_i-y_bar)) / sum((x_i-x_bar)^2)；
+// 支持三种操作：1 L R 用最小二乘直线 y=ax+b 拟合区间 [L, R] 数据并求斜率 a =
+// sum((x_i-x_bar)(y_i-y_bar)) / sum((x_i-x_bar)^2)；
 // 2 L R S T 将 [L, R] 内的 x_i 加 S、y_i 加 T；
 // 3 L R S T 将 [L, R] 内的 x_i 改为 S+i、y_i 改为 T+i。
 // 对每个 1 操作输出一行斜率 a，绝对或相对误差不超过 10^-5。
 // 数据范围：1 <= n, m <= 10^5，0 <= |S|, |T| <= 10^5，0 <= |x_i|, |y_i| <= 10^5
 // 保证 1 操作分母不为 0。
 #include<bits/stdc++.h>
+// 算法标签：线段树
 using namespace std;
 const int MAXN = 1e5+5;
 

@@ -3,6 +3,7 @@
 // 求满足 0 <= i <= n、0 <= j <= min(i, m) 且组合数 C(i, j) 是 k 的倍数的数对 (i, j) 个数
 // 对 10^9 + 7 取模。
 // 数据范围：1 <= n, m <= 10^18，1 <= t, k <= 100，k 为质数。
+// 算法标签：数位动态规划
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

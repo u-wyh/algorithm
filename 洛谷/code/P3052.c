@@ -7,6 +7,7 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h> // 引入stdlib.h以使用memset
+// 算法标签：状态压缩动态规划
 
 int n, w;
 int a[20];

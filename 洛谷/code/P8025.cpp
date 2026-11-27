@@ -6,6 +6,7 @@
 // 输出一行 k 个整数。
 // 数据范围：1 <= m <= n <= 10^6，1 <= k <= 10^6，1 <= x, y, d <= n，0 <= t <= 10^9。
 //P8025
+// 算法标签：树链剖分、最近公共祖先
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

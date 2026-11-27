@@ -5,6 +5,7 @@
 // 数据范围：2 <= m <= n <= 15000，坐标在长整范围内。
 #include<stdio.h>
 #include<stdlib.h>
+// 算法标签：贪心、排序
 
 int cmp(const void *a,const void *b)
 {

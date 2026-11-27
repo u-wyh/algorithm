@@ -8,6 +8,7 @@
 // 题意：第一行输入 T，每组输入 n, k 及 n 个字符串 w_i；每组输出一行字符串或 EMPTY。
 // 数据范围：2 <= n <= 10^6，2 <= k <= n，1 <= |w_i| <= 10^6
 // sum(|w_i|) <= 10^6（未显式给出 T 上界，受 sum(|w_i|) 限制）。
+// 算法标签：字典树
 #include <bits/stdc++.h>
 using namespace std;
 #define maxn 1000005

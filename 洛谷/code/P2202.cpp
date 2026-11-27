@@ -4,6 +4,7 @@
 // 输出一行答案。
 // 数据范围：2 <= N <= 50000，1 <= K <= 10^6（K 为偶数），|x_i|, |y_i| <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：扫描线、平衡树、双指针
 using namespace std;
 const int N=50005;
 typedef pair<int,int> pii;

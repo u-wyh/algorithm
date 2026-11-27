@@ -6,6 +6,7 @@
 // 输出：op=2 询问第 x 串能否经任意次变换化为第 y 串，能输出 Masuko 否则 Haru。
 // 数据范围：1 <= q, n, m <= 5*10^6，且 n*m <= 10^7。
 // 数据范围：1 <= l <= r <= m，1 <= x, y <= n，op in {1, 2}。
+// 算法标签：并查集、字符串哈希
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

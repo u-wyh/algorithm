@@ -4,6 +4,7 @@
 // 数据范围：T <= 10^5，n <= 2*10^5，m <= 10^7，1 <= l <= r <= 10^9，1 <= a_i <= 10^9
 // sum n <= 2*10^6。
 #include <bits/stdc++.h>
+// 算法标签：组合数学、二分答案、贪心
 using namespace std;
 typedef long long ll;
 const int MAXN = 10200000;

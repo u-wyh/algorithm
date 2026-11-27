@@ -5,6 +5,7 @@
 // 数据范围：1 <= n <= 10^5，1 <= p_i <= 10^9，且所有 p_i 互不相同。
 //P3605
 #include<bits/stdc++.h>
+// 算法标签：树状数组、DFS序、排序
 using namespace std;
 const int MAXN = 1e5+5;
 

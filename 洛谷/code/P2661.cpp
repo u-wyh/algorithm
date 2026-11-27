@@ -6,6 +6,7 @@
 //P2661
 #include<cstdio>
 #include<algorithm>//用到min
+// 算法标签：带权并查集
 using namespace std;
 const int MAXN=200010;
 int a[MAXN],fa[MAXN],dis[MAXN];//含义见上

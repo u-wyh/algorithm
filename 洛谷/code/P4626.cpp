@@ -2,6 +2,7 @@
 // 题意：给定正整数 n，求能被 1 到 n 内所有整数整除的最小正整数（即 lcm(1..n)）对 100000007 取模的结果。
 // 数据范围：n <= 10^8。
 #include<bits/stdc++.h>
+// 算法标签：线性筛、数论、快速幂
 using namespace std;
 const int MAXN = 1e8+5;
 const int MOD = 1e8+7;

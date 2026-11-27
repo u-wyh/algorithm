@@ -4,6 +4,7 @@
 // 每组询问输出一行单词。
 // 数据范围：N <= 5*10^4，M <= 3*10^5，单词长度 <= 15。
 #include<bits/stdc++.h>
+// 算法标签：ST表、RMQ
 using namespace std;
 
 int n,m;

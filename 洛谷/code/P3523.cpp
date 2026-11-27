@@ -4,6 +4,7 @@
 // 输出所有炸药全部引爆所需的最短时间。
 // 数据范围：1 <= m <= n <= 3*10^5，d_i in {0, 1}，1 <= a < b <= n。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、树形动态规划、贪心
 using namespace std;
 const int MAXN = 3e5+5;
 const int INF = 1e9;

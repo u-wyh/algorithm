@@ -5,6 +5,7 @@
 // 对每次 W 查询输出一行一个整数，表示经过的泥土路数量。
 // 数据范围：1 <= n, m <= 250000，1 <= a < b <= n。
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树
 using namespace std;
 const int MAXN = 250005;
 

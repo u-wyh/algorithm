@@ -4,6 +4,7 @@
 // 数据范围：0 <= a <= 10^10001，1 <= b <= 10^10001，a, b 不同时为 19260817 的倍数。
 #include <cstdio>
 #include <cmath>
+// 算法标签：扩展欧几里得算法、数论
 using namespace std;
 #define MOD 19260817
 

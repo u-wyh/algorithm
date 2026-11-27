@@ -4,6 +4,7 @@
 // 输出最大数量。
 // 数据范围：1 <= n <= 10^3，1 <= m <= 10^4，1 <= t <= 2.5*10^7。
 #include <bits/stdc++.h>
+// 算法标签：动态规划
 using namespace std;
 const int M = 1e4+5;
 

@@ -6,6 +6,7 @@
 #include<stdio.h>
 #include<limits.h>
 #include<string.h>
+// 算法标签：动态规划
 
 int min(int a,int b)
 {

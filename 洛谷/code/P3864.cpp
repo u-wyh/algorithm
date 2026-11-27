@@ -1,9 +1,11 @@
 // https://www.luogu.com.cn/problem/P3864
 // 题意：第一行输入一个长度为 1..12 的数字串编号，接下来若干行每行输入一个字典中的大写英文名字。
-// 数字 2~9 分别映射字母：2->ABC, 3->DEF, 4->GHI, 5->JKL, 6->MNO, 7->PRS, 8->TUV, 9->WXY（无 Q 和 Z）。
+// 数字 2~9 分别映射字母：2->ABC, 3->DEF, 4->GHI, 5->JKL, 6->MNO, 7->PRS, 8->TUV
+// 9->WXY（无 Q 和 Z）。
 // 按字典序每行输出所有能由该编号翻译得到且在字典中的名字；若无则输出 NONE。
 // 数据范围：编号长度 1 到 12，字典名字不超过 5000 个（题述准确为 4617 个，均为大写且已按字典序排列）。
 #include<bits/stdc++.h>
+// 算法标签：枚举、字符串
 using namespace std;
 vector<string> Dict; //用Dict存放所有字典中的名字
 string str; //给定的编号

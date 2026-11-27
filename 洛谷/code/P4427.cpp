@@ -4,6 +4,7 @@
 // 数据范围：1 <= n, m <= 300000，1 <= k <= 50。
 #include <cstdio>
 #include <algorithm>
+// 算法标签：LCA、倍增、树上前缀和
 using namespace std;
 
 typedef long long ll;

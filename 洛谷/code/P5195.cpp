@@ -3,6 +3,7 @@
 // 求从 2 到某处 4 再到 3 的最少天数。
 // 数据范围：1 <= W, H <= 1000，输入保证有解。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索
 using namespace std;
 const int MAXN = 1005;
 

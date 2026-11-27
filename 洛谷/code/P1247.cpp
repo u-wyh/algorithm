@@ -6,6 +6,7 @@
 // 输出：第二行输出取完后各堆剩余火柴数。
 // 数据范围：k <= 500000，n_i <= 10^9（洛谷题面未显式标注下界，按正整数计）。
 #include<bits/stdc++.h>
+// 算法标签：博弈论、位运算
 using namespace std;
 const int MAXN = 5e5+5;
 

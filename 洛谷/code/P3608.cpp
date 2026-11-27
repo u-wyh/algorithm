@@ -5,6 +5,7 @@
 // 输出不平衡的奶牛总数。
 // 数据范围：1 <= N <= 10^5，0 <= h_i <= 10^9，所有 h_i 互不相同。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、排序
 using namespace std;
 typedef long long ll;
 const int N = 1000005;

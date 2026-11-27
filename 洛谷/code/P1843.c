@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1843
 // 题意：给定 n 件衣服的湿度。每秒所有衣服自然减少 a 点湿度，另可选至多一件额外减少 b 点。求全部变干所需的最少秒数。
 // 数据范围：1 ≤ n,a,b,w_i ≤ 5×10^5，湿度互不相同。
+// 算法标签：二分答案、贪心、排序
 
 #include<stdio.h>
 #include<stdbool.h>

@@ -5,6 +5,7 @@
 // 后手再选 y ∈ [l_2, r_2] 想最小化 C_{xy}，输出每轮双方最优策略下的得分。
 // 数据范围：1 <= n, m, q <= 10^5，-10^9 <= A_i, B_i <= 10^9，1 <= l_1 <= r_1 <= n
 // 1 <= l_2 <= r_2 <= m。
+// 算法标签：ST表、区间最值查询、分类讨论
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

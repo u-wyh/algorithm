@@ -5,6 +5,7 @@
 #include<stdio.h>
 #include<math.h>
 #include<stdlib.h>
+// 算法标签：贪心、排序、双指针
 
 int cmp(const void *a,const void *b){
     return (*(int *)b-*(int *)a);

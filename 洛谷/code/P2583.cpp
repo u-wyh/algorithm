@@ -4,6 +4,7 @@
 // 求在车站的最小总等待时间，不可达输出 impossible。
 // 数据范围：2 <= N <= 50，0 <= T <= 2000，0 < t_i < 70，1 <= M_1, M_2 <= 50。
 #include<bits/stdc++.h>
+// 算法标签：动态规划
 using namespace std;
 const int MAXN = 55;
 const int MAXT = 2005;

@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1672
 // 题意：某日运来 F1 份饲料，直到第 D 天吃完后还剩 F2。每头牛从到达日至离开日每天吃一份，运来当天也计当天消耗。求符合消耗量的最晚到货日期。
 // 数据范围：1 ≤ C ≤ 100，1 ≤ F2 ≤ F1 ≤ 10^6，1 ≤ D ≤ 2000。
+// 算法标签：差分、前缀和
 
 #include<bits/stdc++.h>
 using namespace std;

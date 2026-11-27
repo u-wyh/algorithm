@@ -3,6 +3,7 @@
 // 对每个起点求能无限走下去所需的最小初始资产（无解输出 -1）。
 // 数据范围：2 <= n, m <= 2*10^5，1 <= a_i, b_i <= n (a_i != b_i)
 // 0 <= r_i, p_i <= 10^9，无自环可能有重边。
+// 算法标签：拓扑排序、贪心、排序
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

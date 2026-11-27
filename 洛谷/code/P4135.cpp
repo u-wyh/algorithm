@@ -7,6 +7,7 @@
 // 输出 m 行，每行一个整数表示答案。
 // 数据范围：1 <= n, c, m <= 10^5，1 <= a_i <= c，1 <= l, r <= n。
 #include<bits/stdc++.h>
+// 算法标签：分块、前缀和
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXB = 405;

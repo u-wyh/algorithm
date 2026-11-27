@@ -5,6 +5,7 @@
 // 数据范围：N <= 100，T <= 1000，1 <= m_i, v_i <= 100。
 #include<stdio.h>
 #include<stdlib.h>
+// 算法标签：贪心、排序
 
 typedef struct
 {

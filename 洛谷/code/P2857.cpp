@@ -4,6 +4,7 @@
 // 输出最小排名区间大小。
 // 数据范围：1 <= N <= 1000，1 <= B <= 20。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、网络流、Dinic
 using namespace std;
 const int MAXN = 1005;
 const int MAXM = 25;

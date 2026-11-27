@@ -4,6 +4,7 @@
 // 输出非病毒的 DNA 串数量。
 // 数据范围：0 < N < 500，模版长 <= 1000，DNA 串长 <= 500。
 #include<bits/stdc++.h>
+// 算法标签：字典树、记忆化搜索
 using namespace std;
 const int MAXN = 250005;
 const int MAXV = 1005;

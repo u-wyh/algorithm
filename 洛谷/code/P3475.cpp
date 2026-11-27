@@ -5,6 +5,7 @@
 // 数据范围：1 <= n <= 26（n 为偶数），1 <= a, b <= n，无重边。
 #include <iostream>
 #include <cstdio>
+// 算法标签：深度优先搜索、状态压缩
 using namespace std;
 
 const int N = 27;

@@ -4,6 +4,7 @@
 // 输入 n, m 及有向边（可能有重边）；分两行输出最优运气下最多赢的筹码数、最劣运气下最少输的筹码数。
 // 数据范围：1 <= n, m <= 5*10^5，1 <= u, v <= n。
 #include<bits/stdc++.h>
+// 算法标签：拓扑排序、贪心、优先队列
 using namespace std;
 const int MAXN = 5e5+5;
 

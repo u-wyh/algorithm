@@ -4,6 +4,7 @@
 // 求无法逃离边界外的蜥蜴数目的最小值。
 // 数据范围：1 <= r, c <= 20，1 <= d <= 4，1 <= h <= 3。
 #include<bits/stdc++.h>
+// 算法标签：最大流、Dinic
 using namespace std;
 const int MAXN = 25;
 const int MAXV = MAXN*MAXN*2;

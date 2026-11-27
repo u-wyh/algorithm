@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <limits.h> // 用于INT_MAX
+// 算法标签：区间动态规划、滚动数组
 
 #define MAX_LEN 1200
 

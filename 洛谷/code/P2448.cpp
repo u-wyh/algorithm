@@ -4,6 +4,7 @@
 // 输出逆序对个数。
 // 数据范围：k <= 10^5，x_i, y_i <= 2^31-1。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、离散化、逆序对
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

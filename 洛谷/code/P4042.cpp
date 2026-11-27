@@ -6,6 +6,7 @@
 // 数据范围：对于所有数据，2 <= N <= 2 * 10^5，1 <= R_i, sum(R_i) <= 10^6
 // 1 <= K_i, S_i <= 5 * 10^{14}。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、动态规划、拓扑排序
 using namespace std;
 #define int long long
 const int INF = 1e16;

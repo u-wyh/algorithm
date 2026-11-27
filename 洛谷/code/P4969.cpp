@@ -4,6 +4,7 @@
 // 以及查询区间 [a, b]（不保证 a <= b）内 hard <= Talent 的题目个数乘以 600。
 // 数据范围：0 <= n, m <= 5 * 10^5，所有输入在 [0, 2^31 - 1] 内，运算中间结果可能超出 [0, 2^63 - 1]。
 #include<bits/stdc++.h>
+// 算法标签：线段树
 using namespace std;
 const int MAXN = 5e5+5;
 

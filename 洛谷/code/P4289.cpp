@@ -3,6 +3,7 @@
 // 求从初始状态变到目标状态的最少移动步数。
 // 数据范围：固定 4*4 网格。
 #include<bits/stdc++.h>
+// 算法标签：双向广度优先搜索、状态压缩
 using namespace std;
 const int MAXN = 1<<16;
 

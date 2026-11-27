@@ -7,6 +7,7 @@
 // 数据范围：对于 100% 的数据，1 <= n, m, q <= 10^5，1 <= x1 <= x2 <= n，1 <= y1 <= y2 <= m
 // 1 <= x <= n，1 <= y <= m。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、容斥原理
 using namespace std;
 #define MAXN 100005
 int n,m,q;

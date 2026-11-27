@@ -13,6 +13,7 @@
 // 1 <= y <= 2 * 10^8（操作 1 中的新编号，且不在当前队列中）
 // 1 <= k <= n（操作 4）
 #include <bits/stdc++.h>
+// 算法标签：Splay、平衡树
 using namespace std;
 const int MAX = 330000;
 map<int, int> f;

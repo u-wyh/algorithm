@@ -5,6 +5,7 @@
 // 0 <= a_i <= b_i < c_i <= d_i <= 10^9。
 #include <bits/stdc++.h>
 #define MAXN 500010
+// 算法标签：排序、动态规划
 using namespace std;
 
 int n, m, p, t, tote;

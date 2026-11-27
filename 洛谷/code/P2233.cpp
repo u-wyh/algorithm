@@ -5,6 +5,7 @@
 // 数据范围：4 <= n <= 10^7。
 //P2233
 #include<bits/stdc++.h>
+// 算法标签：矩阵快速幂
 using namespace std;
 
 // 矩阵相乘

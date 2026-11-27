@@ -5,6 +5,7 @@
 // 数据范围：1 <= N <= 10^6，1 <= x <= N。
 //P3420
 #include<bits/stdc++.h>
+// 算法标签：并查集
 using namespace std;
 const int MAXN=1000005;
 int fa[MAXN];

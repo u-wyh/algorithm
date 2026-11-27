@@ -7,6 +7,7 @@
 // 3 <= n < 200（节点数）
 // 2 <= k < 100（树的深度）
 #include<bits/stdc++.h>
+// 算法标签：背包动态规划
 using namespace std;
 #define int long long
 const int MAXN = 1e4+5;

@@ -3,6 +3,7 @@
 // 求 l 的最大值；若无法切出 1cm 的小段，输出 0。
 // 数据范围：1 <= n <= 10^5，1 <= k <= 10^8，1 <= L_i <= 10^8。
 #include<stdio.h>
+// 算法标签：二分答案
 
 int check(int x,int *nums,int n){
     int k=0;

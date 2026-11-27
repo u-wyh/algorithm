@@ -4,6 +4,7 @@
 // 对每个询问输出区间 [l, r] 的元素和，若无法唯一确定则输出 UNKNOWN。
 // 数据范围：1 <= N, M, Q <= 10^5，-10^12 <= S_i <= 10^12，1 <= l_i <= r_i <= N
 // 1 <= l <= r <= N。
+// 算法标签：广度优先搜索、并查集、前缀和
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -3,6 +3,7 @@
 // opt=0 要求从左到右行号单调不降。
 // 数据范围：T <= 50，N <= 10^18，M <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：组合数学、逆元、快速幂
 using namespace std;
 #define int long long
 const int MOD = 1e9+7;

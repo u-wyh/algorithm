@@ -4,6 +4,7 @@
 // 对每组询问输出答案对 2^31 取模的结果。
 // 数据范围：1 <= Q <= 2*10^4，1 <= n, m <= 10^5，|a| <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：莫比乌斯反演、数论分块、树状数组
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 2e4+5;

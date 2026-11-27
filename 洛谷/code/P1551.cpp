@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1551
 // 题意：给 n 个人和 m 对双向亲戚关系。亲戚关系可以沿着若干人传递。对每对查询，判断两人是否属于同一个亲戚群，输出 Yes 或 No。
 // 数据范围：n,m,p 均不超过 5000，人员编号在 [1,n]。
+// 算法标签：并查集
 
 #include<bits/stdc++.h>
 using namespace std;

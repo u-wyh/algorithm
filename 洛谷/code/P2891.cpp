@@ -8,6 +8,7 @@
 #include <vector>
 #include <queue>
 #include <cstring>
+// 算法标签：最大流、Dinic
 using namespace std;
 
 const int MAXN = 500;  // 最大节点数

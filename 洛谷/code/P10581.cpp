@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10581
 // 题意：给一个小写字符串 S 和长度 n。统计有多少个长为 n 的小写字符串，其中 S 作为连续子串恰好出现两次。答案对 998244353 取模。
 // 数据范围：1 ≤ n ≤ 10^9，S 长度在 [1,30]。
+// 算法标签：KMP自动机、矩阵快速幂
 
 #include<bits/stdc++.h>
 using namespace std;

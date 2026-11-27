@@ -5,6 +5,7 @@
 // 矩形坐标 A_i, B_i, C_i, D_i 及射击坐标 X_j, Y_j、颜色 K_j 均在 [1, 10^9] 内。
 #include<bits/stdc++.h>
 #define N 200005
+// 算法标签：扫描线、启发式合并
 using namespace std;
 int n,m,cnt,rt,fa[N];
 int h[N],ans[N];

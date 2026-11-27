@@ -5,6 +5,7 @@
 // 数据范围：n <= 32767，|a_i| <= 10^6，保证结果 < 2^31。
 #include <bits/stdc++.h>
 #define int long long
+// 算法标签：替罪羊树、平衡树
 using namespace std;
 
 const double ALPHA = 0.7;

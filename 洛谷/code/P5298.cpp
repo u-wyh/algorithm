@@ -4,6 +4,7 @@
 // 求 sum_{i=1}^m i * V_i * D_i^2 对 998244353 取模。
 // 数据范围：1 <= n <= 3*10^5，1 <= w_i <= 10^9，0 < p_i * 10000 < 10000。
 #include<bits/stdc++.h>
+// 算法标签：线段树合并、树形动态规划
 using namespace std;
 const int MAXN = 3e5+5;
 const int MAXT = MAXN*40;

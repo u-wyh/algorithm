@@ -4,6 +4,7 @@
 // 数据范围：1 <= n <= 150，1 <= m <= 6000。
 // 这道题的大思路是转换成二分图匹配的知识  求最大匹配
 #include<bits/stdc++.h>
+// 算法标签：二分图匹配、最大流、最小路径覆盖
 using namespace std;
 const int MAXN = 155;
 const int MAXM = 6005;

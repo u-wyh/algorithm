@@ -3,6 +3,7 @@
 // 数据范围：1 <= n, m <= 10^5，1 <= v_i <= m。
 #include<stdio.h>
 #define mod 998244353
+// 算法标签：动态规划、完全背包
 
 int max(int a,int b)
 {

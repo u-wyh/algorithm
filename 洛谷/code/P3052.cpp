@@ -5,6 +5,7 @@
 // 输出一行一个整数 R，表示最少电梯次数。
 // 数据范围：对于 100% 的数据，1 <= N <= 18，1 <= W <= 10^8，1 <= C_i <= W。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、剪枝
 using namespace std;
 int n,m,c[19],tot,ans=1e9,b[19];
 

@@ -5,6 +5,7 @@
 // 输出一个整数表示小组数量。
 // 数据范围：1 <= N <= 10^5，1 <= T, x_i, v_i <= 10^9，x_i 严格递增。
 #include<bits/stdc++.h>
+// 算法标签：贪心、模拟
 
 using namespace std;
 long long n,t,last[100005];

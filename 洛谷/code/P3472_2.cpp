@@ -4,6 +4,7 @@
 // 输出一行两个整数，分别表示所有可能开枪顺序下最少死亡人数和最多死亡人数。
 // 数据范围：1 <= n <= 1000000，1 <= s_i <= n。
 #include<bits/stdc++.h>
+// 算法标签：基环树、树形动态规划、拓扑排序
 using namespace std;
 const int MAXN = 1e6+5;
 const int INF = 1e6+10;

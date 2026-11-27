@@ -11,6 +11,7 @@
 // 数据范围：|a_i| <= 2 * 10^5
 // 数据范围：0 <= x_i <= 8 * 10^5
 #include<bits/stdc++.h>
+// 算法标签：凸包、二分查找、前缀和
 using namespace std;
 #define int long long
 const int MAXN = 2e5+5;

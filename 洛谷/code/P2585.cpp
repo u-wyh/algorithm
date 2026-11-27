@@ -4,6 +4,7 @@
 // 输出最多和最少有多少个节点染成绿色。
 // 数据范围：1 <= |s| <= 5*10^5。
 #include<bits/stdc++.h>
+// 算法标签：树形动态规划、深度优先搜索
 using namespace std;
 const int MAXN = 5e5+5;
 

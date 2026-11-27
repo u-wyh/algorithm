@@ -4,6 +4,7 @@
 // 输入 t 及 t 组 (n, k)；每组输出模 1145141 的结果，若分母不互质无逆元则输出 -1。
 // 数据范围：1 <= t <= 100000，1 <= n <= 10^9，2 <= k <= 10^9，1145141 是质数。
 #include<bits/stdc++.h>
+// 算法标签：卢卡斯定理、快速幂、组合数学
 using namespace std;
 #define int long long
 const int MOD = 1145141;

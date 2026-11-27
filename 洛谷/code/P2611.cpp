@@ -4,6 +4,7 @@
 // 输出子矩形个数。
 // 数据范围：1 <= R, C <= 4*10^4，1 <= N <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：笛卡尔树、FHQ-Treap、扫描线
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 4e4+5;

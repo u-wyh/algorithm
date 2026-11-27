@@ -5,6 +5,7 @@
 // 对每个操作 2，输出一行一个整数表示答案。
 // 数据范围：对于 100% 的数据，2 <= n, m <= 2 * 10^5。
 #include<bits/stdc++.h>
+// 算法标签：线段树
 using namespace std;
 const int MAXN = 2e5+5;
 

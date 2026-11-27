@@ -8,6 +8,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #define MAXN 205
+// 算法标签：贪心、排序
 
 // 比较函数，用于qsort
 int cmp(const void *x, const void *y) {

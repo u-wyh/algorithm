@@ -6,6 +6,7 @@
 // 数据范围：1 <= n <= 100。
 // 数据范围：-200 <= x, y <= 200。
 #include<bits/stdc++.h>
+// 算法标签：计算几何
 using namespace std;
 
 struct Point{

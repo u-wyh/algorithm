@@ -4,6 +4,7 @@
 // 输出第一行为最小的 k，随后 m 行每行输出 1（a_i 胜）或 0（b_i 胜）。
 // 数据范围：1 <= n, m <= 10^4，1 <= a_i, b_i <= n，同一对玩家可多次出现。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、网络流、Dinic
 using namespace std;
 const int MAXN = 1e4+5;
 const int MAXV = 2*MAXN;

@@ -5,6 +5,7 @@
 // 对每个 Q 操作输出一行一个整数表示最短距离。
 // 数据范围：1 <= N, Q <= 10^5，1 <= I <= N，所有坐标在 [-1000, 1000] 内。
 #include<bits/stdc++.h>
+// 算法标签：线段树
 using namespace std;
 const int MAXN = 1e5+5;
 

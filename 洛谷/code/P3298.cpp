@@ -8,6 +8,7 @@
 // 0 <= A_{i,j} <= 2^30（题面描述为小于 2^30 的非负整数）
 // K 在 [0, 1, 2, 3, 4, 5, 6] 中均匀随机选取
 #include <bits/stdc++.h>
+// 算法标签：容斥原理、状态压缩、排序
 using namespace std;
 
 using ll = long long;

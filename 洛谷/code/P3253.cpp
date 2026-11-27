@@ -4,6 +4,7 @@
 // 输出删除全部物品所需的最少移动步数。
 // 数据范围：1 <= N_1 + N_2 <= 100000，优先级 <= 10^7。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、贪心、排序
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

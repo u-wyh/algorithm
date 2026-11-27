@@ -6,6 +6,7 @@
 // 若游戏无法停止或可将整个数列删空则输出 -1。
 // 数据范围：1 <= n, m <= 10^5，任意时刻 a_i in [1, n]，1 <= p <= n
 // -n+1 <= x <= n-1 且 -a_p < x <= n-a_p，1 <= l <= r <= n，1 <= p <= q <= n。
+// 算法标签：带修莫队、分块
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

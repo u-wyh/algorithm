@@ -4,6 +4,7 @@
 // 输出每次询问的答案。
 // 数据范围：0 <= n <= 5*10^5，1 <= m <= 5*10^5，0 <= x, y, a, b, c, d <= 10^7。
 #include<bits/stdc++.h>
+// 算法标签：CDQ分治、容斥原理、双指针
 using namespace std;
 const int MAXN = 5e5+5;
 const int MAXM = 5e5+5;

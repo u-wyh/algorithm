@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <limits.h>
+// 算法标签：贪心、排序、二分查找
 
 #define ll long long
 #define INF INT_MAX

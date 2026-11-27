@@ -3,6 +3,7 @@
 // 要求连续标记段数在 [l, r] 内且使（各段长度平方和）/ x 最大，输出对应的原始平方和与 x（多解取 x 最大，无解输出 -1 -1）。
 // 数据范围：1 <= N <= 10^6，1 <= T <= 10^3，1 <= Num_i <= 10^6，其余输入数字均在 int 范围内。
 #include<bits/stdc++.h>
+// 算法标签：并查集、线段树
 using namespace std;
 #define int long long
 const int MAXN = 1e6+5;

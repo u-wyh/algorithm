@@ -3,6 +3,7 @@
 // 输入 n、后继序列 a、查询数 m 及每次询问的 S_i, t_1, t_2；每行输出一个目标城市编号。
 // 数据范围：1 <= n <= 400000，m <= 300000，t_1, t_2 <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：倍增、并查集、快速幂
 using namespace std;
 #define int long long
 const int MAXN = 4e5+5;

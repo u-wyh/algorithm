@@ -6,6 +6,7 @@
 // 1 <= n, m <= 20（棋盘行列数）
 // 0 <= m_{i,j} <= 9（单格最大参与交换次数）
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、Dijkstra
 using namespace std;
 const int MAXN = 25;
 const int MAXV = 1e3+5;

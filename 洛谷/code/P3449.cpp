@@ -4,6 +4,7 @@
 // 输出一个整数，表示满足条件的新回文串数量。
 // 数据范围：n >= 2，串仅含小写字母且两两不同，所有回文串总长度不超过 2*10^6。
 #include<bits/stdc++.h>
+// 算法标签：字符串哈希、快速幂
 using namespace std;
 #define int long long 
 const int BASE = 131;

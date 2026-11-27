@@ -4,6 +4,7 @@
 // 第一行输出最多拦截数，第二行输出 n 个实数（误差 <= 10^-4）。
 // 数据范围：1 <= n <= 5*10^4，1 <= h_i, v_i <= 10^9，总方案数不超过 double 范围。
 #include<bits/stdc++.h>
+// 算法标签：CDQ分治、树状数组、动态规划
 using namespace std;
 const int MAXN = 5e4+5;
 

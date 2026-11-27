@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1643
 // 题意：每次给整数 X 和排名 N，把严格大于 X 的十进制回文数按升序排列，输出其中第 N 个。
 // 数据范围：1 ≤ T ≤ 10，0 ≤ X ≤ 10^10000，1 ≤ N ≤ 10^10000，答案不超过 10^20001。
+// 算法标签：打表
 
 #include<bits/stdc++.h>
 using namespace std;

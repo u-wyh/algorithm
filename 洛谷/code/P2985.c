@@ -7,6 +7,7 @@
 // 数据范围：对于 100% 的数据，1 <= N <= 5*10^4，1 <= D <= 5*10^4，1 <= H_i <= 10^6。
 #include<stdio.h>
 #include<stdbool.h>
+// 算法标签：二分答案、贪心
 
 #define MAX 50005
 

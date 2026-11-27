@@ -7,6 +7,7 @@
 // 数据范围：对于 100% 的数据，1 <= C, L <= 2500，1 <= minSPF[i] <= maxSPF[i] <= 1000
 // 1 <= SPF[i] <= 1000，1 <= cover[i] <= 2500。
 #include<bits/stdc++.h>
+// 算法标签：贪心、排序
 using namespace std;
 const int MAXN = 2505;
 

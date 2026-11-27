@@ -5,6 +5,7 @@
 // 数据范围：1 <= N <= 5000，1 <= R <= 10^5，1 <= D <= 5000。
 //P2865
 #include<bits/stdc++.h>
+// 算法标签：SPFA、次短路
 using namespace std;
 const int MAXN = 5005;
 const int MAXM = 2e5+5;

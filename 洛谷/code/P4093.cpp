@@ -4,6 +4,7 @@
 // 输出最长子序列长度。
 // 数据范围：1 <= n, m <= 10^5（序列原始值与 y 均为正整数且 <= 10^5），1 <= x <= n。
 #include<bits/stdc++.h>
+// 算法标签：CDQ分治、树状数组、动态规划
 using namespace std;
 const int MAXN = 1e5+5;
 

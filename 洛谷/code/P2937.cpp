@@ -7,6 +7,7 @@
 #include<bits/stdc++.h>
 #include<queue>
 #define inf 0x3f3f3f3f
+// 算法标签：广度优先搜索、深度优先搜索
 using namespace std;
 int n,m;
 int a[110][110];//保存地图

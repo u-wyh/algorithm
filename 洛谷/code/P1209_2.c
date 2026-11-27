@@ -7,6 +7,7 @@
 // 数据范围：1 <= c <= s <= 200。
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：贪心、排序
 
 int compare(const void *a, const void *b) {
     return (*(int*)a - *(int*)b);

@@ -5,6 +5,7 @@
 // 输出：对每个 1 类操作输出一行查询结果。
 // 数据范围：1 <= n, q <= 5*10^5，0 <= g <= 9。
 // 数据范围：1 <= v, u, k <= n，0 <= x < i（i 为当前操作编号）。
+// 算法标签：并查集、分块
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

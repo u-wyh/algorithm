@@ -6,6 +6,7 @@
 // 输出可行方案数对 2^32 取模的余数。
 // 数据范围：对于 100% 的数据，1 <= n <= 10^6，1 <= m <= 6。
 #include<bits/stdc++.h>
+// 算法标签：状态压缩动态规划、矩阵快速幂
 using namespace std;
 #define int long long 
 const int MOD = 1ll<<32;

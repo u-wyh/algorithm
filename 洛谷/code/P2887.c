@@ -8,6 +8,7 @@
 // 1 <= SPF[i] <= 1000，1 <= cover[i] <= 2500。
 #include<stdio.h>
 #include<stdlib.h>
+// 算法标签：贪心、排序
 
 typedef struct
 {

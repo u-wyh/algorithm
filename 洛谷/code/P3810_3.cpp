@@ -12,6 +12,7 @@
 // 1 <= k <= 2 * 10^5
 // 测试链接 : https://www.luogu.com.cn/problem/P3810
 #include<bits/stdc++.h>
+// 算法标签：K-D Tree、替罪羊树
 using namespace std;
 const int MAXN = 1e5+5;
 const int INF = 1e9;

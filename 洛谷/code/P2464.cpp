@@ -4,6 +4,7 @@
 // 对每个 Q 操作输出一行整数。
 // 数据范围：1 <= N, M <= 10^5，数值为不超过 2^31-1 的正整数。
 #include<bits/stdc++.h>
+// 算法标签：可持久化线段树、离散化
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXT = MAXN * 80;

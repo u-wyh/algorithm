@@ -4,6 +4,7 @@
 // 输入 n, m 及串 S, T；输出合法补全方案数。
 // 数据范围：n <= 2000，m <= n，字符仅含 A, C, G, T。
 #include<bits/stdc++.h>
+// 算法标签：动态规划
 using namespace std;
 #define int long long
 const int MAXN = 2005;

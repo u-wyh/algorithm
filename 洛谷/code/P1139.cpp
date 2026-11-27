@@ -7,6 +7,7 @@
 // 输出：若无法完成调度，输出 NO。
 // 数据范围：1 < n <= 15。
 #include<bits/stdc++.h>
+// 算法标签：最短路、Dijkstra、优先队列
 using namespace std;
 const int MAXN = 2505;
 const int MAXM = 15005;

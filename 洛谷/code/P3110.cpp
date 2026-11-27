@@ -5,6 +5,7 @@
 // 输出一个整数表示最小总能量花费。
 // 数据范围：1 <= B, E, P, n, m <= 4*10^4，保证图连通。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、最短路、枚举
 using namespace std;
 const int MAXN = 4e4+5;
 const int INF = 1e9;

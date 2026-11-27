@@ -6,6 +6,7 @@
 // 题意：第一行输入 T，每组输入 n, k 及 n 行 (x_i, y_i)；输出每组一行实数，相对误差或绝对误差 < 10^-9 视为正确。
 // 数据范围：3 <= n <= 10^5，1 <= k <= n-2，sum(n) <= 10^5
 // -10^9 <= x_i, y_i <= 10^9（未显式写 T 的上界，受 sum(n) <= 10^5 限制）。
+// 算法标签：旋转卡壳、计算几何
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

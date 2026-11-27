@@ -4,6 +4,7 @@
 // 每组输出 YES ans（模 M）或 NO。
 // 数据范围：1 <= T <= 10，1 <= n <= 300，0 <= m <= n，2 <= M <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、组合数学
 using namespace std;
 #define int long long
 const int MAXN = 305;

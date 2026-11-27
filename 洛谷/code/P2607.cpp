@@ -4,6 +4,7 @@
 // 输出最大总和。
 // 数据范围：1 <= n <= 10^6，战斗力 <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：基环树、树形动态规划、深度优先搜索
 using namespace std;
 #define int long long
 const int MAXN = 1e6+5;

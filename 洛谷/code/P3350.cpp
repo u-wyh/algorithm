@@ -4,6 +4,7 @@
 // 接着输入 q 个询问，每次给出两个路口 (x_1, y_1) 和 (x_2, y_2)。
 // 对每个询问输出两点间的最短路径时间。
 // 数据范围：n*m <= 2*10^4，q <= 10^5，1 <= r(i,j), c(i,j) <= 10^4。
+// 算法标签：分治、Dijkstra
 using namespace std;
 #define int long long
 const int MAXN = 2e4+5;

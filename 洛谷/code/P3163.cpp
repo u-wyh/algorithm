@@ -6,6 +6,7 @@
 // 每组数据输出一行，"Yes" 表示两人都能完成愿望，否则输出 "No"。
 // 数据范围：4 <= N <= 50，0 <= a1,a2,b1,b2 <= N-1，1 <= an,bn <= 50。
 #include<bits/stdc++.h>
+// 算法标签：最大流
 using namespace std;
 const int MAXN = 55;
 const int MAXM = MAXN*MAXN;

@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= N <= 2*10^5，0 <= x_i <= 10^6。
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：最长上升子序列、二分查找、排序
 
 typedef struct {
     int north;

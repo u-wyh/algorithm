@@ -3,6 +3,7 @@
 // 求到达两个目标小室的最短总耗时（两人到达时间的最大值最小）。
 // 数据范围：n <= 50000，m <= 100000，a, b, k <= n，c <= 1000，保证罗恩可在密室 1。
 #include<bits/stdc++.h>
+// 算法标签：SPFA、最短路
 using namespace std;
 int n,m,p,k=0,k1,u,v,w,x,y,lsg,b[1000000],vis[1000000];
 int q[10000000],r,l,check=0,ans[1000000],c[1000000];

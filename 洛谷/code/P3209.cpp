@@ -4,6 +4,7 @@
 // 输出 T 行，是平面图输出 YES，否则输出 NO。
 // 数据范围：T <= 100，3 <= N <= 200，M <= 10000。
 #include<bits/stdc++.h>
+// 算法标签：并查集、二分图判定
 using namespace std;
 const int MAXN = 205;
 const int MAXM = 1e4+5;

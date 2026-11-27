@@ -4,6 +4,7 @@
 // 当 type=1 时第 2..m 个询问会结合上一次答案与 mod 加密，需强制在线解密后回答。
 // 数据范围：type in {0,1}，1 <= n, m <= 10^5，0 <= l_i <= r_i <= 10^9，0 <= a_i <= 10^9
 // 1 <= k, mod <= 10^9。
+// 算法标签：可持久化线段树、二分查找、前缀和
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

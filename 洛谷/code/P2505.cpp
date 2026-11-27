@@ -4,6 +4,7 @@
 // 输出 m 行，每行一个整数（模 10^9+7）。
 // 数据范围：n <= 1500，m <= 5000，1 <= w <= 10000。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、DAG动态规划、拓扑排序
 using namespace std;
 #define int long long
 const int MAXN = 1505;

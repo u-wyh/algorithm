@@ -3,6 +3,7 @@
 // 在每个点等概率随机选一条出边走，求从 1 走到 n 经过的路径总长度期望（保留 2 位小数）。
 // 数据范围：1 <= n <= 1e5，1 <= m <= 2n，0 <= w <= 1e9。
 #include<bits/stdc++.h>
+// 算法标签：拓扑排序、概率期望
 using namespace std;
 const int MAXN = 1e5+5;
 #define int long long

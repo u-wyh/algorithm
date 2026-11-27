@@ -4,6 +4,7 @@
 // 对每个操作 3 输出一行对应的路径点权和。
 // 数据范围：1 <= N, M <= 10^5，所有输入数据的绝对值不超过 10^6。
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

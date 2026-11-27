@@ -8,6 +8,7 @@
 // 数据范围：1 <= W_i <= 100，1 <= 路灯位置 <= 100。
 #include <stdio.h>
 #include <string.h>
+// 算法标签：区间动态规划、前缀和
 
 #define MAXM 60
 

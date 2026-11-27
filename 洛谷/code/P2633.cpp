@@ -4,6 +4,7 @@
 // 每次询问输出一行正整数。
 // 数据范围：1 <= n, m <= 10^5，点权 in [1, 2^31-1]。
 #include<bits/stdc++.h>
+// 算法标签：主席树、LCA、离散化
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXT = MAXN*40;

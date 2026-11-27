@@ -4,6 +4,7 @@
 // 输出使总耗时不超过 T_max 的最小舞台容量 K。
 // 数据范围：1 <= N <= 10^4，T_max <= 10^6，1 <= d_i <= 10^5（保证 K=N 时可按时完成）。
 #include <bits/stdc++.h>
+// 算法标签：二分答案、优先队列、贪心
 using namespace std;
 int n, m, q[1000001];
 inline bool f(int x)//这里x就是题目中的k

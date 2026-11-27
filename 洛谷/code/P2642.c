@@ -5,6 +5,7 @@
 // 数据范围：n <= 10^6，运算过程数值在 64 位有符号整型范围内。
 #include<stdio.h>
 #include<limits.h>
+// 算法标签：动态规划、最大子段和、前后缀分解
 
 long long max(long long  a,long long b)
 {

@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P8654
 // 题意：输入 m, n（m 行 n 列网格从上到下、从左到右编号 1..m*n）、整数 k 和 k 对相连通的格子编号 (a, b)，输出连通块总数。
 // 数据范围：1 < m, n < 1000，0 < k < 10^5。
+// 算法标签：并查集
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

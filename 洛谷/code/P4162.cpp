@@ -3,6 +3,7 @@
 // 求所有互相可达的空地格子中心之间的最大欧几里德距离（保留 6 位小数）。
 // 数据范围：1 <= N, M <= 30，0 <= T <= 30，保证移走后至少有一个空地格子。
 #include<bits/stdc++.h>
+// 算法标签：SPFA、最短路
 using namespace std;
 const int MAXN = 1000;
 const int MAXM = 10000;

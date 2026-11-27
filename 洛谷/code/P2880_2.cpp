@@ -7,6 +7,7 @@
 // 1 <= h_i <= 10^6（1 <= i <= n）。
 //对数组进行更新操作，并求最大值
 #include<bits/stdc++.h>
+// 算法标签：线段树、RMQ
 using namespace std;
 const int MAXN = 50005;
 

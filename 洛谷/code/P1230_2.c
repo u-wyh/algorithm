@@ -8,6 +8,7 @@
 // 数据范围：1 <= t_i <= n，1 <= w_i <= 1000。
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：贪心、排序
 
 typedef struct {
     int t, val;

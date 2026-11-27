@@ -9,6 +9,7 @@
 // M <= 10^5（操作次数）
 // 原数列各元素及输入的 k 均在 [-100, 100] 内（实数）
 #include <cstdio>
+// 算法标签：线段树
 using namespace std;
 
 const int MAXN = 100001;

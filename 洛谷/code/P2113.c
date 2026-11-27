@@ -6,6 +6,7 @@
 // 数据范围：1 <= n <= 100，1 <= k <= m <= 100，1 <= a_i, b_i <= 10，1 <= c <= 10^3。
 #include<stdio.h>
 #include<limits.h>
+// 算法标签：动态规划、0-1背包
 
 int max(int a,int b)
 {

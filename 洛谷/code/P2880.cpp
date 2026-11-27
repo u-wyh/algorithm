@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= n <= 5*10^4，1 <= q <= 1.8*10^5
 // 1 <= h_i <= 10^6（1 <= i <= n）。
 #include<bits/stdc++.h>
+// 算法标签：ST表、RMQ
 using namespace std;
 const int MAXN = 50010;
 

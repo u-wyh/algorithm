@@ -3,6 +3,7 @@
 // 否则输出 no。
 // 数据范围：1 <= m <= 10^4，3 <= n <= 3*10^5，1 <= c <= 10^4，1 <= a <= b <= n。
 //P7261
+// 算法标签：莫队
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

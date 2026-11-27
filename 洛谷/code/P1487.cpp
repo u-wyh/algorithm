@@ -7,6 +7,7 @@
 // 0 <= m <= n（查询下标）
 // |d|, |A_1|, |A_n| < 10^4（实数）
 #include<bits/stdc++.h>
+// 算法标签：递推、数学
 using namespace std;
 const int MAXN = 65;
 

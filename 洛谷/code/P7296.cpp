@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P7296
 // 题意：奶牛按某种固定的 26 个小写字母排列循环唱字母歌，给定听到的子序列字符串（可能漏听），求她至少完整唱了几遍字母歌。
 // 数据范围：1 <= 字符串长度 <= 10^5，仅含小写字母。
+// 算法标签：状态压缩动态规划、离散化
 #include <bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

@@ -5,6 +5,7 @@
 // 数据范围：1 <= N <= 10^5，所有名字的总长度不超过 10^5，字符集为小写字母 a-z。
 // 后缀自动机解法
 #include<bits/stdc++.h>
+// 算法标签：广义后缀自动机
 using namespace std;
 const int MAXN = 2e5+5;
 

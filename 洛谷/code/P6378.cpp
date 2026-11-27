@@ -2,6 +2,7 @@
 // 题意：n 个点 m 条边的无向图被分成 k 个部分，判断能否选出 k 个关键点，使每个部分恰有 1 个关键点
 // 且每条边至少有一个端点是关键点（输出 TAK 或 NIE）。
 // 数据范围：1 <= k, w <= n <= 10^6，sum w = n，1 <= a, b <= n，0 <= m <= 10^6。
+// 算法标签：2-SAT、Tarjan、前缀和优化建图
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 4e6+5;

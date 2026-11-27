@@ -4,6 +4,7 @@
 // 每组数据输出一行 "Case i: ans cnt"，分别为最少救援出口数及最少出口数的设置方案总数。
 // 数据范围：N <= 500，节点最大编号 m 满足 1 <= m <= 10^3，答案小于 2^64。
 #include<bits/stdc++.h>
+// 算法标签：矩阵快速幂
 using namespace std;
 #define int long long
 

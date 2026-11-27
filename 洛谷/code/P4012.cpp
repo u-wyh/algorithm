@@ -6,6 +6,7 @@
 // 输出所有机器人到达目的地后采集标本的最高总价值。
 // 数据范围：1 <= P, Q <= 15，1 <= a <= 4，1 <= b <= 6。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、SPFA、Dijkstra
 using namespace std;
 #define int long long
 const int MAXN = 20;

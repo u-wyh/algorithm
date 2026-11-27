@@ -7,6 +7,7 @@
 // 1 <= X <= 5（关系类型）
 // 1 <= A, B <= N（小朋友编号）
 #include<bits/stdc++.h>
+// 算法标签：差分约束、SPFA
 using namespace std;
 const int MAXN = 100005;
 const int MAXM = 200005;

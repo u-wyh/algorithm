@@ -4,6 +4,7 @@
 // 且最大化 g = gcd(|x_1|, ..., |x_n|) mod m。
 // 输出最大 g 及一组合法数组 x。
 // 数据范围：1 <= n <= 10^6，2 <= m <= 10^9，0 <= y_i < m。
+// 算法标签：扩展中国剩余定理、扩展欧几里得
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long _INT128;

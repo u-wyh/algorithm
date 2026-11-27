@@ -4,6 +4,7 @@
 // 数据范围：1 <= N <= 10^5。
 #include<bits/stdc++.h>
 #define maxn 100010
+// 算法标签：树状数组、贪心
 using namespace std;
 
 int n,a[maxn],tree[maxn],ans[maxn];

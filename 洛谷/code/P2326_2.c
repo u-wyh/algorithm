@@ -3,6 +3,7 @@
 // 每组输出 Case #x: ans。
 // 数据范围：t <= 20，n <= 10^5，w_i <= 2^20。
 #include<stdio.h>
+// 算法标签：贪心、位运算
 
 #define MAX_N 100010
 

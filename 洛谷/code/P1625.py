@@ -5,6 +5,7 @@
 # 数据范围：
 # n > 0，m > 1（整数）
 # n + m <= 500
+# 算法标签：数学、最大公约数
 import math
 
 n, m = map(int, input().split())

@@ -4,6 +4,7 @@
 // 输出方案数。
 // 数据范围：n 的位数 <= 50，答案 <= 2^63-1。
 #include<bits/stdc++.h>
+// 算法标签：动态规划
 using namespace std;
 const int MAXN = 5e3+5;
 

@@ -6,6 +6,7 @@
 // 每次出现 2 或 3 操作时，输出一行对应结果。
 // 数据范围：1 <= n <= 10^5，1 <= m <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：动态树(LCT)、树链剖分、线段树
 using namespace std;
 const int MAXN = 1e5+5;
 

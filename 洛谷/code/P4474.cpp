@@ -3,6 +3,7 @@
 // 求最多能拿到的宝石总价值。
 // 数据范围：1 <= N, M <= 100，1 <= v_{i,j} <= 10^4。
 #include<bits/stdc++.h>
+// 算法标签：最小割、Dinic、二分图
 using namespace std;
 const int MAXN = 105;
 const int MAXV = MAXN*MAXN;

@@ -5,6 +5,7 @@
 // 输出一个整数表示最小总能量消耗。
 // 数据范围：1 <= N, M <= 1000，0 <= fx, fy, bx, by <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：动态规划
 using namespace std;
 
 struct node{

@@ -6,6 +6,7 @@
 // 求总得分的期望对 998244353 取模。
 // 数据范围：100% 数据满足 1 <= N <= 100，1 <= T <= 100，1 <= s_0 <= N，1 <= m_i <= N
 // sum(m_i) <= 5000，1 <= l_{i,j} <= N，同一地点的候选目的地点互不相同。
+// 算法标签：概率与期望、动态规划、快速幂
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

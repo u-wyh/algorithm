@@ -4,6 +4,7 @@
 // 每组输出一行答案。
 // 数据范围：1 <= T <= 5，1 <= N <= 15，1 <= |S_i| <= 50。
 #include<bits/stdc++.h>
+// 算法标签：容斥原理、状态压缩、组合数学
 using namespace std;
 const int MOD = 1000003;
 

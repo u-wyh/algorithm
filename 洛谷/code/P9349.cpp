@@ -5,6 +5,7 @@
 // 求全部操作结束后的最终颜色序列。
 // 题意：输入 N 和 N 行 A_1..A_N；输出 N 行表示最终每颗棋子的颜色。
 // 数据范围：1 <= N <= 2 * 10^5，1 <= A_i <= 10^9。
+// 算法标签：贪心、模拟
 #include<bits/stdc++.h>
 using namespace std;
 const int N=2e5+5;

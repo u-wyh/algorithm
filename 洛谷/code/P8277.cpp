@@ -3,6 +3,7 @@
 // 使得存在 p 的子序列 a_0..a_K 满足对所有 1 <= j <= K，字符串第 j 位为 U 时 a_{j-1} < a_j
 // 为 D 时 a_{j-1} > a_j。
 // 数据范围：2 <= N <= 3*10^5（测试点 13-22 无额外限制）。
+// 算法标签：树状数组、动态规划
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

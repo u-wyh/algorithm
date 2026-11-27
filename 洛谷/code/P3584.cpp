@@ -4,6 +4,7 @@
 // 若无合法分配输出 NIE；否则输出 n 个整数表示每人所选食物编号（任一合法解）。
 // 数据范围：2 <= n <= 10^6，1 <= c_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、破环成链
 using namespace std;
 const int MAXN = 1e6+5;
 

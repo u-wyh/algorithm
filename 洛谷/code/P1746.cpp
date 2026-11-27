@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1746
 // 题意：给定 n×n 地图，0 是道路，1 是障碍，给定起点和终点。每一步只能往上下左右走一格，求最少步数。
 // 数据范围：1 ≤ n ≤ 1000。地图每行是 n 个连续的 0 或 1，不用空格分隔。
+// 算法标签：广度优先搜索
 
 #include<bits/stdc++.h>
 using namespace std;

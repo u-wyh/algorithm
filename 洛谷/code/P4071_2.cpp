@@ -4,6 +4,7 @@
 // 每组输出一行整数，答案对 10^9 + 7 取模。
 // 数据范围：1 <= T <= 5*10^5，1 <= n <= 10^6，0 <= m <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：组合数学、逆元、前缀和
 using namespace std;
 #define int long long
 const int MAXN = 1e6+5;

@@ -2,6 +2,7 @@
 // 题意：判断给定的 m 个长度为偶数 n 的序列能否划分为两个长度均为 n/2 且各自严格递增的子序列。
 // 数据范围：1 <= m <= 25，1 <= n <= 2000，0 <= a_i <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：动态规划
 using namespace std;
 const int MAXN = 2005;
 

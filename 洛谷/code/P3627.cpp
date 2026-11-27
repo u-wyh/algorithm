@@ -4,6 +4,7 @@
 // 输出能抢劫到的最大现金总数。
 // 数据范围：N, M <= 5*10^5，0 <= a_i <= 4000，保证 S 至少能到达一个酒吧。
 #include<bits/stdc++.h>
+// 算法标签：Tarjan、强连通分量、记忆化搜索
 using namespace std;
 const int MAXN = 5e5+5;
 const int MAXM = 5e5+5;

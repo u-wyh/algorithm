@@ -5,6 +5,7 @@
 // 输出一行一个整数，能安全回家输出最短时间，否则输出 -1。
 // 数据范围：对于 100% 的数据，1 <= n, m <= 9。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、回溯、剪枝
 using namespace std;
 
 void dfs(int x,int y,int mou);

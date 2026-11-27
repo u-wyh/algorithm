@@ -5,6 +5,7 @@
 // 输出共 tot 行，每行为对应路径经过节点总数的二进制表示。
 // 数据范围：对于 100% 的数据，1 < n <= 10^4，1 <= m <= 5*10^4（题面未给出 tot 的具体上限）。
 #include<bits/stdc++.h>
+// 算法标签：Tarjan、树链剖分、线段树
 using namespace std;
 const int MAXN = 1e4+5;
 const int MAXM = 5e4+5;

@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P8311
 // 题意：有 n 个点，在点 a 和点 b 之间修路的长度（代价）为 d_a + d_b，求使所有点连通所需的最小总道路长度（n=1 时为 0）。
 // 数据范围：100% 数据满足 1 <= n <= 10^5，1 <= d_i <= 10^9。
+// 算法标签：贪心、数学
 #include <stdio.h>
 #include <limits.h> // 用于INT_MAX或自定义大数，但这里直接用了一个大数
 

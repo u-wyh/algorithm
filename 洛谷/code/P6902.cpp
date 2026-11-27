@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P6902
 // 题意：给定长度为 n 的圆环和 k 个环上被覆盖的弧段区域，求完全覆盖整个环所需的最少区域数量，无解输出 impossible。
 // 数据范围：3 <= n <= 10^6，1 <= k <= 10^6。
+// 算法标签：倍增、贪心、双指针
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

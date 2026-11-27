@@ -4,6 +4,7 @@
 // 对每个起点，求抓住她所需的最少农民数。
 // 数据范围：2 <= N <= 7e4。
 #include<bits/stdc++.h>
+// 算法标签：点分治、多源广度优先搜索、二分查找
 using namespace std;
 const int MAXN = 7e4+5;
 const int MAXH = 20;

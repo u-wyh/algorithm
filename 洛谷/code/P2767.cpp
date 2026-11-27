@@ -3,6 +3,7 @@
 // 输出方案数对 10007 取模的结果。
 // 数据范围：n, m <= 127。
 #include<bits/stdc++.h>
+// 算法标签：动态规划
 using namespace std;
 const int MOD = 1e4+7;
 const int MAXN = 128;

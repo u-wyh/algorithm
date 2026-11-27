@@ -5,6 +5,7 @@
 // 数据范围：数据组数 <= 10，n <= 365，m <= 1000，0 <= G_x <= 10^5，1 <= C_i <= 300
 // 0 <= D_i <= 30000，0 <= T < m，0 <= L <= R <= 100。
 #include<bits/stdc++.h>
+// 算法标签：上下界最大流、Dinic
 using namespace std;
 #define int long long
 const int MAXN = 405;

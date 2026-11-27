@@ -5,6 +5,7 @@
 // 数据范围：1 <= N <= 50000，总天数 rm <= 32766（完整版 32766），M <= 3*rm，1 <= l <= r <= rm
 // 1 <= w <= 1e9。
 #include<bits/stdc++.h>
+// 算法标签：线段树分治、动态树(LCT)
 using namespace std;
 #define int long long
 const int MAXN = 2e5+5;

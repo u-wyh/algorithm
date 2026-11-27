@@ -8,6 +8,7 @@
 // 第一行输入 N，第二行输入排列。
 // 输出 N + 1 行对应 x = 0..N 的答案。
 // 数据范围：1 <= N <= 2*10^5。
+// 算法标签：笛卡尔树、单调栈、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

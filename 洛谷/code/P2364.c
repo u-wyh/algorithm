@@ -4,6 +4,7 @@
 // 数据范围：每个字符串长度 <= 100。
 #include <stdio.h>
 #include <string.h>
+// 算法标签：动态规划、最长公共子序列
 
 char awa[105];
 char waw[105];

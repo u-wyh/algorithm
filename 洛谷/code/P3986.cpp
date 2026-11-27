@@ -5,6 +5,7 @@
 // 输出答案对 10^9 + 7 取模的结果。
 // 数据范围：1 <= k <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：扩展欧几里得、斐波那契数列
 using namespace std;
 #define int long long
 const int MOD = 1e9+7;

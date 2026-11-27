@@ -6,6 +6,7 @@
 // 数据范围：1 <= n, m <= 10^5，-2^31 <= x_i, y_i, p_i, x_1, y_1, x_2, y_2 < 2^31
 // x_1 <= x_2，y_1 <= y_2。
 #include<bits/stdc++.h>
+// 算法标签：CDQ分治、二维偏序、容斥原理
 using namespace std;
 const int MAXN = 5e5+5;
 const int MAXM = 1e5+5;

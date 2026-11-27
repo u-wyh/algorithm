@@ -5,6 +5,7 @@
 // 输出一个整数，表示需要安装的最少信号塔数量。
 // 数据范围：对于 100% 的数据，1 <= N <= 10^4，1 <= A, B <= N，A != B。
 #include<bits/stdc++.h>
+// 算法标签：贪心、深度优先搜索
 using namespace std;
 const int MAXN = 10005;
 

@@ -6,6 +6,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <limits.h> // 为了使用INT_MAX
+// 算法标签：动态规划
 
 #define MAXN 1005
 

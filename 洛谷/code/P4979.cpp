@@ -3,6 +3,7 @@
 // 或查询区间 [x, y] 是否全为同种字符且满足若 x>1 且 y<N 则两侧相邻字符不同（输出 Yes/No）。
 // 数据范围：N <= 5 * 10^5，K <= 5 * 10^5，1 <= x <= y <= N。
 #include<bits/stdc++.h>
+// 算法标签：线段树
 using namespace std;
 const int MAXN = 5e5+5;
 

@@ -3,6 +3,7 @@
 // 每组输出一行答案。
 // 数据范围：T = 10^4，1 <= N, M <= 10^7。
 #include<bits/stdc++.h>
+// 算法标签：莫比乌斯反演、整除分块、线性筛
 using namespace std;
 #define int long long
 const int MAXN = 1e7+5;

@@ -4,6 +4,7 @@
 // 输出一个正整数表示子矩阵个数。
 // 数据范围：n, m <= 3000。
 #include<bits/stdc++.h>
+// 算法标签：单调栈、动态规划
 using namespace std;
 const int MAXN = 3005;
 

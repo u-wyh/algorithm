@@ -9,6 +9,7 @@
 // 输出：输出一个实数表示最短距离，绝对误差不超过 10^-5。
 // 数据范围：3 <= n <= 10^5，1 <= m <= 10^6，|x|, |y| <= 10^6（源自洛谷讨论区及 AC 题解）。
 #include<bits/stdc++.h>
+// 算法标签：半平面交、贪心、计算几何
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

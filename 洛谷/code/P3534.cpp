@@ -5,6 +5,7 @@
 // 输出任一组最优解对应的位置 k 和最小值 z。
 // 数据范围：1 <= n <= 10^6，1 <= m <= 10^18，1 <= x_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、贪心、前缀和
 using namespace std;
 #define int long long 
 const int MAXN = 1e6+5;

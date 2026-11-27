@@ -4,6 +4,7 @@
 // 输出最少月数。
 // 数据范围：1 <= P <= 300，1 <= M <= 1000，1 <= B_i, A_i <= M。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、前缀和
 using namespace std;
 const int MAXN = 305;
 

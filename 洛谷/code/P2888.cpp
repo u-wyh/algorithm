@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= N <= 300，1 <= M <= 2.5*10^4，1 <= H_i <= 10^6
 // 1 <= T <= 4*10^4，1 <= A_i, B_i <= N。
 #include<bits/stdc++.h>
+// 算法标签：Floyd、最短路
 using namespace std;
 const int MAXN = 305;
 const int MAXM = 25005;

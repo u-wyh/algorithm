@@ -8,6 +8,7 @@
 // 数据范围：N, Q <= 200000，1 <= S, T, A_i <= 10^6（A_0=0），|Z| <= 10^6
 // 1 <= X <= Y <= N。
 #include<bits/stdc++.h>
+// 算法标签：差分
 using namespace std;
 
 long n,m,s,t,ans=0;

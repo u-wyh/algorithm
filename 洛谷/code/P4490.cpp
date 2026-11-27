@@ -4,6 +4,7 @@
 // 数据范围：1 <= n <= 100，0 < h <= 10000.0，0 < g <= 100.0
 // 0 <= x_i, y_i, x'_i, y'_i <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：计算几何、凸包
 using namespace std;
 const int MAXN = 105;
 const int MAXT = 4e5+5;

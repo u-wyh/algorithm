@@ -4,6 +4,7 @@
 // 求 a > b 的概率对 998244353 取模的值（输入 n=0 表示 n 为正无穷）。
 // 数据范围：前 95% 数据 1 <= n <= 10^18 且 n, n+2 不为 998244353 倍数，最后 5% 数据 n=0。
 #include<bits/stdc++.h>
+// 算法标签：数学、快速幂
 using namespace std;
 #define int long long
 const int MOD = 998244353;

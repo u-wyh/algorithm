@@ -4,6 +4,7 @@
 // 输出 n 个整数，依次表示每次操作前第 i 低的物品当时所在的位置下标（从 1 开始）。
 // 数据范围：N <= 100000，P_i <= 10^7（正整数）。
 #include<bits/stdc++.h>
+// 算法标签：FHQ-Treap
 using namespace std;
 const int MAXN = 1e5+5;
 

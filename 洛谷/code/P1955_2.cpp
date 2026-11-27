@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1955
 // 题意：每组给定 n 条变量约束。e=1 表示两个变量必须相等，e=0 表示必须不同。判断能否同时满足全部约束，能输出 YES，否则输出 NO。
 // 数据范围：1 ≤ t ≤ 10，1 ≤ n ≤ 10^5，1 ≤ i,j ≤ 10^9，e 为 0 或 1。
+// 算法标签：并查集、离散化、排序
 
 #include <bits/stdc++.h>
 using namespace std;

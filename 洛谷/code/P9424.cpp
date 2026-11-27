@@ -5,6 +5,7 @@
 // 若无合法方案输出 -1。
 // 题意：第一行输入 N, M，第二行输入 W_1..W_N，后 M 行输入边 (U, V)；输出一行一个整数。
 // 数据范围：1 <= N, M <= 2 * 10^5，0 <= W_i <= 10^9，1 <= U, V <= N。
+// 算法标签：Tarjan、边双连通分量
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

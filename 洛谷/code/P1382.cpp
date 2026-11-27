@@ -10,6 +10,7 @@
 // 这是输入输出处理效率很高的写法
 // 提交以下的code，提交时请把类名改成"Main"，可以直接通过
 #include<bits/stdc++.h>
+// 算法标签：扫描线、堆、离散化
 using namespace std;
 const int MAXN = 1e5+5;
 

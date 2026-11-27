@@ -3,6 +3,7 @@
 // 每组求 sum_{i=1}^n sum_{j=1}^m gcd(i, j)^k 对 10^9 + 7 取模的结果。
 // 数据范围：1 <= T <= 2 * 10^3，1 <= n, m, k <= 5 * 10^6。
 #include<bits/stdc++.h>
+// 算法标签：莫比乌斯反演、线性筛、数论分块
 using namespace std;
 #define int long long
 const int MAXN = 5e6+5;

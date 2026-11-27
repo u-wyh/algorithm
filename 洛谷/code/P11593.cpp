@@ -7,6 +7,7 @@
 // 数据范围：
 // 1 <= n * m <= 2 * 10^5
 // 1 <= d <= 2 * 10^5
+// 算法标签：并查集、树形动态规划
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -4,6 +4,7 @@
 // 输出最小的最大花费及所选边的编号与等级（Special Judge）。
 // 数据范围：1 <= n <= 10000，0 <= k <= n-1，n <= m <= 20000，1 <= c_2 <= c_1 <= 30000。
 #include<bits/stdc++.h>
+// 算法标签：Kruskal、贪心、并查集
 using namespace std;
 const int MAXN = 1e4+5;
 const int MAXM = 2e4+5;

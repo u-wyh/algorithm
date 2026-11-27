@@ -5,6 +5,7 @@
 // 数据范围：N <= 1000，2 <= M_i <= 101，元素范围 [0, 1864]。
 // 使用后缀数组实现
 #include<bits/stdc++.h>
+// 算法标签：后缀数组、二分答案、差分
 using namespace std;
 const int MAXL = 1e3+5;
 const int MAXN = 2e6+2e3+5;

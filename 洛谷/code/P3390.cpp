@@ -4,6 +4,7 @@
 // 输出 n 行 n 列的矩阵，每个元素对 10^9+7 取模。
 // 数据范围：1 <= n <= 100，0 <= k <= 10^12，|A_{i,j}| <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：矩阵快速幂、矩阵乘法
 using namespace std;
 #define int long long
 const int MOD = 1e9+7;

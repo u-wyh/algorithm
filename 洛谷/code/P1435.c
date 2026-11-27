@@ -7,6 +7,7 @@
 #include<stdio.h>
 #include<string.h>
 #define Max 1001
+// 算法标签：区间动态规划
 
 int min(int a,int b)
 {

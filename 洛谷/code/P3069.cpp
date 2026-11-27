@@ -5,6 +5,7 @@
 // 输出一行一个整数，表示最大连续段长度。
 // 数据范围：对于 100% 的数据，1 <= N <= 10^5，0 <= B(i) <= 10^9（题面未单独写出 K 的显式范围）。
 #include<bits/stdc++.h>
+// 算法标签：双指针、离散化
 using namespace std;
 const int MAXN = 1e5+5;
 

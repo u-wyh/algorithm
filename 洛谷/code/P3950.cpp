@@ -5,6 +5,7 @@
 // 3. Q p q：查询 p 与 q 当前是否连通，输出 Yes 或 No。
 // 数据范围：1 <= n, m <= 3 * 10^5。
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树
 using namespace std;
 const int MAXN = 3e5+5;
 

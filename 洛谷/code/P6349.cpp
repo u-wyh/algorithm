@@ -3,6 +3,7 @@
 // 使得子段内每个区间都与 [A,B] 有交集。
 // 数据范围：1 <= n <= 5*10^4，1 <= m <= 2*10^5，1 <= l_i <= r_i <= 10^9
 // 1 <= A <= B <= 10^9。
+// 算法标签：K-D Tree、懒标记
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

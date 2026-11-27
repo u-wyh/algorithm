@@ -2,6 +2,7 @@
 // 题意：给定 n 个点的带边权无根树
 // 在线回答 q 次询问 (p, l, r)（均需异或上次答案 lastans）：求 p 到 [l, r] 内每个点的简单路径公共边集合的边权和。
 // 数据范围：1 <= n, q <= 2 * 10^5，1 <= x, y, p <= n，1 <= l <= r <= n，1 <= w <= 10^4。
+// 算法标签：可持久化线段树、LCA、ST表
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

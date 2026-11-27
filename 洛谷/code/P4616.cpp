@@ -7,6 +7,7 @@
 #include<cctype>
 #include<algorithm>
 #define reg register
+// 算法标签：Kruskal重构树、树链剖分、并查集
 using namespace std;
 const int N=2e5+5;
 struct node

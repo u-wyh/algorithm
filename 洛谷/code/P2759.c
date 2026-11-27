@@ -4,6 +4,7 @@
 // 数据范围：1 <= n <= 2*10^9。
 #include<stdio.h>
 #include<math.h>
+// 算法标签：二分答案、数学
 
 long long check(long long  x){
     return x*log10(x)+1;

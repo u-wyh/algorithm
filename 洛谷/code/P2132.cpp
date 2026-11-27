@@ -4,6 +4,7 @@
 // 输出方案数。
 // 数据范围：1 <= k <= 5，1 <= n <= 30，方案数小于 2^32。
 #include<bits/stdc++.h>
+// 算法标签：记忆化搜索、动态规划
 using namespace std;
 
 long long dp[31][31][31][31][31];

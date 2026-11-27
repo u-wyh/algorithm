@@ -7,6 +7,7 @@
 // 对每个操作 4 输出一行一个整数。
 // 数据范围：1 <= n, q <= 5*10^5，1 <= h_i <= 10^9，1 <= l <= r <= n，0 <= |c| <= 500
 // 1 <= h <= 10^9。
+// 算法标签：线段树
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

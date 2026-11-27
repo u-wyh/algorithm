@@ -4,6 +4,7 @@
 // 数据范围：1 <= N, M <= 200，1 <= K <= 10，1 <= T <= 3000，1 <= t_{i,j} <= 200
 // f_{i,j} <= 2*10^3，0 <= a, b < N，0 <= s <= t <= T，0 <= c <= 10000。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、Dijkstra、SPFA
 using namespace std;
 #define int long long  // 使用 long long 类型
 const int MAXN = 505;   // 最大节点数

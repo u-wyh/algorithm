@@ -4,6 +4,7 @@
 // 数据范围：1 <= C <= N <= 500，1 <= X, Y <= 10000。
 //P2862
 #include<bits/stdc++.h>
+// 算法标签：二分答案、扫描线、线段树
 using namespace std;
 const int MAXN = 1e4+5;
 const int MAXM = 1e4+10;

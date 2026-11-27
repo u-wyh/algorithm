@@ -7,6 +7,7 @@
 // 求合理放置障碍时猫移动步数之和的最大值。
 // 题意：输入 N、P_1..P_N 及 N-1 条边 (A_j, B_j)；输出一行一个整数。
 // 数据范围：2 <= N <= 2 * 10^5，1 <= P_i <= N 且互不相同，1 <= A_j < B_j <= N。
+// 算法标签：动态规划、并查集、最近公共祖先
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

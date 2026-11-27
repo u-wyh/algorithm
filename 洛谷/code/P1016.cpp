@@ -4,6 +4,7 @@
 // 输出能到达目的地的最低油费，保留两位小数。到不了就输出 No Solution。
 // 数据范围：0 ≤ n ≤ 6，0 ≤ S, C, L, Pi ≤ 500，0 ≤ Di ≤ S，油价范围也适用于 P0。
 // 题面给的实数最多两位小数。
+// 算法标签：贪心
 
 #include <bits/stdc++.h>
 using namespace std;

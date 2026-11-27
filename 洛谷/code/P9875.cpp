@@ -6,6 +6,7 @@
 // 每组四行依次输入 (x_A, y_A)、(x_B, y_B)、(x_C, y_C, x_D, y_D)、(x_E, y_E, x_F, y_F)；
 // 每组输出一行一个整数。
 // 数据范围：1 <= T <= 10^5，所有坐标值在 [-10^9, 10^9] 内。
+// 算法标签：计算几何、线段相交
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

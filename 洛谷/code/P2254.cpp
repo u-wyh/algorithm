@@ -7,6 +7,7 @@
 #include<cstring>
 #include<iostream>
 #define MAXN 205
+// 算法标签：单调队列、动态规划
 using namespace std;
 int n, m, sx, sy, K, ans, dp[MAXN][MAXN];
 int dx[5] = {0, -1, 1, 0, 0}, dy[5] = {0, 0, 0, -1, 1};

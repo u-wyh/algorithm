@@ -4,6 +4,7 @@
 // 输出总数。
 // 数据范围：1 <= N <= 8*10^4，1 <= h_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：单调栈
 using namespace std;
 
 int n;

@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1637
 // 题意：给一列整数，统计有多少个下标三元组 i<j<k 满足 a[i]<a[j]<a[k]。数值相同但下标不同的选择分开计数。
 // 数据范围：1 ≤ n ≤ 30000，1 ≤ a[i] ≤ 10^5。
+// 算法标签：树状数组、动态规划、离散化
 
 #include<iostream>
 #include<cstring>

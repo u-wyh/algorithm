@@ -3,6 +3,7 @@
 // 输出从城市 1 到城市 N 的最短总耗时。
 // 数据范围：1 <= N <= 1000，1 <= M <= 10000，1 <= C_i <= 200，1 <= u, v <= N
 // 1 <= c <= 1000。
+// 算法标签：Dijkstra、最短路、优先队列
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

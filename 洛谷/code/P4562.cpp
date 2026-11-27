@@ -3,6 +3,7 @@
 // 对所有检查顺序排列 p 定义 t(p) 为使全部办公室都开始工作的最少检查次数，求所有排列 t(p) 之和模 10^9+7。
 // 数据范围：1 <= l <= r <= 10^7。
 #include<bits/stdc++.h>
+// 算法标签：埃氏筛、组合数学、快速幂
 using namespace std;
 #define int long long
 const int MOD = 1e9+7;

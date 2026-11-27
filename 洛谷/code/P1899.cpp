@@ -9,6 +9,7 @@
 // 1 <= P <= 10000（普通物品价值）
 // 1 <= P_1 < P_2 <= 10000（魔法物品鉴定前后价值）
 #include<bits/stdc++.h>
+// 算法标签：0-1背包、动态规划、贪心
 using namespace std;
 const int INF = 2e9;
 const int MAXP = 5005;

@@ -4,6 +4,7 @@
 // 一行输出 n+m+1 个整数，从低次到高次表示乘积多项式的系数。
 // 数据范围：对于 100% 的数据，0 <= n, m <= 10^6，输入系数均为 0 到 9 的整数。
 #include<bits/stdc++.h>
+// 算法标签：NTT、快速幂
 using namespace std;
 #define int long long
 const int MAXN = 4e6+5;

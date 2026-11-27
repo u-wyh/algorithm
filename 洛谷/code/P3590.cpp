@@ -4,6 +4,7 @@
 // 输出满足条件的最长连续子串长度。
 // 数据范围：1 <= n <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：前缀和、贪心
 using namespace std;
 const int MAXN = 1e6+5;
 

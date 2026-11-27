@@ -3,6 +3,7 @@
 // 不存在则输出 No solution。
 // 数据范围：1 <= n <= 2*10^5，边数不超过 5*10^5。
 #include<bits/stdc++.h>
+// 算法标签：Tarjan、割点
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXM = 5e5+5;

@@ -5,6 +5,7 @@
 // 输出一行一个整数，表示最少需要剪的次数。
 // 数据范围：对于 100% 的数据，1 <= N, M <= 5*10^4，两串均仅含大写英文字母。
 #include<bits/stdc++.h>
+// 算法标签：后缀数组、动态规划、线段树
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXH = 20;

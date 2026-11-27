@@ -3,6 +3,7 @@
 // 在折线 CE 与 DE 上选一点 B（其中 C(xmax,0), D(0,ymax), E(xmax,ymax)）
 // 使线段 AB 相交（含顶点相交）的矩形数最多，输出最多数及 B 坐标。
 // 数据范围：1 <= n <= 10^4，0 <= xmax, ymax <= 10^9，矩形顶点为非负整数坐标。
+// 算法标签：扫描线、排序
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -9,6 +9,7 @@
 // 1 <= U_i <= 10^9（单科满分）
 // 1 <= R_i <= N（B 神单科排名，保证至少有 1 种合法情况）
 #include<bits/stdc++.h>
+// 算法标签：Manacher、并查集、贪心
 using namespace std;
 const int MAXN = 1e5+5;
 

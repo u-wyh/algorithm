@@ -6,6 +6,7 @@
 // 输出一个 unsigned long long 类型整数，表示所有 m 次询问答案之和。
 // 数据范围：最高测试点 n, m = 2*10^7（a_i 由 read() 生成，范围在 [0, 2^30-1]）。
 #include<bits/stdc++.h>
+// 算法标签：分块、ST表
 using namespace std;
 
 namespace GenHelper {

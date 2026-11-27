@@ -4,6 +4,7 @@
 // 若无解输出 NIE；否则第一行输出 TAK，第 i+1 行输出指向节点 i 的那条有向边的起点编号。
 // 数据范围：1 <= n <= 100000，1 <= m <= 200000，无重边与自环。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、基环树
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 2e5+5;

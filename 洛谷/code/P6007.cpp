@@ -3,6 +3,7 @@
 // 期间有 P 个单向跳板可从 (x1, y1) 瞬移到 (x2, y2)（x1 <= x2, y1 <= y2，所有起点终点坐标互不相同）
 // 求至少需要行走的距离。
 // 数据范围：1 <= N <= 10^9，1 <= P <= 10^5。
+// 算法标签：CDQ分治、树状数组、动态规划
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

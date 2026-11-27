@@ -6,6 +6,7 @@
 // 求 p 的最小可能长度 m。
 // 题意：第一行输入 n，接下来 n 行输入 a_i, b_i；输出一个整数表示最小长度。
 // 数据范围：1 <= n <= 5 * 10^5，1 <= a_i, b_i <= 10^9，a_i != b_i。
+// 算法标签：贪心、扫描线
 #include<bits/stdc++.h>
 using namespace std;
 struct node{long long a,b;}spe[500005];

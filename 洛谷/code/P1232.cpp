@@ -8,6 +8,7 @@
 #include <cstdio>
 #include <algorithm>
 #include <cstring>
+// 算法标签：差分、前缀和、树论
 using namespace std;
 
 const int MAXN = 200005;

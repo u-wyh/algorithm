@@ -7,6 +7,7 @@
 #include<stdbool.h>
 #include<stdlib.h>
 #define Max 200005
+// 算法标签：并查集
 
 int father[Max],size[Max],stack[Max];
 

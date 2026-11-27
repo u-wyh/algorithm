@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define mod 1000000007
+// 算法标签：数位统计、前缀和
 
 long long count(long long num, int d) {
     long long ans = 0;

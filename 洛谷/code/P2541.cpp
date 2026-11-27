@@ -4,6 +4,7 @@
 // 输出最小总成本。
 // 数据范围：1 <= K, N <= 10^5，1 <= M_i <= 10，1 <= P_{i,j} <= 10^8。
 #include<bits/stdc++.h>
+// 算法标签：优先队列、贪心、排序
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 15;

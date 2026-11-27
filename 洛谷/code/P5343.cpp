@@ -6,6 +6,7 @@
 #include <vector>
 #include <map>
 #include <algorithm>
+// 算法标签：矩阵快速幂、动态规划
 using namespace std;
 
 const int MOD = 1e9 + 7;

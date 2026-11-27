@@ -4,6 +4,7 @@
 // 输出合法方案数，以及切出的两段长度之差绝对值的最小值。
 // 数据范围：2 <= k <= n <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：异或哈希、前缀和、双指针
 using namespace std;
 const int MAXN = 1e6+5;
 const int MAXM = MAXN << 1; // 扩展为两倍大小

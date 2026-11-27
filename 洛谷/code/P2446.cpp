@@ -4,6 +4,7 @@
 // 求到达城市 N 并摧毁它的最短时间。
 // 数据范围：1 <= N <= 3*10^3，1 <= M <= 7*10^4，1 <= w_i <= 10^8，保证有解。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、拓扑排序
 using namespace std;
 const int MAXN = 3e3+5;
 const int MAXM = 7e4+5;

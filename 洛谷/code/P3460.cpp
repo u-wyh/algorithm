@@ -4,6 +4,7 @@
 // 第一行输出清空栈所需的最少交换次数 m，接下来 m 行依次输出每次交换的下标 p_i（交换 p_i 与 p_i+1）。
 // 数据范围：1 <= n <= 50000，1 <= a_i <= n，保证存在不超过 10^6 次操作的方案。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、贪心
 using namespace std;
 const int MAXN = 5e4+5;
 const int MAXM = 1e6+5;

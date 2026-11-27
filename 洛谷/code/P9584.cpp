@@ -5,6 +5,7 @@
 // 题意：第一行输入 n, q，后 n-1 行输入 (u_i, v_i, c_i)，后 q 行输入 (k_i, w_i)；输出 q 行结果。
 // 数据范围：2 <= n <= 2 * 10^5，1 <= q <= 2 * 10^5，1 <= u_i, v_i, k_i <= n
 // 1 <= c_i, w_i <= 10^6。
+// 算法标签：树形动态规划、换根
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

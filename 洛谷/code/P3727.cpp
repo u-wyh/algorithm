@@ -10,6 +10,7 @@
 // 否则输出 The commentary cannot go on!。
 // 数据范围：T <= 5，n <= 3*10^4，w_i <= 10^9，输入均为正整数。
 #include<bits/stdc++.h>
+// 算法标签：点分治、博弈论(SG函数)、哈希表
 using namespace std;
 const int MAXN = 3e4+5;
 

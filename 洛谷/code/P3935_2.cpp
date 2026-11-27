@@ -4,6 +4,7 @@
 // 数据范围：1 <= l <= r <= 1.6 * 10^14（测试点 100 满足 1 <= l <= 10^14
 // 1 <= r <= 1.6 * 10^14，r - l > 10^14）。
 #include<bits/stdc++.h>
+// 算法标签：数论分块
 using namespace std;
 #define int long long
 const int MOD = 998244353;

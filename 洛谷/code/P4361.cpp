@@ -4,6 +4,7 @@
 // 求依次照射到的偏转装置编号（最多前 10 次，未偏转输出 NONE）。
 // 数据范围：n <= 100，所有坐标及 a, b 的绝对值 <= 1000，a, b 非零，方向向量非零，线段无交点且起点不在任何线段上。
 #include<bits/stdc++.h>
+// 算法标签：计算几何、模拟
 using namespace std;
 const int MAXN = 105;
 const long double eps = 1e-12L;

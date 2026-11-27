@@ -7,6 +7,7 @@
 // 数据范围：对于 100% 的数据，1 <= P <= 3000，1 <= C <= 20000，1 <= N <= P
 // 1 <= a_i, b_i <= P，2 <= report_j <= P。
 #include<bits/stdc++.h>
+// 算法标签：网络流、最小割、Dinic
 using namespace std;
 const int MAXN = 3005;
 const int MAXM = 2e4+5;

@@ -2,6 +2,7 @@
 // 题意：给一棵 n 个点（编号 0 到 n-1）的无向带权树，求一条边权和恰好等于 k 的简单路径，要求路径包含的边数最少，不存在则输出 -1。
 // 数据范围：1 <= n <= 2e5，0 <= k, w_i <= 1e6，0 <= u_i, v_i < n。
 #include<bits/stdc++.h>
+// 算法标签：点分治
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXK = 1e6+5;

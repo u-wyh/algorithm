@@ -4,6 +4,7 @@
 // 规则：区间内值 t 的重要度为 t 乘以它在区间内的出现次数。
 // 输出：输出 Q 行，表示每个查询区间内所有值的最大重要度。
 // 数据范围：1 <= N, Q <= 10^5，1 <= X_i <= 10^9，1 <= A_j <= B_j <= N。
+// 算法标签：回滚莫队、离散化
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

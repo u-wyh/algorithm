@@ -6,6 +6,7 @@
 // 数据范围：1 <= N <= 5*10^4，0 <= K <= 10^9，钻石大小为不超过 10^9 的正整数。
 #include<cstdio>
 #include<algorithm>
+// 算法标签：双指针、排序
 using namespace std;
 int n,k,a[50005],c[50005],r=2,ma,ans;//c[i]用来存从i-1向左最多可以取多少颗钻石。
 int main(){

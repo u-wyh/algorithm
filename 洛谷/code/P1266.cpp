@@ -7,6 +7,7 @@
 // 数据范围：2 <= N <= 150，1 <= M <= 22500，0 <= A, B < N（默认 0 <= D < N）。
 // 数据范围：0 <= V <= 500，1 <= L <= 500。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、分层图、最短路
 using namespace std;
 const int MAXN = 155;
 const int MAXM = 100005;

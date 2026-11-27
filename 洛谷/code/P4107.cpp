@@ -7,6 +7,7 @@
 // 数据范围：1 <= n <= 2*10^6，1 <= m <= 10^5，0 <= c_i <= 10^3
 // 初始每个节点 son(i) + c_i 在 (0, m] 内。
 #include<bits/stdc++.h>
+// 算法标签：贪心、深度优先搜索、排序
 using namespace std;
 const int MAXN = 2e6+5;
 

@@ -8,6 +8,7 @@
 // 数据范围：-10^8 <= X_i, Y_i <= 10^8
 // 数据范围：输入数据保证答案存在
 #include<bits/stdc++.h>
+// 算法标签：计算几何、双指针、排序
 using namespace std;
 #define int long long
 const int MAXN = 1505;

@@ -1,7 +1,9 @@
 // https://www.luogu.com.cn/problem/P8456
 // 题意：第一行输入子任务编号 S，再给定 n 点 m 边无向连通图（无自环，可能有重边），每条边标记为 D 或 d。
 // 求无序点对 (x, y) (x != y) 的个数，满足 x 与 y 之间存在一条不重复经过节点的简单路径且路径上同时出现 D 边和 d 边。
-// 数据范围：100% 数据满足 2 <= n <= 4*10^5，n - 1 <= m <= 10^6，1 <= x, y <= n，c in {D, d}。
+// 数据范围：100% 数据满足 2 <= n <= 4*10^5，n - 1 <= m <= 10^6，1 <= x, y <= n，c in {D
+// d}。
+// 算法标签：Tarjan、点双连通分量、并查集
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 4e5+5;

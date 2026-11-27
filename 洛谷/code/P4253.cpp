@@ -4,6 +4,7 @@
 // 要求时刻连通且点亮一个点后必须先点亮其子树全部节点才能去点亮其他节点，求点亮所有灯泡的最小总花费。
 // 数据范围：1 <= n <= 2e5，1 <= a_i, b_i <= 1e5。
 #include<bits/stdc++.h>
+// 算法标签：树形动态规划
 using namespace std;
 #define int long long
 const int MAXN = 2e5+5;

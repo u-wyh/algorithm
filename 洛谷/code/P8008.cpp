@@ -5,6 +5,7 @@
 // 第一行输入 n，接下来 n 行每行坐标 (x_i, y_i)，接着输入实数 θ 和 a（输入浮点数均保留 4 位小数）。
 // 输出一行一个实数，满足 |ans - std| / max(1.0, std) <= 10^{-6}（Special Judge）。
 // 数据范围：3 <= n <= 10^5，|x_i|, |y_i| <= 10^4，θ ∈ [1, 179)，a ∈ [0.1, 100]。
+// 算法标签：计算几何、数学
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

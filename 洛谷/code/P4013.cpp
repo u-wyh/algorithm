@@ -6,6 +6,7 @@
 // 输出三行，分别对应规则 1、2、3 的最大总和。
 // 数据范围：1 <= m, n <= 20。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、拆点、Dijkstra
 using namespace std;
 const int MAXN = 25;
 const int MAXV = 2000;

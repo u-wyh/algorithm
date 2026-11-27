@@ -5,6 +5,7 @@
 // 数据范围：1 <= N <= 10^5，1 <= A_i <= 10^6。
 #include <cstdio>
 #include <iostream>
+// 算法标签：单调栈、前缀和
 using namespace std;
 
 const int N = 100005;

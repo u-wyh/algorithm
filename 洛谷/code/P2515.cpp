@@ -4,6 +4,7 @@
 // 输出最大价值和。
 // 数据范围：0 <= N <= 100，0 <= M <= 500，0 <= W_i <= M，0 <= V_i <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：Tarjan缩点、树形背包
 using namespace std;
 const int MAXN = 105;
 const int MAXM = 505;

@@ -5,6 +5,7 @@
 // 数据范围：1 <= N <= 100，-1000 <= v_X <= 1000，0 < d_{X,Y} <= 1000，1 <= X, Y <= N
 // 每个有序对 (X, Y) 最多出现一次（故 M <= N(N-1)）。
 #include<bits/stdc++.h>
+// 算法标签：最大流、最小割、最大权闭合子图
 using namespace std;
 const int MAXN = 105;
 const int MAXV = 105;

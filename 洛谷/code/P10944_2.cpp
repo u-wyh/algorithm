@@ -15,6 +15,7 @@
 // 测试链接 : https://www.luogu.com.cn/problem/P10944
 // 如下实现是C++的版本，C++版本和java版本逻辑完全一样
 // 提交如下代码，可以通过所有测试用例
+// 算法标签：Tarjan缩点、拓扑排序
 
 #include <bits/stdc++.h>
 

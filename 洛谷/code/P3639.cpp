@@ -6,6 +6,7 @@
 // 数据范围：1 <= N <= 10^5，1 <= M <= 3*10^5，1 <= K <= 20，1 <= c_i, p_j <= 10^6
 // 任意两点间至多一条边。
 #include<bits/stdc++.h>
+// 算法标签：最小生成树、并查集、二进制枚举
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 3e5+5;

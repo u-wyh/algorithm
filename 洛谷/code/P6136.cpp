@@ -13,6 +13,7 @@
 // -10^7 <= x <= +10^7
 // 测试链接 : https://www.luogu.com.cn/problem/P6136
 // 提交以下的code，提交时请把类名改成"Main"，可以通过所有测试用例
+// 算法标签：跳表
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

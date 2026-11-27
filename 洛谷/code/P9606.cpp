@@ -2,6 +2,7 @@
 // 题意：给定长度为 N 的小写字母字符串，求在其末尾最少需要添加多少个字符才能使其成为回文串。
 // 题意：第一行输入 N，第二行输入字符串；输出一个整数。
 // 数据范围：1 <= N <= 4 * 10^5。
+// 算法标签：Manacher
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 4e5+5;

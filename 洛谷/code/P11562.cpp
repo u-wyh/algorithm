@@ -8,6 +8,7 @@
 // 1 <= n <= 10^6
 // 1 <= u, v <= n
 // 0 <= a_i <= 1
+// 算法标签：深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

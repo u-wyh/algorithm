@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= T <= 2 * 10^5，1 <= sum(n), sum(m) <= 2 * 10^5
 // 1 <= k <= m，1 <= a <= 100，1 <= A_i <= 10^8。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、贪心、树状数组
 using namespace std;
 const int MAXN = 2e5+5;
 

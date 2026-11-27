@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1445
 // 题意：给 n，求正整数有序对 (x,y) 满足 1/x+1/y=1/(n!) 的个数，交换后按不同有序对计数。输出答案对 10^9+7 取模。
 // 数据范围：1 ≤ n ≤ 10^6。
+// 算法标签：线性筛、数论
 
 #include<bits/stdc++.h>
 using namespace std;

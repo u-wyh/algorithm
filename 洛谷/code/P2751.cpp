@@ -4,6 +4,7 @@
 // 一行输出两个整数。
 // 数据范围：1 <= N <= 1000，1 <= M_1, M_2 <= 30，单台耗时 in [1, 20]。
 #include<bits/stdc++.h>
+// 算法标签：贪心、优先队列
 using namespace std;
 const int MAXN = 1005;
 const int MAXM = 35;

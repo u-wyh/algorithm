@@ -4,6 +4,7 @@
 // 数据范围：2 <= N <= 5*10^4，1 <= M <= 10^5，1 <= K <= N，1 <= t_i <= 10^4
 // 1 <= y_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、最短路
 using namespace std;
 const int MAXN = 5e4+5;
 const int MAXM = 120000;

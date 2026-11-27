@@ -7,6 +7,7 @@
 #include<cmath>
 #include<cstring>
 #include<algorithm>
+// 算法标签：Manacher、递推
 using namespace std;
 
 #define re register

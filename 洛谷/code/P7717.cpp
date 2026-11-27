@@ -3,6 +3,7 @@
 // 答案对 10^9+7 取模。
 // 数据范围：1 <= n <= 5*10^5，0 <= m <= 5*10^5，0 <= z_i < 2^30，1 <= k < 2^30
 // 1 <= x_i, y_i <= n (x_i < y_i)。
+// 算法标签：深度优先搜索、字典树、位运算
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

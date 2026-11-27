@@ -4,6 +4,7 @@
 // 接下来还有 m 场指定两队对阵的比赛（无平局），合理安排胜负使所有球队总支出最小。
 // 数据范围：2 <= n <= 5000，0 <= m <= 1000，0 <= D_i <= C_i <= 10，0 <= a_i, b_i <= 50。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、SPFA、Dijkstra
 using namespace std;
 const int MAXN = 5e3+5;
 const int MAXM = 1e3+5;

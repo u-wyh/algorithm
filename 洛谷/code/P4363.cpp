@@ -3,6 +3,7 @@
 // 求双方均以最大化己方减对方得分差为目标时的最终分差。
 // 数据范围：1 <= n, m <= 10，0 <= a_{i,j}, b_{i,j} <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：轮廓线动态规划、记忆化搜索、博弈论
 using namespace std;
 #define int long long
 const int INF = 1e18;

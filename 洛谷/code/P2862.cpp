@@ -3,6 +3,7 @@
 // 输出最小正方形边长。
 // 数据范围：1 <= C <= N <= 500，1 <= X, Y <= 10000。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、二维前缀和、离散化
 using namespace std;
 const int MAXN = 505;
 

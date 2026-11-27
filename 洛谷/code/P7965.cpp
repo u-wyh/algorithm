@@ -5,6 +5,7 @@
 // 第一行输入 n, m, q，接下来 m 行每行一个排列，接下来 q 行每行 a, b。
 // 输出 q 行，可行输出 DA，否则输出 NE。
 // 数据范围：1 <= n, m <= 1000，1 <= q <= 5*10^5，1 <= a, b <= n。
+// 算法标签：并查集
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1005;

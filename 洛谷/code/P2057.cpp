@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P2057
 // 题意：给定 n 人原本的投票意愿和 m 对朋友关系。每出现一对实际投票不同的朋友，或一人改变自己的意愿，就计 1 次冲突。求最少冲突数。
 // 数据范围：2 ≤ n ≤ 300，1 ≤ m ≤ n(n−1)/2，朋友关系不重复，意愿为 0 或 1。
+// 算法标签：最大流、最小割、Dinic
 
 #include<bits/stdc++.h>
 using namespace std;

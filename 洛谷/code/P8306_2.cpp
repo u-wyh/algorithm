@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P8306
 // 题意：T 组数据，每组给定 n 个模式串和 q 个询问串，对每个询问串输出它是多少个模式串的前缀（大小写敏感）。
 // 数据范围：1 <= T, n, q <= 10^5，所有输入字符串总长度不超过 3*10^6，仅含大小写字母和数字且无空串。
+// 算法标签：字典树
 #include<bits/stdc++.h>
 using namespace std;
 int T,q,n,t[3000005][65],cnt[3000005],idx;

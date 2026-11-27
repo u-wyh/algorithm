@@ -5,6 +5,7 @@
 // 输出最大安全系数或 Mark is too tall。
 // 数据范围：2 <= N <= 20，1 <= H <= 10^9，高度、重量和力量均为不超过 10^9 的正整数。
 #include<bits/stdc++.h>
+// 算法标签：状态压缩、贪心
 using namespace std;
 
 struct node{

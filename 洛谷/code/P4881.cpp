@@ -3,6 +3,7 @@
 // 其中 s[i] 为长度为 i 的小写字母回文串总数。
 // 数据范围：1 <= T <= 5 * 10^5，1 <= n <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：快速幂、数学、乘法逆元
 using namespace std;
 #define int long long 
 const int MOD = 1e9+7;

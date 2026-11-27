@@ -4,6 +4,7 @@
 // 输出最小总花费（元），保留两位小数。
 // 数据范围：加油站数 n <= 51。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、剪枝
 using namespace std;
 const int MAXN = 55;
 

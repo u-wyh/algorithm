@@ -4,6 +4,7 @@
 // 输出合法一一对应的方案总数（无解输出 0）。
 // 数据范围：n <= 17，m <= n(n-1)/2。
 #include <bits/stdc++.h>
+// 算法标签：树形动态规划、容斥原理、状态压缩
 using namespace std;
 typedef long long ll;
 

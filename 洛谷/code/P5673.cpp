@@ -4,6 +4,7 @@
 // 输入 n, m, k、序列 p、序列 v 及 m 个询问区间；输出 m 行答案。
 // 数据范围：1 <= n <= 10^6，1 <= m <= 5*10^5，2 <= k <= n，1 <= p_i <= n
 // 1 <= v_i <= 2000，1 <= l <= r <= n。
+// 算法标签：树状数组、离线处理
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

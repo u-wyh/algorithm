@@ -8,6 +8,7 @@
 // 数据范围：1 <= n, m, t_i, b_i <= 10^5，0 <= A, B <= 10^5；
 // 测试点 13-14 中 C = 10^16，其余 100% 范围内 0 <= C <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：枚举、前缀和、贪心
 using namespace std;
 #define int unsigned long long
 const int MAXN = 1e5+5;

@@ -5,6 +5,7 @@
 // 数据范围：T <= 5，1 <= n, m <= 10^5，1 <= a_i <= 10^12，所有 p_i 的最小公倍数 <= 10^12
 // 所有武器攻击力 <= 10^6。
 #include <bits/stdc++.h>
+// 算法标签：扩展中国剩余定理、扩展欧几里得、贪心
 using namespace std;
 #define int long long
 const int MAXN = 100001;

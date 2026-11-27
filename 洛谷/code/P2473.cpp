@@ -4,6 +4,7 @@
 // 求最优策略下的期望总分，保留六位小数。
 // 数据范围：1 <= k <= 100，1 <= n <= 15，-10^6 <= p_i <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：期望动态规划、状态压缩动态规划
 using namespace std;
 const int MAXN = 105;
 const int MAXM = 1<<16;

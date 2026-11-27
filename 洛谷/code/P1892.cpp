@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1892
 // 题意：给出 n 个人间的 m 条关系，F 表示朋友，E 表示敌人。朋友的朋友、敌人的敌人都是朋友。两人同团伙当且仅当是朋友，求最多能有几个团伙。
 // 数据范围：2 ≤ n ≤ 1000，1 ≤ m ≤ 5000，人编号在 [1,n]。
+// 算法标签：并查集
 
 #include<bits/stdc++.h>
 using namespace std;

@@ -12,6 +12,7 @@
 // 0 <= Y_j < X_j <= N - 1
 // 1 <= A_j, B_j <= N
 // 1 <= L_j <= 100
+// 算法标签：线段树合并、DFS序
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e6+5;

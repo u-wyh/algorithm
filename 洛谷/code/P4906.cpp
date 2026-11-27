@@ -3,6 +3,7 @@
 // 求关闭所有开关的最少操作次数（无解输出 Change an alarm clock,please!）。
 // 数据范围：1 <= N <= 20，0 <= M <= N-1，允许自环和重边。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索、状态压缩、位运算
 using namespace std;
 
 vector<int>vec[21];

@@ -5,6 +5,7 @@
 // 输出一行表示处理完成后的字符串 s。
 // 数据范围：1 <= |s|, sum(|t_i|), n <= 10^5，全为小写字母，结果非空。
 #include<bits/stdc++.h>
+// 算法标签：AC自动机、栈
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXS = 1e5+5;

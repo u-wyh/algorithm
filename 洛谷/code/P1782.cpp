@@ -5,6 +5,7 @@
 // 求容量限制内的最大总价值。
 // 数据范围：1 ≤ n,C ≤ 10^4，1 ≤ m ≤ 5，1 ≤ V_i,W_i,D_i ≤ 1000
 // −1000 ≤ a_i,b_i,c_i ≤ 1000。
+// 算法标签：多重背包、二进制优化、动态规划
 
 #include<bits/stdc++.h>
 using namespace std;

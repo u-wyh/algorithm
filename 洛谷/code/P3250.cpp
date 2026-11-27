@@ -6,6 +6,7 @@
 // 对每个事件 2 输出一行最大重要度。
 // 数据范围：2 <= n <= 10^5，1 <= m <= 2*10^5，其余输入值不超过 10^9。
 #include<bits/stdc++.h>
+// 算法标签：整体二分、树状数组、最近公共祖先、倍增
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 2e5+5;

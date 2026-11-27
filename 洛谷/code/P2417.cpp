@@ -4,6 +4,7 @@
 // 每组输出 YES 或 NO。
 // 数据范围：T <= 10，n, m <= 2*10^4。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、回溯、排序
 using namespace std;
 const int MAXN = 2e4+5;
 

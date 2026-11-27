@@ -3,6 +3,7 @@
 // 2 l r k 询问区间 [l, r] 内的数从小到大排序后能否组成公差为 k 的等差数列（单个数也算），输出 Yes 或 No。
 // 数据范围：1 <= n, m <= 3*10^5，0 <= a_i, y, k <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：线段树、哈希、快速幂
 using namespace std;
 #define int long long
 const int MAXN = 3e5+5;

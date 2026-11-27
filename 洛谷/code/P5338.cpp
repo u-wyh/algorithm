@@ -1,8 +1,10 @@
 // https://www.luogu.com.cn/problem/P5338
-// 题意：T 组数据，每组 m 个人共进行 n 次按给定伪随机种子生成的 AC 提交，每次给定人 R_ia 和罚时 R_ib（通过数 +1，罚时 +R_ib）。
+// 题意：T 组数据，每组 m 个人共进行 n 次按给定伪随机种子生成的 AC 提交
+// 每次给定人 R_ia 和罚时 R_ib（通过数 +1，罚时 +R_ib）。
 // 每次提交后输出当前严格排在 R_ia 前面的人数（AC 数更多，或 AC 数相等但罚时更少）。
 // 数据范围：T <= 15，m <= 10^5，n <= 10^6，所有数据罚时总和 <= 1.5*10^6。
 #include<bits/stdc++.h>
+// 算法标签：FHQ-Treap
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

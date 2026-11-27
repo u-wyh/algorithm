@@ -7,6 +7,7 @@
 // 数据范围：0 <= m <= 5000，0 <= p_i <= 1000。
 #include<stdio.h>
 #include<stdlib.h>
+// 算法标签：贪心、排序
 
 typedef struct
 {

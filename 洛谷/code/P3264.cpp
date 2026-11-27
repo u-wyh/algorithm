@@ -6,6 +6,7 @@
 // 数据范围：1 <= c_i <= p <= 10，1 <= u_i, v_i, d_i <= n <= 1000，0 <= m <= 3000
 // 0 <= w_i <= 2*10^4。
 #include<bits/stdc++.h>
+// 算法标签：最小斯坦纳树、状态压缩动态规划、Dijkstra
 using namespace std;
 const int MAXN = 1e3+5;
 const int MAXM = 6e3+5;

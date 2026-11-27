@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= T <= 10^3，1 <= N <= 10^2，5 <= H_i <= T 且 5 | H_i
 // 1 <= V_i <= 10^6，1 <= K <= T。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、完全背包、枚举
 using namespace std;
 
 int n,m,K;

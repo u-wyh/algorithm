@@ -6,6 +6,7 @@
 // 数据范围：1 <= n <= 10^5，1 <= h_i <= 10^9。
 // 数据范围：max(h_i) <= m <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、线段树、双指针
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

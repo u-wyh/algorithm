@@ -4,6 +4,7 @@
 // 输出 q 行，第 i 行输出 m_i 个整数，分别表示当年各关键点管辖的节点数量。
 // 数据范围：n <= 300000，q <= 300000，∑m_i <= 300000。
 #include<bits/stdc++.h>
+// 算法标签：虚树、树形动态规划、最近公共祖先、倍增
 using namespace std;
 const int MAXN = 3e5+5;
 const int MAXH = 22;

@@ -4,6 +4,7 @@
 // 数据范围：1 <= K <= 10000，1 <= E <= 500，1 <= N <= 500，0 < X_i < E
 // 1 <= F_i <= 10000，1 <= C_i <= 10^7。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、单调队列
 using namespace std;
 #define int long long
 const int MAXN = 505;

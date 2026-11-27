@@ -3,6 +3,7 @@
 // 输入 N, L, R 和序列 a；输出满足条件的子序列方案数。
 // 数据范围：1 <= N <= 10^5，|a_i| <= 10^5，0 <= L, R <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、双指针
 using namespace std;
 const int MAXN = 500001;
 

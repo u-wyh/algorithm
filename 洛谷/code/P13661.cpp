@@ -4,6 +4,7 @@
 // 规则：保留编号在 [S, T] 的边，统计满足 S<=U<=V<=T 且边 [U..V] 无环的对数。
 // 输出：每次询问输出一行整数，表示可行子区间 [U, V] 的数量。
 // 数据范围：1 <= N, M, Q <= 10^5，1 <= A < B <= N，1 <= S <= T <= M。
+// 算法标签：动态树（LCT）
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

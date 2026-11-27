@@ -4,6 +4,7 @@
 // 输入 n, m, q、初始串及操作；输出所有查询结果（opt=0）的按位异或和。
 // 数据范围：1 <= m <= 10^5 + 7，0 <= q <= 10^6 + 7，1 <= n <= 30，输入字符串总长不超过 5*10^6。
 #include<bits/stdc++.h>
+// 算法标签：线段树、位运算
 using namespace std;
 #define int long long
 const int MAXM = 100007+5;

@@ -8,6 +8,7 @@
 // 1 <= a_i, b_i <= 10^4（每种草药耗时与价值）
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：完全背包、动态规划
 
 #define LL long long
 #define N 10000005

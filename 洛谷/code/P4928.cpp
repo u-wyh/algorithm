@@ -3,6 +3,7 @@
 // 求 m 天最大总舒适度，若必定某天无衣可穿输出 "gcd loves her clothes!”。
 // 数据范围：n <= 4 且 n != 1，m <= 2000，y_i <= 6，max(y) < m，|z_i| <= 10^8。
 #include<bits/stdc++.h>
+// 算法标签：状态压缩动态规划
 using namespace std;
 const int MAXN = 2e3+5;
 const long long INF = 1e15;

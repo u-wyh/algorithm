@@ -3,6 +3,7 @@
 // 操作 2 询问当前已存在点中离 (x, y) 最近的曼哈顿距离 |Ax-Bx|+|Ay-By|。
 // 数据范围：1 <= n, m <= 3e5，0 <= x_i, y_i <= 1e6。
 #include<bits/stdc++.h>
+// 算法标签：CDQ分治、树状数组
 using namespace std;
 const int MAXN = 3e5+5;
 const int MAXM = 1e6+5;

@@ -3,6 +3,7 @@
 // 求整套动作期望威力模 19491001。
 // 数据范围：1 <= N <= 10^(10^6)，1 <= k <= 10^6，1 <= a[i] <= 10^7。
 #include<bits/stdc++.h>
+// 算法标签：数学、期望、乘法逆元
 using namespace std;
 #define int long long
 const int MOD = 19491001;

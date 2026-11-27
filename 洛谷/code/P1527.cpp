@@ -16,6 +16,7 @@
 // 提交如下代码，可以通过所有测试用例
 //这个就是一个二维的  没有什么特殊的
 #include<bits/stdc++.h>
+// 算法标签：整体二分、二维树状数组
 using namespace std;
 const int MAXN = 605;
 const int MAXQ = 6e4+5;

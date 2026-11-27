@@ -6,6 +6,7 @@
 #include<iostream>
 #include<cstdio>
 #include<cstring>
+// 算法标签：树形动态规划、深度优先搜索
 using namespace std;
 const int N = 500050;
 char s[N];

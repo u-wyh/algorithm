@@ -4,6 +4,7 @@
 // 输出 m 行，每行一个整数表示每个询问的答案。
 // 数据范围：1 <= n, m <= 2*10^5，1 <= l <= r <= n，0 <= a_i <= 2*10^5。
 #include<bits/stdc++.h>
+// 算法标签：回滚莫队、分块
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXB = 505;

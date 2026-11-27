@@ -4,6 +4,7 @@
 // 输出循环移位后能得到的最少交叉品种对数。
 // 数据范围：1 <= N <= 100000。
 #include<bits/stdc++.h>
+// 算法标签：线段树、树状数组
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

@@ -3,6 +3,7 @@
 // 分别输出每个模式串 T_i 在文本串 S 中出现的次数。
 // 数据范围：1 <= n <= 2*10^5，T_1..T_n 长度总和 <= 2*10^5，|S| <= 2*10^6。
 #include<bits/stdc++.h>
+// 算法标签：AC自动机、深度优先搜索
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXM = 2e6+5;

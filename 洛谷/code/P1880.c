@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1880
 // 题意：环上有 N 堆石子，每次只能合并相邻两堆，合并得分是新堆的石子数。合到只剩一堆，分别求最小和最大总得分。
 // 数据范围：1 ≤ N ≤ 100，0 ≤ a_i ≤ 20。
+// 算法标签：区间动态规划、前缀和
 
 #include<stdio.h>
 #include<limits.h>

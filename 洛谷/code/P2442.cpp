@@ -4,6 +4,7 @@
 // 对每次询问输出一行结果。
 // 数据范围：1 <= n = q <= 2*10^5，1 <= a_i, b_i <= 100。
 #include<bits/stdc++.h>
+// 算法标签：分块、前缀和
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXB = 2e3+5;

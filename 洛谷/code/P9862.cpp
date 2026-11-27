@@ -6,6 +6,7 @@
 // 给定各粒子初始数量，判断谁有必胜策略。
 // 题意：第一行输入 n，接下来 n 行每行 4 个整数表示 A, B, C, D 数量；每组输出 Roland 或 Patrick。
 // 数据范围：1 <= n < 100，0 <= A, B, C, D <= 30。
+// 算法标签：博弈、记忆化搜索
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -4,6 +4,7 @@
 // 输出 T 单位时间内最多能逃出的队员数量。
 // 数据范围：对于 100% 的数据，3 <= R, C <= 12，0 < T <= 50；边界外围只能是 * 或 O。
 #include<bits/stdc++.h>
+// 算法标签：最大流、Dinic、广度优先搜索
 using namespace std;
 #define int long long
 const int MAXN = 2505;

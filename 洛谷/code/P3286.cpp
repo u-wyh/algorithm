@@ -9,6 +9,7 @@
 // 1 <= L <= R <= 10^15
 // 2 <= K <= 20
 #include<bits/stdc++.h>
+// 算法标签：数位动态规划、记忆化搜索
 using namespace std;
 #define int long long
 const int MAXH = 70;

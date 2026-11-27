@@ -6,6 +6,7 @@
 #include<bits/stdc++.h>
 #define lcy AKIOI
 #define ll long long
+// 算法标签：区间动态规划
 const int inf=0x3f3f3f3f;
 int n,ans=-inf;
 int a[105];

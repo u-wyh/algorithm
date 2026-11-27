@@ -3,6 +3,7 @@
 // 输出方案数对 10^9+7 取模的结果。
 // 数据范围：1 <= N <= 100，0 <= K <= 100，0 <= M <= N。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、组合数学
 using namespace std;
 const int MOD = 1e9+7;
 const int MAXN = 105;

@@ -5,6 +5,7 @@
 // 输出共 N 行，第 i 行一个整数表示第 i 头牛要前往的隔间数。
 // 数据范围：对于 100% 的数据，1 <= N <= 10^5，1 <= next_i <= N。
 #include<bits/stdc++.h>
+// 算法标签：基环树、记忆化搜索
 using namespace std;
 const int MAXN = 1e5+5;
 

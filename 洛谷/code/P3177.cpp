@@ -4,6 +4,7 @@
 // 输出能获得的最大收益值。
 // 数据范围：0 <= k <= n <= 2000，1 <= w <= 10^4。
 #include<bits/stdc++.h>
+// 算法标签：树形动态规划、树上背包
 using namespace std;
 #define int long long
 const int MAXN = 2005;

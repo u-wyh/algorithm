@@ -8,6 +8,7 @@
 // 题意：第一行输入 T，每组输入 n、a_1..a_n 和 n-1 条边 (u, v)；每组输出 Reasonable 或 Unreasonable。
 // 数据范围：1 <= T <= 10^5，2 <= n <= 10^5，sum(n) <= 2 * 10^5，-1 <= a_i <= 10^9
 // 1 <= u, v <= n。
+// 算法标签：树形动态规划
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

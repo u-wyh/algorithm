@@ -4,6 +4,7 @@
 // 输出最大总储量。
 // 数据范围：K <= M, N <= 1500（保证至少存在 3 个互不相交的 K*K 正方形），每格储量为 [0, 500] 内整数。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索
 using namespace std;
 #define MAX 100
 

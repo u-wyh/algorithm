@@ -4,6 +4,7 @@
 // 求最大总收益。
 // 数据范围：1 <= p <= 12，1 <= n <= 100，1 <= t <= 2^p，|v|, a_{i,j} <= 10^8。
 #include<bits/stdc++.h>
+// 算法标签：树形动态规划、状态压缩动态规划
 using namespace std;
 const int MAXN = 105;
 const int MAXM = 12;

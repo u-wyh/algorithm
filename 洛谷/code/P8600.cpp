@@ -1,6 +1,8 @@
 // https://www.luogu.com.cn/problem/P8600
-// 题意：给定 1..N 的一个全排列 P，求有多少个区间 [L, R] (1 <= L <= R <= N) 满足将区间内元素升序排序后形成公差为 1 的连续整数列。
+// 题意：给定 1..N 的一个全排列 P
+// 求有多少个区间 [L, R] (1 <= L <= R <= N) 满足将区间内元素升序排序后形成公差为 1 的连续整数列。
 // 数据范围：1 <= N <= 50000，1 <= P_i <= N。
+// 算法标签：线段树、单调栈
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

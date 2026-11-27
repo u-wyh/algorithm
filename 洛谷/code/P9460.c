@@ -6,6 +6,7 @@
 // 若无穷多输出 pigstd。
 // 题意：第一行输入 n, k，第二行输入 a_1..a_n；输出一个整数或 pigstd。
 // 数据范围：1 <= n <= 10^6，0 <= k <= n，1 <= a_i <= n。
+// 算法标签：计数统计、排序
 #include<stdio.h>
 #include<stdlib.h>
 #define Max 100000+5

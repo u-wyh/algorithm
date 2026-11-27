@@ -4,6 +4,7 @@
 // 对每个询问输出一行 'Y' 或 'N'。
 // 数据范围：1 <= n, q <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：LCA、倍增、深度优先搜索
 using namespace std;
 const int MAXN = 100005;
 const int LIMIT = 17;

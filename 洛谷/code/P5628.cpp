@@ -4,6 +4,7 @@
 // 输入 n, k 及树边；输出最大受影响道路重要度之和。
 // 数据范围：n <= 30000，0 <= k <= 200。
 #include<bits/stdc++.h>
+// 算法标签：换根动态规划、树形动态规划
 using namespace std;
 const int MAXN = 3e4+5;
 const int MAXM = 205;

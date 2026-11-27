@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P7215
 // 题意：N 个城镇组成一棵树，每个城镇属于第 C_i 个城市（共 K 个城市）。每次可将两个城市合并，求使某个城市的所有城镇连通所需的最少合并次数。
 // 数据范围：1 <= K, u, v <= N <= 2*10^5，1 <= C_i <= K。
+// 算法标签：点分治、广度优先搜索、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

@@ -3,6 +3,7 @@
 // 求图中恰好包含两条非常规小路的简单环个数（包含边集相同视为同一个环）。
 // 数据范围：1 <= n <= 2*10^5，1 <= m <= 2*10^5，m >= n-1，1 <= a_i, b_i <= n。
 #include<bits/stdc++.h>
+// 算法标签：最近公共祖先、倍增、树上前缀和
 using namespace std;
 const int MAXN = 2e5+5;
 const int LIMIT = 20;

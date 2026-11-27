@@ -4,6 +4,7 @@
 // 输出方案数对 45989 取模的结果。
 // 数据范围：N <= 50，M <= 60，t <= 2^30，0 <= A, B < N。
 #include<bits/stdc++.h>
+// 算法标签：矩阵快速幂、图论
 using namespace std;
 const int MOD = 45989;
 const int MAXM = 125;

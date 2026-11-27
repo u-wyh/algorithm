@@ -4,6 +4,7 @@
 // 每组输出一行整数。
 // 数据范围：数据组数 <= 100，4 <= n <= 10000，1 <= a_i <= 10000。
 #include<bits/stdc++.h>
+// 算法标签：莫比乌斯反演、线性筛、组合数学
 using namespace std;
 const int MAXN = 1e4+5;
 

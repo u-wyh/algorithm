@@ -5,6 +5,7 @@
 // 输出一行两个空格分隔的整数，依次为 K 和 M。
 // 数据范围：对于 100% 的数据，1 <= N <= 5000。
 #include<bits/stdc++.h>
+// 算法标签：枚举、贪心、差分
 using namespace std;
 const int maxn = 10009;
 

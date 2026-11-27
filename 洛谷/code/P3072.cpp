@@ -9,6 +9,7 @@
 #include <queue>
 #include <algorithm>
 #include <map>
+// 算法标签：广度优先搜索
 using namespace std;
 
 int fx[4] = {0,1,0,-1};

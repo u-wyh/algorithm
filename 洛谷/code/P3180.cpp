@@ -6,6 +6,7 @@
 // 输出 Q 行，依次为每次询问的拉面种类数。
 // 数据范围：N <= 100000，M <= 150000，Q <= 100000，A_i <= 10^6，y <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：圆方树、线段树合并、Tarjan
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXM = 3e5+5;

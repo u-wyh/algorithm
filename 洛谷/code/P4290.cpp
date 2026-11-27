@@ -3,6 +3,7 @@
 // 按 W, I, N, G 顺序输出所有可能作为初始字母的字符（都不可行输出 The name is wrong!）。
 // 数据范围：L <= 200，W, I, N, G <= 16。
 #include<bits/stdc++.h>
+// 算法标签：区间动态规划
 using namespace std;
 const int MAXN = 205;
 

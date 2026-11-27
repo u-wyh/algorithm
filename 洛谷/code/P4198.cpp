@@ -3,6 +3,7 @@
 // 人站在 (0, 0) 看楼，若某栋楼的斜率 Y_i / X_i 严格大于前面所有楼的最大斜率则可见，求每天修改后能看到的楼房数量。
 // 数据范围：1 <= N, M <= 1e5，1 <= X_i <= N，1 <= Y_i <= 1e9。
 #include<bits/stdc++.h>
+// 算法标签：线段树
 using namespace std;
 const int MAXN = 1e5+5;
 

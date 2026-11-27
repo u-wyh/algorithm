@@ -3,6 +3,7 @@
 // 2 l r 强制在线（异或之前 Yes 次数 cnt）询问区间内是否存在两个位置的数之和等于 w（输出 Yes / No）。
 // 数据范围：1 <= n, m, w <= 5*10^5，0 <= a_i, val <= w，1 <= pos <= n
 // 1 <= l^cnt <= r^cnt <= n。
+// 算法标签：线段树、有序集合、二分查找
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

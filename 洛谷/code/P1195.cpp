@@ -7,6 +7,7 @@
 // 数据范围：1 <= X, Y <= N，0 <= L < 10^4。
 #include<bits/stdc++.h>
 #define N 1005
+// 算法标签：最小生成树、Kruskal、并查集
 using namespace std;
 int n,m,k,x,y,l,sum,ans;
 int fa[N];

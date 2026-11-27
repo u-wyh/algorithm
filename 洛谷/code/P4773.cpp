@@ -3,6 +3,7 @@
 // 求期望总罚时模 998244853。
 // 数据范围：1 <= A <= 10^18，1 <= B <= 10^7（模数为 998244853）。
 #include<bits/stdc++.h>
+// 算法标签：数学、快速幂、乘法逆元
 using namespace std;
 #define int long long
 const int MOD = 998244853;

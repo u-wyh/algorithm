@@ -4,6 +4,7 @@
 // 输出最短总时间。
 // 数据范围：1 <= s_1, s_2, s_3, s_4 <= 20，每题耗时 in [1, 60]。
 #include<stdio.h>
+// 算法标签：深度优先搜索、回溯、剪枝
 
 int s[4],a[21],nowtime,maxtime,sum,ans,maxdeep;
 

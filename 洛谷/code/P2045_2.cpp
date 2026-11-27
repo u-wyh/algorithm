@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P2045
 // 题意：给定 n×n 方格，每次从左上角走到右下角，只能向右或向下。走到一格就取走其中的数，此后该格变成 0。走 K 次，求最大总得分。
 // 数据范围：1 ≤ n ≤ 50，0 ≤ K ≤ 10，0 ≤ A_i,j ≤ 1000。
+// 算法标签：最小费用最大流、Dijkstra、SPFA
 
 #include<bits/stdc++.h>
 using namespace std;

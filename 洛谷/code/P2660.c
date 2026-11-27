@@ -4,6 +4,7 @@
 // 输出最小体力总和。
 // 数据范围：1 <= x, y <= 10^16。
 #include <stdio.h>
+// 算法标签：贪心、辗转相除法
 
 int main() {
     long long x, y, ans = 0, temp;

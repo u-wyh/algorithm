@@ -3,6 +3,7 @@
 // 第一行输出解的个数，之后按从小到大每行输出一个解。
 // 数据范围：0 < n <= 100，|a_i| <= 10^10000，a_n != 0，m < 10^6。
 #include<bits/stdc++.h>
+// 算法标签：秦九韶算法、数论取模、枚举
 using namespace std;
 #define int long long
 const int MOD = 998244353;

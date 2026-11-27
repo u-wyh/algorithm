@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P9045
 // 题意：一排 n 瓶橙汁品牌为 a_i，每次可花费 1 代价交换相邻两瓶。求使最左边 k 瓶品牌两两不同的最小代价，无解输出 -1。
 // 数据范围：1 <= k, a_i <= n <= 5*10^5。
+// 算法标签：贪心
 #include <stdio.h>
 #include <stdbool.h> // 引入布尔类型支持
 

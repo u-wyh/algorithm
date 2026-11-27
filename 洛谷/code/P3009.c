@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= N <= 10^5，|P_i| <= 1000。
 #include<stdio.h>
 #include<limits.h>
+// 算法标签：最大子段和、贪心
 int main()
 {
     int n;

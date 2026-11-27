@@ -4,6 +4,7 @@
 // 对每次查询输出一行整数。
 // 数据范围：1 <= n <= 3*10^4，0 <= q <= 2*10^5，-3*10^4 <= w <= 3*10^4。
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树
 using namespace std;
 #define int long long
 const int MAXN = 3e4+5;

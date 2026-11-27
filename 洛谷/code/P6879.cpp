@@ -1,7 +1,9 @@
 // https://www.luogu.com.cn/problem/P6879
 // 题意：周长为 L 的圆上从原点出发每秒移动 1 米（可顺时针或逆时针折返），第 i 个雕像在顺时针 X_i 米处且须在 T_i 秒内收集否则爆炸
 // 求最多能收集的雕像数量。
-// 数据范围：1 <= N <= 200，2 <= L <= 10^9，1 <= X_i < L，X_i < X_{i+1}，0 <= T_i <= 10^9。
+// 数据范围：1 <= N <= 200，2 <= L <= 10^9，1 <= X_i < L，X_i < X_{i+1}
+// 0 <= T_i <= 10^9。
+// 算法标签：区间动态规划
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

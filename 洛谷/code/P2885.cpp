@@ -6,6 +6,7 @@
 // 输出一个整数，表示安装新电话线所需的最小总花费。
 // 数据范围：对于 100% 的数据，2 <= n <= 100000，1 <= c, h_i <= 100。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、前缀最值优化
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 105;

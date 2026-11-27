@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1725
 // 题意：从 0 号格子出发，每次向右跳 L 到 R 格，落在编号大于 N 的位置就结束。每次落在河中的格子 i 得到 A_i，求过河能获得的最大总和。
 // 数据范围：1 ≤ L ≤ R ≤ N ≤ 2×10^5，A_0=0，−1000 ≤ A_i ≤ 1000，答案 ≤ 2^31−1。
+// 算法标签：动态规划、单调队列
 
 #include<bits/stdc++.h>
 using namespace std;

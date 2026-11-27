@@ -6,6 +6,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <limits.h>
+// 算法标签：动态规划、前缀和
 
 #define MAXN 1005
 #define MAXK 105

@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10723
 // 题意：给一棵树和每个点的黑白颜色。一次可把一个白点染黑，要求最后删去所有白点后，黑点仍构成一棵树。输出最少要染黑几个点。
 // 数据范围：1 ≤ n ≤ 10^5，颜色值为 0 或 1。
+// 算法标签：深度优先搜索
 
 #include<bits/stdc++.h>
 #define int long long

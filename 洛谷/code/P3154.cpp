@@ -5,6 +5,7 @@
 // 输出一个整数表示可能的分数表方案数（保证至少有 1 种）。
 // 数据范围：1 <= n <= 8，得分为非负整数。
 #include<bits/stdc++.h>
+// 算法标签：搜索、剪枝
 using namespace std;
 
 int n;

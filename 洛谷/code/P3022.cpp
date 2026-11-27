@@ -5,6 +5,7 @@
 // 若无解输出一行 -1；否则第一行输出保留边数 K，随后 K 行每行输出一条保留边的原始编号（1..M，互不相同）。
 // 数据范围：对于 100% 的数据，1 <= N <= 50000，1 <= M <= 100000。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、贪心、构造
 using namespace std;
 const int MAXN = 5e4+5;
 const int MAXM = 1e5+5;

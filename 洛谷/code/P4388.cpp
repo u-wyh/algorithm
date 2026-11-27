@@ -3,6 +3,7 @@
 // 求有多少种本质不同的矩形摆放方案（R * C 与 C * R 等价）。
 // 数据范围：1 <= N <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：欧拉函数、线性筛、数论
 using namespace std;
 const int MAXN = 1e6+5;
 

@@ -9,6 +9,7 @@
 #include<stdio.h>
 #include<string.h>
 #include<limits.h>  // 为了使用INT_MIN
+// 算法标签：动态规划
 
 #define max(x,y) ((x)>(y)?(x):(y))
 #define MAX(x,y,z) (max(max((x),(y)),(z)))

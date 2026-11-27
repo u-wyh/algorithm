@@ -5,6 +5,7 @@
 // 输出一个整数表示最大数量或 -1。
 // 数据范围：1 <= N <= 2*10^5，1 <= M <= 10^5，1 <= a_i <= b_i <= N。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、单调队列
 using namespace std;
 const int MAXN = 2e5+5;
 

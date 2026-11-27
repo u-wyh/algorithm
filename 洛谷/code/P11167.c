@@ -11,6 +11,7 @@
 // 1 <= P_i <= 10^9（所有 P_i 互异）
 // 0 <= A_i <= N - 1
 // 0 <= U_i, V_i <= N
+// 算法标签：贪心、日期模拟
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -4,6 +4,7 @@
 // 输出最小 D 值，绝对或相对误差不超过 10^-4。
 // 数据范围：4 <= N <= 1000，-10^9 <= x_i, y_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：计算几何、枚举
 using namespace std;
 const int MAXN = 1e3+5;
 

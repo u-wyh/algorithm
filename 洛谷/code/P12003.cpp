@@ -7,6 +7,7 @@
 // 数据范围：
 // 1 <= n, q <= 3 * 10^5
 // 1 <= a_i <= 10^8
+// 算法标签：树上莫队、位集、质因数分解
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P6218
 // 题意：若正整数的二进制表示中 0 的个数不少于 1 的个数，则称为「圆数」，求区间 [l,r] 内「圆数」的个数。
 // 数据范围：1 <= l, r <= 2*10^9。
+// 算法标签：数位动态规划、组合数学
 #include<bits/stdc++.h>
 using namespace std;
 

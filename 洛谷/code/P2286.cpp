@@ -4,6 +4,7 @@
 // 求所有领养者的不满意程度总和，输出对 1000000 取模的结果。
 // 数据范围：n <= 80000，0 <= b < 2^31，同一时间场内人数不超过 10000。
 #include<bits/stdc++.h>
+// 算法标签：FHQ-Treap、平衡树
 using namespace std;
 #define int long long
 const int MAXN = 80005;

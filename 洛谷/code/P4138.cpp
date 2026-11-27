@@ -4,6 +4,7 @@
 // 输出一行一个整数表示最大喜悦值总和。
 // 数据范围：1 <= N <= 2000，0 <= A_i <= N，-10^6 <= B_i <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、0-1背包、贪心
 using namespace std;
 const int MAXN = 2e3+5;
 

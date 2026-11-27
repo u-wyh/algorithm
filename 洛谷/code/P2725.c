@@ -4,6 +4,7 @@
 // 数据范围：1 <= k <= 200，1 <= n <= 50，1 <= a_i <= 10^4。
 #include<stdio.h>
 #include<limits.h>
+// 算法标签：完全背包、动态规划
 
 int min(int a,int b)
 {

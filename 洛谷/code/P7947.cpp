@@ -5,6 +5,7 @@
 // 输入一行 n, k。
 // 无解输出 -1，否则第一行输出 m，第二行输出 m 个正整数。
 // 数据范围：1 <= n, k <= 100。
+// 算法标签：线段树
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

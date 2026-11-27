@@ -4,6 +4,7 @@
 // 对每次 1 操作输出一行整数。
 // 数据范围：2 <= N <= 10^5，M <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：线段树、懒标记
 using namespace std;
 const int MAXN = 100005;
 

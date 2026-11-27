@@ -3,6 +3,7 @@
 // 求能保证先手 Alice 必胜的初始状态数对 10^9+9 取模的结果。
 // 数据范围：1 <= n <= 150000，1 <= m <= 50。
 #include<bits/stdc++.h>
+// 算法标签：博弈论、动态规划、组合数学
 using namespace std;
 #define int long long
 const int MOD = 1e9+9;

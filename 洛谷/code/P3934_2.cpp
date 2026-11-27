@@ -5,6 +5,7 @@
 // 数据范围：n, m <= 5 * 10^5，序列初始每个数在 [1, 2 * 10^9] 内，每次加上的数在 [0, 2 * 10^9] 内
 // p <= 2 * 10^7，共 10 组数据。
 #include<bits/stdc++.h>
+// 算法标签：扩展欧拉定理、线段树、线性筛
 using namespace std;
 #define int long long
 const int MAXN = 5e5+5;

@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P6142
 // 题意：给定一棵 N 个节点的树，将整棵树的所有边划分为若干条简单链，使得每条链长度均至少为 K，求正整数 K 的最大值。
 // 数据范围：1 <= N <= 10^5。
+// 算法标签：二分答案、贪心、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

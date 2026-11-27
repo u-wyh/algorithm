@@ -4,6 +4,7 @@
 // 输出修改后能找到的合法连续子段的最大长度。
 // 数据范围：1 <= d <= n <= 2*10^6，0 <= p <= 10^16，1 <= w_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：双指针、单调队列、前缀和
 using namespace std;
 #define int long long
 const int MAXN = 2e6+5;

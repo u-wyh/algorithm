@@ -5,6 +5,7 @@
 // 数据范围：1 <= n <= 2*10^5，1 <= m <= 5*10^5，1 <= k <= 10^9，0 <= d < n
 // 1 <= r_i <= n-d，-10^9 <= x_i <= 10^9。
 #include <bits/stdc++.h>
+// 算法标签：线段树、最大子段和、Hall定理
 using namespace std;
 typedef long long ll;
 const int MAXN = 200005;

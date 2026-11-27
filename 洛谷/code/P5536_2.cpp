@@ -8,6 +8,7 @@
 #include<cstdio>
 #include<algorithm>
 #include<vector>
+// 算法标签：树的直径、深度优先搜索、贪心
 using namespace std;
 #define N 100010
 int n,k,zj,num,ans_k;

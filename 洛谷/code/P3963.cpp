@@ -5,6 +5,7 @@
 // 数据范围：对于 100% 的数据，3 <= n <= 10^5（n 为奇数），n <= c <= 2 * 10^5，0 <= f <= 2 * 10^9
 // 0 <= a_i <= 2 * 10^9，0 <= b_i <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：可持久化线段树、离散化、二分查找
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXT = MAXN*80;

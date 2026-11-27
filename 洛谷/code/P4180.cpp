@@ -2,6 +2,7 @@
 // 题意：给一个 N 点 M 边的无向图（不保证无自环），求严格次小生成树的边权和（即边权和严格大于最小生成树的最小生成树）。
 // 数据范围：N <= 1e5，M <= 3e5，边权在 [0, 1e9] 内，保证必定存在严格次小生成树。
 #include<bits/stdc++.h>
+// 算法标签：Kruskal、最近公共祖先、倍增、最小生成树
 using namespace std;
 #define int long long
 const int INF = 1e15+5;

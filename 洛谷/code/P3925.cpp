@@ -4,6 +4,7 @@
 // 求在所有子树排列最优的情况下能获得的最大总权值和，对 10^9 + 7 取模。
 // 数据范围：1 <= N <= 5 * 10^5，0 <= a_i <= 10^8，每个节点的直接子节点数不超过 5。
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树、贪心
 using namespace std;
 #define int long long
 const int MAXN = 5e5+5;

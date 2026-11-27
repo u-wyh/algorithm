@@ -2,6 +2,7 @@
 // 题意：给定平面上 n 个不同的点，将所有任意两点确定且斜率存在的直线按斜率从大到小排序，求第 k 条直线斜率向下取整后的结果。
 // 数据范围：1 <= n <= 100000，1 <= k <= M（M 为斜率存在的直线总数），|x_i|, |y_i| <= 10^8。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、树状数组、离散化
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

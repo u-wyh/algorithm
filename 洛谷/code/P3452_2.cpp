@@ -4,6 +4,7 @@
 // 第一行输出最多能租用的办公楼数 t，第二行按非降序输出 t 栋楼各自的员工数（任意合法方案）。
 // 数据范围：2 <= n <= 10^5，1 <= m <= 2*10^6，1 <= a_i < b_i <= n，无重复信息。
 #include<bits/stdc++.h>
+// 算法标签：并查集、排序
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 2e6+5;

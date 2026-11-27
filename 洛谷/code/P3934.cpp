@@ -8,6 +8,7 @@
 #include <vector>
 #include <functional>
 #include <algorithm>
+// 算法标签：扩展欧拉定理、树状数组、线性筛
 using namespace std;
 
 typedef long long LL;

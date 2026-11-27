@@ -4,6 +4,7 @@
 // 输出 q 行，依次为每次询问的最小值之和。
 // 数据范围：1 <= n, q <= 100000，|a_i| <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：ST表、单调栈、前缀和
 using namespace std;
 const int INF = 1e9+1;
 const int MAXN = 1e5+5;

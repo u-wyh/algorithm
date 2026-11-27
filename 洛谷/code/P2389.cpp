@@ -4,6 +4,7 @@
 // 输出最大总和。
 // 数据范围：n <= 500，k <= n，-1000 <= a_i <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：动态规划
 using namespace std;
 const int MAXN = 505;
 const int INF = 1e9;

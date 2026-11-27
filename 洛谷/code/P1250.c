@@ -8,6 +8,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #define MAX 30000+4
+// 算法标签：贪心、排序
 
 int used[MAX];
 

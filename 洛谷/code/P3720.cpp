@@ -3,11 +3,13 @@
 // 从路口 1 驾车到路口 N，经过某条边 X->Y 时，若该边不在某套 GPS 下从 X 到 N 的最短路径上
 // 则该 GPS 发出 1 次抱怨（两套都抱怨则总抱怨数 +2）。
 // 求到达路口 N 能听到的最少抱怨总数，输出一个整数。
-// 数据范围：2 <= N <= 10^5，1 <= M <= 5*10^5，1 <= A_i, B_i <= N，1 <= P_i, Q_i <= 10^5。
+// 数据范围：2 <= N <= 10^5，1 <= M <= 5*10^5，1 <= A_i, B_i <= N，1 <= P_i
+// Q_i <= 10^5。
 #include <iostream>
 #include <vector>
 #include <queue>
 #include <cstring>
+// 算法标签：SPFA
 using namespace std;
 
 const int MAXN = 100010, INF = 1e9;

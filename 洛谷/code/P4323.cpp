@@ -3,6 +3,7 @@
 // 求树 B 中可能是那个多余叶子的最小节点编号。
 // 数据范围：1 <= N <= 1e5。
 #include<bits/stdc++.h>
+// 算法标签：树哈希、换根动态规划、欧拉筛
 using namespace std;
 const int MAXM = 1300005;//这个范围内存在1e5个质数   用于欧拉筛
 const int MAXN = 1e5+25;

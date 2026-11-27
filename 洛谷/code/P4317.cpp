@@ -3,6 +3,7 @@
 // 求 sum(1) * sum(2) * ... * sum(N) 对 10000007 取模的结果。
 // 数据范围：1 <= N <= 1e15。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、快速幂
 using namespace std;
 #define int long long
 const int MAXN = 51;

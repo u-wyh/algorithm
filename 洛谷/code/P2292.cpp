@@ -4,6 +4,7 @@
 // 每段文章输出一行最长前缀长度。
 // 数据范围：1 <= n <= 20，1 <= m <= 50，单词长 <= 20，文章长 <= 2*10^6，均只含小写字母。
 #include<bits/stdc++.h>
+// 算法标签：AC自动机、动态规划
 using namespace std;
 const int MAXN = 405;
 const int MAXM = 2e6+5;

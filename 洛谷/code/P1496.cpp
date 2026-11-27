@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1496
 // 题意：给 n 段燃烧区间 [a,b)，重叠部分只算一次，输出所有被覆盖位置的总长度。
 // 数据范围：1 ≤ n ≤ 20000，-2^31 ≤ a<b < 2^31，答案小于 2^31。
+// 算法标签：离散化、排序
 
 #include<bits/stdc++.h>
 using namespace std;

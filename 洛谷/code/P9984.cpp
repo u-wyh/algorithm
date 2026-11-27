@@ -5,6 +5,7 @@
 // 输出每个 v 最终得到的 h 对 10^9 + 7 取模的结果。
 // 题意：第一行输入 N, M，后 M 行输入第 e 条边的端点 (a_e, b_e)；输出 N 行，第 i 行为从节点 i 出发的结果。
 // 数据范围：2 <= N <= 2 * 10^5，N - 1 <= M <= 4 * 10^5，保证图连通且无重边。
+// 算法标签：带权并查集
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

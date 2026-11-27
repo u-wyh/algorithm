@@ -7,6 +7,7 @@
 // 数据范围：对于 100% 的数据，1 <= N <= 500，1 <= M <= 500，1 <= X <= 10^6，1 <= I, J <= N
 // 1 <= L, C <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、剪枝
 using namespace std;
 const int MAXN = 505;
 

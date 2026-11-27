@@ -4,6 +4,7 @@
 // 求周期天数尽量长的前提下总路程尽量短，输出最长天数和最短总路程。
 // 数据范围：2 <= N <= 200，1 <= M <= 2*10^4，1 <= c <= 10^4。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、Dijkstra、SPFA
 using namespace std;
 #define int long long  
 const int MAXN = 405;  

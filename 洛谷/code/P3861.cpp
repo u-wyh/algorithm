@@ -4,6 +4,7 @@
 // 每组输出一行整数，结果模 998244353。
 // 数据范围：对于 100% 的数据，1 <= T <= 5，2 <= n <= 10^12。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、数论
 using namespace std;
 const int MOD = 998244353;
 const int MAXN = 1e6+5;

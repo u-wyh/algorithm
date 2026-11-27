@@ -1,8 +1,10 @@
 // https://www.luogu.com.cn/problem/P5485
-// 题意：总赛程 s = k + r（k 为长跑，r 为骑车），已知 n 名选手各自的长跑和骑车速度，求最有利于第 n 号选手夺冠且领先第 2 名最多的 k, r。
+// 题意：总赛程 s = k + r（k 为长跑，r 为骑车），已知 n 名选手各自的长跑和骑车速度，求最有利于第 n 号选手夺冠且领先第 2 名最多的 k
+// r。
 // 输入 s, n 及每名选手的跑步、骑车速度；输出保留两位小数的 k, r 和领先秒数（四舍五入），若无法获胜则输出 NO。
 // 数据范围：s <= 2^31，2 <= n <= 100。
 #include<bits/stdc++.h>
+// 算法标签：枚举、数学
 using namespace std;
 const int MAXN = 105;
 const long double eps = 1e-18L;

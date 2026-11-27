@@ -5,6 +5,7 @@
 // 数据范围：n <= 1000，1000 <= h_i <= 2000。
 #include<stdio.h>
 #define MOD 19650827
+// 算法标签：区间动态规划
 
 int max(int a,int b)
 {

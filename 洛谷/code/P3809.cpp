@@ -10,6 +10,7 @@
 // 那么由此可以实现长度为k的字符的排序
 // 每次排完序后分组  如果前k个字符一样 那么编入一个组
 #include<bits/stdc++.h>
+// 算法标签：后缀数组、倍增、基数排序
 using namespace std;
 const int MAXN = 2e6+5;
 

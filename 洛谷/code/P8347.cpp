@@ -4,6 +4,7 @@
 // 若回合结束后只剩 1 个节点，则该回合操作者失败。
 // 求谁必胜（输出 Hifuu 或 Luna）。
 // 数据范围：100% 数据满足 1 <= T <= 5，2 <= n <= 10^5。
+// 算法标签：博弈论、树论
 #include <iostream>
 #include <cstdio>
 #include <vector>

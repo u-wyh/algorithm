@@ -5,6 +5,7 @@
 // 第一行输入 N，第二行输入 N 个 A_i，第三行输入 N 个 B_i。
 // 输出 N 行每行一个整数。
 // 数据范围：1 <= N <= 10^5，1 <= A_i <= 2^{30} - 1，1 <= B_i <= 10^9。
+// 算法标签：并查集、位运算
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

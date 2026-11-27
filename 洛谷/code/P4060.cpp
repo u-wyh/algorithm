@@ -6,6 +6,7 @@
 // 数据范围：对于全部测试点，1 <= n <= 10^9，0 <= m <= min{n, 10^5}，已知 0 <= a_i <= 10^9
 // 保证所有输入下标 i 互不相同且 1 <= i <= n（未知 a_i 可超过已知 a_i 的范围）。
 #include<bits/stdc++.h>
+// 算法标签：贪心、位运算、排序
 using namespace std;
 #define int long long
 const int MAXM = 1e5+5;

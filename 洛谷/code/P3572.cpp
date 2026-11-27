@@ -4,6 +4,7 @@
 // 输出 q 行，每行输出第 i 只鸟的最小劳累值。
 // 数据范围：1 <= n <= 10^6，1 <= d_i <= 10^9，1 <= q <= 25，1 <= k_i <= n - 1。
 #include<bits/stdc++.h>
+// 算法标签：单调队列、动态规划
 using namespace std;
 const int MAXN = 1e6+5;
 

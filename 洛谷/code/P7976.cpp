@@ -4,6 +4,7 @@
 // 第一行输入 t, maxn（询问组数与询问的最大可能值），接下来 t 行每行一个正整数 n。
 // 输出 t 行每行一个整数。
 // 数据范围：1 <= t <= 3*10^4，1 <= n <= maxn <= 2*10^{16}。
+// 算法标签：数位动态规划、记忆化搜索
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

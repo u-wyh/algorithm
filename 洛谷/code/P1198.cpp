@@ -11,6 +11,7 @@
 #include <iostream>
 #include <cstring>
 #define ll long long
+// 算法标签：ST表、倍增
 using namespace std;
 ll a[200001],f[200001][21],t,D;
 int n,m;

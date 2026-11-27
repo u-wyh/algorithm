@@ -12,6 +12,7 @@
 #include<cstdio>
 #define lson nod<<1
 #define rson nod<<1|1
+// 算法标签：线段树、计数排序
 using namespace std;
 
 struct Node{

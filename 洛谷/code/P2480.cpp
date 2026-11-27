@@ -2,6 +2,7 @@
 // 题意：给定正整数 n 和 g，求 g^{sum_{k|n} C(n, n/k)} 对 999911659 取模的结果。
 // 输出计算结果。
 // 数据范围：1 <= n, g <= 10^9。
+// 算法标签：卢卡斯定理、中国剩余定理、快速幂
 #include <bits/stdc++.h>
 #define LL long long
 using namespace std;

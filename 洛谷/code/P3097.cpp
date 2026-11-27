@@ -6,6 +6,7 @@
 // 数据范围：1 <= N <= 40000，1 <= D <= 50000，M_i 与 m 为正整数（题面未给出 M_i 明确数值上限
 // 提示总答案可能超出 32 位整型）。
 #include<bits/stdc++.h>
+// 算法标签：线段树、动态规划
 using namespace std;
 const int MAXN = 4e4+5;
 const int INF = 1e9;

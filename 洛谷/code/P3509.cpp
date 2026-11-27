@@ -4,6 +4,7 @@
 // 输出一行 n 个整数，表示青蛙从第 1..n 块石头出发跳跃 m 次后各自停留的石头编号。
 // 数据范围：1 <= k < n <= 10^6，1 <= m <= 10^18，1 <= p_1 < ... < p_n <= 10^18。
 #include<bits/stdc++.h>
+// 算法标签：倍增、双指针
 using namespace std;
 #define int long long
 const int MAXN = 1e6+5;

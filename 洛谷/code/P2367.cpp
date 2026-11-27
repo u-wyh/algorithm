@@ -4,6 +4,7 @@
 // 输出最低分。
 // 数据范围：n <= 5*10^6，p <= n，初始成绩 <= 100，z <= 100。
 #include<bits/stdc++.h>
+// 算法标签：差分、前缀和
 using namespace std;
 
 int n,m;

@@ -5,6 +5,7 @@
 // 数据范围：N <= 1000，2 <= M_i <= 101，元素范围 [0, 1864]。
 // 使用哈希实现
 #include<bits/stdc++.h>
+// 算法标签：字符串哈希、二分答案、差分
 using namespace std;
 #define int long long
 const int MAXN = 1e3+5;

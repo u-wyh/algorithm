@@ -5,6 +5,7 @@
 // 输出一个整数表示最大整数。
 // 数据范围：2 <= N <= 262144，初始每个数在 [1, 40] 之间。
 #include<bits/stdc++.h>
+// 算法标签：倍增、动态规划
 using namespace std;
 const int MAXN = 60;
 const int MAXM = 262150;

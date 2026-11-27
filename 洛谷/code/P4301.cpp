@@ -4,6 +4,7 @@
 // 求先手第一回合至少要拿走多少根火柴才能保证必胜，不能必胜输出 -1。
 // 数据范围：1 <= k <= 100，1 <= a_i <= 1e9。
 #include<bits/stdc++.h>
+// 算法标签：线性基、贪心
 using namespace std;
 const int BIT = 40;
 

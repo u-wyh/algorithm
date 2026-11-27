@@ -3,6 +3,7 @@
 // 输出方案数对 999911659 取模的结果。
 // 数据范围：1 <= N <= 10^18，1 <= P <= 500。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、组合数学、同余
 using namespace std;
 #define int long long
 const int MOD = 999911659;

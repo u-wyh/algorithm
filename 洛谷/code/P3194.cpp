@@ -4,6 +4,7 @@
 // 按编号从小到大输出所有可见直线的编号，空格分隔且末尾需有一个空格。
 // 数据范围：0 < N <= 50000，|A_i|, |B_i| <= 500000。
 #include<bits/stdc++.h>
+// 算法标签：凸包、单调栈、计算几何
 using namespace std;
 const int MAXN = 5e4+5;
 

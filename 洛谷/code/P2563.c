@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
+// 算法标签：完全背包、动态规划
 
 
 int pan(int x) {

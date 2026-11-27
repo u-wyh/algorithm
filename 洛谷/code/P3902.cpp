@@ -3,6 +3,7 @@
 // 求最少修改多少个数字，使得整个序列严格单调递增。
 // 数据范围：1 <= n <= 10^5，1 <= A_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：最长上升子序列、二分查找
 using namespace std;
 
 int main()

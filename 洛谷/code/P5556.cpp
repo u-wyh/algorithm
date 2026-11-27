@@ -3,6 +3,7 @@
 // 输入 n, q、初始点权、树边及各次 Update/Query 操作；对每个 Query 输出 YES 或 NO。
 // 数据范围：1 <= n, q <= 10^5，0 <= v_i, z < 2^30。
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树、线性基
 using namespace std;
 const int MAXN = 1e5+5;
 const int BIT = 30;

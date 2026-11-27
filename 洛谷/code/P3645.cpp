@@ -4,6 +4,7 @@
 // 输出将消息从 0 号 doge 传递到 1 号 doge 所需的最少总跳跃步数，若无法到达输出 -1。
 // 数据范围：1 <= N <= 30000，1 <= P_i <= 30000，2 <= M <= 30000，0 <= B_i < N。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索、bitset
 using namespace std;
 const int MAXN = 3e4+5;
 

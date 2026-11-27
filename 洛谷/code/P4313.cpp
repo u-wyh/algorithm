@@ -3,6 +3,7 @@
 // 若自己和上下左右相邻的同学全都选文科（或全选理科）还会额外获得 same_art_{i,j}（或 same_science_{i,j}），求最大总满意值。
 // 数据范围：n, m <= 100，读入的所有满意值均 <= 500。
 #include<bits/stdc++.h>
+// 算法标签：最小割、Dinic
 using namespace std;
 const int MAXN = 105;
 const int MAXV = 3*MAXN*MAXN;

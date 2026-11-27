@@ -6,6 +6,7 @@
 // 数据范围：
 // 1 <= n <= 100
 // 1 <= m <= 8（集合 A 元素均在 1 到 8 之间）
+// 算法标签：记忆化搜索
 #include<bits/stdc++.h>
 using namespace std;
 const int mod=1e9+7;

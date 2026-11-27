@@ -3,6 +3,7 @@
 // 求净收益（总收益减总费用）最大的方案，输出实验编号、仪器编号和净收益（SPJ）。
 // 数据范围：1 <= n, m <= 50，1 <= c, p < 2^31。
 #include<bits/stdc++.h>
+// 算法标签：最大流、最小割、最大权闭合子图
 using namespace std;
 #define int long long
 const int MAXN = 105;

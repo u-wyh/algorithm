@@ -1,7 +1,9 @@
 // https://www.luogu.com.cn/problem/P8766
 // 题意：输入 T 和 T 个整数 n_1..n_T
-// 对每个 n_i 输出满足 1 <= a, b, c <= n_i、a xor b xor c = 0 且边长 a, b, c 能构成非退化三角形的三元组 (a, b, c) 个数。
+// 对每个 n_i 输出满足 1 <= a, b, c <= n_i、a xor b xor c = 0 且边长 a, b
+// c 能构成非退化三角形的三元组 (a, b, c) 个数。
 // 数据范围：1 <= T <= 100000，1 <= n_i <= 2^30。
+// 算法标签：数位动态规划、记忆化搜索、状态压缩
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

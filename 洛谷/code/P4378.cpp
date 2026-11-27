@@ -2,6 +2,7 @@
 // 题意：给定长度为 N 的数组 A，模拟每轮先输出 "moo" 再单向从左到右冒泡一遍的标准冒泡排序，求 "moo" 的输出次数。
 // 数据范围：1 <= N <= 100000，0 <= A[i] <= 10^9（元素可重复）。
 # include <bits/stdc++.h>
+// 算法标签：树状数组、离散化
 using namespace std;
 const int N=1e5+10;
 int a[N],tmp[N],c[N];

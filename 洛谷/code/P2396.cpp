@@ -4,6 +4,7 @@
 // 输出获胜的方案数对 10^9+7 取模的结果。
 // 数据范围：n <= 24，0 <= m <= 2，1 <= a_i, b_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：状态压缩DP、位运算
 using namespace std;
 const int MOD = 1e9+7;
 

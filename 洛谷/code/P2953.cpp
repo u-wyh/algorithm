@@ -5,6 +5,7 @@
 // 输出共 G 行，对每场游戏若贝茜能赢输出 YES，否则输出 NO。
 // 数据范围：对于 100% 的数据，1 <= G <= 100，1 <= N_i <= 1000000。
 #include<bits/stdc++.h>
+// 算法标签：博弈论、动态规划
 using namespace std;
 const int MAXN = 1e6+5;
 

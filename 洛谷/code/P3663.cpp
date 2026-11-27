@@ -4,6 +4,7 @@
 // 输出远距离奶牛对的数量。
 // 数据范围：2 <= N <= 100，1 <= K <= 100，K <= N^2。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索
 using namespace std;
 
 int n,k,r;

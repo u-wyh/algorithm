@@ -3,6 +3,7 @@
 // 输出该乘积对 104857601 取模的结果。
 // 数据范围：1 <= N <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：线性筛、欧拉函数、快速幂
 using namespace std;
 #define int long long
 const int MAXN = 1e6+5;

@@ -4,6 +4,7 @@
 // 数据范围：1 <= n <= 2*10^5+5，1 <= m <= n，1 <= x <= y <= n，t 为正且严格升序
 // 所有输入数在 32 位有符号整型范围内。
 #include <bits/stdc++.h>
+// 算法标签：线段树
 using namespace std;
 
 using ll = long long;

@@ -2,6 +2,7 @@
 // 题意：长为 n 的队列字符串（含 'B'、'G'、'?'，'?' 等概率为 'B' 或 'G'），相邻 'GG'/'BB' 满意度 0，'BG' 为 -b
 // 'GB' 为 a，求总满意度 >= m 的概率（对 10^9+7 取模）。
 // 数据范围：2 <= n <= 2020，1 <= |m| <= 10^12，1 <= a, b <= 10^9。
+// 算法标签：动态规划、快速幂
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

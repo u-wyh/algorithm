@@ -8,6 +8,7 @@
 // 1 <= C <= 10（边权）
 // 最短路总数不超过 2^30
 #include<bits/stdc++.h>
+// 算法标签：Floyd、最短路
 using namespace std;
 const int MAXN = 2005;
 

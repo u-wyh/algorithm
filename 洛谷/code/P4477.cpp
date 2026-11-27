@@ -3,6 +3,7 @@
 // 两部点满足 A_i + C_j <= Z 时连边，求二分图最大匹配数。
 // 数据范围：N <= 152501，M, Q <= 52501，1 <= A_i, B_i, Z <= 10^9，1 <= L_i <= R_i <= M。
 #include<bits/stdc++.h>
+// 算法标签：莫队、线段树
 using namespace std;
 const int MAXN = 152505;
 const int MAXM = 52505;

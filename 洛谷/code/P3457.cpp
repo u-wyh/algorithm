@@ -9,6 +9,7 @@
 //排完序后 应该是1 2 3 3 如果第三个位置上的3是原来第一个位置上的3  那么它和1 2都不联通
 //那么就会导致答案加一  从而出错
 #include<bits/stdc++.h>
+// 算法标签：并查集、排序、贪心
 using namespace std;
 const int MAXN = 1005;
 

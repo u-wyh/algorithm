@@ -2,6 +2,7 @@
 // 题意：给定正整数 a, m, b，求 a^b mod m 的值。
 // 数据范围：1 <= a <= 10^9，1 <= b <= 10^20000000，1 <= m <= 10^8。
 #include<bits/stdc++.h>
+// 算法标签：扩展欧拉定理、欧拉函数、快速幂
 using namespace std;
 #define int long long
 

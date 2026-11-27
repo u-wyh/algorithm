@@ -4,6 +4,7 @@
 // 输出两行，分别对应问 1 和问 2 的答案。
 // 数据范围：1 <= n <= 10^4，1 <= m <= 5*10^4。
 #include<bits/stdc++.h>
+// 算法标签：Tarjan、强连通分量、缩点
 using namespace std;
 const int MAXN = 1e4+5;
 const int MAXM = 5e4+5;

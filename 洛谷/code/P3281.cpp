@@ -9,6 +9,7 @@
 // 2 <= B <= 10^5
 // 1 <= N, M <= 10^5
 #include<bits/stdc++.h>
+// 算法标签：数位动态规划
 using namespace std;
 #define int long long
 const int MOD = 20130427;

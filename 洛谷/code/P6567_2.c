@@ -1,7 +1,9 @@
 // https://www.luogu.com.cn/problem/P6567
-// 题意：n 种钱币，第 i 种面额 k_i 元共 a_i 张；m 块手表价格为 t_i 元。不找零前提下，判断每块手表能否恰好凑出（输出 Yes / No）。
+// 题意：n 种钱币，第 i 种面额 k_i 元共 a_i 张；m 块手表价格为 t_i 元。
+// 不找零前提下，判断每块手表能否恰好凑出（输出 Yes / No）。
 // 数据范围：1 <= n <= 200，1 <= m <= 10^5，1 <= a_i <= 1000，1 <= k_i <= 500000
 // 0 <= t_i <= 500000。
+// 算法标签：多重背包、动态规划、排序
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

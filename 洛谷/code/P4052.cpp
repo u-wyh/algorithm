@@ -4,6 +4,7 @@
 // 输出结果对 10^4 + 7 取模的值。
 // 数据范围：对于全部测试点，1 <= n <= 60，1 <= m <= 100，1 <= |s_i| <= 100，s_i 仅含大写英文字母。
 #include<bits/stdc++.h>
+// 算法标签：AC自动机、动态规划、快速幂
 using namespace std;
 const int MAXN = 6e3+5;
 const int MOD = 1e4+7;

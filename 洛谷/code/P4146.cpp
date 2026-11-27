@@ -1,8 +1,10 @@
 // https://www.luogu.com.cn/problem/P4146
-// 题意：第一行输入序列长度 N 和操作数 M，序列初始全为 0；接下来 M 行操作：1 L R V 区间加 V；2 L R 区间翻转；3 L R 查询区间最大值。
+// 题意：第一行输入序列长度 N 和操作数 M，序列初始全为 0；接下来 M 行操作：1 L R V 区间加 V；2 L R 区间翻转；
+// 3 L R 查询区间最大值。
 // 对每个第 3 种操作输出一行整数表示区间最大值。
 // 数据范围：1 <= N <= 50000，1 <= M <= 10^5，|V| <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：FHQ-Treap、平衡树
 using namespace std;
 const int MAXN = 50005;
 

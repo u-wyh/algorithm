@@ -7,6 +7,7 @@
 // 数据范围：所有输入数据均为正整数且在区间 (0, 10^5) 内，保证最大总盈利为正。
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：完全背包、动态规划
 
 typedef long long ll;
 

@@ -1,7 +1,9 @@
 // https://www.luogu.com.cn/problem/P4587
-// 题意：定义可重正整数集的神秘数为最小的不能表示为该集合某子集和的正整数；给定长为 n 的正整数序列和 m 次询问，每次求区间 [l, r] 构成的可重集的神秘数。
+// 题意：定义可重正整数集的神秘数为最小的不能表示为该集合某子集和的正整数；
+// 给定长为 n 的正整数序列和 m 次询问，每次求区间 [l, r] 构成的可重集的神秘数。
 // 数据范围：1 <= n, m <= 10^5，sum a_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：主席树
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXT = MAXN*40;

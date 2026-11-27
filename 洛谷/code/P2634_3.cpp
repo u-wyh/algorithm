@@ -4,6 +4,7 @@
 // 输出最简分数 a/b（概率为 1 输出 1/1）。
 // 数据范围：n <= 2*10^4。
 #include<bits/stdc++.h>
+// 算法标签：点分治、深度优先搜索、最大公约数
 using namespace std;
 const int MAXN = 2e4+5;
 

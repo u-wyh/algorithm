@@ -3,6 +3,7 @@
 // 为每个人确定实数支付额 0 <= b_i <= a_i 且 sum(b_i) = S
 // 最小化标准差 sqrt((1/n)*sum((b_i - S/n)^2))，四舍五入保留 4 位小数输出。
 // 数据范围：n <= 5*10^5，0 <= a_i <= 10^9（由题意 0 <= S <= sum(a_i) <= 5*10^14）。
+// 算法标签：贪心、排序
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

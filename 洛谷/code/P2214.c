@@ -5,6 +5,7 @@
 // 数据范围：1 <= N <= 100，1 <= B <= 20，1 <= V_i <= 100，每牧场奶牛总音量 <= 10^5。
 #include<stdio.h>
 #include<string.h>
+// 算法标签：完全背包、差分
 
 int max(int a,int b)
 {

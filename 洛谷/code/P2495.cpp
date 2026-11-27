@@ -4,6 +4,7 @@
 // 每次询问输出一行最小边权和。
 // 数据范围：2 <= n <= 2.5*10^5，1 <= m <= 5*10^5，sum(k_i) <= 5*10^5，1 <= w <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：虚树、树形动态规划、最近公共祖先、倍增
 using namespace std;
 const int MAXN = 5e5+5;
 const int MAXH = 22;

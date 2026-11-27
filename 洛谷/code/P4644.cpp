@@ -1,8 +1,10 @@
 // https://www.luogu.com.cn/problem/P4644
 // 题意：有 N 头牛，每头牛每天愿在 [T1, T2] 秒内工作并收取全额费用 S，求完全覆盖 [M, E] 每一秒的最少总费用（无解输出 -1）。
-// 数据范围：1 <= N <= 10000，0 <= M <= E <= 86399，M <= T1 <= T2 <= E，0 <= S <= 500000。
+// 数据范围：1 <= N <= 10000，0 <= M <= E <= 86399，M <= T1 <= T2 <= E
+// 0 <= S <= 500000。
 //P4644
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、最短路
 using namespace std;
 #define int long long
 const int MAXN = 90000;

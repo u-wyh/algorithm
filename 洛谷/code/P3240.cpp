@@ -5,6 +5,7 @@
 // 输出合法质量序列总数对 10^9+7 取模的结果。
 // 数据范围：N <= 100，0 <= M <= N。
 #include<bits/stdc++.h>
+// 算法标签：树形动态规划、并查集、拓扑排序
 using namespace std;
 #define int long long
 const int MOD = 1e9+7;

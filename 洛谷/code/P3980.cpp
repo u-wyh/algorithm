@@ -5,6 +5,7 @@
 // 求满足每天人数需求的最小总招募费用。
 // 数据范围：1 <= n <= 1000，1 <= m <= 10000，题目中其余涉及的数据均不超过 2^31 - 1。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、SPFA、Dijkstra
 using namespace std;
 #define int long long
 const int MAXN = 1005;

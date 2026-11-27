@@ -2,6 +2,7 @@
 // 题意：给定 n 和 k，对所有长度为 n 的排列 p，记 f(p) 为长度为 n-k+1 的滑窗最大值序列，w(f(p)) 为 f(p) 中不同数字的个数
 // 求所有 n! 个排列的 w(f(p)) 之和对 998244353 取模。
 // 数据范围：1 <= k <= n <= 5*10^5。
+// 算法标签：组合数学、乘法逆元、快速幂
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

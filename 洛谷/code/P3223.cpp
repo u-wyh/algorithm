@@ -4,6 +4,7 @@
 // 输出满足条件的总排列数（高精度，无取模）。
 // 数据范围：0 <= n <= 2000，0 <= m <= 2000。
 #include<bits/stdc++.h>
+// 算法标签：组合数学、高精度计算
 using namespace std;
 
 int n,m;

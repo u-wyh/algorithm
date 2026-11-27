@@ -3,6 +3,7 @@
 // Q x y 询问当前树上经过边 (x, y) 的简单路径数量（保证该边存在）。
 // 数据范围：1 <= N, Q <= 1e5。
 #include<bits/stdc++.h>
+// 算法标签：线段树分治、可撤销并查集
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXT = 3e6+5;

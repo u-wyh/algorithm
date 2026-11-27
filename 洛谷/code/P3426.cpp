@@ -4,6 +4,7 @@
 // 输出一个整数，表示能印出目标串的最短印章长度。
 // 数据范围：目标字符串长度不超过 5*10^5，仅包含小写英文字母。
 #include<bits/stdc++.h>
+// 算法标签：KMP、动态规划
 using namespace std;
 const int MAXN = 5e5+5;
 

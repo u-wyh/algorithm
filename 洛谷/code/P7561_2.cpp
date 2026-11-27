@@ -3,6 +3,7 @@
 // 在所有 n(n-1)/2 条无向路中，按从小到大输出最便宜的 k 条的花费。
 // 数据范围：2 <= n <= 2.5*10^5，1 <= k <= min(2.5*10^5, n(n-1)/2)
 // -10^9 <= x_i, y_i <= 10^9。
+// 算法标签：二分答案、树状数组、双指针
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

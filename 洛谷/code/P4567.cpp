@@ -3,6 +3,7 @@
 // 数据范围：Move <= 5*10^4 次，Insert/Delete/Rotate 总计 <= 6*10^3 次，Get <= 2*10^4 次
 // Prev/Next 总计 <= 2*10^4 次，插入总字符数 <= 2^21。
 #include<bits/stdc++.h>
+// 算法标签：FHQ-Treap
 using namespace std;
 const int MAXN = (1<<21)+1e4;
 

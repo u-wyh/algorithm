@@ -9,6 +9,7 @@
 #define lc now<<1
 #define rc now<<1|1
 #define int __int128
+// 算法标签：线段树、期望、快速幂
 using namespace std;
 int read()
 {

@@ -3,6 +3,7 @@
 // 若次数相同则输出编号最小的那个。
 // 数据范围：1 <= n <= 40000，1 <= m <= 50000，1 <= a_i <= 1e9，1 <= l_0, r_0 <= n。
 #include<bits/stdc++.h>
+// 算法标签：分块、离散化、前缀和
 using namespace std;
 const int MAXN = 4e4+5;
 const int MAXB = 205;

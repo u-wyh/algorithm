@@ -3,6 +3,7 @@
 // 每次输出区间 [i, j] 内数值最接近且不相等的两个数之差的绝对值。
 // 数据范围：1 <= N, Q <= 10^5，1 <= A_i <= 10^9，1 <= i < j <= N，数据纯随机生成。
 #include<bits/stdc++.h>
+// 算法标签：离线扫描线、线段树、树状数组
 using namespace std;
 const int MAXN = 1e5+5;
 const int INF = 1e9;

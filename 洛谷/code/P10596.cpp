@@ -17,6 +17,7 @@
 // 提交以下的code，提交时请把类名改成"Main"，可以通过所有测试用例
 //这道题是 钦定至少k个 --> 钦定k个
 //是钦定系列的题目
+// 算法标签：组合数学、快速幂
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

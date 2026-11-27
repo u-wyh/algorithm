@@ -5,6 +5,7 @@
 // 输出一行一个整数表示最少镜子数量；若无法到达谷仓则输出 -1。
 // 数据范围：对于 100% 的数据，1 <= N <= 100000，所有坐标均为 0 到 10^9 之间的整数。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、最短路、排序
 using namespace std;
 const int INF = 1e9;
 const int MAXN = 1e6+5;

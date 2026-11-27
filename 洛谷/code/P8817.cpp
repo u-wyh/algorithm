@@ -4,6 +4,7 @@
 // 规划路线 家 -> A -> B -> C -> D -> 家（A, B, C, D 为 4 个互不相同的景点，保证有解）
 // 输出这 4 个景点的最大分数之和。
 // 数据范围：5 <= n <= 2500，1 <= m <= 10000，0 <= k <= 100，1 <= s_i <= 10^18。
+// 算法标签：广度优先搜索、枚举、贪心
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

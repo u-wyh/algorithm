@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1451
 // 题意：给一个由数字 0 到 9 组成的矩形。非零格子是细胞格，上下左右相邻的非零格可以连通。输出全部非零格组成的连通块数。
 // 数据范围：1 ≤ n,m ≤ 100，每行由 m 个数字字符组成。
+// 算法标签：深度优先搜索
 
 #include<bits/stdc++.h>
 using namespace std;

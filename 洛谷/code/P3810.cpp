@@ -4,6 +4,7 @@
 // 共输出 n 行，第 d+1 行输出满足 f(i) = d 的元素 i 的个数（d 从 0 到 n-1）。
 // 数据范围：对于所有数据，1 <= n <= 10^5，1 <= a_i, b_i, c_i <= k <= 2 * 10^5。
 #include<bits/stdc++.h>
+// 算法标签：CDQ分治、树状数组
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXK = 2e5+5;

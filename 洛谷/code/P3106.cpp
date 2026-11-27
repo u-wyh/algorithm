@@ -8,6 +8,7 @@
 #include <vector>
 #include <queue>
 #include <cstring>
+// 算法标签：SPFA、最短路
 using namespace std;
 
 const int MAXN = 10010, INF = 1e9;

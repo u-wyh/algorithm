@@ -3,6 +3,7 @@
 // 求给定小写字母串的最长双倍回文子串长度（不存在输出 0）。
 // 数据范围：1 <= N <= 500000。
 #include<bits/stdc++.h>
+// 算法标签：Manacher
 using namespace std;
 const int MAXN = 5e5+5;
 

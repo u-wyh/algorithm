@@ -6,6 +6,7 @@
 // 题意：第一行输入 T，每组输入 n 及 n 行 (x_i, y_i)；每组输出一行一个整数。
 // 数据范围：1 <= n <= 10^6，-10^9 <= x_i, y_i <= 10^9，sum(n) <= 10^6
 // 保证没有发生器或线段经过 (0, 0)（未显式给出 T 上界，受 sum(n) 限制）。
+// 算法标签：极角排序、双指针
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

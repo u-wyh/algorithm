@@ -5,6 +5,7 @@
 // 数据范围：1 <= N <= 50000。
 //P3660
 #include<bits/stdc++.h>
+// 算法标签：树状数组、排序
 using namespace std;
 const int MAXN = 50005;
 

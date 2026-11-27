@@ -3,6 +3,7 @@
 // 最小化所有点对中 dist(c, u_i) + dist(c, v_i) 的最大值。
 // 数据范围：1 <= n, m <= 10^5，1 <= w_i <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：点分治、深度优先搜索、树的重心
 using namespace std;
 const int MAXN = 1e5+5;
 

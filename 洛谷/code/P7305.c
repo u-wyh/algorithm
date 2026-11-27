@@ -1,6 +1,8 @@
 // https://www.luogu.com.cn/problem/P7305
-// 题意：有 N 只左脚鞋（大小 L_i）和 M 只右脚鞋（大小 R_i），需配出尽量多的鞋对（min(N, M) 对），最小化所有配对鞋大小之差绝对值的最大值。
+// 题意：有 N 只左脚鞋（大小 L_i）和 M 只右脚鞋（大小 R_i），需配出尽量多的鞋对（min(N, M) 对）
+// 最小化所有配对鞋大小之差绝对值的最大值。
 // 数据范围：1 <= N, M <= 10^5，1 <= L_i, R_i <= 10^9。
+// 算法标签：二分答案、双指针、贪心
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>

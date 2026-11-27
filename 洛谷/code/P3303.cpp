@@ -5,6 +5,7 @@
 // 输出一个整数表示答案。
 // 数据范围：N <= 10^12，K <= min(N^2, 10^5)。
 #include<bits/stdc++.h>
+// 算法标签：数位动态规划、优先队列、贪心
 using namespace std;
 #define int long long 
 const int MAXN = 1e4+5;

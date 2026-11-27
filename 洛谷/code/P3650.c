@@ -5,6 +5,7 @@
 // 数据范围：1 <= n <= 1000，0 <= a_i <= 100。
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：枚举、排序
 
 int a[100001]; // 注意数组大小需要+1，因为索引从1开始
 int n, minn, s = 1e9 + 1, sum;

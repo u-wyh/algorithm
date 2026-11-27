@@ -3,6 +3,7 @@
 // 直到再次变回 1,2,...,N 停止，求所有映射产生的不同总排数有多少种可能。
 // 数据范围：1 <= N <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、分组背包、欧拉筛
 using namespace std;
 #define int long long 
 const int MAXN = 1005;

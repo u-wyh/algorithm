@@ -5,6 +5,7 @@
 // 数据范围：1 <= T <= 10，1 <= N, M <= 1000，编号 <= 10*(N+M)。
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：枚举、同余、排序
 
 // 定义结构体和比较函数用于qsort
 typedef struct {

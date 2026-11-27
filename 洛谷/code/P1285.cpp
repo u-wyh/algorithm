@@ -6,6 +6,7 @@
 // 数据范围：2 <= n <= 100。
 // 数据范围：1 <= a_{i,j} <= n。
 #include<bits/stdc++.h>
+// 算法标签：二分图、动态规划、深度优先搜索
 using namespace std;
 const int MAXN = 105;
 const int MAXM = 1e4+5;

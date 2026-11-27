@@ -6,6 +6,7 @@
 // 求使两只企鹅同时到达 T 格的最少操作步数；若无法完成输出 no。
 // 数据范围：3 <= R, C <= 30，G, M, T 各恰好一个。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索
 using namespace std;
 
 int stxm,stym,stxg,styg,enx,eny;

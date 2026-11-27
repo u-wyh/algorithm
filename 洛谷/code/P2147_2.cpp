@@ -4,6 +4,7 @@
 // 对每个 Query 输出 Yes 或 No。
 // 数据范围：1 <= n <= 10^4，1 <= m <= 2*10^5，1 <= u, v <= n，指令均合法。
 #include<bits/stdc++.h>
+// 算法标签：动态树(LCT)
 using namespace std;
 const int MAXN = 1e5+5;
 

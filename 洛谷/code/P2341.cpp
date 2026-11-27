@@ -4,6 +4,7 @@
 // 输出明星奶牛数量。
 // 数据范围：1 <= N <= 10^4，1 <= M <= 5*10^4。
 #include<bits/stdc++.h>
+// 算法标签：Tarjan强连通分量、图论缩点
 using namespace std;
 const int MAXN = 1e4+5;
 

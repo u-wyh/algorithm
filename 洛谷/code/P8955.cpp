@@ -4,6 +4,7 @@
 // 对每个位置 i 输出在哪次操作后 a_i 首次严格大于 P，若始终 <= P 则输出 -1。
 // 数据范围：1 <= N, Q <= 10^6，1 <= l_i <= r_i <= N，1 <= a_i, v_i, P <= 10^9
 // 初始 P >= max{a_i}。
+// 算法标签：线段树、线段树上二分、扫描线
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

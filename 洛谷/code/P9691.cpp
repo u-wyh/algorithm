@@ -6,6 +6,7 @@
 // 题意：第一行输入 T，每组输入 n、a_1..a_n、m 及 m 行 (l_i, r_i)；每组输出一行一个整数。
 // 数据范围：1 <= n, m <= 5 * 10^5，1 <= a_i <= 10^9，1 <= l_i <= r_i <= n
 // sum(n), sum(m) <= 5 * 10^5（未显式给出 T 上界，受 sum(n), sum(m) 限制）。
+// 算法标签：动态规划、单调队列
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

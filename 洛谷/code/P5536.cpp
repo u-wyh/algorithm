@@ -3,6 +3,7 @@
 // 输入 n, k 及树的边；输出最小最大距离。
 // 数据范围：1 <= k < n <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：树的直径、深度优先搜索、贪心
 using namespace std;
 const int MAXN = 1e5;
 

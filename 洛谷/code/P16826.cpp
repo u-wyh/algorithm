@@ -5,6 +5,7 @@
 // 规则：op=2 查询当前图中点 s 到其他点简单路径长度的最大值。
 // 输出：对每次 op=2 输出一行整数表示最长距离。
 // 数据范围：1 <= n, q <= 5*10^5，1 <= a, b, u, v, s <= n，u != v，0 <= l < 10^9。
+// 算法标签：并查集、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -4,6 +4,7 @@
 // 输出约数和的总和。
 // 数据范围：1 <= X < Y <= 2*10^9。
 #include<bits/stdc++.h>
+// 算法标签：数论分块、前缀和
 using namespace std;
 typedef __int128 i128;
 

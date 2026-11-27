@@ -8,6 +8,7 @@
 // 数据范围：对于 100% 的数据，1 <= P_i <= N <= 10^5，1 <= C_i, T_i <= 10^9，0 <= M_i <= 10^9
 // 1 <= K <= 10^4。
 #include<bits/stdc++.h>
+// 算法标签：优先队列、并查集、离线算法
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

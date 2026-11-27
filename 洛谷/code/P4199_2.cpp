@@ -4,6 +4,7 @@
 // 3) 所选下标不能是连续的一整段。
 // 数据范围：n <= 100000。
 #include<bits/stdc++.h>
+// 算法标签：NTT、Manacher、快速幂
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

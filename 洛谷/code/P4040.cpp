@@ -5,6 +5,7 @@
 // 输出最多可以宅的天数。
 // 数据范围：对于全部测试点，1 <= n <= 200，0 <= s_i <= 10^{18}，1 <= f, p_i, m <= 10^{18}。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、三分查找、贪心
 using namespace std;
 
 const int MAXN = 205;

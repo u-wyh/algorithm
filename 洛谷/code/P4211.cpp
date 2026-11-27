@@ -3,6 +3,7 @@
 // 共 m 次询问，每次给 l, r, z，求 sum_{i=l}^{r} dep[LCA(i, z)] 对 201314 取模的值。
 // 数据范围：1 <= n, m <= 50000。
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树、离线处理
 using namespace std;
 const int MAXN = 5e4+5;
 const int MOD = 201314;

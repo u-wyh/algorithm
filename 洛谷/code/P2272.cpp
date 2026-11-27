@@ -4,6 +4,7 @@
 // 第一行输出 K，第二行输出 C mod X。
 // 数据范围：N <= 10^5，M <= 10^6，X <= 10^8。
 #include<bits/stdc++.h>
+// 算法标签：Tarjan缩点、拓扑排序、DAG动态规划
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 1e6+5;

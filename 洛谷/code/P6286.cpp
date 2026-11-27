@@ -3,6 +3,7 @@
 // 使所有单词替换后按字典序升序排列时第 i 位恰好为原第 a_i 个单词；
 // 不可行输出 NE，否则输出 DA 及任意可行密钥。
 // 数据范围：2 <= n <= 100，1 <= a_i <= n，单词长度 <= 100。
+// 算法标签：拓扑排序
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

@@ -26,6 +26,7 @@
 // 错事罪恶值可能很大，输入保证每个人的罪恶值用long类型不溢出
 // 测试链接 : https://www.luogu.com.cn/problem/P4971
 #include <bits/stdc++.h>
+// 算法标签：左偏树、并查集
 using namespace std;
 const int MAXN = 2000001;
 

@@ -3,6 +3,7 @@
 // 求从 1 到 N 再返回 1 的最小总代价，无解输出 -1。
 // 数据范围：2 <= N <= 200，1 <= M <= 5*10^4，1 <= U_i, V_i <= N（U_i != V_i）
 // 0 <= C_i <= 10^6，0 <= D_i <= 10^9。
+// 算法标签：Dijkstra、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

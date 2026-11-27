@@ -4,6 +4,7 @@
 // 求剩余机器平均产奶量的最小值，四舍五入保留三位小数。
 // 数据范围：3 <= N <= 100000，1 <= M_i <= 10000。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、前缀和
 using namespace std;
 const int MAXN = 1e5+5;
 const double eps = 1e-5;

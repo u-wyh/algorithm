@@ -9,6 +9,7 @@
 // 1 <= i, v <= N。
 //P2146
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、平衡树
 using namespace std;
 const int MAXN = 1e5+5;
 

@@ -1,5 +1,6 @@
 // https://www.luogu.com.cn/problem/P4195
-// 题意：多组数据（以 0 0 0 结束），给定正整数 a, p, b，求满足 a^x ≡ b (mod p) 的最小自然数 x，无解输出 No Solution。
+// 题意：多组数据（以 0 0 0 结束），给定正整数 a, p, b，求满足 a^x ≡ b (mod p) 的最小自然数 x
+// 无解输出 No Solution。
 // 数据范围：1 <= a, p, b <= 1e9（或全 0 结束），单文件保证 sum(sqrt(p)) <= 5e6。
 // exBSGS主要解决：给出 a、b、mod，求满足 a^x=b (mod mod) 的最小非负整数x
 //
@@ -28,6 +29,7 @@
 // 然后使用普通BSGS求出 x-cnt
 // 最后答案加上cnt
 #include<bits/stdc++.h>
+// 算法标签：扩展BSGS、扩展欧几里得
 using namespace std;
 #define int long long
 

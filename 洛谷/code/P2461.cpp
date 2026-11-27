@@ -4,6 +4,7 @@
 // 输出取模后的和。
 // 数据范围：1 <= k <= 15，1 <= m <= n <= 10^18，0 <= b_i, c_i <= 10^9，p <= 10^8。
 #include<bits/stdc++.h>
+// 算法标签：矩阵快速幂、递推
 using namespace std;
 #define int long long
 const int MAXN = 16;

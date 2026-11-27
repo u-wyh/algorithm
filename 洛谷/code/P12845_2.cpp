@@ -4,6 +4,7 @@
 // 规则：第 i 枚位于 p_i，爆炸会引爆 [p_i-l_i, p_i+r_i] 内所有炸弹（连锁）。
 // 输出：输出至少需要主动引爆的炸弹数量。
 // 数据范围：1 <= n <= 2*10^5，0 <= p_i, l_i, r_i <= 10^5。
+// 算法标签：Tarjan强连通分量、二分查找
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

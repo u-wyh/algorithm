@@ -5,6 +5,7 @@
 // 数据范围：对于 100% 的数据，1 <= N <= 20000，1 <= M <= 100000，1 <= Q <= 100000
 // 1 <= C_i, D_i, S_i, T_i, M_i <= N。
 #include<bits/stdc++.h>
+// 算法标签：圆方树、Tarjan、最近公共祖先、倍增
 using namespace std;
 const int MAXN = 2e4+5;
 const int MAXM = 1e5+5;

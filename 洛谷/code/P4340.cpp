@@ -3,6 +3,7 @@
 // 支持 Q 次单点永久修改 a_t = v，每次修改后输出所有表达式求值的总和对 1e9+7 取模的结果。
 // 数据范围：n, Q <= 1e5，0 <= a_j, v_i <= 1e4。
 #include<bits/stdc++.h>
+// 算法标签：线段树、数学
 using namespace std;
 #define int long long
 const int MOD = 1e9+7;

@@ -4,6 +4,7 @@
 // 数据范围：1 <= a <= b <= 10^12。
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：数位统计、前缀和
 
 long count(long num, int d) {
     long ans = 0;

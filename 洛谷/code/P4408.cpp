@@ -4,6 +4,7 @@
 // 数据范围：3 <= N <= 2 * 10^5，1 <= U_i, V_i <= N，0 <= T_i <= 10^9（树边数 M = N-1）。
 //两次dfs
 #include<bits/stdc++.h>
+// 算法标签：树的直径、深度优先搜索
 using namespace std;
 const int MAXN = 200005;
 #define int long long

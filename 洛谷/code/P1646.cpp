@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1646
 // 题意：给 n×m 的座位，每人必须选文科或理科，分别有基本得分。上下左右相邻的两人若都选文或都选理，还能拿对应的额外分。求两类分数加起来的最大值。
 // 数据范围：1 ≤ n,m ≤ 100，所有喜悦值均在 [0,5000]。
+// 算法标签：最小割、Dinic
 
 #include<bits/stdc++.h>
 using namespace std;

@@ -22,6 +22,7 @@
 // 提交如下代码，可以通过所有测试用例
 //词频不压缩的一个巨大优势是在删除和加入节点时非常方便  这也是fhq最常用的方法
 #include<bits/stdc++.h>
+// 算法标签：平衡树、FHQ-Treap
 using namespace std;
 const int MAXN = 1e5+5;
 

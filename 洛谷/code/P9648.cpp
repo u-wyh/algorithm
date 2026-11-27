@@ -6,6 +6,7 @@
 // 题意：第一行输入 T，每组输入 n 及 n-1 行 (u_i, v_i, c_i)；每组输出一行一个正整数。
 // 数据范围：1 <= n <= 2 * 10^5，1 <= u_i, v_i <= n，c_i 为小写字母
 // sum(n) <= 10^6（未显式给出 T 上界，受 sum(n) 限制）。
+// 算法标签：深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 int T;

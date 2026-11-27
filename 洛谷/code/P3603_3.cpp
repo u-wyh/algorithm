@@ -5,6 +5,7 @@
 // 输出 m 行，每行两个整数，分别为不同点权种数与 mex。
 // 数据范围：设所有询问的 a 之和为 q，n, q <= 10^5，点权 <= 3*10^4（非负整数）。
 #include<bits/stdc++.h>
+// 算法标签：树分块、最近公共祖先、倍增、bitset
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXV = 3e4+5;

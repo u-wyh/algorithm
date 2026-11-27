@@ -2,6 +2,7 @@
 // 题意：给定 1~n 的排列 p，构建以编号为二叉搜索树关键字、以 p_i 为小根堆关键字的笛卡尔树。
 // 输入 n 及排列 p；输出两数分别为 xor_{i=1}^n i*(l_i+1) 和 xor_{i=1}^n i*(r_i+1)。
 // 数据范围：1 <= n <= 10^7。
+// 算法标签：笛卡尔树、单调栈
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e7+5;

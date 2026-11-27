@@ -6,6 +6,7 @@
 #include<cstdio>
 #include<cstring>
 #define id(i,j) ~-i*m+j//即每个点的编号，相当于(i-1)*m+j
+// 算法标签：二分答案、并查集
 using namespace std;
 
 int h[501][501],f[250001],a[250001],len;//h是每个点的高度，f是并查集数组，a是需要保证联通的点，len是a数组长度

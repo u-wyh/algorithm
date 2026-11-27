@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10484
 // 题意：给 N 个礼物，第 i 个重 G[i]，一次最多能搬 W 重。任选一些礼物，各件最多拿一次，求总重量不超过 W 时能拿到的最大重量。
 // 数据范围：1 ≤ N ≤ 46，1 ≤ W,G[i] ≤ 2^31-1。
+// 算法标签：折半搜索、双指针
 
 #include<bits/stdc++.h>
 using namespace std;

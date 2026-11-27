@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
+// 算法标签：二分答案
 
 int n, k;
 double a[10005];

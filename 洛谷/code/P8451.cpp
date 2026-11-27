@@ -2,6 +2,7 @@
 // 题意：初始 S_0 为空集，维护 q 次操作：1 hoc s 令 S_i = S_{hoc} U {s}（保证操作前 s 不在 S_{hoc} 中）；
 // 2 hoc s 令 S_i = S_{hoc}，并输出 S_i 中所有字符串在 s 中作为子串出现的次数之和。
 // 数据范围：100% 数据满足 1 <= q <= 5*10^5，sum(|s_i|) <= 10^6，所有字符串仅含小写字母。
+// 算法标签：AC自动机、树状数组、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

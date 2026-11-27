@@ -3,6 +3,7 @@
 // Q k 询问点 k 所在连通块（树）中距离 k 最远的点的边数距离。
 // 数据范围：1 <= q <= 1e5。
 #include<bits/stdc++.h>
+// 算法标签：树的直径、LCA
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXH = 17;

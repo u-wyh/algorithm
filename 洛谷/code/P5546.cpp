@@ -3,6 +3,7 @@
 // 输入 n 及 n 个字符串；输出最长公共子串长度。
 // 数据范围：1 <= n <= 5，每个单词长度在 1 到 2000 之间。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、字符串哈希
 using namespace std;
 #define int long long
 const int MAXN = 2005;

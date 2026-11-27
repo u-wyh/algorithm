@@ -7,6 +7,7 @@
 #include<string.h>
 #include<limits.h>
 #define Max 2001
+// 算法标签：动态规划、编辑距离
 
 int min(int a,int b)
 {

@@ -3,6 +3,7 @@
 // 求将矩阵全变为 0 的最少操作次数（无解输出 -1）。
 // 数据范围：1 <= n <= 5 * 10^3，1 <= m <= min(n^2, 5 * 10^5)，1 <= k <= min(n, 10^3)
 // 1 <= x, y <= n（互不重复），1 <= |z| <= 10^9（有解时答案 <= 2^63 - 1）。
+// 算法标签：差分、贪心
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

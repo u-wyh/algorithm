@@ -6,6 +6,7 @@
 // 数据范围：1 <= n <= 200，0 <= m <= 3000，1 <= p <= 13，0 <= k <= n，1 <= t_i <= 500
 // 无重边。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、状态压缩
 using namespace std;
 const int MAXN = 205;
 const int MAXM = 3005;

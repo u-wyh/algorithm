@@ -5,6 +5,7 @@
 #include<string.h>
 #include<limits.h>
 #define Max 51
+// 算法标签：区间动态规划
 
 static int dp[Max][Max];
 

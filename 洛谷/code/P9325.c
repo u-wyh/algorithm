@@ -1,9 +1,11 @@
 // https://www.luogu.com.cn/problem/P9325
 // 题意：给定 N 座山的高度 h_1..h_N。
-// 一个区间 [l, r]（1 <= l <= r <= N）的不对称值定义为 sum_{i=0}^{floor((r-l)/2)} |h_{l+i} - h_{r-i}|。
+// 一个区间 [l, r]（1 <= l <= r <= N）的不对称值定义为 sum_{i=0}^{floor((r-l)/2)} |h_{l+i} -
+// h_{r-i}|。
 // 对每个长度 k = 1..N，求所有长度为 k 的连续区间中最小的不对称值。
 // 题意：第一行输入 N，第二行输入 h_1..h_N；输出一行 N 个整数，第 i 个表示长度为 i 的最小不对称值。
 // 数据范围：1 <= N <= 5000，0 <= h_i <= 10^5。
+// 算法标签：区间动态规划
 #include<stdio.h>
 #include<math.h>
 #include<limits.h>

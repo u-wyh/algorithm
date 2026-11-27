@@ -8,6 +8,7 @@
 #include <vector>
 #include <queue>
 #include <climits>
+// 算法标签：最小费用最大流、SPFA
 using namespace std;
 typedef long long LL;
 const LL INF = (1LL << 60);

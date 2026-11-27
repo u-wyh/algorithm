@@ -7,6 +7,7 @@
 // -10^6 <= CX_i, CY_i, SX_j, SY_j <= 10^6。
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：模拟、枚举
 
 #define maxn 1005
 

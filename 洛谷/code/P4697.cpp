@@ -3,6 +3,7 @@
 // 求各气球最终半径（误差 <= 10^-3）。
 // 数据范围：1 <= n <= 200000，0 <= x_i <= 10^9，1 <= r_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：单调栈、数学
 using namespace std;
 const int MAXN = 2e5+5;
 

@@ -5,6 +5,7 @@
 // 数据范围：1 <= n, q <= 10^5，0 <= a_i <= 10^5，全超市寄包格子总数不超过 10^7，0 <= k <= 10^9。
 #include<iostream>
 #include<vector>
+// 算法标签：模拟、动态数组
 
 using namespace std;
 

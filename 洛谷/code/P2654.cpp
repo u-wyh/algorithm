@@ -4,6 +4,7 @@
 // 每次实验剩余 1 只放回培养皿，求 k 次实验的最小总耗能。
 // 数据范围：1 < n <= 1000，1 <= m <= 10，1 <= k <= 100，结果不超过 2^31。
 #include<bits/stdc++.h>
+// 算法标签：贪心、优先队列、区间动态规划
 using namespace std;
 #define int long long 
 

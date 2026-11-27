@@ -4,6 +4,7 @@
 // 输出 n 行，每行一个整数。
 // 数据范围：1 <= n <= 65534，输入文件 <= 1MB，无环。
 #include<bits/stdc++.h>
+// 算法标签：支配树、拓扑排序、LCA
 using namespace std;
 const int MAXN = 70000;
 const int MAXH = 17;

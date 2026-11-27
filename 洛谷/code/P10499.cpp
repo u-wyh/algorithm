@@ -3,6 +3,7 @@
 // 操作 I 时，I 和与它联动的 J 都翻转。
 // 每个开关至多操作一次，统计能达到目标的操作集合数，无解输出 Oh,it's impossible~!!。
 // 数据范围：1 ≤ K ≤ 10 组，1 ≤ N < 29，状态均为 0 或 1。
+// 算法标签：高斯消元、位运算
 
 #include<bits/stdc++.h>
 using namespace std;

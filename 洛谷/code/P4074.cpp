@@ -9,6 +9,7 @@
 // 数据范围：1 <= n, m, q <= 100000，1 <= V_i, W_i <= 10^6（W 非递增），1 <= A_i, B_i <= n
 // 1 <= C_i <= m，1 <= x <= n，修改时 1 <= y <= m、询问时 1 <= y <= n。
 #include<bits/stdc++.h>
+// 算法标签：树上带修莫队、LCA、倍增、欧拉序
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXH = 20;

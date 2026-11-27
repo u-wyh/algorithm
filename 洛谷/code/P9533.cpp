@@ -5,6 +5,7 @@
 // 求最终数组中最多能有多少个灵异区间。
 // 题意：第一行输入 n，第二行输入 a_1..a_n；输出一行一个整数。
 // 数据范围：1 <= n <= 10^5，0 <= a_i < 2^20。
+// 算法标签：前缀异或、计数统计
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

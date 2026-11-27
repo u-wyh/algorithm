@@ -12,6 +12,7 @@
 //这道题考察的就是他的这个含义
 //我们将点权按照权值大小排序  那么解决点权问题就可以用i j k的权值大小来排序了
 #include<bits/stdc++.h>
+// 算法标签：Floyd、最短路、排序
 using namespace std;
 const int MAXN = 255;
 const int MAXM = 1e4+5;

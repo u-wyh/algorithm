@@ -4,6 +4,7 @@
 // 无解输出 Let's go Blue Jays!。
 // 数据范围：2 <= M, K <= 2 * 10^9。
 #include<bits/stdc++.h>
+// 算法标签：欧拉函数、快速幂、数论
 using namespace std;
 #define int long long
 

@@ -5,6 +5,7 @@
 // 数据范围：2 <= n <= 100，1 <= k <= min(n, 50)，0 <= v_i <= n，0 <= w_i <= 10^4
 // 1 <= d_i <= 10^4，全部木料流到 0 的总运费 <= 2*10^9。
 #include<bits/stdc++.h>
+// 算法标签：树形动态规划、树上背包
 using namespace std;
 #define int long long
 const int MAXN = 105;

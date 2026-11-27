@@ -7,6 +7,7 @@
 // 数据范围：3 <= n <= 350。
 #include<stdio.h>
 #include<math.h>
+// 算法标签：动态规划
 
 int max(int a,int b)
 {

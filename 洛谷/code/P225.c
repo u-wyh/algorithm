@@ -10,6 +10,7 @@
 // 数据范围：0 <= s_i < t_i <= 10^9
 #include<stdio.h>
 #include<stdlib.h>
+// 算法标签：贪心、区间调度
 
 typedef struct
 {

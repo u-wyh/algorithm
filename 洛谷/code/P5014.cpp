@@ -4,6 +4,7 @@
 // 数据范围：1 <= T <= 100，1 <= u_i <= 500000500000。
 #include<bits/stdc++.h>
 #define int long long
+// 算法标签：组合数学、乘法逆元
 using namespace std;
 const int MOD = 998244353;
 const int MAXN = 2e6+5;

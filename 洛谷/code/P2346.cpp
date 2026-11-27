@@ -4,6 +4,7 @@
 // 求达成目标的最少步数。
 // 数据范围：固定 4*4 棋盘。
 #include "bits/stdc++.h"
+// 算法标签：迭代加深搜索、深度优先搜索
 using namespace std;
 
 int a[10][10], d, xx1, yy1, xx2, yy2;

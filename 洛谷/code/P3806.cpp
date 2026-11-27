@@ -5,6 +5,7 @@
 // 数据范围：对于 100% 的数据，1 <= n <= 10^4，1 <= m <= 100，1 <= k <= 10^7，1 <= u, v <= n
 // 1 <= w <= 10^4。
 #include<bits/stdc++.h>
+// 算法标签：点分治、深度优先搜索
 using namespace std;
 const int MAXN = 1e4+5;
 const int MAXM = 105;

@@ -2,6 +2,7 @@
 // 题意：给定 r 行 c 列字符矩阵（'.' 可走，'*' 障碍），从 (1,1) 每次上下左右移动一格到 (r,c)
 // 输出任意一条移动次数不超过 10^5 的路径坐标（Special Judge）。
 // 数据范围：1 <= r <= 113，1 <= c <= 77。
+// 算法标签：深度优先搜索
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

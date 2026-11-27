@@ -3,6 +3,7 @@
 // 每头牛必须选不同的草，求满足所有牛的最小总花费，无解输出 -1。
 // 数据范围：1 <= N, M <= 10^5，1 <= A_i, B_i, C_j, D_j <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：基环树、拓扑排序、深度优先搜索
 using namespace std;
 #define inf 1e18+10
 #define int long long

@@ -5,6 +5,7 @@
 // 数据范围：对于全部测试点，1 <= n <= 200000，1 <= S, L <= 10^{18}，1 <= H_i, A_i <= 10^9。
 #include<stdio.h>
 #include<stdbool.h>
+// 算法标签：二分答案
 
 #define MAX 100000000+5
 

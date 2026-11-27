@@ -7,6 +7,7 @@
 #include<iostream>
 #include<algorithm>
 #include<set>
+// 算法标签：平衡树、区间维护
 using namespace std;
 struct Plan{
 	int l,r;

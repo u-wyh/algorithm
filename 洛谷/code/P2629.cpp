@@ -5,6 +5,7 @@
 // 数据范围：1 <= n <= 10^6，-10^3 <= A_i <= 10^3。
 #include<cstdio>
 #include<iostream>
+// 算法标签：单调队列、前缀和、破环成链
 using namespace std;
 int n,head=1,tail,ans;
 long long a[2000001],s[2000001],q[2000001];

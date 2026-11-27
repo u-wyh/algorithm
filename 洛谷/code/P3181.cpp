@@ -4,6 +4,7 @@
 // 输出满足条件的子串对总数。
 // 数据范围：1 <= n_1, n_2 <= 2*10^5，字符均为小写字母。
 #include<bits/stdc++.h>
+// 算法标签：后缀数组、ST表、分治
 using namespace std;
 const int MAXN = 8e5+5;
 const int MAXH = 22;

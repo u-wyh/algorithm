@@ -5,6 +5,7 @@
 // 输出一行两个空格分隔的整数，依次为「奶牛社区」数量和最大社区内的牛数。
 // 数据范围：对于 100% 的数据，1 <= N <= 10^5，1 <= C <= 10^9，1 <= X_i, Y_i <= 10^9（坐标均为整数）。
 #include<bits/stdc++.h>
+// 算法标签：并查集、扫描线、双指针
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

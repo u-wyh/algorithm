@@ -6,6 +6,7 @@
 // 数据范围：1 <= n <= 2000，1 <= m_i <= 1000。
 // 数据范围：-10^7 <= x_i, y_i <= 10^7。
 #include<bits/stdc++.h>
+// 算法标签：扫描线、排序、区间合并
 using namespace std;
 const int MAXN = 2e6+5;
 

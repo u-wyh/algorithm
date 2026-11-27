@@ -6,6 +6,7 @@
 // 输出一个整数表示满足条件的路径数。
 // 数据范围：1 <= N <= 10^5，t_i 取值 0 或 1。
 #include<bits/stdc++.h>
+// 算法标签：点分治、深度优先搜索
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

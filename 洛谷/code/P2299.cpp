@@ -3,6 +3,7 @@
 // 输出最短路长度。
 // 数据范围：1 <= n <= 2500，1 <= m <= 2*10^5，1 <= c_i <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、最短路、优先队列
 using namespace std;
 const int MAXN = 2500;
 const int MAXM = 400005;

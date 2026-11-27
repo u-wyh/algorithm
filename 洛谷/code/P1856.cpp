@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1856
 // 题意：给定 N 个边平行于坐标轴的矩形，每个用左下角和右上角描述。求所有矩形并集的边界总长度。
 // 数据范围：1 ≤ N < 5000，坐标是 [−10^4,10^4] 内的整数。
+// 算法标签：扫描线、线段树、离散化
 
 #include<bits/stdc++.h>
 using namespace std;

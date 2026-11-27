@@ -3,6 +3,7 @@
 // 若有多解输出字典序最小的。
 // 数据范围：n <= 12，每个字符串长度 <= 50。
 #include<bits/stdc++.h>
+// 算法标签：AC自动机、状态压缩广度优先搜索
 using namespace std;
 
 const int MAXN = 12;//字符数量

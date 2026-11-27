@@ -3,6 +3,7 @@
 // 求使所有灯全部关闭的最少按按钮次数，无解输出 -1。
 // 数据范围：1 <= n <= 10，1 <= m <= 100。
 #include<bits/stdc++.h>
+// 算法标签：状态压缩、广度优先搜索
 using namespace std;
 
 int n,m;

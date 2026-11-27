@@ -7,6 +7,7 @@
 // 第一行输入 N, M，第二行 N 个整数 A_1..A_N，第三行 N 个整数 B_1..B_N。
 // 输出一行一个整数。
 // 数据范围：1 <= N <= 3*10^5，1 <= M <= 10^9，1 <= A_i, B_i <= 10^9。
+// 算法标签：二分答案、贪心
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>

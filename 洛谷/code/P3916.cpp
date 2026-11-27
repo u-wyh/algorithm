@@ -2,6 +2,7 @@
 // 题意：给定 N 个点 M 条边的有向图，对每个点 v（1..N），求从 v 出发能够到达的编号最大的节点编号 A(v)。
 // 数据范围：1 <= N, M <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、反向建图
 using namespace std;
 
 int n,m;

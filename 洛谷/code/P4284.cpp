@@ -3,6 +3,7 @@
 // 求最终进入充电状态的节点个数的期望（保留 6 位小数）。
 // 数据范围：n <= 5e5，0 <= p, q_i <= 100。
 #include<bits/stdc++.h>
+// 算法标签：换根动态规划、概率期望
 using namespace std;
 const int MAXN = 5e5+5;
 const double eps = 1e-8;

@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1547
 // 题意：给一张连通的无向带权图。找一棵总边长最小的生成树，输出其中最长一条边的长度。
 // 数据范围：2 ≤ N ≤ 2000，1 ≤ M ≤ 10000，全部道路的长度和不超过 10^9，允许重边。
+// 算法标签：最小生成树、Kruskal、并查集
 
 #include<iostream>
 #include<cstdio>

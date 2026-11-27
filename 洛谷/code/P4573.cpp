@@ -5,6 +5,7 @@
 #include<queue>
 #include<iostream>
 #include<cstring>
+// 算法标签：深度优先搜索、回溯剪枝
 using namespace std;
 inline int read(){
 	int ans=0,f=1;char chr=getchar();

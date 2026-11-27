@@ -4,6 +4,7 @@
 // 每组询问输出一行结果。
 // 数据范围：1 <= N, M <= 100000，边权在 int 范围内。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、树上前缀异或
 using namespace std;
 const int MAXN = 1e5+5;
 

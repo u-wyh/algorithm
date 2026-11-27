@@ -4,6 +4,7 @@
 //P4822
 //分层最短路
 #include<bits/stdc++.h>
+// 算法标签：分层图、Dijkstra、最短路
 using namespace std;
 const int MAXN = 55;
 const int MAXM = 100000;

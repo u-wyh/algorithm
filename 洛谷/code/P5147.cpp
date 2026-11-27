@@ -3,6 +3,7 @@
 // 输入正整数 n，求 work(n) 返回值的数学期望（保留 5 位小数）。
 // 数据范围：1 <= n < 2^31。
 #include<bits/stdc++.h>
+// 算法标签：数学、调和级数
 using namespace std;
 #define int long long
 const double delta = 0.57721566490153286060651209;

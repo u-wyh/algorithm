@@ -4,6 +4,7 @@
 // 输出最小总开销。
 // 数据范围：1 <= N <= 10^5，0 <= A_i, B_i <= 10，0 <= X, Y <= 10^8，0 <= Z <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：反悔贪心、优先队列
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

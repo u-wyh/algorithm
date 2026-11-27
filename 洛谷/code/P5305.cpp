@@ -3,6 +3,7 @@
 // 共 Q 次询问，每次给定 x, y，求 sum_{i=1}^x depth(lca(i, y))^k 对 998244353 取模的值。
 // 数据范围：1 <= n <= 5*10^4，1 <= Q <= 5*10^4，1 <= k <= 10^9，1 <= x, y <= n。
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树、离线扫描
 using namespace std;
 #define int long long
 const int MAXN = 5e4+5;

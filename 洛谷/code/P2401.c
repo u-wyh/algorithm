@@ -5,6 +5,7 @@
 // 数据范围：0 <= k < n <= 1000。
 #include<stdio.h>
 #define mod 2015
+// 算法标签：动态规划
 
 int dp[1005][1005];
 

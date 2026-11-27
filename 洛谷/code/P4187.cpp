@@ -3,6 +3,7 @@
 // 求共有多少种不同的最终状态（对 1e9+7 取模）。
 // 数据范围：N, M, K <= 1e6。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、前缀和优化、快速幂
 using namespace std;
 #define int long long 
 const int MOD = 1e9+7;

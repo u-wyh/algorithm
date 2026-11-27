@@ -1,10 +1,12 @@
 // https://www.luogu.com.cn/problem/P9869
 // 题意：多组数据（首行测试点编号 c 及数据组数 t）。
 // 每组有 n 个三值逻辑变量 x_1..x_n（取值 T/F/U
-// ¬T=F, ¬F=T, ¬U=U）及顺序执行的 m 条赋值语句：x_i <- v (v ∈ {T, F, U})、x_i <- x_j 或 x_i <- ¬x_j。
+// ¬T=F, ¬F=T
+// ¬U=U）及顺序执行的 m 条赋值语句：x_i <- v (v ∈ {T, F, U})、x_i <- x_j 或 x_i <- ¬x_j。
 // 保证存在使执行后所有变量终值与初值相等的赋初值方案，求初值中 U 个数的最小值。
 // 题意：首行输入 c, t，每组输入 n, m 及 m 条语句（v i 或 + i j 或 - i j）；每组输出一行一个整数。
 // 数据范围：1 <= t <= 6，1 <= n, m <= 10^5，1 <= i, j <= n。
+// 算法标签：并查集、深度优先搜索
 #include<bits/stdc++.h>
 #define afor(x,y,z) for(int x=y;x<=z;x++)
 #define bfor(x,y,z) for(int x=y;x>=z;x--)

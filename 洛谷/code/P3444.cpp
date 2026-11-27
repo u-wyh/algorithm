@@ -4,6 +4,7 @@
 // 输出一个整数，表示把整块田耕完所需的最少次数。
 // 数据范围：1 <= m, n <= 2000，1 <= k <= 2*10^8，0 <= t_{i,j} <= 100000。
 #include<bits/stdc++.h>
+// 算法标签：区间动态规划、前缀和、贪心
 using namespace std;
 const int MAXN = 2e3+5;
 

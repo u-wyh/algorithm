@@ -12,6 +12,7 @@
 // 数据范围：3 <= n, m <= 2000
 // 数据范围：|x|, |y| <= 10^9
 #include<bits/stdc++.h>
+// 算法标签：计算几何、双指针、贪心
 using namespace std;
 #define int long long
 const int MAXN = 4e3+5;

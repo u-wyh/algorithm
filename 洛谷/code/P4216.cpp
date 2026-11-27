@@ -4,6 +4,7 @@
 // k=1 询问从 X_i 到 Y_i 路径上的总点数以及危险值严格大于 C_i 的点数。
 // 数据范围：n <= 2e5，Q <= 2e5，0 <= P_i, C_i <= n，1 <= T_i, X_i, Y_i <= n。
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、可持久化线段树、LCA
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXH = 21;

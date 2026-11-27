@@ -4,6 +4,7 @@
 // 一行输出 d 和 cnt。
 // 数据范围：1 <= n <= 10^5，1 <= m <= 2*10^5，1 <= c <= 10^4。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、线段树、广度优先搜索
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

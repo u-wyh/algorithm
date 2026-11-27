@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10475
 // 题意：给 R 行 C 列的大写字母网格，找一个最小的矩形块，横向和纵向重复它就能铺出原网格。最后一排或一列块可以裁掉超出的部分，输出矩形块的最小面积。
 // 数据范围：1 ≤ R ≤ 10000，1 ≤ C ≤ 75，格子是大写英文字母。
+// 算法标签：字符串哈希、KMP
 
 #include<bits/stdc++.h>
 using namespace std;

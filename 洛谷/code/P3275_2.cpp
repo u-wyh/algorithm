@@ -10,6 +10,7 @@
 #include<cstring>
 #include<iostream>
 #include<algorithm>
+// 算法标签：差分约束、迭代松弛
 using namespace std;
 struct candy{
 	int X,A,B;

@@ -4,6 +4,7 @@
 // 输出最终每个位置的颜色（未染色为 0）。
 // 数据范围：1 <= n <= 10^6，1 <= m <= 10^7，1 <= m*p+q, m*q+p <= 2*10^9。
 #include<bits/stdc++.h>
+// 算法标签：并查集
 using namespace std;
 const int MAXN = 1e6+5;
 

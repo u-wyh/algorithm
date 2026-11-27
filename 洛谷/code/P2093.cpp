@@ -16,6 +16,7 @@
 // -10^9 <= 坐标值 <= +10^9
 // 测试链接 : https://www.luogu.com.cn/problem/P2093
 #include<bits/stdc++.h>
+// 算法标签：K-D Tree、优先队列
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

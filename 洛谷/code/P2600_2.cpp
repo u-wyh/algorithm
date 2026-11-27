@@ -4,6 +4,7 @@
 // 输出最小高度，精确到小数点后三位。
 // 数据范围：n <= 300，坐标绝对值 <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：三分法、计算几何
 using namespace std;
 #define int long long
 const int MAXN = 305;

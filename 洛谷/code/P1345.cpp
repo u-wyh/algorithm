@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1345
 // 题意：给一张电脑之间的双向连接图，指定 c1、c2 两台电脑。不能删除这两个端点，删除其他电脑时也会移除它的所有连接。求让两端不能通信至少要删除几台。
 // 数据范围：1 ≤ N ≤ 100，1 ≤ M ≤ 600，两电脑之间至多一条连接，c1 与 c2 没有直接连接。
+// 算法标签：最小割、Dinic
 
 #include<bits/stdc++.h>
 using namespace std;

@@ -4,6 +4,7 @@
 // 输出最少删除字符数。
 // 数据范围：1 <= W <= 600，2 <= L <= 300，仅含小写字母。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、线性动态规划、贪心
 using namespace std;
 
 int n,m;

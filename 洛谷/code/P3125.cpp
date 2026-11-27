@@ -5,6 +5,7 @@
 // 输出一个整数表示最大净能量。
 // 数据范围：1 <= N <= 1000，1 <= E, Q <= 10^6，每块草皮度数为 D <= 10。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索、最短路、动态规划
 using namespace std;
 #define int long long
 const int MAXN = 1005;

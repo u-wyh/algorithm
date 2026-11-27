@@ -4,6 +4,7 @@
 // 选出部分边使 [L_i, R_i] 内所有满足编号 mod K_i = C_i 的点连通（保证至少有两个点），输出所需修复边中最大耗时 P_i 的最小值。
 // 数据范围：N <= 50000，M <= 2*10^5，Q <= 50000，1 <= P_i <= 10^6
 // 1 <= L_i, R_i, K_i <= N，0 <= C_i < K_i。
+// 算法标签：Kruskal重构树、根号分治、线段树
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

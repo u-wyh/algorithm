@@ -3,6 +3,7 @@
 // 输出周长，四舍五入保留两位小数。
 // 数据范围：3 <= n <= 10^5，-10^6 <= x_i, y_i <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：凸包、单调栈、计算几何
 using namespace std;
 const int MAXN = 1e5+5;
 

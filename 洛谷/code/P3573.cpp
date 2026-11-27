@@ -4,6 +4,7 @@
 // 输出一行两个整数 x 和 y（有多组解输出任意一组）。
 // 数据范围：2 <= n <= 5*10^5，1 <= m <= 10^6，1 <= a_i, b_i <= n 且 a_i != b_i。
 #include<bits/stdc++.h>
+// 算法标签：拓扑排序、DAG动态规划、线段树
 using namespace std;
 const int MAXN = 5e5+5;
 const int MAXM = 1e6+5;

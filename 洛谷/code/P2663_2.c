@@ -6,6 +6,7 @@
 #include <stdio.h>
 #define MAX_N 107
 #define MAX_SUM 10007
+// 算法标签：动态规划、0-1背包
 
 int n;
 int a[MAX_N];

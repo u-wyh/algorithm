@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+// 算法标签：动态规划、前缀和
 
 #define ll long long
 #define MODE 10000

@@ -2,6 +2,7 @@
 // 题意：一条直线上顺次有 n 个村庄且已知相邻距离 d_i，从中选 m 个建小学，求所有村庄到最近小学的距离总和最小值。
 // 数据范围：1 <= m <= n < 500，1 <= d_i <= 100。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、前缀和
 using namespace std;
 const int MAXN = 505;
 

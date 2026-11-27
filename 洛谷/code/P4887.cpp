@@ -3,6 +3,7 @@
 // m 次查询区间 [l, r] 内满足 i < j 且 a_i XOR a_j 二进制下恰有 k 个 1 的二元组 (i, j) 对数。
 // 数据范围：1 <= n, m <= 10^5，0 <= a_i, k < 2^14。
 #include<bits/stdc++.h>
+// 算法标签：莫队二次离线、莫队算法、位运算
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 1<<14;

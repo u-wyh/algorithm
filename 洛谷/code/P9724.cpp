@@ -6,6 +6,7 @@
 // 题意：第一行输入 n, m, k, d，接下来 m 行输入边 (a, b)；输出一行一个整数。
 // 数据范围：2 <= n <= 10^5，n-1 <= m <= 2 * 10^5，1 <= k <= n，1 <= d <= 2 * 10^5
 // 1 <= a, b <= n，a != b。
+// 算法标签：广度优先搜索、最短路
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

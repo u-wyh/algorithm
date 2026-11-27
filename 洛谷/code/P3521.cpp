@@ -4,6 +4,7 @@
 // 输出最小的逆序对数。
 // 数据范围：2 <= n <= 2*10^5，0 <= x <= n。
 #include<bits/stdc++.h>
+// 算法标签：线段树合并、权值线段树
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXT = 5e6+5;

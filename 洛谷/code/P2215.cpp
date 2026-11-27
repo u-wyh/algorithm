@@ -4,6 +4,7 @@
 // 每组询问输出一行序列或 Impossible。
 // 数据范围：N <= 10000，M <= 1000，保证数据随机。
 #include<bits/stdc++.h>
+// 算法标签：动态规划（LIS）、贪心
 using namespace std;
 const int MAXN = 1e4+5;
 

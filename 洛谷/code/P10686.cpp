@@ -7,6 +7,7 @@
 // 数据范围：
 // 1 <= N <= 500
 // 0 <= M <= 2000
+// 算法标签：扩展域并查集、枚举
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 505;

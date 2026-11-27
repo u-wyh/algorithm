@@ -4,6 +4,7 @@
 // 对每个 1 操作输出一行答案（mod p）。
 // 数据范围：1 <= n, m <= 5*10^4，1 <= p <= 10^8，0 < c < p，0 <= a_i < p。
 #include <bits/stdc++.h>
+// 算法标签：线段树、扩展欧拉定理、光速幂
 using namespace std;
 #define int long long
 

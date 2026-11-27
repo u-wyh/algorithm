@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1884
 // 题意：给定 N 个边平行于坐标轴的矩形，由两角坐标描述。求至少被一个矩形覆盖的总面积，重叠处只计一次。
 // 数据范围：1 ≤ N ≤ 1000，坐标在 [−10^8,10^8]。
+// 算法标签：离散化、差分、前缀和
 
 #include<bits/stdc++.h>
 using namespace std;

@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1690
 // 题意：给出 n 个区域之间的有向距离和 P 个宝藏的位置。从区域 1 出发，经过所有宝藏后到区域 n，求最短总路程。
 // 数据范围：1 ≤ n ≤ 100，0 ≤ P ≤ 10，宝藏区域编号在 [1,n]，每对区域的有向距离 ≤ 1000，答案 ≤ 2^31−1。
+// 算法标签：Floyd、深度优先搜索、最短路
 
 #include<bits/stdc++.h>
 using namespace std;

@@ -3,6 +3,7 @@
 // q 次操作：1 a b k 将所有满足 a⊗c 且 c⊗b 的 c 的亮度加 k；
 // 2 a b 查询满足条件的 c 的亮度之和对 2^32 取模。
 // 数据范围：1 <= n <= 16，1 <= q <= 2*10^5，0 <= a, b <= 2^n-1，0 <= a_i, k <= 2^32-1。
+// 算法标签：高维前缀和、分块、容斥原理
 #include<bits/stdc++.h>
 using namespace std;
 using uint = uint32_t;

@@ -5,6 +5,7 @@
 // 输出一行三个用空格隔开的整数：最远谷仓的最小编号、最远距离、满足该距离的谷仓数。
 // 数据范围：对于 100% 的数据，2 <= n <= 50000，1 <= m <= 50000。
 #include<bits/stdc++.h>
+// 算法标签：最短路、Dijkstra、优先队列
 using namespace std;
 const int MAXN = 20005;
 const int MAXM = 100005;

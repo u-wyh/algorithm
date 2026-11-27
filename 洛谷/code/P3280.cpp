@@ -10,6 +10,7 @@
 // 0 < |b_i| < 10^9（订单买卖上限）
 // 0 < w < 10^9（高速路限重）
 #include<bits/stdc++.h>
+// 算法标签：最大生成树、最近公共祖先、倍增、贪心
 using namespace std;
 #define int long long
 const int INF = 1e18;

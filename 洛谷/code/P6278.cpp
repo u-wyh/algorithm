@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P6278
 // 题意：给定长为 N 的序列 A（0 <= A_i <= N），对每个 j = 0..N-1，求将所有大于 j 的 A_i 减小为 j 后序列的逆序对数量。
 // 数据范围：1 <= N <= 10^5，0 <= A_i <= N。
+// 算法标签：归并排序、分治
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100005;

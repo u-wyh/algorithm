@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1144
 // 题意：给 n 个点、m 条边的无向无权图。对每个点求从 1 号点出发的最短路条数，重边分开计数。答案对 100003 取模，走不到就输出 0。
 // 数据范围：1 ≤ n ≤ 10^6，1 ≤ m ≤ 2 × 10^6。
+// 算法标签：广度优先搜索、最短路
 
 #include<bits/stdc++.h>
 using namespace std;

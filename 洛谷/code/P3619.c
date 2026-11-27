@@ -5,6 +5,7 @@
 // 数据范围：Z <= 10，n <= 10^5，t_i <= 10^5，T <= 10^5，-10^5 <= b_i <= 10^5。
 #include<stdio.h>
 #include<stdlib.h>
+// 算法标签：贪心、排序
 
 typedef struct
 {

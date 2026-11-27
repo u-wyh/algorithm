@@ -3,6 +3,7 @@
 // 数据范围：1 <= n <= 5*10^5，0 <= K <= 10^12。
 //P7818
 // 前置知识：树状数组  
+// 算法标签：贪心、树状数组、优先队列
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

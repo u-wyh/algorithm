@@ -3,6 +3,7 @@
 // 对每个模式串 t，求它最长的且是母串 s 子串的前缀长度。
 // 数据范围：1 <= n <= 10^7，1 <= m <= 10^5，1 <= |t| <= 100，仅含字母 E, S, W, N。
 #include<bits/stdc++.h>
+// 算法标签：AC自动机、Trie
 using namespace std;
 const int MAXN = 1e7+5;
 const int MAXM = 105;

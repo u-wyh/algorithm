@@ -4,6 +4,7 @@
 // 对每个 1 操作输出一行答案。
 // 数据范围：n, q <= 3*10^4，所有边权不超过 1023。
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树、位运算
 using namespace std;
 const int MAXN = 3e4+5;
 

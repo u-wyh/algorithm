@@ -4,6 +4,7 @@
 // 输出最低成本。
 // 数据范围：0 <= n <= 50，0 <= m <= 10，0 <= S, U_i <= 10000，0 <= d_i <= 100。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、SPFA、Dijkstra
 using namespace std;
 #define int long long  
 const int MAXN = 55;  

@@ -4,6 +4,7 @@
 // 求使先手必胜的初始布局方案数对 10^9+7 取模的结果。
 // 数据范围：1 <= d <= k <= n <= 10^4，k 为偶数且 k <= 100。
 #include<bits/stdc++.h>
+// 算法标签：博弈论、动态规划、组合数学
 using namespace std;
 #define int long long
 const int MOD = 1e9+7;

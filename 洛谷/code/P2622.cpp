@@ -8,6 +8,7 @@
 #define RE register
 #define For(i,a,b) for(RE int (i)=(a);(i)<=(b);(i)++)
 #define Bor(i,a,b) for(RE int (i)=(b);(i)>=(a);(i)--)
+// 算法标签：状态压缩、SPFA
 using namespace std;
 const int N=105;
 int n,m,a[N],b[N],f[1<<11];

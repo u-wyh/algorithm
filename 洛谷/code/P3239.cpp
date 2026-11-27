@@ -8,6 +8,7 @@
 #include <cstdio>
 #include <cmath>
 #include <cstring>
+// 算法标签：概率动态规划
 using namespace std;
 
 const int MAXN = 225;

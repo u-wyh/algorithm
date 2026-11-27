@@ -4,6 +4,7 @@
 // 规则：统计有多少条直线满足 y = k_i*x + b_i。
 // 输出：共 Q 行，依次输出每次询问经过该点的直线数量。
 // 数据范围：1 <= n, Q <= 2*10^5，|x|, |y|, |k_i|, |b_i| <= 2*10^4（时限 3.0s）。
+// 算法标签：根号分治、计数统计
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 405;

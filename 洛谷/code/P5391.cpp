@@ -3,6 +3,7 @@
 // 每次操作后输出当前序列所有物品在完全背包下的最大价值和。
 // 数据范围：1 <= q, V, x, y <= 2*10^4。
 #include<bits/stdc++.h>
+// 算法标签：完全背包、重链剖分、动态规划
 using namespace std;
 const int MAXN = 2e4+5;
 const int MAXH = 20;

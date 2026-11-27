@@ -9,6 +9,7 @@
 // 比如  a号城市  有3个人信仰A  4个人信仰B  那么就是a->A 权值为3   a->B 权值为4
 // 那么如果 a号城市和b号城市合并了  那么就是在连边
 #include<bits/stdc++.h>
+// 算法标签：并查集、启发式合并、逆元
 using namespace std;
 #define int long long
 const int MOD = 19260817;

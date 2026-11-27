@@ -7,6 +7,7 @@
 // 输出到达终点的最小总费用。
 // 数据范围：2 <= N <= 100，2 <= K <= 10，N, K, A, B, C 均为正整数。
 #include<bits/stdc++.h>
+// 算法标签：分层图最短路、Dijkstra
 using namespace std;
 const int MAXN = 105;
 const int MAXM = 15;

@@ -7,6 +7,7 @@
 // 数据范围：1 <= s <= n <= 10^5，1 <= m <= 2*10^5，1 <= l_i < r_i <= n
 // 1 <= k_i <= r_i - l_i，sum(k_i) <= 3*10^5，1 <= a_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：线段树优化建图、拓扑排序
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 30*MAXN;

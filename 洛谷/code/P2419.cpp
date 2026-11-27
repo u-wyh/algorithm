@@ -3,6 +3,7 @@
 // 输出确定的奶牛数目。
 // 数据范围：1 <= N <= 100，1 <= M <= 4500。
 #include<bits/stdc++.h>
+// 算法标签：Floyd、传递闭包
 using namespace std;
 
 int nums[105][105];

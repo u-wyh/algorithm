@@ -4,6 +4,7 @@
 // 输出 3 行分别对应 3 问答案。
 // 数据范围：1 <= n <= 500。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、最大流、拆点
 using namespace std;
 const int MAXN = 505;
 const int MAXV = MAXN*2;

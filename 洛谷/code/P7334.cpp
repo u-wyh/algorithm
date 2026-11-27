@@ -3,6 +3,7 @@
 // 2 l r 将 [l, r] 内每个数平方（a_i <- a_i^2）；
 // 求最终序列元素之和对 998244353 取模。
 // 数据范围：1 <= n, m <= 2*10^5，1 <= a_i <= 10^9。
+// 算法标签：线段树、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

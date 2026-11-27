@@ -3,6 +3,7 @@
 // 2 L 取出长度为 L 的木材，若无恰好长度则取最接近的（相同时取较短的）并输出长度，仓库为空输出 Empty。
 // 数据范围：操作次数 m <= 10^5，木材长度 L 不超过 10^9。
 #include<bits/stdc++.h>
+// 算法标签：set、二分查找
 using namespace std;
 
 int n,opt,length;

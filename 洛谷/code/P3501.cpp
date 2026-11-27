@@ -7,6 +7,7 @@
 #include<cstdio>
 #include<cstring>
 #define ull unsigned long long
+// 算法标签：字符串哈希、二分查找
 using namespace std;
 const int N=5e5+10;
 char s[N],t[N];

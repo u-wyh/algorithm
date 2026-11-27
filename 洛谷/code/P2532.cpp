@@ -4,6 +4,7 @@
 // 输出方案数。
 // 数据范围：1 <= N <= 500。
 #include<bits/stdc++.h>
+// 算法标签：卡特兰数、组合数学、快速幂
 using namespace std;
 const int MAXN = 1005;
 const int MOD = 1e9+7;

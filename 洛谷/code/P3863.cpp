@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，2 <= n, q <= 100000，1 <= l <= r <= n，1 <= p <= n
 // -10^9 <= x, y, a_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：分块、扫描线、二分查找
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

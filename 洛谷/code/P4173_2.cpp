@@ -3,6 +3,7 @@
 // 求 A 在 B 中所有可以完全匹配的起始下标（从 1 开始，输出个数与升序位置）。
 // 数据范围：1 <= m <= n <= 3e5。
 #include<bits/stdc++.h>
+// 算法标签：FFT
 using namespace std;
 const int MAXN = 3e5+5;
 const int MAXT = 2e6+5;

@@ -5,6 +5,7 @@
 // 数据范围：0 <= M <= N <= 50000，1 <= L <= 10^9。
 #include<stdio.h>
 #include<stdbool.h>
+// 算法标签：二分答案、贪心
 
 bool check(int limit,int *nums,int k,int m){
     int ans=0,n=k-1;

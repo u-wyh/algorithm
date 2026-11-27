@@ -3,6 +3,7 @@
 // 现有 m 次区间翻转修改，输出初始及每次修改后游戏结束所需步数（若永不停止输出 never）。
 // 数据范围：1 <= n, m <= 10^6，1 <= l_i <= r_i <= n。
 //P7119
+// 算法标签：线段树
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

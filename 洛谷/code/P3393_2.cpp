@@ -6,6 +6,7 @@
 // 数据范围：2 <= N <= 10^5，1 <= M <= 2*10^5，0 <= K <= N-2，0 <= S <= 10^5
 // 1 <= P < Q <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、最短路
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 4e5+8;

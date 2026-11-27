@@ -6,6 +6,7 @@
 // 第一行输入 N, K，接下来 K 行每行 c_i, p_i, a_i, b_i。
 // 输出 N 行每行一个整数。
 // 数据范围：1 <= N, K <= 10^5，1 <= c_i <= N，1 <= p_i <= 10^9，1 <= a_i <= b_i <= N。
+// 算法标签：线段树优化建图、最短路
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

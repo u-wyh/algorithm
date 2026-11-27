@@ -8,6 +8,7 @@
 // 所有输入数值均在 [1, 10^10] 内
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：动态规划、前缀和
 
 #define MAX_CARS 1000
 

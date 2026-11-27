@@ -2,6 +2,7 @@
 // 题意：数轴上有 V 个已知坐标的村庄，选位置建 P 个邮局，求各村庄到最近邮局距离之和的最小值。
 // 数据范围：1 <= P <= 300，P <= V <= 3000，1 <= 村庄位置 <= 10000。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、四边形不等式优化、前缀和
 using namespace std;
 const int MAXN = 3005;
 const int MAXM = 305;

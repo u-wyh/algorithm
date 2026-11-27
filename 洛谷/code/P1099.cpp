@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1099
 // 题意：给一棵带权树，在直径上选一段长度至多 s 的路径，允许只选一个点。对每个点量它到这段路径的最短距离，求其中最大距离能降到多少。
 // 数据范围：2 ≤ n ≤ 300，0 ≤ s,w ≤ 1000，1 ≤ u,v ≤ n。
+// 算法标签：深度优先搜索、枚举
 
 #include <algorithm>
 #include <cstring>

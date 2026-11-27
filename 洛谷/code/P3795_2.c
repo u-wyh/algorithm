@@ -5,6 +5,7 @@
 // 数据范围：1 <= k <= 10^7；注意本题内存限制为 20MB。
 #include<stdio.h>
 #define mod 14233333
+// 算法标签：递推、组合数学
 int main()
 {
     int n;

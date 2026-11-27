@@ -8,6 +8,7 @@
 #include <algorithm>
 #include <cmath>
 #include <iomanip>
+// 算法标签：计算几何、区间合并、排序
 using namespace std;
 
 const double PI = acos(-1.0);

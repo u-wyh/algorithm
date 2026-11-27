@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P6883
 // 题意：N 个装水的杯子，将 i 号杯的水倒入 j 号杯需代价 C_{i,j}，求倒水使得至多有 K 个杯子中有水的最小总代价。
 // 数据范围：1 <= K <= N <= 20，0 <= C_{i,j} <= 10^5，C_{i,i} = 0。
+// 算法标签：状态压缩动态规划
 #include <stdio.h>
 #include <string.h>
 #include <limits.h>

@@ -5,6 +5,7 @@
 // 输出：对每个询问 (x, y, z)，输出幸福值和 >= z 的最后天数（0..d 或 -1）。
 // 数据范围：1 <= n, m, d, s <= 2*10^5，1 <= a_i, k_i, z_i <= 10^9。
 // 数据范围：无重边，任意时刻各点点权至少为 1。
+// 算法标签：整体二分、可撤销并查集
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

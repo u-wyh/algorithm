@@ -4,6 +4,7 @@
 // 对 r = 0..n-1，输出 r 相似的酒对方案数以及两杯美味度乘积的最大值（无则输出 0 0）。
 // 数据范围：n <= 3*10^5，|a_i| <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：后缀数组、并查集
 using namespace std;
 const int MAXN = 6e5+5;
 

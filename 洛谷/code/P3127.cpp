@@ -5,6 +5,7 @@
 // 输出一个整数表示无法逃脱的起点位置总长度。
 // 数据范围：1 <= N <= 10^5，1 <= S_j, P_j <= 10^9，P_j 互不相同。
 #include<bits/stdc++.h>
+// 算法标签：双指针、模拟、排序
 using namespace std;
 const int MAXN = 1e5+5;
 

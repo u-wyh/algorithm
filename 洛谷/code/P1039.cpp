@@ -3,6 +3,7 @@
 // 给 P 条证词，只使用题面规定的嫌疑人和星期陈述格式。
 // 根据证词判断唯一可能的凶手，候选不止一个输出 Cannot Determine，没有候选输出 Impossible。
 // 数据范围：1 ≤ M ≤ 20，0 ≤ N ≤ M，1 ≤ P ≤ 100，每条证词所在的输入行最多 250 字符。
+// 算法标签：枚举、模拟
 
 #include<bits/stdc++.h>
 using namespace std;

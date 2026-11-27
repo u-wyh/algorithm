@@ -4,6 +4,7 @@
 // 输出最少合并次数。
 // 数据范围：0 < n <= 2*10^5，0 < p_i <= 2147483647，p 随机生成。
 #include<bits/stdc++.h>
+// 算法标签：单调队列、动态规划、前缀和
 using namespace std;
 const int MAXN = 2e5+5;
 

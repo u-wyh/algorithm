@@ -5,6 +5,7 @@
 // 数据范围：1 <= l <= 1e5，-1e9 <= x_i <= 1e9，k > 0 且在 int 范围内。
 #include<stdio.h>
 #include<stdbool.h>
+// 算法标签：二分答案、贪心
 
 long long check(long long limit,long long *nums,int n){
     int ans=0;

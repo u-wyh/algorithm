@@ -1,6 +1,8 @@
 // https://www.luogu.com.cn/problem/P7774
-// 题意：给定 N 个初始角 a_i，回答 M 个目标角 b_i 能否通过若干个 a_i（可重复或不用）做加减运算在模 360 度意义下得到，输出 YES/NO。
+// 题意：给定 N 个初始角 a_i，回答 M 个目标角 b_i 能否通过若干个 a_i（可重复或不用）做加减运算在模 360 度意义下得到
+// 输出 YES/NO。
 // 数据范围：1 <= N, M <= 10，0 < a_i, b_i < 360。
+// 算法标签：动态规划、完全背包
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>

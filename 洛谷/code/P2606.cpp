@@ -3,6 +3,7 @@
 // 输出方案数对质数 m 取模的结果。
 // 数据范围：1 <= n <= 10^6，1 <= m <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：树形动态规划、Lucas定理、组合数学
 using namespace std;
 #define int long long 
 const int MAXN = 2e6+5;

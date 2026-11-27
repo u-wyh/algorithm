@@ -5,6 +5,7 @@
 // 输出 N 行，每行 YES 或 NO。
 // 数据范围：1 <= N, M <= 3000，1 <= u, v <= N。
 #include<bits/stdc++.h>
+// 算法标签：并查集、逆向思维
 using namespace std;
 const int MAXN = 3005;
 

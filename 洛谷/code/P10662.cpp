@@ -5,6 +5,7 @@
 // 操作 3 u v x 给 u 加编号为 v 且有 x 颗石子的孩子。
 // 输出 Yes 或 No。
 // 数据范围：1 ≤ n,t ≤ 50000，任意时刻节点数和编号均不超过 10^5，其他数据在 int 范围内。操作参数按此前 Yes 次数异或解码。
+// 算法标签：动态树（LCT）
 
 #include<bits/stdc++.h>
 using namespace std;

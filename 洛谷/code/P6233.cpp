@@ -2,6 +2,7 @@
 // 题意：m 行 n 列矩阵（0-indexed），每格为 W/E/N/S（向该方向走一格）或 X（无箭头）。
 // 每次可将某格箭头顺时针旋转 90 度，求使从 (0,0) 能走到 (m-1,n-1) 的最少旋转次数，无解输出 -1。
 // 数据范围：1 <= m, n <= 500。
+// 算法标签：Dijkstra、最短路
 #include<bits/stdc++.h>
 using namespace std;
 const int INF = 1e9;

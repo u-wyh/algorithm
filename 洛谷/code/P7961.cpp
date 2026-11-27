@@ -6,6 +6,7 @@
 // 第一行输入 n, m, k，第二行输入 v_0..v_m。
 // 输出一行一个整数。
 // 数据范围：1 <= k <= n <= 30，0 <= m <= 100，1 <= v_i < 998244353。
+// 算法标签：动态规划、组合数学、位运算
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

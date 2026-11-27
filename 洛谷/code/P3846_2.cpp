@@ -21,6 +21,7 @@
 // 对于同一个值，要记录最大的B，因为A确定时，B越大，x=A*t-B越小
 // 整体复杂度 O(sqrt(mod) log(sqrt(mod)))
 #include<bits/stdc++.h>
+// 算法标签：BSGS、快速幂
 using namespace std;
 #define int long long
 

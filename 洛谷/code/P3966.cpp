@@ -9,6 +9,7 @@
 // 这是输入输出处理效率很高的写法
 // 提交以下的code，提交时请把类名改成"Main"，可以直接通过
 #include<bits/stdc++.h>
+// 算法标签：AC自动机、Trie树、深度优先搜索
 using namespace std;
 
 const int MAXN = 205;

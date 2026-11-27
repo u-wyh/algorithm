@@ -5,6 +5,7 @@
 // 输出：输出一个正整数，表示序列最多可包含的不同颜色种数。
 // 数据范围：2 <= n <= 5*10^5，1 <= m <= 5*10^5。
 // 数据范围：1 <= a_i, b_i <= n-l_i+1，a_i != b_i，l_i >= 1。
+// 算法标签：并查集、倍增
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

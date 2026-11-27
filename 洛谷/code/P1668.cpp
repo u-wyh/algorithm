@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1668
 // 题意：一天有 1 到 T 号时段，每头牛可以在闭区间 [S,E] 值班。挑尽量少的牛，使每个时段都至少有一头牛覆盖。无解输出 -1。
 // 数据范围：1 ≤ N ≤ 25000，1 ≤ T ≤ 10^6，1 ≤ S ≤ E ≤ T。
+// 算法标签：贪心、排序
 
 #include<bits/stdc++.h>
 using namespace std;

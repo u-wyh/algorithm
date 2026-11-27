@@ -2,6 +2,7 @@
 // 题意：多组数据，给定长为 N 的正整数序列 A 与整数 K, L, R，选出长度在 [L, R] 内的连续子段 [i, j]
 // 最大化 (max(A[i..j]) - min(A[i..j])) / (j - i + K)，保留 4 位小数。
 // 数据范围：T <= 10，N, K <= 5 * 10^4，1 <= A_i <= 10^8，2 <= L, R <= N（保证答案不超过 10^3）。
+// 算法标签：01分数规划、二分答案、单调队列
 #include<bits/stdc++.h>
 using namespace std;
 const double sml = 1e-6;

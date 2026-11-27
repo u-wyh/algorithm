@@ -7,6 +7,7 @@
 #include <vector>
 #include <algorithm>
 #include <unordered_map>
+// 算法标签：树状数组、动态规划、离散化
 
 const long long MOD = 1e9 + 7;
 

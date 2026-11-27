@@ -4,6 +4,7 @@
 // 判断每双靴子能否从 1 号走到 N 号地砖。
 // 数据范围：1 <= N, B <= 1e5，0 <= f_i, s_i <= 1e9，1 <= d_i <= N-1。
 #include<bits/stdc++.h>
+// 算法标签：线段树、排序、双指针
 using namespace std;
 const int MAXN = 1e5+5;
 

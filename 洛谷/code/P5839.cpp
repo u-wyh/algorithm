@@ -3,6 +3,7 @@
 // 求将 S 改为由若干长度至少为 K 的同字符连续段拼接而成的最小总代价。
 // 输入 N, M, K、串 S 及代价矩阵 a；输出最小总天数。
 // 数据范围：1 <= M <= 26，1 <= K <= N <= 10^5，0 <= a_{ij} <= 1000。
+// 算法标签：动态规划、Floyd、前缀和
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

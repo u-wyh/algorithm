@@ -4,6 +4,7 @@
 // 数据范围：n <= 200000，m <= 500000，操作 1 次数 m' <= 100000，0 <= a_i, d < 10^9+7
 // 1 <= u, v <= n，l <= r <= n。
 #include<bits/stdc++.h>
+// 算法标签：线段树、前缀和
 using namespace std;
 #define int long long
 const int MAXN = 2e5+5;

@@ -4,6 +4,7 @@
 // 求最多能经过多少个不同的传送点。
 // 数据范围：1 <= N <= 10^5，1 <= R, C <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：Tarjan缩点、记忆化搜索、排序
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 8e5+5;

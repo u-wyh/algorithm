@@ -4,6 +4,7 @@
 // 第一行输入 N，接下来 N 行每行四个整数 x1_i, y1_i, x2_i, y2_i。
 // 输出一行 N 个整数，表示一种合法的棍子编号移动顺序（Special Judge）。
 // 数据范围：1 <= N <= 5000，0 <= x1, y1, x2, y2 <= 10^4。
+// 算法标签：拓扑排序、计算几何
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5005;

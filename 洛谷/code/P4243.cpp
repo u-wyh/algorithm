@@ -3,6 +3,7 @@
 // B s t 表示询问当前区间 [s, t] 最少能划分成几段连续的等差数列。
 // 数据范围：1 <= N, Q <= 100000，|v_i|, |a|, |b| <= 100000。
 #include<bits/stdc++.h>
+// 算法标签：线段树、差分
 using namespace std;
 const int MAXN = 1e5+5;
 

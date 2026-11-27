@@ -7,6 +7,7 @@
 // 数据范围：对于 100% 的数据，1 <= D <= 10^5，1 <= T_i <= 50，1 <= Tc, C_1, C_2 <= 60
 // 1 <= N_1, N_2 <= D。
 #include<bits/stdc++.h>
+// 算法标签：三分查找、贪心、双端队列
 using namespace std;
 const int MAXN = 1e5+5;
 const int INF = 1e9;

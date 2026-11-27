@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1987
 // 题意：每棵摇钱树初有 m_i 枚金币，每过一天会掉 b_i 枚。每天最多砍一棵树并拿走树上剩余的金币。求 k 天内最多获得多少金币。
 // 数据范围：至多 10 组，1 ≤ n,k ≤ 1000，1 ≤ m_i ≤ 10^5，1 ≤ b_i ≤ 1000，以 0 0 结束。
+// 算法标签：动态规划、排序
 
 #include<bits/stdc++.h>
 using namespace std;

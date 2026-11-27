@@ -3,6 +3,7 @@
 // 第一行输入 n，接下来 n 行每行 x_i, y_i。
 // 输出一行一个整数 D^2。
 // 数据范围：2 <= n <= 4*10^5，-10^7 <= x_i, y_i <= 10^7，保证无重合点。
+// 算法标签：分治、计算几何
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

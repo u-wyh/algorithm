@@ -11,6 +11,7 @@
 // 1 <= m <= 6 * 10^3
 // -3 * 10^5 <= 边权 <= +3 * 10^5
 // 测试链接 : https://www.luogu.com.cn/problem/P5905
+// 算法标签：Johnson全源最短路、SPFA、Dijkstra
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e3+5;

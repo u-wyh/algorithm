@@ -6,6 +6,7 @@
 // 对每次询问输出一行最大利润。
 // 数据范围：对于 100% 的数据，1 <= n, q <= 5 * 10^4，初始价格不超过 100，任意时刻任何城市宝石价格不超过 10^9。
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树
 using namespace std;
 const int MAXN = 1e5+5;
 const int INF = 1e9+1;

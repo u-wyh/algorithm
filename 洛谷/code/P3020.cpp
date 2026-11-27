@@ -5,6 +5,7 @@
 // 输出一行一个整数，表示最少点心数量。
 // 数据范围：对于 100% 的数据，1 <= N <= 50000，1 <= M <= 50000，0 <= C_i <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、最短路
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 4e5+5;

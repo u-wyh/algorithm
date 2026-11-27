@@ -6,6 +6,7 @@
 // 按顺序输出每次 W 操作获得的点数。
 // 数据范围：n, m, q <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：异或哈希、有序集合
 using namespace std;
 const int MAXN = 1e5+5;
 

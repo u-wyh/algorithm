@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10417
 // 题意：给长度分别为 n、m 的数组 A、B，从两边各取一项相加，共得到 n×m 个和。求这些和中的第 K 小，重复值照常占排名。
 // 数据范围：1 ≤ n,m ≤ 10^5，1 ≤ A[i],B[j] ≤ 10^9，1 ≤ K ≤ n×m。
+// 算法标签：二分答案、双指针
 
 #include<stdio.h>
 #include<stdlib.h>

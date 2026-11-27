@@ -4,6 +4,7 @@
 // 若能做到，输出最少需派出的前若干名士兵数量；否则输出 NIE。
 // 数据范围：2 <= n <= 2000，-1000 <= x_i, y_i <= 1000，1 <= r_i <= 5000。
 #include<bits/stdc++.h>
+// 算法标签：计算几何
 using namespace std;
 #define int long long
 const int MAXN = 2e3+5;

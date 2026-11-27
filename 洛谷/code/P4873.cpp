@@ -3,6 +3,7 @@
 // 求最少需要多少条赛道。
 // 数据范围：1 <= N <= 10^5，1 <= T, v_i <= 10^9，0 <= x_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：贪心、二分查找、最长上升子序列
 using namespace std;
 #define int long long
 

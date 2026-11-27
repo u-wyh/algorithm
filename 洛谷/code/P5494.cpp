@@ -3,6 +3,7 @@
 // 输入 n, m、初始计数及 m 次操作；依次输出每个查询（opt=3, 4）的答案（第 k 小不存在输出 -1）。
 // 数据范围：1 <= n, k <= 2*10^5，1 <= x, y, q <= m <= 2*10^5，a_i <= m。
 #include<bits/stdc++.h>
+// 算法标签：动态开点线段树、线段树分裂、线段树合并
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXT = MAXN*10;

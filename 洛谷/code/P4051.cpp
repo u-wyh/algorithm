@@ -4,6 +4,7 @@
 // 输出一行加密后的字符串。
 // 数据范围：对于 100% 的数据，字符串长度不超过 10^5。
 #include<bits/stdc++.h>
+// 算法标签：后缀数组
 using namespace std;
 const int MAXN = 4e5+5;
 

@@ -4,6 +4,7 @@
 // 可重排大臣顺序（允许不改），求获得奖金最多的大臣所获奖金的最小值。
 // 数据范围：T <= 10，1 <= n <= 2 * 10^4，1 <= a_i, b_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：贪心、排序
 using namespace std;
 const int MAXN = 25005;
 

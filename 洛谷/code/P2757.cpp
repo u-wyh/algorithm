@@ -4,6 +4,7 @@
 // 每组输出 Y 或 N。
 // 数据范围：前 5 点 1 <= N <= 5*10^5, T <= 5；后 21 点 1 <= N <= 10000, T <= 7。
 #include<bits/stdc++.h>
+// 算法标签：线段树、哈希
 using namespace std;
 #define int long long
 const int MAXN = 5e5+5;

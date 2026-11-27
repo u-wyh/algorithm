@@ -13,6 +13,7 @@
 // 测试链接 : https://www.luogu.com.cn/problem/P2515
 // 如下实现是C++的版本，C++版本和java版本逻辑完全一样
 // 提交如下代码，可以通过所有测试用例
+// 算法标签：Tarjan缩点、树形背包
 
 #include <bits/stdc++.h>
 

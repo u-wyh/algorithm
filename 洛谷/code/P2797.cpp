@@ -5,6 +5,7 @@
 // 输出一个精确到两位小数的实数，表示最大魔法差值。
 // 数据范围：对于 100% 的数据，n <= 10^5（正整数），0 <= x_i <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：三分查找、前缀和、排序
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

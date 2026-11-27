@@ -6,6 +6,7 @@
 #include <vector>
 #include <queue>
 #include <cmath>
+// 算法标签：优先队列、贪心
 
 using namespace std;
 

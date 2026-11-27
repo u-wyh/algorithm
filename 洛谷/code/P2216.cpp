@@ -4,6 +4,7 @@
 // 输出最小差值。
 // 数据范围：2 <= a, b <= 1000，n <= min(a, b, 100)，矩阵元素 <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：单调队列、滑动窗口
 using namespace std;
 
 int a,b,n,ans=1e9;

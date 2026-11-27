@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= N <= 200，1 <= M <= 10^5，1 <= Q <= 10^4，书名不含空格且长度 <= 10
 // 保证插入与查询位置合法。
 #include<bits/stdc++.h>
+// 算法标签：FHQ-Treap
 using namespace std;
 const int MAXN = 1e5+305;
 

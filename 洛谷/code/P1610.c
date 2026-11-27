@@ -8,6 +8,7 @@
 // dist 在 int 整型范围内（p_i 互不相等）
 #include<stdio.h>
 #include<stdlib.h>
+// 算法标签：贪心、排序
 
 int cmp(const void *a,const void *b)
 {

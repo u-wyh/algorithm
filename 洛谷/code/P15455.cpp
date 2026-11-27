@@ -5,6 +5,7 @@
 // 输出：输出 Q 行，分别表示 sum_{s=1..N} D_{s, X_k}。
 // 数据范围：2 <= N <= 3*10^5，1 <= M <= 6*10^5，1 <= Q <= N。
 // 数据范围：1 <= C_j <= 10^9 且互异，X_k 互异，图连通。
+// 算法标签：Kruskal重构树、并查集
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

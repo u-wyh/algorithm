@@ -3,6 +3,7 @@
 // 输入 N, M、M 条边及时间 t；输出总方案数模 2017。
 // 数据范围：N, M <= 100，t <= 10^9。
 //P5789
+// 算法标签：矩阵快速幂、图论
 #include<bits/stdc++.h>
 using namespace std;
 const int MOD = 2017;

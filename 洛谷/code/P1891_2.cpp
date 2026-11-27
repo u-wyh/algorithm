@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1891
 // 题意：每组给定正整数 n，求 i 从 1 到 n 时，i 与 n 的最小公倍数之和。
 // 数据范围：1 ≤ T ≤ 3×10^5，1 ≤ n ≤ 10^6。
+// 算法标签：线性筛、欧拉函数、数论
 
 #include<bits/stdc++.h>
 using namespace std;

@@ -3,6 +3,7 @@
 // q 个询问 (a_i, b_i, e_i)，求最多花费 e_i 升级道路后，从 a_i 到 b_i 路径上最小速度的最大可能值。
 // 数据范围：2 <= n <= 10^5，1 <= q <= 10^5，1 <= v_i < s_i <= 10^9，1 <= c_i <= 10^9
 // a_i != b_i，1 <= e_i <= 10^18。
+// 算法标签：整体二分、最近公共祖先、线段树
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

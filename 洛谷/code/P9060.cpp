@@ -1,6 +1,8 @@
 // https://www.luogu.com.cn/problem/P9060
-// 题意：给定长 n 的序列 a，回答 m 个区间询问 [l_i, r_i]，求该区间内所有非空子集的最大公约数（gcd）的乘积，对 998244353 取模。
+// 题意：给定长 n 的序列 a，回答 m 个区间询问 [l_i, r_i]，求该区间内所有非空子集的最大公约数（gcd）的乘积
+// 对 998244353 取模。
 // 数据范围：1 <= n, m, a_i <= 10^5，1 <= l_i <= r_i <= n。
+// 算法标签：根号分治、莫队算法、线性筛
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

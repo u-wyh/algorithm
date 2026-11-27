@@ -5,6 +5,7 @@
 // 数据范围：N <= 100，0 <= a_i <= 100。
 #include <stdio.h>
 #include <string.h>
+// 算法标签：动态规划、枚举
 bool DPC[110][3][3];
 int N;
 int CN[110];

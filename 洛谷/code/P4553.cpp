@@ -3,6 +3,7 @@
 // 求让所有人完成旅程的最小总机票费用。
 // 数据范围：1 <= N <= 100，1 <= M <= 79，最少费用小于 10^6。
 #include<bits/stdc++.h>
+// 算法标签：上下界网络流、最小费用最大流、Dijkstra
 using namespace std;
 #define int long long
 const int MAXN = 215;

@@ -4,6 +4,7 @@
 // 规则：沿网格线裁剪矩形，不能含 1 且格子总数 >= K。
 // 输出：输出一行一个整数，表示合法子矩形总方案数。
 // 数据范围：1 <= N, M <= 2000，1 <= K <= N*M，s_{xy} in {0, 1}。
+// 算法标签：构造、计算几何
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

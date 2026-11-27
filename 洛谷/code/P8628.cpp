@@ -3,6 +3,7 @@
 // 要求中间经过的格子必须 + 与 - 交替出现（A、B 无能量特征），输出最少移动步数；
 // 无方案输出 -1。
 // 数据范围：4 <= n < 100。
+// 算法标签：广度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

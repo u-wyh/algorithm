@@ -3,6 +3,7 @@
 // 输入 n, m 及各星坐标；输出最小半径，绝对或相对误差不超过 10^-6 即正确。
 // 数据范围：2 <= m <= n <= 2000，|x|, |y| <= 10^4。
 #include<bits/stdc++.h>
+// 算法标签：计算几何、二分答案、扫描线
 using namespace std;
 #define int long long
 const int MAXN = 2e3+5;

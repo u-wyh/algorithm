@@ -4,6 +4,7 @@
 // 数据范围：0 < a, b <= 10^10000。
 #include<cstdio>
 #include<cstring>
+// 算法标签：高精度、Stein算法
 using namespace std;
 const int MAXN(1e5+10);
 int n,m,k,a[MAXN],b[MAXN],G[MAXN],sol[MAXN];

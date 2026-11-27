@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P6702
 // 题意：用装 3 颗糖和装 5 颗糖的两种包装盒恰好装完 n 颗糖，求所需包装盒的最少数量，无解输出 -1。
 // 数据范围：3 <= n <= 5000。
+// 算法标签：动态规划
 #include<stdio.h>
 #include<limits.h>
 

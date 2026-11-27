@@ -5,6 +5,7 @@
 // p_k 连 p_1）能得到的最大总能量及方案（误差 <= 1e-5）。
 // 数据范围：n <= 50000，0 < m_i, c_i < 1e5。
 #include<bits/stdc++.h>
+// 算法标签：凸包、旋转卡壳
 using namespace std;
 const int MAXN = 5e4+5;
 

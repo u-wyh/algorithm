@@ -6,6 +6,7 @@
 // 数据范围：1 <= N <= 1e5，操作与询问总数 <= 1e5，任意时刻所有边权都不超过 1e9。
 //P4315
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

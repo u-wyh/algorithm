@@ -6,6 +6,7 @@
 #include<stdio.h>
 #include<math.h>
 #include<limits.h>
+// 算法标签：动态规划、背包动态规划
 
 int min(int a,int b)
 {

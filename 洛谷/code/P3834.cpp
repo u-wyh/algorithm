@@ -5,6 +5,7 @@
 // 数据范围：对于所有数据，1 <= n, m <= 2 * 10^5，0 <= a_i <= 10^9，1 <= l <= r <= n
 // 1 <= k <= r - l + 1。
 #include<bits/stdc++.h>
+// 算法标签：主席树、离散化、二分查找
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXT = MAXN*30;

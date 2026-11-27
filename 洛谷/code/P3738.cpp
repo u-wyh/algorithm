@@ -4,6 +4,7 @@
 // 输出侦察员行走路线在敌占区（多边形）内部的总长度的整数部分。
 // 数据范围：3 <= n <= 50，0 <= x_i, y_i <= 1000，0 <= X <= 1000，-100 <= Y < 0。
 #include<bits/stdc++.h>
+// 算法标签：计算几何、排序
 using namespace std;
 const int MAXN = 55;
 

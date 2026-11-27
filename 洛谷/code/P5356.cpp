@@ -3,6 +3,7 @@
 // 2 l r k 将区间 [l, r] 内所有元素加上 k。
 // 数据范围：1 <= l <= r <= n <= 10^5，1 <= m <= 10^5，-2*10^4 <= a_i, k <= 2*10^4。
 #include<bits/stdc++.h>
+// 算法标签：分块、二分答案
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 1e3+5;

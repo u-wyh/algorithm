@@ -13,6 +13,7 @@
 // 数据范围：3 <= n <= 10^5
 // 数据范围：-10^9 <= x_i, y_i <= 10^9
 // 数据范围：所有测试数据组的 n 之和不超过 2 * 10^5
+// 算法标签：凸包、旋转卡壳、计算几何
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

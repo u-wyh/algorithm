@@ -4,6 +4,7 @@
 // 输出最少需要修改的节点数。
 // 数据范围：n <= 10^5，a_i < 2^31。
 #include<bits/stdc++.h>
+// 算法标签：中序遍历、最长不下降子序列、二分查找
 using namespace std;
 const int MAXN = 1e5+5;
 

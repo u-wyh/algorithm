@@ -6,6 +6,7 @@
 // 对每次询问输出一行对应的距离总和（强制在线）。
 // 数据范围：n <= 1.5*10^5，Q <= 2*10^5，A <= 10^9，0 <= x_i < A，1 <= c <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：点分树、树链剖分、二分查找
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXT = 4e6+5;

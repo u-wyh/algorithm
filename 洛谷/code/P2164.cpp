@@ -4,6 +4,7 @@
 // 输出每条边每天的期望客流量（保留一位小数，绝对误差 <= 0.1）。
 // 数据范围：2 <= n <= 300，n-1 <= m <= n(n-1)/2，0 <= C_{i,j} <= 100，C_{i,i} = 0。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索、最短路计数、DAG动态规划
 using namespace std;
 const int MAXN = 305;
 const int MAXM = MAXN*MAXN;

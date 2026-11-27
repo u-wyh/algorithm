@@ -3,6 +3,7 @@
 // 求 U 到 V 的最小花费。
 // 数据范围：2 <= N <= 10^5，1 <= M <= 2*10^5，1 <= C_i <= 10^9，1 <= S, T, U, V <= N
 // 无重边（1 <= A_i <= B_i <= N）。
+// 算法标签：最短路、拓扑排序、动态规划
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

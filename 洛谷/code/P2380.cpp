@@ -4,6 +4,7 @@
 // 每组输出最多能采到的矿石总数。
 // 数据范围：1 <= n, m <= 500，每格矿数量 < 1000。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、前缀和
 using namespace std;
 
 int n,m;

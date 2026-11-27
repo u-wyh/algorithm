@@ -7,6 +7,7 @@
 // 数据范围：对于 100% 的数据，1 <= n <= 10^5，1 <= a_i, b_i, c_i <= 10^4，1 <= x_i <= 10^9
 // 保证插入时序列中至少已有 p_i 单位燃料。
 #include<bits/stdc++.h>
+// 算法标签：FHQ-Treap、动态规划
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

@@ -5,6 +5,7 @@
 // 输出一个整数表示最小狼数。
 // 数据范围：对于全部测试点，3 <= N, M <= 1000，所有道路权值为不超过 10^6 的正整数。
 #include<bits/stdc++.h>
+// 算法标签：平面图转对偶图、Dijkstra、最小割
 using namespace std;
 #define int long long
 

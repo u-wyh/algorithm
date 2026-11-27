@@ -6,6 +6,7 @@
 #include <cstring>
 #include <iostream>
 #include <algorithm>
+// 算法标签：贪心、前缀和
 using namespace std;
 
 const int MAXN = 1e5 + 5;

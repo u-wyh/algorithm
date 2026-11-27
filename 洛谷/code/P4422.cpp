@@ -3,6 +3,7 @@
 // D Y B 查询当前已知在第 Y 站及之前下车且年龄 >= B 的最年轻孩子年龄（无解输出 -1）。
 // 数据范围：2 <= N, Q <= 2 * 10^5，1 <= X, Y <= 10^9，1 <= A, B <= N。
 #include<bits/stdc++.h>
+// 算法标签：线段树、线段树上二分
 using namespace std;
 const int MAXN = 2e5+5;
 

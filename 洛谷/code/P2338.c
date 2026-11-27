@@ -5,6 +5,7 @@
 // 数据范围：1 <= N <= 10000，1 <= S <= 10^7，1 <= X <= 1000。
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：模拟、排序、双指针
 
 #define N 10005
 

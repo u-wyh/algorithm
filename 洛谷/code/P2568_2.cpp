@@ -3,6 +3,7 @@
 // 输出数对个数。
 // 数据范围：1 <= n <= 10^7。
 #include<bits/stdc++.h>
+// 算法标签：欧拉函数、线性筛、前缀和
 using namespace std;
 #define int long long
 const int MAXN = 1e7+5;

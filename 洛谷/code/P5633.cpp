@@ -3,6 +3,7 @@
 // 输入 n, m, s, k 及 m 条边；输出最小生成树总边权，无解输出 Impossible。
 // 数据范围：1 <= s <= n <= 5*10^4，1 <= m <= 5*10^5，1 <= k <= 100，0 <= w <= 3*10^4。
 #include<bits/stdc++.h>
+// 算法标签：WQS二分、最小生成树、并查集
 using namespace std;
 const int MAXN = 5e4+5;
 const int MAXM = 5e5+5;

@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= n <= 50，0 < c_i <= 1000，0 <= m_i <= 100，1 <= k <= 500
 // 1 <= A, B <= n，0 <= P < 1000（所有价格不出现分）。
 #include<bits/stdc++.h>
+// 算法标签：最小树形图、朱刘算法、贪心
 using namespace std;
 const int MAXN = 55;
 const int MAXM = 1005;

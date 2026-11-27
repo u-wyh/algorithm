@@ -6,6 +6,7 @@
 // 另 50% R = 1, C <= 5*10^5, M <= 2*10^4；
 // 1 <= P_{i,j} <= 1000，H_i <= 2*10^9。
 #include<bits/stdc++.h>
+// 算法标签：二维前缀和、贪心、二分查找
 using namespace std;
 const int MAXN = 205;
 const int MAXH = 1005;

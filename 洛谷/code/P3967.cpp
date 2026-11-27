@@ -4,6 +4,7 @@
 // 第一行输出最大完美匹配的幸福总值，接下来按 i 递增顺序输出所有必选配对 i j。
 // 数据范围：对于 100% 的数据，1 <= N <= 80，0 <= H_{i,j} <= 5 * 10^3。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、SPFA、Dijkstra
 using namespace std;
 const int MAXN = 85;
 const int MAXV = 2*MAXN;

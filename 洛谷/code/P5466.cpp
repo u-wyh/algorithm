@@ -4,6 +4,7 @@
 // 输入字符串 s；输出所有 (f(len) * len^2)（len=1..|s|）的按位异或和。
 // 数据范围：|s| <= 5*10^5，字符仅含 '0'、'1'、'?'。
 #include<bits/stdc++.h>
+// 算法标签：FFT、枚举
 using namespace std;
 const int MAXN = 1e6+5;
 const int MAXT = 4e6+5;

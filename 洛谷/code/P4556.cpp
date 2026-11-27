@@ -3,6 +3,7 @@
 // 求全部发放后每个点数量最多的救济粮种类（并列取编号最小，无粮输出 0）。
 // 数据范围：1 <= n, m <= 10^5，1 <= a, b, x, y <= n，1 <= z <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：树上差分、线段树合并、最近公共祖先、倍增
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXT = MAXN*50;

@@ -2,6 +2,7 @@
 // 题意：给定 n 点 m 边的带权有向图（可能有负权、重边、自环），判断是否存在负环，若无则求所有点对最短路（不可达记为 10^9）。
 // 输入 n, m 及有向边；有负环输出 -1，否则输出 n 行，第 i 行为 sum_{j=1}^n j * dis_{i,j}。
 // 数据范围：1 <= n <= 3*10^3，1 <= m <= 6*10^3，-3*10^5 <= w <= 3*10^5。
+// 算法标签：Johnson全源最短路、SPFA、Dijkstra
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

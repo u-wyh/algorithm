@@ -5,6 +5,7 @@
 // 0 <= m <= n <= 3*10^3（序列长与区间长）
 // 1 <= a_i <= 100（刺痛值）
 #include<stdio.h>
+// 算法标签：前缀和
 
 long long min(long long  a,long long  b)
 {

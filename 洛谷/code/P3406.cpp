@@ -8,6 +8,7 @@
 // 数据范围：1 <= N, M <= 10^5，1 <= P_i <= N（相邻 P_i 不同），B_i < A_i
 // A_i, B_i, C_i <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：差分、前缀和、贪心
 using namespace std;
 
 long long ans=0;

@@ -5,6 +5,7 @@
 // 输出满足所有条件的任意长度为 n 的大写字母串（A/B/C）；无解输出 -1。
 // 数据范围：对于 100% 的数据，n <= 5 * 10^4，0 <= d <= 8，m <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：2-SAT、Tarjan、枚举
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXM = 2e5+5;

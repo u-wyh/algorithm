@@ -5,6 +5,7 @@
 // 数据范围：1 <= n <= 10^6，0 <= x_i, p_i, c_i < 2^31，x_i < x_{i+1}。
 // 保证 ans + sum(p_i * x_i) < 2^63。
 #include<bits/stdc++.h>
+// 算法标签：区间动态规划、前缀和
 using namespace std;
 const int MAXN = 55;
 

@@ -7,6 +7,7 @@
 // 选择若干烟花燃放（可不放），求最大总美观度。
 // 数据范围：100% 数据满足 0 <= m <= n <= 5*10^5，0 <= b_i <= v_i <= 10^12，1 <= a_i <= n
 // a_i != i。
+// 算法标签：基环树、树形动态规划、拓扑排序
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

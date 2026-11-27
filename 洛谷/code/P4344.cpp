@@ -7,6 +7,7 @@
 //线段树  P4344
 #include <iostream>
 #include <vector>
+// 算法标签：线段树、二分答案
 using namespace std;
 
 typedef long long ll;

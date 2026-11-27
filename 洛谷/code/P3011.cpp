@@ -9,6 +9,7 @@
 // 数据范围：对于 100% 的数据，2 <= N <= 300，1 <= M <= 14000
 // 1 <= T_{i,j} <= 100（题面未单独标明 DB_i, DP_i 的具体上限）。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、最短路、模拟
 using namespace std;
 const int MAXN = 405;
 const int MAXM = 14005;

@@ -5,6 +5,7 @@
 // 数据范围：对于 100% 的数据，1 <= N <= 10^5，1 <= M <= 2 * 10^6，0 <= a_i <= 10^9
 // 1 <= l_i <= r_i <= N（时限 0.8s）。
 #include<bits/stdc++.h>
+// 算法标签：ST表
 using namespace std;
 const int LIMIT = 17;
 const int MAXN = 140000;

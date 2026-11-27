@@ -6,6 +6,7 @@
 #include <iostream>
 #include <cstring>
 #include <algorithm>
+// 算法标签：区间动态规划
 using namespace std;
 
 const int N = 110;

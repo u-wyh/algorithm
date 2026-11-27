@@ -6,6 +6,7 @@
 // 输入 n, m，n 个 a_i，m 条边，q 及 q 组 (x, y)。
 // 输出一行一个整数。
 // 数据范围：3 <= n <= 5*10^5，m <= 2*10^6，q <= 10^6，1 <= a_i <= 100，图连通且无重边自环。
+// 算法标签：边双连通分量、最近公共祖先、树上差分
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

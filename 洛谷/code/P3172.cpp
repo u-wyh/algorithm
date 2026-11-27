@@ -4,6 +4,7 @@
 // 输出方案数对 10^9+7 取模的结果。
 // 数据范围：1 <= N, K <= 10^9，1 <= L <= H <= 10^9，H - L <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：莫比乌斯反演、线性筛、快速幂
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

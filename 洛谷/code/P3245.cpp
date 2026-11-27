@@ -4,6 +4,7 @@
 // 输出 m 行，依次为每次询问满足条件的子串个数。
 // 数据范围：1 <= n, m <= 2*10^5，2 <= p <= 10^9 且 p 为素数。
 #include<bits/stdc++.h>
+// 算法标签：莫队、离散化、前缀和
 using namespace std;
 #define int long long
 const int MAXN = 2e5+5;

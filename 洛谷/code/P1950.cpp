@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1950
 // 题意：给定 n 行 m 列的网格，点号是空白，星号是已涂画的位置。沿格子边界选出一个非空矩形，要求内部全是空白。求不同矩形的数量。
 // 数据范围：1 ≤ n,m ≤ 1000。
+// 算法标签：单调栈
 
 #include<bits/stdc++.h>
 using namespace std;

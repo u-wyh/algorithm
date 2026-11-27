@@ -8,6 +8,7 @@
 // 1 <= m, k <= 10^5
 // 1 <= p <= m
 // 0 <= q <= n
+// 算法标签：贪心、模拟
 #include <stdio.h>
 #include <stdlib.h>
 

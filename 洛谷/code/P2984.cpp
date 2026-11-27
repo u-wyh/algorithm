@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= B <= 25000，2*B <= N <= 50000，N - 1 <= M <= 100000
 // 1 <= L_i <= 2000，1 <= R_i, S_i, P_i, Q_i <= N。
 #include<bits/stdc++.h>
+// 算法标签：最短路、Dijkstra、优先队列
 using namespace std;
 const int MAXN = 50005;
 const int MAXM = 200005;

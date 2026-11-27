@@ -6,6 +6,7 @@
 // 数据范围：1 <= C <= 6。
 // 数据范围：1 <= M, N < 2^31。
 #include<bits/stdc++.h>
+// 算法标签：博弈论、递归
 using namespace std;
 
 bool check(int a,int b){

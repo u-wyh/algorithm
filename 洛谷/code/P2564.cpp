@@ -4,6 +4,7 @@
 // 输出最短区间长度。
 // 数据范围：1 <= N <= 10^6，1 <= K <= 60，0 <= 位置 < 2^31。
 #include<bits/stdc++.h>
+// 算法标签：双指针、排序
 using namespace std;
 const int maxn=1000005;
 int n,k,t,len=0x3f3f3f3f;

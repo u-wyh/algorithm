@@ -4,6 +4,7 @@
 // 输出最少剔除字母数。
 // 数据范围：1 <= W <= 600，2 <= L <= 300，单词长度 <= 25。
 #include <bits/stdc++.h>
+// 算法标签：动态规划、双指针、字符串匹配
 using namespace std;
 #define int long long
 int f[305] ;

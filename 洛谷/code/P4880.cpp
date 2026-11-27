@@ -3,6 +3,7 @@
 // czx 初始在 e 并在 T 个给定时刻 a_i 瞬移到指定点 x（最终停在最后位置不动，同一时刻先瞬移再移动），求最短抓获时间。
 // 数据范围：n <= 10^5，m <= 5 * 10^5，T <= 10^5，保证无自环且时间在 int 范围内。
 #include<bits/stdc++.h>
+// 算法标签：最短路、排序、贪心
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 1e6+5;

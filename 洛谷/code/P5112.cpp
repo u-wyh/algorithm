@@ -4,6 +4,7 @@
 // 数据范围：1 <= l <= r <= n <= 3*10^6，1 <= k <= n <= 3*10^6，1 <= m <= 10^5
 // 1 <= n^2*m <= 10^15。
 #include<bits/stdc++.h>
+// 算法标签：莫队、字符串哈希、离散化
 using namespace std;
 const int BASE = 13131;
 const int MOD = 1e9+7;

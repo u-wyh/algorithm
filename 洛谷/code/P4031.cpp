@@ -6,6 +6,7 @@
 // 数据范围：对于所有数据，T = 10，0 <= i <= 10^{18}，0 <= l <= r <= 10^{18}，3 <= k <= 10^{18}
 // 1 <= p <= 10^9，0 <= m < p。
 #include<bits/stdc++.h>
+// 算法标签：矩阵快速幂、扩展欧几里得
 using namespace std;
 #define int long long
 

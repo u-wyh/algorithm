@@ -4,6 +4,7 @@
 // 对每个询问输出一行：若区间内股票种类数 < k 则输出 -1，否则输出第 k 小的热度值。
 // 数据范围：1 <= N, M <= 10^5，1 <= a_i <= 10^9，1 <= l <= r <= N。
 #include<bits/stdc++.h>
+// 算法标签：莫队、分块、离散化
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXB = 401;

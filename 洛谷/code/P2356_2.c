@@ -5,6 +5,7 @@
 // 数据范围：1 <= n <= 1000，空地数 < 10000，每格敌人数 <= 1000。
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：枚举、选择排序
 
 void selectionSort(int arr[], int n) {
     int i, j, minIndex, temp;

@@ -4,6 +4,7 @@
 // 若无合法方案输出 NIE；否则第一行输出 TAK，随后 n 行输出每个城镇的字母 K、S 或 N。
 // 数据范围：1 <= n <= 200000，0 <= m <= 500000。
 #include<cstdio>
+// 算法标签：贪心、图论
 using namespace std;
 const int MAXN=200010,MAXM=1000010;//注意边数要乘2
 

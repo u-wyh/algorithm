@@ -3,6 +3,7 @@
 // 求最小的非负整数 T 使得同一老师下的学生彼此印象都在前 T 好以内。
 // 数据范围：n <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：2-SAT、二分答案、Tarjan
 using namespace std;
 const int MAXN = 2e3+5;
 const int MAXM = 2e6+5;

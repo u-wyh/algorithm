@@ -6,6 +6,7 @@
 // 1 <= a_i <= 100，1 <= b_i <= k，每类最多吃不超过 10 份。
 #include<stdio.h>
 #include<stdlib.h>
+// 算法标签：贪心、排序
 
 typedef struct
 {

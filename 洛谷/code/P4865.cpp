@@ -1,8 +1,10 @@
 // https://www.luogu.com.cn/problem/P4865
-// 题意：给定 N 个点的带边权树，有 T 次询问，每次禁用第 K_i 条边并要求路径上所有边权严格小于 tim_i，求合法的有序不同点对 (x, y) 数量。
+// 题意：给定 N 个点的带边权树，有 T 次询问，每次禁用第 K_i 条边并要求路径上所有边权严格小于 tim_i
+// 求合法的有序不同点对 (x, y) 数量。
 // 数据范围：1 <= T <= 10^4，1 <= K_i <= N <= 10^4，1 <= tim_i, w_i <= 10^3
 // 且不同的 K_i 最多 10^3 个。
 #include<bits/stdc++.h>
+// 算法标签：Kruskal重构树、深度优先搜索、并查集
 using namespace std;
 const int MAXN = 1e4+5;
 const int MAXM = MAXN*2;

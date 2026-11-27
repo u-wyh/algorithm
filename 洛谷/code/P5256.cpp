@@ -3,6 +3,7 @@
 // 若将变量 a~z 做一一对应重命名后 T 与 S 的某子串完全一致则算匹配，求 T 在 S 中的可重叠出现次数。
 // 数据范围：Q <= 3，|T| <= 10^5，|S| <= 10^6，仅含 a~z 与 A~Z。
 #include<bits/stdc++.h>
+// 算法标签：字符串哈希、滑动窗口
 using namespace std;
 #define int long long
 const int BASE = 499;

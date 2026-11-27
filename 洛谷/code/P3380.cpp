@@ -8,6 +8,7 @@
 // 对操作 1、2、4、5 逐行输出结果。
 // 数据范围：1 <= n, m <= 2*10^5，任意时刻序列元素值在 [0, 10^8] 内。
 #include<bits/stdc++.h>
+// 算法标签：树套树、树状数组、动态开点线段树
 using namespace std;
 const int MAXN = 5e4+5;
 const int MAXT = MAXN*160;

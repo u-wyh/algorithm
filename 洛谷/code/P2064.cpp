@@ -5,6 +5,7 @@
 // 数据范围：
 // 9 < S <= 10^8（总里程）
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、剪枝、数论
 using namespace std;
 
 int ans=INT_MAX,n;

@@ -5,6 +5,7 @@
 // 按事件顺序每行输出离队学生的编号。
 // 数据范围：对于 100% 的数据，1 <= n, m, q <= 3 * 10^5，1 <= x <= n，1 <= y <= m。
 #include<bits/stdc++.h>
+// 算法标签：动态开点线段树、线段树二分
 using namespace std;
 #define int long long
 const int MAXN = 3e5+5;

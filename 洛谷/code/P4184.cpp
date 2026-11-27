@@ -5,6 +5,7 @@
 // 数据范围：1 <= N <= 1e5。
 #include <iostream>
 #include <algorithm>
+// 算法标签：前缀和、双指针、递推
 using namespace std;
 
 const int MOD = 1000000007;  // 定义模数

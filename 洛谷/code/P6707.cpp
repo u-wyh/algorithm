@@ -5,6 +5,7 @@
 // 4) 查询区间 [A, B] 元素和。
 // 数据范围：设当前数列长为 t，1 <= n, Q <= 10^5，初始 0 <= f_i <= 10^5，1 <= X <= 100
 // 1 <= A <= B <= t，1 <= C <= t + 1。
+// 算法标签：块状链表、分块
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

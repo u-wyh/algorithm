@@ -2,6 +2,7 @@
 // 题意：已知 x + x^{-1} = k（k 为整数且 k >= 2），求 x^n + x^{-n} 对 M 取模的值。
 // 题意：一行输入三个整数 M, k, n；输出一个整数。
 // 数据范围：3 <= M <= 998244353，2 <= k < M，0 <= n <= 10^18。
+// 算法标签：矩阵快速幂
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

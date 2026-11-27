@@ -15,6 +15,7 @@
 // 1 <= m <= 10^5
 // 坐标、点权、答案都需要long类型
 // 测试链接 : https://www.luogu.com.cn/problem/P14312
+// 算法标签：K-D Tree、二进制分组、懒标记
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

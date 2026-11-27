@@ -11,6 +11,7 @@
 // 操作数不超过2e5
 // 测试链接 : https://www.luogu.com.cn/problem/P4148
 #include<bits/stdc++.h>
+// 算法标签：K-D Tree、替罪羊树
 using namespace std;
 #define int long long
 const int MAXN = 2e5+5;

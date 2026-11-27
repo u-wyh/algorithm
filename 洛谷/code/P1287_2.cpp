@@ -4,6 +4,7 @@
 // 输出：一行输出一个整数表示方案数。
 // 数据范围：0 <= r <= n <= 10，答案小于 2^31。
 #include<bits/stdc++.h>
+// 算法标签：容斥原理、组合数学
 using namespace std;
 
 int comb(int a,int b){

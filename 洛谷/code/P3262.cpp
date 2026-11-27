@@ -4,6 +4,7 @@
 // 输出所有贵族获得的贡献度总和的最大值。
 // 数据范围：2 <= n <= 10，m <= 2^{n-1}，0 <= w_{ij}, f_{ij} <= 2000。
 #include<bits/stdc++.h>
+// 算法标签：树形动态规划、背包动态规划、深度优先搜索
 using namespace std;
 const int MAXN = 1030;
 const int MAXH = 15;

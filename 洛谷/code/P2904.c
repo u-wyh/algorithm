@@ -7,6 +7,7 @@
 #include<stdio.h>
 #include<limits.h>
 #define N 2501
+// 算法标签：动态规划、完全背包、前缀和
 
 int min(int a,int b)
 {

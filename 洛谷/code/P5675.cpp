@@ -3,6 +3,7 @@
 // 求让 Alice 必败的方案数。
 // 输入 N 及每堆石子数；输出方案数模 10^9+7。
 // 数据范围：1 <= N <= 200，每堆石子数量 <= 200。
+// 算法标签：动态规划、博弈论、位运算
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

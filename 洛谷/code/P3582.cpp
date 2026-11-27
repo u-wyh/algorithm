@@ -4,6 +4,7 @@
 // 输出能获得的最大好看值总和。
 // 数据范围：1 <= m <= n <= 10^6，1 <= f_i <= m，1 <= w_i <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：线段树、最大子段和
 using namespace std;
 #define int long long
 const int MAXN = 1e6+5;

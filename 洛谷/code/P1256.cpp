@@ -5,6 +5,7 @@
 // 输出：输出 N 行，每行 M 个空格隔开的整数表示对应位置的最短距离。
 // 数据范围：1 <= N, M <= 182。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索
 using namespace std;
 
 int n,m;

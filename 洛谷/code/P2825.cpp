@@ -4,6 +4,7 @@
 // 输出最多炸弹数。
 // 数据范围：1 <= n, m <= 50。
 #include<bits/stdc++.h>
+// 算法标签：网络流、Dinic、二分图最大匹配
 using namespace std;
 const int MAXN = 55;
 const int MAXV = 5005;

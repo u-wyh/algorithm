@@ -4,6 +4,7 @@
 // 若无法凑出总重 m 则输出 -1。
 // 题意：第一行输入 n, m，第二行输入 A_1..A_n；输出一行一个整数。
 // 数据范围：1 <= n <= 30，1 <= A_i <= 10^9，1 <= m <= 10^9。
+// 算法标签：折半搜索、深度优先搜索、哈希表
 #include <iostream>
 #include <algorithm>
 #include <unordered_map>

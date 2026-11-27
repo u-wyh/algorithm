@@ -4,6 +4,7 @@
 // 输出最长序列长度。
 // 数据范围：1 <= k <= 50，1 <= n, m <= 50。
 #include<bits/stdc++.h>
+// 算法标签：Tarjan强连通分量、拓扑排序、广度优先搜索
 using namespace std;
 const int MAXN = 55;
 const int MAXM = 2550;

@@ -4,6 +4,7 @@
 // 输出该最长子串的长度（可能为 0）。
 // 数据范围：1 <= n <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、单调栈、前缀和
 using namespace std;
 const int MAXN = 1e6+5;
 const int MAXH = 22;

@@ -2,6 +2,7 @@
 // 题意：给定 N 个两两不同的长度为 L 的字符串（字符集大小 S 为 2 或 64），统计有多少对字符串恰好只有一位字符不同。
 // 数据范围：N <= 30000，L <= 200，S 为 2 或 64。
 #include<bits/stdc++.h>
+// 算法标签：字符串哈希、排序
 using namespace std;
 const int BASE = 499;
 const int MAXN = 30005;

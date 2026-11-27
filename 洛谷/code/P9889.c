@@ -6,6 +6,7 @@
 // 题意：第一行输入 T，每组输入 n, m 及 a_1..a_n；每组输出一行一个整数。
 // 数据范围：2 <= n <= 10^5，0 <= m <= 10^12，1 <= a_i <= 10^5
 // sum(n) <= 10^6（未显式给出 T 上界，受 sum(n) 限制）。
+// 算法标签：二分答案、贪心
 #include<stdio.h>
 #include<stdbool.h>
 #include<string.h>

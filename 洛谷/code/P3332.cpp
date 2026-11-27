@@ -5,6 +5,7 @@
 // 数据范围：1 <= n, m <= 5*10^4，1 <= l, r <= n，1 操作中 |c| <= n
 // 2 操作中 1 <= c < 2^63 且保证第 c 大数存在。
 #include<bits/stdc++.h>
+// 算法标签：线段树套线段树、离散化
 using namespace std;
 const int MAXN = 5e4+1;
 const int MAXT = MAXN*230;

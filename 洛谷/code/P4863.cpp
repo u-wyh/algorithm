@@ -2,6 +2,7 @@
 // 题意：给定正整数 A 和 B，求 sum_{i=A}^B sum_{j=1}^i floor(i / j) * (-1)^j 的值。
 // 数据范围：1 <= A <= B <= 2 * 10^7。
 #include<bits/stdc++.h>
+// 算法标签：数学、前缀和
 using namespace std;
 #define int long long
 

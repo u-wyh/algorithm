@@ -4,6 +4,7 @@
 // 输出合法派出方案数对 1,000,000,007 取模的结果。
 // 数据范围：1 <= N <= 500，1 <= a_i <= b_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、离散化、组合数学
 using namespace std;
 #define int long long
 const int MOD = 1e9+7;

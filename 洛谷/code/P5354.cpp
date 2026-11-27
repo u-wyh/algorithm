@@ -3,6 +3,7 @@
 // 1 x y z 查询从 [0, z] 中选初始值 v 依次经过 x 到 y 路径各点位运算后能得到的最大结果。
 // 数据范围：0 <= n, m <= 10^5，0 <= k <= 64（所有权值及 z 小于 2^k）。
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树、数位动态规划
 using namespace std;
 #define ull unsigned long long
 const int MAXN = 1e5+5;

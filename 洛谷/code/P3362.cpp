@@ -4,6 +4,7 @@
 // 对每个询问输出 sum_{i=L_i}^{R_i} f(i) 对 10^9+7 取模的结果。
 // 数据范围：n <= 10^7，d <= 10^18，Q <= 5*10^4，1 <= L_i <= R_i <= n。
 #include<bits/stdc++.h>
+// 算法标签：线性筛、快速幂、前缀和
 using namespace std;
 #define int long long
 const int MOD = 1e9+7;

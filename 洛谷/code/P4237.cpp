@@ -4,6 +4,7 @@
 // 要求拿走全部奖赏，能拿全输出 Yes 和最大总收益（总诱惑力减总花费），否则输出 No 和最多能拿的奖赏数。
 // 数据范围：n <= 1000，m <= 15000，b <= a <= 300，其余数据保证不爆 int。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、Dijkstra
 using namespace std;
 const int MAXN = 1e3+5;
 const int MAXM = 15005;

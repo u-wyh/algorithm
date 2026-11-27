@@ -3,6 +3,7 @@
 // 可任选初始捕网大小并最多修改 K 次大小，求总浪费空间的最小值。
 // 数据范围：1 <= N <= 400，1 <= K < N，0 <= a_i <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、线段树、前缀和
 using namespace std;
 const int MAXN = 405;
 

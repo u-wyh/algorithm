@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1879
 // 题意：给定 M 行 N 列的田地，1 可以种植，0 不能种植。选若干可种格子，任意两个所选格子不能共边，空方案也算。求方案数模 10^8。
 // 数据范围：1 ≤ M,N ≤ 12。
+// 算法标签：状态压缩动态规划、记忆化搜索
 
 #include<bits/stdc++.h>
 using namespace std;

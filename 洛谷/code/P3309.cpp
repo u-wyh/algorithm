@@ -5,6 +5,7 @@
 // 对每个 Q 操作输出一行最大点积整数。
 // 数据范围：1 <= N <= 4*10^5，|x|, |y| <= 10^8，1 <= l <= r <= t（t 为当前已加入向量数）。
 #include<bits/stdc++.h>
+// 算法标签：线段树、凸包、二分查找
 using namespace std;
 #define int long long
 const int MAXN = 4e5+5;

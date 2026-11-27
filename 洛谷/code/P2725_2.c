@@ -5,6 +5,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+// 算法标签：完全背包、动态规划
 
 #define MAX_VALUE 2000000
 #define LL unsigned long long

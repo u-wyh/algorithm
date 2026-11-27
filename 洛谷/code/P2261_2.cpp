@@ -3,6 +3,7 @@
 // 输出计算结果。
 // 数据范围：1 <= n, k <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：整除分块
 using namespace std;
 #define int long long
 

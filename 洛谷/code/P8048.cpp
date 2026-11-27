@@ -7,6 +7,7 @@
 // 输出 k 行，第 i 行输出颜色 i-1 的总行程，保留 1 位小数。
 // 数据范围：1 <= n <= 10^5，1 <= k <= 40，1 <= L <= 10^6，0 <= d_i <= L，0 <= b_i < k
 // d_{i-1} < d_i。
+// 算法标签：回滚莫队、链表
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

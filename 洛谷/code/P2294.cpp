@@ -4,6 +4,7 @@
 // 每组输出 true（不矛盾）或 false（矛盾）。
 // 数据范围：w < 100，n < 100，m < 1000。
 #include<bits/stdc++.h>
+// 算法标签：差分约束、SPFA
 using namespace std;
 const int MAXN = 105;
 const int MAXM = 10005;

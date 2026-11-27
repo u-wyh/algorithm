@@ -4,6 +4,7 @@
 // 对每次询问输出 Yes. 或 No.。
 // 数据范围：2 <= N <= 2*10^4，1 <= M, K <= 10^6，名字长度 <= 20。
 #include<bits/stdc++.h>
+// 算法标签：并查集
 using namespace std;
 const int MAXN = 2e4+5;
 

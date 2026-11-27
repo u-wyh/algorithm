@@ -6,6 +6,7 @@
 // 输出按顺序飞完 a_1 -> a_2 -> ... -> a_d 的最小总机票花费（保证有解）。
 // 数据范围：2 <= n, d <= 3*10^5，3 <= m <= 3*10^5，1 <= p_i <= 10^9，s_i != d_i。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、哈希表
 using namespace std;
 #define int long long 
 const int MAXN = 3e5+5;

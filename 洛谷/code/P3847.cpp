@@ -4,6 +4,7 @@
 // 求使队伍颜色序列变为左右对称（回文）的最少调整次数。
 // 数据范围：1 <= n <= 3000，初始颜色为 1 到 3000 的整数。
 #include<bits/stdc++.h>
+// 算法标签：区间动态规划
 using namespace std;
 const int MAXN = 3005;
 

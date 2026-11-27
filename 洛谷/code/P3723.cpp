@@ -4,6 +4,7 @@
 // 求对齐后差异值 sum_{i=1..n} (x_i - y_i)^2 的最小值，输出一个整数。
 // 数据范围：1 <= n <= 50000，1 <= x_i, y_i <= m <= 100（改造后亮度可超过 m）。
 #include<bits/stdc++.h>
+// 算法标签：FFT、数学
 using namespace std;
 #define int long long
 const int MAXN = 5e4+5;

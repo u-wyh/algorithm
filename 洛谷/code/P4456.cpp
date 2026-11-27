@@ -3,6 +3,7 @@
 // 求所有串的 x^a * y^b 之和对质数 m 取模的结果（约定 0^0=1）。
 // 数据范围：1 <= n <= 10^7，0 <= a, b <= 45，10^7 <= m < 10^8。
 #include<bits/stdc++.h>
+// 算法标签：组合数学、线性逆元、快速幂
 using namespace std;
 const int MAXN = 5e6+1;
 const int MAXM = 1e7+2;

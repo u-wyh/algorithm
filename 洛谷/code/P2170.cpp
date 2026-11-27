@@ -4,6 +4,7 @@
 // 输出选出的人数。
 // 数据范围：1 <= n <= 2*10^4，0 <= m <= n，0 <= k <= 2*10^4。
 #include<bits/stdc++.h>
+// 算法标签：并查集、0-1背包
 using namespace std;
 const int MAXN = 2e4+5;
 

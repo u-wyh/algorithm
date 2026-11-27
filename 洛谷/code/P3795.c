@@ -4,6 +4,7 @@
 // 输出答案对 14233333 取余的结果。
 // 数据范围：1 <= k <= 10^7；注意本题内存限制为 20MB。
 #include <stdio.h>
+// 算法标签：递推、组合数学
 
 typedef long long ll;
 const int mod = 14233333;

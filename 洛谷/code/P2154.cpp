@@ -4,6 +4,7 @@
 // 求所有空墓地虔诚度总和，输出对 2^31 取模的结果。
 // 数据范围：1 <= N, M <= 10^9，1 <= W <= 10^5，1 <= k <= 10。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、扫描线、组合数学
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

@@ -5,6 +5,7 @@
 // 数据范围：1 <= n <= 1000。
 #include <iostream>
 #include <algorithm>
+// 算法标签：树上贪心、排序
 using namespace std;
 
 const int N = 2020;

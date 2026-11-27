@@ -10,6 +10,7 @@
 // 1 <= n、m <= 3 * 10^5
 // 0 <= x、y <= 10^6
 // 测试链接 : https://www.luogu.com.cn/problem/P4169
+// 算法标签：动态KD树、剪枝
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

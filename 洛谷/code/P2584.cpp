@@ -4,6 +4,7 @@
 // 对每个查询输出一行结果。
 // 数据范围：n >= 10，Name <= 10 位大写字母，Score <= 10 位正整数，输入文件 <= 2MB。
 #include<bits/stdc++.h>
+// 算法标签：FHQ-Treap、map
 using namespace std;
 const int MAXN = 250005;
 const int BASE = 1e6;

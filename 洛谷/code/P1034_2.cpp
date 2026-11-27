@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1034
 // 题意：给平面上 n 个点，使用 k 个边平行于坐标轴的矩形覆盖全部点。矩形不能相交或接触，退化到点或线段时面积按 0 算。求矩形面积和最小值。
 // 数据范围：1 ≤ n ≤ 50，1 ≤ k ≤ 4，0 ≤ x[i],y[i] ≤ 500。
+// 算法标签：深度优先搜索、剪枝
 
 #include<bits/stdc++.h>
 using namespace std;

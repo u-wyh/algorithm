@@ -5,6 +5,7 @@
 // 否则其可移走 P 头牛（P=1 或不超过当前牛数的质数），两人各行动一次后一起移动到下一房间。
 // 双方最优策略下输出获胜者（Farmer John 或 Farmer Nhoj）。
 // 数据范围：1 <= T <= 1000，1 <= N <= 10^5，sum N <= 2*10^5，1 <= a_i <= 5*10^6。
+// 算法标签：线性筛、博弈论
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

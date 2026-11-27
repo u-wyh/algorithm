@@ -4,6 +4,7 @@
 // 求从 1 到 n 的最短传输时间。
 // 数据范围：1 <= n <= 2*10^5，1 <= m <= 10^6，保证答案在 int 范围内。
 #include<bits/stdc++.h>
+// 算法标签：Tarjan、强连通分量缩点、Dijkstra
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXM = 1e6+5;

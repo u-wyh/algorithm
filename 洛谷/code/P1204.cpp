@@ -6,6 +6,7 @@
 // 数据范围：1 <= n <= 5000。
 // 数据范围：0 <= l <= r <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：排序、区间合并
 using namespace std;
 
 struct range{

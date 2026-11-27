@@ -3,6 +3,7 @@
 // 求序列 a 每个前缀 [1, i] 的 k 阶子段和。
 // 输入 n, k 及正整数序列 a；输出 n 个数分别表示前缀 1..n 的 k 阶子段和模 998244353。
 // 数据范围：1 <= n <= 10^5，1 <= k <= 998244353，1 <= a_i <= 998244353。
+// 算法标签：NTT、组合数学、快速幂
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -4,6 +4,7 @@
 // 输出最大长度和。
 // 数据范围：1 <= n <= 500，1 <= k <= 3，1 <= l < r <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、离散化
 using namespace std;
 const int MAXN = 505;
 const int MAXV = 505*2;

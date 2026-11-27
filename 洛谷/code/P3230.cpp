@@ -7,6 +7,7 @@
 #include <map>
 #include <algorithm>
 #include <iostream>
+// 算法标签：记忆化搜索、深度优先搜索
 
 const int MAXN = 15;
 const int MOD = 1000000007;

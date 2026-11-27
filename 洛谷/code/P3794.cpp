@@ -1,9 +1,11 @@
 // https://www.luogu.com.cn/problem/P3794
 // 题意：第一行输入序列长度 n 和目标值 k，第二行输入 n 个正整数 a_1..a_n。
-// 统计满足 1 <= i <= j <= n 且 gcd(a_i, a_{i+1}, ..., a_j) xor (a_i or a_{i+1} or ... or a_j) = k 的区间对 (i, j) 数量。
+// 统计满足 1 <= i <= j <= n 且 gcd(a_i, a_{i+1}, ..., a_j) xor
+// (a_i or a_{i+1} or ... or a_j) = k 的区间对 (i, j) 数量。
 // 输出合法 (i, j) 的对数。
 // 数据范围：对于 100% 的数据，1 <= n, a_i <= 500000（k 为非负整数）。
 #include <bits/stdc++.h>
+// 算法标签：最大公约数、位运算
 using namespace std;
 
 typedef long long ll;

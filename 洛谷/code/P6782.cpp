@@ -2,6 +2,7 @@
 // 题意：给定一棵 n 个节点、根为 rt 的有根树和 m 次询问，每次给定 l, r, x
 // 求满足 l <= i < j <= r 且 lca(i, j) = x 的二元组 (i, j) 个数。
 // 数据范围：1 <= n, m <= 2*10^5，1 <= l, r, x <= n。
+// 算法标签：可持久化线段树、莫队、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

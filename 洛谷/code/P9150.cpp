@@ -4,6 +4,7 @@
 // 对每个起点 i（初始拿着 i 号点钥匙并在点 i），分别输出能到达的点数，以及能到达且能返回起点 i 的点数。
 // 数据范围：1 <= T <= 2*10^4，n >= 3，m >= 0，sum n <= 1.5*10^6，sum m <= 3*10^6
 // 1 <= x, y <= n。
+// 算法标签：并查集、图论
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1500005;

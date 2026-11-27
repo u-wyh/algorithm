@@ -3,6 +3,7 @@
 // 数据范围：2 <= n <= 10^6，A_i 在 int 范围内。
 #include<stdio.h>
 #include<limits.h>
+// 算法标签：模拟
 
 int max(int a,int b)
 {

@@ -9,6 +9,7 @@
 #include"iostream"
 #include"cmath"
 #include"cstring"
+// 算法标签：深度优先搜索、剪枝
 using namespace std;
 
 int map[1005][1005];

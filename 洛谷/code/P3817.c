@@ -4,6 +4,7 @@
 // 输出最少需要吃掉的糖果总数。
 // 数据范围：对于 100% 的数据，2 <= n <= 10^5，0 <= a_i, x <= 10^9。
 #include<stdio.h>
+// 算法标签：贪心
 
 int max(int a,int b){
     return a>b?a:b;

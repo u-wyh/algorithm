@@ -4,6 +4,7 @@
 // 输出不友好的交叉品种对总数。
 // 数据范围：1 <= N <= 100000，0 <= K < N。
 #include<bits/stdc++.h>
+// 算法标签：CDQ分治、树状数组
 using namespace std;
 const int MAXN = 1e5+5;
 

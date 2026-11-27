@@ -4,6 +4,7 @@
 // 输出 f(n) 对 998244353 取模的结果。
 // 数据范围：1 <= n <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：NTT、多项式、快速幂
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

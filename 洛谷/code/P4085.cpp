@@ -4,6 +4,7 @@
 // 输出满足要求的最小辣度（保证有解）。
 // 数据范围：1 <= N <= 10^5，1 <= F_i, S_i <= 10^9，1 <= M <= 10^18。
 #include<bits/stdc++.h>
+// 算法标签：二分答案
 using namespace std;
 int n;
 long long m;

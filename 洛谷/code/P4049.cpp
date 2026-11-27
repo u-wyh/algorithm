@@ -4,9 +4,11 @@
 // 将所购原材料按非负比例熔合，要求能同时配出全部 n 种需求合金，求最少需订购的原材料种类数。
 // 输出最少原材料种数；若无解输出 -1。
 // 数据范围：对于全部测试点，1 <= m, n <= 500
-// 0 <= a_i, b_i, c_i, d_i, e_i, f_i <= 1 且 a_i + b_i + c_i = 1, d_i + e_i + f_i = 1
+// 0 <= a_i, b_i, c_i, d_i, e_i, f_i <= 1 且 a_i + b_i + c_i = 1
+// d_i + e_i + f_i = 1
 // 小数点后最多 6 位。
 #include<bits/stdc++.h>
+// 算法标签：计算几何、Floyd
 using namespace std;
 #define int long long
 const int MAXN = 505;

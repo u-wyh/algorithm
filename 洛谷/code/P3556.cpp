@@ -5,6 +5,7 @@
 // 数据范围：2 <= n <= 5000，1 <= m <= 5000，1 <= k <= 10^6，1 <= a, b <= n 且 a != b
 // 1 <= s, t <= n，1 <= d <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：SPFA、分层图最短路、离线查询
 using namespace std;
 const int MAXN = 5005;
 const int MAXK = 1e6+5;

@@ -9,6 +9,7 @@
 // 数据范围：对于所有数据，T <= 4，n <= 100000，Q <= 500000，1 <= s_i <= 10^8，1 <= t <= 10^9
 // op in {0, 1, 2, 3}，1 <= id <= n，1 <= l <= r <= n。
 #include<bits/stdc++.h>
+// 算法标签：线段树、优先队列、模拟
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

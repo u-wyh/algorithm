@@ -5,6 +5,7 @@
 // 求能获得的最大总得分，输出一个整数。
 // 数据范围：1 <= n <= 300，1 < k <= 8，c_i ∈ {0, 1}，1 <= w_i <= 10^9。
 #include <bits/stdc++.h>
+// 算法标签：区间动态规划、状态压缩动态规划
 using namespace std;
 
 using ll = long long;

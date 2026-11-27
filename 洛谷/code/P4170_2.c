@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <limits.h> // 用于初始化dp数组为最大值
+// 算法标签：区间动态规划
 
 int main() {
     int n, i, j, k, l, t;

@@ -7,6 +7,7 @@
 // 数据范围：1 <= n <= 10^3，1 <= m <= 10^4，0 <= k <= 10^5。
 // 数据范围：0 <= D_i <= 100，0 <= T_i <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：贪心、排序、模拟
 using namespace std;
 const int MAXN = 1e3+5;
 const int MAXM = 1e4+5;

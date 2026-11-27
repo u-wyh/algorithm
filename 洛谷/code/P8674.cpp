@@ -3,6 +3,7 @@
 // 状态为 0..n-1，每次操作可从当前数变为 (x+1) mod n 或 (x+k) mod n
 // 按最优策略计算从任意分钟数调到任意目标分钟数的最少按键次数的最大值并输出。
 // 数据范围：0 < k < n <= 10^5。
+// 算法标签：广度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

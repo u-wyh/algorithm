@@ -4,6 +4,7 @@
 // 求满足双旋转性的有序对 <i, j> 数量并输出。
 // 数据范围：2 <= N * Total_S + M * Total_T <= 4*10^6。
 #include <bits/stdc++.h>
+// 算法标签：字符串哈希、哈希表
 using namespace std;
 #define int long long
 const int maxtot = 20005;

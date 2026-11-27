@@ -4,6 +4,7 @@
 // 随时可结束游戏，求获得总分至少为 k 所需花费的最少金币数 g，不可能则输出 -1。
 // 数据范围：1 <= n <= 5 * 10^5，1 <= d <= 2 * 10^3，1 <= x_i, k <= 10^9，|s_i| < 10^5。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、单调队列、动态规划
 using namespace std;
 #define int long long
 const int MAXN = 5e5+5;

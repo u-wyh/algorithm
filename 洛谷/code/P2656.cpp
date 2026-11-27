@@ -4,6 +4,7 @@
 // 输出最多蘑菇数（不超过 2^31-1）。
 // 数据范围：1 <= N <= 8*10^4，1 <= M <= 2*10^5，0 <= 恢复系数 <= 0.8（最多一位小数）。
 #include<bits/stdc++.h>
+// 算法标签：Tarjan、缩点、SPFA
 using namespace std;
 const int MAXN = 8e4+5;
 const int MAXM = 2e5+5;

@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1638
 // 题意：给 n 幅按顺序展出的画，每幅有画家编号。买票只能看一段连续画作，要包含所有 m 位画家的作品。输出最短的一段的左右端点，多解取左端点最小。
 // 数据范围：1 ≤ n ≤ 10^6，1 ≤ a[i] ≤ m ≤ 2000，保证有解。
+// 算法标签：双指针
 
 #include<bits/stdc++.h>
 using namespace std;

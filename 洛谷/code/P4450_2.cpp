@@ -2,6 +2,7 @@
 // 题意：给定 A, B, d，求满足 1 <= a <= A、1 <= b <= B 且 gcd(a, b) = d 的有序正整数对 (a, b) 的个数。
 // 数据范围：1 <= A, B <= 10^6，1 <= d <= min(A, B)。
 #include<bits/stdc++.h>
+// 算法标签：莫比乌斯反演、线性筛
 using namespace std;
 const int MAXN = 1e6+5;
 

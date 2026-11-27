@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1390
 // 题意：给 n，枚举 1 到 n 之间的每对不同整数 i<j，把它们的最大公约数加起来，输出总和。
 // 数据范围：2 ≤ n ≤ 2 × 10^6。
+// 算法标签：欧拉函数、素数筛、数论
 
 #include<bits/stdc++.h>
 using namespace std;

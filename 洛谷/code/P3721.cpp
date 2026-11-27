@@ -8,6 +8,7 @@
 // 输出 m 行，每行对应第 i 个操作的代价。
 // 数据范围：1 <= m <= 10^5，1 <= key <= 10^9，所有关键码互不相同，非插入操作保证树非空。
 #include<bits/stdc++.h>
+// 算法标签：动态树(LCT)、二叉查找树
 using namespace std;
 const int MAXN = 1e5+5;
 

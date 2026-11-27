@@ -3,6 +3,7 @@
 // 任意时刻可选一个当前入度不为 0 的点删去（连同其出边）并获得其点权，最多选 k 个点，求最大总点权。
 // 数据范围：1 <= n <= 5*10^5+4，1 <= m <= 2*10^6+4，0 <= w_i <= 10^3，0 <= k <= n。
 #include<bits/stdc++.h>
+// 算法标签：强连通分量、Tarjan、贪心
 using namespace std;
 const int MAXN = 5e5+10;
 const int MAXM = 2e6+10;

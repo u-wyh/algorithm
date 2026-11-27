@@ -5,6 +5,7 @@
 // 输出一行两个整数，依次为最小生成树总长度和不同最小生成树数量（对 10^9 + 7 取模）。
 // 数据范围：对于 100% 的数据，1 <= N <= 4*10^4，1 <= M <= 10^5，1 <= n_i <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：Kruskal、可撤销并查集、状压枚举
 using namespace std;
 const int MAXN = 4e4+5;
 const int MAXM = 1e5+5;

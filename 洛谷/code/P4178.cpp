@@ -2,6 +2,7 @@
 // 题意：给一棵 n 个点的无向带权树和一个整数 k，求树上两点距离小于等于 k 的点对数量。
 // 数据范围：1 <= n <= 4e4，1 <= u, v <= n，0 <= w <= 1000，0 <= k <= 2e4。
 #include<bits/stdc++.h>
+// 算法标签：点分治、双指针
 using namespace std;
 const int MAXN = 4e4+5;
 

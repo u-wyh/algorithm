@@ -5,6 +5,7 @@
 // 数据范围：1 <= N <= 2000，1 <= v_i <= 1000。
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：动态规划、区间动态规划
 
 #define MAX_N 2010
 

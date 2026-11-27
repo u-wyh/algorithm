@@ -4,6 +4,7 @@
 // 输出最大删去边权和。
 // 数据范围：1 <= n <= 100，1 <= f(i,j) <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：最小生成树、Kruskal、并查集
 using namespace std;
 const int MAXN = 105;
 

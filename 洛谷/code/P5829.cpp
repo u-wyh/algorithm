@@ -2,6 +2,7 @@
 // 题意：给定字符串 s 和 m 次询问 (p, q)，求 s 的长度为 p 的前缀与长度为 q 的前缀的最长公共真 border 长度。
 // 输入字符串 s、m 及 m 组 (p, q)；每次输出最长公共 border 长度（不存在输出 0）。
 // 数据范围：1 <= p, q <= |s| <= 10^6，1 <= m <= 10^5，仅含小写字母。
+// 算法标签：KMP、失配树、LCA
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e6+5;

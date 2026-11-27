@@ -3,6 +3,7 @@
 // 求从起点到终点的最少步数，无解输出 No Way!。
 // 数据范围：3 <= n, m <= 2000。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索
 using namespace std;
 #define MAX 2005
 

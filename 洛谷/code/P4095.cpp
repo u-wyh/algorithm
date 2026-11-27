@@ -7,6 +7,7 @@
 // 数据范围：1 <= n <= 1000，1 <= q <= 3*10^5，1 <= a_i, b_i, c_i <= 100，0 <= d_i < n
 // 0 <= e_i <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：线段树分治、多重背包、二进制拆分
 using namespace std;
 const int MAXN = 1005;
 const int MAXM = 3e6+5;

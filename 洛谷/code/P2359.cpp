@@ -7,6 +7,7 @@
 #include<algorithm>
 #include<cstring>
 #define mod 1000000009
+// 算法标签：动态规划、线性筛
 using namespace std;
 int prime[1200],PRIME[1200],cnt,n,dp[10010][10][10],ans;
 void getprime(){

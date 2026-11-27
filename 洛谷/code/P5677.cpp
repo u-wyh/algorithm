@@ -3,6 +3,7 @@
 // m 次询问区间 [l, r] 内好的配对数 Ans_i。
 // 输入 n, m、序列 a 及 m 个区间；输出 sum_{i=1}^m (Ans_i * i)。
 // 数据范围：1 <= n, m <= 3*10^5，1 <= a_i <= 10^9（互异），1 <= l <= r <= n。
+// 算法标签：树状数组、离线处理、排序
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= N <= 50000，1 <= S_i < E_i <= 10^8。
 #include<stdio.h>
 #include<stdlib.h>
+// 算法标签：贪心、排序
 
 typedef struct
 {

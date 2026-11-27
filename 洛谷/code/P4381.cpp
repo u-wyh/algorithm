@@ -3,6 +3,7 @@
 // 求能走过的桥长度之和的最大值。
 // 数据范围：2 <= N <= 10^6，1 <= L_i <= 10^8。
 #include<bits/stdc++.h>
+// 算法标签：基环树、树形动态规划、单调队列
 using namespace std;
 #define int long long
 const int MAXN = 1e6+5;

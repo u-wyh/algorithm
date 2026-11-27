@@ -1,10 +1,12 @@
 // https://www.luogu.com.cn/problem/P3313
 // 题意：输入城市数 N、事件数 Q，各城市初始评级 W_i 和宗教 C_i，以及 N-1 条无向树边。
-// 支持四种事件：CC x c（x 改信 c 教）、CW x w（x 评级改为 w）、QS x y（查 x 到 y 路径上与起点同信仰城市的评级和）、QM x y（查评级最大值）
+// 支持四种事件：CC x c（x 改信 c 教）、CW x w（x 评级改为 w）、QS x y（查 x 到 y 路径上与起点同信仰城市的评级和）、QM x
+// y（查评级最大值）
 // 询问均包含起点终点且保证起点终点同信仰。
 // 对每个 QS 和 QM 输出一行结果。
 // 数据范围：N, Q <= 10^5，C <= 10^5，任意时刻评级为不超过 10^4 的正整数，宗教值不超过 C。
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、动态开点线段树
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXC = 1e5+5;

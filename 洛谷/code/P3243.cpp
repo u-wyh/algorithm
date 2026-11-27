@@ -5,6 +5,7 @@
 // 数据范围：1 <= t <= 3，n, m <= 10^5（限制可能有重复）。
 //这个不对 求的是字典序最小的情况
 #include<bits/stdc++.h>
+// 算法标签：拓扑排序、优先队列、深度优先搜索
 using namespace std;
 const int MAXN = 1e5+5;
 

@@ -5,6 +5,7 @@
 // 数据范围：2 <= n <= 10^4。
 // 数据范围：0 <= x, y <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：分治、计算几何、排序
 using namespace std;
 const int MAXN = 1e4+5;
 

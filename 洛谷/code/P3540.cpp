@@ -4,6 +4,7 @@
 // 第一行输出解的个数 k，接下来 k 行每行按升序输出一组 n 个正整数。
 // 数据范围：3 <= n <= 300，两两之和不超过 10^8。
 #include <bits/stdc++.h>
+// 算法标签：动态规划、树状数组
 using namespace std;
 
 const int MAXN = 500000 + 5;

@@ -4,6 +4,7 @@
 // 数据范围：1 <= N <= 2*10^5，1 <= M <= 2*10^4，任意时刻长度 <= 2*10^5，数字 in [-1000, 1000]
 // 结果 <= 2^30。
 #include<bits/stdc++.h>
+// 算法标签：FHQ-Treap、平衡树
 using namespace std;
 const int MAXN = 2e5+5;
 const int INF = 1e9;

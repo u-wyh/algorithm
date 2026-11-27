@@ -6,6 +6,7 @@
 // 数据范围：n <= 10^5，q <= 10000，1 <= a_i <= 10^9，查询中 x <= 10^18
 // 修改中 0 <= id < n、1 <= x <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：分块、线段树、二分查找
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

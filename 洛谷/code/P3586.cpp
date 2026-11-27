@@ -4,6 +4,7 @@
 // 对每个 Z 询问输出一行 TAK 或 NIE。
 // 数据范围：1 <= n, m <= 10^6，1 <= k, c <= n，0 <= a <= 10^9，1 <= s <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、离散化、离线处理
 using namespace std;
 #define int long long
 const int MAXN = 1e6+5;

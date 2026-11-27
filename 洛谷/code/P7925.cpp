@@ -8,6 +8,7 @@
 // 第一行输入 n, s，第二行 n-1 个整数 p_2..p_n（第 i 个数为结点 i+1 的父亲），第三行 n 个整数 a_1..a_n。
 // 输出一行一个整数。
 // 数据范围：1 <= n <= 6000，1 <= p_i < i（指结点父编号小于子编号），|a_i| <= 10^9，0 <= s <= 10^9。
+// 算法标签：贪心、深度优先搜索、优先队列
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

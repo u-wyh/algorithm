@@ -6,6 +6,7 @@
 // 数据范围：5 <= n <= 1000，5 <= m <= 5000。
 // 数据范围：b 为开区间 (-100, 100) 内的整数。
 #include<bits/stdc++.h>
+// 算法标签：差分约束、SPFA、最短路
 using namespace std;
 const int MAXN = 1005;
 const int MAXM = 10005;

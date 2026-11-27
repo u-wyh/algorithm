@@ -7,6 +7,7 @@
 // 数据范围：1 <= n, q <= 10^5，-10^9 <= x, y, A, B <= 10^9，-10^18 <= C <= 10^18，点互不相同
 // A 与 B 不同时为 0。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、凸包、二分查找
 using namespace std;
 #define int long long
 const int MAXN = 2e5+5;

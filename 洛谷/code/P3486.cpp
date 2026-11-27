@@ -4,6 +4,7 @@
 // 输出一行严格递增的 K 个整数，表示每次检票前刚经过的车站编号。
 // 数据范围：1 <= K < N <= 600，K <= 50，总乘客数不超过 2*10^9。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、二维前缀和
 using namespace std;
 const int MAXN = 605;
 

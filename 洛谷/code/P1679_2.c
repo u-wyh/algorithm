@@ -5,6 +5,7 @@
 // m <= 100,000（待分解的整数）
 #include <stdio.h>
 #include <limits.h>
+// 算法标签：动态规划、完全背包
 
 #define MAXN 100005
 

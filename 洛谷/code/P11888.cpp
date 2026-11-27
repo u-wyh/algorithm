@@ -8,6 +8,7 @@
 // 1 <= t <= 300
 // 1 <= n <= 2 * 10^{17}
 // 1 <= m <= 2 * 10^7
+// 算法标签：动态规划
 #include<bits/stdc++.h>
 #define int long long
 using namespace std;

@@ -5,6 +5,7 @@
 // 输出一个整数表示最短总时间。
 // 数据范围：1 <= N <= 10^4，1 <= M <= 5*10^4，1 <= T_i <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：拓扑排序、动态规划
 using namespace std;
 const int MAXN = 10005;
 const int MAXM = 50005;

@@ -3,6 +3,7 @@
 // 共 q 次询问（t=1 时需异或/模运算解密），每次求只保留第 l 到 r 条边时图中的连通块数量。
 // 数据范围：1 <= |V| <= 10^5，1 <= |E| <= 2*10^5，1 <= q <= 10^5，t in {0, 1}。
 #include<bits/stdc++.h>
+// 算法标签：动态树(LCT)、可持久化线段树
 using namespace std;
 const int MAXN = 3e5+5;
 const int MAXE = 2e5+5;

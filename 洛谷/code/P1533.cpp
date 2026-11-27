@@ -8,6 +8,7 @@
 // 1 <= m <= 5*10^4（询问次数）
 // 0 <= a_i < 2^31（漂亮值，且互不相同）
 #include <bits/stdc++.h>
+// 算法标签：平衡树、Treap、双指针
 using namespace std;
 const int MAXN = 300001;
 

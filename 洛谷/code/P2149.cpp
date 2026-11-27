@@ -14,6 +14,7 @@
 #define inf 0x3f3f3f3f
 #define mp make_pair
 #define maxn 1505
+// 算法标签：Dijkstra、拓扑排序、动态规划
 using namespace std;
 typedef long long ll;
 typedef pair<int,int> P;

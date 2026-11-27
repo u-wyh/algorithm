@@ -10,6 +10,7 @@
 //重复操作  对下包也作类似操作。
 //上包部分找上包  下包部分找下包
 #include <bits/stdc++.h>
+// 算法标签：凸包、分治、计算几何
 using namespace std;
 const int MAXN = 1e5 + 5;
 

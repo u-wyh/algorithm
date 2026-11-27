@@ -3,6 +3,7 @@
 // 一行输出圆心坐标 x, y 和半径（保留 2 位小数）。
 // 数据范围：1 <= N <= 10^6，坐标在双精度范围内。
 #include<bits/stdc++.h>
+// 算法标签：随机增量法、计算几何、最小圆覆盖
 using namespace std;
 const int MAXN = 1e6+5;
 const double PI = acos(-1);

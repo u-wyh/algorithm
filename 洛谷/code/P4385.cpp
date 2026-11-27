@@ -9,6 +9,7 @@
 // 数据范围：|x_i|, |y_i| <= 10^9
 // 数据范围：保证不存在三点共线
 #include<bits/stdc++.h>
+// 算法标签：计算几何、极角排序、扫描线
 using namespace std;
 #define int long long
 const int MAXN = 1e3+5;

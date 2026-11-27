@@ -6,6 +6,7 @@
 // 9 < S <= 10^8（总里程）
 #include <stdio.h>
 #include <math.h>
+// 算法标签：深度优先搜索、数论
 
 #define INF 0x7fffffff
 

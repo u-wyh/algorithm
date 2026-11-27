@@ -3,6 +3,7 @@
 // 数据范围：1 <= w <= 2 * 10^6，1 <= x, y <= w，0 < a <= 10000，加操作不超过 160000 次
 // 查询操作不超过 10000 次。
 #include<bits/stdc++.h>
+// 算法标签：CDQ分治、树状数组、二维前缀和
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXM = 2e6+5;

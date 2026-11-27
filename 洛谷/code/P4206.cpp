@@ -4,6 +4,7 @@
 // 同处一点即被吃，求吃到可可的期望时间步数（保留 3 位小数）。
 // 数据范围：1 <= N, E <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：期望动态规划、记忆化搜索、广度优先搜索
 using namespace std;
 const int MAXN = 1005;
 const int INF = 1e9;

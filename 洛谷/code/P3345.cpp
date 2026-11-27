@@ -4,6 +4,7 @@
 // 每次操作后选择一个空地放补给站使 sum_v d_v * dist(u, v) 最小，输出该最小花费。
 // 数据范围：1 <= n, Q <= 10^5，1 <= c <= 10^3，0 <= |e| <= 10^3，且树上每个点的度数不超过 20。
 #include<bits/stdc++.h>
+// 算法标签：点分树、树链剖分
 using namespace std;
 const int MAXN = 1e5+5;
 

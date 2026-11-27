@@ -12,6 +12,7 @@
 #define N 503
 #define inf 0x3f3f3f3f
 #define ll long long
+// 算法标签：0-1 BFS
 using namespace std;
 
 struct node{

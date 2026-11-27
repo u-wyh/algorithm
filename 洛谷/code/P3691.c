@@ -8,6 +8,7 @@
 // 0.000 <= x, y <= 100.000，保留 3 位小数。
 #include<stdio.h>
 #include<stdlib.h>
+// 算法标签：二分查找、排序
 
 #define MAX 5000000+5
 

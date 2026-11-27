@@ -4,6 +4,7 @@
 // 输入 n, mod 及 n-1 条带权无向边；输出 n 行分别表示第 i 颗宝石的最大魔力值。
 // 数据范围：n <= 100000，mod in {2, 32, 65536}，0 <= w < mod。
 #include<bits/stdc++.h>
+// 算法标签：点分治、双指针
 using namespace std;
 const int MAXN = 1e5+5;
 const int MOD = 65536+5;

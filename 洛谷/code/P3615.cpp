@@ -5,6 +5,7 @@
 // 允许重排原队列使所有人能在 N 分钟内如厕完，每个人的不满度等于其在原队列后退的步数，输出最大不满度的最小值；若无论如何无法完成则输出 -1。
 // 数据范围：1 <= N, K_i <= 10^18，1 <= M <= 100000，sum |S_i| <= 200000。
 #include<bits/stdc++.h>
+// 算法标签：贪心、后缀和
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

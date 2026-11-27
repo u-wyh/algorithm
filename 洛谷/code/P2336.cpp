@@ -4,6 +4,7 @@
 // 先输出每次点名答到的猫数，最后一行输出每只猫被点到的总次数。
 // 数据范围：1 <= n <= 5*10^4，1 <= m <= 10^5，姓名总长和点名串总长均 <= 10^5，字符值 <= 10^4。
 #include<bits/stdc++.h>
+// 算法标签：后缀数组、莫队、二分查找
 using namespace std;
 const int MAXN = 4e5+5;
 const int MAXM = 1e5+5;

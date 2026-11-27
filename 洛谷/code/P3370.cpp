@@ -4,6 +4,7 @@
 // 输出不同的字符串个数。
 // 数据范围：N <= 10000，单串长度 M_i 约 1000、最大 M_max <= 1500。
 #include<bits/stdc++.h>
+// 算法标签：字符串哈希、排序
 using namespace std;
 
 const int MAXN = 10001;

@@ -8,6 +8,7 @@
 // 1 <= Q <= 3*10^5（操作数）
 // -1000 <= v, a_1..a_N <= 1000（初始权值与增量，保证输入合法）
 #include<bits/stdc++.h>
+// 算法标签：左偏树、并查集、启发式合并
 using namespace std;
 const int MAXN = 3e5+5;
 

@@ -6,6 +6,7 @@
 // 数据范围：2 <= R, C <= 750，1 <= K <= R*C。
 #include <bits/stdc++.h>
 #define MOD 1000000007
+// 算法标签：动态规划、前缀和优化
 static char buf[1000000],*paa=buf,*pd=buf;
 #define getchar() paa==pd&&(pd=(paa=buf)+fread(buf,1,1000000,stdin),paa==pd)?EOF:*paa++
 inline int read(void) {

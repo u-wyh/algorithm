@@ -5,6 +5,7 @@
 // 求最大的 |S|。
 // 题意：第一行输入 n，第二行输入长度为 n 的括号串 c，后 n-1 行输入树边 (u, v)；输出一行一个整数。
 // 数据范围：1 <= n <= 5 * 10^5，1 <= u, v <= n，c_i ∈ {'(', ')'}。
+// 算法标签：并查集、最近公共祖先、DFS序
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

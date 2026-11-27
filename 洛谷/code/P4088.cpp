@@ -6,6 +6,7 @@
 // 输出 M 行，每行输出搬运对应牛粪堆的最少时间。
 // 数据范围：1 <= N, M <= 10^5，0 <= x_i, y_i, t_i <= 10^9（a_j, b_j 为数轴坐标，未单独注明上界）。
 #include<bits/stdc++.h>
+// 算法标签：CDQ分治、双指针
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

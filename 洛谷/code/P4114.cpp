@@ -8,6 +8,7 @@
 // 操作次数不大于 3*10^5。
 //P4114
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

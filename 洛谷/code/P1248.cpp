@@ -6,6 +6,7 @@
 // 数据范围：1 <= n <= 1000。
 // 数据范围：1 <= A_i, B_i <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：贪心、排序
 using namespace std;
 const int MAXN = 1e3+5;
 

@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P6243
 // 题意：N 头奶牛依次进行两道挤奶工序（两道工序的牛序必须相同），第 i 头牛两道工序耗时分别为 A_i, B_i，求最优排队后挤完所有奶牛的最短总时间。
 // 数据范围：1 <= N <= 25000，1 <= A_i, B_i <= 2*10^4。
+// 算法标签：贪心、排序
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 25005;

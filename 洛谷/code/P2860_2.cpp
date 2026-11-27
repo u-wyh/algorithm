@@ -5,6 +5,7 @@
 // 数据范围：1 <= F <= 5*10^3，F-1 <= R <= 10^4。
 // 这道题实际上是一个无向图缩点
 #include<bits/stdc++.h>
+// 算法标签：Tarjan、边双连通分量、缩点
 using namespace std;
 const int MAXN = 5005;
 const int MAXM = 1e4+5;

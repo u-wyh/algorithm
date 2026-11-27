@@ -5,6 +5,7 @@
 // 输出最多区域数和对应的最大剩余电力。
 // 数据范围：1 <= n, m <= 32，1 <= a_{i,j} <= 100。
 #include<bits/stdc++.h>
+// 算法标签：区间动态规划、二维前缀和
 using namespace std;
 
 int n,m,k;

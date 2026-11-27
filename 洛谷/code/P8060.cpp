@@ -6,6 +6,7 @@
 // 输出 k 行，属于输出 TAK，否则输出 NIE。
 // 数据范围：1 <= n <= 5*10^3，1 <= k <= 10^4，1 <= a_1 < a_2 < ... < a_n <= 5*10^4
 // 0 <= b_i <= 10^9。
+// 算法标签：同余最短路、SPFA
 #include<bits/stdc++.h>
 #define int long long //记得开long long
 using namespace std;

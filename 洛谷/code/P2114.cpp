@@ -4,6 +4,7 @@
 // 求一次攻击最多能造成多少伤害。
 // 数据范围：2 <= n <= 10^5，0 <= m <= 10^9，0 <= t <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：位运算、贪心
 using namespace std;
 
 int n,m,ans,x,a1=0,a2=-1;

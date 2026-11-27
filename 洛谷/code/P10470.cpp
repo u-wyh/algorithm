@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10470
 // 题意：先给 N 个字符串，再给 M 次查询。每次给一串 T，统计输入的 N 个字符串中有多少个是 T 的前缀，完全相等也算。
 // 数据范围：1 ≤ N,M ≤ 10^5，全部输入字符串的总长度不超过 10^6，字符均为小写英文字母。
+// 算法标签：AC自动机
 
 #include<bits/stdc++.h>
 using namespace std;

@@ -4,6 +4,7 @@
 // 输出最小花费和方案数。
 // 数据范围：1 <= n <= 10^5，1 <= m <= 3*10^5，0 <= w_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：Tarjan、强连通分量
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 3e5+5;

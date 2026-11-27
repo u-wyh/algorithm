@@ -6,6 +6,7 @@
 // 注：洛谷评测需按提示粘贴交互封装代码并通过 inicjuj()/wczytaj()/wypisz() 读写。
 // 数据范围：1 <= n <= 1.5*10^7，1 <= k <= min(n, 10^6)，1 <= a_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：单调栈、贪心
 using namespace std;
 const int MAXK = 1e6+5;
 const int MAXN = 1e7+5e6+5;

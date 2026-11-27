@@ -2,6 +2,7 @@
 // 题意：给定一棵以 1 为根的点带权有根树
 // 选出一个点集 V' 使得每个点 i 的子树 V_i 中被选点数 |V_i cap V'| <= floor(|V_i| / 2)，最大化所选点权之和。
 // 数据范围：1 <= n <= 5*10^5，0 < w_i <= 10^9，1 <= u, v <= n。
+// 算法标签：左偏树、深度优先搜索、贪心
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

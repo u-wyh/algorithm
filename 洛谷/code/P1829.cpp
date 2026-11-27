@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1829
 // 题意：给定 n 行 m 列的表，第 i 行第 j 列填 i 和 j 的最小公倍数。求全表总和对 20101009 取模的值。
 // 数据范围：1 ≤ n,m ≤ 10^7。
+// 算法标签：莫比乌斯反演、数论分块、线性筛
 
 #include<bits/stdc++.h>
 using namespace std;

@@ -4,6 +4,7 @@
 // 数据范围：1 <= t, k <= n <= 3 * 10^6。
 #include <iostream>
 #include <vector>
+// 算法标签：卢卡斯定理、位运算
 using namespace std;
 
 int main() {

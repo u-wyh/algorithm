@@ -6,6 +6,7 @@
 // 输出一个整数表示最小的 m；若无解则输出 -1。
 // 数据范围：对于 100% 的数据，n <= 10^15。
 #include<stdio.h>
+// 算法标签：二分答案、枚举
 
 long long check(long long x){
     long long ans=0;

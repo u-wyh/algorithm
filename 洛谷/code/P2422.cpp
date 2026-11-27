@@ -4,6 +4,7 @@
 // 输出最大舒适度。
 // 数据范围：1 <= N <= 10^5，1 <= A_i <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：单调栈、前缀和
 using namespace std;
 
 int st[100005];

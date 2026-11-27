@@ -6,6 +6,7 @@
 // 数据范围：1 <= n, m <= 3*10^3，1 <= s, L <= 10^6，1 <= a1 < a2 <= n
 // 1 <= b1 < b2 <= m，1 <= r1 < r2 <= n
 // 1 <= c1 < c2 <= m（题面数据范围中写作 x1 < x2, y1 < y2）。
+// 算法标签：二维差分、二维前缀和
 #include<cstdio>
 #include<cstring>
 using namespace std;

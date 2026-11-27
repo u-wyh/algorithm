@@ -9,6 +9,7 @@
 // 初始成绩为 1 ~ 10^9 之间的正整数（操作中 a, b 为正整数）
 //对数组进行更新操作，并求最大值
 #include<bits/stdc++.h>
+// 算法标签：线段树
 using namespace std;
 const int MAXN = 100001;
 

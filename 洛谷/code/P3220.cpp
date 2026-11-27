@@ -6,6 +6,7 @@
 // 输出满足条件的不同整数个数。
 // 数据范围：K <= 60，N <= 1000，0 <= A_i <= 2^K - 1，0 <= L <= R <= 10^18。
 #include<bits/stdc++.h>
+// 算法标签：数位动态规划、位运算
 using namespace std;
 #define int long long 
 

@@ -5,6 +5,7 @@
 // 数据范围：100 <= W <= 400，1 <= n <= 16，1 <= t <= 50，10 <= w <= 100。
 //P5911
 //这道题的关键是枚举所有的子集
+// 算法标签：状态压缩动态规划、子集枚举
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

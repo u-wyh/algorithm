@@ -20,6 +20,7 @@
 //即他们的地位是不平等的   时效性的设置
 //右边的组需要统计左边组可以和自己构成逆序对的包括：前面大于自己的  后面小于自己的
 #include<bits/stdc++.h>
+// 算法标签：CDQ分治、树状数组
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 5e4+5;

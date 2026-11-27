@@ -4,6 +4,7 @@
 // 输出一行一个整数表示数量。
 // 数据范围：10^10 <= L <= R < 10^11。
 #include<bits/stdc++.h>
+// 算法标签：数位动态规划、记忆化搜索
 using namespace std;
 
 long long dp[11][10][10][2][2][2][2];

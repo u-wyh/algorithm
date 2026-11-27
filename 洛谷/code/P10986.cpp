@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10986
 // 题意：统计所有长为 n 的十进制数字串中，有多少个把 2023 作为连续子串恰好出现 m 次。允许前导零，答案对 998244353 取模。
 // 数据范围：4 ≤ n ≤ 10^5，0 ≤ 4m ≤ n。
+// 算法标签：组合数学、快速幂
 
 #include<bits/stdc++.h>
 using namespace std;

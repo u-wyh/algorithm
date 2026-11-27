@@ -3,6 +3,7 @@
 // 每个区间的美味度为其元素异或和，求选出的 k 个区间美味度之和的最大值。
 // 数据范围：1 <= n <= 5*10^5，1 <= k <= min(n(n-1)/2, 2*10^5)，0 <= a_i <= 4294967295。
 #include<bits/stdc++.h>
+// 算法标签：可持久化01Trie、二分答案
 using namespace std;
 #define int long long
 const int MAXN = 5e5+5;

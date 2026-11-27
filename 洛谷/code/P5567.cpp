@@ -4,6 +4,7 @@
 // 输入 n, m 及 n+1 个点值；输出一行 n+1 个整数表示结果。
 // 数据范围：1 <= n <= 160000，n < m <= 10^8，0 <= f(i) < 998244353。
 #include<bits/stdc++.h>
+// 算法标签：拉格朗日插值、NTT、多项式乘法
 using namespace std;
 #define int long long
 const int MAXN=2e5+5;

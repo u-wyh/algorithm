@@ -4,6 +4,7 @@
 // 输出最后一列火车返回上城镇的最早时间。
 // 数据范围：1 <= n <= 10^6，1 <= s <= 10^9，0 <= t_1 <= t_2 <= ... <= t_n <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：线性动态规划、双指针
 using namespace std;
 #define int long long
 const int MAXN = 1e6+5;

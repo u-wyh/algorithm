@@ -3,6 +3,7 @@
 // 输入 n, m 及两个字符串；输出最大长度和个数（保证至少存在一个长度为 1 的公共回文子串）。
 // 数据范围：1 <= n, m <= 260817。
 #include<bits/stdc++.h>
+// 算法标签：回文自动机、广度优先搜索
 using namespace std;
 const int MAXN = 270000;
 const int ALPHA = 26;

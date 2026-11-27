@@ -8,6 +8,7 @@
 // 题意：第一行输入 n, m，第二行输入 a_1..a_n，后 m 行输入边 (x_i, y_i)；输出一行 n 个整数。
 // 数据范围：1 <= n <= 2 * 10^5，n-1 <= m <= min(5 * 10^5, n * (n-1) / 2)
 // 1 <= a_i, x_i, y_i <= n，x_i != y_i。
+// 算法标签：Tarjan、圆方树、树上倍增
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

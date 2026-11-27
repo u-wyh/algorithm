@@ -3,6 +3,7 @@
 // 输出最长子串长度。
 // 数据范围：字符串长度 <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：前缀和、map
 using namespace std;
 const int MAXN =1e6+5;
 

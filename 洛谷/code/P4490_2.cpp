@@ -4,6 +4,7 @@
 // 数据范围：1 <= n <= 100，0 < h <= 10000.0，0 < g <= 100.0
 // 0 <= x_i, y_i, x'_i, y'_i <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：计算几何、动态凸包、扫描线
 using namespace std;
 #define int long long
 const int MAXN=105;

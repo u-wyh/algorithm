@@ -6,6 +6,7 @@
 #include <vector>
 #include <algorithm>
 #include <climits>
+// 算法标签：树状数组、离散化、前缀和
 
 using namespace std;
 

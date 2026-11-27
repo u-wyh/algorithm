@@ -3,6 +3,7 @@
 // 输出结果对 10^8 取模后的值，不输出前导零。
 // 数据范围：1 <= n <= 10^1000。
 #include<bits/stdc++.h>
+// 算法标签：矩阵快速幂、递推
 using namespace std;
 #define int long long
 const int MOD = 1e8;

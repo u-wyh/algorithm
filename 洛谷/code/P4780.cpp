@@ -2,6 +2,7 @@
 // 题意：给定正整数 n，求最小的正整数 x 满足欧拉函数 phi(x) = n，若 x > 2^31 或无解输出 -1。
 // 数据范围：1 <= n < 2^31。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、线性筛、数论
 using namespace std;
 const int MAXN = 5e4+5;
 const long long LIMIT = (1ll<<31);

@@ -9,6 +9,7 @@
 // 0 <= m <= 5000
 // 0 <= k <= 10^9
 // 1 <= a, b, s1, t1, s2, t2 <= n（a != b）
+// 算法标签：广度优先搜索、三分搜索
 #include <bits/stdc++.h>
 using namespace std;
 

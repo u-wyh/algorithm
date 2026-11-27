@@ -4,6 +4,7 @@
 // 第一行输出路径顺序，第二行输出最多地雷数。
 // 数据范围：N <= 20，每个地窖地雷不超过 300 个。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、回溯
 using namespace std;
 
 int n,now,ans;

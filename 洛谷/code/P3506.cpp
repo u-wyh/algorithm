@@ -4,6 +4,7 @@
 // 第一行输出最长子序列长度 m，第二行输出任意一个满足条件的长度为 m 的子序列元素值。
 // 数据范围：1 <= n, k <= 500000，1 <= a_i <= 1000000，s_j 属于 {<, >, =}。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、树状数组
 using namespace std;
 const int MAXN = 5e5+5;
 const int MAXM = 1e6+5;

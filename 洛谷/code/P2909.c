@@ -7,6 +7,7 @@
 // 1 <= S_i <= 1000000。
 #include<stdio.h>
 #include<stdlib.h>
+// 算法标签：贪心、排序
 
 int cmp(const void *a,const void *b){
     return (*(int *)a - *(int *)b);

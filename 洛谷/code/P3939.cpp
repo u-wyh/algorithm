@@ -5,6 +5,7 @@
 // 数据范围：n <= 3 * 10^5，1 操作次数 <= 3 * 10^5，2 操作次数 <= 3 * 10^5
 // 1 <= a_i, c_j <= 3 * 10^5，1 <= l_j < r_j <= n，1 <= x_j < n。
 #include<bits/stdc++.h>
+// 算法标签：二分查找、模拟
 using namespace std;
 const int MAXN = 3e5+5;
 

@@ -2,6 +2,7 @@
 // 题意：给一张 n 点 m 边的无向图和 p 条有向可达要求 (x_i, y_i)（保证有解），判断每条边必须朝哪边定向或方向不唯一。
 // 数据范围：1 <= n, m, p <= 100000，1 <= a_i, b_i, x_i, y_i <= n。
 #include<bits/stdc++.h>
+// 算法标签：边双连通分量、树上差分、最近公共祖先、倍增
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXH = 18;

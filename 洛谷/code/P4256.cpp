@@ -5,6 +5,7 @@
 // S x y p 求区间公因数个数 mod p。
 // 数据范围：1 <= n, q <= 3e5，任何时刻序列元素都在 [1, 100] 内，取模后答案不超过 int。
 #include<bits/stdc++.h>
+// 算法标签：线段树、位运算、质因数分解
 using namespace std;
 const int MAXN = 3e5+5;
 

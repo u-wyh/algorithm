@@ -11,6 +11,7 @@
 #define quickin cin.tie(0);
 #define quickout cout.tie(0);
 #define maxn 80005
+// 算法标签：倍增、双指针
 using namespace std;
 inline int read() {
     int now = 0, nev = 1; char c = getchar();

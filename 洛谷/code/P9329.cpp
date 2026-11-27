@@ -7,6 +7,7 @@
 // 输出 Q 行，能到达则输出最多可保留的金币数，否则输出 -1。
 // 数据范围：2 <= N <= 10^5，1 <= M, Q <= 10^5，1 <= A_i, B_i, S_k, T_k <= N，S_k != T_k
 // 1 <= P_j <= N-1，1 <= C_j <= 10^9，0 <= X_k <= 10^9，0 <= Y_k <= 10^18。
+// 算法标签：可持久化线段树、最近公共祖先、树上差分
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -7,6 +7,7 @@
 #include <vector>
 #include <cstring>
 #include <algorithm>
+// 算法标签：动态规划、完全背包
 using namespace std;
 
 const int N = 1010;

@@ -4,6 +4,7 @@
 // 输出 Yes 或 No（大小写不敏感）。
 // 数据范围：1 < n <= 5*10^5，1 <= m <= 5*10^5，0 <= w_i, k < 2^64
 // 1 <= a, b <= n 且 a != b。
+// 算法标签：深度优先搜索、位运算
 #include<bits/stdc++.h>
 using namespace std;
 typedef unsigned long long ull;

@@ -4,6 +4,7 @@
 // 输出最少装箱次数。
 // 数据范围：1 <= n <= 100。
 #include <bits/stdc++.h>
+// 算法标签：动态规划
 using namespace std;
 
 const int M = 10005;

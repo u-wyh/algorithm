@@ -4,6 +4,7 @@
 // 输出 N 行，第 i 行表示玩家收到的第 i 张牌的编号。
 // 数据范围：对于 100% 的数据，N <= 7 * 10^5，0 <= R_i < N。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、倍增
 using namespace std;
 const int MAXN = 7e5+5;
 

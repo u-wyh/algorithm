@@ -4,6 +4,7 @@
 // 输出最小的 L。
 // 数据范围：N <= 20000，-10^9 <= X_i, Y_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、贪心
 using namespace std;
 const int MAXN = 20005;
 

@@ -5,6 +5,7 @@
 // 选定整数 x 异或所有满足条件的 w_i，求最大总额度及对应的 x（多解取绝对值最小，仍多解取最大）。
 // 数据范围：1 <= n <= 10^5，|L|, |R|, |A|, |B| <= 10^9，1 <= w_i <= 10^9。
 //https://www.cnblogs.com/riju-yuezhu/p/13192826.html
+// 算法标签：离散化、差分、二分查找
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

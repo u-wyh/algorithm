@@ -2,6 +2,7 @@
 // 题意：给出长度为 n 的序列 a，求所有连续子序列的最大值与最小值之差的和
 // 即 sum_{i=1}^n sum_{j=i}^n (max_{i<=k<=j} a_k - min_{i<=k<=j} a_k)。
 // 数据范围：2 <= n <= 3*10^5，1 <= a_i <= 10^8。
+// 算法标签：单调栈、贡献法
 #include<bits/stdc++.h>
 using namespace std;
 

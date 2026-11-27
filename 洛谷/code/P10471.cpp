@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10471
 // 题意：给 N 个非负整数，从中选两个不同位置的数，求它们的按位异或结果最大是多少。
 // 数据范围：2 ≤ N ≤ 10^5，0 ≤ A[i] < 2^31。
+// 算法标签：01字典树、按位贪心
 
 #include<bits/stdc++.h>
 using namespace std;

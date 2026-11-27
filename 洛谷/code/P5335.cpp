@@ -3,6 +3,7 @@
 // 查询最早在哪个事件后以 S 为前缀的名字数严格超过 (a*|ANS|+b) mod c（ANS 为上次答案，初始 0，无则输出 -1）。
 // 数据范围：n <= 10^5，|S| <= 60，所有字符串只含前 10 个小写字母。
 #include<bits/stdc++.h>
+// 算法标签：字典树
 using namespace std;
 #define int long long
 const int MAXN = 6e6+5;

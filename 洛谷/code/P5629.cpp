@@ -4,6 +4,7 @@
 // 输入 n, m, d, q、数列 a、原数 b 及 q 个询问区间；每行输出一次询问的答案。
 // 数据范围：n <= 5*10^5，m <= 60，2 <= d <= 10，q <= 10^6，0 <= a_i, b_i < 2^63。
 #include<bits/stdc++.h>
+// 算法标签：可持久化线段树、前缀和
 using namespace std;
 const int MAXN = 5e5+5;
 const int MAXM = MAXN*4;

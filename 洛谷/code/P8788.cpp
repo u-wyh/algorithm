@@ -5,6 +5,7 @@
 // 每次可移至前一个或后一个排列）
 // 求从排列 `aejcldbhpiogfqnkr` 到 `ncfjboqiealhkrpgd`（原文在 h 与 k 间多一空格）的最少转移次数。
 // 数据范围：仅两道固定填空题（A、B）。
+// 算法标签：常量输出
 #include<bits/stdc++.h>
 using namespace std;
 

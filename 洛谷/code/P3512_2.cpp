@@ -5,6 +5,7 @@
 // 数据范围：0 <= k <= 2*10^9，1 <= n <= 3*10^6，1 <= a_i <= 2*10^9。
 #include<iostream>
 #include<cstdio>
+// 算法标签：单调队列、双指针
 using namespace std;
 #define ll long long
 

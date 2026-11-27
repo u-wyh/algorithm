@@ -4,6 +4,7 @@
 // 输入 D, S, T 及三类点的坐标；输出合法方案总数。
 // 数据范围：1 <= D, S, T <= 800，dy_i > 0，sy_i, ty_i < 0，坐标绝对值不超过 10^9，无重点及三点共线。
 #include<bits/stdc++.h>
+// 算法标签：计算几何、极角排序、双指针
 using namespace std;
 #define int long long
 using i128 = __int128_t;

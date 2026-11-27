@@ -3,6 +3,7 @@
 // 求符合条件的 1..n 排列 A 的方案数（模 10^9 + 7）及字典序最小的合法排列 A（若方案数为 0 则不输出排列）。
 // 数据范围：0 < n <= 10^6，-1 <= b_i <= n。
 //P6035
+// 算法标签：线段树、贪心
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

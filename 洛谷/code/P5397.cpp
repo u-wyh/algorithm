@@ -3,6 +3,7 @@
 // 2 x y 找满足 a_i=x 且 a_j=y 的最小 |i-j| 并输出，不存在则输出 Ikaros（共 50 组数据，保证 n=m）。
 // 数据范围：所有数在 [1, 10^5] 内，每次操作的值不超过 n。
 #include<bits/stdc++.h>
+// 算法标签：根号分治、启发式合并、双指针
 using namespace std;
 const int MAXV = 1e5+5;
 const int MAXH = 170;

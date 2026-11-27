@@ -5,6 +5,7 @@
 // 输出一个整数表示最小价钱。
 // 数据范围：1 <= N <= 500，格子高度为不超过 10^6 的非负整数。
 #include<bits/stdc++.h>
+// 算法标签：并查集、Kruskal
 using namespace std;
 const int maxn=501;
 int n;

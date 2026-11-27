@@ -4,6 +4,7 @@
 #include<cstdio>
 #include<iostream>
 #define N 1000005
+// 算法标签：Manacher、深度优先搜索
 using namespace std;
 struct node{
     int s[N];

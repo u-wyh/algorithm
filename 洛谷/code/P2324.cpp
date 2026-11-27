@@ -5,6 +5,7 @@
 // 数据范围：T <= 10。
 //P2324
 #include<bits/stdc++.h>
+// 算法标签：IDA*
 using namespace std;
 
 const int goal[6][6]={

@@ -3,6 +3,7 @@
 // 求无穷级数 sum_{n=0}^∞ f(n) * r^n 对 998244353 取模的结果。
 // 数据范围：m <= 10^5，a_i in [0, 998244353)，保证 a_m != 0。
 #include<bits/stdc++.h>
+// 算法标签：多项式求逆、NTT
 using namespace std;
 #define int long long
 const int MAXN = 2e5+5;

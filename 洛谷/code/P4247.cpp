@@ -4,6 +4,7 @@
 // Q a b c 询问从区间 [a, b] 中任选 c 个数相乘的所有方案之和对 19940417 取模的值。
 // 数据范围：n, q <= 50000，初始元素绝对值 <= 1e9，|c| <= 1e9，询问中 1 <= c <= min(b-a+1, 20)。
 #include<bits/stdc++.h>
+// 算法标签：线段树、组合数学
 using namespace std;
 #define int long long
 const int MOD = 19940417;

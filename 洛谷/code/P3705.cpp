@@ -6,6 +6,7 @@
 // 输出 C 的最大值，四舍五入保留 6 位小数。
 // 数据范围：1 <= n <= 100，1 <= a_{i,j}, b_{i,j} <= 10^4。
 #include<bits/stdc++.h>
+// 算法标签：分数规划、最小费用最大流
 using namespace std;
 const int MAXN = 205;
 const int MAXM = 2e4+5;

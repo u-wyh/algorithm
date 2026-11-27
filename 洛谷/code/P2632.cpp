@@ -4,6 +4,7 @@
 // 输出最小生成树长度，四舍五入保留三位小数。
 // 数据范围：1 <= n, m <= 10^5，坐标绝对值 <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：Kruskal最小生成树、并查集、二分查找
 using namespace std;
 const int MAXN = 1e5+5;
 

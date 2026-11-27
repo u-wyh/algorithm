@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1962
 // 题意：斐波那契数列前两项为 1，从第三项起每项等于前两项之和。给定 n，输出第 n 项对 10^9+7 取模的值。
 // 数据范围：1 ≤ n < 2^63。
+// 算法标签：矩阵快速幂
 
 #include<bits/stdc++.h>
 using namespace std;

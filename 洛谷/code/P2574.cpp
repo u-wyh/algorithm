@@ -4,6 +4,7 @@
 // 对每个 1 操作输出一行整数。
 // 数据范围：2 <= n, m <= 2*10^5，1 <= l <= r <= n。
 #include<bits/stdc++.h>
+// 算法标签：线段树
 using namespace std;
 const int MAXN = 200005;
 

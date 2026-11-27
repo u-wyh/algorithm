@@ -6,6 +6,7 @@
 #include<stdio.h>
 #include<stdbool.h>
 #define Max 1000
+// 算法标签：记忆化搜索、状态压缩
 
 // limit : 每条边规定的长度
 // status : 表示哪些数字还可以选

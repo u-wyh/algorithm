@@ -3,6 +3,7 @@
 // 从第 p 个跳到第 q 个（1 <= q - p <= x）需额外花费 k + (q - p - 1) * d 精力。
 // 求从第 1 个出发解决第 n 个学生问题所需的最小总精力（tp=1 时 a 由 Seed 与给定 rnd() 生成）。
 // 数据范围：1 <= n <= 10^7，0 <= k, d, a_i <= 10^9，1 <= x <= n - 1。
+// 算法标签：动态规划、单调队列
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

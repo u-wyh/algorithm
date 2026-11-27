@@ -4,6 +4,7 @@
 // 输出最多可抢修成功的建筑数量 S。
 // 数据范围：对于 100% 的数据，1 <= N < 150000，1 <= T_1 < T_2 < 2^{31}。
 #include<bits/stdc++.h>
+// 算法标签：反悔贪心、优先队列
 using namespace std;
 #define int long long
 const int MAXN = 150005;

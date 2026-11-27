@@ -4,6 +4,7 @@
 // 输入 n, m、序列 a 及各询问区间；对每个询问输出一行答案。
 // 数据范围：1 <= n, m <= 500000，1 <= a_i <= 100000，1 <= l <= r <= n。
 #include<bits/stdc++.h>
+// 算法标签：莫队二次离线、树状数组、分块
 using namespace std;
 const int MAXN = 5e5+5;
 const int MAXM = 1e5+5;

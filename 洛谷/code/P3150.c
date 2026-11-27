@@ -5,6 +5,7 @@
 // 输出 N 行，pb 必胜输出 pb wins，否则输出 zs wins。
 // 数据范围：1 < N < 50，1 <= M <= 10^9。
 #include<stdio.h>
+// 算法标签：博弈论、数学
 
 int main()
 {

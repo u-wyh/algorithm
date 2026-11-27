@@ -3,6 +3,7 @@
 // 每次输出与 u 具有相同 k 级祖先的节点个数（不包含 u 本身，若 u 不存在 k 级祖先则输出 0）。
 // 数据范围：N <= 10^6，Q <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、离线、栈
 using namespace std;
 const int MAXN = 1e6+5;
 

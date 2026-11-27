@@ -4,6 +4,7 @@
 // 输出最少删去的单词数。
 // 数据范围：1 <= |T|, |A|, |B|, |C| <= 50000（单词数），每个单词长度不超过 5、出现次数不超过 500，保证有解。
 #include<bits/stdc++.h>
+// 算法标签：字符串哈希、贪心、枚举
 using namespace std;
 #define int long long
 const int MAXN = 5e4+5;

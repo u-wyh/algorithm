@@ -2,6 +2,7 @@
 // 题意：给定长度为 n 的数组 A_1..A_n，求所有满足 1 <= L <= R <= n 的子段 [L, R] 的区间异或和之和。
 // 题意：第一行输入 n，第二行输入 A_1..A_n；输出一行一个整数。
 // 数据范围：1 <= n <= 10^5，0 <= A_i <= 2^20。
+// 算法标签：位运算、前缀和
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

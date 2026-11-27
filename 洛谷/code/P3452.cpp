@@ -10,6 +10,7 @@
 #include<set>
 #include<algorithm>
 #include<vector>
+// 算法标签：线段树、并查集
 using namespace std;
 const int N=3e5+10;
 const int M=3e6+10;

@@ -4,6 +4,7 @@
 // 输出一个整数，表示满足条件的最长连续子段长度。
 // 数据范围：0 <= k <= 2*10^9，1 <= n <= 3*10^6，1 <= a_i <= 2*10^9。
 #include<bits/stdc++.h>
+// 算法标签：单调队列、双指针
 using namespace std;
 
 long long limit;

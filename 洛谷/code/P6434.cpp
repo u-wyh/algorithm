@@ -9,6 +9,7 @@
 // k <= n <= 2 * 10^6
 // 1 <= l <= r <= 10
 // 1 <= a_i <= 10^9（90% 数据 a_i 随机生成）
+// 算法标签：动态规划、双指针、前缀和
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

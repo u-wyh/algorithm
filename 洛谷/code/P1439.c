@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1439
 // 题意：给两个由 1 到 n 组成的排列。从两边按原有顺序各抽出若干元素，使抽出的序列完全相同。输出共同序列的最大长度。
 // 数据范围：1 ≤ n ≤ 10^5。
+// 算法标签：动态规划、二分查找
 
 #include <stdio.h>
 #include <limits.h> // 引入INT_MAX

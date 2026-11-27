@@ -6,6 +6,7 @@
 // 数据范围：1 <= N, M <= 3000，1 <= u, v <= N。
 #include <stdio.h>
 #include <string.h>
+// 算法标签：并查集、逆向思维
 
 int n, m, g[3001], x[3001], y[3001], order[3001], ss[3001], ans[3001], w;
 

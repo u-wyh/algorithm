@@ -7,6 +7,7 @@
 // 数据范围：对于全部数据，5 <= r, c <= 30，0 <= k <= 10，1 <= r_i, R_i <= r
 // 1 <= c_i, C_i <= c。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索、状态压缩
 using namespace std;
 
 int n,m,t;

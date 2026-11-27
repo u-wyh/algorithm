@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1629
 // 题意：邮局在 1，需分别送信到 2 至 n。道路单向并有耗时，每趟只带一件物品，送到后必须返回 1，包括最后一趟。求完成全部往返的最短总时间。
 // 数据范围：1 ≤ n ≤ 1000，1 ≤ m ≤ 10^5，端点编号在 [1,n]，1 ≤ w ≤ 10000，任意两点互相可达。
+// 算法标签：Dijkstra、反向建图
 
 #include<bits/stdc++.h>
 using namespace std;

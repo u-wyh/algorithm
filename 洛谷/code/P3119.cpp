@@ -6,6 +6,7 @@
 // 数据范围：1 <= N, M <= 10^5，无重边，每条边两端点不同。
 //https://www.cnblogs.com/jiangtaizhe001/p/14872758.html
 #include<bits/stdc++.h>
+// 算法标签：Tarjan、强连通分量、SPFA
 using namespace std;
 const int MAXN = 1e5+5;
 

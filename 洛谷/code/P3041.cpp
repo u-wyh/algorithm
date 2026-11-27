@@ -5,6 +5,7 @@
 // 输出一行一个整数，表示最大总得分。
 // 数据范围：对于 100% 的数据，1 <= n <= 20，1 <= k <= 10^3，1 <= |s_i| <= 15。
 #include<bits/stdc++.h>
+// 算法标签：AC自动机、动态规划
 using namespace std;
 const int MAXN = 305;
 const int MAXM = 1e3+5;

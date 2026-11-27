@@ -6,6 +6,7 @@
 // 输出消灭所有小精灵的最短时间（秒）；若无法全部消灭输出 -1。
 // 数据范围：N, M, K <= 200，所有坐标绝对值不超过 10000，半径与施法间隔不超过 20000。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、最大流、Dinic、计算几何
 using namespace std;
 #define int long long
 const int MAXN = 205;

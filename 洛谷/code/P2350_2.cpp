@@ -4,6 +4,7 @@
 // 每组输出一行整数 x。
 // 数据范围：test <= 50，1 <= p_i <= 10^5，1 <= q_i <= 10^9，m <= 2000。
 #include<bits/stdc++.h>
+// 算法标签：素数筛、数论
 using namespace std;
 const int MAXN = 1e5+5;
 

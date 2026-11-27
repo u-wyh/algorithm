@@ -4,6 +4,7 @@
 // 输出 m 行，存在则输出该数，否则输出 0。
 // 数据范围：1 <= n, m <= 5*10^5，1 <= a_i <= n。
 #include<bits/stdc++.h>
+// 算法标签：可持久化线段树、权值线段树
 using namespace std;
 const int MAXN = 5e5+5;
 const int MAXT = MAXN*25;

@@ -5,6 +5,7 @@
 // 若先手第一步就无法写出数字，第二行输出 0。
 // 数据范围：2 <= Q <= 10^13。
 #include<bits/stdc++.h>
+// 算法标签：质因数分解、博弈论
 using namespace std;
 
 int main()

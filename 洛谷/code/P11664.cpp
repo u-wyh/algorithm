@@ -11,6 +11,7 @@
 // 1 <= Q <= 4 * 10^5
 // 1 <= C_i, L_i, R_i <= P（L_i <= R_i）
 // 0 <= X_i <= 10^9
+// 算法标签：滑动窗口、ST表、二分查找
 #include <bits/stdc++.h>
 
 using namespace std;

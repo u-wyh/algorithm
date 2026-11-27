@@ -9,6 +9,7 @@
 // 1 <= n <= 10^5
 // 1 <= d, X_i, A_i <= 10^{12}
 #include<bits/stdc++.h>
+// 算法标签：凸包、单调栈、二分查找
 using namespace std;
 #define int long long
 using i128 = __int128_t;

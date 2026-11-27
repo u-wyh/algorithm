@@ -4,6 +4,7 @@
 // 第一行输出最大不同项链数及达到该最大值的 k 的个数，第二行输出所有最优的 k 值（顺序任意）。
 // 数据范围：1 <= n <= 2*10^5，1 <= a_i <= n。
 #include<bits/stdc++.h>
+// 算法标签：字符串哈希、枚举
 using namespace std;
 const int MAXN = 2e5+5;
 const int BASE = 1313131;

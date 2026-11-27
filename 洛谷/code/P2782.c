@@ -8,6 +8,7 @@
 #include<time.h>
 #include<stdlib.h>
 #define Max 1000000
+// 算法标签：最长上升子序列、二分查找、排序
 
 int bs1(int* ends, int len, int num) {
     int l = 0, r = len - 1, m, ans = -1;

@@ -3,6 +3,7 @@
 // 还支持查询初始串第 x 个字符当前所在位置（不存在输出 0）、查询当前第 x 个字符、查询区间 [x, y] 内不同字母种类数。
 // 数据范围：1 <= n, m <= 10^5，涉及字母均为小写英文字母。
 #include<bits/stdc++.h>
+// 算法标签：FHQ-Treap
 using namespace std;
 const int MAXN = 2e5+5;
 

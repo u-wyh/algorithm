@@ -3,6 +3,7 @@
 // 1. a, b, c 互不相同且 a = p；2. a 和 b 都是 c 的祖先；3. a 与 b 在树上的距离不超过 k。
 // 数据范围：n <= 300000，q <= 300000，1 <= p, k <= n。
 #include<bits/stdc++.h>
+// 算法标签：可持久化线段树、DFS序
 using namespace std;
 #define int long long
 const int MAXN = 3e5+5;

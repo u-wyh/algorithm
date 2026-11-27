@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10982
 // 题意：给 n 个有编号的点，求在这些点之间选无向边，使整张图连通的选法数。不同的边集是不同方案，输出结果对 1004535809 取模。
 // 数据范围：1 ≤ n ≤ 1000。
+// 算法标签：组合数学、动态规划
 
 #include<bits/stdc++.h>
 using namespace std;

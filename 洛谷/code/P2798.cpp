@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= k < n <= 10000，n - 1 <= m <= 20000
 // 1 <= t_i < T_i <= 10^6，保证有可行解。
 #include<bits/stdc++.h>
+// 算法标签：WQS二分、Kruskal、并查集
 using namespace std;
 const int MAXN = 1e4+5;
 const int MAXM = 4e4+5;

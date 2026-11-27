@@ -4,6 +4,7 @@
 // 对每组数据输出 Yes 或 No。
 // 数据范围：T <= 10，n <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索
 using namespace std;
 
 int n;

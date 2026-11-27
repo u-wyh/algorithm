@@ -5,6 +5,7 @@
 // 求所有顾客消费总额的最大值，第一行输出最大总额，第二行输出任意一组对应的 n 个店铺价格 p_i。
 // 数据范围：1 <= n <= 50，1 <= m <= 4000，1 <= a_i <= b_i <= n，1 <= c_i <= 5*10^5。
 #include<bits/stdc++.h>
+// 算法标签：区间动态规划、二维前缀和、离散化
 using namespace std;
 const int MAXN = 55;
 const int MAXM = 4e3+5;

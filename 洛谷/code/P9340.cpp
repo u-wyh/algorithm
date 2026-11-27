@@ -4,6 +4,7 @@
 // 题意：第一行输入 N, M, Q，后 N-1 行输入树边 (A_i, B_i)，再一行输入 C_1..C_M，再 Q 行输入 L_k, R_k；
 // 输出 Q 行答案。
 // 数据范围：1 <= N, M, Q <= 10^5，1 <= A_i, B_i, C_j <= N，1 <= L_k <= R_k <= M，图连通。
+// 算法标签：树链剖分、线段树、ST表
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

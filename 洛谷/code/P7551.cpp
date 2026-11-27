@@ -3,6 +3,7 @@
 // 进行 q 轮独立询问，求说出 a_i 后第一次想起 b_i 的最短时间（无法想起输出 Roger）。
 // 数据范围：2 <= n <= 1000，1 <= m <= 1000，1 <= t_i <= 10^9，1 <= q <= 1000
 // 单词长 <= 20 小写字母。
+// 算法标签：最短路、Dijkstra
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -7,6 +7,7 @@
 // 数据范围：n <= 2 * 10^5，m <= 5 * 10^5，k <= 50，所有操作 3 中 |s| 之和 sum |s| <= 10^7
 // 操作 2 次数 c <= 10^3，蚯蚓长度在 1..6 之间。
 #include<bits/stdc++.h>
+// 算法标签：字符串哈希、链表、哈希表
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXS = 1e7+5;

@@ -6,6 +6,7 @@
 // 求到达 (m, m) 的最少金币数，不可达输出 -1。
 // 数据范围：1 <= m <= 100，1 <= n <= 10^3，0 <= c <= 1。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、剪枝
 using namespace std;
 const int MAXM = 105;
 

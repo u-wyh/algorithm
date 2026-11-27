@@ -1,9 +1,11 @@
 // https://www.luogu.com.cn/problem/P4191
 // 题意：给长度为 n 的数组 a, b 和非负整数 C，初始 x[0, i]=a[i]
-// 每次做循环卷积转移 x[t+1, (j+k) mod n] += b[k]*x[t, j]，求做完 C 轮后每个 x[C, i] mod (n+1) 的值；
+// 每次做循环卷积转移 x[t+1, (j+k) mod n] += b[k]*x[t, j]
+// 求做完 C 轮后每个 x[C, i] mod (n+1) 的值；
 // 保证 n 可分解为若干个不超过 10 的正整数之积，且 n+1 为质数。
 // 数据范围：n <= 5e5，C <= 1e9，0 <= a_i, b_i <= 1e9。
 #include<bits/stdc++.h>
+// 算法标签：FHQ-Treap
 using namespace std;
 const int MAXN = 250005;
 const int BASE = 1e6;

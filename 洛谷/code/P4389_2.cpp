@@ -2,6 +2,7 @@
 // 题意：n 种体积为 v_i 的商品（每种无限件），给定 m，对每个 s in [1, m] 求恰好装满体积 s 的方案数（对 998244353 取模）。
 // 数据范围：1 <= n, m <= 10^5，1 <= v_i <= m。
 #include<bits/stdc++.h>
+// 算法标签：CDQ分治、NTT、生成函数
 using namespace std;
 #define int long long
 const int MAXN=1e5+5;

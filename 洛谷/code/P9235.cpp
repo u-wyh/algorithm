@@ -5,6 +5,7 @@
 // 题意：第一行输入 n, m, q，接下来 m 行每行 u_i, v_i, w_i，再接下来 q 行每行 x_i, y_i；输出 q 行答案。
 // 数据范围：2 <= n, q <= 10^5，1 <= m <= 3 * 10^5，1 <= u_i, v_i, x_i, y_i <= n
 // 1 <= w_i <= 10^6，u_i != v_i，x_i != y_i。
+// 算法标签：Kruskal重构树、最近公共祖先、并查集
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

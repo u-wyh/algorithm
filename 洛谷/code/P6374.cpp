@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P6374
 // 题意：给定一棵 n 个点的无根树，q 次询问每次给 (a, b, c)，求有多少个节点 i 满足以 i 为根时 a 和 b 的 LCA 恰好为 c。
 // 数据范围：1 <= n <= 5*10^5，1 <= q <= 2*10^5。
+// 算法标签：最近公共祖先、倍增、DFS序
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

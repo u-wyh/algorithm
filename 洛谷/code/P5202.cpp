@@ -3,6 +3,7 @@
 // 求划分后满足「G 的数量不少于 H 的数量」的区间的最小可能个数。
 // 数据范围：1 <= k <= n <= 3*10^5，字符串长度为 n 且只含 H 和 G。
 #include<bits/stdc++.h>
+// 算法标签：单调队列、动态规划、前缀和
 using namespace std;
 const int MAXN = 3e5+5;
 

@@ -5,6 +5,7 @@
 // 数据范围：1 <= n <= 5*10^3，1 <= m <= 5*10^4，1 <= s, t <= n，u_i != v_i
 // 0 <= w_i, c_i <= 10^3，答案 <= 2^31-1。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、Dijkstra、SPFA
 using namespace std;
 #define int long long  // 使用 long long 类型
 

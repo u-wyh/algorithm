@@ -4,6 +4,7 @@
 // 输出 q 行，是子序列输出 TAK，否则输出 NIE。
 // 数据范围：1 <= n, m, a_i, b_i <= 1000000，sum(m) <= 1000000。
 #include<bits/stdc++.h>
+// 算法标签：二分查找、贪心
 using namespace std;
 const int MAXN = 1e6+5;
 

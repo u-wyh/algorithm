@@ -12,6 +12,7 @@
 // 提交以下的code，提交时请把类名改成"Main"，可以直接通过
 //这道题是通过二分来检测是否有不超过k个的不同
 #include<bits/stdc++.h>
+// 算法标签：字符串哈希、二分查找
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

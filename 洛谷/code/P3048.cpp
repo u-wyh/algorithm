@@ -5,6 +5,7 @@
 // 输出一行一个二进制数（不含前导零），表示第 N 个编号。
 // 数据范围：对于 100% 的数据，1 <= N <= 10^7，1 <= K <= 10。
 #include<bits/stdc++.h>
+// 算法标签：组合数学、递推
 using namespace std;
 #define int long long
 const int MAXN = 1e7+5;

@@ -3,6 +3,7 @@
 // 误差 <= 1e-6）。
 // 数据范围：1 <= N <= 20，输入百分比为 0 到 100 的整数。
 #include<bits/stdc++.h>
+// 算法标签：状态压缩动态规划
 using namespace std;
 
 int n;

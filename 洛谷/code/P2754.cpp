@@ -3,6 +3,7 @@
 // 地球(0)上有 k 个人，求全部转移到月球(-1)的最短用时，无解输出 0。
 // 数据范围：1 <= n <= 13，1 <= m <= 20，1 <= k <= 50，1 <= r_i <= n+2。
 #include<bits/stdc++.h>
+// 算法标签：最大流、二分答案、分层图
 using namespace std;
 const int MAXN = 20;
 const int MAXM = 25;

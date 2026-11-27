@@ -5,6 +5,7 @@
 // 数据范围：对于 100% 的数据，1 <= k <= 10，|a_i| <= 10^9，1 <= b_i <= 6 * 10^3
 // prod_{i=1}^k b_i <= 10^18。
 #include<bits/stdc++.h>
+// 算法标签：中国剩余定理、扩展欧几里得、龟速乘
 using namespace std;
 #define int long long
 

@@ -4,6 +4,7 @@
 // 输出最多经过的三角形数。
 // 数据范围：4 <= n <= 200000。
 #include<bits/stdc++.h>
+// 算法标签：树的直径、深度优先搜索
 using namespace std;
 const int MAXN = 2e5+5;
 

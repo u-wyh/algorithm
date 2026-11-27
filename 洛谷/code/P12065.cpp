@@ -6,6 +6,7 @@
 // 输出：每次 Q 询问输出升序排列的 P 个距离，精确到小数点后 4 位。
 // 数据范围：N <= 10^5，Q <= 20000（查询次数不超过 5000）。
 // 数据范围：K in {1, 2}，P in {1, 3}，0 <= X_i, Y_i <= 10^7。
+// 算法标签：动态KD树、优先队列
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

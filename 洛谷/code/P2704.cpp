@@ -4,6 +4,7 @@
 // 输出最多部队数。
 // 数据范围：1 <= N <= 100，1 <= M <= 10。
 #include<iostream>
+// 算法标签：状态压缩动态规划、位运算
 using namespace std;
 
 int n,m;

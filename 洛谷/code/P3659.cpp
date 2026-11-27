@@ -4,6 +4,7 @@
 // 输出到达右下角 (N,N) 所需的最少总时间。
 // 数据范围：3 <= N <= 100，0 <= T <= 1000000，每格吃草时间为正整数且 <= 100000。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、分层图
 using namespace std;
 const int MAXN = 105;
 const int INF = 1e9;

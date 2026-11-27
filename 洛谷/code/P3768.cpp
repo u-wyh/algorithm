@@ -4,6 +4,7 @@
 // 输出一行一个整数表示答案。
 // 数据范围：1 <= n <= 10^10（测试点分级最高到 10^10），5*10^8 <= p <= 1.1*10^9 且 p 为质数。
 #include<bits/stdc++.h>
+// 算法标签：杜教筛、数论分块、线性筛
 using namespace std;
 #define int long long
 const int MAXN = 5e6+5;

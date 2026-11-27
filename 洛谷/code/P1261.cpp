@@ -13,6 +13,7 @@
 #include <algorithm>
 #include <vector>
 #include <queue>
+// 算法标签：最短路、SPFA、剪枝
 using namespace std;
 
 // 定义边的结构体

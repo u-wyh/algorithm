@@ -7,6 +7,7 @@
 // 1 <= T <= 3
 // 1 <= n <= 1000
 // 1 <= m <= 5999
+// 算法标签：Tarjan缩点、拓扑排序、动态规划
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e3+5;

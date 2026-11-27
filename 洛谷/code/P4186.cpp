@@ -2,6 +2,7 @@
 // 题意：与 P4183 规则相同，给一棵 N 个点的树和 Bessie 固定的出发点 K，求确保抓住 Bessie 所需的最少农民数。
 // 数据范围：2 <= N <= 1e5，1 <= K <= N。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、树形动态规划
 using namespace std;
 const int MAXN = 1e5+5;
 

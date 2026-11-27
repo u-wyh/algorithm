@@ -3,6 +3,7 @@
 // 求第 N 天共 N 个结点时所有点对距离之和的期望 E 乘以 N! 后对 P 取模的结果。
 // 数据范围：N <= 2000，P <= 10^9 + 7。
 #include<bits/stdc++.h>
+// 算法标签：组合数学
 using namespace std;
 #define int long long
 const int MAXN = 2005;

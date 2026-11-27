@@ -4,6 +4,7 @@
 // 对每次询问输出既约分数（整数 a 输出 a/1）。
 // 数据范围：1 <= n, m <= 10^5，1 <= l <= r <= n，-10^4 <= v <= 10^4，任何时刻边权在 [0, 10^4]。
 #include<bits/stdc++.h>
+// 算法标签：线段树、数学（期望与公式推导）
 using namespace std;
 #define int long long 
 const int MAXN = 1e5+5;

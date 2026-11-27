@@ -5,6 +5,7 @@
 // 输出 m 行，第 i 行表示前 i 天不整理时第 i 天的总厌烦度对 10^9+7 取模的结果。
 // 数据范围：1 <= a_i, x_j, y_j <= n <= 5*10^4，1 <= m <= 5*10^4，1 <= v_i <= 10^5。
 #include <bits/stdc++.h>
+// 算法标签：树状数组套线段树、逆序对
 using namespace std;
 const int MOD = 1e9+7;
 const int MAXN = 1e5+5;

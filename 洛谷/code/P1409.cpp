@@ -6,6 +6,7 @@
 // 输出：输出一个实数表示获胜概率，精确到小数点后 9 位。
 // 数据范围：0 < m <= n <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：概率动态规划
 using namespace std;
 const int MAXN = 1005;
 

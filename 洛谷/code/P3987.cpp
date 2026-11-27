@@ -4,6 +4,7 @@
 // 对每次查询输出一行答案。
 // 数据范围：1 <= n, m <= 10^5，0 <= a_i <= 5 * 10^5，1 <= x <= 5 * 10^5。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、二分查找、数论
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 5e5+5;

@@ -5,6 +5,7 @@
 // 输出一个整数表示最大舞曲数。
 // 数据范围：1 <= n <= 50，0 <= k <= 30。
 #include<bits/stdc++.h>
+// 算法标签：最大流、二分答案
 using namespace std;
 const int MAXN = 55;
 const int MAXT = 4*MAXN;

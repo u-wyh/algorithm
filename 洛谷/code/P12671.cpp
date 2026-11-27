@@ -4,6 +4,7 @@
 // 规则：找同起点回文子串 S1, S2，使 |S1|=len1, |S2|=len2 且 S1 是 S2 前缀。
 // 输出：每次询问输出最靠前的起点位置，若无解则输出 -1。
 // 数据范围：1 <= n, q <= 5*10^5，1 <= len1 < len2 <= n（询问随机）。
+// 算法标签：AC自动机、树上倍增
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

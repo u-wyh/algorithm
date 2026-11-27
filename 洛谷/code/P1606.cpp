@@ -7,6 +7,7 @@
 // 1 <= M, N <= 30（池塘行列数）
 // 放置方案总数保证在 64 位有符号整数范围内
 #include<bits/stdc++.h>
+// 算法标签：0-1 BFS、深度优先搜索、最短路
 using namespace std;
 const int MAXN = 35;
 const int MAXV = 35*35;

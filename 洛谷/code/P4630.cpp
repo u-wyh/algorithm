@@ -3,6 +3,7 @@
 // 统计有多少个两两不同的有序三元组 (s, c, f) 满足图中存在至少一条从 s 经过 c 到 f 且不重复经过任何点的简单路径。
 // 数据范围：n <= 100000，m <= 200000。
 #include<bits/stdc++.h>
+// 算法标签：圆方树、树形动态规划
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 2e5+5;

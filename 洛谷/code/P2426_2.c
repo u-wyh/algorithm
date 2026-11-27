@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+// 算法标签：区间动态规划
 
 int n, a[110], dp[110][110], ans;
 

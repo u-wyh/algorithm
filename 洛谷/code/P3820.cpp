@@ -6,6 +6,7 @@
 // 对每个操作 1 输出一行答案。
 // 数据范围：对于 100% 的数据，1 <= N*M, Q <= 10^6，sum w <= 10^6，w >= 1。
 #include<bits/stdc++.h>
+// 算法标签：并查集、深度优先搜索
 using namespace std;
 
 int n,m;

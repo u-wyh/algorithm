@@ -5,6 +5,7 @@
 // 输出一个整数表示满足条件的 (l, r) 对数。
 // 数据范围：
 // 1 <= n, a_i, b_i <= 5 * 10^5
+// 算法标签：笛卡尔树、离线查询
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

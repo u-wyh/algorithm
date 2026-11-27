@@ -4,6 +4,7 @@
 // 对每次询问输出一行整数。
 // 数据范围：1 <= n, m <= 10^5，0 <= a_i, y <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：树状数组套权值线段树、离散化、二分查找
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXT = MAXN*130;

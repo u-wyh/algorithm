@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1972
 // 题意：给定长度为 n 的贝壳序列，每个位置有一个种类编号。m 次询问各给出闭区间 [l,r]，逐行输出区间里不同种类的数量。
 // 数据范围：1 ≤ n,m,a_i ≤ 10^6，1 ≤ l ≤ r ≤ n。
+// 算法标签：树状数组、离线算法、排序
 
 #include<bits/stdc++.h>
 using namespace std;

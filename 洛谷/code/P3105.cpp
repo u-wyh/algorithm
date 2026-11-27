@@ -5,6 +5,7 @@
 // 输出一个整数表示最大照片长度。
 // 数据范围：2 <= N <= 10^5，0 <= x_i <= 10^9，x_i 互不相同且至少有 1 头白牛。
 #include<bits/stdc++.h>
+// 算法标签：前缀和、贪心、排序
 using namespace std;
 const int MAXN = 1e5+5;
 

@@ -2,6 +2,7 @@
 // 题意：求 n 个点的简单（无重边无自环）有标号无向连通图个数，答案对 1004535809 (479 * 2^21 + 1) 取模。
 // 数据范围：n <= 130000。
 #include<bits/stdc++.h>
+// 算法标签：多项式求逆、NTT、生成函数
 using namespace std;
 #define int long long
 const int MAXN = 2e6+5;

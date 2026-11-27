@@ -5,6 +5,7 @@
 // 第一行输入 n，第二行 n 个整数 a_i，第三行 q，接下来 q 行每行 l, r。
 // 输出 q 行每行一个整数。
 // 数据范围：1 <= n, q <= 2*10^6，1 <= a_i <= n。
+// 算法标签：线段树、并查集、离线处理
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e6+5;

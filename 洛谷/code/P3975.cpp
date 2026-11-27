@@ -4,6 +4,7 @@
 // 输出该子串；若子串总数不足 k 个，输出 -1。
 // 数据范围：对于 100% 的数据，1 <= n <= 5 * 10^5，0 <= t <= 1，1 <= k <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：后缀自动机、深度优先搜索
 using namespace std;
 const int MAXN = 1e6+5;
 

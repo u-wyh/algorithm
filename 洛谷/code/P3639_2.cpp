@@ -6,6 +6,7 @@
 // 数据范围：1 <= N <= 10^5，1 <= M <= 3*10^5，1 <= K <= 20，1 <= c_i, p_j <= 10^6
 // 任意两点间至多一条边。
 // P2629_2.cpp
+// 算法标签：并查集、Kruskal、动态规划
 #include <bits/stdc++.h>
 using namespace std;
 

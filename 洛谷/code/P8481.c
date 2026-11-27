@@ -3,6 +3,7 @@
 // mid=(l+r+w)/2，若 num[mid]-w < x 则 l=mid+!w 否则 r=mid-w）
 // 求每次询问在最好情况下循环次数 cnt 的最小值。
 // 数据范围：100% 数据满足 1 <= n <= 2^20，1 <= q <= 100，1 <= num_i <= 10^9。
+// 算法标签：数学、位运算
 #include <stdio.h>
 #include <stdint.h>
 #include <inttypes.h>

@@ -4,6 +4,7 @@
 // 输入 n, m, w, h、城市坐标及各弹跳装置参数；输出从 1 号城市到达 2..n 号城市的最小时间。
 // 数据范围：1 <= n <= 70000，1 <= m <= 150000，1 <= w, h <= n，1 <= t_i <= 10000。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、树套树
 using namespace std;
 const int MAXN = 7e4+5;
 const int MAXM = 150005;

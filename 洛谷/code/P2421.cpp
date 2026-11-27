@@ -4,6 +4,7 @@
 // 输出正整数 M。
 // 数据范围：1 <= N <= 15，1 <= C_i, P_i <= 100，0 <= L_i <= 10^6，保证有解且 M <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：扩展欧几里得、枚举
 using namespace std;
 
 int n;

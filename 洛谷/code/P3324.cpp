@@ -4,6 +4,7 @@
 // 输出一个实数，绝对误差不超过 10^-3 即可。
 // 数据范围：1 <= N, M <= 50，1 <= A_i <= 10^5，1 <= B_i <= 1000，保证有解。
 #include<bits/stdc++.h>
+// 算法标签：最大流、二分答案
 using namespace std;
 const int MAXN = 55;
 const int MAXV = 105;

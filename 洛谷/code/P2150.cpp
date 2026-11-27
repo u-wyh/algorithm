@@ -4,6 +4,7 @@
 // 求合法方案数，输出对 p 取模的结果。
 // 数据范围：2 <= n <= 500，0 < p <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：状态压缩动态规划、质因数分解、容斥原理
 using namespace std;
 #define int long long
 

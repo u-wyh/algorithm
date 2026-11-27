@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，n <= 30000，m <= 60000，2 <= K <= n，1 <= C_i <= 10000
 // 保证树上至少存在一条含 K 个点的路径。
 #include<bits/stdc++.h>
+// 算法标签：点分治、Dijkstra
 using namespace std;
 const int MAXN = 3e4+5;
 const int MAXM = 6e4+5;

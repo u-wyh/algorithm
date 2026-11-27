@@ -5,6 +5,7 @@
 // 输出 n 行，匹配成功输出 YES，否则输出 NO。
 // 数据范围：字符串长度不超过 100000，1 <= n <= 100，通配符个数不超过 10。
 #include <bits/stdc++.h>
+// 算法标签：字符串哈希、动态规划
 using namespace std;
 #define ULL unsigned long long
 const int maxn = 1e5+10;

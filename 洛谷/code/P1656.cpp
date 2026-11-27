@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1656
 // 题意：给一张连通无向图，找出删掉后会使图不连通的所有边。每条边先输出较小端点，再按两端编号升序输出各条边。
 // 数据范围：1 ≤ n ≤ 150，1 ≤ m ≤ 5000，图无重边。
+// 算法标签：Tarjan、割边
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -2,6 +2,7 @@
 // 题意：给定 n 点 m 边的无向带权图和其中 k 个主要城市，选择部分边翻修使这 k 个城市互相连通，求最小总成本。
 // 数据范围：2 <= k <= 5，n <= 10^5，1 <= m <= 2*10^5，1 <= c <= 10^9，n >= k。
 #include<bits/stdc++.h>
+// 算法标签：最小斯坦纳树、状态压缩动态规划、Dijkstra
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 2e5+5;

@@ -4,6 +4,7 @@
 // 输出最大总价值。
 // 数据范围：N <= 450，M <= 900，V_i <= 6000。
 #include<bits/stdc++.h>
+// 算法标签：枚举
 using namespace std;
 
 int u[910],v[910],val[460];

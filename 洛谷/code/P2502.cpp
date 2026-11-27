@@ -4,6 +4,7 @@
 // 输出最小比值（整数或既约分数），不可达输出 IMPOSSIBLE。
 // 数据范围：1 <= n <= 500，1 <= m <= 5*10^3，1 <= v < 3*10^4。
 #include<bits/stdc++.h>
+// 算法标签：并查集、枚举、排序
 using namespace std;
 const int MAXN = 505;
 

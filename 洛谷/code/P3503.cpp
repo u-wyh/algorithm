@@ -6,6 +6,7 @@
 #include <iostream>
 #include <cstdio>
 #include <algorithm>
+// 算法标签：前缀和、单调栈
 using namespace std;
 const int MAXN = 1e6 + 5;
 

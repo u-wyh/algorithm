@@ -8,6 +8,7 @@
 // 数据范围：1 <= n <= 10^5，1 <= m <= 3*10^5，1 <= a_i <= 10^9
 // 1 <= x, y <= n（op=3 时 1 <= y <= 10^9）。
 #include<bits/stdc++.h>
+// 算法标签：动态树(LCT)
 using namespace std;
 const int MAXN = 1e5+5;
 

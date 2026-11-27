@@ -6,6 +6,7 @@
 // 数据范围：
 // 2 <= N <= 300000
 // 1 <= u, v <= N
+// 算法标签：树形动态规划
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3e5+5;

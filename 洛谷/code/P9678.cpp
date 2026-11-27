@@ -5,6 +5,7 @@
 // 题意：第一行输入 n，后 n-1 行输入 (a_i, b_i, w_i)，再输入 q 及 q 行 (l, r)；输出 q 行整数。
 // 数据范围：1 <= n <= 2 * 10^5，1 <= a_i, b_i <= n，1 <= w_i <= 10^9，1 <= q <= 10^6
 // 1 <= l <= r <= n。
+// 算法标签：树上点分治、离线查询、线段树
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

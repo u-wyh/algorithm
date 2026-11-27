@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，3 <= N <= 3*10^5，0 <= B_i <= 2*10^6。
 #include<stdio.h>
 #include<stdlib.h>
+// 算法标签：排序、贪心
 
 int cmp(const void *a,const void *b)
 {

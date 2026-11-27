@@ -7,6 +7,7 @@
 // 数据范围：1 <= N <= 1000，1 <= M <= N * (N - 1) / 2。
 // 数据范围：1 <= A, B <= N，1 <= V <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：最短路、Dijkstra、优先队列
 using namespace std;
 const int MAXN = 1005;
 const int MAXM = 5e5+5;

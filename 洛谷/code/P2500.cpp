@@ -4,6 +4,7 @@
 // 对每次询问输出最小边权，不存在输出 No Found!。
 // 数据范围：n <= 10^5，m <= 5*10^5，q <= 10^5，任意两点间至多 3 条不相交路径，边权 <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：根号分治、multiset
 using namespace std;
 const int INF = 1e9+7;
 const int MAXN = 1e5+5;

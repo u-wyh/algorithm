@@ -3,6 +3,7 @@
 // 除起点外每个城市至多访问一次，输出最多途经城市数及路线（无解输出 No Solution!，SPJ）。
 // 数据范围：1 <= n < 100，1 <= v <= n(n-1)/2，城市名长度 <= 15。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、Dijkstra、深度优先搜索
 using namespace std;
 const int MAXN = 105;
 const int MAXM = MAXN*MAXN;

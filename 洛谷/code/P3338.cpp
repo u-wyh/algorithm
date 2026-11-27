@@ -1,10 +1,12 @@
 // https://www.luogu.com.cn/problem/P3338
 // 题意：输入正整数 n 和 n 个实数 q_1..q_n。
-// 定义 F_j = sum_{i=1..j-1} (q_i * q_j) / (i - j)^2 - sum_{i=j+1..n} (q_i * q_j) / (i - j)^2
+// 定义 F_j = sum_{i=1..j-1} (q_i * q_j) / (i - j)^2 - sum_{i=j+1..n} (q_i * q_j)
+// / (i - j)^2
 // 以及 E_i = F_i / q_i。
 // 输出 n 行，第 i 行输出实数 E_i（与标准答案相差不超过 10^-2 即可）。
 // 数据范围：1 <= n <= 10^5，0 < q_i < 10^9。
 #include<bits/stdc++.h>
+// 算法标签：FFT
 using namespace std;
 const int MAXN = 1e6+5;
 const int MAXT = 4e6+5;

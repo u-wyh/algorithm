@@ -5,6 +5,7 @@
 // 输出 q 行非负整数。
 // 数据范围：1 <= n <= 10^5，1 <= q <= 10^5，1 <= k <= n，1 <= w <= 10^4
 // 1 <= u, v, s, t <= n。
+// 算法标签：树链剖分、线段树、优先队列
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

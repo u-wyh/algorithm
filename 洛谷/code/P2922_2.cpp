@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= M, N <= 50000，1 <= b_i, c_j <= 10000
 // 且总位数 sum(b_i) + sum(c_j) <= 5*10^5。
 #include<bits/stdc++.h>
+// 算法标签：字典树
 using namespace std;
 const int MAXN = 5e4+5;
 const int MAXM = 5e5+5;

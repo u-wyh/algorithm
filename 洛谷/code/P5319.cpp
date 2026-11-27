@@ -3,6 +3,7 @@
 // 若修复串中咒语共出现 c 次（不同位置重复算），最终神力值为 (prod V_i)^(1/c)（c=0 时为 1），输出使神力值最大的任一修复串。
 // 数据范围：1 <= n, m, s <= 1501（s = sum |S_i|，所有 S_i 互不相同），1 <= V_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：AC自动机、分数规划、动态规划
 using namespace std;
 const double eps = 1e-8;
 const int INF = 1e9;

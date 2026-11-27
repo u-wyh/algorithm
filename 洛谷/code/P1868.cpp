@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1868
 // 题意：给定 N 个闭区间 [x,y]，选一些两两不重叠的区间。每个贡献 y−x+1，求最大总贡献。
 // 数据范围：1 ≤ N ≤ 1.5×10^5，0 ≤ x ≤ y ≤ 3×10^6。
+// 算法标签：动态规划、二分查找
 
 #include<bits/stdc++.h>
 using namespace std;

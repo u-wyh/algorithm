@@ -4,6 +4,7 @@
 // 若不存在合法方案输出 no solution，否则输出所选的 N-1 条边（格式同输入），有多解可任选其一。
 // 数据范围：1 <= N <= 2*10^4，1 <= M <= 10^5，0 <= K <= N-1，任意两村间至多一条路。
 #include<bits/stdc++.h>
+// 算法标签：Kruskal、并查集、贪心
 using namespace std;
 const int MAXN = 2e4+5;
 const int MAXM = 1e5+5;

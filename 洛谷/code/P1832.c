@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1832
 // 题意：给定正整数 n，求把它拆成若干素数之和的方案数。素数可以重复，交换加数顺序视为同一方案。
 // 数据范围：1 ≤ n ≤ 1000。
+// 算法标签：完全背包、素数判定
 
 #include<stdio.h>
 #include<math.h>

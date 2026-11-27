@@ -4,6 +4,7 @@
 // 数据范围：1 <= n <= 5*10^5，0 <= x, y <= 10^5。
 #include<stdio.h>
 #include<stdlib.h>
+// 算法标签：排序、贪心
 
 typedef struct
 {

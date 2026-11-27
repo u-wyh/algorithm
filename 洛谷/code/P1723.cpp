@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1723
 // 题意：给定 n 个字符串，逐个求最长回文子串的长度，子串中的字符必须连续。
 // 数据范围：1 ≤ n ≤ 10，每个字符串长度在 [1,10^7]。
+// 算法标签：Manacher
 
 #include<bits/stdc++.h>
 using namespace std;

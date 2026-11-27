@@ -4,6 +4,7 @@
 // 若不存在输出 NIE；否则输出左上角和右下角坐标 x1 y1 x2 y2（任一合法解）。
 // 数据范围：1 <= k <= 10^9，1 <= n <= 2000，每格价格为不超过 2*10^9 的非负整数。
 #include<bits/stdc++.h>
+// 算法标签：单调栈、二维前缀和、贪心
 using namespace std;
 #define int long long
 const int MAXN = 2e3+5;

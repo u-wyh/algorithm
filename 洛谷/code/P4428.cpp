@@ -5,6 +5,7 @@
 #include <iostream>
 #include <cstdio>
 #include <cstring>
+// 算法标签：线段树
 using namespace std;
 
 typedef long long LL;

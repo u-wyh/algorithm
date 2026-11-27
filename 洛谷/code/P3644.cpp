@@ -10,6 +10,7 @@
 #include <queue>
 #include <vector>
 #include <cmath>
+// 算法标签：对顶堆、贪心、排序
 using namespace std;
 
 const int MAXN = 200000; // 最大居民数量

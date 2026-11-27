@@ -4,6 +4,7 @@
 // 数据范围：测试点 10 中 m = 300010（各测试点 m 最大为 300010），a_i, b_i <= 10^12。
 #include<stdio.h>
 #include<stdlib.h>
+// 算法标签：贪心、排序
 
 int cmp(const void *a,const void *b)
 {

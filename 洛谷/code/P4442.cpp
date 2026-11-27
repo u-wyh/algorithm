@@ -4,6 +4,7 @@
 // 求最少时间（不可达输出 nemoguce）。
 // 数据范围：4 <= N, M <= 500。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、图论建模
 using namespace std;
 const int MAXN = 505;
 const int MAXM = 300000;

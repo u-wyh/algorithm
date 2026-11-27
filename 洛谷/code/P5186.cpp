@@ -4,6 +4,7 @@
 // 数据范围：1 <= N <= 10^6，1 <= X <= 10^5，1 <= h_i <= 10^6。
 #include<bits/stdc++.h>
 #define int long long
+// 算法标签：单调队列、贪心
 using namespace std;
 
 const int N=1e6+5;

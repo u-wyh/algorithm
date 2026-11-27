@@ -4,6 +4,7 @@
 // 规则：从 S 中取一个前缀和后缀顺次拼接，使新串为回文串。
 // 输出：输出一行一个整数，表示能拼出的最长回文串长度。
 // 数据范围：1 <= |S| <= 10^5，S 仅含小写英文字母。
+// 算法标签：Manacher
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

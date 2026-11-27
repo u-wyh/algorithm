@@ -4,6 +4,7 @@
 // 求所有奶牛对产生的音量总和。
 // 数据范围：1 <= n <= 2*10^4，1 <= v_i, x_i <= 2*10^4。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、排序
 using namespace std;
 const int MAXN =20005;
 #define int long long

@@ -3,6 +3,7 @@
 // 求 X, Y, Z 三人聚到其中一人位置所需的最小总费用（费用相同时优先选 X，其次 Y）。
 // 数据范围：1 <= N, M <= 150，0 <= B_{i,j} <= 10^9，0 <= A_{i,j} <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、并查集
 using namespace std;
 const int MAXN = 155;
 const int INF = 1e9;

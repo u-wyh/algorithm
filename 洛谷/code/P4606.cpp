@@ -4,6 +4,7 @@
 // 数据范围：1 <= T <= 10，2 <= n <= 10^5，n - 1 <= m <= 2*10^5，1 <= q <= 10^5
 // 每组数据 sum |S| <= 2*10^5。
 #include<bits/stdc++.h>
+// 算法标签：圆方树、虚树、最近公共祖先、倍增
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 2e5+5;

@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P8637
 // 题意：输入正整数 N 和 1~N 的一个排列，每次可交换任意两个位置的元素，输出将其排为 1, 2, ..., N 所需的最少交换次数。
 // 数据范围：N < 10000（正整数）。
+// 算法标签：并查集
 #include<stdio.h>
 #include<stdbool.h>
 #include<stdlib.h>

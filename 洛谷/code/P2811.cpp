@@ -4,6 +4,7 @@
 // 一行输出最小困难和与方案总数。
 // 数据范围：1 <= n <= 10^4，1 <= m <= 5*10^4，保证答案在 int 范围内。
 #include<bits/stdc++.h>
+// 算法标签：Tarjan、强连通分量
 using namespace std;
 const int MAXN = 1e4+5;
 const int MAXM = 5e4+5;

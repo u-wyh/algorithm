@@ -3,6 +3,7 @@
 // 判胜负并求总步数（无必胜输出 DRAW）。
 // 数据范围：2 <= n <= 20。
 #include<bits/stdc++.h>
+// 算法标签：记忆化搜索、博弈论
 using namespace std;
 const int INF = 1e9;
 

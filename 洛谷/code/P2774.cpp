@@ -4,6 +4,7 @@
 // 输出能取出的数的最大总和。
 // 数据范围：1 <= n, m <= 100，1 <= a_{i,j} <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：最小割、最大流、二分图
 using namespace std;
 const int MAXN = 105;
 const int MAXV = MAXN*MAXN;

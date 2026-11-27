@@ -7,6 +7,7 @@
 #include <cstring>
 #define Min(x , y) ((x) < (y) ? (x) : (y))
 #define Max(x , y) ((x) > (y) ? (x) : (y))
+// 算法标签：动态规划、单调队列
 
 int n , m , ap , bp , as , bs , w , ans = 0 , f[2001][2001] , l , r , q[2001];
 // f[i][j] 表示第 i 天后拥有 j 张股票赚的最多钱数

@@ -4,6 +4,7 @@
 // 输出两个整数：最多可消除的数对数，以及在消除对数最多的前提下能得到的最大总分。
 // 数据范围：1 <= a, b <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、SPFA、Dijkstra
 using namespace std;
 const int MAXN = 1005;
 const int MAXV = 2*MAXN;

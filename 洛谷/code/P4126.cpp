@@ -4,6 +4,7 @@
 // 输出 M 行，每行两个用空格隔开的 0/1 整数分别回答问题一和问题二。
 // 数据范围：N <= 4000，M <= 60000，1 <= c <= 100000。
 #include<bits/stdc++.h>
+// 算法标签：最小割、Dinic、强连通分量
 using namespace std;
 #define int long long
 const int MAXN = 4e3+5;

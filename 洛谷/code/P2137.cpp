@@ -6,6 +6,7 @@
 // 输入的 u 和 x 需异或上次询问答案 last（初始为 0），输出每次 0 操作的答案。
 // 数据范围：1 <= n, m <= 30000，1 <= u <= n，0 <= w_i, x < 2^31。
 #include<bits/stdc++.h>
+// 算法标签：块状链表、DFS序、二分查找
 using namespace std;
 const int MAXN = 3e4+5;
 const int MAXB = 405;

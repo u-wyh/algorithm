@@ -3,6 +3,7 @@
 // 以及 n 组窃听到的公钥 A = g^a mod P 和 B = g^b mod P，求每组对应的共享密钥 K = g^{ab} mod P。
 // 数据范围：2 <= A, B < P < 2^{31}，2 <= g < 20，1 <= n <= 20。
 #include<bits/stdc++.h>
+// 算法标签：BSGS、快速幂
 using namespace std;
 #define int long long
 

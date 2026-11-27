@@ -4,6 +4,7 @@
 // 3) 查询与 x 距离为 1 的所有点权值的异或和。
 // 数据范围：1 <= n, m <= 5 * 10^5，0 <= a_i <= 10^5，1 <= x <= n，opt in {1, 2, 3}
 // 任意时刻各点权值非负。
+// 算法标签：01字典树、线段树、DFS序
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

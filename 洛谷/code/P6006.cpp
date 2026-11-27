@@ -2,6 +2,7 @@
 // 题意：给定长为 N 的整数数组 A 及 Q 次区间询问 [a_i, b_i]
 // 每次询问子数组 A[a_i..b_i] 中满足 A_i + A_j + A_k = 0 的无序不同下标三元组 (i, j, k) 的数量。
 // 数据范围：1 <= N <= 5000，1 <= Q <= 10^5，-10^6 <= A_i <= 10^6，1 <= a_i <= b_i <= N。
+// 算法标签：区间动态规划、容斥原理、桶计数
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5005;

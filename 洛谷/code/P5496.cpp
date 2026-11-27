@@ -8,6 +8,7 @@
 // 在fail树中  每个节点所代表的回文串的长度是其父亲节点的长度加2
 // fail指针指向最长的子回文后缀
 #include<bits/stdc++.h>
+// 算法标签：回文自动机
 using namespace std;
 const int MAXN = 5e5+5;
 

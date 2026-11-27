@@ -2,6 +2,7 @@
 // 题意：维护长为 n 的数组，支持区间加 c 后对 p 取模，以及查询区间 [l, r] 内满足 a[i] > a[i+1] 的相邻对数。
 // 数据范围：1 <= n <= 10^5，1 <= m <= 2*10^5，0 <= c <= 10^8，p <= 10^6，0 <= a_i < p。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、差分
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

@@ -7,6 +7,7 @@
 // 题意：第一行输入 T，每组输入 n 及 n 行 (v_i, w_i)；每组输出一行一个整数。
 // 数据范围：1 <= n <= 10^5，sum(n) <= 10^5，1 <= v_i, w_i <= 10^9（未显式写 T 的上界
 // 受 sum(n) <= 10^5 限制）。
+// 算法标签：二分答案、贪心
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>

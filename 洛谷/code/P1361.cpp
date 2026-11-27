@@ -4,6 +4,7 @@
 // 全放 B 则加 c2。
 // 求基本收益加组合收益的最大总和。
 // 数据范围：1 ≤ k[i]<n ≤ 1000，1 ≤ m ≤ 1000，所有收益在 [0,1000]。
+// 算法标签：最小割、Dinic
 
 #include<bits/stdc++.h>
 using namespace std;

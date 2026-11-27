@@ -9,6 +9,7 @@
 // 0 <= x、y <= 10^9
 // 测试链接 : https://www.luogu.com.cn/problem/P1429
 #include<bits/stdc++.h>
+// 算法标签：K-D Tree、计算几何、剪枝
 using namespace std;
 #define int long long
 const int MAXN = 2e5+5;

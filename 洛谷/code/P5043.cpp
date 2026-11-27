@@ -2,6 +2,7 @@
 // 题意：给定 M 棵各有 N 个节点的无根树，按无根树同构划分等价类，对每棵树输出与其同构的所有树中编号最小的树的编号。
 // 数据范围：1 <= N, M <= 50。
 #include<bits/stdc++.h>
+// 算法标签：树哈希、换根动态规划、线性筛
 using namespace std;
 #define int long long
 const int MOD = 1e9+7;

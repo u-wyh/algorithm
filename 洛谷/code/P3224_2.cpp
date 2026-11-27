@@ -5,6 +5,7 @@
 // 对每个 'Q' 操作输出一行答案岛屿编号。
 // 数据范围：1 <= m <= n <= 10^5，1 <= q <= 3*10^5，p 为 1..n 的排列。
 #include<bits/stdc++.h>
+// 算法标签：线段树合并、并查集
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXT = MAXN*40;

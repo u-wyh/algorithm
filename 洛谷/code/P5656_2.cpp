@@ -4,6 +4,7 @@
 // 有正整数解输出解数、x 最小值、y 最小值、x 最大值、y 最大值）。
 // 输入 T 及各组 a, b, c；对应输出 T 行答案。
 // 数据范围：1 <= T <= 2*10^5，1 <= a, b, c <= 10^9。
+// 算法标签：扩展欧几里得、数论
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -2,6 +2,7 @@
 // 题意：给 n 点 m 边的有向图及点权 k_i，求一条可重复经过点（点权只算一次）的路径，最大化权值和并在和最大时最大化路径上的单点最大权值。
 // 数据范围：0 < n <= 2*10^5，0 < m <= 5*10^5，0 < k_i <= 200。
 #include<bits/stdc++.h>
+// 算法标签：Tarjan、强连通分量、动态规划
 using namespace std;
 const int MAXN = 2e5+5;
 const int MAXM = 5e5+5;

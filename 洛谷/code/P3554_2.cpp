@@ -4,6 +4,7 @@
 // 输出能让 A 必胜的最小 k。
 // 数据范围：1 <= n <= 3*10^5。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、树形动态规划
 using namespace std;
 const int MAXN = 3e5+5;
 

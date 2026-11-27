@@ -4,6 +4,7 @@
 // 输出最大的 D。
 // 数据范围：对于 100% 的数据，1 <= n <= 500，B 和 C 中每个数均为不超过 1000 的非负整数。
 #include<bits/stdc++.h>
+// 算法标签：最小割、Dinic
 using namespace std;
 const int MAXN = 505;
 const int MAXV = MAXN*MAXN;

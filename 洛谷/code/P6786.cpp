@@ -2,6 +2,7 @@
 // 题意：从长为 n 的序列 a 中选出若干个元素组成序列 b_1..b_k，使得每个 b_i 要么是 b 的最大值
 // 要么存在 b_j > b_i 满足 b_i + b_j + gcd(b_i, b_j) = lcm(b_i, b_j)，求选出元素之和的最大值。
 // 数据范围：1 <= n <= 3*10^5，1 <= a_i <= 10^9。
+// 算法标签：排序、贪心、映射
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long

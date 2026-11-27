@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= N <= 30000，1 <= D_i <= 3。
 #include<iostream>
 #include<cmath>
+// 算法标签：动态规划、最长上升子序列
 using namespace std;
 int n,s,a[30005],f[30005],f1[30005];
 int main(){

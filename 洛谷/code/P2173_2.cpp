@@ -4,6 +4,7 @@
 // 2 c u v：查询颜色 c 构成的子图中 u 到 v 路径上的最大点权（不连通输出 -1）。
 // 数据范围：n <= 10^4，m <= 10^5，C <= 10，k <= 10^5，无重边和自环。
 #include<bits/stdc++.h>
+// 算法标签：动态树(LCT)、平衡树
 using namespace std;
 const int MAXN = 1e5+5;
 

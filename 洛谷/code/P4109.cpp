@@ -4,6 +4,7 @@
 // 对每组数据输出一行，在 [L, R] 中找出荒谬度最低的价格（不唯一时输出最小的）。
 // 数据范围：T <= 100，1 <= L <= R <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：分块、枚举
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P7103
 // 题意：给定一棵以 1 为根（深度为 1）的 n 个节点的树，回答 m 次询问，每次求树中所有深度为 k 的节点的最近公共祖先（保证存在）。
 // 数据范围：1 <= n <= 5*10^6，1 <= m <= n。
+// 算法标签：最近公共祖先、Tarjan、并查集
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e6+5;

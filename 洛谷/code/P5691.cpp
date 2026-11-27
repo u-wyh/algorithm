@@ -3,6 +3,7 @@
 // 输入 n, m 及每项系数指数 (k_i, p_i)；输出整数解个数。
 // 数据范围：1 <= n <= 6，1 <= m <= 150，sum |k_i * m^{p_i}| < 2^31，p_i in N* 且 < 2^31
 // 答案 <= 2^31 - 1。
+// 算法标签：折半搜索、双指针、排序
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3500000;

@@ -4,6 +4,7 @@
 // 每组输出 1（是）或 0（否）。
 // 数据范围：房间编号在 [1, 10^5] 内。
 #include<bits/stdc++.h>
+// 算法标签：并查集
 using namespace std;
 const int MAXN = 1e5+5;
 

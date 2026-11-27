@@ -4,6 +4,7 @@
 // 输出这个最长的连续天数。
 // 数据范围：1 <= n <= 10^6，-10^9 <= x_i <= y_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：单调队列、贪心
 using namespace std;
 
 struct node{

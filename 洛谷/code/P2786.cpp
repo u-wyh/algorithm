@@ -7,6 +7,7 @@
 // 数据范围：对于 100% 的数据，1 <= N <= 10^5，1 <= M <= 3*10^4，1 <= P <= 10^9
 // 0 < B_i <= 10^5（测试点 6~7 标明 Lmax <= 50）。
 #include<bits/stdc++.h>
+// 算法标签：字符串、模拟、map
 using namespace std;
 
 int n,mod;

@@ -3,6 +3,7 @@
 // 求能覆盖所有点的最小椭圆半短轴长度（保留 3 位小数）。
 // 数据范围：n <= 50000，0 <= a < 180，1 <= p <= 100，|x|, |y| <= 2e8。
 #include<bits/stdc++.h>
+// 算法标签：最小圆覆盖、随机增量法、计算几何
 using namespace std;
 const int MAXN = 5e4+5;
 const double PI = acos(-1);

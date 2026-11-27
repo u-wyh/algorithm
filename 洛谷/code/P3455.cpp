@@ -4,6 +4,7 @@
 // 输出 n 行，每行一个整数表示对应询问的答案。
 // 数据范围：1 <= n <= 5*10^4，1 <= d <= a, b <= 5*10^4。
 #include<bits/stdc++.h>
+// 算法标签：莫比乌斯反演、线性筛、整除分块
 using namespace std;
 const int MAXN = 5e4+5;
 

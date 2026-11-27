@@ -5,6 +5,7 @@
 // 输入一行字符串 s。
 // 输出一行一个整数。
 // 数据范围：1 <= |s| <= 4*10^6，仅含 A, C, G, T。
+// 算法标签：Manacher、贪心
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 4e6+5;

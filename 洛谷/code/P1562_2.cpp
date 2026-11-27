@@ -5,6 +5,7 @@
 // 数据范围：
 // 0 < N <= 14（棋盘大小）
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、位运算、状态压缩
 
 #define xianzhi ~(now|ld|rd|sta[d])
 #define lowbit(pos)  pos&-pos

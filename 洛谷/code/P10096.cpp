@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10096
 // 题意：给边长为 k 的方形扫地机器人和 n 条移动命令，每条给方向和距离 a[i]。求移动全程中机器人覆盖区域的面积，同一块区域只算一次。
 // 数据范围：1 ≤ k ≤ 10^4，1 ≤ n ≤ 10^5，1 ≤ a[i] ≤ 10^9，方向为 N、E、W、S。
+// 算法标签：扫描线、线段树、离散化
 
 #include<bits/stdc++.h>
 using namespace std;

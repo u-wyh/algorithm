@@ -4,6 +4,7 @@
 // 输入 n, w 及序列 d；输出最少次数 m，以及每次被摧毁水晶的初始下标。
 // 数据范围：1 <= n <= 3*10^6，1 <= d_i <= 40000，w 的个数不超过 1.5*10^6。
 #include<bits/stdc++.h>
+// 算法标签：线段树、贪心
 using namespace std;
 const int MAXN = 3e6+5;
 

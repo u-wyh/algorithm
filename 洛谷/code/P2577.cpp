@@ -4,6 +4,7 @@
 // 输出最早时刻。
 // 数据范围：N, A_i, B_i 均为不超过 200 的正整数。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、贪心、排序
 using namespace std;
 
 struct node{

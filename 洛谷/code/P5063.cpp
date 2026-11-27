@@ -4,6 +4,7 @@
 // 或查询区间被 [l, r] 包含且权值 <= a 的线段树节点个数。
 // 数据范围：1 <= n, m <= 10^5，1 <= l <= r <= n，-10^5 <= a <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：分块、二分查找、线段树
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXG = 45;

@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
+// 算法标签：深度优先搜索、回溯、剪枝
 
 #define MAX_N 11
 

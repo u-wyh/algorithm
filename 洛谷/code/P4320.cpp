@@ -3,6 +3,7 @@
 // 求从 u 到 v 的所有可能路径中一定会经过的点数（含 u 和 v 自身，答案至少为 2）。
 // 数据范围：1 <= n, q <= 5e5，1 <= m <= min(n(n-1)/2, 1e6)。
 #include<bits/stdc++.h>
+// 算法标签：圆方树、点双连通分量、LCA
 using namespace std;
 const int MAXN = 5e5+5;
 const int MAXM = 1e6+5;

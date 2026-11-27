@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+// 算法标签：枚举、模拟
 
 // 定义max和min函数
 int max(int a, int b) {

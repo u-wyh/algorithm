@@ -4,6 +4,7 @@
 // 每组输出一行整数，答案模 998244353。
 // 数据范围：1 <= T <= 10，3 <= n <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：递推、组合数学
 using namespace std;
 #define int long long
 const int MOD = 998244353;

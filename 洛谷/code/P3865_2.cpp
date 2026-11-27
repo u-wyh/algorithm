@@ -7,6 +7,7 @@
 #include<cstdio>
 #include<cmath>
 #include<algorithm>
+// 算法标签：ST表
 using namespace std;
 int f[100001][40],a,x,LC,n,m,p,len,l,r;
 int main()

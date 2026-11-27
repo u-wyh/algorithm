@@ -1,6 +1,8 @@
 // https://www.luogu.com.cn/problem/P6594
-// 题意：n 个点点权 h_i 的树，关闭若干条边使 m 个老师路径 (x_i, y_i) 上经过的关闭边数之和 <= k，最小化各连通块内 h_i 极差的最大值。
+// 题意：n 个点点权 h_i 的树，关闭若干条边使 m 个老师路径 (x_i, y_i) 上经过的关闭边数之和 <= k
+// 最小化各连通块内 h_i 极差的最大值。
 // 数据范围：n <= 800，m <= 10^5，0 <= k <= 8*10^7，1 <= h_i <= 10^9，u_i != v_i。
+// 算法标签：二分答案、树形动态规划、树上差分
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 805;

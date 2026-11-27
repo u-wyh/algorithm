@@ -3,6 +3,7 @@
 // 当 T=0 时每点价值为 1，T=1 时点 i 价值为 i，求所有毒瘤集的价值之和的总和对 100,000,007 取模。
 // 数据范围：n <= 10^6，T ∈ {0, 1}。
 #include<bits/stdc++.h>
+// 算法标签：树形动态规划
 using namespace std;
 #define int long long
 const int MOD = 1e8+7;

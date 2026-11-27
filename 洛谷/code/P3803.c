@@ -5,6 +5,7 @@
 // 数据范围：对于 100% 的数据，0 <= n, m <= 10^6，输入系数均为 0 到 9 的整数。
 #include<stdio.h>
 #include<limits.h> // 用于定义INT_MAX
+// 算法标签：动态规划
 
 int n, k, x, dp[4009];
 

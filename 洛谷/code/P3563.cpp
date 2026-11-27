@@ -4,6 +4,7 @@
 // 输出一行两个整数，分别为最小和最大可达城镇对数。
 // 数据范围：1 <= n <= 250000，1 <= a, b <= n。
 #include<bits/stdc++.h>
+// 算法标签：树的重心、背包动态规划、二进制分组
 using namespace std;
 #define int long long
 const int MAXN = 250005;

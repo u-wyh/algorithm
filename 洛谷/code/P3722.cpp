@@ -6,6 +6,7 @@
 // 对每个询问输出一行，表示满足 a <= i < j <= b 的所有点对贡献之和。
 // 数据范围：1 <= n, m <= 200000，1 <= p_1, p_2 <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：单调栈、扫描线、树状数组
 using namespace std;
 #define int long long
 const int MAXN = 2e5+5;

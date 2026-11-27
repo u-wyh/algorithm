@@ -6,6 +6,7 @@
 // y 为非零整数）。
 //P4079
 #include<bits/stdc++.h>
+// 算法标签：带权并查集
 using namespace std;
 const double eps = 1e-10;
 const int MAXN = 10005;

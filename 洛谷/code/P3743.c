@@ -6,6 +6,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
+// 算法标签：二分答案、贪心
 
 bool check(double ans,double m,int n,double *a ,double *b){
     double p=ans*m;

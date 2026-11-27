@@ -3,6 +3,7 @@
 // 求所有 N(N-1)/2 对奶牛 (i, j) 的 max(v_i, v_j) * |x_i - x_j| 之和对 998244353 取模。
 // 数据范围：1 <= N <= 2*10^5，1 <= v_i, x_i <= 5*10^4。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、排序、离散化
 using namespace std;
 const int MAXN = 5e4+5;
 typedef long long ll;

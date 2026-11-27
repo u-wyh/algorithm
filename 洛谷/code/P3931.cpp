@@ -3,6 +3,7 @@
 // 删除若干条边使所有叶子节点都与根节点 root 不连通，求最小删除代价之和。
 // 数据范围：2 <= n <= 100000，边权 c 为不大于 10^6 的正整数。
 #include<bits/stdc++.h>
+// 算法标签：树形动态规划
 using namespace std;
 const int MAXN = 1e6+5;
 

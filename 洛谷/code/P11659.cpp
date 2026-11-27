@@ -6,6 +6,7 @@
 // 数据范围：
 // 1 <= n, m, a_i <= 2 * 10^5
 // 1 <= l <= r <= n
+// 算法标签：莫队、计数统计
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

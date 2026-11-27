@@ -4,6 +4,7 @@
 // 输出 u 行，第 i 行表示第 i 组先手是否必胜，必胜输出 TAK，否则输出 NIE。
 // 数据范围：1 <= u <= 10，1 <= n <= 1000，每组石子总数不超过 1000。
 #include<bits/stdc++.h>
+// 算法标签：博弈论、阶梯Nim、差分
 using namespace std;
 const int MAXN = 1e3+5;
 

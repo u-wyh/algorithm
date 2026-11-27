@@ -2,6 +2,7 @@
 // 题意：给定以 1 为根、n 个节点点权为 v_i 的树，定义 val(x) 为 x 子树内所有节点 c 的 (v_c + dist(c, x)) 的异或和
 // 求 sum_{i=1}^n val(i)。
 // 数据范围：1 <= n, v_i <= 525010，1 <= p_i <= n。
+// 算法标签：01字典树合并、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 525015;

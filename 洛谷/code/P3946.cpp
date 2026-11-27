@@ -4,6 +4,7 @@
 // 数据范围：n <= 100000，m <= 500000，1 <= s, t <= n，0 <= g, q <= 10^9
 // 0 <= w_i <= l_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：最短路、Dijkstra
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 1e6+5;

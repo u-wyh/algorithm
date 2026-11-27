@@ -4,6 +4,7 @@
 // 停留位置集合不同视为不同走法，输出总走法数对 10^9+7 取模的结果。
 // 数据范围：1 <= n, m, w <= 1000，1 <= r_1, r_2 <= n，1 <= c_1, c_2 <= m
 // 1 <= h_1, h_2 <= w。
+// 算法标签：组合数学、动态规划、容斥原理
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

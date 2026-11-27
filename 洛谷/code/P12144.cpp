@@ -5,6 +5,7 @@
 // 输出：输出一行通关概率，四舍五入保留 3 位小数。
 // 数据范围：1 <= n <= 10^5，1 <= x_i, y_i <= 10^4。
 // 数据范围：r_i < min(x_i, y_i)（样例 2 有越界，测试数据以范围为准）。
+// 算法标签：计算几何、排序
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

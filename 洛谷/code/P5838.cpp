@@ -3,6 +3,7 @@
 // 判断每条路径上是否出现过品种 C_i。
 // 输入 N, M、品种序列 T、树边及 M 个询问；输出长为 M 的 01 串。
 // 数据范围：1 <= N, M <= 10^5，1 <= T_i, C_i <= N。
+// 算法标签：深度优先搜索、离线处理
 #include<bits/stdc++.h>
 using namespace std;
 const int N = 1e5 + 10,M = N*2;

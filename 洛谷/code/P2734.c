@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+// 算法标签：区间动态规划、博弈论、前缀和
 
 #define LL unsigned long long
 

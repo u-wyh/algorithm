@@ -8,6 +8,7 @@
 #include <algorithm>
 #include <cstring>
 #include <stack>
+// 算法标签：Kruskal重构树、树上倍增、树状数组
 using namespace std;
 
 const int MAXN = 200000;

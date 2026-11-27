@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10480
 // 题意：给 N 个点、M 条边的有向无环图。按点的编号逐个输出，从该点出发能到达的不同点数，起点也计入。
 // 数据范围：1 ≤ N,M ≤ 30000，1 ≤ x,y ≤ N。
+// 算法标签：邻接表、模拟
 
 #include<bits/stdc++.h>
 using namespace std;

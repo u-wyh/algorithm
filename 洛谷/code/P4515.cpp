@@ -7,6 +7,7 @@
 // 数据范围：1 <= N <= 10
 // 数据范围：1 <= X, Y, R <= 10^6
 #include<bits/stdc++.h>
+// 算法标签：容斥原理、位运算
 using namespace std;
 #define int long long
 const int MAXN = 11;

@@ -4,6 +4,7 @@
 // 数据范围：1 <= n, p <= 2*10^3。
 #include<stdio.h>
 #define mod 1000000007
+// 算法标签：动态规划、数论
 
 int main()
 {

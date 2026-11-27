@@ -10,6 +10,7 @@
 // 1 <= l_{i1}, r_{i1}, l_{i2}, r_{i2} <= n
 // r_{i1} - l_{i1} = r_{i2} - l_{i2}
 #include<bits/stdc++.h>
+// 算法标签：并查集、ST表
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXH = 17;

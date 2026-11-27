@@ -9,6 +9,7 @@
 // 1 <= a_i, b_i, u_i, v_i <= n（a_i != b_i, u_i != v_i）
 // 1 <= l_i <= 10^9
 // 1 <= q <= 5 * 10^5
+// 算法标签：Kruskal、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e3+5;

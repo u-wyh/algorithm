@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1117
 // 题意：每组给字符串 S，统计有多少种选连续子串并拆成 AABB 的方案，其中 A、B 都非空且可以相等。子串位置不同或拆分点不同，都分别计数。
 // 数据范围：1 ≤ T ≤ 10，每个串长不超过 30000，只含小写英文字母。
+// 算法标签：后缀数组、ST表、差分
 
 #include<bits/stdc++.h>
 using namespace std;

@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1618
 // 题意：把 1 到 9 各用一次，拼成三个三位数，要求它们的比例是 A:B:C。按第一个三位数从小到大输出全部方案，无解输出 No!!!。
 // 数据范围：固定使用数字 1 到 9，比例由输入的三个整数给出。
+// 算法标签：枚举、模拟
 
 #include<stdio.h>
 #include<stdbool.h>

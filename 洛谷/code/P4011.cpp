@@ -7,6 +7,7 @@
 // 数据范围：N, M, P <= 10，K < 150，S <= 14，|X_{i1}-X_{i2}|+|Y_{i1}-Y_{i2}| = 1
 // 0 <= G_i <= P，1 <= Q_i <= P。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索、状态压缩
 using namespace std;
 
 int n,m,p,k,s;

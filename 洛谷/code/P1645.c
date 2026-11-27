@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1645
 // 题意：要选出一个由互异整数组成的序列。每条约束 (L,R,C) 要求其中至少有 C 个数在闭区间 [L,R] 内。求同时满足所有约束时最少要选多少个数。
 // 数据范围：1 ≤ N ≤ 1000，0 ≤ L ≤ R ≤ 1000，1 ≤ C ≤ R-L+1。
+// 算法标签：贪心、排序
 
 #include<stdio.h>
 #include<stdlib.h>

@@ -4,6 +4,7 @@
 // 输出所有居民和自己都完成安装的最早时刻。
 // 数据范围：2 <= n <= 5*10^5，1 <= c_i <= 10^9，1 <= a < b <= n。
 #include<bits/stdc++.h>
+// 算法标签：树形动态规划、深度优先搜索
 using namespace std;
 const int MAXN = 5e5+5;
 

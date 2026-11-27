@@ -6,6 +6,7 @@
 // 输出一个整数表示评级总和（总和可能超出 32 位整型）。
 // 数据范围：1 <= M, N <= 500，海拔范围 [0, 10^9]，1 <= T <= M*N。
 #include<bits/stdc++.h>
+// 算法标签：并查集、Kruskal
 using namespace std;
 #define int long long
 long long dx[3]={0, 1, 0}, dy[3]={0, 0, 1};

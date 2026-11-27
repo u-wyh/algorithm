@@ -5,6 +5,7 @@
 // 输出两行：第一行输出最大流整数，第二行输出最终总费用实数（建议四位以上小数）。
 // 数据范围：N <= 100，M <= 1000，1 <= 每条边最大流量 C <= 50000，1 <= P <= 10。
 #include<bits/stdc++.h>
+// 算法标签：最大流、二分答案
 using namespace std;
 const double eps = 1e-6;
 const int MAXN = 105;

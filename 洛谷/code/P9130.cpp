@@ -3,6 +3,7 @@
 // 初始无干草，处理 U 次更新：将第 d 天早晨到达的干草数设为 b。
 // 每次更新后输出 Bessie 有干草吃的「所有天数编号之和」，对 10^9+7 取模。
 // 数据范围：1 <= U <= 10^5，1 <= d_i <= 10^14，0 <= b_i <= 10^9。
+// 算法标签：线段树、离散化、二分查找
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long 

@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= C <= 2*10^5，1 <= P <= 10^5
 // 1 <= P1_i, P2_i, PB, PA_1, PA_2 <= P，所有边权 D_i 总和不超过 2*10^9。
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、最短路
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 4e5+5;

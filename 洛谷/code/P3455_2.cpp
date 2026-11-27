@@ -22,6 +22,7 @@
 // 时间复杂度： 预处理 O(N)
 // 单次询问约 O(sqrt(N))
 #include<bits/stdc++.h>
+// 算法标签：莫比乌斯反演、线性筛、整除分块
 using namespace std;
 #define int long long
 const int MAXN = 5e4+5;

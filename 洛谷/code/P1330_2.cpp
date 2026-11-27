@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1330
 // 题意：给无向图，选择一些点封锁。每条边至少有一个端点被选，同时相邻两点不能都被选。求最少选几个点，无解输出 Impossible。
 // 数据范围：1 ≤ n ≤ 10^4，1 ≤ m ≤ 10^5，保证无重边。
+// 算法标签：并查集、二分图
 
 #include<bits/stdc++.h>
 using namespace std;

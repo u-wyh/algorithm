@@ -6,6 +6,7 @@
 #include<cstdio>
 #include<algorithm>
 #define maxn 2005
+// 算法标签：二维前缀和、曼哈顿距离转切比雪夫距离
 using namespace std;
 int N,K,ans,mp[maxn][maxn],F[maxn][maxn];
 inline int read(){

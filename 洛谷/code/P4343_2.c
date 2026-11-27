@@ -5,6 +5,7 @@
 // 数据范围：1 <= l <= 1e5，-1e9 <= x_i <= 1e9，k > 0 且在 int 范围内。
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：二分答案、贪心
 
 #define MAX (100000 + 7)
 #define LL long long

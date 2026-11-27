@@ -4,6 +4,7 @@
 // 输出最多苹果数。
 // 数据范围：1 <= T <= 1000，1 <= W <= 30。
 #include<stdio.h>
+// 算法标签：动态规划
 
 int max(int a,int b){
     return a>b?a:b;

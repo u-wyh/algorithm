@@ -1,6 +1,9 @@
 // https://www.luogu.com.cn/problem/P1877
-// 题意：给定初始音量和 n 次调整量。每次必须选择加上或减去本次调整量，调整后的音量始终在 [0,maxLevel]。求最后一首歌的最大音量，无解输出 -1。
-// 数据范围：1 ≤ n ≤ 50，1 ≤ maxLevel ≤ 1000，0 ≤ beginLevel ≤ maxLevel，1 ≤ c_i ≤ maxLevel。
+// 题意：给定初始音量和 n 次调整量。每次必须选择加上或减去本次调整量，调整后的音量始终在 [0,maxLevel]。
+// 求最后一首歌的最大音量，无解输出 -1。
+// 数据范围：1 ≤ n ≤ 50，1 ≤ maxLevel ≤ 1000，0 ≤ beginLevel ≤ maxLevel
+// 1 ≤ c_i ≤ maxLevel。
+// 算法标签：动态规划
 
 #include<stdio.h>
 

@@ -5,6 +5,7 @@
 // 输出一个整数表示最大得分。
 // 数据范围：1 <= N <= 1000，0 <= x_i, p_i <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、双指针、排序
 using namespace std;
 const int MAXN = 1005;
 

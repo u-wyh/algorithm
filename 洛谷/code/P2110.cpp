@@ -3,6 +3,7 @@
 // 输出满足条件的整数个数。
 // 数据范围：1 <= L <= R <= 10^18。
 #include<bits/stdc++.h>
+// 算法标签：数学、前缀和
 using namespace std;
 
 long long l,r;

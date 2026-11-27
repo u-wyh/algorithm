@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= n <= 10^6，1 <= h_i <= 100。
 #include <stdio.h>
 #include <limits.h> // 用于INT_MAX
+// 算法标签：动态规划
 
 #define MAX_N 1000005
 

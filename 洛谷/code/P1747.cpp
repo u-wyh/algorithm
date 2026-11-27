@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1747
 // 题意：给定两匹马的起点，分别求到 (1,1) 的最少步数。每步可以走日字，也可以沿两个坐标方向各走两格，落点的横纵坐标都必须为正。
 // 数据范围：1 ≤ x_1,y_1,x_2,y_2 ≤ 20。
+// 算法标签：广度优先搜索
 
 #include<bits/stdc++.h>
 using namespace std;

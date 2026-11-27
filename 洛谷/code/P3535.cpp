@@ -8,6 +8,7 @@
 #include <cstring>
 #include <cstdio>
 #include <cmath>
+// 算法标签：并查集、贪心
 
 using namespace std;
 const int maxn = 5e6 + 10;

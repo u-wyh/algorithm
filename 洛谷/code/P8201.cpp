@@ -4,6 +4,7 @@
 // 输出 Yes 或 No（大小写不敏感）。
 // 数据范围：1 < n <= 5*10^5，1 <= m <= 5*10^5，0 <= w_i, k <= 10^7
 // 1 <= a, b <= n 且 a != b。
+// 算法标签：可持久化线段树、最近公共祖先、离散化
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，2 <= n <= 10^5，1 <= m <= 10^5。
 //P3038
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

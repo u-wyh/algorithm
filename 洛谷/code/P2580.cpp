@@ -3,6 +3,7 @@
 // 首次点到正确名字输出 OK，重复点到输出 REPEAT，错误名字输出 WRONG。
 // 数据范围：n <= 10^4，m <= 10^5，名字为长度 <= 50 的小写字母串。
 #include<bits/stdc++.h>
+// 算法标签：字典树
 using namespace std;
 const int MAXN = 1e4+5;
 const int MAXM = 1e5+5;

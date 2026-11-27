@@ -4,6 +4,7 @@
 // 支持 C 次单点修改 (R_j, L_j, T_j)，输出初始及每次修改后最大总小费。
 // 数据范围：1 <= N, C <= 2*10^5，0 <= L_i, L_j <= 10^5，1 <= T_i, T_j <= 10^5
 // 1 <= R_j <= N。
+// 算法标签：平衡树、贪心
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -5,6 +5,7 @@
 // Q 次询问从 S_k 到 T_k 的最少乘车次数，无法到达输出 -1。
 // 数据范围：100% 数据满足 2 <= N <= 10^5，1 <= K <= N-1，1 <= M <= 2*10^5，1 <= Q <= 5*10^4
 // 1 <= A_j, B_j, S_k, T_k <= N，A_j != B_j，S_k != T_k，线路和询问各自互不相同。
+// 算法标签：倍增、线段树、单调队列
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

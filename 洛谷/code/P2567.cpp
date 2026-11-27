@@ -4,6 +4,7 @@
 // 输出个数。
 // 数据范围：1 <= a <= b <= 10^10。
 #include<bits/stdc++.h>
+// 算法标签：容斥原理、深度优先搜索
 using namespace std;
 #define int long long
 const int MAXN = 1e4+5;

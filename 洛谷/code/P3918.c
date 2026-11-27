@@ -4,6 +4,7 @@
 // 数据范围：1 <= n <= 10^3，1 <= k <= 300，0 <= c_i <= 10^3。
 #include<stdio.h>
 #include<stdlib.h>
+// 算法标签：贪心、排序
 
 int cmp(const void *a,const void *b)
 {

@@ -5,6 +5,7 @@
 // 输出从路由器 1 到路由器 n 的最大网络吞吐量。
 // 数据范围：1 <= n <= 500，1 <= m <= 10^5，1 <= w, c_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：最大流、Dijkstra
 using namespace std;
 #define int long long
 const int MAXN = 505;

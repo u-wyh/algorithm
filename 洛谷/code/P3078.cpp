@@ -5,6 +5,7 @@
 // 输出一个整数表示最少顺子数。
 // 数据范围：1 <= N <= 10^5，0 <= a_i <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：贪心、差分
 using namespace std;
 
 int n;

@@ -4,6 +4,7 @@
 // 回答 q 次（可能在线强制，t in {0,1}）询问求两点的最大公共祖先编号。
 // 数据范围：1 <= n, q <= 2*10^5，t in {0, 1}，i(i-1)/2 < a_i <= i(i+1)/2
 // 节点编号在 [1, (n+1)(n+2)/2]。
+// 算法标签：可持久化线段树、树状数组、ST表
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

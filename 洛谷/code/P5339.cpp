@@ -3,6 +3,7 @@
 // 要求队列中不存在连续四个位置依次是喜欢唱、跳、rap、篮球的同学，求方案数对 998244353 取模。
 // 数据范围：n <= 1000，a, b, c, d <= 500，a+b+c+d >= n。
 #include<bits/stdc++.h>
+// 算法标签：容斥原理、NTT
 using namespace std;
 #define int long long
 const int MAXN = 1005;

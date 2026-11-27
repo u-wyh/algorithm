@@ -4,6 +4,7 @@
 // 输出一个整数，表示最多能被覆盖的车站数量。
 // 数据范围：2 <= n <= 1000000，0 <= l <= n，1 <= a_i, b_i <= n。
 #include<bits/stdc++.h>
+// 算法标签：拓扑排序、贪心
 using namespace std;
 const int MAXN = 1e6+5;
 

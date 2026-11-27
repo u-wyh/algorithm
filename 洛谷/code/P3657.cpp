@@ -4,6 +4,7 @@
 // 输出最多能画的人行道数量。
 // 数据范围：1 <= N <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、树状数组
 using namespace std;
 const int MAXN = 1e5+5;
 

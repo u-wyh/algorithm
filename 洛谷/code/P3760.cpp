@@ -4,6 +4,7 @@
 // 输出该异或结果。
 // 数据范围：1 <= n <= 10^5，sum(a_i) <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：位运算、树状数组、前缀和
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 1e6+5;

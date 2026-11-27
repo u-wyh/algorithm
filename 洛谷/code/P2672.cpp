@@ -7,6 +7,7 @@
 #include<cstdio>
 #include<cmath>
 #include<algorithm>
+// 算法标签：贪心、排序、前缀和
 using namespace std;
 
 int n,sum[100010],q[100010],h[100010];//n 疲劳前缀和 前i个最大值 后i个最大值

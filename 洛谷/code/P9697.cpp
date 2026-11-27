@@ -6,6 +6,7 @@
 // 每组第一行输出最大元素和，第二行输出执行顺序排列（任一合法最优解）。
 // 数据范围：2 <= n, m <= 5 * 10^5，1 <= l_i < r_i <= n，1 <= x_i, y_i <= 2
 // sum(n), sum(m) <= 5 * 10^5（未显式给出 T 上界，受 sum(n), sum(m) 限制）。
+// 算法标签：Tarjan强连通分量、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

@@ -4,6 +4,7 @@
 // 若 q = 1，输出叶结点平均深度的数学期望；若 q = 2，输出树深度的数学期望，均保留 6 位小数。
 // 数据范围：q in {1, 2}，2 <= n <= 100。
 #include<bits/stdc++.h>
+// 算法标签：概率动态规划、期望
 using namespace std;
 const int MAXN = 105;
 

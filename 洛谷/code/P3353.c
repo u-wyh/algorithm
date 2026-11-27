@@ -6,6 +6,7 @@
 // 除 W=0 外 W 均为 >=3 的奇数。
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：前缀和、滑动窗口
 
 #define MAX_N 1000005
 

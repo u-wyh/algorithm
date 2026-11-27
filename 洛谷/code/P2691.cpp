@@ -8,6 +8,7 @@
 #include <queue>
 #include <vector>
 #include <climits>
+// 算法标签：最大流、Dinic
 using namespace std;
 
 const int MAXN = 2500;      // 最大点数：2*35*35 + 2 = 2452

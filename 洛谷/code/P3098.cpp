@@ -8,6 +8,7 @@
 // 数据范围：2 <= M <= 10^5，M <= N <= 10^9，1 <= Q <= min(N, 5000)，1 <= P_i <= M
 // 1 <= q_i <= N。
 #include<bits/stdc++.h>
+// 算法标签：倍增、二分查找
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

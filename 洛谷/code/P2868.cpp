@@ -4,6 +4,7 @@
 // 输出最大比值（保留两位小数，不四舍五入），无解输出 0。
 // 数据范围：2 <= L <= 1000，2 <= P <= 5000，1 <= F_i, T_i <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：01分数规划、二分答案、SPFA
 using namespace std;
 const double sml = 1e-6;
 const int MAXN = 1005;

@@ -4,6 +4,7 @@
 // 记此时 B 作为连续子串在 A 中的出现次数为该方案权值。
 // 求所有 C(W, d) 种方案的权值和，对 10^9+7 取模。
 // 数据范围：1 <= T <= 5，1 <= n, m, W <= 10^6，1 <= d, A_i, B_j <= W。
+// 算法标签：KMP、双指针、组合数学
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

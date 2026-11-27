@@ -5,6 +5,7 @@
 // 数据范围：2 < n < 10，每个和值不超过 100000。
 // 数据范围：数据组数不超过 12。
 #include<bits/stdc++.h>
+// 算法标签：枚举、贪心、排序
 using namespace std;
 
 int n;

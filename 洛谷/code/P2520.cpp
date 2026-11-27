@@ -6,6 +6,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <algorithm>
+// 算法标签：数论、最大公约数
 using namespace std;
 
 typedef long long ll;

@@ -4,6 +4,7 @@
 // 并输出 a。
 // 数据范围：1 <= n <= 10000，1 <= x <= 10^18。
 #include<bits/stdc++.h>
+// 算法标签：试除法、质因数分解
 using namespace std;
 
 int main()

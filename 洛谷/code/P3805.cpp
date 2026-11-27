@@ -4,6 +4,7 @@
 // 输出一个整数表示答案。
 // 数据范围：1 <= n <= 1.1 * 10^7。
 #include<bits/stdc++.h>
+// 算法标签：Manacher
 using namespace std;
 const int MAXN = 11000005;
 

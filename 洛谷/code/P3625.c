@@ -5,6 +5,7 @@
 // 数据范围：K <= M, N <= 1500（保证至少存在 3 个互不相交的 K*K 正方形），每格储量为 [0, 500] 内整数。
 #include<stdio.h>
 #include<stdbool.h>
+// 算法标签：深度优先搜索
 
 #define MAX 105
 

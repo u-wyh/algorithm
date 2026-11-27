@@ -6,6 +6,7 @@
 // 输出 (sum_{i=1}^n i * A'_i) mod 2^64。
 // 数据范围：100% 数据满足 1 <= n <= 10^7，2 <= thres <= 10^9
 // 0 <= k_1, k_2 < 2^64（时限 0.5s）。
+// 算法标签：CDQ分治、树状数组、DFS序
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

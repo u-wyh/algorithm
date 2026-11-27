@@ -3,6 +3,7 @@
 // opt=1..4 分别对应两数差为 x、和为 x、乘积为 x、商为 x（整除无余数），可以输出 yuno，否则输出 yumi。
 // 数据范围：所有输入的数在 [0, 10^5] 内，序列元素在 [1, 10^5] 内。
 #include<bits/stdc++.h>
+// 算法标签：莫队、bitset、根号分治
 using namespace std;
 const int MAXN = 1e5+1;
 const int OFFSET = 1e5;

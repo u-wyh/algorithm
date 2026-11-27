@@ -1,8 +1,10 @@
 // https://www.luogu.com.cn/problem/P7415
 // 题意：二维方格 (x, y) (x, y >= 0) 处有奶牛当且仅当对所有整数 k >= 0
 // floor(x / 3^k) 与 floor(y / 3^k) 模 3 余数的奇偶性相同。
-// 回答 Q 次询问（按 d_i, x_i, y_i 顺序输入）：从 (x_i, y_i) 到 (x_i + d_i, y_i + d_i) 的对角线方格内有多少头奶牛。
+// 回答 Q 次询问（按 d_i, x_i, y_i 顺序输入）：从 (x_i, y_i) 到 (x_i + d_i, y_i + d_i)
+// 的对角线方格内有多少头奶牛。
 // 数据范围：1 <= Q <= 10^4，0 <= x_i, y_i, d_i <= 10^18。
+// 算法标签：数位动态规划、记忆化搜索
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

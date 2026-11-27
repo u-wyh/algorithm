@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10793
 // 题意：给 n 个整数格子区间 [l,r]，把它们分成若干非空组。每组所有区间共同覆盖的格子数必须至少为 w。求最少组数，无解输出 No。
 // 数据范围：1 ≤ T ≤ 20，1 ≤ n ≤ 2 × 10^5，0 ≤ w ≤ 10^6，1 ≤ l ≤ r ≤ 10^6。
+// 算法标签：贪心、区间调度
 
 #include<bits/stdc++.h>
 using namespace std;

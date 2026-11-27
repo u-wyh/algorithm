@@ -5,6 +5,7 @@
 // 数据范围：1 <= N <= 20000，1 <= H_i <= 10000，1 <= B <= S < 2*10^9+7。
 #include<stdio.h>
 #include<stdlib.h>
+// 算法标签：贪心、排序
 
 int cmp(const void *a,const void *b)
 {

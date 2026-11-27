@@ -4,6 +4,7 @@
 // 输出 n 行，第 i 行表示删去点 i 关联边后的不连通有序点对数量。
 // 数据范围：1 <= n <= 10^5，1 <= m <= 5*10^5，初始图连通且无重边。
 #include<bits/stdc++.h>
+// 算法标签：Tarjan、割点
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

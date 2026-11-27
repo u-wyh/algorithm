@@ -7,6 +7,7 @@
 // 1 <= n <= 15000
 // 1 <= k <= 5000
 // 1 <= w <= 10（边权）
+// 算法标签：点分树、线段树、最近公共祖先
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e4+5;

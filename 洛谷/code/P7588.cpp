@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P7588
 // 题意：T 组询问，每次求闭区间 [L, R] 内「本身是素数且各位数字之和也是素数」的整数个数。
 // 数据范围：1 <= T <= 100，1 <= L <= R <= 10^8。
+// 算法标签：线性筛、二分查找、位运算
 #include <stdio.h>
 #include <stdlib.h>
 #include <algorithm>

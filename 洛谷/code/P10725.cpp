@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10725
 // 题意：给一棵黑白染色的树。找一对颜色不同且相距最远的点，输出它们唯一路径上的边数。
 // 数据范围：2 ≤ n ≤ 10^5，颜色值为 0 或 1，保证两种颜色都出现。
+// 算法标签：深度优先搜索
 
 #include<bits/stdc++.h>
 using namespace std;

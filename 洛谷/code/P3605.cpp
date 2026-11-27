@@ -4,6 +4,7 @@
 // 输出 n 行，第 i 行表示第 i 头奶牛满足条件的下属数量。
 // 数据范围：1 <= n <= 10^5，1 <= p_i <= 10^9，且所有 p_i 互不相同。
 #include<bits/stdc++.h>
+// 算法标签：线段树合并、动态开点线段树、离散化
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXT = MAXN*40;

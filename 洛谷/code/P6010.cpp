@@ -10,6 +10,7 @@
 // 输出：若能到达，输出最简分数 a/b（a, b 为互质正整数）；若不可到达，输出 -1。
 // 数据范围：2 <= N <= 2 * 10^5
 // 数据范围：1 <= A_i <= 10^9
+// 算法标签：凸包、二分查找
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

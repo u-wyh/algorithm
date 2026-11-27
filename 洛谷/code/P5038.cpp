@@ -2,6 +2,7 @@
 // 题意：T 组游戏，每组给一个 N*M 棋盘初始正整数矩阵，每次可选两个相邻格子同时加 1，求使所有格子数值相等的最少操作次数，不可能则输出 -1。
 // 数据范围：T <= 10，1 <= N, M <= 40，初始所有数小于 10^9。
 #include<bits/stdc++.h>
+// 算法标签：网络流、Dinic、二分答案
 using namespace std;
 #define int long long
 const int MAXN = 45;

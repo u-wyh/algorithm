@@ -4,6 +4,7 @@
 // 每组输出 A B，无解输出 NO。
 // 数据范围：1 <= T <= 10，1 <= N, M <= 1000，编号 <= 10*(N+M)。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、剪枝
 using namespace std;
 #define MAX 1005
 

@@ -4,6 +4,7 @@
 // 求对敌方本体造成的最大伤害。
 // 数据范围：1 <= N, M <= 10^5。
 #include<stdio.h>
+// 算法标签：贪心、排序、双指针
 
 int cmp(const void *a,const void *b)
 {

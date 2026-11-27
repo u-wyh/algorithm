@@ -4,6 +4,7 @@
 // 输出该结果。
 // 数据范围：0 < b^2 <= d < (b+1)^2 <= 10^18，n <= 10^18，b ≡ 1 (mod 2)，d ≡ 1 (mod 4)。
 #include<bits/stdc++.h>
+// 算法标签：矩阵快速幂、龟速乘
 using namespace std;
 #define int long long
 const int MOD = 7528443412579576937;

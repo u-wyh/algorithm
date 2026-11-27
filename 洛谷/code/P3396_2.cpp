@@ -4,6 +4,7 @@
 // 对每个 A 操作输出一行求和结果。
 // 数据范围：1 <= n, m <= 150000，A 操作中 1 <= x < n，1 <= value_i <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：根号分治
 using namespace std;
 const int MAXN = 150005;
 const int MAXB = 405;

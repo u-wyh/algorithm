@@ -4,6 +4,7 @@
 // 规则：矩形含内部与边界，若线段有任何部分与之重叠则损坏屏幕。
 // 输出：每组若会损坏输出 STOP，否则输出 OK。
 // 数据范围：1 <= t <= 10^4，坐标绝对值 <= 10^4 的整数，面积与线长均 > 0。
+// 算法标签：计算几何、线段相交
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

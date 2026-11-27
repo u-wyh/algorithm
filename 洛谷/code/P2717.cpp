@@ -3,6 +3,7 @@
 // 输出满足条件的子序列个数。
 // 数据范围：1 <= n <= 10^5，1 <= a_i, k <= 10^4。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、前缀和、离散化
 using namespace std;
 const int MAXN = 1e5+5;
 

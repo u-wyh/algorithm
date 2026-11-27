@@ -1,7 +1,9 @@
 // https://www.luogu.com.cn/problem/P6086
-// 题意：实现 n 个点的无根树（以 n 为根的父亲序列 f[1..n-1]）与 Prüfer 序列 p[1..n-2] 的相互转换：m=1 由 f 求 p 的权值 xor_{i=1}^{n-2} (i * p_i)；
+// 题意：实现 n 个点的无根树（以 n 为根的父亲序列 f[1..n-1]）与 Prüfer 序列 p[1..n-2] 的相互转换：m=1 由 f 求 p
+// 的权值 xor_{i=1}^{n-2} (i * p_i)；
 // m=2 由 p 求 f 的权值 xor_{i=1}^{n-1} (i * f_i)。
 // 数据范围：2 <= n <= 5 * 10^6，m in {1, 2}。
+// 算法标签：Prufer序列
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e6+5;

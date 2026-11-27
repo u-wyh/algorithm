@@ -5,6 +5,7 @@
 // 题意：输入 N，后 N 行 L_i, R_i，再输入 Q 和 Q 行 X_j；输出 Q 行答案。
 // 数据范围：2 <= N <= 2 * 10^5，1 <= L_i <= i <= R_i <= N，1 <= Q <= N
 // 1 <= X_1 < X_2 < ... < X_Q <= N。
+// 算法标签：线段树优化建图、最短路
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

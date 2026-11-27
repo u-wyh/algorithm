@@ -1,6 +1,8 @@
 // https://www.luogu.com.cn/problem/P1251
-// 题意：给 N 天的餐巾需求 r[i]。新买一块花 p，脏餐巾可花 f 等 m 天快洗，或花 s 等 n 天慢洗。洗干净后可以再用，求满足每天需求的最小总花费。
+// 题意：给 N 天的餐巾需求 r[i]。新买一块花 p，脏餐巾可花 f 等 m 天快洗，或花 s 等 n 天慢洗。
+// 洗干净后可以再用，求满足每天需求的最小总花费。
 // 数据范围：1 ≤ N ≤ 2000，1 ≤ r[i] ≤ 10^7，1 ≤ p, f, s ≤ 10^4，m、n 是正整数。
+// 算法标签：最小费用最大流、Dijkstra、SPFA
 
 #include<bits/stdc++.h>
 using namespace std;

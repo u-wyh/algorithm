@@ -5,6 +5,7 @@
 // 数据范围：2 <= n <= 3*10^5，1 <= a_i <= n。
 //P3258
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树
 using namespace std;
 const int MAXN = 3e5+5;
 

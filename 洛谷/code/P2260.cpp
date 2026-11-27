@@ -3,6 +3,7 @@
 // 输出结果对 19940417 取模后的值。
 // 数据范围：1 <= n, m <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：整除分块、数论
 using namespace std;
 #define int long long
 const int MOD = 19940417;

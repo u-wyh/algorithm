@@ -4,6 +4,7 @@
 // 输出 s 中所有回文子串的最大存在值。
 // 数据范围：1 <= |s| <= 3*10^5，仅包含小写字母 a~z。
 #include<bits/stdc++.h>
+// 算法标签：回文自动机
 using namespace std;
 const int MAXN = 3e5+5;
 

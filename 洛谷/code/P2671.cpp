@@ -1,8 +1,10 @@
 // https://www.luogu.com.cn/problem/P2671
 // 题意：n 个格子各有数字 number_i 和颜色 color_i。
-// 求所有满足 x < y < z、y-x = z-y 且 color_x = color_z 的三元组 (x+z)*(number_x+number_z) 之和。
+// 求所有满足 x < y < z、y-x = z-y 且 color_x = color_z 的三元组 (x+z)*(number_x+number_z)
+// 之和。
 // 输出总和对 10007 取模的结果。
 // 数据范围：1 <= n, m <= 10^5，1 <= color_i <= m，1 <= number_i <= 10^5。
+// 算法标签：排序分组、奇偶分类
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

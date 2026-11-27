@@ -4,6 +4,7 @@
 // 输出最多能选出的英雄个数。
 // 数据范围：n <= 10^5，l, s, w, a <= 10^8，所有英雄的 l 互不相同。
 #include<bits/stdc++.h>
+// 算法标签：CDQ分治、树状数组、动态规划
 using namespace std;
 const int MAXN = 1e5+5;
 

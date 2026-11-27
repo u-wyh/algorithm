@@ -5,6 +5,7 @@
 #include <cstdio>
 #include <cstring>
 #include <algorithm>
+// 算法标签：深度优先搜索、线性筛、试除法
 
 using namespace std;
 

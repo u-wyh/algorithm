@@ -4,6 +4,7 @@
 // 求最后从 s 到各点的最小花费（不可达输出 -1）。
 // 数据范围：1 <= n <= 50000，1 <= m <= 10^6，1 <= u, v <= n，1 <= w <= 100。
 #include<bits/stdc++.h>
+// 算法标签：倍增优化建图、Dijkstra、并查集
 using namespace std;
 const int MAXN = 5e4+5;
 const int MAXM = 1e6+5;

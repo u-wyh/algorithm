@@ -5,6 +5,7 @@
 // 数据范围：1 <= n, m <= 2 * 10^4，1 <= K <= 500。
 #include <stdio.h>
 #include <string.h>
+// 算法标签：枚举、模拟
 
 #define MAXN 501
 #define MAXK 20001

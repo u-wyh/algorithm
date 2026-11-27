@@ -5,6 +5,7 @@
 // 输出一个整数表示四个区域最大牛数的最小值。
 // 数据范围：1 <= N <= 1000，1 <= x_i, y_i <= 10^6（正奇数）。
 #include<bits/stdc++.h>
+// 算法标签：离散化、二维前缀和、枚举
 using namespace std;
 #define MAXN 100005
 #define LL long long

@@ -5,6 +5,7 @@
 // 数据范围：1 <= n <= 10^6，a, b 仅含大写字母。
 //P3531
 #include <bits/stdc++.h>
+// 算法标签：树状数组、逆序对、贪心
 using namespace std;
 const int MAXN = 1e6+5;
 

@@ -3,6 +3,7 @@
 // 给出 m 组询问 (a_i, b_i)，求编号为 a_i 和 b_i 的两对兔子的最近公共祖先编号。
 // 数据范围：测试点 10 中 m = 300010（各测试点 m 最大为 300010），a_i, b_i <= 10^12。
 #include<bits/stdc++.h>
+// 算法标签：LCA、二分查找、斐波那契数列
 using namespace std;
 long long n, a, b;
 long long f[100];

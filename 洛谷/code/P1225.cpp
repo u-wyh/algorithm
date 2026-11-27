@@ -5,6 +5,7 @@
 // 输出：第一行输出最少步数 n，接下来 n 行每行 4 个数字 abcd 表示交换 (a, b) 与 (c, d)。
 // 数据范围：棋盘固定为 4 * 4（8 白 8 黑，无额外变量范围）。
 #include<bits/stdc++.h>
+// 算法标签：双向BFS、状态压缩
 using namespace std;
 const int MAXN = 1<<16;
 

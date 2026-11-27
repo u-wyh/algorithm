@@ -4,6 +4,7 @@
 // 输出能构成的格点三角形总数量。
 // 数据范围：1 <= N, M <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：组合数学、最大公约数
 using namespace std;
 #define int long long
 

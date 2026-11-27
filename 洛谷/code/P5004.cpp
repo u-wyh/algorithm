@@ -3,6 +3,7 @@
 // 求经过格子集合不同的合法方案数模 10^9 + 7。
 // 数据范围：1 <= N <= 10^18，M <= 15（测试点中 M 为 1, 2, 3, 5, 10, 15）。
 #include<bits/stdc++.h>
+// 算法标签：矩阵快速幂、动态规划
 using namespace std;
 #define int long long
 const int MOD = 1e9+7;

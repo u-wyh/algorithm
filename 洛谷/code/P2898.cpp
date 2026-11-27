@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= q <= 25000，1 <= n <= 10^6，1 <= l_i <= r_i <= n
 // 1 <= x_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、并查集、排序
 using namespace std;
 const int MAXN = 1e6+5;
 const int MAXM = 3e4+5;

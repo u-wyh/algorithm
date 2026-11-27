@@ -4,6 +4,7 @@
 // 输出最少需要修改点权的节点个数。
 // 数据范围：N < 500000，A_j < 10^8。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、排序、数学
 using namespace std;
 const int MAXN = 5e5+5;
 const double eps = 1e-8;

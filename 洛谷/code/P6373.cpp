@@ -1,7 +1,9 @@
 // https://www.luogu.com.cn/problem/P6373
 // 题意：给定长度为 n、只含 I 和 O 的字符串 S，支持 m 次操作：1 x c 将第 x 个字符改为 c（I 或 O）；
-// 2 l r 询问区间 [l, r] 内满足 S_i='I', S_j='O', S_k='I' 且 l <= i < j < k <= r 的三元组 (i, j, k) 个数。
+// 2 l r 询问区间 [l, r] 内满足 S_i='I', S_j='O'
+// S_k='I' 且 l <= i < j < k <= r 的三元组 (i, j, k) 个数。
 // 数据范围：1 <= n, m <= 5*10^5，1 <= l <= r <= n。
+// 算法标签：线段树
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

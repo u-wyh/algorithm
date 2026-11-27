@@ -5,6 +5,7 @@
 // 数据范围：1 <= N <= 20，1 <= C, V <= 10^8，1 <= B <= 10^6。
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：贪心、排序
 
 typedef struct {
     int a;

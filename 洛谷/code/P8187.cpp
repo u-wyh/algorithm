@@ -3,6 +3,7 @@
 // 对每个 K = 1..N，求从这 N 条指令中选出 K 条使其和恰好为 (x_g, y_g) 的方案数。
 // 数据范围：1 <= N <= 40，-10^9 <= x_g, y_g, x_i, y_i <= 10^9
 // 保证 (x_g, y_g) != (0,0) 且对所有 i 有 (x_i, y_i) != (0,0)。
+// 算法标签：折半搜索、深度优先搜索
 #include <iostream>
 #include <vector>
 #include <map>

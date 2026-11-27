@@ -4,6 +4,7 @@
 // 输出一个整数，表示最少需要多少张矩形海报。
 // 数据范围：1 <= n <= 2.5*10^5，1 <= d_i, w_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：单调栈
 using namespace std;
 int n,ans,y,r;
 int st[250005],nums[250005];

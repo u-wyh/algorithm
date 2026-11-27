@@ -6,6 +6,7 @@
 //P2860
 //其实就是边双
 #include<bits/stdc++.h>
+// 算法标签：Tarjan、边双连通分量、缩点
 using namespace std;
 const int MAXN = 5005;
 const int MAXM = 20010;

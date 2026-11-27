@@ -4,6 +4,7 @@
 // 按升序输出所有能使最终成绩达到最大值的 K，每行一个。
 // 数据范围：3 <= N <= 100000，每题得分在 [0, 10000] 内（1 <= K <= N-2）。
 #include<bits/stdc++.h>
+// 算法标签：前缀和、枚举
 using namespace std;
 const int MAXN = 100005;
 

@@ -4,6 +4,7 @@
 // 输出最短路长度，无解输出 -1。
 // 数据范围：0 < n <= 10^4，0 < m <= 2*10^5，x, s != t。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索、最短路
 using namespace std;
 const int MAXN = 1e4+5;
 const int MAXM = 2e5+5;

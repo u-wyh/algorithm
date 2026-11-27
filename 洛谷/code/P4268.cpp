@@ -3,6 +3,7 @@
 // 从选定的某个目录出发，用相对路径（父目录记为 ..）访问所有文件，求到所有文件的相对路径总长度的最小值。
 // 数据范围：2 <= N <= 1e5，名称长度 <= 16 且仅含小写字母和数字。
 #include<bits/stdc++.h>
+// 算法标签：换根动态规划
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

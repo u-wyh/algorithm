@@ -4,6 +4,7 @@
 // 求访问完所有点的最小总耗时。
 // 数据范围：N <= 800，M <= 1.5*10^4，权值在 [1, 10^6]，无重边自环。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、Dijkstra、SPFA
 using namespace std;
 const int MAXN = 805;
 const int MAXM = 15005;

@@ -3,6 +3,7 @@
 // 数据范围：1 <= N, M <= 10^5，初始 a_i 在 [1, N]，1 <= c <= N，0 <= h <= 10^9
 // 1 <= min <= max <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：FHQ-Treap、平衡树
 using namespace std;
 const int MAXN = 1e5+5;
 

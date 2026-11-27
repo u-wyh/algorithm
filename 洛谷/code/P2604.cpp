@@ -4,6 +4,7 @@
 // 一行输出两个整数。
 // 数据范围：1 <= n <= 10^3，1 <= m <= 5*10^3，1 <= k <= 10，1 <= c, w <= 100。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、Dijkstra、SPFA
 using namespace std;
 const int MAXN = 1e3+5;
 const int MAXM = 5e3+5;

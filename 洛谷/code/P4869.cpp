@@ -3,6 +3,7 @@
 // 求给定数 Q 在 B 中第一次出现时的下标模 10086。
 // 数据范围：1 <= N <= 10^5，其余输入数均不超过 10^9，保证 Q 在 B 中出现。
 #include<bits/stdc++.h>
+// 算法标签：线性基、高斯消元、位运算
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

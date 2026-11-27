@@ -4,6 +4,7 @@
 // 规则：若简单路径上 (min a) * (sum b) >= V，则称其为好路径。
 // 输出：输出所有好路径中路径 sum b 的最小值（保证有解）。
 // 数据范围：1 <= n <= 2*10^5，1 <= V <= 10^18，1 <= a_i, b_i <= 10^9。
+// 算法标签：点分治、树状数组、离线查询
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

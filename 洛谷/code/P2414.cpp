@@ -17,6 +17,7 @@
 // 利用树状数组可以快速查询
 // 于是 我们重新走建立AC自动机的过程  在这个过程中统计答案
 #include<bits/stdc++.h>
+// 算法标签：AC自动机、DFS序、树状数组
 using namespace std;
 const int MAXN = 1e5+5;
 

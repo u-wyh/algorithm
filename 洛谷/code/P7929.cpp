@@ -4,6 +4,7 @@
 // 第一行输入 n，接下来 n 行每行 u_i, v_i 表示无向边。
 // 输出一行一个整数。
 // 数据范围：3 <= n <= 10^5，1 <= u_i, v_i <= n。
+// 算法标签：基环树、树形动态规划、动态规划
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

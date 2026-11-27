@@ -5,6 +5,7 @@
 // 对每组数据输出一行答案。
 // 数据范围：对于 100% 的数据，1 <= T, sum(n) <= 3 * 10^5，1 <= A_i <= n。
 #include<bits/stdc++.h>
+// 算法标签：异或哈希、前缀和、离散化
 using namespace std;
 #define int long long
 const int MAXN = 3e5+5;

@@ -4,6 +4,7 @@
 // 求先手必胜的第一步 A B（将 A 位置和尚移到 B），多解输出 A 最小者，无解输出 -1。
 // 数据范围：N < 100，台阶总数 < 1000。
 // https://www.luogu.com.cn/problem/P8606
+// 算法标签：博弈论、尼姆博弈、枚举
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 105;

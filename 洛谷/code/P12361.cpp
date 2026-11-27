@@ -7,6 +7,7 @@
 // 输出：输出 Q 行，表示每天选最优终点 k 最多能在几个市场卖出糖果。
 // 数据范围：1 <= N, Q <= 5*10^5，1 <= u_j <= N，p_i < i。
 // 数据范围：0 <= t_i <= 10^9，1 <= x_j <= 10^9。
+// 算法标签：线段树、DFS序
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

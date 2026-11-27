@@ -5,6 +5,7 @@
 // A X Y 询问区间从开始到现在达到过的历史最大值。
 // 数据范围：1 <= T, E <= 1e5，1 <= X <= Y <= T，-2^31 <= Z < 2^31，必要运算在 32 位有符号整数范围内。
 #include<bits/stdc++.h>
+// 算法标签：线段树、历史最值
 using namespace std;
 const int MAXN = 1e5+5;
 

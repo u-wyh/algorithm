@@ -3,6 +3,7 @@
 // 输入 n 及每只崩坏兽的五个属性；输出最大收益和（保证在 64 位有符号整数范围内）。
 // 数据范围：1 <= n <= 50000，-10^9 <= H_i, E_i, A_i, D_i, C_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：CDQ分治、树状数组、动态规划
 using namespace std;
 const int MAXN = 1e5+5;
 const long long INF = 1e18+1;

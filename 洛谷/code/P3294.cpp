@@ -9,6 +9,7 @@
 // 1 <= n <= 100000
 // 1 <= sum |S| <= 510000（所有单词长度总和）
 #include<bits/stdc++.h>
+// 算法标签：Trie树、贪心
 using namespace std;
 const int MAXM = 510005;
 const int MAXN = 1e5+5;

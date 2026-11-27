@@ -3,6 +3,7 @@
 // 有 Q 次询问，每次给 k_i 和 v_i，求树上有多少个其他点与 v_i 的相关度大于等于 k_i。
 // 数据范围：1 <= N, Q <= 1e5，1 <= r_i, k_i <= 1e9，1 <= p_i, q_i, v_i <= N。
 #include<bits/stdc++.h>
+// 算法标签：并查集、离线处理
 using namespace std;
 
 int n,m;

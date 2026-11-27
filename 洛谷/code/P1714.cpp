@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1714
 // 题意：给定 n 块蛋糕的幸运值 p_i，选连续的 1 到 m 块，求幸运值之和最大是多少。
 // 数据范围：1 ≤ m ≤ n ≤ 5×10^5，绝对值 （p_i） ≤ 500，答案绝对值 ≤ 2^31−1。
+// 算法标签：单调队列、前缀和
 
 #include<bits/stdc++.h>
 using namespace std;

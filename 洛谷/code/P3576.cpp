@@ -6,6 +6,7 @@
 // 输出食蚁兽一共吃掉多少只蚂蚁。
 // 数据范围：2 <= n, g <= 10^6，1 <= k, m_i <= 10^9，1 <= a_i, b_i <= n。
 #include<bits/stdc++.h>
+// 算法标签：深度优先搜索、二分查找、排序
 using namespace std;
 const int MAXN = 1e6+5;
 const long long INF = 1e9+1;

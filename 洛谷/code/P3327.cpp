@@ -4,6 +4,7 @@
 // 对每组输出一行答案。
 // 数据范围：1 <= T, n, m <= 50000。
 #include<bits/stdc++.h>
+// 算法标签：莫比乌斯反演、数论分块、线性筛
 using namespace std;
 const int MAXN = 5e4+5;
 

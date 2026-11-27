@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1790
 // 题意：将 a×b 的小方格矩形分成两块，每块都要至少包含一个原矩形边缘的格子。求不同分割方案的数量。
 // 数据范围：1 ≤ a ≤ 6，2 ≤ b ≤ 6。
+// 算法标签：打表
 
 #include<bits/stdc++.h>
 using namespace std;

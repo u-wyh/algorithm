@@ -4,6 +4,7 @@
 // 输出最少需要修复的信号灯数量。
 // 数据范围：1 <= N <= 100000，1 <= B, K <= N。
 #include<bits/stdc++.h>
+// 算法标签：滑动窗口
 using namespace std;
 const int MAXN = 1e5+5;
 

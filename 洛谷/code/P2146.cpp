@@ -5,6 +5,7 @@
 // 数据范围：n <= 100000，q <= 100000。
 //P2146
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树
 using namespace std;
 const int MAXN = 1e5+5;
 

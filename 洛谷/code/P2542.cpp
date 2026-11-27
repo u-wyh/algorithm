@@ -4,6 +4,7 @@
 // 对每个 1 操作输出一行整数。
 // 数据范围：1 <= n <= 3*10^4，1 <= m <= 10^5，操作总次数 <= 4*10^4。
 #include<bits/stdc++.h>
+// 算法标签：树链剖分、线段树、离线算法
 using namespace std;
 const int MAXN = 3e4+5;
 const int MAXM = 1e6+5;

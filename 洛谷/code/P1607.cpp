@@ -10,6 +10,7 @@
 // 1 <= S_i < E_i <= N（起止站点）
 //P1607
 #include<bits/stdc++.h>
+// 算法标签：贪心、线段树、排序
 using namespace std;
 const int MAXN = 20005;
 const int MAXK = 50005;

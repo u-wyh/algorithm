@@ -2,6 +2,7 @@
 // 题意：给定正整数 n，求满足 lcm(a, b) = n 的有序正整数对 (a, b) 的方案总数。
 // 数据范围：n <= 10^16。
 #include<bits/stdc++.h>
+// 算法标签：质因数分解、数论
 using namespace std;
 #define int long long
 

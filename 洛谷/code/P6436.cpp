@@ -13,6 +13,7 @@
 // 1 <= p_i, e_i, d <= 10^8
 // 0 <= q <= 20
 // 保证可能新建的双向航线方案数不超过 5 * 10^6
+// 算法标签：深度优先搜索、Dijkstra、排序
 #include<bits/stdc++.h>
 using namespace std;
 

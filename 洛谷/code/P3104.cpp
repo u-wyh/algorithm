@@ -6,6 +6,7 @@
 // 数据范围：2 <= N <= 500。
 #include<iostream>
 #include<algorithm>
+// 算法标签：贪心、Havel-Hakimi定理、排序
 using namespace std;
 int main()
 {

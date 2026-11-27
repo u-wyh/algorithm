@@ -1,9 +1,11 @@
 // https://www.luogu.com.cn/problem/P3447
 // 题意：输入正整数 n，以及 n 个正整数 m_1..m_n。
-// 统计满足 0 <= a_i <= m_i、a_1 XOR a_2 XOR ... XOR a_n = 0 且 sum(a_i) >= 1 的整数序列 (a_1..a_n) 的个数。
+// 统计满足 0 <= a_i <= m_i、a_1 XOR a_2 XOR ... XOR a_n = 0 且 sum(a_i) >= 1 的整数序列
+// (a_1..a_n) 的个数。
 // 输出一个正整数，表示符合条件的序列数量。
 // 数据范围：1 <= n <= 50，1 <= m_i <= 2^32 - 1，保证答案 < 2^64。
 #include <bits/stdc++.h>
+// 算法标签：数位动态规划、动态规划、位运算
 using namespace std;
 
 using ull = unsigned long long;

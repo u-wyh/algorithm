@@ -4,6 +4,7 @@
 // 输出最小半径 r，保留两位小数。
 // 数据范围：3 <= n <= 50。
 #include<bits/stdc++.h>
+// 算法标签：二分答案、计算几何
 using namespace std;
 #define ld long double
 const ld eps = 1e-8;

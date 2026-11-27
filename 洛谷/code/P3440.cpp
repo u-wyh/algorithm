@@ -4,6 +4,7 @@
 // 若无法使所有学校编号互不相同则输出 NIE，否则输出最小总改号成本。
 // 数据范围：1 <= a_i <= m_i <= b_i <= n <= 200，1 <= k_i <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、Dijkstra、SPFA
 using namespace std;
 const int INF = 1e9;
 const int MAXN = 405;

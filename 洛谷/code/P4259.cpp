@@ -3,6 +3,7 @@
 // 1 l s r t 查询以 (l, s) 和 (r, t) 为对角的子矩形内最大全空正方形的边长。
 // 数据范围：n*m <= 4e6，q <= 2000（n >= m）。
 #include<bits/stdc++.h>
+// 算法标签：线段树、单调队列、双指针
 using namespace std;
 const int MAXN = 4e6+5;
 const int MAXM = 2e3+5;

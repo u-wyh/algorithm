@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10447
 // 题意：给 n 个点之间的距离矩阵，从 0 出发，在 n-1 结束，途中每个点恰好经过一次。输出这条路线的最短长度。
 // 数据范围：1 ≤ n ≤ 20，0 ≤ a[i][j] ≤ 10^7，距离对称，满足三角不等式，对角线为 0。
+// 算法标签：状态压缩动态规划
 
 #include<bits/stdc++.h>
 using namespace std;

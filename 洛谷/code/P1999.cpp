@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1999
 // 题意：给定维数 a 和 b，统计 a 维超立方体有多少个 b 维面，顶点和棱也分别作为 0 维和 1 维的面。答案对 10^9+7 取模。
 // 数据范围：0 ≤ a,b ≤ 10^5，可能 b > a。
+// 算法标签：组合数学、快速幂、逆元
 
 #include<bits/stdc++.h>
 using namespace std;

@@ -5,6 +5,7 @@
 // 对每次 4、5 操作输出一行结果。
 // 数据范围：1 <= n, f <= 2*10^5，答案不超过 64 位整数。
 #include<bits/stdc++.h>
+// 算法标签：线段树
 using namespace std;
 const int MAXN = 200005;
 

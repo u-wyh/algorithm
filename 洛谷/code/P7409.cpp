@@ -3,6 +3,7 @@
 // 对 23333333333333333 取模。
 // 数据范围：|S| <= 5*10^5，sum t <= 3*10^6。
 // 后缀自动机结合虚树做法
+// 算法标签：后缀自动机、虚树、最近公共祖先
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

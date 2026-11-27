@@ -10,6 +10,7 @@
 // 1 <= n <= 5 * 10^5
 // 测试链接 : https://www.luogu.com.cn/problem/P4148
 #include<bits/stdc++.h>
+// 算法标签：K-D Tree、二进制分组
 using namespace std;
 #define int long long
 const int MAXN = 2e5+5;

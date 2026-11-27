@@ -5,6 +5,7 @@
 // 输出一个整数表示答案。
 // 数据范围：1 <= N <= 50000，1 <= D, x_i, h_i <= 10^9，x_i 互不相同。
 #include<bits/stdc++.h>
+// 算法标签：单调队列、排序
 using namespace std;
 
 int n,d;

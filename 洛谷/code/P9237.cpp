@@ -4,6 +4,7 @@
 // 题目保证有唯一解。
 // 题意：第一行输入 n, m，接下来 n 行每行 m 个字符；输出 n 行每行 m 个 0/1 字符表示方案。
 // 数据范围：1 <= n, m <= 10。
+// 算法标签：深度优先搜索、剪枝
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;

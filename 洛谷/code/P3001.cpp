@@ -6,6 +6,7 @@
 // 数据范围：对于 100% 的数据，1 <= N <= 2000，1 <= M <= 25000，0.1 <= e_{ij} <= 10
 // 1 <= V <= 10^12（保证答案小于 10^15）。
 #include<bits/stdc++.h>
+// 算法标签：SPFA、最短路
 using namespace std;
 #define int long long
 const int MAXN = 2005;

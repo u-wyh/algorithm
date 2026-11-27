@@ -6,6 +6,7 @@
 // 第一行输入 n, m，第二行 n 个整数 a_i。
 // 输出一行两个实数，保留 2 位小数。
 // 数据范围：1 < n, m <= 10^5，a_i ∈ [0, m]∩Z。
+// 算法标签：贪心、排序
 #include <iostream>
 #include <algorithm>
 #include <vector>

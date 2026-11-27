@@ -1,7 +1,9 @@
 // https://www.luogu.com.cn/problem/P4743
-// 题意：维护初始 n 台带 M 种属性的设备序列，支持 q 次在某位置后插入设备、删除设备、查设备总数、查区间 [l, r] 各属性和，结束额外输出 end。
+// 题意：维护初始 n 台带 M 种属性的设备序列，支持 q 次在某位置后插入设备、删除设备、查设备总数、查区间 [l, r] 各属性和
+// 结束额外输出 end。
 // 数据范围：0 < N <= 10^4，0 < M <= 200，0 < q <= 10^4。
 #include<bits/stdc++.h>
+// 算法标签：FHQ-Treap、平衡树
 using namespace std;
 const int MAXN = 2e4+5;
 const int MAXM = 205;

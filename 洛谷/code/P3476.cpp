@@ -4,6 +4,7 @@
 // 输出一个实数表示面积之和，保留一位小数（误差不超过 0.1）。
 // 数据范围：3 <= n <= 3000，0 <= x_i, y_i <= 10^4，所有点坐标互异。
 #include<bits/stdc++.h>
+// 算法标签：极角排序、双指针、前缀和
 using namespace std;
 #define int long long
 const int MAXN = 3e3+5;

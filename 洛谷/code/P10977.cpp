@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10977
 // 题意：给 N 个非负整数，把它们从头到尾切成若干连续段，每段的元素和不能超过 M。把每段最大值相加，求最小总和，无解输出 -1。
 // 数据范围：1 ≤ N ≤ 10^5，1 ≤ M < 2^31，0 ≤ a[i] ≤ 10^6。
+// 算法标签：动态规划、线段树
 
 #include<bits/stdc++.h>
 using namespace std;

@@ -3,6 +3,7 @@
 // 求相邻节点颜色不同的合法染色方案总数，对 10^9 + 7 取模。
 // 数据范围：1 <= N <= 5000，1 <= M <= 5000。
 #include<bits/stdc++.h>
+// 算法标签：树形动态规划、记忆化搜索
 using namespace std;
 const int MAXN = 5005;
 const int MOD = 1e9+7;

@@ -4,6 +4,7 @@
 // 输出最大的 L。
 // 数据范围：1 <= n <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：字符串哈希、递推
 using namespace std;
 #define int long long
 const int MAXN = 1e6+5;

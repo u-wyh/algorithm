@@ -4,6 +4,7 @@
 // 可行输出 TAK，否则输出 NIE。
 // 数据范围：1 <= n <= 60，0 <= k <= 10^6，k <= 2^n - 1，n*k <= 5*10^6。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索、哈希表、位运算
 using namespace std;
 #define int long long
 const int MAXN = 65;

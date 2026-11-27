@@ -3,6 +3,7 @@
 // 对每对 (v, u)，按编号升序输出所有位于 v 到 u 的至少一条最短路径上的顶点集合 I(v, u)。
 // 数据范围：1 <= n <= 40，1 <= m, k <= n(n-1)/2。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索、最短路
 using namespace std;
 
 queue<int>q;

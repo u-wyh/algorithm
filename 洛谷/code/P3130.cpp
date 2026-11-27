@@ -6,6 +6,7 @@
 // 数据范围：1 <= N <= 2*10^5，1 <= Q <= 10^5，初始每块田堆数 <= 10^5，1 <= C <= 10^5
 // 1 <= A <= B <= N。
 #include<bits/stdc++.h>
+// 算法标签：线段树、懒标记
 using namespace std;
 #define int long long
 const int MAXN = 200005;

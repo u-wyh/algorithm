@@ -4,6 +4,7 @@
 // 数据范围：1 <= n, m <= 10^5，|a_i|, |y| <= 10^9。
 #include<iostream>
 #include<cstdio>
+// 算法标签：线段树、二分查找
 using namespace std;
 
 long long tree[4000010],lazy[4000010],a[1000010],n,m;long long sum;

@@ -3,6 +3,7 @@
 // 求卷积 F(x) * G(x) 各项系数对 p 取模后的结果。
 // 数据范围：1 <= n, m <= 1e5，0 <= a_i, b_i <= 1e9，2 <= p <= 1e9+9。
 #include<bits/stdc++.h>
+// 算法标签：NTT、中国剩余定理、扩展欧几里得
 using namespace std;
 #define int long long
 typedef __int128 i128;

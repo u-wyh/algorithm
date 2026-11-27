@@ -2,6 +2,7 @@
 // 题意：给长为 n 的序列 a，m 次离线询问，每次求区间 [l, r] 内的逆序对数。
 // 数据范围：1 <= n, m <= 10^5，0 <= a_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：二次离线莫队、分块、树状数组
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXB = 405;

@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+// 算法标签：贪心、排序
 
 #define MAXN 2147483647
 

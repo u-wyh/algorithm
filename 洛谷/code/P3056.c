@@ -7,6 +7,7 @@
 // 数据范围：对于 100% 的数据，字符串长度为偶数且不超过 100000。
 #include<stdio.h>
 #include<string.h>
+// 算法标签：贪心、模拟
 
 #define MAX 100000+5
 

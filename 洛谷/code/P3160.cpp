@@ -6,6 +6,7 @@
 #include <iostream>
 #include <cstring>
 #include <algorithm>
+// 算法标签：容斥原理、状态压缩动态规划、深度优先搜索
 using namespace std;
 
 const int MOD = 12345678;

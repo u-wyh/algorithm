@@ -3,6 +3,7 @@
 // 得分为路径点权和。
 // 求所有起点中期望得分的最大值（允许 10^-2 误差）。
 // 数据范围：2 < n <= 5*10^5，|val_i| <= 10^4。
+// 算法标签：换根动态规划、树形动态规划
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

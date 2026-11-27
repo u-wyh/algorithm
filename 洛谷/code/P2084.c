@@ -5,6 +5,7 @@
 // 数据范围：1 < M < 10，N 的位数不超过 1000。
 #include<stdio.h>
 #include<string.h>
+// 算法标签：模拟、字符串
 
 #define Max 1001
 

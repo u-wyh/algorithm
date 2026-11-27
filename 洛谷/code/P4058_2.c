@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+// 算法标签：二分答案
 
 #define MAXN 200001
 

@@ -6,6 +6,7 @@
 // 数据范围：2 <= N <= 248，初始每个数在 [1, 40] 之间。
 #include <stdio.h>
 #include <stdlib.h>
+// 算法标签：区间动态规划
 
 #define N 250
 

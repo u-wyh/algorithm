@@ -4,6 +4,7 @@
 // 输出合法准考证号码方案数对 K 取模的结果。
 // 数据范围：N <= 10^9，M <= 20，K <= 10000。
 #include<bits/stdc++.h>
+// 算法标签：KMP、矩阵快速幂、动态规划
 using namespace std;
 #define int long long
 const int MAXN = 25;

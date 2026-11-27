@@ -1,7 +1,9 @@
 // https://www.luogu.com.cn/problem/P5903
-// 题意：给定 n 点有根树及随机种子 s，按固定伪随机方式并结合上次答案在线生成 q 次询问 (x_i, k_i)，求点 x_i 的 k_i 级祖先 ans_i。
+// 题意：给定 n 点有根树及随机种子 s，按固定伪随机方式并结合上次答案在线生成 q 次询问 (x_i, k_i)
+// 求点 x_i 的 k_i 级祖先 ans_i。
 // 输入 n, q, s 及父节点序列 f；输出 xor_{i=1}^q (i * ans_i)。
 // 数据范围：2 <= n <= 5*10^5，1 <= q <= 5*10^6，1 <= s < 2^32。
+// 算法标签：长链剖分、倍增
 #include<bits/stdc++.h>
 using namespace std;
 #define ui unsigned int

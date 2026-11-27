@@ -2,6 +2,7 @@
 // 题意：给定长为 n 的小写字符串 S 和 m 组询问，每组给出 t 个后缀起始位置，求这些后缀（重复位置去重后只算一次）两两之间 LCP 长度之和
 // 对 23333333333333333 取模。
 // 数据范围：|S| <= 5*10^5，sum t <= 3*10^6。
+// 算法标签：后缀数组、ST表、分治
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

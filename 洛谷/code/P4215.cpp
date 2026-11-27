@@ -4,6 +4,7 @@
 // 求每次操作后高兴的孩子数。
 // 数据范围：1 <= n, m, Q <= 1e5，1 <= a_i <= 1e5，1 <= x' <= 1e9。
 #include<bits/stdc++.h>
+// 算法标签：线段树
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 2e6+5;

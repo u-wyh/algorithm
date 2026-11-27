@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1712
 // 题意：从 n 个闭区间里选 m 个，要求它们至少共享一个点。区间长度为 r_i−l_i，求所选最长区间与最短区间的长度差最小是多少。无解输出 -1。
 // 数据范围：1 ≤ n ≤ 5×10^5，1 ≤ m ≤ min(n,2×10^5)，0 ≤ l_i ≤ r_i ≤ 10^9。
+// 算法标签：线段树、双指针、离散化
 
 #include<bits/stdc++.h>
 using namespace std;

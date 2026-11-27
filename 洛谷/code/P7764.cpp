@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P7764
 // 题意：给定长为 N 的自然数数组，回答 Q 次询问，每次求区间 [L, R] 内恰好出现两次的数值种类数。
 // 数据范围：1 <= N, Q <= 5*10^5，1 <= L <= R <= N，元素为小于 10^9 的自然数。
+// 算法标签：莫队算法、离散化、二分查找
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e5+5;

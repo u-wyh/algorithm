@@ -13,6 +13,7 @@
 // 这里的圆方树建图方式和正常的是不太一样的
 // 就是割边不在直接建立一个方点  这样与二元环区分开
 #include<bits/stdc++.h>
+// 算法标签：圆方树、Tarjan、树链剖分
 using namespace std;
 const int MAXN = 2e4+5;
 const int MAXM = 4e4+5;

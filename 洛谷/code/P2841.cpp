@@ -3,6 +3,7 @@
 // 一行输出 B 和 A*B，空格隔开。
 // 数据范围：0 < A < 10^4。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索、同余、高精度
 using namespace std;
 const int MAXN = 1e4+5;
 

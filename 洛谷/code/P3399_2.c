@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+// 算法标签：动态规划
 
 #define INF 2139063143
 #define MAX_N 1002

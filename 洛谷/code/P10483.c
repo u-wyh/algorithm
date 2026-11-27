@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10483
 // 题意：有 N 只小猫，第 i 只重 C[i]。一辆缆车上的总重量不能超过 W，把所有猫都运下山最少需要几辆缆车。
 // 数据范围：1 ≤ N ≤ 18，1 ≤ C[i],W ≤ 10^8。
+// 算法标签：深度优先搜索、剪枝
 
 #include<stdio.h>
 #include<stdlib.h>

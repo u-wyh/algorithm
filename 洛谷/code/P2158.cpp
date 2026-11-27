@@ -3,6 +3,7 @@
 // 输出能看到的学生人数。
 // 数据范围：1 <= N <= 40000。
 #include<bits/stdc++.h>
+// 算法标签：欧拉函数、线性筛
 using namespace std;
 const int MAXN = 40005;
 

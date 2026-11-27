@@ -4,6 +4,7 @@
 // 输出最小距离差。
 // 数据范围：2 <= N <= 10^5，0 <= X_i, Y_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：计算几何、排序、枚举
 using namespace std;
 const int MAXN = 1e5+5;
 

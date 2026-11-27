@@ -4,6 +4,7 @@
 // 对每组数据输出最早读到第 t 页的天数（第 1 天读 x_1），若永远读不到输出 -1。
 // 数据范围：1 <= T <= 50，2 <= p <= 10^9 且 p 为质数，0 <= a, b, x_1, t < p。
 #include<bits/stdc++.h>
+// 算法标签：BSGS、扩展欧几里得、快速幂
 using namespace std;
 #define int long long
 

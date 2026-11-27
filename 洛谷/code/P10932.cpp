@@ -19,6 +19,7 @@
 // 提交如下代码，可以通过所有测试用例
 // 这里的圆方树建图方式和正常的是不太一样的
 // 就是割边不在直接建立一个方点  这样与二元环区分开
+// 算法标签：Tarjan、圆方树、最近公共祖先
 #include <bits/stdc++.h>
 using namespace std;
 const int MAXN = 50001;

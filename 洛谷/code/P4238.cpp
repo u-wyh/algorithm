@@ -6,6 +6,7 @@
 // 核心公式：  B_new = B * (2 - A * B) (mod x^n)
 // 时间复杂度：O(n log n)
 #include<bits/stdc++.h>
+// 算法标签：多项式求逆、NTT
 using namespace std;
 #define int long long
 const int MAXN = 2e5+5;

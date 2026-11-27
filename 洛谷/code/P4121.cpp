@@ -4,6 +4,7 @@
 // 输出 m 行，每行两个整数 b, w 分别表示当前黑色和白色连通块个数。
 // 数据范围：1 <= n <= 200，1 <= m <= 10^4，1 <= x, y <= n。
 #include<bits/stdc++.h>
+// 算法标签：线段树、并查集
 using namespace std;
 const int MAXN = 205;
 

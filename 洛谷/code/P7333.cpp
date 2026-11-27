@@ -2,6 +2,7 @@
 // 题意：n 个点组成环（相邻距离 1），每个点有属性 a_i, b_i；
 // 对每个点 i 求满足 j != i 且 a_j >= b_i 的点 j 与 i 在环上的最短距离（无解输出 -1）。
 // 数据范围：1 <= n <= 10^5，1 <= a_i, b_i <= 10^9。
+// 算法标签：ST表、二分查找
 #include<iostream>
 #include<cstdio>
 #include<cstring>

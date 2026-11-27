@@ -4,6 +4,7 @@
 // 输入 n、父节点序列及点权 w_i；输出一行 n 个整数分别表示各点的最少花费。
 // 数据范围：1 <= n <= 10^5 + 4，1 <= p_i <= i，1 <= w_i <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：树形动态规划、贪心
 using namespace std;
 const int MAXN = 1e5+5;
 

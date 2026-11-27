@@ -8,6 +8,7 @@
 #include<iostream>
 #include<cstdio>
 #define X 200+10
+// 算法标签：Floyd、传递闭包
 using namespace std;
 int fa[X];
 bool vis[X][X];              //用来标记白点

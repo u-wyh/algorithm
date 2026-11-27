@@ -11,6 +11,7 @@
 #include <cmath>
 #include <iostream>
 #include <queue>
+// 算法标签：最短路、Dijkstra、优先队列
 using namespace std;
 
 int n, m, a, b, h[100007], cnt, dis[100007], vis[100007];

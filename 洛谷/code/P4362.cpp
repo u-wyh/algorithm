@@ -5,6 +5,7 @@
 #include<iostream>
 #include<cstdio>
 #include<cstring>
+// 算法标签：树形动态规划、树上背包
 using namespace std;
 const int N=1000+4;
 struct Edge{int v,w,nxt;}e[N<<1];

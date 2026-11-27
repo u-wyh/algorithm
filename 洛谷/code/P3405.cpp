@@ -6,6 +6,7 @@
 #include<iostream>
 #include<vector>
 #define mod 233333
+// 算法标签：哈希表
 using namespace std;
 int n;
 char a[12],b[12];

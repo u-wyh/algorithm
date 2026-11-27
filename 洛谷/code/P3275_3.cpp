@@ -7,6 +7,7 @@
 // 1 <= X <= 5（关系类型）
 // 1 <= A, B <= N（小朋友编号）
 #include<bits/stdc++.h>
+// 算法标签：Tarjan、拓扑排序、动态规划
 using namespace std;
 
 const int MAXN = 100000 + 10;

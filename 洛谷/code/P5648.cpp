@@ -3,6 +3,7 @@
 // 每次询问从第 l 个位置开始长度为 q 的所有前缀 [l, i]（l <= i <= l+q-1）的最大值之和。
 // 输入 n, t、序列 a 及加密后的 u, v（用 lastans 异或解密得 l, q）；对每次询问输出一行答案。
 // 数据范围：1 <= n <= 500000，1 <= t <= 500000，1 <= a_i <= 10^9。
+// 算法标签：单调栈、倍增
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;

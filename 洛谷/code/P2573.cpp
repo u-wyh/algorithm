@@ -4,6 +4,7 @@
 // 输出最多能到达的景点数，以及在此前提下的最短滑行总距离。
 // 数据范围：1 <= n <= 10^5，1 <= m <= 10^6，1 <= h_i, k <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：最小生成树、广度优先搜索、并查集
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 1e6+5;

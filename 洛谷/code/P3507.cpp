@@ -4,6 +4,7 @@
 // 输出一个整数，表示双方最佳策略下 Alice 得分减去 Bob 得分的结果。
 // 数据范围：1 <= n <= 10^6，1 <= k_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、博弈论、排序
 using namespace std;
 const int MAXN = 1e6+5;
 

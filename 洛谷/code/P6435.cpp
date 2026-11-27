@@ -9,6 +9,7 @@
 // 1 <= p <= 10^{14}（80% 数据 p 为质数）
 // 1 <= a, b <= 10^9
 // 0 <= c <= 10^9
+// 算法标签：矩阵快速幂
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

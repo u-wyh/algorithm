@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1860
 // 题意：给定 N 种药水的买入价和卖出价，初始有 V 元。M 条咒语能用指定药水合成另一种药水，一天至多用 K 次。卖出所得不能再买药，求一天的最大利润。
 // 数据范围：N ≤ 60，M ≤ 240，V ≤ 1000，K ≤ 30。
+// 算法标签：动态规划、完全背包
 
 #include <bits/stdc++.h>
 using namespace std;

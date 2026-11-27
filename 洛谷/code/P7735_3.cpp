@@ -2,6 +2,7 @@
 // 题意：T 组数据，n 个点的树初始全为轻边，m 次操作：1 a b 将 a 到 b 路径上所有点相邻边全置轻边后再将该路径置重边；
 // 2 a b 查询 a 到 b 路径上的重边条数。
 // 数据范围：T <= 3，1 <= n, m <= 10^5，a_i != b_i。
+// 算法标签：动态树、Splay
 #include<bits/stdc++.h>
 using namespace std;
 

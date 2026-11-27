@@ -4,6 +4,7 @@
 // 按 Total=N 格式输出。
 // 数据范围：所有砝码总重 <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：生成函数、动态规划
 using namespace std;
 
 int a[7];

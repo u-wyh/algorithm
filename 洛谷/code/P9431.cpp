@@ -6,6 +6,7 @@
 // 题意：首行输入 T, id，每组输入 n, d, c 及 n 行坐标 (x_i, y_i)；每组输出一行一个正整数。
 // 数据范围：1 <= T <= 1000，1 <= n <= 3000，sum(n) <= 3000，1 <= d <= 10^9，1 <= c <= n
 // 1 <= x_i, y_i <= 10^6，坐标互不相同。
+// 算法标签：Tarjan缩点、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 3005;

@@ -4,6 +4,7 @@
 // 输出最小代价。
 // 数据范围：1 <= n <= 10^6，1 <= a_i <= 1.5*10^9，sum(a_i) 是 n 的倍数。
 #include<bits/stdc++.h>
+// 算法标签：贪心、前缀和、中位数
 using namespace std;
 #define int long long
 const int MAXN = 1e6+5;

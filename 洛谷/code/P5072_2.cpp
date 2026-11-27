@@ -2,6 +2,7 @@
 // 题意：给定长为 n 的序列，m 次询问每次给 l, r, p，求区间 [l, r] 的所有子序列分别去重后的元素和的总和，结果对 p 取模。
 // 数据范围：1 <= n, m, a_i <= 10^5，1 <= p <= 10^9，1 <= l <= r <= n。
 #include<bits/stdc++.h>
+// 算法标签：莫队、光速幂、离散化
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXB = 405;

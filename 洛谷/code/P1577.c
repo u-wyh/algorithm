@@ -7,6 +7,7 @@
 // 0 < k <= 10000（目标段数 K）
 // 0 < L_i <= 100000.00（绳子长度）
 #include<stdio.h>
+// 算法标签：二分答案
 
 double max(double a,double b){
     return a>b?a:b;

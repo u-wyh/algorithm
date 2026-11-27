@@ -4,6 +4,7 @@
 // 判断先手是否必胜，每组输出 YES 或 NO。
 // 数据范围：1 <= T <= 20，1 <= N <= 2*10^4，1 <= S_i <= 2*10^9。
 #include<bits/stdc++.h>
+// 算法标签：SG函数、记忆化搜索
 using namespace std;
 
 int n;

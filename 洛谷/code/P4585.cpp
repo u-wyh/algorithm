@@ -3,6 +3,7 @@
 // 查询当天编号在 [l, r] 内的商店中最近 d 天进的商品及特殊商品里 val xor x 的最大值。
 // 数据范围：所有输入整数均在 [0, 10^5] 范围内。
 #include<bits/stdc++.h>
+// 算法标签：线段树分治、可持久化01字典树、二分查找
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 2e6+5;

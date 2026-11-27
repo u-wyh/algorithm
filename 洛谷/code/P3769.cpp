@@ -4,6 +4,7 @@
 // 输出最长路径包含的点数。
 // 数据范围：1 <= n <= 5*10^4，max(|a_i|, |b_i|, |c_i|, |d_i|) <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：CDQ分治、树状数组、动态规划
 using namespace std;
 const int MAXN = 5e4+5;
 

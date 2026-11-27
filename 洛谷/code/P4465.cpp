@@ -3,6 +3,7 @@
 // 数据范围：插入总长度 <= 2*10^6，任意时刻串长 <= 10^6，插入次数 <= 1001，删除次数 <= 1000
 // 询问子串 z_i 总长度 <= 10^4。
 #include<bits/stdc++.h>
+// 算法标签：bitset、位运算
 using namespace std;
 const int MAXN = 1e6+5;
 

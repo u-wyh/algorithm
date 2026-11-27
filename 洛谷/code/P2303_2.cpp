@@ -3,6 +3,7 @@
 // 输出计算结果。
 // 数据范围：1 <= n < 2^32。
 #include<bits/stdc++.h>
+// 算法标签：欧拉函数、数论
 using namespace std;
 #define int long long
 

@@ -8,6 +8,7 @@
 #include<queue>
 #define min(a,b) a<b?a:b
 #define max(a,b) a>b?a:b
+// 算法标签：广度优先搜索、图论
 using namespace std;
 int n,m;
 struct edge{

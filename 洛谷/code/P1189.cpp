@@ -7,6 +7,7 @@
 // 数据范围：1 <= R, C <= 50。
 // 数据范围：1 <= N <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索、模拟
 using namespace std;
 
 int dire[1005];

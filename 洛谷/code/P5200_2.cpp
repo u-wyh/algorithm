@@ -3,6 +3,7 @@
 // 求排成升序 1..N 的最少操作次数 K 及每步移动步数序列 c_1..c_K。
 // 数据范围：1 <= N <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：树状数组、贪心
 using namespace std;
 const int MAXN = 100005;
 

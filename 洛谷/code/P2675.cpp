@@ -4,6 +4,7 @@
 // 输出最大值对 10007 取模的结果。
 // 数据范围：0 <= N <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：卢卡斯定理、组合数学、快速幂
 using namespace std;
 #define int long long
 const int MOD = 10007;

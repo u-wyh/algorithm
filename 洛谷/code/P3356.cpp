@@ -4,6 +4,7 @@
 // 在到达终点车数最多的前提下最大化采集标本数，输出移动方案（每行车号与方向 0/1）。
 // 数据范围：1 <= n, p, q <= 35。
 #include<bits/stdc++.h>
+// 算法标签：最小费用最大流、深度优先搜索
 using namespace std;
 const int MAXN = 35;
 const int MAXV = MAXN*MAXN*4;

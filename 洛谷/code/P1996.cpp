@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1996
 // 题意：n 人按编号围成一圈，从第 1 人开始报数。报到 m 的人出圈，再从他的下一人从 1 报起。输出所有人的出圈顺序。
 // 数据范围：1 ≤ n,m ≤ 100。
+// 算法标签：模拟
 
 #include<queue>
 #include<iostream>

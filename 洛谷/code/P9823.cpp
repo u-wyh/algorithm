@@ -4,6 +4,7 @@
 // 结果对 998244353 取模。
 // 题意：一行输入 n, k；输出一行一个整数。
 // 数据范围：1 <= k <= 10^7，1 <= n <= 10^7。
+// 算法标签：组合数学、动态规划
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

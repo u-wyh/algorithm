@@ -8,6 +8,7 @@
 // 1 <= C <= 10（边权）
 // 最短路总数不超过 2^30
 #include<bits/stdc++.h>
+// 算法标签：Dijkstra、最短路、优先队列
 using namespace std;
 const int MAXN = 2005;
 

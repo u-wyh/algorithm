@@ -3,6 +3,7 @@
 // 不同领域之间任意两点都必须有边，求最多领域数及各领域大小（升序输出）。
 // 数据范围：n <= 10^5，m <= 2 * 10^6，无重边和自环。
 #include<bits/stdc++.h>
+// 算法标签：广度优先搜索、补图连通块
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXM = 2e6+5;

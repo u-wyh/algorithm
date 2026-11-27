@@ -4,6 +4,7 @@
 // 规则：在区间 [l, r] 中，统计出现次数等于 x 的不同数值个数 c(x)。
 // 输出：每次询问输出一行整数，表示 max_{x} (x * c(x))。
 // 数据范围：1 <= n, q, a_i <= 2*10^5，1 <= l <= r <= n。
+// 算法标签：莫队、计数统计
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

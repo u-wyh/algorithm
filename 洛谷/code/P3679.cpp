@@ -9,6 +9,7 @@
 //   1. 用霍尔定理 + SOS DP 找出 A、B 两侧所有"可匹配"的子集
 //   2. 收集它们的权值
 //   3. 排序后双指针统计 wa + wb ≥ t 的对数
+// 算法标签：SOS DP、状态压缩、双指针
 
 #include <bits/stdc++.h>
 using namespace std;

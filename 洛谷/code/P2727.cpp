@@ -3,6 +3,7 @@
 // 输出第 i 个二进制串。
 // 数据范围：1 <= N <= 31，0 <= L <= N，保证第 i 个串存在。
 #include<bits/stdc++.h>
+// 算法标签：动态规划、组合数学
 using namespace std;
 #define int long long
 

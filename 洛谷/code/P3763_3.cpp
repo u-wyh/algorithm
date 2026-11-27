@@ -4,6 +4,7 @@
 // 输出 T 行，每行对应一组数据的合法子串个数。
 // 数据范围：0 < T <= 10，S_0 与 S 的长度均不超过 10^5。
 #include<bits/stdc++.h>
+// 算法标签：FFT、字符串匹配
 using namespace std;
 const int MAXN = 1e5+5;
 const int MAXT = 8e5+5;

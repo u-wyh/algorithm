@@ -4,6 +4,7 @@
 // 判断是否存在一种方案通过所有评审（输出 GOOD 或 BAD）。
 // 数据范围：1 <= K <= 50，n <= 100，m <= 1000。
 #include<bits/stdc++.h>
+// 算法标签：2-SAT、Tarjan强连通分量
 using namespace std;
 const int MAXN = 205;
 const int MAXM = 2005;

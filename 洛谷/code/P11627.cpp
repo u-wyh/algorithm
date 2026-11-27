@@ -5,6 +5,7 @@
 // 输出三行：最大得分 mod 998244353；取最大得分时最小的 t；在此基础上按输入序字典序最小的边权。
 // 数据范围：
 // 1 <= n <= 10^5
+// 算法标签：线段树、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

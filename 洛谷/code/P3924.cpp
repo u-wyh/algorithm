@@ -5,6 +5,7 @@
 // 数据范围：1 <= n, m <= 10^6，-1000 <= a_i, x <= 1000。
 #include <bits/stdc++.h>
 #define ll long long
+// 算法标签：线段树、前缀和、数学期望
 using namespace std;
 
 const int maxn = 1e7 + 5;

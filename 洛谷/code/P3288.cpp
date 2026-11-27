@@ -13,6 +13,7 @@
 // 0 <= c_i <= 10^4
 // 0 <= d_i <= 10^3
 #include<bits/stdc++.h>
+// 算法标签：01分数规划、SPFA、二分答案
 using namespace std;
 const int MAXN = 5e3+5;
 const int MAXM = 3e3+5;

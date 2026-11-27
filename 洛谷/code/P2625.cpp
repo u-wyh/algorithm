@@ -4,6 +4,7 @@
 // 输出最大距离，四舍五入保留 6 位小数。
 // 数据范围：1 <= n <= 50，角度 in [1, 719]，距离 in [1, 1000]。
 #include<bits/stdc++.h>
+// 算法标签：背包动态规划、计算几何
 using namespace std;
 const double pi = 3.1415926535;
 

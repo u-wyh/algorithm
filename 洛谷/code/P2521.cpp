@@ -14,6 +14,7 @@
 // 数据范围：1 < n <= 10^4
 // 数据范围：所有点坐标范围均在 10^4 以内，且保证没有重合的点
 #include<bits/stdc++.h>
+// 算法标签：动态凸包、计算几何、离线算法
 using namespace std;
 #define int long long
 const int MAXN = 2e5+5;

@@ -3,6 +3,7 @@
 // 输出不同子串个数。
 // 数据范围：1 <= n <= 10^5。
 #include<bits/stdc++.h>
+// 算法标签：后缀自动机、深度优先搜索
 using namespace std;
 const int MAXN = 2e5+5;
 

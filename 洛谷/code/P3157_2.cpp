@@ -6,6 +6,7 @@
 // 1 <= n <= 10^5（排列长度）
 // 1 <= m <= 50000（删除次数）
 #include<bits/stdc++.h>
+// 算法标签：CDQ分治、树状数组
 using namespace std;
 #define int long long
 const int MAXN = 1e5+5;

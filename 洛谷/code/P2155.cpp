@@ -3,6 +3,7 @@
 // 每组输出答案对质数 R 取模的结果。
 // 数据范围：1 <= M <= N <= 10^7，1 <= T <= 10^4，2 <= R <= 10^9+10。
 #include<bits/stdc++.h>
+// 算法标签：线性筛、快速幂、逆元
 using namespace std;
 #define int long long
 const int MAXN = 1e7+5;

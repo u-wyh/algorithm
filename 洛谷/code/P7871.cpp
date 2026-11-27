@@ -8,6 +8,7 @@
 // 第一行输入 n, q，接下来 q 行每行 s_i, t_i。
 // 数据范围：3 <= n <= 3*10^5，0 <= q <= 3*10^5，1 <= s_i, t_i <= n；
 // 注：题面未明确标注输出能级 A_i 的数值上界（仅要求为互不相同的正整数）。
+// 算法标签：差分、贪心、构造
 #include <iostream>
 #include <vector>
 #include <cstring>

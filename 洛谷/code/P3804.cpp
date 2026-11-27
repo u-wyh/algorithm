@@ -4,6 +4,7 @@
 // 输出一个整数表示答案。
 // 数据范围：对于 100% 的数据，1 <= |S| <= 10^6。
 #include<bits/stdc++.h>
+// 算法标签：后缀自动机、深度优先搜索
 using namespace std;
 const int MAXN = 2e6+5;
 

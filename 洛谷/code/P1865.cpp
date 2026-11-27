@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1865
 // 题意：给定 n 次询问和合法上界 m。每次给 l、r，若两端都在 [1,m] 内就输出闭区间内的质数个数，否则输出 Crossing the line。
 // 数据范围：1 ≤ n ≤ 1000，1 ≤ m ≤ 10^6，−10^9 ≤ l ≤ r ≤ 10^9。
+// 算法标签：线性筛、前缀和
 
 #include <bits/stdc++.h>
 using namespace std;

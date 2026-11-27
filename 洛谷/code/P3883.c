@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
+// 算法标签：数位动态规划、记忆化搜索
 
 #define MAXN 105
 #define MOD 20091119

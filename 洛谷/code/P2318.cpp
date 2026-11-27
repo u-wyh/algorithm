@@ -4,6 +4,7 @@
 // 输出总命中次数。
 // 数据范围：n <= 10^4，m <= 10^6，P_i <= 10^9。
 #include<bits/stdc++.h>
+// 算法标签：线段树、模拟、map
 using namespace std;
 const int MAXN = 1e4+5;
 const int MAXM = 1e6+5;

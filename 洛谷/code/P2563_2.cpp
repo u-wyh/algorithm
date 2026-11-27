@@ -4,6 +4,7 @@
 // 每组输出一行方案数。
 // 数据范围：2 <= n <= 200。
 #include<bits/stdc++.h>
+// 算法标签：生成函数、线性筛
 using namespace std;
 const int MAXN = 205;
 

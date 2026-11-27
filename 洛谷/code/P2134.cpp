@@ -4,6 +4,7 @@
 // 输出最少花费。
 // 数据范围：1 <= n <= 2*10^5，1 <= p <= q <= 10^4。
 #include<bits/stdc++.h>
+// 算法标签：枚举、贪心
 using namespace std;
 
 int n,p,q;

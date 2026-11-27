@@ -4,6 +4,7 @@
 // 求原串中有多少个非空连续子串是可消除的。
 // 题意：第一行输入 n，第二行输入字符串；输出一行一个整数。
 // 数据范围：1 <= n <= 2 * 10^6。
+// 算法标签：动态规划
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e6+5;

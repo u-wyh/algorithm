@@ -2,6 +2,7 @@
 // 题意：给定两个大写字母字符串 A 和 B，统计满足 A(i, j) = B(x, y) 且该子串为回文串的四元组 (i, j, x, y) 的个数。
 // 输入两行字符串 A 和 B；输出满足条件的四元组个数。
 // 数据范围：1 <= |A|, |B| <= 50000。
+// 算法标签：回文自动机、广度优先搜索
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 5e4+5;

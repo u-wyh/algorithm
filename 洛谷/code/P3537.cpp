@@ -7,6 +7,7 @@
 // 数据范围：1 <= n <= 1000，1 <= c_i <= 1000，1 <= a_i < b_i <= 10^9，1 <= p <= 10^6
 // 1 <= m_j <= 10^9，1 <= k_j <= 10^5，0 <= s_j <= 10^9。
 #include <bits/stdc++.h>
+// 算法标签：0-1背包、离线算法、排序
 using namespace std;
 
 const int MAXK = 100000;

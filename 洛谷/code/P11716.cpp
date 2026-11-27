@@ -17,6 +17,7 @@
 // 本题要求强制在线，得到操作参数的规则，打开测试链接查看
 // 1 <= n、m <= 65536    随机生成坐标的绝对值 <= 100，至少小数点后5位
 // 测试链接 : https://www.luogu.com.cn/problem/P11716
+// 算法标签：动态KD树、优先队列
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e5+5;

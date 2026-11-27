@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P10953
 // 题意：给 n 个城镇和 m 条双向道路。每问给不同的 a,b，统计有多少条道路是从 a 到 b 的每条路线都必须经过的。
 // 数据范围：1 ≤ n,q ≤ 10^5，1 ≤ m ≤ 2 × 10^5，图连通，无重边或自环，道路端点编号之差不超过 10^4。
+// 算法标签：Tarjan、边双连通分量、最近公共祖先
 
 #include<bits/stdc++.h>
 using namespace std;

@@ -8,6 +8,7 @@
 // 1 <= b <= 500
 // 0 <= a <= 2 * 10^9
 // l < r
+// 算法标签：分块、二维差分
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;
