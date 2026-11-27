@@ -8,4 +8,4 @@ python tools/practice-index/_build_full_practice_index.py
 python tools/practice-index/_preview_practice_archive.py --index "docs/按算法标签练习.md"
 ```
 
-专题学习题单使用模板文件名对照表识别旧题号。全量清单读取题库标签快照，按算法标签练习则读取源码文件头中的标签。
+专题学习题单根据模板目录、题号和原题链接整理。全量清单读取题库标签快照，按算法标签练习则读取源码文件头中的标签。

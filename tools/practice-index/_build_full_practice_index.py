@@ -17,8 +17,6 @@ ARCHIVE = ROOT / "practices" / "code"
 TEMPLATES = ROOT / "templates"
 SNAPSHOT = TOOL_DIR / "练习题官方标签快照.json"
 OUTPUT = ROOT / "docs" / "全量算法练习清单.md"
-TRAINING = ROOT / "practices" / "练习赛"
-TRAINING_OUTPUT = ROOT / "docs" / "练习赛代码索引.md"
 EXTENSIONS = {".cpp", ".c", ".py"}
 CATEGORIES = [
     "图论", "树上问题", "字符串", "数据结构", "数学数论", "动态规划",
@@ -320,7 +318,7 @@ def main() -> None:
         "",
         "按 `templates` 的专题和题库标签归类。想按源码实际用到的算法找题，可打开[算法标签题单](按算法标签练习.md)。题库标签来源见[数据快照](../tools/practice-index/练习题官方标签快照.json)。",
         "",
-        "已有较细的 `templates` 学习路线和一题多知识点关系，仍见[专题题单](算法学习题单.md)。此表为便于查找，给每题选一个主要归类；其余官方标签照列，不表示算法唯一。没有稳定 OJ 编号的比赛训练文件另见[练习赛代码索引](练习赛代码索引.md)，按场次归档。", "",
+        "结合模板学习可以看[专题题单](算法学习题单.md)。此表按主要知识点分组，同时列出其他题库标签。", "",
         "## 分类导航", "",
     ]
     for category_index, category in enumerate(CATEGORIES, 1):
@@ -366,22 +364,6 @@ def main() -> None:
     print("evidence", dict(evidence_counts))
     print("review_files", review_files)
     print("output_bytes", OUTPUT.stat().st_size)
-    training = collections.defaultdict(list)
-    for path in TRAINING.rglob("*"):
-        if path.is_file() and path.suffix.lower() in EXTENSIONS:
-            training[path.parent.relative_to(TRAINING).as_posix()].append(path)
-    training_lines = [
-        "# 练习赛代码索引", "",
-        f"共 **{sum(map(len, training.values()))}** 份代码，按原有比赛或训练目录归档。这里仅记录场次与文件，无法从 `A.cpp`、`t1.cpp` 等名称可靠判断 OJ 题号或算法时不补猜测。算法归类的练习见[全量算法练习清单](全量算法练习清单.md)。", "",
-        "## 场次导航", "",
-    ]
-    for dirname in sorted(training):
-        training_lines.append(f"- [{dirname}](#{re.sub(r'[^a-z0-9\u4e00-\u9fff-]', '', dirname.lower().replace('/', ''))})：{len(training[dirname])} 份")
-    training_lines.append("")
-    for dirname in sorted(training):
-        training_lines.extend([f"## {dirname}", "", "、".join(file_link(p) for p in sorted(training[dirname])), ""])
-    TRAINING_OUTPUT.write_text("\n".join(training_lines), encoding="utf-8")
-    print("training_files", sum(map(len, training.values())))
 
 
 if __name__ == "__main__":
