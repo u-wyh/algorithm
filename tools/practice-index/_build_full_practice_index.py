@@ -11,12 +11,13 @@ from pathlib import Path
 from urllib.parse import quote
 
 
-ROOT = Path(__file__).resolve().parent.parent
-ARCHIVE = ROOT / "洛谷" / "code"
+TOOL_DIR = Path(__file__).resolve().parent
+ROOT = TOOL_DIR.parents[1]
+ARCHIVE = ROOT / "practices" / "code"
 TEMPLATES = ROOT / "templates"
-SNAPSHOT = ROOT / "docs" / "练习题官方标签快照.json"
+SNAPSHOT = TOOL_DIR / "练习题官方标签快照.json"
 OUTPUT = ROOT / "docs" / "全量算法练习清单.md"
-TRAINING = ROOT / "洛谷" / "练习赛"
+TRAINING = ROOT / "practices" / "练习赛"
 TRAINING_OUTPUT = ROOT / "docs" / "练习赛代码索引.md"
 EXTENSIONS = {".cpp", ".c", ".py"}
 CATEGORIES = [
@@ -127,7 +128,7 @@ CF_TAG_PRIORITY = [
 
 
 def load_old_index():
-    script = ROOT / "docs" / "_build_algorithm_practice_list.py"
+    script = TOOL_DIR / "_build_algorithm_practice_list.py"
     spec = importlib.util.spec_from_file_location("curated_index", script)
     module = importlib.util.module_from_spec(spec)
     assert spec.loader
@@ -315,9 +316,9 @@ def main() -> None:
 
     lines = [
         "# 全量算法练习清单", "",
-        f"按当前仓库生成，覆盖 `洛谷/code` 的 **{len(archive_entries)} 份练习代码**，连同 `templates` 中已能确认题号的练习实现，共 **{len(records)} 个题目或待核实文件组**。同题多语言、多版本合并在一行。",
+        f"按当前仓库生成，覆盖 `practices/code` 的 **{len(archive_entries)} 份练习代码**，连同 `templates` 中已能确认题号的练习实现，共 **{len(records)} 个题目或待核实文件组**。同题多语言、多版本合并在一行。",
         "",
-        "优先按 `templates` 现有专题归类；其余使用[洛谷题目标签](https://www.luogu.com.cn/problem/list)或 [Codeforces 官方标签](https://codeforces.com/apiHelp/methods)。官方标签描述题目可能涉及的知识点，**不证明本仓库这份代码实际使用该解法**。标签快照见[数据文件](练习题官方标签快照.json)，采集日期为 " + snapshot["captured_at"] + "。来源冲突写在备注中；完全没有算法内容的文件列在末尾，未猜测。",
+        "按 `templates` 的专题和题库标签归类。想按源码实际用到的算法找题，可打开[算法标签题单](按算法标签练习.md)。题库标签来源见[数据快照](../tools/practice-index/练习题官方标签快照.json)。",
         "",
         "已有较细的 `templates` 学习路线和一题多知识点关系，仍见[专题题单](算法学习题单.md)。此表为便于查找，给每题选一个主要归类；其余官方标签照列，不表示算法唯一。没有稳定 OJ 编号的比赛训练文件另见[练习赛代码索引](练习赛代码索引.md)，按场次归档。", "",
         "## 分类导航", "",

@@ -10,12 +10,13 @@ from pathlib import Path
 from urllib.parse import quote, urlparse, parse_qs
 
 
-ROOT = Path(__file__).resolve().parent.parent
+TOOL_DIR = Path(__file__).resolve().parent
+ROOT = TOOL_DIR.parents[1]
 TEMPLATES = ROOT / "templates"
-ARCHIVE = ROOT / "洛谷" / "code"
+ARCHIVE = ROOT / "practices" / "code"
 CODE_EXTS = {".cpp", ".c", ".py"}
 URL_RE = re.compile(rb"https?://[^\s\x00-\x20<>\"']+")
-with (ROOT / "docs" / "原模板文件名对照.tsv").open(encoding="utf-8", newline="") as file:
+with (TOOL_DIR / "原模板文件名对照.tsv").open(encoding="utf-8", newline="") as file:
     PREVIOUS_FILENAMES = {row["现用原名"]: Path(row["上次改名后的文件"]).name
                           for row in csv.DictReader(file, delimiter="\t")}
 COMMENT_ID_RE = re.compile(rb"(?<![A-Za-z0-9])P(\d{3,6})(?![A-Za-z0-9])", re.I)
@@ -264,8 +265,7 @@ def archive_index() -> tuple[dict[str, list[Path]], dict[str, list[Path]]]:
 def main() -> None:
     code = sorted(path for path in TEMPLATES.rglob("*") if path.suffix.lower() in CODE_EXTS)
     groups: dict[tuple[str, str], dict[str, dict]] = collections.defaultdict(dict)
-    unresolved: list[tuple[Path, str]] = []
-    candidates: list[tuple[Path, str, str]] = []
+    unresolved = 0
     source_files = 0
     generic_demos = 0
     utilities = 0
@@ -274,14 +274,11 @@ def main() -> None:
             utilities += 1
             continue
         identified, issue = identify(path)
-        if issue:
-            unresolved.append((path, issue))
         if not identified:
-            if not issue:
-                if is_generic_demo(path):
-                    generic_demos += 1
-                else:
-                    unresolved.append((path, "没有可核实的 OJ 编号；需判断是否为具体练习题。"))
+            if not issue and is_generic_demo(path):
+                generic_demos += 1
+            else:
+                unresolved += 1
             continue
         problem, source = identified
         source_files += 1
@@ -292,14 +289,6 @@ def main() -> None:
             topic += "（综合）"
         item = groups[(top, topic)].setdefault(problem, {"source": source, "files": []})
         item["files"].append(path)
-        if path.relative_to(ROOT).as_posix() not in PREVIOUS_FILENAMES and not re.fullmatch(re.escape(problem) + r"(?:_[2-9]\d*)?", path.stem, re.I):
-            if problem.startswith("LC_"):
-                reason = "原题 slug 已确认，但数字题号未核实；不以英文题名改名。"
-            elif problem.startswith("NC_PRACTICE_"):
-                reason = "牛客 practice UUID 已确认，但不符合现有比赛编号规则。"
-            else:
-                reason = "题号已确认，文件名待规范。"
-            candidates.append((path, problem, reason))
 
     by_id, by_url = archive_index()
     all_problem_ids = {problem for entries in groups.values() for problem in entries}
@@ -312,16 +301,14 @@ def main() -> None:
         "",
         f"当前收录 **{len(all_problem_ids)}** 道题，覆盖 **{len(groups)}** 个现有目录知识点。",
         "",
-        "需要查找整个 `洛谷/code` 归档中的练习，可转到[全量算法练习清单](全量算法练习清单.md)。本页保留由 `templates` 目录直接支持的专题学习路线。",
+        "查找 `practices/code` 中的练习，可打开[全量算法练习清单](全量算法练习清单.md)。本页按 `templates` 中的知识点组织。",
         "",
         "本题单主要依据 [`templates` 算法知识地图](../templates/README.md)中的现有分类，以及文件中的明确题号和原题链接整理。目录表示这份代码在本仓库中的学习归属；一道题可能有多种做法，也可以出现在多个知识点下。题目按编号排列，不代表难度。",
         "",
         "## 使用方式",
         "",
         "1. 从下方目录选择知识点，先看对应的 `templates` 代码，再打开原题。",
-        "2. `洛谷/code` 栏列出已有的同题练习版本；“仅 templates 中存在”表示本轮未找到对应刷题文件，不代表未做过。",
-        "3. 真正的模板文件、来源冲突项暂不列为练习题；待确认项见[命名候选清单](templates%E7%BB%83%E4%B9%A0%E9%A2%98%E5%91%BD%E5%90%8D%E5%80%99%E9%80%89%E6%B8%85%E5%8D%95.md)。",
-        "纯模板目录若没有可确认的独立练习题，本版不建立空表。",
+        "2. `practices/code` 栏列出归档中的同题实现。只在 `templates` 中找到实现的题目会注明。",
         "",
         "## 分类导航",
         "",
@@ -345,7 +332,7 @@ def main() -> None:
             lines.extend([f'<a id="study-{top_index:02d}-{topic_index:02d}"></a>', f"### {topic}", ""])
             if top == "04_数据结构" and topic == "左偏树":
                 lines.extend(["建议先读基础模板与 P3377、P1456，再看 P1552、P4971、P3261、P3273、P4331，最后读可持久化模板、P2409 与 P2483；详见本目录 README。", ""])
-            lines.extend(["| 题号 | 原题 | templates 代码 | 洛谷/code |", "| --- | --- | --- | --- |"])
+            lines.extend(["| 题号 | 原题 | 模板代码 | 练习实现 |", "| --- | --- | --- | --- |"])
             ordered = sorted(entries, key=problem_sort_key)
             if top == "04_数据结构" and topic == "左偏树":
                 ordered = sorted(entries, key=lambda x: (LEFTIST_ORDER.index(x) if x in LEFTIST_ORDER else 999, problem_sort_key(x)))
@@ -364,18 +351,6 @@ def main() -> None:
             lines.append("")
     (ROOT / "docs" / "算法学习题单.md").write_text("\n".join(lines), encoding="utf-8")
 
-    candidate_lines = ["# templates 练习题命名候选清单", "", f"当前有 **{len(candidates)}** 份已确认来源但正式编号或文件名待处理的文件、**{len(unresolved)}** 份来源或用途待确认文件。", ""]
-    if candidates:
-        candidate_lines.extend(["## 已知来源，编号或命名待处理", "", "| 当前文件 | 来源线索 | 原因 |", "| --- | --- | --- |"])
-        for path, problem, reason in sorted(candidates, key=lambda pair: pair[0].as_posix()):
-            candidate_lines.append(f"| {link_to_file(path)} | {problem} | {reason} |")
-        candidate_lines.append("")
-    candidate_lines.extend(["## 来源或用途待确认", "", "下列文件的现有题号、链接或用途信息不足以安全改名；已确认的通用模板与算法演示不在此列。", "", "| 文件 | 原因 |", "| --- | --- |"])
-    for path, reason in sorted(unresolved, key=lambda pair: pair[0].as_posix()):
-        candidate_lines.append(f"| {link_to_file(path)} | {reason} |")
-    candidate_lines.append("")
-    (ROOT / "docs" / "templates练习题命名候选清单.md").write_text("\n".join(candidate_lines), encoding="utf-8")
-
     print("templates_code", len(code))
     print("identified_source_files", source_files)
     print("unique_problems", len(associations))
@@ -383,10 +358,9 @@ def main() -> None:
     print("archive_covered", len(covered))
     print("only_templates", len(only_templates - covered))
     print("multi_topic_problems", sum(n > 1 for n in associations.values()))
-    print("unresolved_source_files", len(unresolved))
+    print("unresolved_source_files", unresolved)
     print("confirmed_generic_demos", generic_demos)
     print("utilities", utilities)
-    print("noncanonical_practice_files", len(candidates))
     print("top_topics", sorted(topic_sizes.items(), key=lambda x: (-x[1], x[0]))[:10])
 
 
