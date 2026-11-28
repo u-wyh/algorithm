@@ -7,6 +7,7 @@
 // 1 <= Q <= 10^5，sum D_i <= 10^5，
 // 1 <= u, v <= N
 // 1 <= a_j <= N。
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：树链剖分、线段树
 #include<bits/stdc++.h>
 using namespace std;

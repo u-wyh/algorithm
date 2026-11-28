@@ -7,6 +7,7 @@
 // 数据范围：1 <= n <= 2000，
 // 1 <= x_i, y_i <= 10^6，
 // 1 <= c_i, k_i <= 10^9。
+// 难度评分：1900（CF 官方）
 // 算法标签：Kruskal、并查集
 #include<bits/stdc++.h>
 using namespace std;

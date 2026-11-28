@@ -7,6 +7,7 @@
 // 数据范围：2 <= n <= 5*10^4，1 <= m <= 5*10^4，
 // 1 <= c_i, t_i <= 10^9。
 // 每条边两个端点不同，编号均为 1 到 n。
+// 难度评分：3100（CF 官方）
 // 算法标签：二分答案、2-SAT、Tarjan
 #include <bits/stdc++.h>
 using namespace std;

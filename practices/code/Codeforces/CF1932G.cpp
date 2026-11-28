@@ -7,6 +7,7 @@
 // 1 <= m <= 10^5，1 <= H <= 10^9，
 // 0 <= l_i, s_i < H。通道无自环和重边。
 // 所有组的 n 之和、m 之和各不超过 10^5。
+// 难度评分：2300（CF 官方）
 // 算法标签：Dijkstra、扩展欧几里得、同余方程
 #include<bits/stdc++.h>
 using namespace std;

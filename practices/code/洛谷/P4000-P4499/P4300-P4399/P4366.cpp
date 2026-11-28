@@ -4,6 +4,7 @@
 // 数据范围：N <= 10^5，M <= 5 * 10^5，
 // 1 <= C <= 100，1 <= F_i, T_i <= N
 // 1 <= V_i <= 100。
+// 难度评分：1900（洛谷分级换算）
 // 算法标签：Dijkstra、位运算
 #include<bits/stdc++.h>
 using namespace std;

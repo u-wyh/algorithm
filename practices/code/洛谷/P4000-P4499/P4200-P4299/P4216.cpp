@@ -8,6 +8,7 @@
 // 数据范围：n <= 2e5，Q <= 2e5，
 // 0 <= P_i, C_i <= n，
 // 1 <= T_i, X_i, Y_i <= n。
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：树链剖分、可持久化线段树、LCA
 #include<bits/stdc++.h>
 using namespace std;

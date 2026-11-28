@@ -7,6 +7,7 @@
 // 数据范围：1 <= N, M <= 10^6，1 <= p <= N，
 // 对第 x 次操作有 0 <= v < x，-10^9 <= a_i
 // c <= 10^9。
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：可持久化平衡树、FHQ-Treap
 #include <bits/stdc++.h>
 using namespace std;

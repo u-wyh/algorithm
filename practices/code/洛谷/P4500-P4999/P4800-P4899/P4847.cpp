@@ -8,6 +8,7 @@
 // 数据范围：1 <= n <= 2 * 10^5，
 // 1 <= m <= 3 * 10^5，1 <= x, y <= n，
 // 1 <= a_i <= 10^9。
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：FHQ-Treap、平衡树
 #include<bits/stdc++.h>
 using namespace std;

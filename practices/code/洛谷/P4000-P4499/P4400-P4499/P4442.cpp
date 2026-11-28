@@ -6,6 +6,7 @@
 // 或耗时 1 通过相邻墙面的传送门传到另一传送门前；
 // 求最少时间（不可达输出 nemoguce）。
 // 数据范围：4 <= N, M <= 500。
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：Dijkstra、图论建模
 #include<bits/stdc++.h>
 using namespace std;

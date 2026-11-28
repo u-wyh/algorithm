@@ -7,6 +7,7 @@
 // 1 <= t <= 1000，1 <= l <= r <= n。
 // 所有组 n 之和至多 10^5，
 // m 之和、q 之和各不超过 2*10^5。
+// 难度评分：2300（CF 官方）
 // 算法标签：Kruskal重构树、ST表、最近公共祖先
 #include <bits/stdc++.h>
 using namespace std;

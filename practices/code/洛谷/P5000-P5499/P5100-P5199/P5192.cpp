@@ -8,6 +8,7 @@
 // 0 <= G_x <= 10^5，1 <= C_i <= 300
 // 0 <= D_i <= 30000，0 <= T < m，
 // 0 <= L <= R <= 100。
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：上下界最大流、Dinic
 #include<bits/stdc++.h>
 using namespace std;

@@ -4,6 +4,7 @@
 // 按原下标区分元素，求可行排列数，对 10^9+7 取模。
 // 数据范围：2 ≤ n ≤ 10^5，1 ≤ a[i] ≤ 2^60，
 // 1 ≤ x < 2^63。
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：组合数学、快速幂、乘法逆元
 
 #include<bits/stdc++.h>
@@ -45,13 +46,12 @@ int power(int a,int b){
 }
 
 void build(){
-    fac[0]=inv[0]=1;
-    fac[n+1]=inv[n+1]=1;
-    for(int i=1;i<=n;i++){
+    fac[0]=1;
+    for(int i=1;i<=n+1;i++){
         fac[i]=(fac[i-1]*i)%MOD;
     }
-    inv[n]=power(fac[n],MOD-2);
-    for(int i=n-1;i>=1;i--){
+    inv[n+1]=power(fac[n+1],MOD-2);
+    for(int i=n;i>=0;i--){
         inv[i]=(inv[i+1]*(i+1))%MOD;
     }
 }
@@ -78,9 +78,6 @@ void prepare(){
 }
 
 int comb(int n,int m){
-    // if(n==m){
-    //     return 1;
-    // }
     return fac[n]*inv[n-m]%MOD*inv[m]%MOD;
 }
 
@@ -100,14 +97,16 @@ signed main()
         cout<<fac[n]<<endl;
         return 0;
     }
-    int ans=1;
-    ans=fac[a]*fac[b]%MOD*fac[c]%MOD;
-    ans=(ans*comb(c+1,a)%MOD*comb(c+b-a,c-a))%MOD;
-    // for(int i=1;i<=min(c+1-a,b);i++){
-    //     ans=(ans*comb(c+1-a,i))%MOD;
-    // }
-    ans=(ans+MOD)%MOD;
+    // a 类各占一个 c 类间隔，b 类只能放在余下的间隔中。
+    int gaps=c+1-a;
+    if(gaps==0&&b>0){
+        cout<<0<<endl;
+        return 0;
+    }
+    int ans=fac[a]*fac[b]%MOD*fac[c]%MOD*comb(c+1,a)%MOD;
+    if(gaps>0){
+        ans=ans*comb(b+gaps-1,b)%MOD;
+    }
     cout<<ans<<endl;
-    cout<<comb(0,0)<<endl;
     return 0;
 }

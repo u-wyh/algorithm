@@ -6,6 +6,7 @@
 // 数据范围：T <= 100，
 // 1 <= A, B, C, P <= 10^8，
 // C / gcd(A, B, C) >= 200。
+// 难度评分：1900（估算）
 // 算法标签：扩展欧几里得、枚举
 #include<bits/stdc++.h>
 using namespace std;

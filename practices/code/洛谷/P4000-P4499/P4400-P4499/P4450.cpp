@@ -4,6 +4,7 @@
 // 且 gcd(a, b) = d 的有序正整数对 (a, b) 的个数。
 // 数据范围：1 <= A, B <= 10^6，
 // 1 <= d <= min(A, B)。
+// 难度评分：2000（洛谷分级换算）
 // 算法标签：容斥原理
 #include<bits/stdc++.h>
 using namespace std;

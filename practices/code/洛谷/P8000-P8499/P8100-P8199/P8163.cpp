@@ -12,6 +12,7 @@
 // 1 <= Q <= 5*10^4
 // 1 <= A_j, B_j, S_k, T_k <= N，A_j
 // != B_j，S_k != T_k，线路和询问各自互不相同。
+// 难度评分：2500（洛谷分级换算）
 // 算法标签：倍增、线段树、单调队列
 #include<bits/stdc++.h>
 using namespace std;

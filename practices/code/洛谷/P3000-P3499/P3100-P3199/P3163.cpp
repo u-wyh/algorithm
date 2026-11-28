@@ -13,6 +13,7 @@
 // 数据范围：4 <= N <= 50，
 // 0 <= a1,a2,b1,b2 <= N-1，
 // 1 <= an,bn <= 50。
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：最大流
 #include<bits/stdc++.h>
 using namespace std;

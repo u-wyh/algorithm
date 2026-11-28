@@ -6,6 +6,7 @@
 // 数据范围：N <= 152501，M, Q <= 52501，
 // 1 <= A_i, B_i, Z <= 10^9，
 // 1 <= L_i <= R_i <= M。
+// 难度评分：2500（洛谷分级换算）
 // 算法标签：莫队、线段树
 #include<bits/stdc++.h>
 using namespace std;

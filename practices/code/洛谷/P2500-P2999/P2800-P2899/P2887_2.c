@@ -10,6 +10,7 @@
 // 1 <= minSPF[i] <= maxSPF[i] <= 1000
 // 1 <= SPF[i] <= 1000，
 // 1 <= cover[i] <= 2500。
+// 难度评分：1200（洛谷分级换算）
 // 算法标签：贪心、排序
 #include <stdio.h>
 #include <stdlib.h>

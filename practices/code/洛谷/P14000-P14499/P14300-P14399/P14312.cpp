@@ -22,6 +22,7 @@
 // 2 <= k <= 3
 // 1 <= m <= 10^5
 // 坐标、点权、答案都需要long类型
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：动态KD树、懒标记
 #include<bits/stdc++.h>
 using namespace std;

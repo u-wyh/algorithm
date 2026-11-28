@@ -9,6 +9,7 @@
 // 表示一种合法的棍子编号移动顺序（Special Judge）。
 // 数据范围：1 <= N <= 5000，
 // 0 <= x1, y1, x2, y2 <= 10^4。
+// 难度评分：1600（洛谷分级换算）
 // 算法标签：拓扑排序、计算几何
 #include<bits/stdc++.h>
 using namespace std;

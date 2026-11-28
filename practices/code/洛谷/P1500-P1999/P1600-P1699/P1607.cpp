@@ -10,6 +10,7 @@
 // 1 <= M_i <= N（每组牛数）
 // 1 <= S_i < E_i <= N（起止站点）
 //P1607
+// 难度评分：1900（洛谷分级换算）
 // 算法标签：贪心、线段树、排序
 #include<bits/stdc++.h>
 using namespace std;

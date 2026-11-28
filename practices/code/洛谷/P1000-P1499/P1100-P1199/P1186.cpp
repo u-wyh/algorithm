@@ -9,6 +9,7 @@
 // 数据范围：1 <= N <= 1000，
 // 1 <= M <= N * (N - 1) / 2。
 // 数据范围：1 <= A, B <= N，1 <= V <= 1000。
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：最短路、Dijkstra、优先队列
 #include<bits/stdc++.h>
 using namespace std;

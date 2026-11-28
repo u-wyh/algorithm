@@ -5,6 +5,7 @@
 // m=2 由 p
 // 求 f 的权值 xor_{i=1}^{n-1} (i * f_i)。
 // 数据范围：2 <= n <= 5 * 10^6，m in {1, 2}。
+// 难度评分：1600（洛谷分级换算）
 // 算法标签：Prufer序列
 #include<bits/stdc++.h>
 using namespace std;

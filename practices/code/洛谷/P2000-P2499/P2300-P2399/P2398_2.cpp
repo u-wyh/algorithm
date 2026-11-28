@@ -3,6 +3,7 @@
 // 求 sum_{i=1..n} sum_{j=1..n} gcd(i, j)。
 // 输出计算结果。
 // 数据范围：n <= 10^5。
+// 难度评分：1500（洛谷分级换算）
 // 算法标签：线性筛、欧拉函数、约数枚举
 #include<bits/stdc++.h>
 using namespace std;

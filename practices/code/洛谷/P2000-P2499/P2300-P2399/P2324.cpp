@@ -5,6 +5,7 @@
 // 每组输出一行答案。
 // 数据范围：T <= 10。
 //P2324
+// 难度评分：1700（洛谷分级换算）
 // 算法标签：IDA*
 #include<bits/stdc++.h>
 using namespace std;

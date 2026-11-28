@@ -5,6 +5,7 @@
 // 输出最多途经城市数及路线（无解输出 No Solution!，SPJ）。
 // 数据范围：1 <= n < 100，1 <= v <= n(n-1)/2，
 // 城市名长度 <= 15。
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：最小费用最大流、Dijkstra、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;

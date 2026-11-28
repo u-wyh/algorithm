@@ -4,6 +4,7 @@
 // 输出：从 s 到 t 的最大流。
 // 数据范围：1 <= n <= 100，1 <= m <= 5000，
 // 0 <= c <= 2^31 - 1。
+// 难度评分：1600（估算）
 // 算法标签：Dinic
 #include<bits/stdc++.h>
 using namespace std;

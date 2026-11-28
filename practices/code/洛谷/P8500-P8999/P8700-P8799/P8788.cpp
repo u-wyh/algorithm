@@ -10,6 +10,7 @@
 // `ncfjboqiealhkrpgd`
 // （原文在 h 与 k 间多一空格）的最少转移次数。
 // 数据范围：仅两道固定填空题（A、B）。
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：常量输出
 #include<bits/stdc++.h>
 using namespace std;

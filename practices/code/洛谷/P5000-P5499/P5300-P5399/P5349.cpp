@@ -5,6 +5,7 @@
 // 取模的结果。
 // 数据范围：m <= 10^5，a_i in [0, 998244353)，
 // 保证 a_m != 0。
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：多项式求逆、NTT
 #include<bits/stdc++.h>
 using namespace std;

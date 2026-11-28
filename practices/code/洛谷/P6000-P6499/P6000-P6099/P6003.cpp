@@ -6,6 +6,7 @@
 // Y = max(M, floor((N - G) / X)) 加仑，
 // 求满足条件的 X 的最大值。
 // 数据范围：1 <= N, K, M <= 10^12，K * M < N。
+// 难度评分：2000（洛谷分级换算）
 // 算法标签：二分答案、整除分块
 #include<bits/stdc++.h>
 using namespace std;

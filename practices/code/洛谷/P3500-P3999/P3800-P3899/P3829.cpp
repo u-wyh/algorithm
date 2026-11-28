@@ -8,6 +8,7 @@
 // 1 <= n <= 10^4，0.1 <= a,
 // b <= 10^6，0.0 <= r <= min{a/4, b/4}
 // |x|, |y| <= 10^6，0 <= theta <= 2*pi。
+// 难度评分：2000（洛谷分级换算）
 // 算法标签：凸包、计算几何
 #include<bits/stdc++.h>
 using namespace std;

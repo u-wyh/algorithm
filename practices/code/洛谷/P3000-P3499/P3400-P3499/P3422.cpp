@@ -9,6 +9,7 @@
 // 数据范围：
 // 3 <= n <= 10^6，p_i >= 0，d_i > 0，
 // sum(d_i), sum(p_i) <= 2*10^9。
+// 难度评分：1900（洛谷分级换算）
 // 算法标签：单调队列、前缀和
 #include<bits/stdc++.h>
 using namespace std;

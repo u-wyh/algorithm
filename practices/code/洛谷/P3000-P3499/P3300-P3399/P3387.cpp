@@ -6,6 +6,7 @@
 // 0 ≤ a[i] ≤ 10^3。
 
 //P3387
+// 难度评分：1600（洛谷分级换算）
 // 算法标签：强连通分量、Tarjan、记忆化搜索
 #include<bits/stdc++.h>
 using namespace std;

@@ -7,6 +7,7 @@
 // 输出油库个数和总代价。
 // 数据范围：n * m <= 50 且 m <= n，
 // 0 <= F_{i,j} <= 10^5。
+// 难度评分：1700（洛谷分级换算）
 // 算法标签：状态压缩DP
 #include<bits/stdc++.h>
 using namespace std;

@@ -6,6 +6,7 @@
 // 数据范围：1 <= n, m <= 10^6，
 // 1 <= l_i <= r_i <= n。
 //P7119
+// 难度评分：1900（洛谷分级换算）
 // 算法标签：线段树
 #include<bits/stdc++.h>
 using namespace std;

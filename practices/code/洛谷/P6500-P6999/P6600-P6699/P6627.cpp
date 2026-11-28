@@ -8,6 +8,7 @@
 // |L|, |R|, |A|, |B| <= 10^9，
 // 1 <= w_i <= 10^9。
 //https://www.cnblogs.com/riju-yuezhu/p/13192826.html
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：离散化、差分、二分查找
 #include<bits/stdc++.h>
 using namespace std;

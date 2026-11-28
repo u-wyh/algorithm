@@ -10,6 +10,7 @@
 // 且 a_i + b_i + c_i = 1
 // d_i + e_i + f_i = 1
 // 小数点后最多 6 位。
+// 难度评分：2400（洛谷分级换算）
 // 算法标签：计算几何、Floyd
 #include<bits/stdc++.h>
 using namespace std;

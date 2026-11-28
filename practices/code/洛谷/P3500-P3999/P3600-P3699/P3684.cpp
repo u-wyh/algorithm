@@ -8,7 +8,8 @@
 // 输出 q 行，每行输出最大奇数尺寸 k，无法移动则输出 0。
 // 数据范围：2 <= n <= 1000，1 <= q <= 300000，
 // 1 <= A_x, A_y, B_x, B_y <= n。
-// 算法标签：Kruskal重构树、多源广度优先搜索、最近公共祖先、倍增
+// 难度评分：2300（洛谷分级换算）
+// 算法标签：Kruskal重构树、多源广度优先搜索、倍增
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e3+5;

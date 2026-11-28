@@ -1,14 +1,10 @@
-// https://www.luogu.com.cn/problem/P1139
-// 题意：入口 A 左侧有 n 辆火车按 a, b, c... 编号等待进站，
-// 右侧为出口 D。
-// 题意：中间有 B、C 两个不限容量的调度站，火车仅可从左向右单向移动。
-// 题意：给出目标出站顺序（出口 D 从左到右的序列），求调度操作方案。
-// 输入：输入整数 n 及由前 n 个小写字母构成的目标排列字符串。
-// 输出：有解输出最短操作序列，多解时输出 (L, R) 字典序最小方案，
-// 每行 h L R。
-// 输出：若无法完成调度，输出 NO。
-// 数据范围：1 < n <= 15。
-// 算法标签：最短路、Dijkstra、优先队列
+// https://www.luogu.com.cn/problem/P1339
+// 题意：给 n 个点和 m 条无向带权边。
+// 输出：从起点 s 到终点 t 的最短路长度。
+// 数据范围：1 <= n <= 2500，1 <= m <= 6200。
+// 边权满足 1 <= w <= 1000。
+// 难度评分：1300（洛谷分级换算）
+// 算法标签：Dijkstra、优先队列
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2505;
@@ -25,7 +21,7 @@ vector<vector<pair<int ,int >>>graph;
 int edge[MAXM][3];
 int Distance[MAXN];
 //记录到源点的最小距离
-bool visit[MAXN];
+bool visited[MAXN];
 //记录这个点是否被访问过
 int n,m,s,en;
 
@@ -52,14 +48,14 @@ int main()
     while(!heap.empty()){
         int u=heap.top().first;
         heap.pop();
-        if(visit[u]){
+        if(visited[u]){
             continue;
         }
-        visit[u]=true;
+        visited[u]=true;
         for(int i=0;i<graph[u].size();i++){
             int v=graph[u][i].first;
             int w=graph[u][i].second;
-            if(!visit[v]&&(w+Distance[u])<Distance[v]){
+            if(!visited[v]&&(w+Distance[u])<Distance[v]){
                 Distance[v]=w+Distance[u];
                 heap.push({v,Distance[u]+w});
             }

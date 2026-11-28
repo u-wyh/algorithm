@@ -4,6 +4,7 @@
 // 系统回答 yes 或 no，据此判断 x 是质数还是合数。
 // 输出：交互结束后输出 prime 或 composite。
 // 数据范围：2 <= x, q <= 100，最多 20 次询问。
+// 难度评分：1400（CF 官方）
 // 算法标签：质数枚举、整除判定
 #include<bits/stdc++.h>
 using namespace std;

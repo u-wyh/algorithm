@@ -7,6 +7,7 @@
 // 输出 (x + 233)^b mod p。
 // 数据范围：1 <= n, p <= 10^5，
 // 0 <= b, dirty_i <= 10^7。
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：快速幂、贪心、数学
 #include<bits/stdc++.h>
 using namespace std;

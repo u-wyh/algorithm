@@ -8,6 +8,7 @@
 // 操作次数 <= 3 * 10^5
 // 1 <= a_i, c_j <= 3 * 10^5，
 // 1 <= l_j < r_j <= n，1 <= x_j < n。
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：二分查找、模拟
 #include<bits/stdc++.h>
 using namespace std;

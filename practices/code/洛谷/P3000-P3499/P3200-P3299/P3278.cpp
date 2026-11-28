@@ -10,6 +10,7 @@
 // N <= 10^5（操作数 n）
 // 0 <= L <= R <= 10^5（次项范围）
 // 0 <= v <= 10^9（参数值，query 操作不超过 10 次）
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：FHQ-Treap、懒标记
 #include<bits/stdc++.h>
 using namespace std;

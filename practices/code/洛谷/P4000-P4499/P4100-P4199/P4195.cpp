@@ -31,6 +31,7 @@
 //
 // 然后使用普通BSGS求出 x-cnt
 // 最后答案加上cnt
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：扩展BSGS、扩展欧几里得
 #include<bits/stdc++.h>
 using namespace std;

@@ -7,6 +7,7 @@
 // 数据范围：
 // 2 <= N*Total_S + M*Total_T
 // <= 4*10^6。
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：字符串哈希、哈希表
 #include <bits/stdc++.h>
 using namespace std;

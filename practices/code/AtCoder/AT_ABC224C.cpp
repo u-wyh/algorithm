@@ -4,6 +4,7 @@
 // 数据范围：3 <= N <= 300，
 // -10^9 <= X_i, Y_i <= 10^9。
 // 任意两点的位置不同。
+// 难度评分：900（AtCoder Problems 换算）
 // 算法标签：枚举、计算几何
 #include<bits/stdc++.h>
 using namespace std;

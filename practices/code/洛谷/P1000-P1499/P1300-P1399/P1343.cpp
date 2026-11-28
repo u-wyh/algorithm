@@ -6,6 +6,7 @@
 // 走不通输出 Orz Ni Jinan Saint Cow!。
 // 数据范围：2 ≤ n ≤ 200，1 ≤ m ≤ 2000，
 // 1 ≤ x < 2^31，1 ≤ a,b ≤ n，0 ≤ c ≤ x。
+// 难度评分：2200（洛谷分级换算）
 // 算法标签：最大流、Dinic
 
 #include<bits/stdc++.h>

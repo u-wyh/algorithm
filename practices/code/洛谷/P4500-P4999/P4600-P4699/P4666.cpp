@@ -5,6 +5,7 @@
 // 数据范围：1 <= N, M <= 10^5，初始 a_i 在 [1, N]，
 // 1 <= c <= N，0 <= h <= 10^9
 // 1 <= min <= max <= 10^9。
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：FHQ-Treap、平衡树
 #include<bits/stdc++.h>
 using namespace std;

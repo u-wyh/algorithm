@@ -5,6 +5,7 @@
 // same_art_{i,j}（或 same_science_{i,j}），
 // 求最大总满意值。
 // 数据范围：n, m <= 100，读入的所有满意值均 <= 500。
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：最小割、Dinic
 #include<bits/stdc++.h>
 using namespace std;

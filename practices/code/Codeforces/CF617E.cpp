@@ -4,6 +4,7 @@
 // 数据范围：1 <= n, m <= 10^5，
 // 0 <= k, a_i <= 10^6。
 // 1 <= l <= r <= n。
+// 难度评分：2200（CF 官方）
 // 算法标签：莫队、前缀异或
 #include<bits/stdc++.h>
 using namespace std;

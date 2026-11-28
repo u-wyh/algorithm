@@ -5,6 +5,7 @@
 // 不可达输出 Poor Harry。
 // 每组输出一行答案。
 // 数据范围：N*M <= 16384，询问对数 <= 512。
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：广度优先搜索、模拟
 #include<bits/stdc++.h>
 using namespace std;

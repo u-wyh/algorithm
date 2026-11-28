@@ -4,6 +4,7 @@
 // 输出一行最小的 l；若无解输出 no solution。
 // 数据范围：对于所有测试点，2 <= b < p < 2^31，p 为质数，
 // 1 <= n < p。
+// 难度评分：1700（洛谷分级换算）
 // 算法标签：BSGS、快速幂
 #include<bits/stdc++.h>
 using namespace std;

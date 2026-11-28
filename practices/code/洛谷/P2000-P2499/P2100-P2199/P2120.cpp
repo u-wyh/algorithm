@@ -6,6 +6,7 @@
 // 数据范围：1 <= n <= 10^6，
 // 0 <= x_i, p_i, c_i < 2^31，x_i < x_{i+1}。
 // 保证 ans + sum(p_i * x_i) < 2^63。
+// 难度评分：1900（洛谷分级换算）
 // 算法标签：区间动态规划、前缀和
 #include<bits/stdc++.h>
 using namespace std;

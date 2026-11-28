@@ -4,6 +4,7 @@
 // 2 a b 查询 a 到 b 路径上的重边条数。
 // 数据范围：T <= 3，
 // 1 <= n, m <= 10^5，a_i != b_i。
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：树链剖分、线段树
 #include<bits/stdc++.h>
 using namespace std;

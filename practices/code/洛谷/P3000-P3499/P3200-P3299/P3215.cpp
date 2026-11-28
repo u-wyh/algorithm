@@ -7,6 +7,7 @@
 // b（询问区间至少修改多少位能变成合法括号串）。
 // 对每个 Query 操作输出一行最少修改位数。
 // 数据范围：1 <= n, q <= 10^5。
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：FHQ-Treap
 #include<bits/stdc++.h>
 using namespace std;

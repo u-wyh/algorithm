@@ -5,6 +5,7 @@
 // 从 1 号点到 n 号点的最大流。
 // 数据范围：2 <= n <= 15，0 <= m <= 1000，
 // 1 <= X, Y <= n，1 <= c <= 1000。
+// 难度评分：1500（估算）
 // 算法标签：Edmonds-Karp
 #include<bits/stdc++.h>
 using namespace std;

@@ -6,6 +6,7 @@
 // 数据范围：1 <= n, m <= 2*10^5，
 // 1 <= a_i, val <= 1000。
 // 1 <= x <= n。
+// 难度评分：2000（CF 官方）
 // 算法标签：线段树、DFS序
 #include<bits/stdc++.h>
 using namespace std;

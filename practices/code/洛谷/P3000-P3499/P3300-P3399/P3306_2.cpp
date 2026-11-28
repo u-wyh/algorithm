@@ -7,6 +7,7 @@
 // 数据范围：1 <= T <= 50，
 // 2 <= p <= 10^9 且 p 为质数，
 // 0 <= a, b, x_1, t < p。
+// 难度评分：1900（洛谷分级换算）
 // 算法标签：BSGS、快速幂
 #include<bits/stdc++.h>
 using namespace std;

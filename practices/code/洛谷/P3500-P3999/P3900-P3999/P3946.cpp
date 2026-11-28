@@ -6,6 +6,7 @@
 // 数据范围：n <= 100000，m <= 500000，
 // 1 <= s, t <= n，0 <= g, q <= 10^9
 // 0 <= w_i <= l_i <= 10^9。
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：最短路、Dijkstra
 #include<bits/stdc++.h>
 using namespace std;

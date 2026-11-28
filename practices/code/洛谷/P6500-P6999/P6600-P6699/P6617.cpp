@@ -6,6 +6,7 @@
 // 数据范围：1 <= n, m, w <= 5*10^5，
 // 0 <= a_i, val <= w，1 <= pos <= n
 // 1 <= l^cnt <= r^cnt <= n。
+// 难度评分：2400（洛谷分级换算）
 // 算法标签：线段树、有序集合、二分查找
 #include<bits/stdc++.h>
 using namespace std;

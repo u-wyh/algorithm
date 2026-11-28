@@ -5,6 +5,7 @@
 // 存在点中离 (x, y) 最近的曼哈顿距离 |Ax-Bx|+|Ay-By|。
 // 数据范围：1 <= n, m <= 3e5，
 // 0 <= x_i, y_i <= 1e6。
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：K-D Tree、二进制分组
 #include<bits/stdc++.h>
 using namespace std;

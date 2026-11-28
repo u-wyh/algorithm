@@ -3,6 +3,7 @@
 // 求它们在字典序下的序号之和模 n!。
 // 输出：序号为 (Ord(p) + Ord(q)) mod n! 的对应排列。
 // 数据范围：1 <= n <= 2*10^5。
+// 难度评分：2000（CF 官方）
 // 算法标签：康托展开、线段树
 #include<bits/stdc++.h>
 using namespace std;

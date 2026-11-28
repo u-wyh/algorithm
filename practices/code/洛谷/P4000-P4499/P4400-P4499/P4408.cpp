@@ -6,6 +6,7 @@
 // 1 <= U_i, V_i <= N，
 // 0 <= T_i <= 10^9（树边数 M = N-1）。
 //两次dfs
+// 难度评分：1700（洛谷分级换算）
 // 算法标签：树的直径、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;

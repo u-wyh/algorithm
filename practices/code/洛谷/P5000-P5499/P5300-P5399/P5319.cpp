@@ -8,6 +8,7 @@
 // 1 <= n, m,
 // s <= 1501（s = sum |S_i|，所有 S_i 互不相同），
 // 1 <= V_i <= 10^9。
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：AC自动机、分数规划、动态规划
 #include<bits/stdc++.h>
 using namespace std;

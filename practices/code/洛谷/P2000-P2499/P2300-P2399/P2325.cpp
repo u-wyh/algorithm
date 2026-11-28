@@ -6,6 +6,7 @@
 // 否则输出省数 K、各城市所属省编号及 K
 // 个省会编号（Special Judge）。
 // 数据范围：1 <= B <= N <= 10^3。
+// 难度评分：2000（洛谷分级换算）
 // 算法标签：树分块、深度优先搜索、栈
 #include<bits/stdc++.h>
 using namespace std;

@@ -6,6 +6,7 @@
 // 顺序输出所有可能作为初始字母的字符
 // （都不可行输出 The name is wrong!）。
 // 数据范围：L <= 200，W, I, N, G <= 16。
+// 难度评分：1500（洛谷分级换算）
 // 算法标签：区间动态规划
 #include<bits/stdc++.h>
 using namespace std;

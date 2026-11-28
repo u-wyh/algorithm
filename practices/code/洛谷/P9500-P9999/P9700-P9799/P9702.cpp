@@ -14,6 +14,7 @@
 // y_i <= 10^9，
 // sum(n) <= 5 * 10^3（未显式给出 T 上界
 // 受 sum(n) 限制）。
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：区间动态规划、环形数组
 #include<bits/stdc++.h>
 using namespace std;

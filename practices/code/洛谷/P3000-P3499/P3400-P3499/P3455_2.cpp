@@ -24,6 +24,7 @@
 // (sumMu[r]-sumMu[l-1]) * (n/l) * (m/l)
 // 时间复杂度： 预处理 O(N)
 // 单次询问约 O(sqrt(N))
+// 难度评分：2100（洛谷分级换算）
 // 算法标签：莫比乌斯反演、线性筛、整除分块
 #include<bits/stdc++.h>
 using namespace std;

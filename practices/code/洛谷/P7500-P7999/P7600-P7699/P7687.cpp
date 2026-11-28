@@ -6,6 +6,7 @@
 // 数据范围：1 <= N <= 10^5，1 <= M <= 10^6，
 // 1 <= K, L <= N，1 <= p, q <= N (p != q)
 // 无重边。
+// 难度评分：1900（洛谷分级换算）
 // 算法标签：Tarjan、割边、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;

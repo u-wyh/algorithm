@@ -4,6 +4,7 @@
 // 数据范围：1 ≤ T ≤ 100，1 ≤ n ≤ 2×10^9。
 
 //P2233
+// 难度评分：1500（洛谷分级换算）
 // 算法标签：矩阵快速幂
 #include<bits/stdc++.h>
 using namespace std;

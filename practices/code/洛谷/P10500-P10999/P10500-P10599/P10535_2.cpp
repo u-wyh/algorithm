@@ -5,6 +5,7 @@
 // 无解输出 I have no idea how to solve it.。
 // 数据范围：1 ≤ n,m ≤ 10^5，接口编号在 [1,2n]，
 // 1 ≤ w[i] ≤ 10^9。
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：Dijkstra
 
 #include<bits/stdc++.h>

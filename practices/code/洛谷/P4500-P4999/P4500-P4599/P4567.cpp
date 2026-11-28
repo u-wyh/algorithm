@@ -6,6 +6,7 @@
 // Insert/Delete/Rotate 总计 <= 6*10^3 次，
 // Get <= 2*10^4 次
 // Prev/Next 总计 <= 2*10^4 次，插入总字符数 <= 2^21。
+// 难度评分：2200（洛谷分级换算）
 // 算法标签：FHQ-Treap
 #include<bits/stdc++.h>
 using namespace std;

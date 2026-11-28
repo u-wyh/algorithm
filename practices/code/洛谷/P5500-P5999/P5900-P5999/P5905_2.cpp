@@ -16,6 +16,7 @@
 // 1 <= n <= 3 * 10^3
 // 1 <= m <= 6 * 10^3
 // -3 * 10^5 <= 边权 <= +3 * 10^5
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：Johnson全源最短路、SPFA、Dijkstra
 #include<bits/stdc++.h>
 using namespace std;

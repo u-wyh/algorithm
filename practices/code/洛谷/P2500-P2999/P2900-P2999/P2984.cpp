@@ -10,6 +10,7 @@
 // N - 1 <= M <= 100000
 // 1 <= L_i <= 2000，
 // 1 <= R_i, S_i, P_i, Q_i <= N。
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：最短路、Dijkstra、优先队列
 #include<bits/stdc++.h>
 using namespace std;

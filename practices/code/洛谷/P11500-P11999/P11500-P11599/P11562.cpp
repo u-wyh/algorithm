@@ -9,6 +9,7 @@
 // 1 <= n <= 10^6
 // 1 <= u, v <= n
 // 0 <= a_i <= 1
+// 难度评分：1400（洛谷分级换算）
 // 算法标签：深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;

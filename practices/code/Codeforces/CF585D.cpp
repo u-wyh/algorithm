@@ -4,6 +4,7 @@
 // 输出：可行时逐行输出每步两人缩写，无解输出 Impossible。
 // 数据范围：1 <= n <= 25，
 // -10^7 <= l_i, m_i, w_i <= 10^7。
+// 难度评分：2300（CF 官方）
 // 算法标签：折半搜索、深度优先搜索、有序映射
 #include<bits/stdc++.h>
 using namespace std;

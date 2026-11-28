@@ -3,6 +3,7 @@
 // 求必须经过才能从 a 到达 b 的中间点中编号最小的点（不含 a, b）
 // 不存在则输出 No solution。
 // 数据范围：1 <= n <= 2*10^5，边数不超过 5*10^5。
+// 难度评分：1600（洛谷分级换算）
 // 算法标签：Tarjan、割点
 #include<bits/stdc++.h>
 using namespace std;

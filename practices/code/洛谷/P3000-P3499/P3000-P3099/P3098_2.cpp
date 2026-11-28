@@ -10,6 +10,7 @@
 // 数据范围：2 <= M <= 10^5，M <= N <= 10^9，
 // 1 <= Q <= min(N, 5000)，1 <= P_i <= M
 // 1 <= q_i <= N。
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：倍增
 #include<bits/stdc++.h>
 using namespace std;

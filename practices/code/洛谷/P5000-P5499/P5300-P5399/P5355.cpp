@@ -7,6 +7,7 @@
 // 可以输出 yuno，否则输出 yumi。
 // 数据范围：所有输入的数在 [0, 10^5] 内，
 // 序列元素在 [1, 10^5] 内。
+// 难度评分：2500（洛谷分级换算）
 // 算法标签：莫队、bitset、根号分治
 #include<bits/stdc++.h>
 using namespace std;

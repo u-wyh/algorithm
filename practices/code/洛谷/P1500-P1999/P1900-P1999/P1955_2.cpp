@@ -4,6 +4,7 @@
 // 判断能否同时满足全部约束，能输出 YES，否则输出 NO。
 // 数据范围：1 ≤ t ≤ 10，1 ≤ n ≤ 10^5，
 // 1 ≤ i,j ≤ 10^9，e 为 0 或 1。
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：并查集、离散化、排序
 
 #include <bits/stdc++.h>
@@ -19,20 +20,22 @@ bool cmp(node a,node b){
 }
 
 inline void first(int n){
-    for(int i=1;i<=n;i++)
+    for(int i=0;i<n;i++)
         f[i]=i;
 }
 
 int get(int x){
-    if(x==f[x])
-        return x;
-    return f[x]=get(f[x]);
+    while(x!=f[x]){
+        f[x]=f[f[x]];
+        x=f[x];
+    }
+    return x;
 }
 
 int main(){
     scanf("%d",&t);
     while(t--){
-        int tot=-1;
+        int tot=0;
         memset(book,0,sizeof(book));
         memset(a,0,sizeof(a));
         memset(f,0,sizeof(f));
@@ -42,8 +45,8 @@ int main(){
 
         for(int i=1;i<=n;i++){
             scanf("%d %d %d",&a[i].x,&a[i].y,&a[i].e);
-            book[++tot]=a[i].x;
-            book[++tot]=a[i].y;
+            book[tot++]=a[i].x;
+            book[tot++]=a[i].y;
         }
         sort(book,book+tot);//排序
         int reu=unique(book,book+tot)-book;  //去重

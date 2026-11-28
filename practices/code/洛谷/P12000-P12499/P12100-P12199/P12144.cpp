@@ -8,6 +8,7 @@
 // 1 <= x_i, y_i <= 10^4。
 // 数据范围：
 // r_i < min(x_i, y_i)（样例 2 有越界，测试数据以范围为准）。
+// 难度评分：1600（洛谷分级换算）
 // 算法标签：计算几何、排序
 #include<bits/stdc++.h>
 using namespace std;

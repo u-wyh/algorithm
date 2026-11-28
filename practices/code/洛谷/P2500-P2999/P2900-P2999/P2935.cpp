@@ -9,6 +9,7 @@
 // 1 <= F <= P，1 < C <= 8000，
 // 1 <= a_i, b_i <= P
 // 1 <= T_i < 892。
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：Floyd、传递闭包
 #include<iostream>
 #include<cstdio>

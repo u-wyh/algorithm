@@ -7,6 +7,7 @@
 // 数据范围：1 <= n <= 200，1 <= m <= 10200，
 // 1 <= u, v <= n，
 // 0 <= lower <= upper < 3000。
+// 难度评分：2000（估算）
 // 算法标签：上下界网络流、Dinic
 #include<bits/stdc++.h>
 using namespace std;

@@ -5,6 +5,7 @@
 // 数据范围：1 <= n, q <= 2*10^5，
 // 1 <= a_i, x, y <= 100。
 // 1 <= l <= r <= n。
+// 难度评分：2500（CF 官方）
 // 算法标签：线段树分裂、线段树合并
 #include<bits/stdc++.h>
 using namespace std;

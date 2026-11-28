@@ -8,6 +8,7 @@
 // 1 <= start, i <= n。
 // 0 <= x, value_i <= 10^9。
 // 后继编号为 -1 或 1 到 n。
+// 难度评分：2000（CF 官方）
 // 算法标签：随机采样、链表遍历
 #include<bits/stdc++.h>
 using namespace std;

@@ -14,6 +14,7 @@
 // 2 <= n <= 10^5，sum(n) <= 2 * 10^5，
 // 1 <= u, v <= n。
 //P9725
+// 难度评分：1700（洛谷分级换算）
 // 算法标签：树上度数统计
 #include<bits/stdc++.h>
 using namespace std;

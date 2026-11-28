@@ -5,6 +5,7 @@
 // 2 <= Time_i <= 2*10^3（偶数）。
 //P4822
 //分层最短路
+// 难度评分：1500（洛谷分级换算）
 // 算法标签：分层图、Dijkstra、最短路
 #include<bits/stdc++.h>
 using namespace std;

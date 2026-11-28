@@ -5,6 +5,7 @@
 // 数据范围：1 <= N, Q <= 1e5，
 // 1 <= r_i, k_i <= 1e9，
 // 1 <= p_i, q_i, v_i <= N。
+// 难度评分：1500（洛谷分级换算）
 // 算法标签：并查集、离线处理
 #include<bits/stdc++.h>
 using namespace std;

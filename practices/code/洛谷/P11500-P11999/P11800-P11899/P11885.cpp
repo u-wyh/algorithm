@@ -12,6 +12,7 @@
 // 1 <= n <= 3 * 10^5
 // 1 <= k < n
 // i < v_i <= n
+// 难度评分：2400（洛谷分级换算）
 // 算法标签：树上启发式合并、树状数组、单调栈
 #include<bits/stdc++.h>
 using namespace std;

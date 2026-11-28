@@ -5,6 +5,7 @@
 // 输出：每次询问输出 Yes 或 No。
 // 数据范围：1 <= n, m <= 5*10^5，1 <= v, h <= n。
 // 第 i 个点的父亲 p_i 满足 1 <= p_i < i。
+// 难度评分：2200（CF 官方）
 // 算法标签：树上启发式合并、位运算
 #include<bits/stdc++.h>
 using namespace std;

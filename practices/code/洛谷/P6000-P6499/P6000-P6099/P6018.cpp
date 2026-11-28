@@ -7,6 +7,7 @@
 // 0 <= a_i <= 10^5，
 // 1 <= x <= n，opt in {1, 2, 3}
 // 任意时刻各点权值非负。
+// 难度评分：2500（洛谷分级换算）
 // 算法标签：01字典树、线段树、DFS序
 #include<bits/stdc++.h>
 using namespace std;

@@ -7,6 +7,7 @@
 // 数据范围：2 <= n <= 5000，0 <= m <= 1000，
 // 0 <= D_i <= C_i <= 10，
 // 0 <= a_i, b_i <= 50。
+// 难度评分：2200（洛谷分级换算）
 // 算法标签：最小费用最大流、SPFA、Dijkstra
 #include<bits/stdc++.h>
 using namespace std;

@@ -9,6 +9,7 @@
 // 接下来 n 行每行 4 个整数表示 A, B, C, D 数量；
 // 每组输出 Roland 或 Patrick。
 // 数据范围：1 <= n < 100，0 <= A, B, C, D <= 30。
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：博弈、记忆化搜索
 #include<bits/stdc++.h>
 using namespace std;

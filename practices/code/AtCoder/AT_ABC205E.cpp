@@ -4,6 +4,7 @@
 // 输出：合法排列数对 10^9+7 取模。
 // 数据范围：0 <= N, M <= 10^6，
 // N+M >= 1，0 <= K <= N。
+// 难度评分：2100（AtCoder Problems 换算）
 // 算法标签：组合计数、反射原理、快速幂
 #include<bits/stdc++.h>
 using namespace std;

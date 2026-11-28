@@ -7,6 +7,7 @@
 // 数据范围：2 <= k <= n <= 10^5，
 // 1 <= m, q <= 3*10^5，1 <= w_i <= 10^9。
 // 1 <= a_i, b_i <= k，图无自环或重边。
+// 难度评分：2500（CF 官方）
 // 算法标签：Dijkstra、Kruskal重构树、最近公共祖先
 #include<bits/stdc++.h>
 using namespace std;

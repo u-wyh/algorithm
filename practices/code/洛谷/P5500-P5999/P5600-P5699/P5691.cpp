@@ -8,6 +8,7 @@
 // |k_i * m^{p_i}| < 2^31，p_i in N*
 // 且 < 2^31
 // 答案 <= 2^31 - 1。
+// 难度评分：1700（洛谷分级换算）
 // 算法标签：折半搜索、双指针、排序
 #include<bits/stdc++.h>
 using namespace std;

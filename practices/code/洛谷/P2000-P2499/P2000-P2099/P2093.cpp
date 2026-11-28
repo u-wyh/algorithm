@@ -18,6 +18,7 @@
 // 1 <= m <= 10^4
 // 1 <= qk <= 20
 // -10^9 <= 坐标值 <= +10^9
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：K-D Tree、优先队列
 #include<bits/stdc++.h>
 using namespace std;

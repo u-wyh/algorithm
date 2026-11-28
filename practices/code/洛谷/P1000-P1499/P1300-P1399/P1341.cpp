@@ -6,6 +6,7 @@
 
 //P1341
 //无向图+判定
+// 难度评分：1500（洛谷分级换算）
 // 算法标签：欧拉路径、深度优先搜索、并查集
 #include<bits/stdc++.h>
 using namespace std;

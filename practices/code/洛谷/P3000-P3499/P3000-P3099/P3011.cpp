@@ -12,6 +12,7 @@
 // 1 <= M <= 14000
 // 1 <= T_{i,j} <= 100
 // （题面未单独标明 DB_i, DP_i 的具体上限）。
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：Dijkstra、最短路、模拟
 #include<bits/stdc++.h>
 using namespace std;

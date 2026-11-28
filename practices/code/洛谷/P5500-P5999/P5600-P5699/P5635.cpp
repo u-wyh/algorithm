@@ -7,6 +7,7 @@
 // 每组输出 1（cbw 胜）、2（zhouwc 胜）或 error（平局）。
 // 数据范围：1 <= T <= 200，
 // 1 <= x, y, p <= 10000。
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：记忆化搜索、博弈论
 #include<bits/stdc++.h>
 using namespace std;

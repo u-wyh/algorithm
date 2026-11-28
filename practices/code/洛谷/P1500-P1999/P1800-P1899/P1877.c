@@ -5,6 +5,7 @@
 // 数据范围：1 ≤ n ≤ 50，1 ≤ maxLevel ≤ 1000，
 // 0 ≤ beginLevel ≤ maxLevel
 // 1 ≤ c_i ≤ maxLevel。
+// 难度评分：1100（洛谷分级换算）
 // 算法标签：动态规划
 
 #include<stdio.h>

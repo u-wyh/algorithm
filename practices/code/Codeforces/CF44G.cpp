@@ -8,6 +8,7 @@
 // 0 <= x_l < x_r <= 10^7，
 // 0 <= y_l < y_r <= 10^7，0 < z <= 10^7。
 // 射击坐标为 [0, 10^7] 内的整数。
+// 难度评分：2500（CF 官方）
 // 算法标签：K-D Tree、替罪羊式重建
 #include<bits/stdc++.h>
 using namespace std;

@@ -7,6 +7,7 @@
 // 数据范围：1 <= N, M <= 150，
 // 0 <= B_{i,j} <= 10^9，
 // 0 <= A_{i,j} <= 1000。
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：Dijkstra、并查集
 #include<bits/stdc++.h>
 using namespace std;

@@ -12,6 +12,7 @@
 // 数据范围：对于 100% 的数据，1 <= P <= 3000，
 // 1 <= C <= 20000，1 <= N <= P
 // 1 <= a_i, b_i <= P，2 <= report_j <= P。
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：网络流、最小割、Dinic
 #include<bits/stdc++.h>
 using namespace std;

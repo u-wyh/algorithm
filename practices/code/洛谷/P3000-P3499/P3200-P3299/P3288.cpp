@@ -15,6 +15,7 @@
 // 0 <= a_i, b_i <= 500
 // 0 <= c_i <= 10^4
 // 0 <= d_i <= 10^3
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：01分数规划、SPFA、二分答案
 #include<bits/stdc++.h>
 using namespace std;

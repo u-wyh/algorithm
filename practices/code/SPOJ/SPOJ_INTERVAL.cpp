@@ -6,6 +6,7 @@
 // 数据范围：1 <= n <= 50000，
 // 0 <= a_i <= b_i <= 50000，
 // 1 <= c_i <= b_i - a_i + 1。
+// 难度评分：1900（估算）
 // 算法标签：差分约束、SPFA
 #include<bits/stdc++.h>
 using namespace std;

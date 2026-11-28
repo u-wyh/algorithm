@@ -8,6 +8,7 @@
 // （边数，1 <= I, J <= N 且 I != J）
 // 1 <= C <= 10（边权）
 // 最短路总数不超过 2^30
+// 难度评分：1500（洛谷分级换算）
 // 算法标签：Dijkstra、最短路、优先队列
 #include<bits/stdc++.h>
 using namespace std;

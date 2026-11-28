@@ -8,6 +8,7 @@
 // 数据范围：
 // 1 <= a_i, b_i <= n-l_i+1，a_i
 // != b_i，l_i >= 1。
+// 难度评分：1900（洛谷分级换算）
 // 算法标签：并查集、倍增
 #include<bits/stdc++.h>
 using namespace std;

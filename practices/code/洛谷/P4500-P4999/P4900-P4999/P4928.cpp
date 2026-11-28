@@ -7,6 +7,7 @@
 // n <= 4 且 n
 // != 1，m <= 2000，y_i <= 6，max(y) < m，
 // |z_i| <= 10^8。
+// 难度评分：2000（洛谷分级换算）
 // 算法标签：状态压缩动态规划
 #include<bits/stdc++.h>
 using namespace std;

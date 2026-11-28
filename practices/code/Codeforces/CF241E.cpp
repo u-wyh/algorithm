@@ -5,6 +5,7 @@
 // 数据范围：2 <= n <= 1000，1 <= m <= 5000。
 // 每条边 a_i -> b_i 满足 1 <= a_i < b_i <= n。
 // 图无重边，保证 1 能到达 n。
+// 难度评分：2600（CF 官方）
 // 算法标签：差分约束、SPFA
 #include<bits/stdc++.h>
 using namespace std;

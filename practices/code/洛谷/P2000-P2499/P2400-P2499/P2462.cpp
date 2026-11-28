@@ -4,6 +4,7 @@
 // 第一行输出最大长度 ans，
 // 接下来 ans 行输出接龙单词（Special Judge）。
 // 数据范围：1 <= n <= 10000，单词长度 <= 100。
+// 难度评分：1400（洛谷分级换算）
 // 算法标签：拓扑排序、DAG动态规划、哈希
 #include<bits/stdc++.h>
 using namespace std;

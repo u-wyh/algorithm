@@ -9,6 +9,7 @@
 // 1 <= H_k, r1, r2 <= R <= 2.5*10^4，
 // 1 <= S_k < k
 // 单次答案 < 10^9。
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：根号分治、DFS序、二分查找
 #include<bits/stdc++.h>
 using namespace std;

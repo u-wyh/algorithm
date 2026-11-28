@@ -11,6 +11,7 @@
 // 任意时刻 a_i in [1, n]，1 <= p <= n
 // -n+1 <= x <= n-1 且 -a_p < x <= n-a_p，
 // 1 <= l <= r <= n，1 <= p <= q <= n。
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：带修莫队、分块
 #include<bits/stdc++.h>
 using namespace std;

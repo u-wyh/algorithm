@@ -11,6 +11,7 @@
 // 数据范围：n <= 22，
 // |S_i| <= 50，T_i <= M_i，m, t, M_i, T_i
 // 及其相加结果都在 int 最大范围内。
+// 难度评分：2000（洛谷分级换算）
 // 算法标签：状态压缩动态规划
 #include<bits/stdc++.h>
 using namespace std;

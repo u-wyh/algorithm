@@ -3,6 +3,7 @@
 // 求 sum_{i=A}^B sum_{j=1}^i
 // floor(i / j) * (-1)^j 的值。
 // 数据范围：1 <= A <= B <= 2 * 10^7。
+// 难度评分：1600（洛谷分级换算）
 // 算法标签：数学、前缀和
 #include<bits/stdc++.h>
 using namespace std;

@@ -8,60 +8,66 @@
 // 关系数为 0 到 min(n*(n-1)/2, 5*10^4)。
 // 1 <= u, v <= n，关系互异且无环。
 // 1 <= time[i] <= 10^4。
+// 难度评分：1700（LeetCode 分级参考）
 // 算法标签：拓扑排序、动态规划
 #include<bits/stdc++.h>
 using namespace std;
-const int MAXM = 250000;
-const int MAXN = 500;
 
-int n,m;
-vector<vector<int >>graph;
-//使用邻接表建图
-int edge[MAXM][2];
-int Time[MAXN];
-int indegree[MAXN];
-//各个节点的入度
-int ans[MAXN];
-//每个节点的答案
-queue<int>q;
-int maxans=0;
-
-int main()
-{
-    cin>>n>>m;
-    graph.resize(n+1);//初始化动态数组大小
-    for(int i=1;i<=m;i++){
-        cin>>edge[i][0]>>edge[i][1];
-    }
-    for(int i=1;i<=n;i++){
-        cin>>Time[i];
-    }
-    for(int i=1;i<=m;i++){
-        graph[edge[i][0]].push_back(edge[i][1]);
-        //建图
-        indegree[edge[i][1]]++;
-        //增加入度
-    }
-    for(int i=1;i<=n;i++){
-        if(indegree[i]==0){
-            q.push(i);
+class Solution{
+public:
+    int minimumTime(int n, vector<vector<int>>& relations, vector<int>& time){
+        vector<vector<int>> graph(n);
+        vector<int> indegree(n), finish(n);
+        for(const auto& edge:relations){
+            int u=edge[0]-1;
+            int v=edge[1]-1;
+            graph[u].push_back(v);
+            indegree[v]++;
         }
-    }
-    while(!q.empty()){
-        int cur=q.front();
-        ans[cur]+=Time[cur];
-        maxans=max(maxans,ans[cur]);
-        q.pop();
-        for(int i=0;i<graph[cur].size();i++){
-            ans[graph[cur][i]]=max(ans[graph[cur][i]],ans[cur]);
-            //将这个即将出去的节点所有功能结算
-            indegree[graph[cur][i]]--;
-            if(indegree[graph[cur][i]]==0){
-                q.push(graph[cur][i]);
+
+        queue<int> q;
+        for(int i=0;i<n;i++){
+            if(indegree[i]==0){
+                q.push(i);
             }
         }
+        int ans=0;
+        while(!q.empty()){
+            int u=q.front();
+            q.pop();
+            finish[u]+=time[u];
+            ans=max(ans,finish[u]);
+            for(int v:graph[u]){
+                finish[v]=max(finish[v],finish[u]);
+                if(--indegree[v]==0){
+                    q.push(v);
+                }
+            }
+        }
+        return ans;
     }
-    cout<<maxans;
+};
+
+#ifndef LEETCODE
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int n,m;
+    if(!(cin>>n>>m)){
+        return 0;
+    }
+    vector<vector<int>> relations(m,vector<int>(2));
+    vector<int> time(n);
+    for(auto& edge:relations){
+        cin>>edge[0]>>edge[1];
+    }
+    for(int& months:time){
+        cin>>months;
+    }
+    Solution solution;
+    cout<<solution.minimumTime(n,relations,time)<<'\n';
     return 0;
 }
-
+#endif

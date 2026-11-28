@@ -7,6 +7,7 @@
 // 村庄编号在 [1,N]，道路不重复。
 
 //P2863
+// 难度评分：1600（洛谷分级换算）
 // 算法标签：Tarjan、强连通分量
 #include<bits/stdc++.h>
 using namespace std;

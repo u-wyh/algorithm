@@ -7,6 +7,7 @@
 // 1 <= m, t_i <= 10^6，
 // 1 <= a_i, b_i, c_j, d_j <= n
 // 1 <= k <= 10^9，1 <= q <= n^2。
+// 难度评分：1400（洛谷分级换算）
 // 算法标签：Bellman-Ford、最短路
 #include<bits/stdc++.h>
 using namespace std;

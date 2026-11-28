@@ -8,6 +8,7 @@
 // 1 <= l_i <= r_i <= N，
 // 1 <= a_i, v_i, P <= 10^9
 // 初始 P >= max{a_i}。
+// 难度评分：2000（洛谷分级换算）
 // 算法标签：线段树、线段树上二分、扫描线
 #include<bits/stdc++.h>
 using namespace std;

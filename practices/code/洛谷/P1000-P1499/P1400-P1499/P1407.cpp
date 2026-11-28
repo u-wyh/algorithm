@@ -7,6 +7,7 @@
 // 由至多 8 个大小写英文字母组成。
 
 //P1407
+// 难度评分：1900（洛谷分级换算）
 // 算法标签：强连通分量、Tarjan
 #include<bits/stdc++.h>
 using namespace std;

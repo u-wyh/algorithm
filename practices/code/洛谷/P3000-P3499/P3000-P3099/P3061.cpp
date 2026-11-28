@@ -10,6 +10,7 @@
 // 数据范围：1 <= N, C <= 1000，
 // 坐标为 [0, 10^6] 内的整数。
 // 原题：https://usaco.org/index.php?cpid=208&page=viewproblem2
+// 难度评分：2400（洛谷分级换算）
 // 算法标签：计算几何、并查集、射线法
 #include <bits/stdc++.h>
 using namespace std;

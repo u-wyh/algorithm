@@ -5,6 +5,7 @@
 // 数据范围：
 // n <= 50000，m <= 100000，a, b,
 // k <= n，c <= 1000，保证罗恩可在密室 1。
+// 难度评分：1500（洛谷分级换算）
 // 算法标签：SPFA、最短路
 #include<bits/stdc++.h>
 using namespace std;

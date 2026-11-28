@@ -8,6 +8,7 @@
 // 1 ≤ b, c[i] ≤ 10^9，0 ≤ f[i] ≤ 10^9，允许重边。
 
 //P1462
+// 难度评分：1500（洛谷分级换算）
 // 算法标签：二分答案、最短路
 #include<bits/stdc++.h>
 using namespace std;

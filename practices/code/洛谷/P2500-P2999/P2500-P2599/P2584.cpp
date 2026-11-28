@@ -5,6 +5,7 @@
 // 对每个查询输出一行结果。
 // 数据范围：n >= 10，Name <= 10 位大写字母，
 // Score <= 10 位正整数，输入文件 <= 2MB。
+// 难度评分：2200（洛谷分级换算）
 // 算法标签：FHQ-Treap、map
 #include<bits/stdc++.h>
 using namespace std;

@@ -3,6 +3,7 @@
 // 输出：任选 3 点组成面积为正整数的三角形的方案数。
 // 数据范围：3 <= N <= 100，
 // 1 <= x_i, y_i <= 10^9，点互不相同。
+// 难度评分：1600（AtCoder Problems 换算）
 // 算法标签：枚举、计算几何
 #include<bits/stdc++.h>
 using namespace std;

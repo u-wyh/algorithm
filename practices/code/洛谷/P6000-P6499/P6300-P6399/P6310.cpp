@@ -6,6 +6,7 @@
 // 数据范围：1 <= n, m <= 3*10^5，
 // 1 <= u_i, v_i <= n，
 // 1 <= w_i, x_i <= 10^6，图连通。
+// 难度评分：2000（洛谷分级换算）
 // 算法标签：Kruskal重构树、树形动态规划
 #include<bits/stdc++.h>
 using namespace std;

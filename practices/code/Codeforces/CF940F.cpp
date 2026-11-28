@@ -7,6 +7,7 @@
 // 数据范围：1 <= n, q <= 10^5，
 // 1 <= a_i, x <= 10^9，1 <= p <= n。
 // 1 <= l <= r <= n。
+// 难度评分：2600（CF 官方）
 // 算法标签：带修莫队、离散化
 #include<bits/stdc++.h>
 using namespace std;

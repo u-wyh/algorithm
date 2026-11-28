@@ -11,6 +11,7 @@
 // 1 <= m <= 10^5
 // 1 <= l_{i1}, r_{i1}, l_{i2}, r_{i2} <= n
 // r_{i1} - l_{i1} = r_{i2} - l_{i2}
+// 难度评分：2000（洛谷分级换算）
 // 算法标签：并查集、ST表
 #include<bits/stdc++.h>
 using namespace std;

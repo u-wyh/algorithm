@@ -8,6 +8,7 @@
 // 1 <= M <= 10^5，1 <= Q <= 10^4，
 // 书名不含空格且长度 <= 10
 // 保证插入与查询位置合法。
+// 难度评分：2000（洛谷分级换算）
 // 算法标签：FHQ-Treap
 #include<bits/stdc++.h>
 using namespace std;

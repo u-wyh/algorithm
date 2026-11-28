@@ -4,6 +4,7 @@
 // 数据范围：4 ≤ h,w ≤ 30，最外一圈是障碍，起终点唯一且保证能到。
 
 //P1300
+// 难度评分：1500（洛谷分级换算）
 // 算法标签：Dijkstra、最短路、分层图
 #include<bits/stdc++.h>
 using namespace std;

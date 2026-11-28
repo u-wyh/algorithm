@@ -5,6 +5,7 @@
 // 允许重边和自环。
 
 //P2863
+// 难度评分：1600（洛谷分级换算）
 // 算法标签：强连通分量、Tarjan、图论
 #include<bits/stdc++.h>
 using namespace std;

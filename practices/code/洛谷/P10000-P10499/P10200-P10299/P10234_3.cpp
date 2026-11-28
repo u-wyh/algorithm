@@ -1,98 +1,77 @@
 // https://www.luogu.com.cn/problem/P10234
-// 题意：给 n 行 m 列的 01 方阵，从左上走到右下。
-// 每步只能走到上下左右且数字不同的相邻格。
-// 不可达输出 -1，可达就输出最短步数和对应的方向串。
-// 数据范围：T 为正整数，1 ≤ n,m ≤ 2000，
-// 同一测试点各组的 n 之和、m 之和分别不超过 2000。
+// 题意：每组给 n 行 m 列的 01 矩阵。
+// 从左上走到右下，每步只走向数字不同的相邻格。
+// 输出：不可达输出 -1，可达输出最短步数和方向串。
+// 方向用 L、R、U、D 表示，最短路径任选。
+// 数据范围：T 为正整数，1 <= n, m <= 2000。
+// 多组数据的 n 之和、m 之和各不超过 2000。
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：广度优先搜索、路径回溯
 
 #include <bits/stdc++.h>
-#define big long long
 using namespace std;
+
+const int MAXN = 2005;
+const int to[4][2] = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+const char direction[] = "DRUL";
+
+int n, m;
+char grid[MAXN][MAXN];
+bool vis[MAXN][MAXN];
+unsigned char ways[MAXN][MAXN];
+
 struct Node{
-	big x,y;
+    int x, y;
 };
-big T,n,m,to[4][2]={1,0,0,1,-1,0,0,-1};
-char path[5]={'D','R','U','L'};
-big ways[3004][3004],dis[3004][3004];
-bool vis[3004][3004],mapp[3004][3004];
-void bfs(big sx,big sy)
-{
-	queue <Node> q;
-	q.push(Node({sx,sy}));
-	dis[sx][sy] = 0;
-	vis[sx][sy] = 1;
-	while(!q.empty())
-	{
-		Node pos=q.front();
-		q.pop();
-		if(pos.x == n && pos.y == m)
-		{
-			printf("%lld\n",dis[n][m]);
-            stack <big> st;
-            big ex = n,ey = m;
-            while((ex != 1) || (ey != 1))
-            {
-                st.push(ways[ex][ey]);
-                big back = (ways[ex][ey]+2)%4;
-                ex += to[back][0], ey += to[back][1]; // 回溯
+
+void bfs(){
+    queue<Node> q;
+    q.push({1, 1});
+    vis[1][1] = true;
+    while(!q.empty()){
+        Node u = q.front();
+        q.pop();
+        if(u.x == n && u.y == m){
+            stack<char> path;
+            for(int x = n, y = m; x != 1 || y != 1; ){
+                int d = ways[x][y];
+                path.push(direction[d]);
+                int back = (d + 2) % 4;
+                x += to[back][0];
+                y += to[back][1];
             }
-            while(!st.empty())
-            {
-                putchar(path[st.top()]);
-                st.pop();
+            printf("%zu\n", path.size());
+            while(!path.empty()){
+                putchar(path.top());
+                path.pop();
             }
             putchar('\n');
-			return;
-		}
-		big ax = pos.x, ay = pos.y;
-		for(big i = 0;i < 4;i++)
-		{
-			big nowx = ax+to[i][0], nowy = ay+to[i][1];
-			if((vis[nowx][nowy] == 0) && (mapp[nowx][nowy] != mapp[ax][ay]) && (1 <= ax && ax <= n && ay >= 1 && ay <= m))
-            {
-                ways[nowx][nowy] = i;
-				dis[nowx][nowy] = dis[ax][ay]+1;
-				vis[nowx][nowy] = 1;
-                q.push(Node({nowx,nowy}));
-            }
-		}
-	}
-    printf("-1\n");
-}
-int main()
-{
-    scanf("%lld\n",&T);
-    while(T--)
-    {
-        scanf("%lld %lld\n",&n,&m);
-        for(big i = 0;i <= n;i++)
-        {
-            for(big j = 0;j <= m;j++)
-            {
-                vis[i][j] = 0;
-                dis[i][j] = ways[i][j] = 0;
+            return;
+        }
+        for(int d = 0; d < 4; ++d){
+            int x = u.x + to[d][0], y = u.y + to[d][1];
+            if(x >= 1 && x <= n && y >= 1 && y <= m &&
+               !vis[x][y] && grid[x][y] != grid[u.x][u.y]){
+                vis[x][y] = true;
+                ways[x][y] = d;
+                q.push({x, y});
             }
         }
-	    for(big i = 1;i <= n;i++)
-	    {
-	    	for(big j = 1;j <= m;j++)
-            {
-                char ch = getchar();
-				while(ch != '0' && ch != '1')
-                {
-                    ch = getchar();
-                }
-				mapp[i][j] = ch-'0';
-            }
-	    }
-        if((mapp[n-1][m] == mapp[n][m]) && (mapp[n][m-1] == mapp[n][m])) // 小小优化
-        {
-            printf("-1\n");
-            continue;
-        }
-        bfs(1,1);
     }
-	return 0;
+    puts("-1");
 }
 
+int main()
+{
+    int t;
+    scanf("%d", &t);
+    while(t--){
+        scanf("%d%d", &n, &m);
+        for(int i = 1; i <= n; ++i){
+            scanf("%2000s", grid[i] + 1);
+            fill(vis[i] + 1, vis[i] + m + 1, false);
+        }
+        bfs();
+    }
+    return 0;
+}

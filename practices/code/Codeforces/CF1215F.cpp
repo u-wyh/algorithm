@@ -7,6 +7,7 @@
 // 1 <= l_i <= r_i <= M，1 <= f <= M。
 // 每对的电台编号从小到大，均为 1 至 p。
 // 投诉对各不相同，互扰对各不相同。
+// 难度评分：2700（CF 官方）
 // 算法标签：2-SAT、Tarjan
 #include<bits/stdc++.h>
 using namespace std;

@@ -5,6 +5,7 @@
 // 求满足所有订单的最小愤怒值总和。
 // 数据范围：1 <= m, n <= 250，0 <= S_i <= 5，
 // 所有数据 <= 10^5。
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：最小费用最大流、SPFA、Dijkstra
 #include<bits/stdc++.h>
 using namespace std;

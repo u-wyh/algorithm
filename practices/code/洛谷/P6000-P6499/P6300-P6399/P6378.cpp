@@ -4,6 +4,7 @@
 // 且每条边至少有一个端点是关键点（输出 TAK 或 NIE）。
 // 数据范围：1 <= k, w <= n <= 10^6，sum w = n，
 // 1 <= a, b <= n，0 <= m <= 10^6。
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：2-SAT、Tarjan、前缀和优化建图
 #include<bits/stdc++.h>
 using namespace std;

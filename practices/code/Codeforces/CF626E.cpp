@@ -3,6 +3,7 @@
 // 偶数项时，中位数取中间两项的平均值。
 // 输出：第一行输出所选子序列长度，第二行输出其中元素。
 // 数据范围：1 <= n <= 2*10^5，0 <= x_i <= 10^6。
+// 难度评分：2400（CF 官方）
 // 算法标签：三分搜索、前缀和、排序
 #include<bits/stdc++.h>
 using namespace std;
@@ -12,7 +13,11 @@ const int MAXN = 2e5+5;
 int n;
 int nums[MAXN];
 int sum[MAXN];
-double ans=0;
+struct Score{
+    int numerator, denominator;
+};
+
+Score ans={0,1};
 int p,le;
 
 inline int read(){
@@ -28,9 +33,14 @@ inline int read(){
     return x*f;
 }
 
-double check(int pos,int len){
-    double ans=1.0*(sum[n]-sum[n-len]+sum[pos]-sum[pos-len-1])/(2*len+1);
-    return ans-nums[pos];
+Score check(int pos,int len){
+    int count=2*len+1;
+    int total=sum[n]-sum[n-len]+sum[pos]-sum[pos-len-1];
+    return {total-count*nums[pos],count};
+}
+
+bool lessScore(Score a,Score b){
+    return a.numerator*b.denominator<b.numerator*a.denominator;
 }
 
 void compute(int pos,int len){
@@ -38,9 +48,9 @@ void compute(int pos,int len){
     while(r-l>4){
         int midl=(r-l)/3+l;
         int midr=r-(r-l)/3;
-        double k1=check(pos,midl);
-        double k2=check(pos,midr);
-        if(k1<k2){
+        Score k1=check(pos,midl);
+        Score k2=check(pos,midr);
+        if(lessScore(k1,k2)){
             l=midl;
         }
         else{
@@ -48,8 +58,8 @@ void compute(int pos,int len){
         }
     }
     for(int k=l;k<=r;k++){
-        double res=check(pos,k);
-        if(res>ans){
+        Score res=check(pos,k);
+        if(lessScore(ans,res)){
             ans=res;
             p=pos;
             le=k;
@@ -67,10 +77,6 @@ signed main()
     for(int i=1;i<=n;i++){
         sum[i]=nums[i]+sum[i-1];
     }
-    for(int i=1;i<=n;i++){
-        cout<<sum[i]<<' ';
-    }
-    cout<<endl;
     p=1,le=0;
     for(int i=1;i<=n;i++){
         compute(i,min(i-1,n-i));

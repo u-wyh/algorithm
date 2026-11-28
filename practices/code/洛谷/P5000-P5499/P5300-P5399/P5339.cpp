@@ -6,6 +6,7 @@
 // 数据范围：
 // n <= 1000，a, b, c,
 // d <= 500，a+b+c+d >= n。
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：容斥原理、NTT
 #include<bits/stdc++.h>
 using namespace std;

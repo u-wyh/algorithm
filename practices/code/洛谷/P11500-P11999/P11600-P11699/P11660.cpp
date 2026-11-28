@@ -11,6 +11,7 @@
 // 1 <= b <= 500
 // 0 <= a <= 2 * 10^9
 // l < r
+// 难度评分：2500（洛谷分级换算）
 // 算法标签：分块、二维差分
 #include<bits/stdc++.h>
 using namespace std;

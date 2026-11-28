@@ -10,6 +10,7 @@
 // 输出到达终点的最小总费用。
 // 数据范围：2 <= N <= 100，
 // 2 <= K <= 10，N, K, A, B, C 均为正整数。
+// 难度评分：1900（洛谷分级换算）
 // 算法标签：分层图最短路、Dijkstra
 #include<bits/stdc++.h>
 using namespace std;

@@ -27,6 +27,7 @@
 // 当 gcd(a,m)!=1 时，把指数降得太小可能导致错误
 // 也不能无脑给 b%phi(m) 加上 phi(m)
 // 当 gcd(a,m)!=1 且 b<phi(m) 时会出错
+// 难度评分：1700（洛谷分级换算）
 // 算法标签：扩展欧拉定理、欧拉函数、快速幂
 #include<bits/stdc++.h>
 using namespace std;

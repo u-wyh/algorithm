@@ -8,6 +8,7 @@
 // 输出：每组输出合法序列对数对 998244353 取模。
 // 数据范围：1 <= T <= 100，1 <= N, M <= 5000。
 // 所有组的 N 之和、M 之和各不超过 5000。
+// 难度评分：2500（估算）
 // 算法标签：动态规划、二阶差分、前缀和
 #include<bits/stdc++.h>
 using namespace std;
@@ -16,7 +17,7 @@ const int MAXN = 5e3+5;
 const int MOD = 998244353;
 
 int T,n,m;
-int dp[MAXN][MAXN];
+int dp[MAXN];
 int diff[MAXN];
 
 int norm(int a){
@@ -67,27 +68,19 @@ int calc(int l,int r){
 
 void solve(){
     cin>>n>>m;
-    
-    for(int i=0;i<=n;i++){
-        for(int j=0;j<=m+1;j++){
-            dp[i][j]=0;
-        }
-    }
-
-    dp[0][0]=1;
+    fill(dp,dp+m,0);
+    dp[0]=1;
 
     for(int i=0;i<n;i++){
-        for(int j=0;j<=m+1;j++){
-            diff[j]=0;
-        }
+        fill(diff,diff+m+2,0);
         for(int j=0;j<=m-1;j++){
-            int v=dp[i][j];
+            int v=dp[j];
             if(v==0){
                 continue;
             }
 
             int l,r;
-        
+
             l=-j,r=min(0ll,m-2-2*j);
             if(l<=r){
                 int a=norm(v*(m+l));
@@ -107,18 +100,16 @@ void solve(){
             }
         }
 
-        for(int j=0;j<m;j++){
+        dp[0]=diff[0];
+        for(int j=1;j<m;j++){
             diff[j]=(diff[j-1]+diff[j])%MOD;
-        }
-        for(int j=0;j<m;j++){
-            diff[j]=(diff[j-1]+diff[j])%MOD;
-            dp[i+1][j]=diff[j];
+            dp[j]=(dp[j-1]+diff[j])%MOD;
         }
     }
 
     int ans=0;
     for(int j=0;j<m;j++){
-        ans=norm(ans+dp[n][j]);
+        ans=norm(ans+dp[j]);
     }
     cout<<ans<<endl;
 }

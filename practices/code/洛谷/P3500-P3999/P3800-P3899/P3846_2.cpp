@@ -22,6 +22,7 @@
 //
 // 对于同一个值，要记录最大的B，因为A确定时，B越大，x=A*t-B越小
 // 整体复杂度 O(sqrt(mod) log(sqrt(mod)))
+// 难度评分：1700（洛谷分级换算）
 // 算法标签：BSGS、快速幂
 #include<bits/stdc++.h>
 using namespace std;

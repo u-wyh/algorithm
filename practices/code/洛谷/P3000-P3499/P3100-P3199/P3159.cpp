@@ -6,6 +6,7 @@
 // 数据范围：
 // 1 <= n, m <= 20（棋盘行列数）
 // 0 <= m_{i,j} <= 9（单格最大参与交换次数）
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：最小费用最大流、Dijkstra
 #include<bits/stdc++.h>
 using namespace std;

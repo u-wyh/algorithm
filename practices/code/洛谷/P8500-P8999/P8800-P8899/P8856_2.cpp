@@ -7,6 +7,7 @@
 // 数据范围：
 // 1 <= C, S,
 // R <= 60000（未单独标注 O, D, N 的范围）。
+// 难度评分：1600（洛谷分级换算）
 // 算法标签：线段树
 #include<bits/stdc++.h>
 using namespace std;

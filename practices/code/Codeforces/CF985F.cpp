@@ -6,6 +6,7 @@
 // 数据范围：1 <= n, m <= 2*10^5。
 // 1 <= x, y <= n，
 // 1 <= len <= n-max(x, y)+1。
+// 难度评分：2300（CF 官方）
 // 算法标签：字符串哈希
 #include<bits/stdc++.h>
 using namespace std;

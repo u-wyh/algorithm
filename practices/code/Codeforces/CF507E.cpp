@@ -9,6 +9,7 @@
 // 数据范围：
 // 2 <= n <= 10^5，
 // n-1 <= m <= min(10^5, n*(n-1)/2)。
+// 难度评分：2100（CF 官方）
 // 算法标签：Dijkstra
 #include<bits/stdc++.h>
 using namespace std;

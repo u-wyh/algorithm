@@ -7,6 +7,7 @@
 // 输出：对每次 lca 逐行输出祖先编号。
 // 数据范围：1 <= n, m <= 10^5，
 // 点的编号为 1 到 n。
+// 难度评分：2300（估算）
 // 算法标签：动态树（LCT）
 #include<bits/stdc++.h>
 using namespace std;

@@ -2,6 +2,7 @@
 // 题意：给定整数 n，求 sum_{i=1..n} gcd(i, n)。
 // 输出计算结果。
 // 数据范围：1 <= n < 2^32。
+// 难度评分：1700（洛谷分级换算）
 // 算法标签：欧拉函数、数论
 #include<bits/stdc++.h>
 using namespace std;

@@ -7,6 +7,7 @@
 // 操作 1 次数 m' <= 100000，
 // 0 <= a_i, d < 10^9+7
 // 1 <= u, v <= n，l <= r <= n。
+// 难度评分：2000（洛谷分级换算）
 // 算法标签：线段树、前缀和
 #include<bits/stdc++.h>
 using namespace std;

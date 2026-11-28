@@ -7,6 +7,7 @@
 // 1 <= a_i, k <= 10^9，
 // 1 <= x, y <= n (x != y)
 // 1 <= l <= r <= m。
+// 难度评分：2500（洛谷分级换算）
 // 算法标签：莫队算法、分块、离线算法
 #include <bits/stdc++.h>
 using namespace std;

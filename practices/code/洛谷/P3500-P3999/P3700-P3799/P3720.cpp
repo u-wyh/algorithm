@@ -8,6 +8,7 @@
 // 数据范围：2 <= N <= 10^5，1 <= M <= 5*10^5，
 // 1 <= A_i, B_i <= N，1 <= P_i
 // Q_i <= 10^5。
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：SPFA
 #include <iostream>
 #include <vector>

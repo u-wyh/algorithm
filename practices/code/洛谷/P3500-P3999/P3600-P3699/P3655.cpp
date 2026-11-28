@@ -11,6 +11,7 @@
 // 1 <= S, T, A_i <= 10^6（A_0=0），
 // |Z| <= 10^6
 // 1 <= X <= Y <= N。
+// 难度评分：1200（洛谷分级换算）
 // 算法标签：差分
 #include<bits/stdc++.h>
 using namespace std;

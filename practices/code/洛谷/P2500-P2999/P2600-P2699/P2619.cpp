@@ -5,6 +5,7 @@
 // 输出最小权值和。
 // 数据范围：V <= 5*10^4，E <= 10^5，
 // 边权 in [1, 100]。
+// 难度评分：1900（洛谷分级换算）
 // 算法标签：WQS二分、Kruskal最小生成树、并查集
 #include<bits/stdc++.h>
 using namespace std;

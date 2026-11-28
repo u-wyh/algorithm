@@ -8,6 +8,7 @@
 // 1 <= u_i, v_i, d_i <= n <= 1000，
 // 0 <= m <= 3000
 // 0 <= w_i <= 2*10^4。
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：最小斯坦纳树、状态压缩动态规划、Dijkstra
 #include<bits/stdc++.h>
 using namespace std;

@@ -4,6 +4,7 @@
 // 2 l r 询问区间内所有 sin(a_i) 之和（保留一位小数输出）。
 // 数据范围：1 <= n, m, a_i, v <= 2*10^5，
 // 1 <= l <= r <= n。
+// 难度评分：1900（洛谷分级换算）
 // 算法标签：线段树
 #include<bits/stdc++.h>
 using namespace std;

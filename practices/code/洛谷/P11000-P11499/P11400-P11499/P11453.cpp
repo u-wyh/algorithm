@@ -10,6 +10,7 @@
 // 1 <= N, K <= 10^5
 // sum N <= 3 * 10^5，sum K <= 3 * 10^5
 // -10^9 <= x_i, l_i, r_i <= 10^9
+// 难度评分：1500（洛谷分级换算）
 // 算法标签：SPFA、离散化
 #include<bits/stdc++.h>
 using namespace std;

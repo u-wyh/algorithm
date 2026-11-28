@@ -9,7 +9,8 @@
 // 数据范围：M <= 150000，
 // 字符串长度 L 自始至终满足 L <= 100000，
 // 询问操作个数不超过 10000，字符均为小写字母。
-// 算法标签：平衡树、FHQ-Treap、字符串哈希、二分查找
+// 难度评分：2700（洛谷分级换算）
+// 算法标签：FHQ Treap、字符串哈希、二分查找
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

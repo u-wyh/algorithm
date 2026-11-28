@@ -3,6 +3,7 @@
 // 给一棵 N 个点的树和 Bessie 固定的出发点 K，
 // 求确保抓住 Bessie 所需的最少农民数。
 // 数据范围：2 <= N <= 1e5，1 <= K <= N。
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：深度优先搜索、树形动态规划
 #include<bits/stdc++.h>
 using namespace std;

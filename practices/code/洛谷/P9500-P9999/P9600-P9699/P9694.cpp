@@ -13,6 +13,7 @@
 // 1 <= |w_i| <= 10^6
 // sum(|w_i|) <= 10^6
 // （未显式给出 T 上界，受 sum(|w_i|) 限制）。
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：字典树
 #include <bits/stdc++.h>
 using namespace std;

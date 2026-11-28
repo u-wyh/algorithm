@@ -6,6 +6,7 @@
 // 数据范围：2 <= n, q <= 3*10^5，
 // 1 <= w_i <= 10^9。
 // 1 <= l <= r <= n，1 <= x <= n。
+// 难度评分：3100（CF 官方）
 // 算法标签：Kruskal重构树、线段树、最近公共祖先
 #include<bits/stdc++.h>
 using namespace std;

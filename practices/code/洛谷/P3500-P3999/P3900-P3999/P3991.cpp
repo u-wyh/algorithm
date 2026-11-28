@@ -12,6 +12,7 @@
 // 1 <= a_i, b_i, c_i <= 10^4，
 // 1 <= x_i <= 10^9
 // 保证插入时序列中至少已有 p_i 单位燃料。
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：FHQ-Treap、动态规划
 #include<bits/stdc++.h>
 using namespace std;

@@ -10,6 +10,7 @@
 // 且 n*m <= 10^7。
 // 数据范围：1 <= l <= r <= m，
 // 1 <= x, y <= n，op in {1, 2}。
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：并查集、字符串哈希
 #include<bits/stdc++.h>
 using namespace std;

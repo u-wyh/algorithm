@@ -14,6 +14,7 @@
 // 1 <= L <= 10^6，0 <= d_i <= L，
 // 0 <= b_i < k
 // d_{i-1} < d_i。
+// 难度评分：1700（洛谷分级换算）
 // 算法标签：莫队、链表
 #include<bits/stdc++.h>
 using namespace std;

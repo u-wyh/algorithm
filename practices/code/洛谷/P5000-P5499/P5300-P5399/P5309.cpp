@@ -7,6 +7,7 @@
 // 1 <= y <= x <= n，1 <= l <= r <= n，
 // 0 <= A_i
 // z <= 10^9+7。
+// 难度评分：2500（洛谷分级换算）
 // 算法标签：根号分治、分块
 #include<bits/stdc++.h>
 using namespace std;

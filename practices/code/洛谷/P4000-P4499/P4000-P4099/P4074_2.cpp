@@ -13,7 +13,8 @@
 // 1 <= A_i, B_i <= n
 // 1 <= C_i <= m，1 <= x <= n，
 // 修改时 1 <= y <= m、询问时 1 <= y <= n。
-// 算法标签：树上带修莫队、LCA、倍增、欧拉序
+// 难度评分：2700（洛谷分级换算）
+// 算法标签：树上带修改莫队、倍增、欧拉序
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 1e5+5;

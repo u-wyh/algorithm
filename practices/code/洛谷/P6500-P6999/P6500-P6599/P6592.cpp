@@ -8,6 +8,7 @@
 // 0 <= k <= 2*10^5，w in {0, 1}
 // 1 <= u_i, v_i <= n，解密后 1 <= x <= n，
 // 1 <= l_i, r_i <= m。
+// 难度评分：2000（洛谷分级换算）
 // 算法标签：可持久化线段树、动态规划
 #include<bits/stdc++.h>
 using namespace std;

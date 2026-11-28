@@ -6,6 +6,7 @@
 // 1 ≤ A_i ≤ B_i ≤ N。
 
 //P1937
+// 难度评分：1900（洛谷分级换算）
 // 算法标签：贪心、线段树、排序
 #include<bits/stdc++.h>
 using namespace std;

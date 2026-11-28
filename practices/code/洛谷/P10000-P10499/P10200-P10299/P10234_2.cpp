@@ -1,87 +1,71 @@
 // https://www.luogu.com.cn/problem/P10234
-// 题意：给 n 行 m 列的 01 方阵，从左上走到右下。
-// 每步只能走到上下左右且数字不同的相邻格。
-// 不可达输出 -1，可达就输出最短步数和对应的方向串。
-// 数据范围：T 为正整数，1 ≤ n,m ≤ 2000，
-// 同一测试点各组的 n 之和、m 之和分别不超过 2000。
-// 算法标签：广度优先搜索
+// 题意：每组给 n 行 m 列的 01 矩阵。
+// 从左上走到右下，每步只走向数字不同的相邻格。
+// 输出：不可达输出 -1，可达输出最短步数和方向串。
+// 方向用 L、R、U、D 表示，最短路径任选。
+// 数据范围：T 为正整数，1 <= n, m <= 2000。
+// 多组数据的 n 之和、m 之和各不超过 2000。
+// 难度评分：1300（洛谷分级换算）
+// 算法标签：广度优先搜索、路径回溯
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-#define MAX 2005
 
-int n,m,t;
-int walk[4][2]={{1,0},{-1,0},{0,1},{0,-1}};//1R  2L  3D  4U
-struct coord{
-    int x,y;
-};
-queue<coord>Q;
+const int MAXN = 2005;
+const int walk[4][2] = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+const char directions[] = "DURL";
+
+int n, m;
+char grid[MAXN][MAXN];
+signed char from[MAXN][MAXN];
+
+void solve(){
+    cin >> n >> m;
+    for(int i = 1; i <= n; ++i){
+        cin >> (grid[i] + 1);
+        fill(from[i] + 1, from[i] + m + 1, -1);
+    }
+
+    queue<pair<int, int>> q;
+    q.push({1, 1});
+    from[1][1] = 4;
+    while(!q.empty() && from[n][m] == -1){
+        auto [x, y] = q.front();
+        q.pop();
+        for(int d = 0; d < 4; ++d){
+            int nx = x + walk[d][0], ny = y + walk[d][1];
+            if(nx < 1 || nx > n || ny < 1 || ny > m ||
+               from[nx][ny] != -1 || grid[nx][ny] == grid[x][y]){
+                continue;
+            }
+            from[nx][ny] = d;
+            q.push({nx, ny});
+        }
+    }
+
+    if(from[n][m] == -1){
+        cout << "-1\n";
+        return;
+    }
+    string path;
+    for(int x = n, y = m; x != 1 || y != 1; ){
+        int d = from[x][y];
+        path.push_back(directions[d]);
+        x -= walk[d][0];
+        y -= walk[d][1];
+    }
+    reverse(path.begin(), path.end());
+    cout << path.size() << '\n' << path << '\n';
+}
 
 int main()
 {
-    cin>>t;
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int t;
+    cin >> t;
     while(t--){
-        cin>>n>>m;
-        char s[n+1][m+1];
-        int d1[n+1][m+1];
-        int d2[n+1][m+1];
-        memset(d2,-1,sizeof(d2));
-        memset(d1,-1,sizeof(d1));
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=m;j++){
-                cin>>s[i][j];
-            }
-        }
-        Q.push({1,1});
-        d1[1][1]=0;
-        d2[1][1]=0;
-        while(!Q.empty()){
-            coord u=Q.front();
-            int ux=u.x,uy=u.y;
-            if(ux==n&&uy==m)
-                break;
-            Q.pop();
-            for(int i=0;i<4;i++){
-                int x=ux+walk[i][0],y=uy+walk[i][1];
-                if(x==0||y==0||x>n||y>m||d1[x][y]!=-1||s[x][y]==s[ux][uy])
-                    continue;
-                d1[x][y]=d1[ux][uy]+1;
-                d2[x][y]=i;
-                Q.push({x,y});
-            }
-        }
-        if(d1[n][m]==-1)
-            printf("-1\n");
-        else{
-            printf("%d\n",d1[n][m]);
-            stack<char>str;
-            int x=n,y=m;
-            for(int i=1;i<=d1[n][m];i++){
-                char tmp;
-                if(d2[x][y]==0){
-                    str.push('R');
-                    x-=1;
-                }
-                if(d2[x][y]==1){
-                    str.push('L');
-                    x+=1;
-                }
-                if(d2[x][y]==2){
-                    str.push('D');
-                    y-=1;
-                }
-                if(d2[x][y]==3){
-                    str.push('U');
-                    y+=1;
-                }
-            }
-            for(int i=1;i<=d1[n][m];i++){
-                cout<<str.top();
-                str.pop();
-            }
-            printf("\n");
-        }
+        solve();
     }
     return 0;
 }
-

@@ -7,6 +7,7 @@
 // 数据范围：1 <= n, m <= 10^5，
 // 1 <= a_i, x <= 10^9，
 // 1 <= l <= r <= n，1 <= k <= n。
+// 难度评分：2300（CF 官方）
 // 算法标签：线段树
 #include<bits/stdc++.h>
 using namespace std;

@@ -9,6 +9,7 @@
 // 1 ≤ p ≤ 2^30，所有输入值都在 int 范围内。
 
 //P3384
+// 难度评分：2100（洛谷分级换算）
 // 算法标签：树链剖分、线段树
 #include<bits/stdc++.h>
 using namespace std;

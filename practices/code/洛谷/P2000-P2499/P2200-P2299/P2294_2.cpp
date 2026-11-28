@@ -4,6 +4,7 @@
 // 判断每组记录之间是否存在矛盾。
 // 每组输出 true（不矛盾）或 false（矛盾）。
 // 数据范围：w < 100，n < 100，m < 1000。
+// 难度评分：1700（洛谷分级换算）
 // 算法标签：差分约束、SPFA
 #include <bits/stdc++.h>
 using namespace std;

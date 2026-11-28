@@ -8,7 +8,8 @@
 // 数据范围：对于 100% 的数据，1 <= N <= 20000，
 // 1 <= M <= 100000，1 <= Q <= 100000
 // 1 <= C_i, D_i, S_i, T_i, M_i <= N。
-// 算法标签：圆方树、Tarjan、最近公共祖先、倍增
+// 难度评分：2000（洛谷分级换算）
+// 算法标签：圆方树、Tarjan、倍增
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 2e4+5;

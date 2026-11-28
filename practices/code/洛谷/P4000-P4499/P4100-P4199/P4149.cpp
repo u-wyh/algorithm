@@ -4,6 +4,7 @@
 // 不存在则输出 -1。
 // 数据范围：1 <= n <= 2e5，0 <= k, w_i <= 1e6，
 // 0 <= u_i, v_i < n。
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：点分治
 #include<bits/stdc++.h>
 using namespace std;

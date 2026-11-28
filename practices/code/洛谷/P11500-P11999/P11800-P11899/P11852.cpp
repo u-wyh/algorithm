@@ -10,6 +10,7 @@
 // v_i <= n（a_i != b_i, u_i != v_i）
 // 1 <= l_i <= 10^9
 // 1 <= q <= 5 * 10^5
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：Kruskal、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;

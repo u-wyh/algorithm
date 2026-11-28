@@ -7,6 +7,7 @@
 // 否则输出 No 和最多能拿的奖赏数。
 // 数据范围：n <= 1000，m <= 15000，b <= a <= 300，
 // 其余数据保证不爆 int。
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：最小费用最大流、Dijkstra
 #include<bits/stdc++.h>
 using namespace std;

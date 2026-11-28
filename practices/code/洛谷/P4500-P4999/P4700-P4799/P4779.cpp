@@ -1,10 +1,12 @@
-// https://www.luogu.com.cn/problem/P4463
-// 题意：统计所有长度为 n、元素互不相同
-// 且均属于 [1, k] 的正整数序列的元素乘积之和，对素数 p 取模。
-// 数据范围：
-// k <= 10^9，n <= 500，p <= 10^9，p 为素数
-// 且 n + 1 < k < p。
-// 算法标签：Dijkstra、最短路
+// https://www.luogu.com.cn/problem/P4779
+// 题意：给 n 个点、m 条有向边和起点 s。
+// 每条边都有非负权，保证从 s 可到达所有点。
+// 输出：按点号输出从 s 到各点的最短距离。
+// 数据范围：1 <= n <= 10^5，1 <= m <= 2*10^5。
+// s = 1，端点在 [1, n]，边权和不超过 10^9。
+// 单条边权在 [0, 10^9] 内。
+// 难度评分：1300（洛谷分级换算）
+// 算法标签：Dijkstra、优先队列
 #include<bits/stdc++.h>
 using namespace std;
 const int MAXN = 100005;
@@ -21,7 +23,7 @@ vector<vector<pair<int ,int >>>graph;
 int edge[MAXM][3];
 long long  Distance[MAXN];
 //记录到源点的最小距离
-bool visit[MAXN];
+bool visited[MAXN];
 //记录这个点是否被访问过
 int n,m,s;
 
@@ -47,14 +49,14 @@ int main()
     while(!heap.empty()){
         int u=heap.top().first;
         heap.pop();
-        if(visit[u]){
+        if(visited[u]){
             continue;
         }
-        visit[u]=true;
+        visited[u]=true;
         for(int i=0;i<graph[u].size();i++){
             int v=graph[u][i].first;
             int w=graph[u][i].second;
-            if(!visit[v]&&(w+Distance[u])<Distance[v]){
+            if(!visited[v]&&(w+Distance[u])<Distance[v]){
                 Distance[v]=w+Distance[u];
                 heap.push({v,Distance[u]+w});
             }

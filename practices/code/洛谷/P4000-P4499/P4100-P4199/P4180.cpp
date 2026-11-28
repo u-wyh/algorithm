@@ -3,7 +3,8 @@
 // 求严格次小生成树的边权和（即边权和严格大于最小生成树的最小生成树）。
 // 数据范围：N <= 1e5，M <= 3e5，边权在 [0, 1e9] 内，
 // 保证必定存在严格次小生成树。
-// 算法标签：Kruskal、最近公共祖先、倍增、最小生成树
+// 难度评分：1900（洛谷分级换算）
+// 算法标签：Kruskal、倍增
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long

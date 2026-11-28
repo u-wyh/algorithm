@@ -8,6 +8,7 @@
 // Subtask 1 保证 1 <= n, c, m <= 3*10^5；
 // Subtask 2 保证 1 <= n, c, m <= 2*10^6；
 // 1 <= x_i <= c，1 <= l <= r <= n。
+// 难度评分：2000（洛谷分级换算）
 // 算法标签：树状数组、离线算法、扫描线
 #include<bits/stdc++.h>
 using namespace std;

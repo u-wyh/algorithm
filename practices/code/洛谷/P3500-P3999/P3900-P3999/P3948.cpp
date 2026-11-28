@@ -10,6 +10,7 @@
 // n <= 80000，opt <= 10^7，Final <= 10^7，opt
 // 中的 Q 操作不超过 1000 次
 // n, opt, mod, min, max, X 均在 int 范围内。
+// 难度评分：1200（洛谷分级换算）
 // 算法标签：差分、前缀和
 #include<bits/stdc++.h>
 #define ll long long

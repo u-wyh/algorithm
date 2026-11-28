@@ -11,6 +11,7 @@
 // 2 < n <= 5*10^6，S_a, S_b, S_c, S_d,
 // A_1 <= min{10^4, Mod}
 // 1 < Mod <= 10^9 + 7，输入均为正整数。
+// 难度评分：1200（洛谷分级换算）
 // 算法标签：贪心、模拟
 #include<bits/stdc++.h>
 using namespace std;

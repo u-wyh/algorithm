@@ -3,6 +3,7 @@
 // 求下标序列字典序最小的那个，不存在输出 Impossible。
 // 每组询问输出一行序列或 Impossible。
 // 数据范围：N <= 10000，M <= 1000，保证数据随机。
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：动态规划（LIS）、贪心
 #include<bits/stdc++.h>
 using namespace std;

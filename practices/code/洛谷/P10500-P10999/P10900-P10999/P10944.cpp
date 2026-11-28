@@ -7,6 +7,7 @@
 // 1 <= T <= 3
 // 1 <= n <= 1000
 // 1 <= m <= 5999
+// 难度评分：1400（洛谷分级换算）
 // 算法标签：Tarjan缩点、拓扑排序、动态规划
 #include<bits/stdc++.h>
 using namespace std;

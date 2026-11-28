@@ -6,6 +6,7 @@
 // 1 <= N <= 10^5，sum N <= 10^5，
 // 0 <= M <= N，1 <= a_i
 // b_i <= 10^12。
+// 难度评分：1400（洛谷分级换算）
 // 算法标签：素数判定、试除法
 #include<bits/stdc++.h>
 using namespace std;

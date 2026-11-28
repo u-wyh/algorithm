@@ -8,6 +8,7 @@
 // 总天数 rm <= 32766（完整版 32766），M <= 3*rm，
 // 1 <= l <= r <= rm
 // 1 <= w <= 1e9。
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：线段树分治、动态树(LCT)
 #include<bits/stdc++.h>
 using namespace std;

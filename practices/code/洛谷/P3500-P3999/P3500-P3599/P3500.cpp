@@ -6,6 +6,7 @@
 // 数据范围：
 // 1 <= n, m, a_i,
 // b_i <= 1000000，sum(m) <= 1000000。
+// 难度评分：1200（洛谷分级换算）
 // 算法标签：二分查找、贪心
 #include<bits/stdc++.h>
 using namespace std;

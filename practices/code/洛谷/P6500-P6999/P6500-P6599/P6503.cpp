@@ -3,6 +3,7 @@
 // 即 sum_{i=1}^n sum_{j=i}^n
 // (max_{i<=k<=j} a_k - min_{i<=k<=j} a_k)。
 // 数据范围：2 <= n <= 3*10^5，1 <= a_i <= 10^8。
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：单调栈、贡献法
 #include<bits/stdc++.h>
 using namespace std;

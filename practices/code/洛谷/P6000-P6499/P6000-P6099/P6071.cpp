@@ -5,6 +5,7 @@
 // 数据范围：1 <= n, q <= 2 * 10^5，
 // 1 <= x, y, p <= n，1 <= l <= r <= n，
 // 1 <= w <= 10^4。
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：可持久化线段树、LCA、ST表
 #include<bits/stdc++.h>
 using namespace std;

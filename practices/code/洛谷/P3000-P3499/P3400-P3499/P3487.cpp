@@ -10,6 +10,7 @@
 // 并通过 inicjuj()/wczytaj()/wypisz() 读写。
 // 数据范围：1 <= n <= 1.5*10^7，
 // 1 <= k <= min(n, 10^6)，1 <= a_i <= 10^9。
+// 难度评分：1600（洛谷分级换算）
 // 算法标签：单调栈、贪心
 #include<bits/stdc++.h>
 using namespace std;

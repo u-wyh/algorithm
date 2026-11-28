@@ -4,6 +4,7 @@
 // 数据范围：1 ≤ n ≤ 10^5。
 
 //两次dfs
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：树的直径、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;

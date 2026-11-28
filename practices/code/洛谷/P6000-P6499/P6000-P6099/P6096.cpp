@@ -7,6 +7,7 @@
 // 数据范围：
 // 2 <= N <= 4 * 10^5，S <= 3 * 10^5，sum
 // L_i <= 8 * 10^5，站名长度 <= 40。
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：Dijkstra、动态规划
 #include<bits/stdc++.h>
 using namespace std;

@@ -19,6 +19,7 @@
 // 打印所有的ans[d]，d的范围[0, n)
 // 1 <= n <= 10^5
 // 1 <= k <= 2 * 10^5
+// 难度评分：2200（洛谷分级换算）
 // 算法标签：K-D Tree、替罪羊树
 #include<bits/stdc++.h>
 using namespace std;

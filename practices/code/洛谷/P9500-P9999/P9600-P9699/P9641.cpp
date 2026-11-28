@@ -11,6 +11,7 @@
 // 1 <= a_{i,j} <= max(n, m)
 // sum(n * m) <= 10^6
 // （未显式给出 T 上界，受 sum(n * m) 限制）。
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：模拟、计数统计
 #include<bits/stdc++.h>
 using namespace std;

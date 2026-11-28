@@ -9,6 +9,7 @@
 // 数据范围：1 <= n <= 200，0 <= m <= 3000，
 // 1 <= p <= 13，0 <= k <= n，1 <= t_i <= 500
 // 无重边。
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：Dijkstra、状态压缩
 #include<bits/stdc++.h>
 using namespace std;

@@ -8,6 +8,7 @@
 // 0 <= quiet[i] < n，安静值互不相同。
 // 关系数为 0 到 n*(n-1)/2，关系互异且无环。
 // 0 <= a, b < n，a != b。
+// 难度评分：1500（LeetCode 分级参考）
 // 算法标签：拓扑排序、动态规划
 #include<bits/stdc++.h>
 using namespace std;

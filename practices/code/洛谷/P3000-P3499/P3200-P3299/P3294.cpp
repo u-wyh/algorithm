@@ -8,6 +8,7 @@
 // 数据范围：
 // 1 <= n <= 100000
 // 1 <= sum |S| <= 510000（所有单词长度总和）
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：Trie树、贪心
 #include<bits/stdc++.h>
 using namespace std;

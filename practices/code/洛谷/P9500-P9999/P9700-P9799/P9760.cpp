@@ -14,6 +14,7 @@
 // 1 <= n <= 2 * 10^5，
 // n-1 <= m <= min(5 * 10^5, n * (n-1) / 2)
 // 1 <= a_i, x_i, y_i <= n，x_i != y_i。
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：Tarjan、圆方树、树上倍增
 #include<bits/stdc++.h>
 using namespace std;

@@ -9,6 +9,7 @@
 // 数据范围：对于所有数据，2 <= N <= 2 * 10^5，
 // 1 <= R_i, sum(R_i) <= 10^6
 // 1 <= K_i, S_i <= 5 * 10^{14}。
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：Dijkstra、动态规划、拓扑排序
 #include<bits/stdc++.h>
 using namespace std;

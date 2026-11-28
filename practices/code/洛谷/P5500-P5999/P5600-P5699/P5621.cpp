@@ -7,6 +7,7 @@
 // 数据范围：1 <= n <= 50000，
 // -10^9 <= H_i, E_i, A_i, D_i,
 // C_i <= 10^9。
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：CDQ分治、树状数组、动态规划
 #include<bits/stdc++.h>
 using namespace std;

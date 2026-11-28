@@ -6,6 +6,7 @@
 // 数据范围：1 <= n <= 10^5。
 // 0 <= K <= 20，
 // 0 <= x_i, r_i, q_i <= 10^9。
+// 难度评分：2200（CF 官方）
 // 算法标签：CDQ分治、树状数组、离散化
 #include<bits/stdc++.h>
 using namespace std;

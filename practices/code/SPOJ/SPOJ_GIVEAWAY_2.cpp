@@ -8,6 +8,7 @@
 // 查询满足 1 <= a <= b <= n。
 // 修改满足 1 <= a <= min(n, 10^5)，
 // 1 < b <= 10^9。
+// 难度评分：1800（估算）
 // 算法标签：分块、二分查找
 #include<bits/stdc++.h>
 using namespace std;

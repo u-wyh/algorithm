@@ -9,6 +9,7 @@
 // 1 <= k_i, m_i <= n，1 <= s_j <= 10^6。
 // 各场景的 k_i 之和、m_i 之和各不超过 2*10^5。
 // 起点互异，重点城市互异，城市编号均为 1 至 n。
+// 难度评分：3000（CF 官方）
 // 算法标签：虚树、Dijkstra、最近公共祖先
 #include<bits/stdc++.h>
 using namespace std;

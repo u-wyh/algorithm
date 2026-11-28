@@ -7,6 +7,7 @@
 // 数据范围：1 <= N, M <= 10^5，
 // 1 <= T_i, C_i <= N。
 //P2146
+// 难度评分：2100（洛谷分级换算）
 // 算法标签：树链剖分、二分查找
 #include<bits/stdc++.h>
 using namespace std;

@@ -5,6 +5,7 @@
 // 求 sum_{i=1}^n val(i)。
 // 数据范围：1 <= n, v_i <= 525010，
 // 1 <= p_i <= n。
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：01字典树合并、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;

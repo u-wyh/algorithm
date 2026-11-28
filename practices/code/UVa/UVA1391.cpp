@@ -8,6 +8,7 @@
 // 若不存在合规分配，输出 No solution.。
 // 数据范围：1 <= n, m <= 10^5。
 // 年龄是 [0, 200] 内的整数，编号为 1 到 n。
+// 难度评分：1900（估算）
 // 算法标签：2-SAT、Tarjan
 #include<bits/stdc++.h>
 using namespace std;

@@ -13,6 +13,7 @@
 // 1 <= m <= 2*10^5，1 <= l_i < r_i <= n
 // 1 <= k_i <= r_i - l_i，
 // sum(k_i) <= 3*10^5，1 <= a_i <= 10^9。
+// 难度评分：2500（洛谷分级换算）
 // 算法标签：线段树优化建图、拓扑排序
 #include<bits/stdc++.h>
 using namespace std;

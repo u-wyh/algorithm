@@ -1,76 +1,72 @@
 // https://www.luogu.com.cn/problem/P2436
-// 题意：T 组数据，
-// 表由 A 位神犇与 B
-// 位蒟蒻间隔循环构成（1..A 神犇，A+1..A+B 蒟蒻...）。
-// 给定 N 名神犇和 M 名蒟蒻的编号，
-// 求满足条件的 A, B（优先 A 最小，其次 B 最小）。
-// 每组输出 A B，无解输出 NO。
-// 数据范围：1 <= T <= 10，1 <= N, M <= 1000，
-// 编号 <= 10*(N+M)。
-// 算法标签：深度优先搜索、剪枝
-#include<bits/stdc++.h>
+// 题意：选手从 1 开始编号，循环分组。
+// 每轮先有 A 位神犇，再有 B 位蒟蒻。
+// 每组给 N 名神犇和 M 名蒟蒻的编号。
+// 输出：求满足这些身份的正整数 A、B。
+// 优先使 A 最小，再使 B 最小；无解输出 NO。
+// 数据范围：多组至 EOF，T <= 10。
+// 1 <= N, M <= 1000。
+// 编号在 [1, 10*(N+M)] 内。
+// 难度评分：1200（洛谷分级换算）
+// 算法标签：枚举、取模
+
+#include <bits/stdc++.h>
 using namespace std;
-#define MAX 1005
 
-int n,m;
-int a[MAX],b[MAX];
-int ansa,ansb;
-int maxans;
+const int MAXN = 1005;
+int a[MAXN], b[MAXN];
 
-void dfs(int x,int y){
-    if(x+y>maxans){
-        return ;
+void solve(int n, int m){
+    int limit = 0;
+    for(int i = 0; i < n; ++i){
+        cin >> a[i];
+        limit = max(limit, a[i]);
     }
-    int i=1;
-    while(i<=n){
-        if((a[i]%(x+y))>x||(a[i]%(x+y))==0){
-            dfs(x+1,y);
-            dfs(x+1,y+1);
-            dfs(x,y+1);
-            break;
-        }
-        i++;
+    for(int i = 0; i < m; ++i){
+        cin >> b[i];
+        limit = max(limit, b[i]);
     }
-    if(i==n+1){
-        i=1;
-        while(i<=m){
-            if((b[i]%(x+y))<x&&(b[i]%(x+y))!=0){
-                dfs(x+1,y);
-                dfs(x+1,y+1);
-                dfs(x,y+1);
+
+    int best_a = INT_MAX, best_b = INT_MAX;
+    // 周期不小于最大编号时，各编号在周期内的位置不再变化。
+    for(int period = 2; period <= limit; ++period){
+        int required = 1;
+        for(int i = 0; i < n; ++i){
+            required = max(required, (a[i] - 1) % period + 1);
+            if(required > best_a || required == period){
                 break;
             }
-            i++;
+        }
+        if(required > best_a || required == period){
+            continue;
+        }
+        bool possible = true;
+        for(int i = 0; i < m; ++i){
+            if((b[i] - 1) % period + 1 <= required){
+                possible = false;
+                break;
+            }
+        }
+        if(possible && (required < best_a || period - required < best_b)){
+            best_a = required;
+            best_b = period - required;
         }
     }
-    if(i==m+1){
-        if(x<=ansa){
-            ansa=x;
-            ansb=min(y,ansb);
-        }
+
+    if(best_a == INT_MAX){
+        cout << "NO\n";
+    }else{
+        cout << best_a << ' ' << best_b << '\n';
     }
 }
 
 int main()
 {
-    while(scanf("%d %d",&n,&m)==2){
-        memset(a,-1,sizeof(a));
-        memset(b,-1,sizeof(b));
-        maxans=0;
-        ansa=1e9,ansb=1e9;
-        for(int i=1;i<=n;i++){
-            scanf("%d",&a[i]);
-        }
-        for(int i=1;i<=m;i++){
-            scanf("%d",&b[i]);
-        }
-        maxans=a[1]+b[1];
-        dfs(1,1);
-        if(ansa==-1&&ansb==-1){
-            printf("No\n");
-        }else{
-            printf("%d %d\n",ansa,ansb);
-        }
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int n, m;
+    while(cin >> n >> m){
+        solve(n, m);
     }
     return 0;
 }

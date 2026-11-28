@@ -6,6 +6,7 @@
 // 输出一个整数表示最多能访问的不同草场数。
 // 数据范围：1 <= N, M <= 10^5，无重边，每条边两端点不同。
 //https://www.cnblogs.com/jiangtaizhe001/p/14872758.html
+// 难度评分：2000（洛谷分级换算）
 // 算法标签：Tarjan、强连通分量、SPFA
 #include<bits/stdc++.h>
 using namespace std;

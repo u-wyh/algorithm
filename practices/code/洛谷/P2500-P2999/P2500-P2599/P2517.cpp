@@ -5,6 +5,7 @@
 // 输出最低成本。
 // 数据范围：0 <= n <= 50，0 <= m <= 10，
 // 0 <= S, U_i <= 10000，0 <= d_i <= 100。
+// 难度评分：1700（洛谷分级换算）
 // 算法标签：最小费用最大流、SPFA、Dijkstra
 #include<bits/stdc++.h>
 using namespace std;

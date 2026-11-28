@@ -6,6 +6,7 @@
 // 数据范围：1 <= n, m <= 3*10^5，
 // 1 <= a_i, b_i <= 10^9，
 // 1 <= x_j, y_j <= n。
+// 难度评分：2300（CF 官方）
 // 算法标签：扩展欧几里得、贪心、排序
 #include<bits/stdc++.h>
 using namespace std;

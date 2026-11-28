@@ -9,6 +9,7 @@
 // 0 <= U[i] < V[i] < N
 // 1 <= W[i] <= 10^9，1 <= Q <= 2*10^5，
 // 0 <= X[j] < Y[j] < N。
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：Kruskal重构树、树上倍增、并查集
 #include <bits/stdc++.h>
 using namespace std;

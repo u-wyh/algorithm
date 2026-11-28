@@ -4,6 +4,7 @@
 // 输出：对每个 v，输出最多能收集多少种不同编号的球。
 // 数据范围：2 <= n <= 2*10^5，
 // 1 <= a[i], b[i] <= n。
+// 难度评分：2400（AtCoder Problems 换算）
 // 算法标签：可撤销并查集、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;

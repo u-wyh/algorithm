@@ -8,6 +8,7 @@
 // 每次更新后输出一行一个整数表示该最小距离。
 // 数据范围：1 <= N, M, Q <= 200000，1 <= K <= N，
 // 1 <= L <= 1000000。
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：Kruskal、并查集、multiset
 #include<bits/stdc++.h>
 using namespace std;

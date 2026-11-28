@@ -9,6 +9,7 @@
 // 1 <= P <= 10^5
 // 1 <= P1_i, P2_i, PB, PA_1, PA_2 <= P，
 // 所有边权 D_i 总和不超过 2*10^9。
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：Dijkstra、最短路
 #include<bits/stdc++.h>
 using namespace std;

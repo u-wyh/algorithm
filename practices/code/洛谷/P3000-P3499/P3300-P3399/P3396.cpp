@@ -8,6 +8,7 @@
 // 数据范围：
 // 1 <= n, m <= 150000，A 操作中 1 <= x < n，
 // 1 <= value_i <= 1000。
+// 难度评分：1400（洛谷分级换算）
 // 算法标签：根号分治
 #include<bits/stdc++.h>
 using namespace std;

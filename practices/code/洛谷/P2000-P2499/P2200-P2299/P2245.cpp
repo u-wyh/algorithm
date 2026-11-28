@@ -5,7 +5,8 @@
 // 如果 x 和 y 不连通，输出 impossible。图里可能有重边和自环。
 // 数据范围：1 ≤ n, q ≤ 10^5，1 ≤ m ≤ 3 × 10^5，
 // 边权 w ≤ 10^9。
-// 算法标签：Kruskal重构树、并查集、最近公共祖先、倍增
+// 难度评分：2000（洛谷分级换算）
+// 算法标签：Kruskal重构树、倍增
 
 #include<bits/stdc++.h>
 using namespace std;

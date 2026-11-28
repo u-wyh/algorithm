@@ -3,6 +3,7 @@
 // 求 S 中最长回文子串的长度。
 // 输出一个整数表示答案。
 // 数据范围：1 <= n <= 1.1 * 10^7。
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：Manacher
 #include<bits/stdc++.h>
 using namespace std;

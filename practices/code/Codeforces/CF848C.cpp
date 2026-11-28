@@ -5,6 +5,7 @@
 // 输出：对每次操作 2 输出一行结果。
 // 数据范围：1 <= n, m <= 10^5，1 <= a_i, x <= n。
 // 1 <= p <= n，1 <= l <= r <= n。
+// 难度评分：2600（CF 官方）
 // 算法标签：CDQ分治、树状数组
 #include<bits/stdc++.h>
 using namespace std;

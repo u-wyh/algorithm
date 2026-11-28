@@ -10,6 +10,7 @@
 // 2 <= n <= 4*10^5，n - 1 <= m <= 10^6，
 // 1 <= x, y <= n，c in {D
 // d}。
+// 难度评分：2500（洛谷分级换算）
 // 算法标签：Tarjan、点双连通分量、并查集
 #include<bits/stdc++.h>
 using namespace std;

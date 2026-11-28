@@ -5,6 +5,7 @@
 // 否则输出 NO ANSWER!。
 // 数据范围：至多 6 条规则。所有串长度至多 20，
 // 且仅由小写字母组成。
+// 难度评分：1500（洛谷分级换算）
 // 算法标签：广度优先搜索、KMP
 #include <bits/stdc++.h>
 using namespace std;

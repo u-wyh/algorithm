@@ -8,6 +8,7 @@
 // 0 <= L_i, L_j <= 10^5，
 // 1 <= T_i, T_j <= 10^5
 // 1 <= R_j <= N。
+// 难度评分：2000（洛谷分级换算）
 // 算法标签：平衡树、贪心
 #include<bits/stdc++.h>
 using namespace std;

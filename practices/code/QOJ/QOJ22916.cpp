@@ -8,6 +8,7 @@
 // 1 <= n, m <= 2*10^5，
 // 1 <= l_i <= r_i <= n，区间互不相同。
 // 所有组的 n 之和、m 之和各不超过 2*10^5。
+// 难度评分：2200（估算）
 // 算法标签：Tarjan、桥、异或差分
 #include<bits/stdc++.h>
 using namespace std;

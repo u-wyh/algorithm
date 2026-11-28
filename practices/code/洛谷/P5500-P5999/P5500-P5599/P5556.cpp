@@ -6,6 +6,7 @@
 // 对每个 Query 输出 YES 或 NO。
 // 数据范围：1 <= n, q <= 10^5，
 // 0 <= v_i, z < 2^30。
+// 难度评分：2500（洛谷分级换算）
 // 算法标签：树链剖分、线段树、线性基
 #include<bits/stdc++.h>
 using namespace std;

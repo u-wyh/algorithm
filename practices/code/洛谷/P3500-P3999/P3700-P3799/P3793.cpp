@@ -11,6 +11,7 @@
 // 最高测试点 n,
 // m = 2*10^7
 // （a_i 由 read() 生成，范围在 [0, 2^30-1]）。
+// 难度评分：2100（洛谷分级换算）
 // 算法标签：分块、ST表
 #include<bits/stdc++.h>
 using namespace std;

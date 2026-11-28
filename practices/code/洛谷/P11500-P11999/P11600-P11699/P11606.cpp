@@ -9,6 +9,7 @@
 // 1 <= n <= 10^3
 // 0 <= m <= min(n(n-1), 10^4)
 // 1 <= x, y <= n
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：分治、广度优先搜索、贪心
 #include<bits/stdc++.h>
 using namespace std;

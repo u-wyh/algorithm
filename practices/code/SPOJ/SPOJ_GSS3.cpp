@@ -7,6 +7,7 @@
 // -10^4 <= A_i, y <= 10^4。
 // 修改满足 1 <= x <= N。
 // 查询满足 1 <= x <= y <= N。
+// 难度评分：1700（估算）
 // 算法标签：线段树
 #include<bits/stdc++.h>
 using namespace std;

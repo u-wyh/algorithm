@@ -6,6 +6,7 @@
 // 0 <= M <= E <= 86399，M <= T1 <= T2 <= E
 // 0 <= S <= 500000。
 //P4644
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：Dijkstra、最短路
 #include<bits/stdc++.h>
 using namespace std;

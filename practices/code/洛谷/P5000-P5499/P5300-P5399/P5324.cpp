@@ -6,6 +6,7 @@
 // 数据范围：1 <= n, m <= 150000，1 <= a_i <= n，
 // 0 <= p <= n，p > 0 时 1 <= x <= n
 // p = 0 时 x in {-1, 1}。
+// 难度评分：2400（洛谷分级换算）
 // 算法标签：线段树
 #include <bits/stdc++.h>
 using namespace std;

@@ -4,6 +4,7 @@
 // 求连通左上角到右下角的最少旋转次数（不可达输出 NO SOLUTION）。
 // 数据范围：1 <= N, M <= 500。
 //p4667
+// 难度评分：1500（洛谷分级换算）
 // 算法标签：0-1 BFS、双端队列、最短路
 #include<bits/stdc++.h>
 using namespace std;

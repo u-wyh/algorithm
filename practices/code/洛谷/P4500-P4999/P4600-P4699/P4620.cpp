@@ -8,6 +8,7 @@
 // 1 <= p <= min(n, 100000)，
 // 10000 <= SA, SB, SC <= 1000000
 // 1 <= A, B, a_i, b_i <= 10^7。
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：树形动态规划、同余
 #include<bits/stdc++.h>
 using namespace std;

@@ -8,6 +8,7 @@
 // 数据范围：N <= 50000，M <= 2*10^5，Q <= 50000，
 // 1 <= P_i <= 10^6
 // 1 <= L_i, R_i, K_i <= N，0 <= C_i < K_i。
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：Kruskal重构树、根号分治、线段树
 #include<bits/stdc++.h>
 using namespace std;

@@ -9,6 +9,7 @@
 // 1 <= r, c <= 50
 // 0 <= a_{i,j} < 998244353，b_{i,j} ∈
 // {0, 1}。
+// 难度评分：1700（洛谷分级换算）
 // 算法标签：二维前缀和、容斥原理
 #include<bits/stdc++.h>
 #define up(l, r, i) for(int i = l, END##i = r;i <= END##i;++ i)

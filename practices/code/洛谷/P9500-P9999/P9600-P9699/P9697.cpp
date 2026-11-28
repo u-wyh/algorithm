@@ -11,6 +11,7 @@
 // sum(n),
 // sum(m) <= 5 * 10^5
 // （未显式给出 T 上界，受 sum(n), sum(m) 限制）。
+// 难度评分：2500（洛谷分级换算）
 // 算法标签：Tarjan强连通分量、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;

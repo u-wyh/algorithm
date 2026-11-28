@@ -8,6 +8,7 @@
 // 1 <= T <= 2*10^4，n >= 3，m >= 0，sum
 // n <= 1.5*10^6，sum m <= 3*10^6
 // 1 <= x, y <= n。
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：并查集、图论
 #include<bits/stdc++.h>
 using namespace std;

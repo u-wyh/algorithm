@@ -9,6 +9,7 @@
 // 满足 f(i) = d 的元素 i 的个数（d 从 0 到 n-1）。
 // 数据范围：对于所有数据，1 <= n <= 10^5，
 // 1 <= a_i, b_i, c_i <= k <= 2 * 10^5。
+// 难度评分：2200（洛谷分级换算）
 // 算法标签：K-D Tree、二进制分组
 #include<bits/stdc++.h>
 using namespace std;

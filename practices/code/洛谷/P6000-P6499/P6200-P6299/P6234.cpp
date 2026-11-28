@@ -7,6 +7,7 @@
 // 数据范围：
 // 1 <= k <= nm <= 10^6，a_{i,j} in
 // [0, 10^3]，r_i in [0, m)，c_i in [0, n)。
+// 难度评分：1800（洛谷分级换算）
 // 算法标签：并查集、贪心
 #include<bits/stdc++.h>
 using namespace std;

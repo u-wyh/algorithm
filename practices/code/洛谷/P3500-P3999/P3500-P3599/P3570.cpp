@@ -12,6 +12,7 @@
 // 数据范围：3 <= n <= 10^6，1 <= k <= n，
 // 1 <= m, l <= n，m + l <= n - 1
 // 1 <= c_i, x_i, y_i <= k。
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：并查集、贪心
 #include<bits/stdc++.h>
 using namespace std;

@@ -4,6 +4,7 @@
 // 回答 p 次从 S_i 房间出发能否到达 T_i 房间（YES/NO）。
 // 数据范围：1 <= n, p <= 10^6，0 <= m < n，
 // 1 <= x, y, S_i, T_i < n。
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：拓扑排序、贪心
 #include<bits/stdc++.h>
 using namespace std;

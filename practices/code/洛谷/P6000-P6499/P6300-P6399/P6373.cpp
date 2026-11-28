@@ -6,6 +6,7 @@
 // 且 l <= i < j < k <= r 的三元组 (i, j, k) 个数。
 // 数据范围：1 <= n, m <= 5*10^5，
 // 1 <= l <= r <= n。
+// 难度评分：1900（洛谷分级换算）
 // 算法标签：线段树
 #include<bits/stdc++.h>
 using namespace std;

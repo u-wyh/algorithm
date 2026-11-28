@@ -1,264 +1,153 @@
 // https://www.luogu.com.cn/problem/P10419
-// 题意：给一个部分填好的 N×N 棋盘，把空格填为 0 或 1。
-// 每行每列的 0、1 各占一半，横竖都不能出现三个连续相同的数字，
-// 任意两行不同、任意两列不同。
-// 输出唯一的完整棋盘。
-// 数据范围：2 ≤ N ≤ 10，N 为偶数，输入字符为 0、1 或下划线。
-// 算法标签：深度优先搜索、状态压缩、剪枝
+// 题意：给一个部分填好的 N×N 棋盘。
+// 固定数字不能改，空格填 0 或 1。
+// 每行每列的两种数字各占一半，
+// 横竖都不能连续出现三个相同的数字。
+// 任意两行不同，任意两列也不同。
+// 输出：逐行输出唯一解，每格之间不加空格。
+// 数据范围：2 <= N <= 10，N 为偶数。
+// 输入字符仅为 0、1 或下划线。
+// 难度评分：1400（洛谷分级换算）
+// 算法标签：状态压缩、约束传播、回溯
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int n;
-int nums[10][10];
-int row[100],col[100];//分别表示每种二进制状态有没有被选
-int cnt=0;
-int ok[1<<10];
-vector<int>R[10];
-vector<int>C[10];
-int r[10],c[10];//表示行和列的选择
-int tot;//不确定状态的数目
+const int MAXN = 10;
+const int MAX_PATTERNS = 252;
+using Domain = bitset<MAX_PATTERNS>;
+using Domains = array<Domain, 2 * MAXN>;
 
-// 辅助函数：获取状态s中第j位的状态
-inline int get(int s, int j) {
-    return (s >> j) & 1;
+int n, patternCount;
+int patterns[MAX_PATTERNS];
+Domain allowed[2][MAXN];
+
+bool restrictDomain(Domain& domain, const Domain& mask, bool& changed){
+    Domain reduced = domain & mask;
+    if (reduced != domain){
+        domain = reduced;
+        changed = true;
+    }
+    return domain.any();
 }
 
-// 辅助函数：设置状态s中第j位的状态为v，并返回新的状态
-inline int set(int s, int j, int v) {
-    return v == 0 ? (s & (~(1 << j))) : (s | (1 << j));
+bool propagate(Domains& domains){
+    bool changed;
+    do {
+        changed = false;
+        for (int i = 0; i < 2 * n; ++i){
+            int count = domains[i].count();
+            if (count == 0){
+                return false;
+            }
+            if (count == 1){
+                int first = i < n ? 0 : n;
+                for (int j = first; j < first + n; ++j){
+                    if (j != i && !restrictDomain(domains[j], ~domains[i], changed)){
+                        return false;
+                    }
+                }
+            }
+        }
+
+        // 每个格子的行候选与列候选必须给出相同数字。
+        for (int r = 0; r < n; ++r){
+            for (int c = 0; c < n; ++c){
+                for (int digit = 0; digit < 2; ++digit){
+                    if ((domains[r] & allowed[digit][c]).none() &&
+                        !restrictDomain(domains[n + c], allowed[digit ^ 1][r], changed)){
+                        return false;
+                    }
+                    if ((domains[n + c] & allowed[digit][r]).none() &&
+                        !restrictDomain(domains[r], allowed[digit ^ 1][c], changed)){
+                        return false;
+                    }
+                }
+            }
+        }
+    } while (changed);
+    return true;
 }
 
-void dfs(int i,int s,int ss,int rest,int now){
-    //表示目前到达第i位  上一个是s  上上一个是ss  还有rest个1没有填  以二进制存储有效状态now
-    if(i==n&&rest==0){
-        ok[++cnt]=now;
+bool solve(Domains& domains){
+    if (!propagate(domains)){
+        return false;
     }
-    if(rest<=-1){
-        return ;
-    }
-    if(s==ss){
-        if(s!=1){
-            dfs(i+1,1,s,rest-1,now|(1<<(n-1-i)));
-        }
-        if(s!=0){
-            dfs(i+1,0,s,rest,now);
+    int choice = -1;
+    int fewest = MAX_PATTERNS + 1;
+    for (int i = 0; i < 2 * n; ++i){
+        int count = domains[i].count();
+        if (count > 1 && count < fewest){
+            choice = i;
+            fewest = count;
         }
     }
-    else{
-        dfs(i+1,1,s,rest-1,now|(1<<(n-1-i)));
-        dfs(i+1,0,s,rest,now);
+    if (choice == -1){
+        return true;
     }
+
+    for (int i = 0; i < patternCount; ++i){
+        if (domains[choice].test(i)){
+            Domains next = domains;
+            next[choice].reset();
+            next[choice].set(i);
+            if (solve(next)){
+                domains = next;
+                return true;
+            }
+        }
+    }
+    return false;
 }
 
 int main()
 {
-    cin>>n;
-    dfs(0,-1,-1,n/2,0);//一开始的0表示所有位都是0
-    cout<<cnt<<endl;
-    for(int i=0;i<=cnt;i++){
-        row[i]=-1;
-        col[i]=-1;
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    cin >> n;
+    Domain all;
+    for (int mask = 0; mask < (1 << n); ++mask){
+        if (__builtin_popcount(mask) != n / 2){
+            continue;
+        }
+        int zeros = mask ^ ((1 << n) - 1);
+        if ((mask & (mask >> 1) & (mask >> 2)) ||
+            (zeros & (zeros >> 1) & (zeros >> 2))){
+            continue;
+        }
+        patterns[patternCount] = mask;
+        all.set(patternCount);
+        for (int i = 0; i < n; ++i){
+            allowed[(mask >> i) & 1][i].set(patternCount);
+        }
+        ++patternCount;
     }
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            char c;
-            cin>>c;
-            if(c=='0')
-                nums[i][j]=0;
-            else if(c=='1')
-                nums[i][j]=1;
-            else{
-                nums[i][j]=-1;
-                tot++;
+
+    Domains domains;
+    domains.fill(all);
+    for (int r = 0; r < n; ++r){
+        for (int c = 0; c < n; ++c){
+            char ch;
+            cin >> ch;
+            if (ch != '_'){
+                domains[r] &= allowed[ch - '0'][c];
+                domains[n + c] &= allowed[ch - '0'][r];
             }
         }
     }
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            cout<<nums[i][j]<<' ';
-        }
-        cout<<endl;
-    }
-    cout<<endl;
 
-    for(int i=0;i<n;i++){
-        if(r[i]==0){
-        //表示这一行还没有结束
-            for(int k=1;k<=cnt;k++){
-                cout<<444<<endl;
-                if(row[k]==-1){//表示这个方案没有被选过
-                    for(int j=0;j<n;j++){
-                        if(nums[i][j]!=-1){
-                            cout<<555<<' '<<k<<' '<<j<<endl;
-                            if(nums[i][j]!=get(ok[k],j)){
-                                //j=n;//表示终结这个方案
-                                continue;
-                            }
-                            cout<<888<<endl;
-                            if(j==n-1){
-                                //表示这个方案可行
-                                R[i].push_back(k);
-                            }
-                        }
-                    }
-                }
+    if (solve(domains)){
+        for (int r = 0; r < n; ++r){
+            int p = 0;
+            while (!domains[r].test(p)){
+                ++p;
             }
-            for(int j=0;j<n;j++){
-                if(nums[i][j]==-1){
-                    int sum=0;
-                    for(int k=0;k<R[i].size();k++){
-                        sum+=get(ok[R[i][k]],j);
-                    }
-                    if(sum==0){//全是0
-                        tot--;
-                        nums[i][j]=0;
-                    }
-                    else if(sum==R[i].size()){//全是1
-                        tot--;
-                        nums[i][j]=1;
-                    }
-                }
+            for (int c = 0; c < n; ++c){
+                cout << ((patterns[p] >> c) & 1);
             }
+            cout << '\n';
         }
-    }//完成每一行的初筛
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            cout<<nums[i][j]<<' ';
-        }
-        cout<<endl;
     }
-    cout<<777<<endl;
-
-//    for(int j=0;j<n;j++){
-//        if(c[j]==0){
-//        //表示这一列还没有结束
-//            for(int k=1;k<=cnt;k++){
-//                if(col[k]==-1){//表示这个方案没有被选过
-//                    for(int i=0;i<n;i++){
-//                        if(nums[j][i]!=-1){
-//                            if(nums[j][i]!=get(ok[k],i)){
-//                                i=n;//表示终结这个方案
-//                                continue;
-//                            }
-//                            if(i==n-1){
-//                                //表示这个方案可行
-//                                C[j].push_back(k);
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//            for(int i=0;i<n;j++){
-//                if(nums[j][i]==-1){
-//                    int sum=0;
-//                    for(int k=0;k<C[j].size();k++){
-//                        sum+=get(ok[R[i][k]],n-i-1);
-//                    }
-//                    if(sum==0){//全是0
-//                        tot--;
-//                        nums[j][i]=0;
-//                    }
-//                    else if(sum==C[j].size()){//全是1
-//                        tot--;
-//                        nums[j][i]=1;
-//                    }
-//                }
-//            }
-//        }
-//    }//完成每一列的初筛
-//    for(int i=0;i<n;i++){
-//        for(int j=0;j<n;j++){
-//            cout<<nums[i][j]<<' ';
-//        }
-//        cout<<endl;
-//    }
-
-//    while(tot!=0){
-//        for(int i=0;i<n;i++){
-//        if(r[i]==0){
-//        //表示这一行还没有结束
-//            for(int k=1;k<=cnt;k++){
-//                cout<<444<<endl;
-//                if(row[k]==-1){//表示这个方案没有被选过
-//                    for(int j=0;j<n;j++){
-//                        if(nums[i][j]!=-1){
-//                            cout<<555<<endl;
-//                            if(nums[i][j]!=get(ok[k],n-1-j)){
-//                                //j=n;//表示终结这个方案
-//                                continue;
-//                            }
-//                            //cout<<888<<endl;
-//                            if(j==n-1){
-//                                //表示这个方案可行
-//                                R[i].push_back(k);
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//            for(int j=0;j<n;j++){
-//                if(nums[i][j]==-1){
-//                    int sum=0;
-//                    for(int k=0;k<R[i].size();k++){
-//                        sum+=get(ok[R[i][k]],n-j-1);
-//                    }
-//                    if(sum==0){//全是0
-//                        tot--;
-//                        nums[i][j]=0;
-//                    }
-//                    else if(sum==R[i].size()){//全是1
-//                        tot--;
-//                        nums[i][j]=1;
-//                    }
-//                }
-//            }
-//        }
-//    }//完成每一行的初筛
-//    cout<<777<<endl;
-//    for(int j=0;j<n;j++){
-//        if(c[j]==0){
-//        //表示这一列还没有结束
-//            for(int k=1;k<=cnt;k++){
-//                if(col[k]==-1){//表示这个方案没有被选过
-//                    for(int i=0;i<n;i++){
-//                        if(nums[j][i]!=-1){
-//                            if(nums[j][i]!=get(ok[k],n-1-i)){
-//                                i=n;//表示终结这个方案
-//                                continue;
-//                            }
-//                            if(i==n-1){
-//                                //表示这个方案可行
-//                                C[j].push_back(k);
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//            for(int i=0;i<n;j++){
-//                if(nums[j][i]==-1){
-//                    int sum=0;
-//                    for(int k=0;k<C[j].size();k++){
-//                        sum+=get(ok[R[i][k]],n-i-1);
-//                    }
-//                    if(sum==0){//全是0
-//                        tot--;
-//                        nums[j][i]=0;
-//                    }
-//                    else if(sum==C[j].size()){//全是1
-//                        tot--;
-//                        nums[j][i]=1;
-//                    }
-//                }
-//            }
-//        }
-//    }//完成每一列的初筛
-//    for(int i=0;i<n;i++){
-//        for(int j=0;j<n;j++){
-//            cout<<nums[i][j]<<' ';
-//        }
-//        cout<<endl;
-//    }
-//    }
     return 0;
 }

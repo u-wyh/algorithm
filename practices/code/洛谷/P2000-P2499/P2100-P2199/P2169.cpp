@@ -4,6 +4,7 @@
 // 求从 1 到 n 的最短传输时间。
 // 数据范围：1 <= n <= 2*10^5，1 <= m <= 10^6，
 // 保证答案在 int 范围内。
+// 难度评分：1700（洛谷分级换算）
 // 算法标签：Tarjan、强连通分量缩点、Dijkstra
 #include<bits/stdc++.h>
 using namespace std;

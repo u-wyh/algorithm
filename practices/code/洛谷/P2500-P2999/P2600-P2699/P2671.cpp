@@ -7,6 +7,7 @@
 // 输出总和对 10007 取模的结果。
 // 数据范围：1 <= n, m <= 10^5，
 // 1 <= color_i <= m，1 <= number_i <= 10^5。
+// 难度评分：1300（洛谷分级换算）
 // 算法标签：排序分组、奇偶分类
 #include<bits/stdc++.h>
 using namespace std;

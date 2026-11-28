@@ -7,6 +7,7 @@
 // （tp=1 时 a 由 Seed 与给定 rnd() 生成）。
 // 数据范围：1 <= n <= 10^7，
 // 0 <= k, d, a_i <= 10^9，1 <= x <= n - 1。
+// 难度评分：1600（洛谷分级换算）
 // 算法标签：动态规划、单调队列
 #include<bits/stdc++.h>
 using namespace std;

@@ -6,6 +6,7 @@
 // 输出：Case #tc: 接六个坐标或 IMPOSSIBLE。
 // 数据范围：0 <= T <= 1000，1 <= A <= 10^8。
 // 1 <= N, M <= 10^4。A > N * M 时无解。
+// 难度评分：1600（洛谷分级换算）
 // 算法标签：构造、计算几何
 #include<bits/stdc++.h>
 using namespace std;

@@ -24,7 +24,8 @@
 // int rsum[MAXN],rsize;
 // int size;
 
-// void dfs(int u,int st,int en,int sum,int *num){
+// void dfs(int u,
+//          int st,int en,int sum,int *num){
 //     if(u==en+1){
 //         num[++size]=sum;
 //         return ;
@@ -70,6 +71,7 @@
 //     cout<<ans<<endl;
 //     return 0;
 // }
+// 难度评分：2000（洛谷分级换算）
 // 算法标签：折半搜索、状态压缩、离散化
 
 #include<bits/stdc++.h>

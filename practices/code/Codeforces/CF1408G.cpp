@@ -5,6 +5,7 @@
 // 数据范围：1 <= n <= 1500，边权互不相同。
 // 0 <= a_ij <= n*(n-1)/2，a_ii = 0。
 // 非对角元素为正且矩阵对称。
+// 难度评分：2700（CF 官方）
 // 算法标签：Kruskal重构树、树形动态规划
 #include<bits/stdc++.h>
 using namespace std;

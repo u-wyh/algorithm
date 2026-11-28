@@ -6,6 +6,7 @@
 // 1 <= u, v, x <= n，
 // 1 <= value_i, y <= 10^4
 // 0 <= k <= n-1。
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：点分树、动态开点线段树、树链剖分
 #include<bits/stdc++.h>
 using namespace std;

@@ -1,6 +1,7 @@
 // https://www.luogu.com.cn/problem/P1919
 // 题意：输入两个十进制正整数 a 和 b，输出它们的精确乘积。
 // 数据范围：1 ≤ a,b ≤ 10^1000000。
+// 难度评分：2700（洛谷分级换算）
 // 算法标签：FFT、高精度
 
 #include<bits/stdc++.h>

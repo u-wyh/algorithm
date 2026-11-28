@@ -6,6 +6,7 @@
 // 数据范围：2 <= N <= 200，1 <= M <= 5*10^4，
 // 1 <= U_i, V_i <= N（U_i != V_i）
 // 0 <= C_i <= 10^6，0 <= D_i <= 10^9。
+// 难度评分：2300（洛谷分级换算）
 // 算法标签：Dijkstra、深度优先搜索
 #include<bits/stdc++.h>
 using namespace std;

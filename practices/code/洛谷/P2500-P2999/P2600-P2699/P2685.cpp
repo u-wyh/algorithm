@@ -5,6 +5,7 @@
 // 一行输出 d 和 cnt。
 // 数据范围：1 <= n <= 10^5，1 <= m <= 2*10^5，
 // 1 <= c <= 10^4。
+// 难度评分：2500（洛谷分级换算）
 // 算法标签：Dijkstra、线段树、广度优先搜索
 #include<bits/stdc++.h>
 using namespace std;

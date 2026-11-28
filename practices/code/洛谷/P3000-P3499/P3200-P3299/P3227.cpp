@@ -6,6 +6,7 @@
 // 输出所有合法切面中总不和谐值 ∑v(x, y, f(x, y)) 的最小值。
 // 数据范围：1 <= P, Q, R <= 40，0 <= D <= R，
 // 0 <= v(x, y, z) <= 1000。
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：最小割、Dinic
 #include<bits/stdc++.h>
 using namespace std;

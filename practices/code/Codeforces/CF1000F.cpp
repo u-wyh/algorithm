@@ -4,6 +4,7 @@
 // 数据范围：1 <= n, q <= 5*10^5，
 // 1 <= a_i <= 5*10^5。
 // 1 <= l <= r <= n。
+// 难度评分：2400（CF 官方）
 // 算法标签：莫队
 #include<bits/stdc++.h>
 using namespace std;

@@ -9,6 +9,7 @@
 // 数据范围：1 <= N, M <= 10^5，
 // 0 <= x_i, y_i,
 // t_i <= 10^9（a_j, b_j 为数轴坐标，未单独注明上界）。
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：CDQ分治、双指针
 #include<bits/stdc++.h>
 using namespace std;

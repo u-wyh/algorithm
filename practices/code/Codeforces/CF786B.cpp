@@ -6,6 +6,7 @@
 // 输出：从 s 到各点的最短路代价，不可达记 -1。
 // 数据范围：1 <= n, q <= 10^5，1 <= w <= 10^9。
 // 1 <= s, u, v <= n，1 <= l <= r <= n。
+// 难度评分：2300（CF 官方）
 // 算法标签：线段树优化建图、Dijkstra
 #include<bits/stdc++.h>
 using namespace std;

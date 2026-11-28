@@ -5,6 +5,7 @@
 // 结束额外输出 end。
 // 数据范围：0 < N <= 10^4，0 < M <= 200，
 // 0 < q <= 10^4。
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：FHQ-Treap、平衡树
 #include<bits/stdc++.h>
 using namespace std;

@@ -6,6 +6,7 @@
 // 1 <= T <= 3000，1 <= t_{i,j} <= 200
 // f_{i,j} <= 2*10^3，0 <= a, b < N，
 // 0 <= s <= t <= T，0 <= c <= 10000。
+// 难度评分：2600（洛谷分级换算）
 // 算法标签：最小费用最大流、Dijkstra、SPFA
 #include<bits/stdc++.h>
 using namespace std;

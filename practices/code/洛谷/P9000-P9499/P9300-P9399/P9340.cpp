@@ -9,6 +9,7 @@
 // 数据范围：1 <= N, M, Q <= 10^5，
 // 1 <= A_i, B_i, C_j <= N，
 // 1 <= L_k <= R_k <= M，图连通。
+// 难度评分：2500（洛谷分级换算）
 // 算法标签：树链剖分、线段树、ST表
 #include<bits/stdc++.h>
 using namespace std;
