@@ -304,7 +304,7 @@ def main() -> None:
         "## 使用方式",
         "",
         "1. 从下方目录选择知识点，先看对应的 `templates` 代码，再打开原题。",
-        "2. `practices/code` 栏列出归档中的同题实现。只在 `templates` 中找到实现的题目会注明。",
+        "2. `practices/code` 栏列出归档中的同题实现。打开源码可查看文件头的[难度评分](../practices/code/README.md#难度评分)。只在 `templates` 中找到实现的题目会注明。",
         "",
         "## 分类导航",
         "",

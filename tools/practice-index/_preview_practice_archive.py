@@ -229,6 +229,7 @@ def write_index(
         "",
     ]
     if archived_only:
+        lines.extend(("题目的评分和来源见源码文件头。尺度与来源含义见[难度评分说明](../practices/code/README.md#难度评分)。", ""))
         sections = {topic: {} for topic in (*TOPIC_RULES, "其他技巧")}
         for tag, entries in by_tag.items():
             topic = next(
